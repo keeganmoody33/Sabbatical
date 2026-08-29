@@ -13,7 +13,9 @@ Harvest coverage of the frozen corpus, 2026-08-29:
 - Calendar 33@lecturesfrom.com: 31 events across five 90-day blocks with no keyword filter.
 - Calendar transferred keegan@lecturesfrom.com: reachable and empty.
 - Calendar keeganmoody33@gmail.com: not listed. Waived in writing.
-- LinkedIn Job Applications.csv, Ladders full list, Jobright full export, YC dashboard, [S1] and [S2] workbooks: absent. Waived in writing.
+- LinkedIn applied list pages 1 to 10: 99 rows in `artifacts/platform/linkedin_applied_jobs_pages_1_to_10.csv`. Relative stamps. `date_capture = 2026-08-29`. Page 10 has 10 rows, so a later page is not ruled out. The file does not label Easy Apply versus external ATS.
+- Jobright tracker: 40 rows in `artifacts/platform/jobright_applications_log.csv`. Exact dates.
+- Ladders full list, YC dashboard, [S1] and [S2] workbooks: absent.
 
 Stop conditions: see `artifacts/STOP-CONDITIONS.md`. Personal Gmail Q7 is incomplete. Personal calendar is unswept.
 
@@ -21,13 +23,13 @@ Stop conditions: see `artifacts/STOP-CONDITIONS.md`. Personal Gmail Q7 is incomp
 
 95 percent completeness is a goal, not a verified claim. The intended estimator is stratified two-source capture recapture on the overlap where LinkedIn and external ATS mail could both have seen the same application.
 
-That overlap stratum is unmeasured because Job Applications.csv is not in the corpus. No completeness percentage is published. No Lincoln Petersen estimate is computed.
+That overlap stratum is still unmeasured. The LinkedIn file that arrived is pages 1 to 10 of an applied list. It does not mark which rows were Easy Apply versus an external ATS. No completeness percentage is published. No Lincoln Petersen estimate is computed.
 
-Independence assumption, stated for when the export arrives: LinkedIn applied-list rows and employer ATS mail are not independent for Easy Apply, which is why that channel is excluded from the overlap stratum.
+Independence assumption: LinkedIn applied-list rows and employer ATS mail are not independent for Easy Apply, which is why that channel is excluded from the overlap stratum.
 
 Likely bias direction if someone later runs an unstratified estimator anyway: Easy Apply is visible to LinkedIn and invisible to ATS mail, which would inflate apparent uniqueness and understate completeness.
 
-Unmet or waived stops that bound this census: personal Gmail Q7 page 2+, Q6, Q3b, Q9; personal calendar; LinkedIn, Ladders, Jobright, YC exports; [S1] and [S2] workbooks.
+Unmet or waived stops that still bound this census: personal Gmail Q7 page 2+, Q6, Q3b, Q9; personal calendar; LinkedIn pages beyond 10 and a channel-labeled ATS stratum; Ladders; YC; [S1] and [S2] workbooks.
 
 ## Pre-adjudication agreement
 
@@ -52,17 +54,33 @@ Evidence class:
 - employer_artifact: 220
 - platform_log: 1 (Jobright.ai Product Manager Early Career)
 
-Full census in this freeze equals that 221. There is no LinkedIn applied-list stratum to add.
+Full census in Freeze 1, before platform files, equals that 221.
 
-Item confidence on the contributing extracts is high or medium. Population completeness is not a percentage.
+## Freeze 2 platform addendum
+
+Gmail and Calendar extracts were not recoded. LinkedIn pages 1 to 10 and the Jobright tracker were coded as `platform_log` and matched to Freeze 1 on `company_canonical + role_as_listed + cycle`, with named aliases in `adjudication/ingest_platform.py`.
+
+- Platform rows overlapping Freeze 1: 51
+- Net-new `platform_log` applications: **82**
+- Full census (Freeze 1 plus net-new): **303**
+- Evidence class on the 303: employer_artifact 220, platform_log 83
+- One LinkedIn row with a blank company was excluded (`unresolvable_identity`)
+- The Hog LinkedIn row stays opportunity, matching Freeze 1
+
+This is a documented column mapping of structured applied lists, not a second independent LLM pair. Role-lane kappa is not recomputed on the 82.
+
+Ladders is still absent.
 
 ## Interviews (derived, never stored)
 
 Interviewed means at least one event whose `event_type` is in {recruiter_screen, hiring_manager_interview, panel, technical_exercise, final_round}.
 
-- Interviewed applications in the 221: **14**
-- Application-to-interview rate on the employer_artifact-dominated census: 14/221
-- Opportunity-register interviews (WorkOS, Mercor contract path, and other recruiter-only processes) sit outside that denominator and are not mixed into 14/221
+- Interviewed applications in the Freeze 1 221: **14**
+- Application-to-interview rate on Freeze 1: 14/221
+- Interviewed applications in the Freeze 2 full census: **14**
+- Application-to-interview rate on the 303: 14/303
+- Platform files carry no interview events. Adding Easy Apply and Jobright rows does not add interviews.
+- Opportunity-register interviews (WorkOS, Mercor contract path, and other recruiter-only processes) sit outside those denominators
 
 The Hog is opportunity, not an application, so its interview events do not enter the 14.
 
