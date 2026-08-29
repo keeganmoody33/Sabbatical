@@ -1,0 +1,84 @@
+<!-- kit-meta
+file: protocol.md
+tier: 0 (durable)
+created: 2026-08-29 14:24 ET
+updated: 2026-08-29 14:24 ET
+review-by: 2027-08-29
+sources: [S1] [S2] [S6]
+-->
+
+# Pre-registration
+
+Frozen before extraction begins. Any change after the first coder runs must be logged here with a date and a reason, and disclosed in the paper.
+
+## Study window
+
+2025-06-01 to 2026-08-29, America/New_York, inclusive. 15 months.
+
+Declared harvest boundary: the prior audits searched only 2025-08-25 forward, so 2025-06-01 to 2025-11-01 is unharvested rather than empty. No time series may be published until that gap is swept.
+
+## Unit of analysis
+
+One application cycle. `company_canonical + role_as_listed + cycle`. Defined in `knowledge/03-codebook.md`.
+
+## Primary and secondary outcomes
+
+- Primary: count of confirmed applications in the `application` register, reported at two strata, `employer_artifact` and full census.
+- Secondary: application-to-interview rate, role lane distribution, time to first response, time to first interview.
+
+Precision-constrained metrics (time to response, time to interview) are computed only on rows where both dates carry `precision = exact`. The excluded n is reported alongside.
+
+## Coding design: independent parallel coding
+
+Multiple LLM coders extract the same artifact set using `prompts/extraction.md`, without seeing each other's output. This is the design decision that upgrades the paper from one person's spreadsheet to a measured instrument.
+
+Requirements, in order:
+
+1. **Freeze the codebook first.** No vocabulary changes after coder 1 begins.
+2. **Freeze the artifact set.** All coders receive the identical corpus. A coder who sees more artifacts is not a second rating, it is a different study.
+3. **Blind.** No coder sees another coder's rows before all runs are complete. If any coder's output is read first, independence is destroyed and the agreement statistic is invalid.
+4. **Adjudicate after, not during.** Disagreements are resolved in a named pass, and the pre-adjudication disagreement rate is published.
+
+## Reliability statistics to report
+
+- Percent agreement and Cohen's kappa on `role_lane`, across coders, on the subset both coded.
+- Percent agreement on the binary include or exclude decision (`register = application` versus exclusion).
+- Disagreement inventory: every row where coders differed, with the field and both values.
+
+`role_lane` is the field that matters most. The current data already shows a 20 point gap in explicit GTM engineering share between the `employer_artifact` stratum (50.9 percent) and the `platform_log` stratum (30.2 percent). Until independent coders agree on lane assignment, that gap cannot be attributed to behavior rather than coding.
+
+## Completeness estimation
+
+Replace the asserted "88 to 93 percent" with an estimate that has a method behind it.
+
+**Method: two-source capture-recapture, stratified.**
+
+Naive Lincoln-Petersen across the full corpus will fail here, and the paper should say why. Gmail ATS receipts and the LinkedIn applied list are not independent captures. LinkedIn Easy Apply frequently generates no ATS mail at all, so the two sources are structurally near-disjoint by construction. Applying the estimator to the raw overlap of 17 against 163 and 99 yields an implausible population and would be a misuse of the method.
+
+The defensible version restricts the estimate to the stratum where both sources could have observed the same application: LinkedIn rows for roles that were submitted through an external ATS rather than Easy Apply. Within that stratum, overlap estimates the unseen, and the resulting interval is extrapolated with the stratum share stated as an assumption.
+
+Report the point estimate, the interval, the independence assumption, and the direction of likely bias. A completeness figure with a method and a caveat is publishable. A completeness figure asserted from feel is not.
+
+**On the 95 percent target:** 95 percent completeness is a goal, not a claim that can be verified without a gold standard. What the paper can defend is a stated interval, the method that produced it, and the list of unmet stop conditions. If the interval's lower bound sits below 95, say so.
+
+## Stop conditions
+
+The census is not closed until all of these are met or explicitly waived in writing:
+
+1. Gmail swept 2025-06-01 to 2026-08-29 for ATS domains, receipt phrases, and Sent mail with attachments.
+2. Google Calendar swept for the same window in 90 day blocks without keyword filtering. Keyword search for "interview" previously returned zero events because loops lived in generic invite titles.
+3. LinkedIn applied list confirmed complete, including whether pages beyond 10 exist.
+4. Ladders applied list exported in full, not only the three Apply4Me receipts.
+5. Jobright tracker exported in full.
+6. YC Work at a Startup dashboard inspected.
+7. Talentpluto and Jobgether underlying employers resolved or formally excluded.
+
+## Known integrity defects to resolve before publication
+
+1. WorkOS, GTM Engineer, 2025-08-25, Tier A, marked Interviewed in the 212 row ledger, absent from the 247 row ledger. Resolve before any interview count is published.
+2. The 212 to 163 reconciliation is undocumented.
+3. The current dedupe key omits cycle, producing two false duplicate keys.
+
+## Changelog
+
+- 2026-08-29 14:24 ET: created from [S1] [S2] [S6]. Window set to 2025-06-01 through 2026-08-29. Gmail and Google Calendar named as authorized sources by the user on 2026-08-29.
