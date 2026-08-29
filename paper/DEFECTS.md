@@ -32,6 +32,6 @@ A key that omitted cycle would collide those pairs.
 
 ## Capture recapture not computed
 
-The protocol restricts two-source capture recapture to LinkedIn rows submitted through an external ATS, not Easy Apply. This freeze has no LinkedIn Job Applications.csv. Naive Lincoln Petersen on Gmail overlap versus a missing LinkedIn list is a misuse and was not run.
+The protocol restricts two-source capture recapture to LinkedIn rows submitted through an external ATS, not Easy Apply. Freeze 2 has LinkedIn pages 1 to 10 without that channel label. Naive Lincoln Petersen on Gmail overlap versus Easy Apply is a misuse and was not run.
 
 The overlap stratum is unmeasured. Completeness is therefore not reported as a percentage.
