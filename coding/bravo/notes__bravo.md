@@ -2,7 +2,7 @@
 
 Coder: bravo
 
-Did not consult another coder. Did not read any file under `/workspace/coding/` except `README-coder.md`. Did not read `/workspace/coding/alpha/` or any other coder CSV.
+Did not consult another coder. Did not read any file under `/workspace/coding/` except `README-coder.md`. After writing these rows, `git status` listed `coding/alpha/` as untracked; those files were not opened.
 
 ## Artifacts processed
 
