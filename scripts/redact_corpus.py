@@ -195,8 +195,14 @@ def redact_text(text: str, calendar_ids: set[str]) -> str:
 
 
 def main() -> None:
-    calendar_csv = ROOT / "artifacts" / "calendar" / "q8-lecturesfrom-primary.csv"
-    calendar_ids = collect_calendar_ids(calendar_csv)
+    calendar_ids: set[str] = set()
+    for name in (
+        "q8-lecturesfrom-primary.csv",
+        "q8-keeganmoody33-primary.csv",
+    ):
+        calendar_ids |= collect_calendar_ids(
+            ROOT / "artifacts" / "calendar" / name
+        )
     changed = 0
     for path in iter_text_files(ROOT):
         original = path.read_text(encoding="utf-8")

@@ -1,0 +1,6 @@
+coder_id,candidate_id,date,company,role,exclusion_reason,what_would_promote_it,evidence_system,evidence_id
+freeze3,bcofa-gtm-consulting,2026-03-06,BCOFA,unspecified,consulting_prospect,"An employment application receipt for a named role, not a client GTM project.",gcal,cal_4b2dcb68665185f7
+freeze3,truebuilt-gtm-project,2026-07-15,TrueBuilt,GTM project,consulting_prospect,Nothing. The LinkedIn Easy Apply GTM Engineer row is already in Freeze 2. This thread is a separate project quote that they passed on budget.,gmail,gth_02dcef5402e849cd
+freeze3,mobb-employment,2025-06-03,Mobb.dev,Business Development,unknown,"Nothing. Gusto first-day mail and keegan@mobb.ai are employment onboarding, not a search application.",gmail,gth_96b8c659b5fa2546
+freeze3,mixmax-heath-meeting,2025-08-14,Mixmax,unspecified,marketplace_profile,An employment application receipt. Product or contractor meetings do not promote it.,gcal,cal_3e5387362a5b33e3
+freeze3,kivira-weekly-outbound,2026-06-03,Kivira.health,unspecified,consulting_prospect,An employment application receipt. Weekly outbound check-ins are client work.,gcal,cal_cc9f94b847eb65aa
