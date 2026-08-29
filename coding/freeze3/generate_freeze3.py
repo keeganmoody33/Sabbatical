@@ -365,7 +365,7 @@ def main() -> None:
             "company": "TrueBuilt",
             "role": "GTM project",
             "exclusion_reason": "consulting_prospect",
-            "what_would_promote_it": "Nothing. The LinkedIn Easy Apply GTM Engineer row is already in Freeze 2. This thread is a separate project quote that they passed on budget.",
+            "what_would_promote_it": "Nothing. The LinkedIn applied-list GTM Engineer row is already in Freeze 2. This thread is a separate project quote that they passed on budget.",
             "evidence_system": "gmail",
             "evidence_id": "gth_02dcef5402e849cd",
         },

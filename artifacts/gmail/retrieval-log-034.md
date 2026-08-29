@@ -53,7 +53,7 @@ Mike Blaney at bcofa.com. Calendar: BCOFA GTM Strategy Discussion 2026-03-06 (`c
 
 Calendar search for those names: **zero events**.
 
-Gmail `from:truebuiltsoftware.com`: project quote thread `Keegan Moody | TrueBuilt GTM project` (`gth_02dcef5402e849cd`). Vin and Jon passed on budget 2026-07-21 to 07-23. A "Keegan Moody: GTM Eng" calendar invite was created then canceled. This is separate from the Freeze 2 LinkedIn Easy Apply GTM Engineer row.
+Gmail `from:truebuiltsoftware.com`: project quote thread `Keegan Moody | TrueBuilt GTM project` (`gth_02dcef5402e849cd`). Vin and Jon passed on budget 2026-07-21 to 07-23. A "Keegan Moody: GTM Eng" calendar invite was created then canceled. This is separate from the Freeze 2 LinkedIn applied-list GTM Engineer row.
 
 ## Beautiful.ai, Every.to, PhrasIQ, The Hog
 

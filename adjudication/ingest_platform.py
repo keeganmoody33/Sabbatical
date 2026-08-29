@@ -2,7 +2,9 @@
 """Freeze 2: code LinkedIn and Jobright applied lists, then match to Freeze 1.
 
 Does not recode Gmail. Interviewed-ness is not stored. Relative LinkedIn
-stamps stay relative_display with date_capture 2026-08-29.
+stamps stay relative_display with date_capture 2026-08-29. LinkedIn
+submission_channel is unknown because the applied list does not label
+Easy Apply versus external ATS.
 """
 
 from __future__ import annotations
@@ -306,7 +308,7 @@ def code_linkedin() -> tuple[list[dict[str, str]], list[dict[str, str]]]:
                 company_listed=company,
                 role=role,
                 source="linkedin",
-                channel="easy_apply",
+                channel="unknown",
                 date="",
                 precision="relative_display",
                 capture=CAPTURE,
@@ -369,6 +371,63 @@ def role_key(company: str, role: str) -> tuple[str, str]:
     return c, r
 
 
+# Location and posting-site words that Jobright/LinkedIn append to an otherwise
+# identical title. Not function words that change the opening (lead, founding).
+ROLE_NOISE_TOKENS = {
+    "remote",
+    "onsite",
+    "hybrid",
+    "greater",
+    "area",
+    "atlanta",
+    "ga",
+    "us",
+    "usa",
+    "united",
+    "states",
+    "products",
+    "role",
+    "based",
+    "in",
+    "austin",
+    "tx",
+    "relocation",
+    "package",
+}
+
+
+def expand_role_abbreviations(text: str) -> str:
+    cleaned = re.sub(r"\([^)]*\)", " ", text or "")
+    cleaned = re.sub(r"\bAEs?\b", "account executive", cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r"\bBDRs?\b", "business development representative", cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r"\bSDRs?\b", "sales development representative", cleaned, flags=re.IGNORECASE)
+    return cleaned
+
+
+def role_tokens(role: str) -> tuple[str, ...]:
+    parts = re.findall(r"[a-z0-9]+", expand_role_abbreviations(role).lower())
+    return tuple(p for p in parts if p not in ROLE_NOISE_TOKENS)
+
+
+def roles_equivalent(platform_role: str, freeze1_role: str) -> bool:
+    """True when one title expands or abbreviates the other.
+
+    Catches AE vs Account Executive, parenthetical location tails, and
+    'Greater Atlanta Area' vs Atlanta. Does not merge GTM Engineer with
+    GTM Engineering Team Lead, or RevOps Strategist with GTM Engineer.
+    """
+    platform_tokens = role_tokens(platform_role)
+    freeze1_tokens = role_tokens(freeze1_role)
+    if not platform_tokens or not freeze1_tokens:
+        return False
+    if platform_tokens == freeze1_tokens:
+        return True
+    return (
+        platform_tokens == freeze1_tokens[: len(platform_tokens)]
+        or freeze1_tokens == platform_tokens[: len(freeze1_tokens)]
+    )
+
+
 def dedupe_platform(apps: list[dict[str, str]]) -> list[dict[str, str]]:
     """One row per company + role. Prefer Jobright exact dates over LinkedIn relative stamps."""
     ranked: dict[tuple[str, str], dict[str, str]] = {}
@@ -423,6 +482,14 @@ def match_freeze1(
             unspecified = [p for p in cands if (p.get("role_as_listed") or "").lower() == "unspecified"]
             if unspecified:
                 parents = unspecified
+            else:
+                equivalent = [
+                    p
+                    for p in cands
+                    if roles_equivalent(row["role_as_listed"], p.get("role_as_listed") or "")
+                ]
+                if len(equivalent) == 1:
+                    parents = equivalent
         if parents:
             parent = parents[0]
             overlaps.append(
@@ -496,7 +563,9 @@ def main() -> None:
     report.append(f"- Interviewed in Freeze 1 (cursor events, application register): {len(interviewed_221)}")
     report.append(f"- Interviewed in full census: {len(interviewed_full)} (platform files carry no interview events)")
     report.append("")
-    report.append("Capture recapture was not computed. The LinkedIn file is pages 1 to 10 of an applied list and does not label Easy Apply versus external ATS.")
+    report.append("Capture recapture was not computed. The LinkedIn file is pages 1 to 10 of an applied list and does not label Easy Apply versus external ATS. LinkedIn submission_channel is therefore unknown.")
+    report.append("")
+    report.append("Four platform titles matched Freeze 1 as expansions of the same opening: Thomson Reuters AE Tax or Risk, Foursquare AE New Business, UpGuard SDR Manager, Verkada Enterprise Solutions Engineer Atlanta. They are overlap, not net-new.")
     report.append("")
     report.append("## Net-new applications")
     report.append("")
