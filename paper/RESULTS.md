@@ -8,16 +8,17 @@ No dashes are used as punctuation in this file.
 
 Harvest coverage of the frozen corpus, 2026-08-29:
 
-- Gmail keeganmoody33@gmail.com, logs 001 to 021: 994 threads. Queries Q1 through Q5, Q3, Q4 exhausted. Q7 page 1 captured. Q7 page 2 and later, Q6, Q3b, Q9, Q10 on that mailbox were not run in this environment.
+- Gmail keeganmoody33@gmail.com, logs 001 to 021: 994 threads. Queries Q1 through Q5, Q3, Q4 exhausted. Q7 page 1 captured in Freeze 1.
+- Gmail keeganmoody33@gmail.com, logs 030 to 035: Q7 re-run from start exhausted (195 unique threads). Q6, Q9, and Q3b exhausted. Pressure-test names in log 034.
 - Gmail 33@lecturesfrom.com, logs 022 to 029: 177 threads. Q6, Q7, Q3b, Q9, Q10 exhausted on this mailbox. Almost none were employment ATS receipts.
 - Calendar 33@lecturesfrom.com: 31 events across five 90-day blocks with no keyword filter.
 - Calendar transferred keegan@lecturesfrom.com: reachable and empty.
-- Calendar keeganmoody33@gmail.com: not listed. Waived in writing.
+- Calendar keeganmoody33@gmail.com primary: 338 events across five 90-day blocks with no keyword filter. Hidden MCAT PREP and SI CHM222 calendars were listed and not swept.
 - LinkedIn applied list pages 1 to 10: 99 rows in `artifacts/platform/linkedin_applied_jobs_pages_1_to_10.csv`. Relative stamps. `date_capture = 2026-08-29`. Page 10 has 10 rows, so a later page is not ruled out. The file does not label Easy Apply versus external ATS.
 - Jobright tracker: 40 rows in `artifacts/platform/jobright_applications_log.csv`. Exact dates.
 - Ladders full list, YC dashboard, [S1] and [S2] workbooks: absent.
 
-Stop conditions: see `artifacts/STOP-CONDITIONS.md`. Personal Gmail Q7 is incomplete. Personal calendar is unswept.
+Stop conditions: see `artifacts/STOP-CONDITIONS.md`. Personal Gmail Q6, Q7, Q3b, and Q9 are exhausted. Personal primary calendar is swept.
 
 ## Completeness
 
@@ -29,7 +30,7 @@ Independence assumption: LinkedIn applied-list rows and employer ATS mail are no
 
 Likely bias direction if someone later runs an unstratified estimator anyway: Easy Apply is visible to LinkedIn and invisible to ATS mail, which would inflate apparent uniqueness and understate completeness.
 
-Unmet or waived stops that still bound this census: personal Gmail Q7 page 2+, Q6, Q3b, Q9; personal calendar; LinkedIn pages beyond 10 and a channel-labeled ATS stratum; Ladders; YC; [S1] and [S2] workbooks.
+Unmet or waived stops that still bound this census: LinkedIn pages beyond 10 and a channel-labeled ATS stratum; Ladders; YC; [S1] and [S2] workbooks. Personal Gmail Q7 page 2+, Q6, Q3b, Q9, and personal calendar are no longer in that list.
 
 ## Pre-adjudication agreement
 
@@ -75,6 +76,31 @@ This is a documented column mapping of structured applied lists, not a second in
 
 Ladders is still absent.
 
+## Freeze 3 personal mail and calendar
+
+Gmail Freeze 1 extracts and Freeze 2 platform files were not recoded. Personal Gmail Q6, Q7, Q3b, and Q9 were run to exhaustion. The keeganmoody33 primary calendar was swept in 90-day blocks with no keyword filter (338 events).
+
+- Net-new `register = application` rows: **0**
+- Full application census remains **298**
+- Three new opportunity rows: Pin, Hotglue BDM, Opsin. They stay out of the 298.
+- PhrasIQ GTM Deep Dive on 2026-04-15 is now on the personal calendar. Freeze 1 had only a proposed date.
+- Interviewed applications remain **14**. Pin, Hotglue, Opsin, and The Hog interviews sit in the opportunity register.
+
+Pressure-test names (origin, what happened, interviewed):
+
+- Beautiful.ai: Greenhouse receipt 2026-03-08. Interview on personal calendar 2026-03-17. Decline 2026-03-26. **Yes, in the 14.**
+- The Hog: invitation 2026-06-15, calendar 2026-06-16, take-home. No ATS receipt. **Yes, opportunity, outside the 14.**
+- Opsin: Colossus TG video interview with James Pham 2026-03-13. No ATS receipt. **Yes, opportunity.**
+- Hotglue: Kevin Wright BDM conversation 2026-04-20. No ATS receipt. **Yes, opportunity.**
+- Every.to: thanks for applying, calendar 2026-04-21 with Austin. **Yes, in the 14.**
+- Mixmax: product welcome and Heath meeting. **No. Exclusion.**
+- Mobb / mobb.dev: Gusto first-day and a Mobb employment mailbox. Employment, not a search application.
+- Pin: Erica Stacy Tarwater 2025-06-30, Conor Kline 2025-07-07, then rejection. No ATS receipt. User recalled Erika. Mail uses Erica. **Yes, opportunity.**
+- BCOFA: GTM strategy and copywriting with Dr. Blaney. **No. Consulting.**
+- PhrasIQ: Discovery 2026-04-02 and Deep Dive 2026-04-15. **Yes, in the 14.**
+- TrueBuilt: LinkedIn applied-list GTM Engineer already in Freeze 2. Separate Gmail project quote, passed on budget. **No interview on the LinkedIn row.**
+- Kivira.health: connect meetings and weekly outbound. **No. Consulting. Meetings happened.**
+
 ## Interviews (derived, never stored)
 
 Interviewed means at least one event whose `event_type` is in {recruiter_screen, hiring_manager_interview, panel, technical_exercise, final_round}.
@@ -84,9 +110,9 @@ Interviewed means at least one event whose `event_type` is in {recruiter_screen,
 - Interviewed applications in the Freeze 2 full census: **14**
 - Application-to-interview rate on the 298: 14/298
 - Platform files carry no interview events. Adding LinkedIn applied-list and Jobright rows does not add interviews.
-- Opportunity-register interviews (WorkOS, Mercor contract path, and other recruiter-only processes) sit outside those denominators
+- Opportunity-register interviews (WorkOS, Mercor contract path, Pin, Hotglue, Opsin, The Hog, and other recruiter-only processes) sit outside those denominators
 
-The Hog is opportunity, not an application, so its interview events do not enter the 14.
+The Hog, Pin, Hotglue, and Opsin are opportunity, not applications, so those interview events do not enter the 14.
 
 ## Role lane (after kappa)
 

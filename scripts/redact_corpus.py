@@ -111,6 +111,14 @@ def hash_email(address: str) -> str:
     return "eml_" + digest(address.lower(), 12)
 
 
+HASHED_PREFIXES = ("gth_", "cal_", "tok_", "eml_")
+
+
+def is_hashed_pointer(value: str) -> bool:
+    """Committed corpus IDs are already one-way pointers. Do not hash them again."""
+    return value.startswith(HASHED_PREFIXES)
+
+
 def keep_email(address: str) -> bool:
     lowered = address.lower()
     if lowered in STUDY_EMAILS:
@@ -135,7 +143,7 @@ def collect_calendar_ids(path: Path) -> set[str]:
         for row in reader:
             for key in ("event_id", "evidence_id"):
                 value = (row.get(key) or "").strip()
-                if value:
+                if value and not is_hashed_pointer(value):
                     ids.add(value)
     return ids
 
@@ -157,6 +165,8 @@ def redact_text(text: str, calendar_ids: set[str]) -> str:
     # Calendar IDs first, longest first, so 32-hex event IDs are not split
     # into two Gmail-thread hashes.
     for event_id in sorted(calendar_ids, key=len, reverse=True):
+        if is_hashed_pointer(event_id):
+            continue
         hashed = hash_calendar(event_id)
         text = text.replace(event_id, hashed)
         if len(event_id) >= 12:
@@ -195,8 +205,14 @@ def redact_text(text: str, calendar_ids: set[str]) -> str:
 
 
 def main() -> None:
-    calendar_csv = ROOT / "artifacts" / "calendar" / "q8-lecturesfrom-primary.csv"
-    calendar_ids = collect_calendar_ids(calendar_csv)
+    calendar_ids: set[str] = set()
+    for name in (
+        "q8-lecturesfrom-primary.csv",
+        "q8-keeganmoody33-primary.csv",
+    ):
+        calendar_ids |= collect_calendar_ids(
+            ROOT / "artifacts" / "calendar" / name
+        )
     changed = 0
     for path in iter_text_files(ROOT):
         original = path.read_text(encoding="utf-8")
