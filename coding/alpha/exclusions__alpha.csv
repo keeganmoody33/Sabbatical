@@ -1,0 +1,359 @@
+coder_id,candidate_id,date,company,role,exclusion_reason,what_would_promote_it,evidence_system,evidence_id
+alpha,excl-graph-one,2025-07-27,graph.one,unspecified,attempted_not_submitted,"ATS or employer receipt stating the application was received, contradicting the founder note that no application is in their ATS",gmail,gth_130b96eacec9f065
+alpha,excl-sbga,2025-04-11,SBGA,Remote Outside Sales Rep,out_of_window,an in-window submission receipt; thread begins 2025-04-11 before 2025-06-01,gmail,gth_c689e114e0941fe1
+alpha,excl-gwinnett-started,2026-06-08,Gwinnett County Public Schools,unspecified,attempted_not_submitted,"AppliTrack Your online application ... submission confirmed, not merely Application Started or expiry warning",gmail,gth_2032ad4875645a59
+alpha,excl-gwinnett-expire,2026-07-04,Gwinnett County Public Schools,unspecified,attempted_not_submitted,AppliTrack submission confirmation before expiry,gmail,gth_11a583cffff742fb
+alpha,excl-dekalb-general-started,2026-06-27,DeKalb County School District,unspecified,attempted_not_submitted,submission confirmation for the general district application (distinct from the position-filled STAR Substitute notices),gmail,gth_c0e885b9166de6c3
+alpha,excl-dekalb-general-expire,2026-07-23,DeKalb County School District,unspecified,attempted_not_submitted,submission confirmation for the general application that the expiry warning says is about to expire,gmail,gth_32be8996b8ef0914
+alpha,excl-unnamed-gh-gtme,2026-07-12,,GTM Engineer,unresolvable_identity,Greenhouse or employer artifact that names the employer in subject or snippet,gmail,gth_4b81cb9e7d93d7a6
+alpha,excl-saveurdays,2026-04-11,,,unresolvable_identity,sender naming a company and role,gmail,gth_515966939c6fbad4
+alpha,excl-weave-2026-interview,2026-08-18,Weave,unspecified,unresolvable_identity,a 2026 Weave submission receipt after the 2025-07-31 terminal; interview/rejection alone cannot open cycle 2,gmail,gth_0339a17e3860d167
+alpha,excl-mixmax,2025-09-04,Mixmax,,consulting_prospect,an employment application receipt (product onboarding is not an application),gmail,gth_beb7124e93244a82
+alpha,excl-glytec,2026-01-27,Glytec,unspecified,unresolvable_identity,a submission receipt for the Glytec role; interview logistics alone are not a parent application,gmail,gth_7ff12c525a38011d
+alpha,excl-smartmode,2025-07-18,SmartMode AI,unspecified,unresolvable_identity,a submission receipt; Next Steps Begin Your Interview Process is not a submission,gmail,gth_6861df0094613c68
+alpha,excl-classet,2025-07-09,Classet,Head of GTM,unresolvable_identity,"Wellfound Application to Classet successfully submitted, or other submission receipt",gmail,gth_6af5520ff5313d68
+alpha,excl-spotai,2025-07-26,Spot AI,unspecified,unresolvable_identity,a dated submission receipt; GDPR notice does not date or prove a census application,gmail,gth_07fb922f7018f5b8
+alpha,excl-gong,2025-07-08,Gong.io,unspecified,unresolvable_identity,a dated submission receipt; GDPR notice is insufficient,gmail,gth_a9bc41cdfddf6b61
+alpha,excl-celonis,2026-04-02,Celonis,unspecified,unresolvable_identity,a dated submission receipt; retention notice is insufficient,gmail,gth_3d703a46e1412abb
+alpha,excl-newrelic,2026-03-28,New Relic,unspecified,unresolvable_identity,a dated submission receipt; data-retention notice is insufficient,gmail,gth_99e82290d8b26754
+alpha,excl-agroknow,2025-11-25,Agroknow,North America Sales,unresolvable_identity,a submission receipt; Thank you for your time and interest is not application language,gmail,gth_0b21a7d38201ea0b
+alpha,excl-switchyards-dpb,2026-04-25,Switchyards,Digital Product Builder,unresolvable_identity,a submission or sent-mail application for Digital Product Builder,gmail,gth_9a641357cd288f9d
+alpha,excl-classdojo,2025-08-08,ClassDojo,unspecified,unresolvable_identity,Gem or employer thank-you-for-applying naming a role,gmail,gth_8ecd48caabede254
+alpha,excl-crate-openai,2025-06-21,,OpenAI Backend Software Engineer,unresolvable_identity,"mail from OpenAI or its ATS, not eml_d498ccd3103f Umicas",gmail,gth_dabc46cd132a51bf
+alpha,excl-crate-google,2025-06-21,,Google Senior Software Engineer Gemini,unresolvable_identity,mail from Google or its ATS,gmail,gth_3770b36755228c64
+alpha,excl-crate-se,2025-06-24,Crate,Software Engineering,attempted_not_submitted,a completed application receipt rather than missing-materials reminders,gmail,gth_3491eb82f8ab15f5
+alpha,excl-crate-se-2,2025-06-23,Crate,Software Engineering,attempted_not_submitted,a completed application receipt,gmail,gth_73b9f98c99a2ac43
+alpha,excl-gradient-complete-prompt,2026-07-21,Gradient Labs,GTM Engineer,attempted_not_submitted,ZipRecruiter or Ashby language that the Gradient Labs GTM Engineer application was completed (the later Ashby decline does not name this title),gmail,gth_3596c77f23f1b6ef
+alpha,excl-stellar-sub,2026-07-28,,Stellar Substitute,unresolvable_identity,Frontline notice naming the school district,gmail,gth_d48351490423f643
+alpha,excl-li-inmail-jun9,2026-06-09,,unspecified,unresolvable_identity,LinkedIn InMail naming the employer; subject is only New opportunity,gmail,gth_4f89ecf4c7cbd2dd
+alpha,excl-protecht,2025-07-17,Protecht,unspecified,recruiter_initiated,a submission receipt for a named Protecht role,gmail,gth_c1d5516c4552dfee
+alpha,excl-inven,2025-06-11,Inven.ai,unspecified,consulting_prospect,"sent mail that states applying for a named role, not only resume, KMoody",gmail,gth_2dc7b54c89818c53
+alpha,excl-insignia,2025-11-18,Insignia Collab,unspecified,consulting_prospect,an employment application for a named requisition rather than Operator / architect / Atlanta resident intro,gmail,gth_1aa4bb3bc36115a4
+alpha,excl-practical-prospecting,2026-05-20,Practical Prospecting,unspecified,consulting_prospect,an employment application receipt; KMOODY RESUME with scope highlighted is not coded as a job application,gmail,gth_75b7c8464647fdc0
+alpha,excl-exa-product,2025-06-12,Exa,,consulting_prospect,none for this thread; employment application is the separate 2025-07-25 Growth Lead Lever receipt,gmail,gth_19ce04c195e366c4
+alpha,excl-jorge-gtme-mail,2026-04-29,gtm-engineering.io,GTME,consulting_prospect,a submission artifact for a job at Jorge Macias / gtm-engineering.io,gmail,gth_6836c04b00947b35
+alpha,excl-jorge-gtme-cal,2026-04-29,gtm-engineering.io,GTME,consulting_prospect,a submission artifact for a job; calendar 30 Minute Meeting [GTME] is not a submission,gcal,cal_58e3b990c3e121a5
+alpha,excl-jorge-lecturesfrom,2026-04-29,gtm-engineering.io,GTME,consulting_prospect,a submission artifact,gmail,gth_4697019103eff2e3
+alpha,excl-commonroom,2026-05-28,Common Room,unspecified,unresolvable_identity,an artifact stating the meeting was a job interview or that an application was submitted,gmail,gth_b9d4242b85dd638d
+alpha,excl-breakthroughz-inv,2025-08-08,Breakthrough Z,,consulting_prospect,an employment application; Clarity Call is coaching,gmail,gth_2fbc4346a1749093
+alpha,excl-breakthroughz-can,2025-07-08,Breakthrough Z,,consulting_prospect,an employment application,gmail,gth_10fa7b4d22e49901
+alpha,excl-coldiq,2025-06-11,ColdIQ,,attempted_not_submitted,"completed accelerator application, not incomplete",gmail,gth_fb1f9d2f933f8ecd
+alpha,excl-w9,2025-06-10,,,unresolvable_identity,context tying W9 Form to an employment application,gmail,gth_28bccb433af435c9
+alpha,excl-pappas-consulting,2026-06-04,Josh Pappas,,consulting_prospect,an employment application rather than consulting scope for independent clinics,gmail,gth_92516c1c9f589417
+alpha,excl-wellsfargo,2026-03-06,Wells Fargo,Clear Access Banking,unresolvable_identity,"nothing; this is a banking product application, not employment",gmail,gth_11b5eab2896d7f3d
+alpha,excl-alibaba,2026-06-21,Alibaba.com,Pay Later for Business,unresolvable_identity,nothing; credit product,gmail,gth_4d700ecc18af3ae8
+alpha,excl-kimi,2026-06-20,Kimi,Code Beta Program,unresolvable_identity,nothing; product beta,gmail,gth_4eb58e96e49a35dd
+alpha,excl-applecard-1,2025-09-12,Apple Card,,unresolvable_identity,nothing; credit product,gmail,gth_3fe2a9bc11c39212
+alpha,excl-applecard-2,2025-12-08,Apple Card,,unresolvable_identity,nothing; credit product,gmail,gth_b1d0e2e8cb97ee09
+alpha,excl-zip-welcome,2026-07-21,ZipRecruiter,,marketplace_profile,a titled role submission through ZipRecruiter (Revic complete is already an application row),gmail,gth_6a4d3c24bfcfa43a
+alpha,excl-mercor-signin,2026-07-20,Mercor,,marketplace_profile,already captured as per-role Application Submitted rows; this is account sign-in,gmail,gth_0d461615c17bc8cd
+alpha,excl-mercor-referral,2026-07-20,Mercor,,recruiter_initiated,"already captured; referral from Victor Ekuta is origin context, not a census application by itself",gmail,gth_62ea130fd6707472
+alpha,excl-mercor-signup-nudge,2026-06-30,Mercor,,marketplace_profile,"nothing additional; marketing claims he had not applied, which conflicts with 2026-06-22 Application Submitted receipts already coded",gmail,gth_673274a45cb9079f
+alpha,excl-mercor-onboard,2026-06-22,Mercor,,marketplace_profile,nothing; onboarding,gmail,gth_3f9c8bcfad4faad9
+alpha,excl-mercor-phone,2026-06-22,Mercor,,marketplace_profile,nothing; phone verification,gmail,gth_45572337494c92d5
+alpha,excl-micro1-community,2025-09-30,micro1,,marketplace_profile,a titled project submission (later micro1 rows are opportunities),gmail,gth_8c4ca88ea772f45e
+alpha,excl-micro1-jun5,2026-06-05,micro1,"Certified Expert Pool, ChatGPT AI training project",recruiter_initiated,a submission receipt for that project,gmail,gth_b3bb07f0ab28b8d1
+alpha,excl-micro1-refer,2026-06-23,micro1,,recruiter_initiated,nothing; referral bounty marketing,gmail,gth_c80adf55dc928a19
+alpha,excl-polcychemex,2025-08-14,polcychemex,,unresolvable_identity,verified employer identity; New Submission Update from this sender is not treated as employment,gmail,gth_de2ca6dbccd1f900
+alpha,excl-phiture-gdpr,2025-12-26,Phiture,,unresolvable_identity,nothing additional; GDPR after the 2025-07 Phiture application already coded,gmail,gth_8d0f7dade2781946
+alpha,excl-dover-sem-1,2026-12-14,,"Software Engineering Manager, Banking",recruiter_initiated,"employer ATS mail, not eml_93bc653507a1 interview-invitation newsletter",gmail,gth_21011524274fe2cd
+alpha,excl-dover-sem-2,2025-12-12,Rippling,"Software Engineering Manager, Banking",recruiter_initiated,Rippling or employer ATS confirming an application; beehiiv Dover newsletter is not that,gmail,gth_31655c2958e28390
+alpha,excl-ibm-warning,2026-03-03,IBM,,unresolvable_identity,nothing; fake-job-offer warning is not an application,gmail,gth_619060c558d58fb6
+alpha,excl-0061,2025-09-26,Leidos Systems,Software Engineer III REQ16295,recruiter_initiated,"Leidos or ATS application receipt, not Dover beehiiv newsletter",gmail,gth_565c9370a2d0bdb8
+alpha,excl-0062,2025-09-26,Leidos Systems,Software Engineer III REQ16295,recruiter_initiated,"Leidos or ATS application receipt, not Dover beehiiv newsletter",gmail,gth_a55083fc29111c0b
+alpha,excl-0063,2025-09-24,Leidos Systems,Software Engineer III REQ16295,recruiter_initiated,"Leidos or ATS application receipt, not Dover beehiiv newsletter",gmail,gth_181a0480f86b1543
+alpha,excl-0064,2025-09-23,Leidos Systems,Software Engineer III REQ16295,recruiter_initiated,"Leidos or ATS application receipt, not Dover beehiiv newsletter",gmail,gth_1d79fc9cee4208fb
+alpha,excl-0065,2025-10-08,Y Combinator,,marketplace_profile,a YC Work at a Startup applied-role screenshot or employer receipt for a named startup role,gmail,gth_75ea4ea59eca0ed0
+alpha,excl-0066,2025-10-01,Y Combinator,,marketplace_profile,a YC Work at a Startup applied-role screenshot or employer receipt for a named startup role,gmail,gth_5e5ae35d2058956f
+alpha,excl-0067,2025-09-24,Y Combinator,,marketplace_profile,a YC Work at a Startup applied-role screenshot or employer receipt for a named startup role,gmail,gth_b3dbf2263de0fffa
+alpha,excl-0068,2025-07-25,Y Combinator,,marketplace_profile,a YC Work at a Startup applied-role screenshot or employer receipt for a named startup role,gmail,gth_20b67c5c274bccba
+alpha,excl-0069,2025-07-18,Y Combinator,,marketplace_profile,a YC Work at a Startup applied-role screenshot or employer receipt for a named startup role,gmail,gth_fc1e35845bc29c38
+alpha,excl-0070,2025-07-11,Y Combinator,,marketplace_profile,a YC Work at a Startup applied-role screenshot or employer receipt for a named startup role,gmail,gth_02fb9f87fa9af643
+alpha,excl-0071,2026-04-14,Y Combinator,,marketplace_profile,a YC Work at a Startup applied-role screenshot or employer receipt for a named startup role,gmail,gth_b5939cf1181967c0
+alpha,excl-0072,2026-04-07,Y Combinator,,marketplace_profile,a YC Work at a Startup applied-role screenshot or employer receipt for a named startup role,gmail,gth_aff50ed93616568e
+alpha,excl-0073,2026-03-31,Y Combinator,,marketplace_profile,a YC Work at a Startup applied-role screenshot or employer receipt for a named startup role,gmail,gth_6e6a70ddea5111d9
+alpha,excl-0074,2026-07-22,Y Combinator,,marketplace_profile,a YC Work at a Startup applied-role screenshot or employer receipt for a named startup role,gmail,gth_b033e98fb78d0197
+alpha,excl-0075,2026-07-15,Y Combinator,,marketplace_profile,a YC Work at a Startup applied-role screenshot or employer receipt for a named startup role,gmail,gth_b28d07d09ba5a08a
+alpha,excl-wellfound-saved-nomi,2025-07-16,Wellfound,Nomi.ai Growth Hacker,attempted_not_submitted,Application to Nomi.ai successfully submitted,gmail,gth_b2786ede1d5085b4
+alpha,excl-wellfound-saved-podium,2025-06-04,Wellfound,Podium SDR,attempted_not_submitted,Application to Podium successfully submitted,gmail,gth_62004513dadf9afb
+alpha,excl-0078,2026-08-14,Mercor,GTM Engineer,unresolvable_identity,nothing additional; booking noise already parented on the Mercor GTM Engineer opportunity,gmail,gth_86b7728dd97f86fe
+alpha,excl-0079,2026-08-14,Mercor,GTM Engineer,unresolvable_identity,nothing additional; booking noise already parented on the Mercor GTM Engineer opportunity,gmail,gth_5e6e832a5a706a4a
+alpha,excl-0080,2026-08-14,Mercor,GTM Engineer,unresolvable_identity,nothing additional; booking noise already parented on the Mercor GTM Engineer opportunity,gmail,gth_6c05d1babff4f724
+alpha,excl-0081,2026-08-14,Mercor,GTM Engineer,unresolvable_identity,nothing additional; booking noise already parented on the Mercor GTM Engineer opportunity,gmail,gth_eafad5e84cc24cac
+alpha,excl-mercor-pay,2026-08-21,Mercor,,unresolvable_identity,nothing; payment policy mail is contract admin,gmail,gth_e80c4fed9b17dc73
+alpha,excl-mercor-marketing,2026-08-15,Mercor,,recruiter_initiated,nothing; remote roles marketing,gmail,gth_683c7a2ef312b3c7
+alpha,excl-0084,2025-11-20,AppFollow,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_8519a842c5b9ed6a
+alpha,excl-0085,2025-11-20,Informa,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_f3fc895034b63db4
+alpha,excl-0086,2025-11-20,Lane Enterprises,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_092f24e422b0d397
+alpha,excl-0087,2025-11-20,BSN SPORTS,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_f6f1ced99eee15ae
+alpha,excl-0088,2025-11-20,Instep,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_4e1def7eb2845b3d
+alpha,excl-0089,2025-11-20,Endeavor,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_0aabac4b7db78406
+alpha,excl-0090,2025-11-19,CrossCountry Mortgage,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_6b74e706a76eaa26
+alpha,excl-0091,2025-11-19,Anywhere,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_5cfb4290a688f841
+alpha,excl-0092,2025-11-19,Rivercity,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_f9490a68378fde23
+alpha,excl-0093,2025-11-19,QuinStreet,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_09924326c9b4d543
+alpha,excl-0094,2025-11-19,Sun Communities,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_3a069aff4f30b0fa
+alpha,excl-0095,2025-11-19,Techtronic,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_aae341a084a706ca
+alpha,excl-0096,2025-11-19,Procore,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_5de1eabe2d5f934f
+alpha,excl-0097,2025-11-19,Hirelyst,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_db472627160c8d3c
+alpha,excl-0098,2025-11-19,Henry Schein,,recruiter_initiated,a Jobright or employer receipt stating an application was submitted to this employer,gmail,gth_8a52c9bcbf0eebbc
+alpha,excl-jobright-letsland,2025-11-19,Jobright,,marketplace_profile,a tracker export or submitted-application receipt,gmail,gth_a1cd93365a2b5c2b
+alpha,excl-jobright-turbo,2025-11-18,Jobright,,marketplace_profile,"a titled application submission, not Welcome to Turbo",gmail,gth_db9af840a3624746
+alpha,excl-jobright-welcome,2025-11-18,Jobright,,marketplace_profile,a titled application submission,gmail,gth_13480d89c7726a0e
+alpha,excl-0102,2025-09-01,eml_c7bbad99db65,,consulting_prospect,an employment application receipt rather than a vendor/community meeting,gcal,cal_81e3ae9fa370f35d
+alpha,excl-0103,2025-10-09,Apollo.io,,consulting_prospect,an employment application receipt rather than a vendor/community meeting,gcal,cal_6bb1c47adcdd1d55
+alpha,excl-0104,2025-11-18,Morph Data Strategies,,consulting_prospect,an employment application receipt rather than a vendor/community meeting,gcal,cal_a7ba38980d6842f2
+alpha,excl-0105,2025-12-08,Zentrik,,consulting_prospect,an employment application receipt rather than a vendor/community meeting,gcal,cal_20d9ff1411721af6
+alpha,excl-0106,2025-12-09,Stainless,,consulting_prospect,an employment application receipt rather than a vendor/community meeting,gcal,cal_ec6c03f0aa2fc405
+alpha,excl-0107,2025-12-27,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_b41ad6d5ee32083c
+alpha,excl-0108,2026-01-07,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_a2ef2ca32dde14f4
+alpha,excl-0109,2026-01-07,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_d86a27aebff99671
+alpha,excl-0110,2026-01-28,Sideguide/Firecrawl,,consulting_prospect,an employment application receipt rather than a vendor/community meeting,gcal,cal_70d57a14409d9ffc
+alpha,excl-0111,2026-02-03,Generate Leverage,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_de0ff8d21471def8
+alpha,excl-0112,2026-03-05,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_81eb98e5b839f346
+alpha,excl-0113,2026-03-11,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_d6b9d3494adeeeab
+alpha,excl-0114,2026-03-11,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_65ab9572ce79feb6
+alpha,excl-0115,2026-03-11,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_7a4a29c0a99d4d9f
+alpha,excl-0116,2026-03-12,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_da6b5022836a0471
+alpha,excl-0117,2026-03-14,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_eb731e27a587f7d6
+alpha,excl-0118,2026-03-18,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_112404d755dac3c4
+alpha,excl-0119,2026-03-24,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_9fbe503ae75ba28e
+alpha,excl-0120,2026-04-06,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_b8a710c6ac400259
+alpha,excl-0121,2026-04-07,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_574a8acd62e7fd72
+alpha,excl-0122,2026-04-07,Rocketeer,,consulting_prospect,an employment application receipt rather than a vendor/community meeting,gcal,cal_6add967b44c631c0
+alpha,excl-0123,2026-04-08,Tracxn,,consulting_prospect,an employment application receipt rather than a vendor/community meeting,gcal,cal_06c2b21370c484a3
+alpha,excl-0124,2026-04-14,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_9f001b0d0f09b2be
+alpha,excl-0125,2026-04-17,,,consulting_prospect,an employment application receipt rather than a vendor/community meeting,gcal,cal_a1bcc9801a37d00e
+alpha,excl-0126,2026-04-17,Apollo,,consulting_prospect,an employment application receipt rather than a vendor/community meeting,gcal,cal_5f995c0e1f025e32
+alpha,excl-0127,2026-04-17,Inboxkit,,consulting_prospect,an employment application receipt rather than a vendor/community meeting,gcal,cal_d38c6d180362442d
+alpha,excl-0128,2026-04-27,HeyReach,,consulting_prospect,an employment application receipt rather than a vendor/community meeting,gcal,cal_0f5d67009c8cc570
+alpha,excl-0129,2026-08-09,Morph Data Strategies,,consulting_prospect,an employment application receipt rather than a vendor/community meeting,gcal,cal_16ced7f17297a2ab
+alpha,excl-0130,2026-08-24,oneaway.io,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_fb0aeb2ee86c9d32
+alpha,excl-0131,2026-08-24,,,unresolvable_identity,an employment submission artifact tying this calendar event to a named job application,gcal,cal_fcc83ecba594bf2c
+alpha,excl-zentrik-mail,2025-12-08,Zentrik,,consulting_prospect,an employment application,gmail,gth_46fbfd7c306bff21
+alpha,excl-stainless-intro,2025-12-08,Stainless,,consulting_prospect,an employment application,gmail,gth_8f55d0dc5fd9076a
+alpha,excl-stainless-inv,2025-12-09,Stainless,,consulting_prospect,an employment application,gmail,gth_1caa648ef2ffcfcc
+alpha,excl-erin-inv,2026-01-23,Sideguide,,consulting_prospect,an employment application; Firecrawl product feedback is not a job process,gmail,gth_fd29e801a368beea
+alpha,excl-firecrawl-cal-reminder,2026-01-28,Firecrawl,,consulting_prospect,an employment application,gmail,gth_72703779be2ed795
+alpha,excl-morph-mail,2025-11-18,Morph Data Strategies,,consulting_prospect,an employment application,gmail,gth_46089754186167ea
+alpha,excl-inboxkit-1,2026-04-17,Inboxkit,,consulting_prospect,an employment application,gmail,gth_670e55cfb59922d4
+alpha,excl-inboxkit-2,2026-04-17,Inboxkit,,consulting_prospect,an employment application,gmail,gth_f9f443ae20528577
+alpha,excl-inboxkit-3,2026-04-17,Inboxkit,,consulting_prospect,an employment application,gmail,gth_7d3e0aeeca654010
+alpha,excl-0141,2025-11-02,,,unresolvable_identity,nothing; YC newsletter,gmail,gth_491d93787294301f
+alpha,excl-0142,2025-10-29,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_77b1abc66b668ee1
+alpha,excl-0143,2025-10-29,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_32415c049e7990cb
+alpha,excl-0144,2025-10-20,,,unresolvable_identity,nothing; university deadline alert,gmail,gth_8b805a03b391cf13
+alpha,excl-0145,2025-10-09,,,unresolvable_identity,nothing; university deadline alert,gmail,gth_b2ea6228786e722d
+alpha,excl-0146,2025-09-25,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_0b5762c6e5785789
+alpha,excl-0147,2025-09-23,,,unresolvable_identity,nothing; university deadline alert,gmail,gth_218e9412163555f5
+alpha,excl-0148,2025-09-19,,,unresolvable_identity,nothing; loan marketing,gmail,gth_b67e461471f93b01
+alpha,excl-0149,2025-09-13,,,unresolvable_identity,nothing; university deadline alert,gmail,gth_63b5daa5a332cead
+alpha,excl-0150,2025-09-11,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_881243b315683b6f
+alpha,excl-0151,2025-09-10,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_5bba6a25e7b383d2
+alpha,excl-0152,2025-09-07,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_699f276e0d5a034c
+alpha,excl-0153,2025-09-05,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_4fc2c69f0d59e696
+alpha,excl-0154,2025-09-04,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_96151e83ff1faa8a
+alpha,excl-0155,2025-09-04,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_6d52844c38ab69aa
+alpha,excl-0156,2025-09-04,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_d7d4871845df998c
+alpha,excl-0157,2025-09-03,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_d4d76b3f65cbce06
+alpha,excl-0158,2025-09-02,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_1c12c8819bedadad
+alpha,excl-0159,2025-09-02,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_6e0ed890690379f2
+alpha,excl-0160,2025-08-30,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_7afb7c3281f394e4
+alpha,excl-0161,2025-08-29,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_509e9f96bea26cb9
+alpha,excl-0162,2025-08-28,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_41ea4c5e1d1e9d8b
+alpha,excl-0163,2025-08-27,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_04e5927f286fa263
+alpha,excl-0164,2025-08-26,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_b14a8013f226b821
+alpha,excl-0165,2025-08-22,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_9baf887f40e42ea4
+alpha,excl-0166,2025-08-20,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_e0f04b83d6dcd4f4
+alpha,excl-0167,2025-08-20,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_7c5e2a5d1d566cbc
+alpha,excl-0168,2025-08-19,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_e044107dad4de31d
+alpha,excl-0169,2025-08-18,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_c72b40eb6ec9d1a9
+alpha,excl-0170,2025-08-14,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_1b1c2fc25c2119c4
+alpha,excl-0171,2025-08-09,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_5aee1f233f3ca391
+alpha,excl-0172,2025-08-08,,,unresolvable_identity,nothing; education marketing,gmail,gth_275ddfe57cec8d74
+alpha,excl-0173,2025-08-07,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_e23737159fc55d2f
+alpha,excl-0174,2025-08-04,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_10c234cf1b8b9fba
+alpha,excl-0175,2025-07-28,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_e1acd2ecdb762c56
+alpha,excl-0176,2025-07-27,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_aab6dd091318019c
+alpha,excl-0177,2025-07-19,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_5f75ccbe531f49aa
+alpha,excl-0178,2025-07-17,,,marketplace_profile,Application to [company] successfully submitted for a named role,gmail,gth_c033a4c9fe50c1fe
+alpha,excl-0179,2025-07-15,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_7be9b6c8f91ea9bc
+alpha,excl-0180,2025-07-15,,,unresolvable_identity,nothing; education marketing,gmail,gth_4219c65436bbc730
+alpha,excl-0181,2025-07-12,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_b1ecd4cdd7f9f673
+alpha,excl-0182,2025-07-05,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_6e0cd513d87f37f5
+alpha,excl-0183,2025-07-01,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_c325aed787a2aca7
+alpha,excl-0184,2025-06-24,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_771afc1fce7b13ce
+alpha,excl-0185,2025-06-22,,,unresolvable_identity,nothing; YC newsletter,gmail,gth_7b12df4dc7e02360
+alpha,excl-0186,2025-06-19,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_9e81450cacef68a6
+alpha,excl-0187,2025-06-17,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_59ff02e770e71000
+alpha,excl-0188,2025-06-06,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_80f817a76768b68a
+alpha,excl-0189,2026-01-14,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_9b24de7c9f002ebe
+alpha,excl-0190,2026-01-07,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_92517916727fc3db
+alpha,excl-0191,2026-01-03,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_714f146b12f977e6
+alpha,excl-0192,2025-12-22,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_ca4ddf626d2eaa76
+alpha,excl-0193,2025-12-08,,,unresolvable_identity,nothing; university deadline alert,gmail,gth_f1024963350d5930
+alpha,excl-0194,2025-12-05,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_b27e9b6bad2be471
+alpha,excl-0195,2025-12-05,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_c498dd1e7595ff4f
+alpha,excl-0196,2025-12-01,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_b6861edebb4dd032
+alpha,excl-0197,2025-11-27,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_beb770bd3ded8b73
+alpha,excl-0198,2025-11-26,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_292c70156d792619
+alpha,excl-0199,2025-11-25,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_74ca9e00bcc1d317
+alpha,excl-0200,2025-11-24,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_e9b3bcc6693e9daa
+alpha,excl-0201,2025-11-20,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_102b540bfa0fb7de
+alpha,excl-0202,2025-11-19,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_2d6bbb48c2ad1d2f
+alpha,excl-0203,2025-11-10,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_403032e6c80ab823
+alpha,excl-0204,2025-11-10,,,unresolvable_identity,nothing; university deadline alert,gmail,gth_2e87e6666706db7d
+alpha,excl-0205,2025-11-09,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_78df8e96308b8dd0
+alpha,excl-0206,2025-11-03,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_0717e19c2d2c6c90
+alpha,excl-0207,2025-11-03,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_6c054b6b3f2fbf7b
+alpha,excl-0208,2026-04-14,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_d1b6761640fd5283
+alpha,excl-0209,2026-04-14,,,unresolvable_identity,nothing; grant newsletter,gmail,gth_5ab3224c6e3ebb79
+alpha,excl-0210,2026-04-13,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_8199b493202ac44c
+alpha,excl-0211,2026-04-10,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_7ef0313ec164adfc
+alpha,excl-0212,2026-04-09,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_ac3a7e06b3f01288
+alpha,excl-0213,2026-04-07,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_358c16a176ddf939
+alpha,excl-0214,2026-04-04,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_306c4574e98df190
+alpha,excl-0215,2026-04-02,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_685994f2de7aeb69
+alpha,excl-0216,2026-04-02,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_dc69635c7ebb68e5
+alpha,excl-0217,2026-03-31,,,unresolvable_identity,nothing; grant newsletter,gmail,gth_38406d0e520eb6df
+alpha,excl-0218,2026-03-31,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_795be7604eb21d9c
+alpha,excl-0219,2026-03-30,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_168e328033ed6e7b
+alpha,excl-0220,2026-03-29,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_eedb7e00a94a07de
+alpha,excl-0221,2026-03-28,,,unresolvable_identity,nothing; grant newsletter,gmail,gth_99586a7fb6c4c3be
+alpha,excl-0222,2026-03-23,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_876783f9cf268e0c
+alpha,excl-0223,2026-03-21,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_624126b47412983b
+alpha,excl-0224,2026-03-17,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_0414da836ed4c866
+alpha,excl-0225,2026-03-14,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_4fb017556f188798
+alpha,excl-0226,2026-03-11,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_a9f6d044647eef4a
+alpha,excl-0227,2026-03-10,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_ca0ad209589a76ed
+alpha,excl-0228,2026-03-07,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_e975f246d99e0c3f
+alpha,excl-0229,2026-03-06,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_0c2ea72e319e1655
+alpha,excl-0230,2026-03-03,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_284f40ef4b066b3a
+alpha,excl-0231,2026-02-21,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_d0f386cca85ed398
+alpha,excl-0232,2026-02-11,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_d96a6b4ff2469a68
+alpha,excl-0233,2026-02-07,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_ec3437ccf18d6a99
+alpha,excl-0234,2026-02-06,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_a3348b7dc31f8f12
+alpha,excl-0235,2026-02-05,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_81ef08bf1974904a
+alpha,excl-0236,2026-02-01,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_d5e34e6fb8a4de36
+alpha,excl-0237,2026-01-31,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_aebec42cd84603e2
+alpha,excl-0238,2026-01-29,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_e96c969f298d9372
+alpha,excl-0239,2026-01-28,,,unresolvable_identity,nothing; grant newsletter,gmail,gth_cf0beff7296f0575
+alpha,excl-0240,2026-01-28,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_3c6f920c636b828e
+alpha,excl-0241,2026-01-26,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_57089f1db6881fbc
+alpha,excl-0242,2026-01-24,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_9cf31b52883862e4
+alpha,excl-0243,2026-01-15,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_e29d44397894b149
+alpha,excl-0244,2026-06-13,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_626eb6d12b3c45d1
+alpha,excl-0245,2026-06-13,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_efb95bc1888f6d47
+alpha,excl-0246,2026-06-12,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_c0b14fd394c13a48
+alpha,excl-0247,2026-06-11,,,unresolvable_identity,nothing; loan marketing,gmail,gth_1bad945002d0f449
+alpha,excl-0248,2026-06-11,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_a27215ddfc03e3f5
+alpha,excl-0249,2026-06-10,,,unresolvable_identity,nothing; university deadline alert,gmail,gth_f04285f364559d81
+alpha,excl-0250,2026-06-09,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_34670322bca5cea1
+alpha,excl-0251,2026-06-09,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_070285edc10539e1
+alpha,excl-0252,2026-06-08,,,unresolvable_identity,nothing; loan marketing,gmail,gth_43d1739ea2c2adbd
+alpha,excl-0253,2026-06-02,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_165df5cc5a2d1ff8
+alpha,excl-0254,2026-06-02,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_651355993d90df96
+alpha,excl-0255,2026-05-29,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_79b4e66199b08a60
+alpha,excl-0256,2026-05-27,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_569655e019110ddc
+alpha,excl-0257,2026-05-27,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_fe024f02a57caa01
+alpha,excl-0258,2026-05-26,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_2d8a664ecbcc281a
+alpha,excl-0259,2026-05-26,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_ef8b4a2a94f1545b
+alpha,excl-0260,2026-05-25,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_c189e4720216a363
+alpha,excl-0261,2026-05-20,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_23698273080e86fb
+alpha,excl-0262,2026-05-19,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_333664fe50ec3b0e
+alpha,excl-0263,2026-05-19,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_71caef60385d96ca
+alpha,excl-0264,2026-05-16,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_5abcd97e0114114e
+alpha,excl-0265,2026-05-14,,,unresolvable_identity,nothing; loan marketing,gmail,gth_cf83420f13a086bc
+alpha,excl-0266,2026-05-12,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_6d48746dd351d722
+alpha,excl-0267,2026-05-05,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_8ee70aa3a2307ca8
+alpha,excl-0268,2026-05-05,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_d4163c51da9ccbf8
+alpha,excl-0269,2026-05-04,,,unresolvable_identity,nothing; loan marketing,gmail,gth_3c107cc75251d347
+alpha,excl-0270,2026-05-04,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_922e5b0e94599834
+alpha,excl-0271,2026-05-03,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_b9115e0e0517da55
+alpha,excl-0272,2026-05-02,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_84ba2c1523908d20
+alpha,excl-0273,2026-05-01,,,unresolvable_identity,nothing; university deadline alert,gmail,gth_abf1a6977814e7b4
+alpha,excl-0274,2026-04-29,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_36e06789c363ea27
+alpha,excl-0275,2026-04-29,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_751b400a95a13f03
+alpha,excl-0276,2026-04-28,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_298d47ccbbe95e78
+alpha,excl-0277,2026-04-27,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_7750c7418150bb59
+alpha,excl-0278,2026-04-25,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_4f3bcf229f2c1c22
+alpha,excl-0279,2026-04-23,,,unresolvable_identity,nothing; grant newsletter,gmail,gth_2703e4f59601af8d
+alpha,excl-0280,2026-04-21,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_a1b79498ae28ac81
+alpha,excl-0281,2026-04-18,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_475865cef0dbb3e6
+alpha,excl-0282,2026-08-28,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_f7e8cff09443fbe1
+alpha,excl-0283,2026-08-25,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_b05239f2862c7e85
+alpha,excl-0284,2026-08-21,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_0b570b121cde0750
+alpha,excl-0285,2026-08-20,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_43238ddfb44be178
+alpha,excl-0286,2026-08-20,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_ba2e475b843c91a4
+alpha,excl-0287,2026-08-19,,,unresolvable_identity,newsletter,gmail,gth_66a137e7b8264bc5
+alpha,excl-0288,2026-08-18,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_7755afd467ff2722
+alpha,excl-0289,2026-08-17,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_dfd0d526efb25c4b
+alpha,excl-0290,2026-08-11,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_21ae57d3dbadd39a
+alpha,excl-0291,2026-08-10,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_0230f5fe1d277712
+alpha,excl-0292,2026-08-10,,,unresolvable_identity,nothing; university deadline alert,gmail,gth_015c90cd03618691
+alpha,excl-0293,2026-08-05,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_7c8f8f136c8da8b9
+alpha,excl-0294,2026-08-04,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_d81c57495eb94d9a
+alpha,excl-0295,2026-08-03,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_f6470846d388d6b7
+alpha,excl-0296,2026-07-29,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_3c00ecc01027d2e4
+alpha,excl-0297,2026-07-28,,,marketplace_profile,an Apply4Me Application Sent receipt (those are already coded where present),gmail,gth_02aa2e2a010a44be
+alpha,excl-0298,2026-07-28,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_ca277e6b6d0ba021
+alpha,excl-0299,2026-07-22,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_d9ea94c9812cad86
+alpha,excl-0300,2026-07-21,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_12582f6380a92533
+alpha,excl-0301,2026-07-20,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_b2f1914958215d19
+alpha,excl-0302,2026-07-19,,,unresolvable_identity,nothing; YC newsletter,gmail,gth_79bf452f68b98a19
+alpha,excl-0303,2026-07-14,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_e76748b641712b27
+alpha,excl-0304,2026-07-12,,,unresolvable_identity,nothing; YC newsletter,gmail,gth_55d3800426403008
+alpha,excl-0305,2026-07-11,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_0de6d7c9bc50831d
+alpha,excl-0306,2026-07-10,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_b773f780ce33bd98
+alpha,excl-0307,2026-07-07,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_11745fa28a047618
+alpha,excl-0308,2026-06-30,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_729d636712917f43
+alpha,excl-0309,2026-06-25,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_cc4c8655648794d6
+alpha,excl-0310,2026-06-18,,,unresolvable_identity,nothing; loan marketing,gmail,gth_741ca63689d90648
+alpha,excl-0311,2026-06-16,,,recruiter_initiated,"an Anthropic application receipt, not a jobs-alert",gmail,gth_d2bf1b922efb3359
+alpha,excl-0312,2026-07-23,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_2961922ee1e05822
+alpha,excl-0313,2026-07-01,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_2c54961c484f7a08
+alpha,excl-0314,2026-06-29,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_814c63e3918dc295
+alpha,excl-0315,2026-06-20,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_1b07fe8ad08d5e78
+alpha,excl-0316,2026-06-15,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_4fd389c0fa4a7d46
+alpha,excl-0317,2026-06-11,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_327c08651f93ba8d
+alpha,excl-0318,2026-06-01,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_7f23096e13304e24
+alpha,excl-0319,2026-05-28,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_0648957466794822
+alpha,excl-0320,2026-05-22,,,unresolvable_identity,newsletter; an employment application receipt from an employer or ATS,gmail,gth_68b192dfb374e8d1
+alpha,excl-0321,2026-05-17,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_bd0e67cc89002826
+alpha,excl-0322,2026-05-01,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_7a2234f3970cab26
+alpha,excl-0323,2026-03-26,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_624e034e74f5ef27
+alpha,excl-0324,2026-03-16,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_68bbcda5c95d7343
+alpha,excl-0325,2026-03-11,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_7c77a41c65d05811
+alpha,excl-0326,2026-01-23,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_747a43b780c815b4
+alpha,excl-0327,2025-08-04,,,unresolvable_identity,"product, newsletter, or non-employment mail; an employer application receipt would promote it",gmail,gth_a12ff41a8b724340
+alpha,excl-0328,2025-08-03,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_e42ef28149bcc6ea
+alpha,excl-0329,2026-08-18,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_48348bd5996cc528
+alpha,excl-0330,2025-11-10,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_e8e3dd2a0d895828
+alpha,excl-0331,2025-11-10,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_5821657e679ba322
+alpha,excl-0332,2026-02-09,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_86dfe5d3cd95589a
+alpha,excl-0333,2026-02-08,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_f9794aab463ca55e
+alpha,excl-0334,2026-02-07,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_96a7bd12e690b03e
+alpha,excl-0335,2026-02-07,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_a1ea9da1e4a6512f
+alpha,excl-0336,2026-02-06,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_489278b00c5a3cbd
+alpha,excl-0337,2026-02-04,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_75ff911cdc55bb49
+alpha,excl-0338,2026-02-02,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_ee4bd5ea71f98239
+alpha,excl-0339,2026-01-31,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_0c26a3c839c77ac5
+alpha,excl-0340,2026-01-29,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_16a58b74712c3391
+alpha,excl-0341,2026-01-27,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_37c10cd931098aed
+alpha,excl-0342,2026-01-27,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_a0c5432c11e01da5
+alpha,excl-0343,2026-01-25,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_d08d37e61e3cbbe9
+alpha,excl-0344,2026-01-23,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_a02229f90652aaba
+alpha,excl-0345,2026-01-23,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_5f9928a89b9f71c1
+alpha,excl-0346,2026-01-22,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_b94cd7c4318e45a5
+alpha,excl-0347,2026-01-22,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_fea68212aa72fe0e
+alpha,excl-0348,2026-01-21,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_dc1512b7569b4cbe
+alpha,excl-0349,2026-01-20,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_1c54486a98431310
+alpha,excl-0350,2026-01-19,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_b73757055835c874
+alpha,excl-0351,2025-12-27,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_2912dd5f1b0d8267
+alpha,excl-0352,2025-12-23,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_c9999a02c40f2b5b
+alpha,excl-0353,2025-12-21,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_80d25585157c23e9
+alpha,excl-0354,2025-12-08,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_4b4f8e9306336842
+alpha,excl-0355,2025-12-08,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_92f810a1a059ae86
+alpha,excl-0356,2025-12-08,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_1a1b72da389c8dd6
+alpha,excl-0357,2025-12-08,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_c585fdbe0457f9bf
+alpha,excl-0358,2025-12-07,,,unresolvable_identity,an employer or ATS submission receipt naming company and role,gmail,gth_10af54ce2664cf3a
