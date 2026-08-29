@@ -90,7 +90,7 @@ Pressure-test names (origin, what happened, interviewed):
 - Hotglue: Kevin Wright BDM conversation 2026-04-20. No ATS receipt. **Yes, opportunity.**
 - Every.to: thanks for applying, calendar 2026-04-21 with Austin. **Yes, in the 14.**
 - Mixmax: product welcome and Heath meeting. **No. Exclusion.**
-- Mobb / mobb.dev: Gusto first-day and keegan@mobb.ai. Employment, not a search application.
+- Mobb / mobb.dev: Gusto first-day and a Mobb employment mailbox. Employment, not a search application.
 - Pin: Erica Stacy Tarwater 2025-06-30, Conor Kline 2025-07-07, then rejection. No ATS receipt. User recalled Erika. Mail uses Erica. **Yes, opportunity.**
 - BCOFA: GTM strategy and copywriting with Dr. Blaney. **No. Consulting.**
 - PhrasIQ: Discovery 2026-04-02 and Deep Dive 2026-04-15. **Yes, in the 14.**

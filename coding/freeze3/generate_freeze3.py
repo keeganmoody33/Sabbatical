@@ -375,7 +375,7 @@ def main() -> None:
             "company": "Mobb.dev",
             "role": "Business Development",
             "exclusion_reason": "unknown",
-            "what_would_promote_it": "Nothing. Gusto first-day mail and keegan@mobb.ai are employment onboarding, not a search application.",
+            "what_would_promote_it": "Nothing. Gusto first-day mail and a Mobb employment mailbox are employment onboarding, not a search application.",
             "evidence_system": "gmail",
             "evidence_id": "gth_96b8c659b5fa2546",
         },

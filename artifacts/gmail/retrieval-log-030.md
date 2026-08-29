@@ -17,8 +17,8 @@ Log 021 was page 1 of `GMAIL_LIST_THREADS` (50 threads). This pass covers that p
 |---|---|---|---|
 | 2025-07-07 | eml_a104534da53d | Pin, Re: Next Steps, not moving forward after Conor interview | gth_fe49801b0505bbbc |
 | 2026-03-24 to 03-26 | Orchestry / Breezy | Recruiter Screen reminders. Already in Freeze 1 as Orchestry GTM Engineer (Sales) | gth_75b51a62759f69be, gth_f5dbe645e66b665d |
-| 2026-03-19 | emily@beautiful.ai | State of GTME follow-up, already in Freeze 1 | gth_ec1fac33cf5f23f1 |
-| 2026-06-15 | hudson@thehog.ai | Invitation Keegan Moody and Hudson Liao | gth_d1989dfb9542a2da |
+| 2026-03-19 | eml_5b07f5a5583b | State of GTME follow-up, already in Freeze 1 | gth_ec1fac33cf5f23f1 |
+| 2026-06-15 | eml_24f646d7eb92 | Invitation Keegan Moody and Hudson Liao | gth_d1989dfb9542a2da |
 
 Most remaining hits are newsletters, Product Hunt, Skool digests, and process mail already listed in logs 001 to 021.
 

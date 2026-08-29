@@ -10,8 +10,8 @@ Role: retriever. No coding.
 
 | date | sender | subject | thread_id |
 |---|---|---|---|
-| 2026-07-13 | eml_ (HartleyCo) | Regarding Your Application - GTM Engineer, plus SENT replies the same day | gth_59384916f1d2f6ca |
-| 2026-04-20 | austin@every.to | Every chat. SENT: booked tomorrow at 12:15 | gth_3731d4c2c0e7637c |
+| 2026-07-13 | eml_0a253147bb65 | Regarding Your Application - GTM Engineer, plus SENT replies the same day | gth_59384916f1d2f6ca |
+| 2026-04-20 | eml_50d007c54e63 | Every chat. SENT: booked tomorrow at 12:15 | gth_3731d4c2c0e7637c |
 | 2026-02-24 | keeganmoody33@gmail.com | Re: Ambrook Application Update (SENT reply to an Ashby decline) | gth_028345fa3b82dbe0 |
 
 ## Retriever notes

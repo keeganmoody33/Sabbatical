@@ -65,4 +65,4 @@ Capture recapture was not computed. The LinkedIn file still lacks an Easy Apply 
 1. Pin has no submission artifact, so it is opportunity even though two interviews and a rejection exist.
 2. Opsin recruiter called the Pham meeting a video interview and a later take-home the 2nd round. Round_number on the Pham event is 1 because no earlier interview event is in the corpus.
 3. TrueBuilt Easy Apply and the July GTM project quote are not merged. Different artifact classes.
-4. Mobb is excluded rather than coded as an application. Gusto first-day and keegan@mobb.ai are employment, not a search cycle.
+4. Mobb is excluded rather than coded as an application. Gusto first-day and a Mobb employment mailbox are employment, not a search cycle.

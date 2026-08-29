@@ -40,7 +40,7 @@ This calendar holds the interview loops that lecturesfrom did not. Job-process t
 
 - Pin: 1 Hour Meeting with Erica Stacy Tarwater 2025-06-30. 30 Min Meeting with Conor Kline 2025-07-07.
 - Mixmax: No Agenda Meeting with Heath 2025-08-14.
-- Mobb: Weekly BD Huddle 2025-06-09, organizer at mobb.ai, attendee keegan@mobb.ai.
+- Mobb: Weekly BD Huddle 2025-06-09, organizer at mobb.ai, attendee eml_b0aac6b6d044.
 - BCOFA: GTM Strategy Discussion with Dr. Blaney 2026-03-06.
 - Opsin Sync 2026-03-13.
 - Interview with beautiful.ai 2026-03-17.
