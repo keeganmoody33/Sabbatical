@@ -5,16 +5,16 @@ Freeze 1 Gmail and Calendar extracts were not recoded.
 - Jobright tracker rows coded as applications: 40
 - LinkedIn applied-list rows coded (including opportunity): 98
 - Platform exclusions: 1
-- Platform rows overlapping Freeze 1 applications: 55
-- Net-new platform_log applications: 78
+- Platform rows overlapping Freeze 1 applications: 56
+- Net-new platform_log applications: 77
 - Freeze 1 application census: 221
-- Full census (Freeze 1 plus net-new): 299
+- Full census (Freeze 1 plus net-new): 298
 - Interviewed in Freeze 1 (cursor events, application register): 14
 - Interviewed in full census: 14 (platform files carry no interview events)
 
 Capture recapture was not computed. The LinkedIn file is pages 1 to 10 of an applied list and does not label Easy Apply versus external ATS. LinkedIn submission_channel is therefore unknown.
 
-Four platform titles matched Freeze 1 as expansions of the same opening: Thomson Reuters AE Tax or Risk, Foursquare AE New Business, UpGuard SDR Manager, Verkada Enterprise Solutions Engineer Atlanta. They are overlap, not net-new.
+Five platform titles matched Freeze 1 as the same opening: Thomson Reuters AE Tax or Risk, Foursquare AE New Business, UpGuard SDR Manager, Verkada Enterprise Solutions Engineer Atlanta, and Listen Lead GTM Engineer (LinkedIn lists Listen, Freeze 1 uses Listen Labs). They are overlap, not net-new.
 
 ## Net-new applications
 
@@ -61,7 +61,6 @@ Four platform titles matched Freeze 1 as expansions of the same opening: Thomson
 | Jobright.ai | AI Engineer | linkedin | unknown |
 | Kognitos | Senior Solutions Engineer | linkedin | unknown |
 | Light Labs | GTM Engineer, Agents | linkedin | unknown |
-| Listen | Lead GTM Engineer | linkedin | unknown |
 | Logicbroker | AI GTM Engineer | linkedin | unknown |
 | Lyra Health | Senior GTM Enablement Specialist | linkedin | unknown |
 | MAJC | Revenue Operations & Business Development | linkedin | unknown |
