@@ -3,23 +3,23 @@
 Query Q4, rejection and closure language that need not contain the word "application":
 `{"move forward with other candidates" "moving forward with other candidates" "position has been filled" "pursue other candidates" "not be moving forward" "decided to move forward with" "other applicants" "no longer under consideration" "regret to inform"} -from:substack.com -from:ziprecruiter.com`
 
-Window 2025-06-01 to 2026-08-30. Page 1 of n. `nextPageToken` for page 2: `11099085172701946508`. Result count estimate 201. Returned this page: 50 threads.
+Window 2025-06-01 to 2026-08-30. Page 1 of n. `nextPageToken` for page 2: `tok_0febae1f78a8`. Result count estimate 201. Returned this page: 50 threads.
 
 ## Artifacts not previously captured
 
 | date | sender | subject | thread_id |
 |---|---|---|---|
-| 2026-08-04 | no-reply@lattice.com | Lattice, Update on the GTM Engineer role (position filled) | 19fcd8eedd9f532c |
-| 2026-07-23 | joshk@hartleyco.co.uk | **Update on the Founding GTM Role at Bluejay** (declined after process) | 19f8e4194f9a477d |
-| 2026-06-25 | recruiting.echo.newtonsoftware.com | Lead, Agentic Operations + GTM Engineering at RevSpring | 19eff2f62ca18205 |
-| 2026-04-25 | michael@switchyards.com | **Re: Digital Product Builder, Thank You** (Switchyards, declined) | 19dc62db344bac51 |
-| 2026-04-03 | delaney@dagsterlabs.com | **Dagster Labs follow-up** (2 msg thread, includes SENT: "thank you for taking the time to chat with me") | 19d54b76f8ffb104 |
-| 2026-03-30 | no-reply@pandadoc.com | We got it (PandaDoc GTM Engineer application received) | 19d3f0236cb930e4 |
-| 2026-03-27 | jay.banga@orchestry.com | Orchestry GTM Engineer (Sales) update, declined after interview process (2 msgs, includes SENT) | 19d31b20a0dfedb3 |
+| 2026-08-04 | no-reply@lattice.com | Lattice, Update on the GTM Engineer role (position filled) | gth_5d12791102226fed |
+| 2026-07-23 | eml_0a253147bb65 | **Update on the Founding GTM Role at Bluejay** (declined after process) | gth_2961922ee1e05822 |
+| 2026-06-25 | recruiting.echo.newtonsoftware.com | Lead, Agentic Operations + GTM Engineering at RevSpring | gth_272cbf95970f4335 |
+| 2026-04-25 | eml_a6197bff6164 | **Re: Digital Product Builder, Thank You** (Switchyards, declined) | gth_9a641357cd288f9d |
+| 2026-04-03 | eml_d3df7b160e39 | **Dagster Labs follow-up** (2 msg thread, includes SENT: "thank you for taking the time to chat with me") | gth_1c8ae3fa0432b375 |
+| 2026-03-30 | no-reply@pandadoc.com | We got it (PandaDoc GTM Engineer application received) | gth_02ae1915406326ae |
+| 2026-03-27 | eml_87e77a84a157 | Orchestry GTM Engineer (Sales) update, declined after interview process (2 msgs, includes SENT) | gth_0051fcbedbb7f591 |
 
 Previously captured rejections re-surfaced by this query, confirming the phrase set works: OpenObserve, Great Question, RevPartners (x2), IBM, Clutch, Hyperbound, Toast, HUD, jobmail.io Growth Lead, WireScreen, MinIO, Enlace Health, Cloudflare, Wealth.com, Adaptive6, Boulevard, ServiceTrade, ApartmentIQ, CoLab, Airtable, FOSSA, Unframe, Teleport, Ontra, Rula, Sur, Sardine, G2, Tapcheck (x2), DISQO, Beautiful.ai, Ambrook, Foursquare, Vonage, Agroknow, Crypto.com, Fullsteam.
 
-One false positive: `marketing@kooksheaders.com` "We Regret to Inform You…", an automotive parts promotion.
+One false positive: `eml_6dfb8c5aaa49` "We Regret to Inform You…", an automotive parts promotion.
 
 ## Retriever notes
 

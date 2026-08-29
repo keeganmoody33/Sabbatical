@@ -20,7 +20,7 @@ Account for logs 022–029: 33@lecturesfrom.com (this run).
 | Q5b | Gmail 33@lecturesfrom | same sent-mail language | full window | **done**, 1 page | 3 | 027 |
 | Q6 | Gmail 33@lecturesfrom | `in:sent` application language, no attachment | full window | **done**, zero threads | 0 | 023 |
 | Q6 | Gmail keeganmoody33 | same | full window | **blocked**, mailbox not connected | | 029 |
-| Q7 | Gmail keeganmoody33 | interview and scheduling language | full window | **incomplete**, page 1 of n, token `08010679308384994040` unused on the issuing account | 50 | 021 |
+| Q7 | Gmail keeganmoody33 | interview and scheduling language | full window | **incomplete**, page 1 of n, token `tok_f6fa12a39fc7` unused on the issuing account | 50 | 021 |
 | Q7b | Gmail 33@lecturesfrom | same interview language, from the start | full window | **done**, 1 page | 27 | 022 |
 | Q8 | Calendar 33@lecturesfrom | all events, 90 day blocks, no keyword filter | full window | **done**, 5 blocks | 31 events | calendar/q8-lecturesfrom-primary.csv |
 | Q8b | Calendar transferred keegan@lecturesfrom | same | full window | **done**, empty | 0 | calendar/q8-transferred-empty.md |

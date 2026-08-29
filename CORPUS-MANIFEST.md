@@ -17,11 +17,20 @@ Frozen 2026-08-29 ET for independent coding. Every coder receives this set. A co
 
 ## Retrieval is not coding
 
-Logs 001–029 are artifacts. They contain retriever notes. Coders treat subject, sender, date, thread_id, and quoted snippets as observations. Retriever notes are not coded as facts. If a note asserts a count, ignore the count.
+Logs 001–029 are artifacts. They contain retriever notes. Coders treat subject, sender, date, hashed `thread_id`, and quoted snippets as observations. Retriever notes are not coded as facts. If a note asserts a count, ignore the count.
 
 ## Redaction
 
-Message IDs and calendar IDs stay in the corpus. They never appear in published output.
+Committed artifacts store hashed evidence pointers, not raw provider IDs.
+
+- Gmail `thread_id` values are SHA-256 prefixes with a `gth_` prefix.
+- Calendar `event_id` values are SHA-256 prefixes with a `cal_` prefix.
+- Gmail page tokens are SHA-256 prefixes with a `tok_` prefix.
+- Applicant account IDs (IBM Candidate ID and matching req numbers) are replaced with `[redacted]`.
+- Third-party addresses are hashed with an `eml_` prefix. Study mailbox labels (`33@lecturesfrom.com`, `keeganmoody33@gmail.com`, `keegan@lecturesfrom.com`) remain so retrieval scope is auditable. Automated ATS senders (`noreply`, `talent@`, `notifications@`) stay as domain identity.
+- Coders join events to artifacts on these hashed pointers. Published paper copy never includes raw or hashed provider IDs.
+
+Git history on this branch before the redaction commit still contains raw identifiers. This commit does not rewrite history. A later history rewrite would be required to purge prior commits.
 
 ## Freeze rule
 

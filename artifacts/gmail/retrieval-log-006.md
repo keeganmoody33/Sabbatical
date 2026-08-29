@@ -1,58 +1,58 @@
 # Retrieval log 006
 
-Query Q2b, page 2 of n. `nextPageToken` for page 3: `17815458245021343124`. Returned this page: 47 threads.
+Query Q2b, page 2 of n. `nextPageToken` for page 3: `tok_661bab364705`. Returned this page: 47 threads.
 
 | date | sender | subject | thread_id |
 |---|---|---|---|
-| 2026-03-31 | no-reply@remail.wellfound.com | Your application to PhrasIQ was accepted (schedule an interview) | 19d453fe2506a0f5 |
-| 2026-03-31 | no-reply@ashbyhq.com | Update on Application from Tapcheck | 19d452f3f045ac93 |
-| 2026-03-31 | noreply@jobright.ai | Update on your application, Product Manager (Early Career), Jobright.ai | 19d44dbbde83f037 |
-| 2026-03-31 | workatastartup@ycombinator.com | Still looking for a job? | 19d443e6e02669c7 |
-| 2026-03-31 | no-reply@us.greenhouse-jobs.com | New Jobs at Anthropic | 19d43c76be89065d |
-| 2026-03-30 | no-reply@us.greenhouse-mail.io | Thank you for applying to Mento (GTM Engineer) | 19d40a113f180bf5 |
-| 2026-03-30 | no-reply@ashbyhq.com | Update from Tiger Data (declined) | 19d403563f7e04c0 |
-| 2026-03-30 | no-reply@ashbyhq.com | Thank you for applying, Tiger Data (GTM AI Engineer) | 19d3f415525c9364 |
-| 2026-03-30 | no-reply@vercel.com | Thank you for applying to Vercel (GTM Engineer) | 19d3f09c5fd55395 |
-| 2026-03-30 | no-reply@ashbyhq.com | Thank You for Applying to Tapcheck | 19d3f065b6c86f9d |
-| 2026-03-30 | no-reply@ashbyhq.com | Thank you for your Roboflow application (RevOps GTM Engineer) | 19d3f0327312df05 |
-| 2026-03-30 | no-reply@ashbyhq.com | Thank you for applying to G2 (GTM Engineer) | 19d3efd2db98f59f |
-| 2026-03-30 | no-reply@us.greenhouse-mail.io | Thanks for applying to Dagster Labs (GTM Engineer) | 19d3ef8798237401 |
-| 2026-03-30 | thegtmengineer@substack.com | The 3/30 GTM Engineering roundup | 19d3edff7bb253b4 |
-| 2026-03-30 | no-reply@hire.lever.co | Thank you for your application to Unstructured (GTM Engineer, Operations) | 19d3ebf796ee1523 |
-| 2026-03-30 | no-reply@us.greenhouse-mail.io | Security code for your application to PandaDoc (resubmit required) | 19d3ebc1d0bb91a6 |
-| 2026-03-30 | no-reply@us.greenhouse-mail.io | Security code for your application to Dagster Labs (resubmit required) | 19d3eb97daebde93 |
-| 2026-03-29 | nextplayso@substack.com | A better way to apply to startups | 19d3a090bd759e17 |
-| 2026-03-28 | no-reply@newrelic.com | Let us know if New Relic can keep your information | 19d35a3c32b6d6a4 |
-| 2026-03-28 | Rose@grantwatch.com | Georgia grants on GrantWatch | 19d32033f0f13213 |
-| 2026-03-27 | no-reply@notifications.dover.io | Adapt has received your application (GTM Engineer / RevOps Lead) | 19d305c5bd7e45ef |
-| 2026-03-26 | emily@beautiful.ai | Beautiful.ai, An Update to your Application (2 msg thread, post-interview decline, includes SENT) | 19d2c002fd6328f6 |
-| 2026-03-25 | candidate-1bc449f9dc38@orchestry-software-inc.breezy-mail.com | Recruiter Screen (video call) | 19d26fa4dceba5a6 |
-| 2026-03-25 | jay.banga@orchestry.com | Update: Your application for Orchestry's GTM Engineer (Sales), missed interview | 19d26be3aa1d4344 |
-| 2026-03-25 | no-reply@us.greenhouse-mail.io | Your application for Apprentice Engineer at Pinterest | 19d2273d2d508ca1 |
-| 2026-03-24 | candidate-1bc449f9dc38@orchestry-software-inc.breezy-mail.com | Recruiter Screen (video call) | 19d20d67ae959204 |
-| 2026-03-24 | no-reply@orchestry-software-inc.breezy-mail.com | Orchestry Opportunity: GTM Engineer (Sales), application received | 19d1d7f5546fef70 |
-| 2026-03-24 | no-reply@us.greenhouse-mail.io | Thank you for applying to Mento | 19d1d7963478c31c |
-| 2026-03-24 | careers@lumenalta.com | You're In, Let's Take the Next Step Together (Lumenalta My Application page) | 19d1d60ce6d16048 |
-| 2026-03-23 | limitededitionjonathan@substack.com | Stop Calling It Memory | 19d1a51b5dd33bab |
-| 2026-03-23 | no-reply@us.greenhouse-mail.io | Thank you for applying to Glean (GTM Engineer, Marketing) | 19d185126c9a8d51 |
-| 2026-03-21 | bytebytego@substack.com | EP207 | 19d110d9b742c94d |
-| 2026-03-17 | no-reply@us.greenhouse-jobs.com | New Jobs at Anthropic | 19cfbae33688ac9e |
-| 2026-03-14 | bytebytego@substack.com | EP206 | 19ced0177bab442f |
-| 2026-03-11 to 04-14 | hypergenllc.recruitee.com, people@hypergen.io | GTM Engineer confirmation, then **interview invitation 2026-04-14** (2 msg thread) | 19cdd6fb062a3cd8 |
-| 2026-03-11 | thefoundercorner@substack.com | Why 39,800 YC Applications Get Rejected | 19cdc264702a4b0f |
-| 2026-03-10 | no-reply@us.greenhouse-jobs.com | New Jobs at Anthropic | 19cd7a25346b00f0 |
-| 2026-03-09 | no-reply@us.greenhouse-mail.io | Anthropic Follow-Up for Software Engineer, Business Technology (declined) | 19cd424f34c5379e |
-| 2026-03-09 | no-reply@us.greenhouse-mail.io | Thank you for applying to Virtru | 19cd373c4ed544d6 |
-| 2026-03-08 | no-reply@us.greenhouse-mail.io | Thank you for applying to Beautiful.ai | 19ccb2322bf41b13 |
-| 2026-03-08 | no-reply@us.greenhouse-mail.io | Thank you for applying to Anthropic (SWE, Business Technology) | 19ccb1821c91f6e0 |
-| 2026-03-07 | todatabeyond@substack.com | Zvec | 19cc5a80c898077a |
-| 2026-03-06 | applications@wellsfargo.com | Next Steps for Your Application (Clear Access Banking) | 19cc4a62e5143fd6 |
-| 2026-03-06 | thegtmnewsletter@substack.com | The SAASpocalypse | 19cc4854c54a1caf |
-| 2026-03-03 | talent@ibm.com | Protect Yourself From Fake Job Offers | 19cb525b1b8024d4 |
-| 2026-03-03 | speedrun@substack.com | How a16z speedrun Founders Are Using AI Tools for GTM | 19cb4bdc8c7fd5d1 |
-| 2026-02-23 | no-reply@ashbyhq.com | Thanks for applying to SentiLink | 19c8bb6dffb8003a |
-| 2026-02-21 | venturestreet+investorlists@substack.com | Getting into Y Combinator | 19c815a9fc25a87e |
-| 2026-02-20 | assessments@testgorilla.com | Your application for GTM Engineer at TestGorilla (assessment invitation) | 19c7cb89ca3f84c5 |
+| 2026-03-31 | no-reply@remail.wellfound.com | Your application to PhrasIQ was accepted (schedule an interview) | gth_e9be0ace83621c85 |
+| 2026-03-31 | no-reply@ashbyhq.com | Update on Application from Tapcheck | gth_489a249f7d38e1bf |
+| 2026-03-31 | noreply@jobright.ai | Update on your application, Product Manager (Early Career), Jobright.ai | gth_9c34a82d0e7dac19 |
+| 2026-03-31 | eml_7bd0d2cee5ee | Still looking for a job? | gth_6e6a70ddea5111d9 |
+| 2026-03-31 | no-reply@us.greenhouse-jobs.com | New Jobs at Anthropic | gth_795be7604eb21d9c |
+| 2026-03-30 | no-reply@us.greenhouse-mail.io | Thank you for applying to Mento (GTM Engineer) | gth_121bf145a4dbb568 |
+| 2026-03-30 | no-reply@ashbyhq.com | Update from Tiger Data (declined) | gth_9971e9e90df8dd9e |
+| 2026-03-30 | no-reply@ashbyhq.com | Thank you for applying, Tiger Data (GTM AI Engineer) | gth_69cec22bbb737c42 |
+| 2026-03-30 | no-reply@vercel.com | Thank you for applying to Vercel (GTM Engineer) | gth_507a0e29346925c4 |
+| 2026-03-30 | no-reply@ashbyhq.com | Thank You for Applying to Tapcheck | gth_7ddb451e25699d53 |
+| 2026-03-30 | no-reply@ashbyhq.com | Thank you for your Roboflow application (RevOps GTM Engineer) | gth_9bd9c95a760df71b |
+| 2026-03-30 | no-reply@ashbyhq.com | Thank you for applying to G2 (GTM Engineer) | gth_c812a60595be4bf8 |
+| 2026-03-30 | no-reply@us.greenhouse-mail.io | Thanks for applying to Dagster Labs (GTM Engineer) | gth_89b52fe76388035e |
+| 2026-03-30 | eml_6c8c6f35419e | The 3/30 GTM Engineering roundup | gth_168e328033ed6e7b |
+| 2026-03-30 | no-reply@hire.lever.co | Thank you for your application to Unstructured (GTM Engineer, Operations) | gth_a338fb40ebb27dbf |
+| 2026-03-30 | no-reply@us.greenhouse-mail.io | Security code for your application to PandaDoc (resubmit required) | gth_0b3d049ebe5ad018 |
+| 2026-03-30 | no-reply@us.greenhouse-mail.io | Security code for your application to Dagster Labs (resubmit required) | gth_4f798896db34eb73 |
+| 2026-03-29 | eml_fd15dfe9e476 | A better way to apply to startups | gth_eedb7e00a94a07de |
+| 2026-03-28 | no-reply@newrelic.com | Let us know if New Relic can keep your information | gth_99e82290d8b26754 |
+| 2026-03-28 | eml_96374c26eda6 | Georgia grants on GrantWatch | gth_99586a7fb6c4c3be |
+| 2026-03-27 | no-reply@notifications.dover.io | Adapt has received your application (GTM Engineer / RevOps Lead) | gth_692b221836ee7bf9 |
+| 2026-03-26 | eml_5b07f5a5583b | Beautiful.ai, An Update to your Application (2 msg thread, post-interview decline, includes SENT) | gth_1186b66d0556feda |
+| 2026-03-25 | eml_0dbf59a7fd6d | Recruiter Screen (video call) | gth_f5dbe645e66b665d |
+| 2026-03-25 | eml_87e77a84a157 | Update: Your application for Orchestry's GTM Engineer (Sales), missed interview | gth_a704149be7e63a1a |
+| 2026-03-25 | no-reply@us.greenhouse-mail.io | Your application for Apprentice Engineer at Pinterest | gth_0b75334253c7b6e2 |
+| 2026-03-24 | eml_0dbf59a7fd6d | Recruiter Screen (video call) | gth_75b51a62759f69be |
+| 2026-03-24 | no-reply@orchestry-software-inc.breezy-mail.com | Orchestry Opportunity: GTM Engineer (Sales), application received | gth_397ef5934d0939b2 |
+| 2026-03-24 | no-reply@us.greenhouse-mail.io | Thank you for applying to Mento | gth_96c704b7fa571558 |
+| 2026-03-24 | careers@lumenalta.com | You're In, Let's Take the Next Step Together (Lumenalta My Application page) | gth_9b9158b0f51fd5c0 |
+| 2026-03-23 | eml_f3ff6c5b1035 | Stop Calling It Memory | gth_876783f9cf268e0c |
+| 2026-03-23 | no-reply@us.greenhouse-mail.io | Thank you for applying to Glean (GTM Engineer, Marketing) | gth_39354896d7164ae7 |
+| 2026-03-21 | eml_1f7c8af3245d | EP207 | gth_624126b47412983b |
+| 2026-03-17 | no-reply@us.greenhouse-jobs.com | New Jobs at Anthropic | gth_0414da836ed4c866 |
+| 2026-03-14 | eml_1f7c8af3245d | EP206 | gth_4fb017556f188798 |
+| 2026-03-11 to 04-14 | hypergenllc.recruitee.com, people@hypergen.io | GTM Engineer confirmation, then **interview invitation 2026-04-14** (2 msg thread) | gth_d34cb1ecb8ba51f6 |
+| 2026-03-11 | eml_0e636c030d6b | Why 39,800 YC Applications Get Rejected | gth_a9f6d044647eef4a |
+| 2026-03-10 | no-reply@us.greenhouse-jobs.com | New Jobs at Anthropic | gth_ca0ad209589a76ed |
+| 2026-03-09 | no-reply@us.greenhouse-mail.io | Anthropic Follow-Up for Software Engineer, Business Technology (declined) | gth_883dad9a7cc9bfeb |
+| 2026-03-09 | no-reply@us.greenhouse-mail.io | Thank you for applying to Virtru | gth_b58175071492ba76 |
+| 2026-03-08 | no-reply@us.greenhouse-mail.io | Thank you for applying to Beautiful.ai | gth_93b7915bd98264ce |
+| 2026-03-08 | no-reply@us.greenhouse-mail.io | Thank you for applying to Anthropic (SWE, Business Technology) | gth_c126aa1c636566e5 |
+| 2026-03-07 | eml_46c3db84ecc5 | Zvec | gth_e975f246d99e0c3f |
+| 2026-03-06 | applications@wellsfargo.com | Next Steps for Your Application (Clear Access Banking) | gth_11b5eab2896d7f3d |
+| 2026-03-06 | eml_8a78db8a3e85 | The SAASpocalypse | gth_0c2ea72e319e1655 |
+| 2026-03-03 | talent@ibm.com | Protect Yourself From Fake Job Offers | gth_619060c558d58fb6 |
+| 2026-03-03 | eml_47a8e66e0004 | How a16z speedrun Founders Are Using AI Tools for GTM | gth_284f40ef4b066b3a |
+| 2026-02-23 | no-reply@ashbyhq.com | Thanks for applying to SentiLink | gth_b9233df609a22735 |
+| 2026-02-21 | eml_d5e82bc99113 | Getting into Y Combinator | gth_d0f386cca85ed398 |
+| 2026-02-20 | eml_caca8321aba8 | Your application for GTM Engineer at TestGorilla (assessment invitation) | gth_f99a415b023fc244 |
 
 ## Retriever notes
 

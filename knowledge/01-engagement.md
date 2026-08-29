@@ -85,7 +85,7 @@ These are real and already visible in the ledger. They are the paper's Limitatio
 ## Constraints
 
 - Companies are named throughout the ledger, including active relationships. Anything published needs a naming pass. [S6]
-- Interview and rejection evidence lives in Gmail message IDs and Calendar event IDs. These are pointers, not publishable artifacts. Never paste raw IDs or mail links into published copy.
+- Interview and rejection evidence lives in hashed Gmail and Calendar pointers in the committed corpus. Never paste raw provider IDs or mail links into published copy.
 - Compensation, contract values, and client names appear in the Opportunity Attribution sheet. Publication decisions on those are Keegan's alone.
 - Several stop conditions were never met, so the census is explicitly incomplete. That must survive into the abstract.
 

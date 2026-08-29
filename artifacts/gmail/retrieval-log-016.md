@@ -1,35 +1,35 @@
 # Retrieval log 016
 
-Query Q3, page 3 of n. `nextPageToken` for page 4: `09424271737237050860`. Result count estimate on this page dropped to 63, so Q3 is near exhaustion. Returned this page: 50 threads.
+Query Q3, page 3 of n. `nextPageToken` for page 4: `tok_ac66ae0143d1`. Result count estimate on this page dropped to 63, so Q3 is near exhaustion. Returned this page: 50 threads.
 
 ## Application-relevant artifacts
 
 | date | sender | subject | thread_id |
 |---|---|---|---|
-| 2026-06-23 | sofia@micro1.io | Refer a Company by July 8 and Earn $50,000 | 19ef536c339f51a9 |
-| 2026-06-22 | shortlist@jobgether.com | Next Steps for Your Job Application: GTM Engineer at Jobgether | 19ef0388de687866 |
-| 2026-06-22 | team@mercor.com | Application Submitted, Education / school Evaluator | 19eefdfd5fb4bb63 |
-| 2026-06-22 | team@mercor.com | Application Submitted, General Sales / GTM Evaluator | 19eefdeb355c085a |
-| 2026-06-22 | no-reply@mercor.com | Your phone number has been verified | 19eefce5133f6e93 |
-| 2026-06-22 | no-reply@mercor.com | Onboarding Onto Mercor | 19eefce15357d37a |
-| 2026-06-19 | mailbot@applitrack.com | Atlanta Public Schools started, then submitted | 19eddc4876071497, 19ee1ef014efde21 |
-| 2026-06-16 | support@huzzle.app | 48 Hours Left, Final Chance to Complete Your Interview | 19ed00aa4e9b1478 |
-| 2026-06-11 | support@huzzle.app | Final Reminder, Complete Your Interview with Huzzle | 19eb650805cfef0a |
-| 2026-06-09 | support@huzzle.app | Your Huzzle Video Interview is Still Pending | 19eabc7bbc1aa40f |
-| 2026-06-08 | mailbot@applitrack.com | Gwinnett County Public Schools Application Started | 19ea5b7862cb3792 |
-| 2026-06-05 | ariana@micro1.io | New Opportunity with micro1 (Certified Expert Pool, ChatGPT AI training project) | 19e9866ed62fb9b9 |
-| 2026-06-04 | support@huzzle.app | Your Next Step with Huzzle, Complete Your Interview ("applying to join our talent pool", moving forward to next stage) | 19e92180ca58bd3a |
-| 2026-03-31 | no-reply@remail.wellfound.com | Your application to PhrasIQ was accepted, schedule an interview | 19d453fe2506a0f5 |
-| 2026-03-31, 04-06 | remail.wellfound.com conversation relay | Keegan and PhrasIQ (2 msgs: founder outreach, then **GTM System Deep Dive** as next step after a Discovery Session) | 19d453dbfa5af222 |
-| 2026-01-21 | chirag@micro1.io | Opportunity for Finance Expert at micro1 | 19bdf90e1b30ffa0 |
-| 2026-01-14 | leticia@micro1.ai | Shortlisted for an AI Training Pilot Project (profile submitted to client) | 19bbd5c1dc792315 |
-| 2026-01-12 | support@micro1.ai | **Great work on your interview** (profile under client review for final project approval) | 19bb104f9bba99a6 |
-| 2025-09-30 | ana@micro1.io | Join the micro1 community for certified talent | 1999b3f069431cb5 |
+| 2026-06-23 | eml_1903da9875a1 | Refer a Company by July 8 and Earn $50,000 | gth_c80adf55dc928a19 |
+| 2026-06-22 | eml_398de6c56b3b | Next Steps for Your Job Application: GTM Engineer at Jobgether | gth_39fd61eed7768f9e |
+| 2026-06-22 | team@mercor.com | Application Submitted, Education / school Evaluator | gth_0d17ddc7df5b3ff5 |
+| 2026-06-22 | team@mercor.com | Application Submitted, General Sales / GTM Evaluator | gth_76956966f57e2d8c |
+| 2026-06-22 | no-reply@mercor.com | Your phone number has been verified | gth_45572337494c92d5 |
+| 2026-06-22 | no-reply@mercor.com | Onboarding Onto Mercor | gth_3f9c8bcfad4faad9 |
+| 2026-06-19 | eml_eabc1aeed2f7 | Atlanta Public Schools started, then submitted | gth_ca4ec7de603636fa, gth_69afd05b60e34a48 |
+| 2026-06-16 | support@huzzle.app | 48 Hours Left, Final Chance to Complete Your Interview | gth_c01326ed91095875 |
+| 2026-06-11 | support@huzzle.app | Final Reminder, Complete Your Interview with Huzzle | gth_9792f5230a698358 |
+| 2026-06-09 | support@huzzle.app | Your Huzzle Video Interview is Still Pending | gth_5f53d8e2d5a99caf |
+| 2026-06-08 | eml_eabc1aeed2f7 | Gwinnett County Public Schools Application Started | gth_2032ad4875645a59 |
+| 2026-06-05 | eml_f751a265814b | New Opportunity with micro1 (Certified Expert Pool, ChatGPT AI training project) | gth_b3bb07f0ab28b8d1 |
+| 2026-06-04 | support@huzzle.app | Your Next Step with Huzzle, Complete Your Interview ("applying to join our talent pool", moving forward to next stage) | gth_985129a717dc5459 |
+| 2026-03-31 | no-reply@remail.wellfound.com | Your application to PhrasIQ was accepted, schedule an interview | gth_e9be0ace83621c85 |
+| 2026-03-31, 04-06 | remail.wellfound.com conversation relay | Keegan and PhrasIQ (2 msgs: founder outreach, then **GTM System Deep Dive** as next step after a Discovery Session) | gth_cb452c55c8d2edd9 |
+| 2026-01-21 | eml_c9ecf31a936b | Opportunity for Finance Expert at micro1 | gth_505e2213c50c65c4 |
+| 2026-01-14 | eml_22d59083e49c | Shortlisted for an AI Training Pilot Project (profile submitted to client) | gth_840667159906faf1 |
+| 2026-01-12 | support@micro1.ai | **Great work on your interview** (profile under client review for final project approval) | gth_ff754d2101d76c5d |
+| 2025-09-30 | eml_7c94b97ef6d7 | Join the micro1 community for certified talent | gth_8c4ca88ea772f45e |
 | 2025-08-04 | team@hi.wellfound.com | Five Wellfound submissions: Fibr AI, Ava Labs, 12100 Collective, Infisical, AirGarage | multiple |
-| 2025-07-09 | team@hi.wellfound.com | An update from Classet (Head of GTM, declined) | 197efe9bab3feb22 |
-| 2025-07-16 | team@hi.wellfound.com | Apply to your saved jobs before they expire (Nomi.ai Growth Hacker among them) | 19813c2cd09f20e5 |
-| 2025-06-24 | Jacob@getcrate.app | Reminder: Still Missing Your Interview Prep and Scheduling Materials (Software Engineering at Crate) | 197a309bb5cbc2de |
-| 2025-06-23 | Jacob@getcrate.app | Same reminder, earlier instance | 1979aae8acdd4534 |
+| 2025-07-09 | team@hi.wellfound.com | An update from Classet (Head of GTM, declined) | gth_6af5520ff5313d68 |
+| 2025-07-16 | team@hi.wellfound.com | Apply to your saved jobs before they expire (Nomi.ai Growth Hacker among them) | gth_b2786ede1d5085b4 |
+| 2025-06-24 | eml_d498ccd3103f | Reminder: Still Missing Your Interview Prep and Scheduling Materials (Software Engineering at Crate) | gth_3491eb82f8ab15f5 |
+| 2025-06-23 | eml_d498ccd3103f | Same reminder, earlier instance | gth_73b9f98c99a2ac43 |
 
 Remaining threads on this page are Wellfound "Updates from [company]" follow notifications and newsletters.
 

@@ -6,31 +6,31 @@ Query Q5, sent mail: `in:sent {"resume" "portfolio" "applying" "application" "in
 
 | date | recipient | subject | thread_id |
 |---|---|---|---|
-| 2026-05-20 | jed@practicalprospecting.io | **KMOODY RESUME** (scope highlighted, resume attached) | 19e464b4cc0113a9 |
-| 2026-05-03 | careers@spider.cloud | Growth lead app | 19deeeb2c2f91f78 |
-| 2026-04-02 | jana@brand.ai | GTME from the CAFE (portfolio and resume) | 19d4e5e256da787a |
-| 2026-02-06 | gtm@aicro.co | **GTM Engineering Team Lead, KEEGAN MOODY** | 19c314590d03fe1c |
-| 2026-01-07 | gabe@nero.fan | Founding Engineer Application (single-take video attached) | 19b965c7ecaf827d |
-| 2025-11-18 | blair@insigniacollab.com | **Operator / architect / Atlanta resident** (resume) | 19a965b6167b161d |
-| 2025-07-26 | hannah@inertiagrowth.com | **GTME role, Keegan Moody** (resume attached, reply invites a call) | 19844e86afa37157 |
-| 2025-06-11 | scott@inven.ai | **resume, KMoody** | 19760e837eee9624 |
+| 2026-05-20 | eml_c52a64cf2d7a | **KMOODY RESUME** (scope highlighted, resume attached) | gth_75b7c8464647fdc0 |
+| 2026-05-03 | careers@spider.cloud | Growth lead app | gth_f8fe98826a08e486 |
+| 2026-04-02 | eml_b7cd35bd64cf | GTME from the CAFE (portfolio and resume) | gth_187b8559e8b2ddc3 |
+| 2026-02-06 | eml_5ae85b46cbf3 | **GTM Engineering Team Lead, KEEGAN MOODY** | gth_4d6db773dc5a1ad3 |
+| 2026-01-07 | eml_cc839f955dc0 | Founding Engineer Application (single-take video attached) | gth_fc0da77b80de52c2 |
+| 2025-11-18 | eml_16011a3a61e9 | **Operator / architect / Atlanta resident** (resume) | gth_1aa4bb3bc36115a4 |
+| 2025-07-26 | eml_63112bdfe422 | **GTME role, Keegan Moody** (resume attached, reply invites a call) | gth_fa180bfd756b2a92 |
+| 2025-06-11 | eml_79180e8a25d5 | **resume, KMoody** | gth_2dc7b54c89818c53 |
 
 ## Recruiter, referral, and interview threads
 
 | date | counterparty | what it shows | thread_id |
 |---|---|---|---|
-| 2025-08-25 to 08-27 | somya.shruti@tophire.co | **WorkOS via TopHire**: recruiter approach, interest confirmed, slot booked, resume requested | 198e28511c2c7be7 |
-| 2025-08-05 to 08-06 | rosa@goodseedconsulting.org, cc joshpap22 | **ThriveLink Healthcare BD Rep**, referral introduction by Josh Pappas | 1987c108c41ff59d |
-| 2025-08-08 | kayla@switchyards.com | Switchyards Launch Manager, resume review stage | 1988b77b61974363 |
-| 2026-01-27 | cmaike@glytec.com | Glytec interview logistics, portfolio link sent | 19bfd208daa544b6 |
-| 2026-03-17 to 03-19 | emily@beautiful.ai | Beautiful.ai post-interview follow-up, hiring manager Brandon Ness named, decision deferred | 19cfd5722bd49b45 |
-| 2026-04-08 | simon@bx.studio | BX Studio, video sent, forwarded to hiring manager | 19d6bb0d0e645a4a |
-| 2026-04-20 | austin@every.to | Every.to, "thanks for applying for the GTM Engineer role, I'd love to chat", call booked | 19dab8026601594d |
-| 2026-07-13 | joshk@hartleyco.co.uk | HartleyCo / Bluejay, call arranged same day | 19f59c69bc094dbf |
-| 2026-07-16 to 07-22 | megan.koch@hologram.io, derrick@hologram.io | Hologram scheduling plus a post-interview portfolio send to Derrick | 19f6c7190ae437a1, 19f8a5b3c58414df |
-| 2026-06-19 to 06-22 | substituteservices@atlanta.k12.ga.us | **APS**: Keegan states he completed the Frontline application and reached the final confirmation page; APS replies they are not currently accepting substitute applications | 19edf97699db02b8 |
-| 2026-06-04 | joshpap22 / pappashealthtech | Josh Pappas consulting scope, outbound for independent clinics | 19e9436ce4e43ad8 |
-| 2025-06-12 to 06-17 | vishal@exa.ai, wroberts@exa.ai | Exa product outreach after API signup, call arranged. Not an employment application | 19765c64cf83eead |
+| 2025-08-25 to 08-27 | eml_837c64c67234 | **WorkOS via TopHire**: recruiter approach, interest confirmed, slot booked, resume requested | gth_7c798c988d52c12f |
+| 2025-08-05 to 08-06 | eml_e707284b0206, cc joshpap22 | **ThriveLink Healthcare BD Rep**, referral introduction by Josh Pappas | gth_8469ad4868580c10 |
+| 2025-08-08 | eml_a697b7e351e6 | Switchyards Launch Manager, resume review stage | gth_94d60ee6f87c1b6f |
+| 2026-01-27 | eml_e5c4cc8ec99d | Glytec interview logistics, portfolio link sent | gth_7ff12c525a38011d |
+| 2026-03-17 to 03-19 | eml_5b07f5a5583b | Beautiful.ai post-interview follow-up, hiring manager Brandon Ness named, decision deferred | gth_ec1fac33cf5f23f1 |
+| 2026-04-08 | eml_dd661064d709 | BX Studio, video sent, forwarded to hiring manager | gth_cd9b1dc5bcc04d6c |
+| 2026-04-20 | eml_50d007c54e63 | Every.to, "thanks for applying for the GTM Engineer role, I'd love to chat", call booked | gth_3731d4c2c0e7637c |
+| 2026-07-13 | eml_0a253147bb65 | HartleyCo / Bluejay, call arranged same day | gth_59384916f1d2f6ca |
+| 2026-07-16 to 07-22 | eml_00885ec9fff7, eml_50fc12f0536a | Hologram scheduling plus a post-interview portfolio send to Derrick | gth_2a3e6638763bef64, gth_d0dd571860e0bfa7 |
+| 2026-06-19 to 06-22 | eml_4dacf4a8f28f | **APS**: Keegan states he completed the Frontline application and reached the final confirmation page; APS replies they are not currently accepting substitute applications | gth_ddaf156bd72853f5 |
+| 2026-06-04 | joshpap22 / pappashealthtech | Josh Pappas consulting scope, outbound for independent clinics | gth_92516c1c9f589417 |
+| 2025-06-12 to 06-17 | eml_215e3f8ad944, eml_766e6fa4b99b | Exa product outreach after API signup, call arranged. Not an employment application | gth_19ce04c195e366c4 |
 
 ## Retriever notes
 

@@ -4,33 +4,33 @@ Query Q2b, page 3 of 3. No `nextPageToken`. **Q2b exhausted.** Returned this pag
 
 | date | sender | subject | thread_id |
 |---|---|---|---|
-| 2026-02-20 | mirae.lee@testgorilla.teamtailor-mail.com | TestGorilla / Keegan Moody, Go-to-Market Engineer (recruiter intro) | 19c7cad276dff04a |
-| 2026-02-20 | inbound.workablemail.com | GTM Engineer, Smeetz (application in review) | 19c7c661593dbcbf |
-| 2026-02-20 | noreply@candidates.workablemail.com | Thanks for applying to Smeetz (application data copy) | 19c7c6278e50d7ad |
-| 2026-02-20 | thomsonreuters@myworkday.com | Thomson Reuters Application Update, JREQ195996 | 19c7a359b58ab0c0 |
-| 2026-02-13 | Raluca.Baksai@wilsonhr.com | Thank you for your application for Outbound Sales Consultant III (WilsonHCG) | 19c54cd5aa16fc0d |
-| 2026-02-12 to 02-24 | no-reply@ashbyhq.com | Ambrook Application Update, Business Operations (2 msg thread, includes SENT reply asking for elaboration) | 19c52cbdcc25bd0d |
-| 2026-02-11 | news@alphasignal.ai | Anthropic Opus 4.6 sabotage behaviors | 19c4e0fa21fb5c4b |
-| 2026-02-11 | no-reply@ashbyhq.com | Thanks for applying to Ambrook (Business Operations Lead) | 19c4aed736a76871 |
-| 2026-02-10 | no-reply@us.greenhouse-mail.io | Thank you for applying to GitLab (GTM Planning & Operations Analyst) | 19c49ec3a2733b19 |
-| 2026-02-09 | no-reply@gather.ai | Gather AI, Application for GTM Engineer | 19c405de94390d83 |
-| 2026-02-07 | systemdesignone@substack.com | 114 system design concepts | 19c38699d0e77cbb |
-| 2026-02-06 | natesnewsletter@substack.com | Claude's 80-Page Constitution | 19c337bd24dd8659 |
-| 2026-02-06 | no-reply@us.greenhouse-mail.io | Important information about your application to Manifold AI (declined) | 19c3331ba7802c72 |
-| 2026-02-06 | no-reply@us.greenhouse-mail.io | Your application for Growth Marketing Manager at Manifold | 19c30a63128e9d4e |
-| 2026-02-05 | datascienceweekly@substack.com | Data Science Weekly 637 | 19c300486fbf6c0b |
-| 2026-02-04 | no-reply@us.greenhouse-mail.io | Thank you for applying to Verkada (Enterprise Solutions Engineer, Atlanta) | 19c2849b7457a18e |
-| 2026-02-01 | nextplayso@substack.com | Useful ways to use AI to land a job | 19c1a047ba7515f6 |
-| 2026-01-31 | bytebytego@substack.com | EP200 | 19c14edf87299956 |
-| 2026-01-29 | systemdesignone@substack.com | Design YouTube | 19c098941495447e |
-| 2026-01-28 | Rose@grantwatch.com | Georgia grants | 19c05c82bc82a3a0 |
-| 2026-01-28 | natesnewsletter@substack.com | The cathedral problem | 19c04f04d7272456 |
-| 2026-01-26 | lenny+how-i-ai@substack.com | How I AI | 19bfb12a4e21faf5 |
-| 2026-01-26 | no-reply@us.greenhouse-mail.io | Thank you for applying to Beacon Software | 19bf83553cbd0629 |
-| 2026-01-26 | no-reply@us.greenhouse-mail.io | Security code for your application to Beacon Software (resubmit required) | 19bf8341c7bf4ee8 |
-| 2026-01-24 | turingpost@mail.beehiiv.com | The Case for Open Source AI | 19bf16f854d6bf2a |
-| 2026-01-21 | chirag@micro1.io | Opportunity for Finance Expert at micro1 (recruiter, from talent pool) | 19bdf90e1b30ffa0 |
-| 2026-01-15 | youssefh@substack.com | Crack the AI Interview Course 3 | 19bc2d4552845dc4 |
+| 2026-02-20 | eml_261b430a689a | TestGorilla / Keegan Moody, Go-to-Market Engineer (recruiter intro) | gth_3e7b5aedf6286ab2 |
+| 2026-02-20 | inbound.workablemail.com | GTM Engineer, Smeetz (application in review) | gth_5381427b4e51e64b |
+| 2026-02-20 | noreply@candidates.workablemail.com | Thanks for applying to Smeetz (application data copy) | gth_d9ec75a3f4991195 |
+| 2026-02-20 | eml_d6ab529ea781 | Thomson Reuters Application Update, JREQ195996 | gth_5921d0d724baf4ed |
+| 2026-02-13 | eml_4c2349631b96 | Thank you for your application for Outbound Sales Consultant III (WilsonHCG) | gth_f2e8c95a6366fd5d |
+| 2026-02-12 to 02-24 | no-reply@ashbyhq.com | Ambrook Application Update, Business Operations (2 msg thread, includes SENT reply asking for elaboration) | gth_028345fa3b82dbe0 |
+| 2026-02-11 | eml_0351423f4184 | Anthropic Opus 4.6 sabotage behaviors | gth_d96a6b4ff2469a68 |
+| 2026-02-11 | no-reply@ashbyhq.com | Thanks for applying to Ambrook (Business Operations Lead) | gth_aad2435c82a5d834 |
+| 2026-02-10 | no-reply@us.greenhouse-mail.io | Thank you for applying to GitLab (GTM Planning & Operations Analyst) | gth_d806408b1ae0fa72 |
+| 2026-02-09 | no-reply@gather.ai | Gather AI, Application for GTM Engineer | gth_71a6f9dcebf0a9b0 |
+| 2026-02-07 | eml_cdabfa0e6b49 | 114 system design concepts | gth_ec3437ccf18d6a99 |
+| 2026-02-06 | eml_0836cf6513de | Claude's 80-Page Constitution | gth_a3348b7dc31f8f12 |
+| 2026-02-06 | no-reply@us.greenhouse-mail.io | Important information about your application to Manifold AI (declined) | gth_7530133b04c50bf9 |
+| 2026-02-06 | no-reply@us.greenhouse-mail.io | Your application for Growth Marketing Manager at Manifold | gth_55db7a5c8e2dbd7a |
+| 2026-02-05 | eml_f5ecb1745400 | Data Science Weekly 637 | gth_81ef08bf1974904a |
+| 2026-02-04 | no-reply@us.greenhouse-mail.io | Thank you for applying to Verkada (Enterprise Solutions Engineer, Atlanta) | gth_8fafa5db68268f59 |
+| 2026-02-01 | eml_fd15dfe9e476 | Useful ways to use AI to land a job | gth_d5e34e6fb8a4de36 |
+| 2026-01-31 | eml_1f7c8af3245d | EP200 | gth_aebec42cd84603e2 |
+| 2026-01-29 | eml_cdabfa0e6b49 | Design YouTube | gth_e96c969f298d9372 |
+| 2026-01-28 | eml_96374c26eda6 | Georgia grants | gth_cf0beff7296f0575 |
+| 2026-01-28 | eml_0836cf6513de | The cathedral problem | gth_3c6f920c636b828e |
+| 2026-01-26 | eml_c4bb00e2c959 | How I AI | gth_57089f1db6881fbc |
+| 2026-01-26 | no-reply@us.greenhouse-mail.io | Thank you for applying to Beacon Software | gth_f9737e34553dc0b6 |
+| 2026-01-26 | no-reply@us.greenhouse-mail.io | Security code for your application to Beacon Software (resubmit required) | gth_2544b0bbec6f17e6 |
+| 2026-01-24 | eml_fc1e39f7d809 | The Case for Open Source AI | gth_9cf31b52883862e4 |
+| 2026-01-21 | eml_c9ecf31a936b | Opportunity for Finance Expert at micro1 (recruiter, from talent pool) | gth_505e2213c50c65c4 |
+| 2026-01-15 | eml_284563a8806e | Crack the AI Interview Course 3 | gth_e29d44397894b149 |
 
 ## Retriever notes
 

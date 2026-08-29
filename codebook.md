@@ -19,6 +19,7 @@ One row per application cycle.
 
 | field | type | definition |
 |---|---|---|
+| `coder_id` | string | Independent coder who produced the row. Assigned, not derived. |
 | `application_id` | key | `company_slug\|role_slug\|c{n}`, e.g. `fossa\|gtm-engineer\|c2` |
 | `cycle` | int | 1 for first submission. Increment only after a terminal outcome on the prior cycle. |
 | `company_canonical` | string | Normalized. DISQO, not DSQO. Anysphere, not Cursor, with the alias in notes. |
@@ -33,7 +34,7 @@ One row per application cycle.
 | `date_evidence_anchor` | date | Required when precision is `evidence_bound`. The artifact date that bounds the submission, e.g. Fullsteam 2025-09-29. |
 | `discovery_source` | enum | Where the role was found. |
 | `submission_channel` | enum | How the application was sent. |
-| `ats_system` | enum | Greenhouse, Ashby, Lever, Workable, Workday, iCIMS, Rippling, Gem, Dover, Teamtailor, Recruitee, Comeet, Breezy, Jobvite, none_observed |
+| `ats_system` | enum | See vocabulary below. Unrecognized or unnamed systems use `none_observed`, not `unknown`. |
 | `evidence_tier` | enum | `A`, `B`, `C`. Defined below. |
 | `evidence_class` | enum | `employer_artifact` or `platform_log`. This is the stratum used for sensitivity analysis. |
 | `register` | enum | `application` or `opportunity`. Only `application` rows enter the census. |
@@ -53,6 +54,7 @@ One row per timestamped interaction. Many per application. This is what makes Ph
 
 | field | type | definition |
 |---|---|---|
+| `coder_id` | string | Independent coder who produced the row. Assigned, not derived. |
 | `event_id` | key | `{application_id}\|e{n}` |
 | `application_id` | fk | Joins to table 1. An event may never exist without a parent application row. |
 | `event_date` | date | |
@@ -61,9 +63,9 @@ One row per timestamped interaction. Many per application. This is what makes Ph
 | `round_number` | int | Interview events only. 1, 2, 3. |
 | `counterparty_name` | string | "Eddie". `unknown` if not recorded. |
 | `counterparty_role` | string | "CEO", "recruiter", "hiring manager". |
-| `medium` | enum | `video`, `phone`, `onsite`, `async`, `email` |
+| `medium` | enum | `video`, `phone`, `onsite`, `async`, `email`, `unknown` |
 | `evidence_system` | enum | `gmail`, `gcal`, `linkedin`, `wellfound`, `jobright`, `ladders`, `screenshot`, `memory` |
-| `evidence_id` | string | Message ID or calendar event ID. Pointer only, never published. |
+| `evidence_id` | string | Hashed pointer (`gth_` Gmail thread, `cal_` calendar event). Raw provider IDs are not stored in the committed corpus. |
 | `notes` | text | |
 
 `evidence_system = memory` marks anything sourced from recall rather than an artifact. It is legitimate to log, and it must be visible so it can be excluded from the reproducible subset.
@@ -72,12 +74,17 @@ One row per timestamped interaction. Many per application. This is what makes Ph
 
 Rows that were considered and rejected. Keeping this visible is what makes the census auditable.
 
-| field | definition |
-|---|---|
-| `candidate_id`, `date`, `company`, `role` | as above |
-| `exclusion_reason` | `attempted_not_submitted`, `marketplace_profile`, `recruiter_initiated`, `consulting_prospect`, `out_of_window`, `unresolvable_identity` |
-| `what_would_promote_it` | The specific artifact that would move it into the census. |
-| `evidence_system`, `evidence_id` | |
+| field | type | definition |
+|---|---|---|
+| `coder_id` | string | Independent coder who produced the row. Assigned, not derived. |
+| `candidate_id` | string | Stable label for the considered-and-rejected item. |
+| `date` | date | Artifact date. |
+| `company` | string | As listed, or empty if unnamed. |
+| `role` | string | As listed, or empty if unnamed. |
+| `exclusion_reason` | enum | See vocabulary below. |
+| `what_would_promote_it` | string | The specific artifact that would move it into the census. |
+| `evidence_system` | enum | Same values as events. |
+| `evidence_id` | string | Hashed pointer. Same rules as events. |
 
 ## Evidence tiers
 
@@ -108,9 +115,15 @@ Rows that were considered and rejected. Keeping this visible is what makes the c
 
 **submission_channel**: `easy_apply`, `ats_direct`, `apply4me_agent`, `jobright_agent`, `email_direct`, `wellfound_apply`, `recruiter_submitted`, `marketplace_profile_submission`, `unknown`
 
-**event_type**: `submission_receipt`, `employer_ack`, `assessment_sent`, `assessment_completed`, `recruiter_screen`, `hiring_manager_interview`, `panel`, `technical_exercise`, `final_round`, `offer`, `rejection`, `withdrawal`, `followup_sent`, `reschedule`, `no_show`
+**ats_system**: `Greenhouse`, `Ashby`, `Lever`, `Workable`, `Workday`, `iCIMS`, `Rippling`, `Gem`, `Dover`, `Teamtailor`, `Recruitee`, `Comeet`, `Breezy`, `Jobvite`, `none_observed`. If the ATS is unnamed or not in this list, use `none_observed`. Do not emit `unknown`.
 
-**terminal_outcome**: `no_response`, `rejected_no_interview`, `rejected_after_interview`, `ghosted_after_interview`, `withdrawn_by_candidate`, `role_paused_or_closed`, `offer_declined`, `offer_accepted`, `still_open`
+**event_type**: `submission_receipt`, `employer_ack`, `assessment_sent`, `assessment_completed`, `recruiter_screen`, `hiring_manager_interview`, `panel`, `technical_exercise`, `final_round`, `offer`, `rejection`, `withdrawal`, `followup_sent`, `reschedule`, `no_show`, `unknown`
+
+**medium**: `video`, `phone`, `onsite`, `async`, `email`, `unknown`
+
+**terminal_outcome**: `no_response`, `rejected_no_interview`, `rejected_after_interview`, `ghosted_after_interview`, `withdrawn_by_candidate`, `role_paused_or_closed`, `offer_declined`, `offer_accepted`, `still_open`, `unknown`
+
+**exclusion_reason**: `attempted_not_submitted`, `marketplace_profile`, `recruiter_initiated`, `consulting_prospect`, `out_of_window`, `unresolvable_identity`, `unknown`
 
 ## Derived metrics, never stored
 
@@ -124,12 +137,16 @@ Rows that were considered and rejected. Keeping this visible is what makes the c
 
 These show format only. They are not answers to any row in your corpus.
 
-**A role found on a jobs marketplace, applied through that marketplace, followed by three conversations with a founder.** One application row: `example-co|founding-gtm|c1`, `discovery_source = wellfound`, `submission_channel = wellfound_apply`, `evidence_tier = A`, `evidence_class = employer_artifact`, `register = application`. Four event rows: one `submission_receipt`, then three interview events with `round_number` 1, 2, 3, `counterparty_name` and `counterparty_role` filled from the invite, `evidence_system = gcal` with the calendar IDs.
+**A role found on a jobs marketplace, applied through that marketplace, followed by three conversations with a founder.** One application row: `example-co|founding-gtm|c1`, `discovery_source = wellfound`, `submission_channel = wellfound_apply`, `evidence_tier = A`, `evidence_class = employer_artifact`, `register = application`. Four event rows: one `submission_receipt`, then three interview events with `round_number` 1, 2, 3, `counterparty_name` and `counterparty_role` filled from the invite, `evidence_system = gcal` with hashed calendar pointers.
 
-**A role with a single interview and nothing else.** One application row, one interview event carrying the calendar ID as evidence. No rollup field is written anywhere.
+**A role with a single interview and nothing else.** One application row, one interview event carrying the hashed calendar pointer as evidence. No rollup field is written anywhere.
 
 **A re-application after rejection.** Two application rows, `c1` and `c2`, with different `date_applied`. The `c1` row carries a `terminal_outcome` of `rejected_no_interview` and its date. That terminal outcome is what licenses `c2` to exist as a separate row.
 
 **A recruiter-sourced process with an interview and no submission artifact.** One application row with `discovery_source = recruiter_inbound` and `register = opportunity`, plus the interview event. It stays in the dataset and out of the census. Never omit it.
 
 **A receipt that names no role.** `role_as_listed = unspecified`, `role_lane = unspecified`. Do not guess from the company's typical openings.
+
+## Changelog
+
+- 2026-08-29: `coder_id` is the first field of every table so CSV headers match this file. `unknown` added to `event_type`, `medium`, `terminal_outcome`, and `exclusion_reason`. Unrecognized ATS values use `none_observed`. `evidence_id` is a hashed pointer, not a raw provider ID.

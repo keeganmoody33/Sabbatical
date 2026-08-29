@@ -11,9 +11,9 @@ Role: retriever. No coding.
 
 | date | sender | subject | thread_id |
 |---|---|---|---|
-| 2026-08-18 | 33@lecturesfrom.com | Fwd: What Does Human Work Look Like After Automation? (to myriah.towner@gmail.com) | 1a0161800d8ef6f4 |
-| 2025-11-10 | 33@lecturesfrom.com | zzounds-invoice-ZZ9935773 (print) | 19a6fef6eac77fbf |
-| 2025-11-10 | 33@lecturesfrom.com | zzounds-invoice-ZZ9935773 (print, duplicate thread) | 19a6fef23715031d |
+| 2026-08-18 | 33@lecturesfrom.com | Fwd: What Does Human Work Look Like After Automation? (to eml_6b5c7a736e01) | gth_48348bd5996cc528 |
+| 2025-11-10 | 33@lecturesfrom.com | zzounds-invoice-ZZ9935773 (print) | gth_e8e3dd2a0d895828 |
+| 2025-11-10 | 33@lecturesfrom.com | zzounds-invoice-ZZ9935773 (print, duplicate thread) | gth_5821657e679ba322 |
 
 ## Retriever notes
 

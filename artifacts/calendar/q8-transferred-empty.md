@@ -1,6 +1,6 @@
 # Calendar Q8: Transferred from keegan@lecturesfrom.com
 
-Calendar id: `c_9fd1b45d2faec78e8cb51fff33b1cd71a8d9dad8097e617ee28883611f8f705c@group.calendar.google.com`
+Calendar id: `eml_eca016c0affb`
 
 Ownership transferred on 2026-01-08 from keegan@lecturesfrom.com to 33@lecturesfrom.com.
 

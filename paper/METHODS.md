@@ -6,7 +6,7 @@ Unit of analysis: `company_canonical + role_as_listed + cycle`.
 
 Two registers stay separate. Application census is roles submitted by the applicant. Opportunity attribution (referrals, recruiter-initiated processes, matching-platform contracts) stays out of the denominator.
 
-Evidence is harvested as raw artifacts, then coded independently. Retrieval logs are the Gmail and Calendar extracts. Coders do not see each other's rows. Interviewed-ness is derived from the events table, never stored on the application row.
+Evidence is harvested as raw artifacts, then coded independently. Retrieval logs are the Gmail and Calendar extracts. Committed logs store hashed evidence pointers rather than raw Gmail thread IDs, calendar event IDs, or applicant account IDs. Coders do not see each other's rows. Interviewed-ness is derived from the events table, never stored on the application row.
 
 Date precision is a field. Monthly series use only `date_precision = exact`. Relative LinkedIn stamps are not upgraded to calendar dates.
 

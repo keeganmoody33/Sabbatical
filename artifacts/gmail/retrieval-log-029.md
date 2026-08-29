@@ -11,8 +11,8 @@ Role: retriever. Account identity check.
 ## What is not connected
 
 - keeganmoody33@gmail.com
-- Proof: `get_thread` on 19ecda5fa25e0d35 (The Hog GTM interview invitation from log 021) returned entity not found.
-- from:hudson@thehog.ai returned zero threads. Only hudson@notifications.thehog.ai product welcome exists here.
+- Proof: `get_thread` on gth_d1989dfb9542a2da (The Hog GTM interview invitation from log 021) returned entity not found.
+- from:eml_24f646d7eb92 returned zero threads. Only eml_8eedb7e060e1 product welcome exists here.
 
 ## Implication for stop condition 1
 

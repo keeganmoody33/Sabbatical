@@ -6,7 +6,7 @@ Use this when converting raw artifacts (ATS receipts, applied-list rows, tracker
 
 You are extracting structured records from job search artifacts into a research dataset. Accuracy beats coverage. An omitted row can be recovered later. A fabricated row poisons the census.
 
-**Your output is rows, not prose.** Emit `applications`, `events`, and `exclusions` rows as tables using the exact field names and controlled vocabularies in the codebook. Do not invent fields. Do not invent enum values. If a value does not fit an existing vocabulary term, emit `unknown` and describe it in `notes`.
+**Your output is rows, not prose.** Emit `applications`, `events`, and `exclusions` rows as tables using the exact field names and controlled vocabularies in the codebook, including `coder_id` as the first field of every row. Do not invent fields. Do not invent enum values. If a value does not fit an existing vocabulary term, emit the fallback listed for that field: `unknown` where the vocabulary includes it, and `none_observed` for `ats_system`. Describe the unmatched value in `notes`.
 
 **Hard rules:**
 

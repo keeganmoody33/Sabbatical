@@ -20,7 +20,7 @@ That is the complete set. Every coder receives the identical corpus.
 2. **Do not consult another coder's output.** If you have seen one, say so at the top of your submission and stop.
 3. **Do not optimize toward a total.** You are not trying to reach a number. A coder who produces fewer rows because the evidence was thinner is doing the job correctly.
 4. **Code every artifact.** Uncertain ones become `exclusions` rows with a stated reason, not omissions. Exclusions are data.
-5. **Do not revise the vocabularies.** If a value does not fit, emit `unknown` and explain in `notes`. If you find yourself wanting a new enum value more than twice, note it at the end rather than inventing one.
+5. **Do not revise the vocabularies.** If a value does not fit, emit the codebook fallback for that field (`unknown` where the vocabulary includes it; `none_observed` for `ats_system`) and explain in `notes`. If you find yourself wanting a new enum value more than twice, note it at the end rather than inventing one.
 
 ## Output format
 
@@ -30,7 +30,7 @@ Three CSV files, with these exact headers and nothing else in the file:
 - `events__{coder_id}.csv`
 - `exclusions__{coder_id}.csv`
 
-Headers are the field lists in `codebook.md`, in the order given there. Empty means not observed. Never write `N/A`, `none`, or a dash. Use the literal string `unknown` where the codebook specifies it.
+Headers are the field lists in `codebook.md`, in the order given there, beginning with `coder_id`. Empty means not observed. Never write `N/A`, `none`, or a dash. Use the literal string `unknown` only where the codebook lists it. For `ats_system`, the fallback is `none_observed`.
 
 Plus one plain text file, `notes__{coder_id}.md`, containing:
 
@@ -39,7 +39,7 @@ Plus one plain text file, `notes__{coder_id}.md`, containing:
 - Every conflict between artifacts, with both values
 - Any vocabulary term you wanted and did not have
 
-`coder_id` is a short lowercase string you are assigned. Put it in every filename and in a `coder_id` column on every row.
+`coder_id` is a short lowercase string you are assigned. Put it in every filename and in the `coder_id` column on every row.
 
 ## What happens next
 

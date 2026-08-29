@@ -12,8 +12,8 @@ Role: retriever. No coding.
 
 | date | sender | subject | thread_id |
 |---|---|---|---|
-| 2026-06-21 | noreply@getbalance.com | Complete your Pay Later for Business application with Alibaba.com | 19ee9f880d3fe262 |
-| 2026-06-20 | noreply@moonshot.kimi.ai | Application Submitted (Kimi Code Beta Program) | 19ee44d95cf17f20 |
+| 2026-06-21 | noreply@getbalance.com | Complete your Pay Later for Business application with Alibaba.com | gth_4d700ecc18af3ae8 |
+| 2026-06-20 | noreply@moonshot.kimi.ai | Application Submitted (Kimi Code Beta Program) | gth_4eb58e96e49a35dd |
 
 ## Retriever notes
 

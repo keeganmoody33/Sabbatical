@@ -1,415 +1,415 @@
 coder_id,event_id,application_id,event_date,event_date_precision,event_type,round_number,counterparty_name,counterparty_role,medium,evidence_system,evidence_id,notes
-bravo,inven-ai|unspecified|c1|e1,inven-ai|unspecified|c1,2025-06-11,exact,submission_receipt,,,,email,gmail,19760e837eee9624,
-bravo,runway|go-to-market-ai-engineer|c1|e1,runway|go-to-market-ai-engineer|c1,2025-06-26,exact,submission_receipt,,,,email,gmail,197a9b7e36f15a96,
-bravo,trace3|sdr|c1|e1,trace3|sdr|c1,2025-06-25,exact,submission_receipt,,,,email,gmail,197a864d4c88286e,
-bravo,trace3|sdr|c1|e2,trace3|sdr|c1,2025-06-25,exact,rejection,,unknown,,email,gmail,197a864d4c88286e,opening filled; same Greenhouse thread as receipt
-bravo,circle|gtm-engineer-outbound|c1|e1,circle|gtm-engineer-outbound|c1,2025-06-20,exact,submission_receipt,,,,email,gmail,1978fae6c43de77c,
-bravo,drata|sdr-remote|c1|e1,drata|sdr-remote|c1,2025-06-16,exact,employer_ack,,,,email,gmail,197794fc216fb2ec,update on application SDR Remote; no separate thank-you receipt in corpus
-bravo,pinterest|apprentice-product-researcher|c1|e1,pinterest|apprentice-product-researcher|c1,2025-06-26,exact,employer_ack,,unknown,,email,gmail,197ad3ae5480d64b,Myriah Towner referred for Apprentice Product Researcher
-bravo,pinterest|apprentice-product-researcher|c1|e2,pinterest|apprentice-product-researcher|c1,2025-06-28,exact,employer_ack,,unknown,,email,gmail,197b4e0054e600c8,You've Accepted Your Referral at Pinterest
-bravo,pinterest|product-manager-ii-search|c1|e1,pinterest|product-manager-ii-search|c1,2025-06-30,exact,employer_ack,,unknown,,email,gmail,197c1531c3b0cd45,Myriah Towner referred for PM II Search
-bravo,pinterest|product-manager-ii-search|c1|e2,pinterest|product-manager-ii-search|c1,2025-06-30,exact,employer_ack,,unknown,,email,gmail,197c192980869142,You've Accepted Your Referral at Pinterest
-bravo,gigs|unspecified|c1|e1,gigs|unspecified|c1,2025-06-30,exact,submission_receipt,,,,email,gmail,197c324e2c6972a8,
-bravo,galileo|growth-engineer|c1|e1,galileo|growth-engineer|c1,2025-07-02,exact,submission_receipt,,,,email,gmail,197cbf50d42e42d4,
-bravo,headway|growth-marketing-specialist|c1|e1,headway|growth-marketing-specialist|c1,2025-07-03,exact,submission_receipt,,,,email,gmail,197d047a6d227e74,
-bravo,applause|enterprise-sdr|c1|e1,applause|enterprise-sdr|c1,2025-07-08,exact,submission_receipt,,,,email,gmail,197e8533c3fb823c,
-bravo,applause|enterprise-sdr|c1|e2,applause|enterprise-sdr|c1,2025-07-08,exact,submission_receipt,,unknown,,email,gmail,197e8563609b2b60,Workable Enterprise SDR receipt; thread also carries rejection
-bravo,applause|enterprise-sdr|c1|e3,applause|enterprise-sdr|c1,2025-07-09,exact,rejection,,unknown,,email,gmail,197e8563609b2b60,receipt then rejection in 197e8563609b2b60
-bravo,designit|unspecified|c1|e1,designit|unspecified|c1,2025-07-08,exact,submission_receipt,,,,email,gmail,197ea85c50a5e246,
-bravo,scaleops|sales-engineer-usa|c1|e1,scaleops|sales-engineer-usa|c1,2025-07-17,exact,submission_receipt,,,,email,gmail,19816fa4ed2957bf,
-bravo,slingshot-ai|conversation-designer|c1|e1,slingshot-ai|conversation-designer|c1,2025-07-25,exact,submission_receipt,,,,email,gmail,198417c793254f3f,
-bravo,slingshot-ai|conversation-designer|c1|e2,slingshot-ai|conversation-designer|c1,2025-07-28,exact,employer_ack,,unknown,,email,gmail,198500cf4b9cf0f2,Update on your application with Slingshot AI Conversation Designer
-bravo,exa-labs|growth-lead|c1|e1,exa-labs|growth-lead|c1,2025-07-25,exact,submission_receipt,,,,email,gmail,19843b40babe3689,
-bravo,90-seconds|unspecified|c1|e1,90-seconds|unspecified|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,1984b664dfc9c86d,
-bravo,anaconda|senior-bdr|c1|e1,anaconda|senior-bdr|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,1984b6a766e1d92f,
-bravo,anaconda|senior-bdr|c1|e2,anaconda|senior-bdr|c1,2025-08-22,exact,rejection,,unknown,,email,gmail,198d3b3bf3993a49,Update on Your Application at Anaconda
-bravo,volley|unspecified|c1|e1,volley|unspecified|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,1984b6beef9627b2,
-bravo,weave|business-development-manager|c1|e1,weave|business-development-manager|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,1984b6cd8216c3a8,
-bravo,weave|business-development-manager|c1|e2,weave|business-development-manager|c1,2025-07-31,exact,rejection,,unknown,,email,gmail,19862454367cf6f1,sarah@weave.bio Business Development Manager declined
-bravo,shaped|founding-sdr|c1|e1,shaped|founding-sdr|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,1984b7295c12359b,
-bravo,gtp-software|revenue-enablement-manager|c1|e1,gtp-software|revenue-enablement-manager|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,1984b74316b2b6d9,
-bravo,gtp-software|revenue-enablement-manager|c1|e2,gtp-software|revenue-enablement-manager|c1,2025-08-01,exact,employer_ack,,unknown,,email,gmail,19866f31583b7516,Thank you from GTP Software Revenue Enablement Manager
-bravo,stedi|unspecified|c1|e1,stedi|unspecified|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,1984b76f3129f436,
-bravo,replit|sales-engineer|c1|e1,replit|sales-engineer|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,1984b7803d828099,
-bravo,replit|sales-engineer|c1|e2,replit|sales-engineer|c1,2025-07-30,exact,employer_ack,,unknown,,email,gmail,1985bf4a7f1cded7,Replit Follow Up
-bravo,phiture|us-growth-lead-mobile-marketing-strategist|c1|e1,phiture|us-growth-lead-mobile-marketing-strategist|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,1984b79b760961bf,
-bravo,phiture|us-growth-lead-mobile-marketing-strategist|c1|e2,phiture|us-growth-lead-mobile-marketing-strategist|c1,2025-07-29,exact,employer_ack,,unknown,,email,gmail,19855246bd3510bf,ariel.kowalczyk@phiture.com application for US Growth Lead Mobile Marketing Strategist
-bravo,inertia-growth|outbound-campaign-manager|c1|e1,inertia-growth|outbound-campaign-manager|c1,2025-07-26,exact,submission_receipt,,,,email,gmail,19844e86afa37157,
-bravo,inertia-growth|outbound-campaign-manager|c1|e2,inertia-growth|outbound-campaign-manager|c1,2025-07-30,exact,rejection,,unknown,,email,gmail,1985d0a9011176a8,hannah@inertiagrowth.com Outbound Campaign Manager declined
-bravo,hex|sdr|c1|e1,hex|sdr|c1,2025-07-31,exact,submission_receipt,,,,email,gmail,1985e2fcbbc5a557,
-bravo,onboard|unspecified|c1|e1,onboard|unspecified|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,1987276c3943fd47,
-bravo,sage|director-of-growth-small|c1|e1,sage|director-of-growth-small|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,19874db50c4ae6aa,
-bravo,sage|director-of-growth-small|c1|e2,sage|director-of-growth-small|c1,2025-09-03,exact,rejection,,unknown,,email,gmail,1990fabad455beb5,Update on Director of Growth Small role
-bravo,fibr-ai|founding-sdr-ae|c1|e1,fibr-ai|founding-sdr-ae|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,19874ec5b07b5475,
-bravo,ava-labs|growth-lead-core|c1|e1,ava-labs|growth-lead-core|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,19874eb54159ac4e,
-bravo,ava-labs|growth-lead-core|c1|e2,ava-labs|growth-lead-core|c1,2025-08-14,exact,employer_ack,,unknown,,email,gmail,198a9f80268b55a5,no-reply@avalabs.org Thanks for your interest in Ava Labs
-bravo,12100-collective|seo-lead|c1|e1,12100-collective|seo-lead|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,19874e996f09c1dd,
-bravo,infisical|founding-growth-marketer|c1|e1,infisical|founding-growth-marketer|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,19874e8276978aa8,
-bravo,airgarage|consumer-growth-hacker|c1|e1,airgarage|consumer-growth-hacker|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,19874e6f875e3d0e,
-bravo,itc-infotech|manager-business-development|c1|e1,itc-infotech|manager-business-development|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,198768c3e75ab651,
-bravo,4flow|director-go-to-market-strategy|c1|e1,4flow|director-go-to-market-strategy|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,198768e9cb938b46,
-bravo,axon|manager-go-to-market-readiness|c1|e1,axon|manager-go-to-market-readiness|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,198768a8edd78a10,
-bravo,axon|manager-go-to-market-readiness|c1|e2,axon|manager-go-to-market-readiness|c1,2025-08-04,exact,employer_ack,,unknown,,email,gmail,198769522c958870,Thank you for your interest reviewed Manager Go-to-Market Readiness
-bravo,beckhoff-automation|sales-engineer|c1|e1,beckhoff-automation|sales-engineer|c1,2025-08-04,exact,employer_ack,,,,email,gmail,198768f7e66bbc31,Paycom password setup Sales Engineer
-bravo,beckhoff-automation|sales-engineer|c1|e2,beckhoff-automation|sales-engineer|c1,2025-08-07,exact,employer_ack,,unknown,,email,gmail,1988608ae766bb44,Paycom Your Application not fully completed
-bravo,beckhoff-automation|sales-engineer|c1|e3,beckhoff-automation|sales-engineer|c1,2025-08-08,exact,rejection,,unknown,,email,gmail,1988bb3318ed28b3,Application Status Update Sales Engineer declined
-bravo,crypto-com|product-growth-hacker-exchange-main-app|c1|e1,crypto-com|product-growth-hacker-exchange-main-app|c1,2025-08-05,exact,submission_receipt,,,,email,gmail,1987abec68c6f639,
-bravo,crypto-com|product-growth-hacker-exchange-main-app|c1|e2,crypto-com|product-growth-hacker-exchange-main-app|c1,2025-11-02,exact,rejection,,unknown,,email,gmail,19a45779c86938f1,Thank you for applying Product Growth Hacker Exchange; retriever annotated declined
-bravo,blackthorn-io|unspecified|c1|e1,blackthorn-io|unspecified|c1,2025-08-05,exact,submission_receipt,,,,email,gmail,1987ab36c560b894,
-bravo,seamless-ai|sdr-remote-us|c1|e1,seamless-ai|sdr-remote-us|c1,2025-08-05,exact,submission_receipt,,,,email,gmail,1987ae68b5aee0d0,
-bravo,seamless-ai|sdr-remote-us|c1|e2,seamless-ai|sdr-remote-us|c1,2025-08-07,exact,employer_ack,,unknown,,email,gmail,1988561b3341f748,Regarding the Status of Your Application SDR Remote US
-bravo,ambrook|partnerships-lead|c1|e1,ambrook|partnerships-lead|c1,2025-08-06,exact,submission_receipt,,,,email,gmail,1987cfcb64fc0b3c,
-bravo,thrivelink|healthcare-business-development-rep|c1|e1,thrivelink|healthcare-business-development-rep|c1,2025-08-05,exact,submission_receipt,,,,email,gmail,1987c108c41ff59d,
-bravo,proteantecs|sdr|c1|e1,proteantecs|sdr|c1,2025-08-08,exact,submission_receipt,,,,email,gmail,19888824d442ae2c,
-bravo,classdojo|unspecified|c1|e1,classdojo|unspecified|c1,2025-08-08,exact,employer_ack,,,,email,gmail,1988b0ce0d7e9ae5,Update from ClassDojo via Gem; no thank-you-for-applying phrase in subject
-bravo,switchyards|launch-manager|c1|e1,switchyards|launch-manager|c1,2025-08-08,exact,submission_receipt,,,,email,gmail,1988b77b61974363,
-bravo,switchyards|launch-manager|c1|e2,switchyards|launch-manager|c1,2025-08-08,exact,followup_sent,,unknown,,email,gmail,1988b77b61974363,SENT reply on Launch Manager thread
-bravo,switchyards|launch-manager|c1|e3,switchyards|launch-manager|c1,2025-08-19,exact,rejection,,unknown,,email,gmail,198c3d0762671231,brooks@switchyards.com Switchyards Launch Manager
-bravo,galileo|gtm-engineer|c1|e1,galileo|gtm-engineer|c1,2025-07-28,exact,employer_ack,,,,email,gmail,1985321472fcbc46,Information about your application Galileo GTM Engineer
-bravo,workos|gtm-engineer|c1|e1,workos|gtm-engineer|c1,2025-08-25,exact,recruiter_screen,1,Somya Shruti,recruiter,email,gmail,198e28511c2c7be7,Somya Shruti TopHire approach remote GTM Engineer; interest confirmed slot booked resume requested
-bravo,fullsteam|senior-sales-development-representative|c1|e1,fullsteam|senior-sales-development-representative|c1,2025-09-29,exact,employer_ack,,,,email,gmail,199972ac6d0a123f,Update on Job Application Senior Sales Development Representative
-bravo,insignia-collab|unspecified|c1|e1,insignia-collab|unspecified|c1,2025-11-18,exact,submission_receipt,,,,email,gmail,19a965b6167b161d,
-bravo,vonage|sdr-api-cpaas|c1|e1,vonage|sdr-api-cpaas|c1,2025-12-08,exact,rejection,,,,email,gmail,19b0016aed15e1ff,SDR API/CPaaS status update declined; no separate receipt in corpus
-bravo,linear|ae-growth|c1|e1,linear|ae-growth|c1,2025-12-08,exact,submission_receipt,,,,email,gmail,19afe3b978ef29ba,
-bravo,linear|ae-growth|c1|e2,linear|ae-growth|c1,2025-12-11,exact,rejection,,unknown,,email,gmail,19b0e68efb49c557,Thank you and update from Linear declined
-bravo,primer|unspecified|c1|e1,primer|unspecified|c1,2025-12-09,exact,submission_receipt,,,,email,gmail,19b04485943e8fdd,
-bravo,primer|unspecified|c1|e2,primer|unspecified|c1,2025-12-15,exact,rejection,,unknown,,email,gmail,19b21b8f861feccc,Thank you for applying to Primer declined
-bravo,medialab-ai|unspecified|c1|e1,medialab-ai|unspecified|c1,2026-01-02,exact,submission_receipt,,,,email,gmail,19b7cc5e65e62942,
-bravo,foursquare|ae-new-business|c1|e1,foursquare|ae-new-business|c1,2026-01-02,exact,submission_receipt,,,,email,gmail,19b800cded020e8f,
-bravo,foursquare|ae-new-business|c1|e2,foursquare|ae-new-business|c1,2026-01-08,exact,employer_ack,,unknown,,email,gmail,19b9e8ee32ff6228,Update on your application AE New Business; subject does not say declined
-bravo,proofpoint|unspecified|c1|e1,proofpoint|unspecified|c1,2026-01-02,exact,submission_receipt,,,,email,gmail,19b803c28687651e,
-bravo,thomson-reuters|ae-tax-or-risk|c1|e1,thomson-reuters|ae-tax-or-risk|c1,2026-01-02,exact,submission_receipt,,,,email,gmail,19b801325a600eb1,
-bravo,thomson-reuters|ae-tax-or-risk|c1|e2,thomson-reuters|ae-tax-or-risk|c1,2026-02-20,exact,employer_ack,,unknown,,email,gmail,19c7a359b58ab0c0,Thomson Reuters Application Update JREQ195996
-bravo,sailpoint|account-exec-enterprise-accounts|c1|e1,sailpoint|account-exec-enterprise-accounts|c1,2026-01-03,exact,submission_receipt,,,,email,gmail,19b81f2c7de63f3d,
-bravo,sailpoint|account-exec-enterprise-accounts|c1|e2,sailpoint|account-exec-enterprise-accounts|c1,2026-01-03,exact,employer_ack,,unknown,,email,gmail,19b8497068491dca,Thank You for Your Application Account Exec Enterprise Accounts
-bravo,nero|founding-engineer|c1|e1,nero|founding-engineer|c1,2026-01-07,exact,submission_receipt,,,,email,gmail,19b965c7ecaf827d,
-bravo,micro1|ai-training-pilot-project|c1|e1,micro1|ai-training-pilot-project|c1,2026-01-12,exact,hiring_manager_interview,1,unknown,unknown,email,gmail,19bb104f9bba99a6,support@micro1.ai Great work on your interview; profile under client review
-bravo,micro1|ai-training-pilot-project|c1|e2,micro1|ai-training-pilot-project|c1,2026-01-14,exact,employer_ack,,unknown,,email,gmail,19bbd5c1dc792315,leticia@micro1.ai shortlisted; profile submitted to unnamed client
-bravo,beacon-software|unspecified|c1|e1,beacon-software|unspecified|c1,2026-01-26,exact,submission_receipt,,,,email,gmail,19bf83553cbd0629,
-bravo,aicro|gtm-engineering-team-lead|c1|e1,aicro|gtm-engineering-team-lead|c1,2026-02-06,exact,submission_receipt,,,,email,gmail,19c314590d03fe1c,
-bravo,manifold|growth-marketing-manager|c1|e1,manifold|growth-marketing-manager|c1,2026-02-06,exact,submission_receipt,,,,email,gmail,19c30a63128e9d4e,
-bravo,manifold|growth-marketing-manager|c1|e2,manifold|growth-marketing-manager|c1,2026-02-06,exact,rejection,,unknown,,email,gmail,19c3331ba7802c72,Important information about your application to Manifold AI declined
-bravo,verkada|enterprise-solutions-engineer-atlanta|c1|e1,verkada|enterprise-solutions-engineer-atlanta|c1,2026-02-04,exact,submission_receipt,,,,email,gmail,19c2849b7457a18e,
-bravo,gather-ai|gtm-engineer|c1|e1,gather-ai|gtm-engineer|c1,2026-02-09,exact,submission_receipt,,,,email,gmail,19c405de94390d83,
-bravo,gitlab|gtm-planning-operations-analyst|c1|e1,gitlab|gtm-planning-operations-analyst|c1,2026-02-10,exact,submission_receipt,,,,email,gmail,19c49ec3a2733b19,
-bravo,gitlab|gtm-planning-operations-analyst|c1|e2,gitlab|gtm-planning-operations-analyst|c1,2026-04-17,exact,rejection,,unknown,,email,gmail,19d9d236e17ffb61,position no longer available
-bravo,ambrook|business-operations-lead|c1|e1,ambrook|business-operations-lead|c1,2026-02-11,exact,submission_receipt,,,,email,gmail,19c4aed736a76871,
-bravo,ambrook|business-operations-lead|c1|e2,ambrook|business-operations-lead|c1,2026-02-12,exact,rejection,,unknown,,email,gmail,19c52cbdcc25bd0d,Ambrook Application Update Business Operations
-bravo,ambrook|business-operations-lead|c1|e3,ambrook|business-operations-lead|c1,2026-02-12,exact,followup_sent,,unknown,,email,gmail,19c52cbdcc25bd0d,SENT reply to no-reply asking the team to elaborate on the rejection
-bravo,wilsonhcg|outbound-sales-consultant-iii|c1|e1,wilsonhcg|outbound-sales-consultant-iii|c1,2026-02-13,exact,submission_receipt,,,,email,gmail,19c54cd5aa16fc0d,
-bravo,smeetz|gtm-engineer|c1|e1,smeetz|gtm-engineer|c1,2026-02-20,exact,submission_receipt,,,,email,gmail,19c7c6278e50d7ad,
-bravo,smeetz|gtm-engineer|c1|e2,smeetz|gtm-engineer|c1,2026-02-20,exact,employer_ack,,unknown,,email,gmail,19c7c661593dbcbf,GTM Engineer application in review
-bravo,testgorilla|go-to-market-engineer|c1|e1,testgorilla|go-to-market-engineer|c1,2026-02-20,exact,assessment_sent,,,,email,gmail,19c7cb89ca3f84c5,assessments@testgorilla.com application for GTM Engineer assessment invitation
-bravo,testgorilla|go-to-market-engineer|c1|e2,testgorilla|go-to-market-engineer|c1,2026-02-20,exact,recruiter_screen,1,Mirae Lee,recruiter,email,gmail,19c7cad276dff04a,mirae.lee Teamtailor recruiter intro Go-to-Market Engineer
-bravo,testgorilla|go-to-market-engineer|c1|e3,testgorilla|go-to-market-engineer|c1,2026-04-23,exact,employer_ack,,unknown,,email,gmail,19dba87a5f49ae09,mirae.lee update from recruiter
-bravo,sentilink|unspecified|c1|e1,sentilink|unspecified|c1,2026-02-23,exact,submission_receipt,,,,email,gmail,19c8bb6dffb8003a,
-bravo,beautiful-ai|unspecified|c1|e1,beautiful-ai|unspecified|c1,2026-03-08,exact,submission_receipt,,,,email,gmail,19ccb2322bf41b13,
-bravo,beautiful-ai|unspecified|c1|e2,beautiful-ai|unspecified|c1,2026-03-17,exact,hiring_manager_interview,1,Brandon Ness,hiring manager,video,gmail,19cfd5722bd49b45,post-interview follow-up thread names hiring manager Brandon Ness; interview dated from this thread
-bravo,beautiful-ai|unspecified|c1|e3,beautiful-ai|unspecified|c1,2026-03-19,exact,followup_sent,,unknown,,email,gmail,19cfd5722bd49b45,SENT follow-up on Beautiful.ai thread
-bravo,beautiful-ai|unspecified|c1|e4,beautiful-ai|unspecified|c1,2026-03-26,exact,rejection,,unknown,,email,gmail,19d2c002fd6328f6,emily@beautiful.ai post-interview decline includes SENT
-bravo,anthropic|software-engineer-business-technology|c1|e1,anthropic|software-engineer-business-technology|c1,2026-03-08,exact,submission_receipt,,,,email,gmail,19ccb1821c91f6e0,
-bravo,anthropic|software-engineer-business-technology|c1|e2,anthropic|software-engineer-business-technology|c1,2026-03-09,exact,rejection,,unknown,,email,gmail,19cd424f34c5379e,Anthropic Follow-Up for Software Engineer Business Technology declined
-bravo,virtru|director-of-go-to-market-ai|c1|e1,virtru|director-of-go-to-market-ai|c1,2026-03-09,exact,submission_receipt,,,,email,gmail,19cd373c4ed544d6,
-bravo,virtru|director-of-go-to-market-ai|c1|e2,virtru|director-of-go-to-market-ai|c1,2026-04-04,exact,rejection,,unknown,,email,gmail,19d596affbecf602,rachel.downs@virtru.com Director of Go-to-Market AI declined
-bravo,pinterest|apprentice-engineer|c1|e1,pinterest|apprentice-engineer|c1,2026-03-25,exact,submission_receipt,,,,email,gmail,19d2273d2d508ca1,
-bravo,pinterest|apprentice-engineer|c1|e2,pinterest|apprentice-engineer|c1,2026-04-28,exact,rejection,,unknown,,email,gmail,19dd5e3359a9ccab,no-reply@pinterest.com Apprentice Engineer declined
-bravo,hypergen|gtm-engineer|c1|e1,hypergen|gtm-engineer|c1,2026-03-11,exact,submission_receipt,,,,email,gmail,19cdd6fb062a3cd8,
-bravo,hypergen|gtm-engineer|c1|e2,hypergen|gtm-engineer|c1,2026-04-14,exact,employer_ack,,unknown,,email,gmail,19cdd6fb062a3cd8,people@hypergen.io interview invitation in same thread as March 11 confirmation; interview date itself not in the subject
-bravo,glean|gtm-engineer-marketing|c1|e1,glean|gtm-engineer-marketing|c1,2026-03-23,exact,submission_receipt,,,,email,gmail,19d185126c9a8d51,
-bravo,lumenalta|unspecified|c1|e1,lumenalta|unspecified|c1,2026-03-24,exact,employer_ack,,,,email,gmail,19d1d60ce6d16048,You're In Let's Take the Next Step Together My Application page
-bravo,lumenalta|unspecified|c1|e2,lumenalta|unspecified|c1,2026-04-10,exact,employer_ack,,unknown,,email,gmail,19d770d1f6e1934d,hire@lumenalta.com Lumenalta Application Update
-bravo,orchestry|gtm-engineer-sales|c1|e1,orchestry|gtm-engineer-sales|c1,2026-03-24,exact,submission_receipt,,,,email,gmail,19d1d7f5546fef70,
-bravo,orchestry|gtm-engineer-sales|c1|e2,orchestry|gtm-engineer-sales|c1,2026-03-24,exact,recruiter_screen,1,unknown,recruiter,video,gmail,19d20d67ae959204,Breezy Recruiter Screen video call
-bravo,orchestry|gtm-engineer-sales|c1|e3,orchestry|gtm-engineer-sales|c1,2026-03-25,exact,reschedule,,unknown,,video,gmail,19d26fa4dceba5a6,second Recruiter Screen video call invitation the next day
-bravo,orchestry|gtm-engineer-sales|c1|e4,orchestry|gtm-engineer-sales|c1,2026-03-25,exact,no_show,,unknown,,email,gmail,19d26be3aa1d4344,jay.banga@orchestry.com missed interview GTM Engineer Sales
-bravo,orchestry|gtm-engineer-sales|c1|e5,orchestry|gtm-engineer-sales|c1,2026-03-27,exact,rejection,,unknown,,email,gmail,19d31b20a0dfedb3,jay.banga declined after interview process includes SENT
-bravo,pandadoc|gtm-engineer|c1|e1,pandadoc|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,19d3f0236cb930e4,
-bravo,pandadoc|gtm-engineer|c1|e2,pandadoc|gtm-engineer|c1,2026-04-27,exact,rejection,,unknown,,email,gmail,19dcf9174d4a446f,careers@pandadoc.com Regarding your application GTM Engineer declined
-bravo,mento|gtm-engineer|c1|e1,mento|gtm-engineer|c1,2026-03-24,exact,submission_receipt,,,,email,gmail,19d1d7963478c31c,
-bravo,mento|gtm-engineer|c1|e2,mento|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,unknown,,email,gmail,19d40a113f180bf5,second Greenhouse thank you GTM Engineer same opening
-bravo,dagster-labs|gtm-engineer|c1|e1,dagster-labs|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,19d3ef8798237401,
-bravo,dagster-labs|gtm-engineer|c1|e2,dagster-labs|gtm-engineer|c1,2026-04-03,exact,hiring_manager_interview,1,Delaney Housley,unknown,email,gmail,19d54b76f8ffb104,delaney@dagsterlabs.com follow-up; Keegan SENT thank you for taking the time to chat; interview date on or before this artifact
-bravo,dagster-labs|gtm-engineer|c1|e3,dagster-labs|gtm-engineer|c1,2026-04-03,exact,rejection,,unknown,,email,gmail,19d54b76f8ffb104,Dagster Labs follow-up decline after chat
-bravo,unstructured|gtm-engineer-operations|c1|e1,unstructured|gtm-engineer-operations|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,19d3ebf796ee1523,
-bravo,g2|gtm-engineer|c1|e1,g2|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,19d3efd2db98f59f,
-bravo,g2|gtm-engineer|c1|e2,g2|gtm-engineer|c1,2026-04-09,exact,rejection,,unknown,,email,gmail,19d72b8cd8da95a3,G2 GTM Engineer Update position filled
-bravo,roboflow|revops-gtm-engineer|c1|e1,roboflow|revops-gtm-engineer|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,19d3f0327312df05,
-bravo,tapcheck|unspecified|c1|e1,tapcheck|unspecified|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,19d3f065b6c86f9d,
-bravo,tapcheck|unspecified|c1|e2,tapcheck|unspecified|c1,2026-03-31,exact,employer_ack,,unknown,,email,gmail,19d452f3f045ac93,Update on Application from Tapcheck
-bravo,tapcheck|unspecified|c1|e3,tapcheck|unspecified|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d6309a625eabd0,Thank You for Applying to Tapcheck second receipt
-bravo,tapcheck|unspecified|c1|e4,tapcheck|unspecified|c1,2026-04-06,exact,rejection,,unknown,,email,gmail,19d63c2dadb6e136,Update on Application from Tapcheck declined
-bravo,vercel|gtm-engineer|c1|e1,vercel|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,19d3f09c5fd55395,
-bravo,tiger-data|gtm-ai-engineer|c1|e1,tiger-data|gtm-ai-engineer|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,19d3f415525c9364,
-bravo,tiger-data|gtm-ai-engineer|c1|e2,tiger-data|gtm-ai-engineer|c1,2026-03-30,exact,rejection,,unknown,,email,gmail,19d403563f7e04c0,Update from Tiger Data declined
-bravo,adapt|gtm-engineer-revops-lead|c1|e1,adapt|gtm-engineer-revops-lead|c1,2026-03-27,exact,submission_receipt,,,,email,gmail,19d305c5bd7e45ef,
-bravo,phrasiq|unspecified|c1|e1,phrasiq|unspecified|c1,2026-03-31,exact,submission_receipt,,,,email,gmail,19d453fe2506a0f5,
-bravo,phrasiq|unspecified|c1|e2,phrasiq|unspecified|c1,2026-03-31,exact,employer_ack,,unknown,,email,gmail,19d453dbfa5af222,Wellfound relay founder outreach same day as acceptance
-bravo,phrasiq|unspecified|c1|e3,phrasiq|unspecified|c1,2026-04-02,exact,hiring_manager_interview,1,unknown,unknown,,gcal,bac9katosqoobn46ohd1hemm5k,Calendar Discovery | Keegan Moody<>PhrasIQ. Medium not stated on the calendar row.
-bravo,phrasiq|unspecified|c1|e4,phrasiq|unspecified|c1,2026-04-06,exact,employer_ack,,unknown,,email,gmail,19d453dbfa5af222,relay references completed Discovery Session and proposes GTM System Deep Dive as next step; Deep Dive occurrence not evidenced
-bravo,jobright-ai|product-manager-early-career|c1|e1,jobright-ai|product-manager-early-career|c1,2026-03-31,exact,employer_ack,,,,email,gmail,19d44dbbde83f037,Update on your application Product Manager Early Career
-bravo,disqo|gtm-engineer|c1|e1,disqo|gtm-engineer|c1,2026-03-31,exact,submission_receipt,,,,email,gmail,19d45d67bebea78a,
-bravo,boulevard|gtm-engineer|c1|e1,boulevard|gtm-engineer|c1,2026-03-31,exact,submission_receipt,,,,email,gmail,19d45fc7e04c3dc4,
-bravo,boulevard|gtm-engineer|c1|e2,boulevard|gtm-engineer|c1,2026-06-04,exact,rejection,,unknown,,email,gmail,19e93396d0330980,Boulevard GTM Engineer Application Update declined
-bravo,brand-ai|gtme|c1|e1,brand-ai|gtme|c1,2026-04-02,exact,submission_receipt,,,,email,gmail,19d4e5e256da787a,
-bravo,brand-ai|gtme|c1|e2,brand-ai|gtme|c1,2026-04-02,exact,followup_sent,,unknown,,email,gmail,19d4e5e256da787a,SENT portfolio and resume GTME from the CAFE
-bravo,brand-ai|gtme|c1|e3,brand-ai|gtme|c1,2026-04-07,exact,rejection,,unknown,,email,gmail,19d4e5e256da787a,four-message thread includes compensation discussion and rejection
-bravo,companycam|gtm-systems-engineer|c1|e1,companycam|gtm-systems-engineer|c1,2026-04-03,exact,submission_receipt,,,,email,gmail,19d539acd9491585,
-bravo,fixify|gtm-engineer-contract|c1|e1,fixify|gtm-engineer-contract|c1,2026-04-03,exact,submission_receipt,,,,email,gmail,19d539197b0eccec,
-bravo,fixify|gtm-engineer-contract|c1|e2,fixify|gtm-engineer-contract|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d6302e9af64d84,second Greenhouse thank you for applying to Fixify
-bravo,fixify|gtm-engineer-contract|c1|e3,fixify|gtm-engineer-contract|c1,2026-04-06,exact,employer_ack,,unknown,,email,gmail,19d650ce9fc868fa,Update on your Fixify GTM Engineer Contract application
-bravo,montauk-capital|head-of-commercial|c1|e1,montauk-capital|head-of-commercial|c1,2026-04-01,exact,submission_receipt,,,,email,gmail,19d48a4c443ee08c,
-bravo,rula|gtm-engineer-remote|c1|e1,rula|gtm-engineer-remote|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,19d62ff8d5126fb6,
-bravo,rula|gtm-engineer-remote|c1|e2,rula|gtm-engineer-remote|c1,2026-04-22,exact,rejection,,unknown,,email,gmail,19db50b5a6fb409d,Your application to work at Rula declined
-bravo,unframe|gtm-engineer|c1|e1,unframe|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,19d6301094a74ba5,
-bravo,unframe|gtm-engineer|c1|e2,unframe|gtm-engineer|c1,2026-04-17,exact,submission_receipt,,unknown,,email,gmail,19d9bc38883d43fc,second Greenhouse thank you for applying; no terminal between 04-06 and 04-17
-bravo,unframe|gtm-engineer|c1|e3,unframe|gtm-engineer|c1,2026-05-12,exact,rejection,,unknown,,email,gmail,19e1b422395bfa5a,no-reply@unframe.ai GTM Engineer Remote declined
-bravo,solv-health|unspecified|c1|e1,solv-health|unspecified|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,19d63017a38b1d93,
-bravo,solv-health|unspecified|c1|e2,solv-health|unspecified|c1,2026-04-21,exact,rejection,,unknown,,email,gmail,19db1ec73e853739,mail@ats.rippling.com Thank you from Solv Health declined
-bravo,sardine|gtm-engineer|c1|e1,sardine|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,19d6306f81d1fff8,
-bravo,sardine|gtm-engineer|c1|e2,sardine|gtm-engineer|c1,2026-04-09,exact,rejection,,unknown,,email,gmail,19d73000b16e8496,Update on your application to Sardine declined
-bravo,appgate|gtm-engineer|c1|e1,appgate|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,19d630a32187eb2b,
-bravo,appgate|gtm-engineer|c1|e2,appgate|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d630ee95237e6c,Workable GTM Engineer AppGate Cybersecurity
-bravo,wrapbook|gtm-systems-engineer|c1|e1,wrapbook|gtm-systems-engineer|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,19d636da39acd54c,
-bravo,payabli|gtm-engineer|c1|e1,payabli|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,19d6374d64714d79,
-bravo,valsoft|gtm-engineer|c1|e1,valsoft|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,19d6386d8b135dd0,
-bravo,valsoft|gtm-engineer|c1|e2,valsoft|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d638eb381bdfd1,GTM Engineer DockMaster Valsoft Corporation
-bravo,pearl|lead-gtm-engineer|c1|e1,pearl|lead-gtm-engineer|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,19d639bd2d75a64a,
-bravo,pearl|lead-gtm-engineer|c1|e2,pearl|lead-gtm-engineer|c1,2026-04-30,exact,employer_ack,,Alex DeCeglie,unknown,email,gmail,19ddebc217206005,alexdeceglie@hellopearl.com Interview @ Pearl; Keegan initiates scheduling Alex confirms following week
-bravo,pearl|lead-gtm-engineer|c1|e3,pearl|lead-gtm-engineer|c1,2026-05-05,exact,recruiter_screen,1,unknown,unknown,phone,gmail,19df3f05ef98302b,Reminder Upcoming Interview May 5 phone
-bravo,pearl|lead-gtm-engineer|c1|e4,pearl|lead-gtm-engineer|c1,2026-05-11,exact,employer_ack,,unknown,,email,gmail,19e17cc7e99d523e,Reminder Submit Your Availability; two identical msgs 8 seconds apart
-bravo,pearl|lead-gtm-engineer|c1|e5,pearl|lead-gtm-engineer|c1,2026-05-17,exact,hiring_manager_interview,2,unknown,unknown,video,gmail,19e363d55b30e7dd,Reminder Upcoming Interview Lead GTM Engineer Zoom
-bravo,liatrio|gtm-revops-engineer|c1|e1,liatrio|gtm-revops-engineer|c1,2026-04-05,exact,submission_receipt,,,,email,gmail,19d5ec03888c1dd9,
-bravo,sur|ai-revenue-engineer|c1|e1,sur|ai-revenue-engineer|c1,2026-04-09,exact,submission_receipt,,,,email,gmail,19d7311fcb46666b,
-bravo,sur|ai-revenue-engineer|c1|e2,sur|ai-revenue-engineer|c1,2026-04-09,exact,rejection,,unknown,,email,gmail,19d73129b631de6e,AI Revenue Engineer receipt then rejection
-bravo,langchain|gtm-engineer|c1|e1,langchain|gtm-engineer|c1,2026-04-10,exact,submission_receipt,,,,email,gmail,19d7586f3104286a,
-bravo,ontra|unspecified|c1|e1,ontra|unspecified|c1,2026-04-10,exact,submission_receipt,,,,email,gmail,19d76be5511647d3,
-bravo,ontra|unspecified|c1|e2,ontra|unspecified|c1,2026-04-24,exact,rejection,,unknown,,email,gmail,19dc05867fe8fb7c,Ontra Following Up declined
-bravo,redis|gtm-engineer|c1|e1,redis|gtm-engineer|c1,2026-04-10,exact,submission_receipt,,,,email,gmail,19d76c3b3e2ae594,
-bravo,auctane|pre-sales-engineer|c1|e1,auctane|pre-sales-engineer|c1,2026-04-10,exact,submission_receipt,,,,email,gmail,19d76cd69aa1a5ff,
-bravo,auctane|pre-sales-engineer|c1|e2,auctane|pre-sales-engineer|c1,2026-05-14,exact,rejection,,unknown,,email,gmail,19e26fe5ff10715a,Thanks for your interest Pre-Sales Engineer declined
-bravo,cresta|gtm-engineer|c1|e1,cresta|gtm-engineer|c1,2026-04-10,exact,submission_receipt,,,,email,gmail,19d76d01aa417859,
-bravo,airops|growth-engineer|c1|e1,airops|growth-engineer|c1,2026-04-10,exact,submission_receipt,,,,email,gmail,19d76ecf6a22732c,
-bravo,rollstack|ai-growth-hacker|c1|e1,rollstack|ai-growth-hacker|c1,2026-04-10,exact,submission_receipt,,,,email,gmail,19d782b522666c50,
-bravo,teleport|gtm-engineer|c1|e1,teleport|gtm-engineer|c1,2026-04-14,exact,submission_receipt,,,,email,gmail,19d89d00fa4cd01e,
-bravo,teleport|gtm-engineer|c1|e2,teleport|gtm-engineer|c1,2026-05-07,exact,rejection,,unknown,,email,gmail,19e032b4926fea88,Thanks for your interest in Teleport declined
-bravo,every-to|gtm-engineer|c1|e1,every-to|gtm-engineer|c1,2026-04-20,exact,employer_ack,,,,email,gmail,19dab8026601594d,austin@every.to thanks for applying for the GTM Engineer role I'd love to chat call booked
-bravo,every-to|gtm-engineer|c1|e2,every-to|gtm-engineer|c1,2026-04-20,exact,recruiter_screen,1,Austin,unknown,phone,gmail,19dab8026601594d,call booked after thanks for applying
-bravo,fossa|unspecified|c1|e1,fossa|unspecified|c1,2026-04-22,exact,submission_receipt,,,,email,gmail,19db79c8ee22ec32,
-bravo,fossa|unspecified|c1|e2,fossa|unspecified|c1,2026-05-20,exact,rejection,,unknown,,email,gmail,19e466fffd8be312,FOSSA Thank you for your interest first cycle declined
-bravo,fossa|unspecified|c2|e1,fossa|unspecified|c2,2026-05-21,exact,submission_receipt,,,,email,gmail,19e484115163beb9,
-bravo,oxos-medical|gtm-engineer|c1|e1,oxos-medical|gtm-engineer|c1,2026-04-27,exact,submission_receipt,,,,email,gmail,19dccd63689d53b4,
-bravo,trase|gtm-engineer-healthcare|c1|e1,trase|gtm-engineer-healthcare|c1,2026-04-27,exact,submission_receipt,,,,email,gmail,19dccd718095daa6,
-bravo,trase|gtm-engineer-healthcare|c1|e2,trase|gtm-engineer-healthcare|c1,2026-06-26,exact,submission_receipt,,unknown,,email,gmail,19f045de92738bc2,second Greenhouse thank you; no terminal between 04-27 and 06-26
-bravo,trase|gtm-engineer-healthcare|c1|e3,trase|gtm-engineer-healthcare|c1,2026-07-10,exact,rejection,,unknown,,email,gmail,19f4de2747e2411b,Trase Update GTM Engineer Healthcare declined
-bravo,built-recruiting|gtm-engineer|c1|e1,built-recruiting|gtm-engineer|c1,2026-04-16,exact,rejection,,,,email,gmail,19d96c817e5530a8,Update from Built Recruiting GTM Engineer position filled
-bravo,wallstreetquants|unspecified|c1|e1,wallstreetquants|unspecified|c1,2026-04-17,exact,submission_receipt,,,,email,gmail,19d99de120567117,
-bravo,bx-studio|unspecified|c1|e1,bx-studio|unspecified|c1,2026-04-08,exact,submission_receipt,,,,email,gmail,19d6bb0d0e645a4a,
-bravo,10x-genomics|unspecified|c1|e1,10x-genomics|unspecified|c1,2026-05-02,exact,submission_receipt,,,,email,gmail,19de744df3cc8058,
-bravo,10x-genomics|unspecified|c1|e2,10x-genomics|unspecified|c1,2026-05-02,exact,submission_receipt,,unknown,,email,gmail,19de744aab60ad7a,careers@careers.10xgenomics.com duplicate receipt 14 seconds earlier
-bravo,10x-genomics|unspecified|c1|e3,10x-genomics|unspecified|c1,2026-05-14,exact,rejection,,unknown,,email,gmail,19e27418ea29b3a7,Update about your application declined
-bravo,spider-cloud|growth-lead|c1|e1,spider-cloud|growth-lead|c1,2026-05-03,exact,submission_receipt,,,,email,gmail,19deeeb2c2f91f78,
-bravo,tractian|senior-gtm-engineer-hubspot|c1|e1,tractian|senior-gtm-engineer-hubspot|c1,2026-05-19,exact,submission_receipt,,,,email,gmail,19e4291127b40a17,
-bravo,practical-prospecting|unspecified|c1|e1,practical-prospecting|unspecified|c1,2026-05-20,exact,submission_receipt,,,,email,gmail,19e464b4cc0113a9,
-bravo,tractian|sales-engineer-automation|c1|e1,tractian|sales-engineer-automation|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,19e48a2ceaaaf575,
-bravo,airtable|gtm-engineer|c1|e1,airtable|gtm-engineer|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,19e483d68ffad276,
-bravo,airtable|gtm-engineer|c1|e2,airtable|gtm-engineer|c1,2026-05-27,exact,rejection,,unknown,,email,gmail,19e6b2afee593d82,jobs@airtable.com GTM Engineer declined
-bravo,nice|ai-solution-strategist|c1|e1,nice|ai-solution-strategist|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,19e488224ece6bbd,
-bravo,nebius|director-gtm-physical-ai|c1|e1,nebius|director-gtm-physical-ai|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,19e48813db65a1ed,
-bravo,nebius|director-gtm-physical-ai|c1|e2,nebius|director-gtm-physical-ai|c1,2026-07-16,exact,rejection,,unknown,,email,gmail,19f6bb84c56cd75e,Director GTM Physical AI declined
-bravo,dbeaver|gtm-engineer|c1|e1,dbeaver|gtm-engineer|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,19e4859d61d1fb64,
-bravo,dbeaver|gtm-engineer|c1|e2,dbeaver|gtm-engineer|c1,2026-06-05,exact,rejection,,unknown,,email,gmail,19e988e1447a03fe,DBeaver Application Update declined
-bravo,telnyx|unspecified|c1|e1,telnyx|unspecified|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,19e4887929bac69d,
-bravo,vitalsource|ai-enablement-lead|c1|e1,vitalsource|ai-enablement-lead|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,19e489445bf1588b,
-bravo,colab-software|sales-engineer|c1|e1,colab-software|sales-engineer|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,19e48971b300d9ad,
-bravo,colab-software|sales-engineer|c1|e2,colab-software|sales-engineer|c1,2026-05-28,exact,employer_ack,,unknown,,email,gmail,19e6f4599d4e49ae,no-reply@hiring.colabsoftware.com Sales Engineer
-bravo,pindrop|gtm-systems-platform-specialist|c1|e1,pindrop|gtm-systems-platform-specialist|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,19e48980896f8941,
-bravo,pindrop|gtm-systems-platform-specialist|c1|e2,pindrop|gtm-systems-platform-specialist|c1,2026-05-27,exact,rejection,,unknown,,email,gmail,19e6a74411d02fb8,talent@pindrop.com GTM Systems Platform Specialist declined
-bravo,applied-systems|sales-enablement-gtm-readiness-lead|c1|e1,applied-systems|sales-enablement-gtm-readiness-lead|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,19e48a0f793edaa7,
-bravo,applied-systems|sales-enablement-gtm-readiness-lead|c1|e2,applied-systems|sales-enablement-gtm-readiness-lead|c1,2026-05-21,exact,employer_ack,,unknown,,email,gmail,19e48a083e9459da,iCIMS verify your email address
-bravo,applied-systems|sales-enablement-gtm-readiness-lead|c1|e3,applied-systems|sales-enablement-gtm-readiness-lead|c1,2026-05-21,exact,employer_ack,,unknown,,email,gmail,19e48a087297332a,Your Amazing Career Moments Starts Here
-bravo,onit|sales-engineer|c1|e1,onit|sales-engineer|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,19e4b49694584b22,
-bravo,servicetrade|unspecified|c1|e1,servicetrade|unspecified|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,19e4b44fc00eaf2e,
-bravo,servicetrade|unspecified|c1|e2,servicetrade|unspecified|c1,2026-05-29,exact,rejection,,unknown,,email,gmail,19e757a9612aef35,talent@servicetrade.com Update about your Application declined
-bravo,deepgram|gtm-engineer|c1|e1,deepgram|gtm-engineer|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,19e4885d926c2eef,
-bravo,deepgram|gtm-engineer|c1|e2,deepgram|gtm-engineer|c1,2026-05-22,exact,rejection,,unknown,,email,gmail,19e5021519a70ba7,Thanks for your interest declined
-bravo,apartmentiq|unspecified|c1|e1,apartmentiq|unspecified|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,19e48830325dab6d,
-bravo,apartmentiq|unspecified|c1|e2,apartmentiq|unspecified|c1,2026-05-28,exact,rejection,,unknown,,email,gmail,19e701e7bbb96826,ApartmentIQ Follow Up declined
-bravo,evenup|ai-adoption-manager-southeast|c1|e1,evenup|ai-adoption-manager-southeast|c1,2026-05-25,exact,submission_receipt,,,,email,gmail,19e5dd62d00d3326,
-bravo,evenup|ai-adoption-manager-southeast|c1|e2,evenup|ai-adoption-manager-southeast|c1,2026-06-04,exact,rejection,,unknown,,email,gmail,19e930fda494e3f1,Update from EvenUp declined
-bravo,speechify|go-to-market-engineer-atlanta|c1|e1,speechify|go-to-market-engineer-atlanta|c1,2026-05-25,exact,submission_receipt,,,,email,gmail,19e5eab99cdf81af,
-bravo,apollo-io|unspecified|c1|e1,apollo-io|unspecified|c1,2026-05-28,exact,submission_receipt,,,,email,gmail,19e6c874ef395028,
-bravo,huzzle|gtm-engineer|c1|e1,huzzle|gtm-engineer|c1,2026-06-04,exact,submission_receipt,,,,email,gmail,19e9214f255608aa,
-bravo,huzzle|gtm-engineer|c1|e2,huzzle|gtm-engineer|c1,2026-06-04,exact,assessment_sent,,unknown,,email,gmail,19e92180ca58bd3a,support@huzzle.app Next Step Complete Your Interview applying to join our talent pool moving forward to next stage
-bravo,huzzle|gtm-engineer|c1|e3,huzzle|gtm-engineer|c1,2026-06-09,exact,assessment_sent,,unknown,,email,gmail,19eabc7bbc1aa40f,Your Huzzle Video Interview is Still Pending
-bravo,huzzle|gtm-engineer|c1|e4,huzzle|gtm-engineer|c1,2026-06-11,exact,assessment_sent,,unknown,,email,gmail,19eb650805cfef0a,Final Reminder Complete Your Interview with Huzzle AI video interview required screening step
-bravo,huzzle|gtm-engineer|c1|e5,huzzle|gtm-engineer|c1,2026-06-16,exact,assessment_sent,,unknown,,email,gmail,19ed00aa4e9b1478,48 Hours Left Final Chance to Complete Your Interview
-bravo,adaptive6|sales-engineer|c1|e1,adaptive6|sales-engineer|c1,2026-06-04,exact,submission_receipt,,,,email,gmail,19e920eb6b7b55f0,
-bravo,adaptive6|sales-engineer|c1|e2,adaptive6|sales-engineer|c1,2026-06-16,exact,rejection,,unknown,,email,gmail,19ed06966e43cb5b,thank you for applying Sales Engineer declined
-bravo,4mindsai|gtm-engineer|c1|e1,4mindsai|gtm-engineer|c1,2026-06-04,exact,submission_receipt,,,,email,gmail,19e91037278affa0,
-bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e1,revspring|lead-agentic-operations-gtm-engineering|c1,2026-06-04,exact,submission_receipt,,,,email,gmail,19e91027e41faf49,
-bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e2,revspring|lead-agentic-operations-gtm-engineering|c1,2026-05-29,exact,employer_ack,,Stephanie Cunningham,recruiter,email,gmail,19e74662ea5ede3c,LinkedIn InMail Stephanie Cunningham AI role at RevSpring recruiter approach preceding the screen
-bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e3,revspring|lead-agentic-operations-gtm-engineering|c1,2026-06-10,exact,recruiter_screen,1,unknown,recruiter,email,gmail,19eb280cfa60523e,Recruiter Screen Request Lead Agentic Operations + GTM Engineering
-bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e4,revspring|lead-agentic-operations-gtm-engineering|c1,2026-06-23,exact,submission_receipt,,unknown,,email,gmail,19ef46124504d022,duplicate Thanks for Applying Newtonsoftware
-bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e5,revspring|lead-agentic-operations-gtm-engineering|c1,2026-06-25,exact,employer_ack,,unknown,,email,gmail,19eff2f62ca18205,Lead Agentic Operations + GTM Engineering Newtonsoftware
-bravo,cloudflare|gtm-engineer|c1|e1,cloudflare|gtm-engineer|c1,2026-06-04,exact,submission_receipt,,,,email,gmail,19e90ffd1bc9ed7d,
-bravo,cloudflare|gtm-engineer|c1|e2,cloudflare|gtm-engineer|c1,2026-06-23,exact,rejection,,unknown,,email,gmail,19ef4cb49b74227b,cloudflare.vssend.com Application Update declined
-bravo,pogo-technologies|gtm-engineer|c1|e1,pogo-technologies|gtm-engineer|c1,2026-06-04,exact,submission_receipt,,,,email,gmail,19e90fa204f97711,
-bravo,pogo-technologies|gtm-engineer|c1|e2,pogo-technologies|gtm-engineer|c1,2026-06-26,exact,submission_receipt,,unknown,,email,gmail,19f046ca4b4ba350,Gem thank you first cycle annotation; no terminal after 06-04
-bravo,pogo-technologies|gtm-engineer|c1|e3,pogo-technologies|gtm-engineer|c1,2026-07-08,exact,submission_receipt,,unknown,,email,gmail,19f3f0957b849e79,Ashby thanks for applying GTM Engineer; no terminal after prior receipts
-bravo,atlanta-public-schools|unspecified|c1|e1,atlanta-public-schools|unspecified|c1,2026-06-19,exact,submission_receipt,,,,email,gmail,19ee1ef014efde21,
-bravo,atlanta-public-schools|unspecified|c1|e2,atlanta-public-schools|unspecified|c1,2026-06-19,exact,employer_ack,,unknown,,email,gmail,19eddc4876071497,AppliTrack Application Started
-bravo,atlanta-public-schools|unspecified|c1|e3,atlanta-public-schools|unspecified|c1,2026-06-19,exact,followup_sent,,unknown,,email,gmail,19edf97699db02b8,SENT to substituteservices@atlanta.k12.ga.us stating Frontline application completed to final confirmation page
-bravo,atlanta-public-schools|unspecified|c1|e4,atlanta-public-schools|unspecified|c1,2026-06-22,exact,rejection,,unknown,,email,gmail,19edf97699db02b8,APS replies they are not currently accepting substitute applications
-bravo,atlanta-public-schools|unspecified|c1|e5,atlanta-public-schools|unspecified|c1,2026-07-28,exact,rejection,,unknown,,email,gmail,19fa91f897b687a8,Frontline Stellar Substitute Position Update position filled; district not named on this artifact; parented here because APS is the Frontline district in the sent thread
-bravo,anduril|technical-operations-engineer-launched-effects|c1|e1,anduril|technical-operations-engineer-launched-effects|c1,2026-06-21,exact,submission_receipt,,,,email,gmail,19ee93283584432d,
-bravo,anduril|technical-operations-engineer-launched-effects|c1|e2,anduril|technical-operations-engineer-launched-effects|c1,2026-07-15,exact,rejection,,unknown,,email,gmail,19f66b93c6e79e48,no-reply@recruiting.anduril.com thank you for applying declined; role not restated
-bravo,attentive|unspecified|c1|e1,attentive|unspecified|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,19eefbc31ff6b3b6,
-bravo,attentive|unspecified|c1|e2,attentive|unspecified|c1,2026-07-07,exact,rejection,,unknown,,email,gmail,19f3dd07daaab373,Thank You from Attentive declined
-bravo,attentive|gtm-engineer|c2|e1,attentive|gtm-engineer|c2,2026-07-15,exact,submission_receipt,,,,email,gmail,19f66e0efd40b3f4,
-bravo,armada|ai-factory-value-engineer|c1|e1,armada|ai-factory-value-engineer|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,19eefba5be8f7ef6,
-bravo,mercor|education-school-evaluator|c1|e1,mercor|education-school-evaluator|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,19eefdfd5fb4bb63,
-bravo,mercor|education-school-evaluator|c1|e2,mercor|education-school-evaluator|c1,2026-06-29,exact,rejection,,unknown,,email,gmail,19f13f185041b1dc,Update on your application declined
-bravo,mercor|general-sales-gtm-evaluator|c1|e1,mercor|general-sales-gtm-evaluator|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,19eefdeb355c085a,
-bravo,mercor|general-sales-gtm-evaluator|c1|e2,mercor|general-sales-gtm-evaluator|c1,2026-06-29,exact,rejection,,unknown,,email,gmail,19f13f16729b311e,Update on your application declined
-bravo,wealth-com|gtm-engineer|c1|e1,wealth-com|gtm-engineer|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,19eefcd985ae33a4,
-bravo,wealth-com|gtm-engineer|c1|e2,wealth-com|gtm-engineer|c1,2026-06-22,exact,rejection,,unknown,,email,gmail,19ef05d170b5e420,Wealth.com Application Update declined
-bravo,syncro|gtm-operations-manager|c1|e1,syncro|gtm-operations-manager|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,19eefe0d482170d6,
-bravo,sentilink|go-to-market-strategy-analyst|c1|e1,sentilink|go-to-market-strategy-analyst|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,19eefe0dd8894c92,
-bravo,sentilink|go-to-market-strategy-analyst|c1|e2,sentilink|go-to-market-strategy-analyst|c1,2026-07-13,exact,rejection,,unknown,,email,gmail,19f5c35571905cf8,Update Go-to-Market Strategy Analyst declined
-bravo,jobgether|gtm-engineer|c1|e1,jobgether|gtm-engineer|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,19ef0388de687866,
-bravo,jobgether|gtm-engineer|c1|e2,jobgether|gtm-engineer|c1,2026-06-23,exact,assessment_sent,,unknown,,email,gmail,19ef55efa8ce30cd,Follow-up Match Score and Assessment Report
-bravo,ibm|manager-applied-ai-gtm-systems-confluent|c1|e1,ibm|manager-applied-ai-gtm-systems-confluent|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,19ef0dc6fd9601c2,
-bravo,ibm|manager-applied-ai-gtm-systems-confluent|c1|e2,ibm|manager-applied-ai-gtm-systems-confluent|c1,2026-07-26,exact,rejection,,unknown,,email,gmail,19f9eed2a79487bf,Your IBM Application Status Ref 119353 declined
-bravo,pindrop|unspecified|c2|e1,pindrop|unspecified|c2,2026-06-22,exact,submission_receipt,,,,email,gmail,19ef0c2f0b159d24,
-bravo,the-hog|gtm-engineer|c1|e1,the-hog|gtm-engineer|c1,2026-06-15,exact,employer_ack,,unknown,,email,gmail,19ecda5fa25e0d35,hudson@thehog.ai Invitation GTM Interview with Hudson Liao Jun 16
-bravo,the-hog|gtm-engineer|c1|e2,the-hog|gtm-engineer|c1,2026-06-16,exact,hiring_manager_interview,1,Hudson Liao,unknown,video,gmail,19ecda5fa25e0d35,GTM Interview with Hudson Liao
-bravo,the-hog|gtm-engineer|c1|e3,the-hog|gtm-engineer|c1,2026-06-18,exact,assessment_sent,,unknown,,email,gmail,19ed8711b82f46a2,GTM Engineer take-home assignment ~4 hours includes SENT
-bravo,the-hog|gtm-engineer|c1|e4,the-hog|gtm-engineer|c1,2026-06-18,exact,technical_exercise,2,Hudson Liao,unknown,async,gmail,19ed8711b82f46a2,take-home assignment
-bravo,city-schools-of-decatur|unspecified|c1|e1,city-schools-of-decatur|unspecified|c1,2026-06-26,exact,submission_receipt,,,,email,gmail,19f0591daff91fe0,
-bravo,city-schools-of-decatur|unspecified|c1|e2,city-schools-of-decatur|unspecified|c1,2026-06-26,exact,employer_ack,,unknown,,email,gmail,19f047e5069cac88,AppliTrack Application Started
-bravo,clay|growth-strategist-enterprise|c1|e1,clay|growth-strategist-enterprise|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,19efc05ffdf85b11,
-bravo,clay|growth-strategist-enterprise|c1|e2,clay|growth-strategist-enterprise|c1,2026-06-25,exact,rejection,,unknown,,email,gmail,19effc7f4c9d1bb1,Thank You for Your Interest Growth Strategist Enterprise declined
-bravo,wirescreen|partnerships-manager|c1|e1,wirescreen|partnerships-manager|c1,2026-06-25,exact,submission_receipt,,,,email,gmail,19efcac922c14bff,
-bravo,wirescreen|partnerships-manager|c1|e2,wirescreen|partnerships-manager|c1,2026-07-03,exact,rejection,,unknown,,email,gmail,19f28122429663bc,Partnerships Manager declined
-bravo,minio|bdr-enterprise|c1|e1,minio|bdr-enterprise|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,19efc06d34fcb255,
-bravo,minio|bdr-enterprise|c1|e2,minio|bdr-enterprise|c1,2026-06-27,exact,rejection,,unknown,,email,gmail,19f091daa99e4e31,Important information about your application declined
-bravo,upguard|sdr-manager|c1|e1,upguard|sdr-manager|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,19efc056918b6c04,
-bravo,upguard|sdr-manager|c1|e2,upguard|sdr-manager|c1,2026-06-24,exact,employer_ack,,unknown,,email,gmail,19efc056b004c92c,You've applied what next
-bravo,upguard|sdr-manager|c1|e3,upguard|sdr-manager|c1,2026-06-29,exact,rejection,,unknown,,email,gmail,19f111b4c91336a5,Thank you for your interest SDR Manager declined
-bravo,tekion|senior-manager-inside-sales|c1|e1,tekion|senior-manager-inside-sales|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,19efc04fdbc254f8,
-bravo,tekion|senior-manager-inside-sales|c1|e2,tekion|senior-manager-inside-sales|c1,2026-06-27,exact,rejection,,unknown,,email,gmail,19f090ef87b415f9,Senior Manager Inside Sales declined
-bravo,enlace-health|sales-engineer|c1|e1,enlace-health|sales-engineer|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,19efb21f0d264cc7,
-bravo,enlace-health|sales-engineer|c1|e2,enlace-health|sales-engineer|c1,2026-06-26,exact,rejection,,unknown,,email,gmail,19f055b8281670e6,Sales Engineer declined
-bravo,canals|sales-manager|c1|e1,canals|sales-manager|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,19efb4665f5d3e35,
-bravo,stackai|sales-engineer|c1|e1,stackai|sales-engineer|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,19efb45de31b9ab1,
-bravo,automation-anywhere|sales-engineer|c1|e1,automation-anywhere|sales-engineer|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,19efb606b9d8d30c,
-bravo,toast|gtm-engineer-sales-workflow-automation|c1|e1,toast|gtm-engineer-sales-workflow-automation|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,19efaf07476920ba,
-bravo,toast|gtm-engineer-sales-workflow-automation|c1|e2,toast|gtm-engineer-sales-workflow-automation|c1,2026-07-16,exact,rejection,,unknown,,email,gmail,19f6ce89823237ff,GTM Engineer Sales Workflow Automation declined
-bravo,revpartners|gtm-engineer|c1|e1,revpartners|gtm-engineer|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,19efb237bd508b63,
-bravo,revpartners|gtm-engineer|c1|e2,revpartners|gtm-engineer|c1,2026-06-26,exact,employer_ack,,unknown,,email,gmail,19f05833dc2e1e91,RevPartners Application Status
-bravo,revpartners|gtm-engineer|c1|e3,revpartners|gtm-engineer|c1,2026-07-22,exact,employer_ack,,unknown,,email,gmail,19f8b51267553828,Complete the application for GTM Engineer email verification
-bravo,revpartners|gtm-engineer|c1|e4,revpartners|gtm-engineer|c1,2026-07-22,exact,employer_ack,,unknown,,email,gmail,19f8b5c047e4d531,felicia.guynn RevPartners Application 2 msgs 93 seconds apart
-bravo,revpartners|gtm-engineer|c1|e5,revpartners|gtm-engineer|c1,2026-07-27,exact,employer_ack,,unknown,,email,gmail,19fa53a74c0a2a31,RevPartners Application Status
-bravo,inrule-technology|unspecified|c1|e1,inrule-technology|unspecified|c1,2026-07-06,exact,submission_receipt,,,,email,gmail,19f3945ca9b2c382,
-bravo,douglas-county-school-system|unspecified|c1|e1,douglas-county-school-system|unspecified|c1,2026-07-09,exact,submission_receipt,,,,email,gmail,19f47b33ae935a1d,
-bravo,douglas-county-school-system|unspecified|c1|e2,douglas-county-school-system|unspecified|c1,2026-06-27,exact,employer_ack,,unknown,,email,gmail,19f0a92f0c7b691f,Change your Frontline ID password Douglas County
-bravo,talentpluto|go-to-market-engineer|c1|e1,talentpluto|go-to-market-engineer|c1,2026-07-12,exact,submission_receipt,,,,email,gmail,19f5862ce3bd83b7,
-bravo,talentpluto|go-to-market-engineer|c1|e2,talentpluto|go-to-market-engineer|c1,2026-07-12,exact,employer_ack,,unknown,,email,gmail,19f586869aa3577d,pluto@mail.talentpluto.com thank you next step is a call with Pluto
-bravo,talentpluto|go-to-market-engineer|c1|e3,talentpluto|go-to-market-engineer|c1,2026-07-14,exact,employer_ack,,unknown,,email,gmail,19f62b55cb2667f8,A reminder about your application
-bravo,talentpluto|go-to-market-engineer|c1|e4,talentpluto|go-to-market-engineer|c1,2026-07-17,exact,employer_ack,,unknown,,email,gmail,19f7228aa86c15ca,Your application process is incomplete
-bravo,talentpluto|go-to-market-engineer|c1|e5,talentpluto|go-to-market-engineer|c1,2026-07-22,exact,employer_ack,,unknown,,email,gmail,19f8be8b879d43f0,action required application about to be closed
-bravo,listen-labs|lead-gtm-engineer|c1|e1,listen-labs|lead-gtm-engineer|c1,2026-07-12,exact,submission_receipt,,,,email,gmail,19f581abc17d4940,
-bravo,anysphere|gtm-emerging-products|c1|e1,anysphere|gtm-emerging-products|c1,2026-07-12,exact,submission_receipt,,,,email,gmail,19f581850e4bdee5,
-bravo,anysphere|gtm-emerging-products|c1|e2,anysphere|gtm-emerging-products|c1,2026-07-13,exact,rejection,,unknown,,email,gmail,19f5cedf251d981e,Cursor Application Update GTM Emerging Products declined
-bravo,confido|founding-gtm-engineer|c1|e1,confido|founding-gtm-engineer|c1,2026-07-12,exact,submission_receipt,,,,email,gmail,19f5811658f16a5d,
-bravo,patch|growth-engineering-lead|c1|e1,patch|growth-engineering-lead|c1,2026-07-13,exact,submission_receipt,,,,email,gmail,19f591484e264a9d,
-bravo,together-ai|unspecified|c1|e1,together-ai|unspecified|c1,2026-07-13,exact,submission_receipt,,,,email,gmail,19f59187b2f99900,
-bravo,together-ai|unspecified|c1|e2,together-ai|unspecified|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f6738e39456b2d,second Greenhouse thank you; no terminal between 07-13 and 07-15
-bravo,productboard|gtm-engineer|c1|e1,productboard|gtm-engineer|c1,2026-07-13,exact,submission_receipt,,,,email,gmail,19f591197ecd2b88,
-bravo,bluejay|founding-gtm|c1|e1,bluejay|founding-gtm|c1,2026-07-13,exact,employer_ack,,,,email,gmail,19f59c69bc094dbf,joshk@hartleyco.co.uk Regarding Your Application GTM Engineer
-bravo,bluejay|founding-gtm|c1|e2,bluejay|founding-gtm|c1,2026-07-13,exact,recruiter_screen,1,Josh Kelly,recruiter,phone,gmail,19f59c69bc094dbf,5 msg thread includes SENT call scheduled same day
-bravo,bluejay|founding-gtm|c1|e3,bluejay|founding-gtm|c1,2026-07-23,exact,rejection,,unknown,,email,gmail,19f8e4194f9a477d,Update on the Founding GTM Role at Bluejay declined after process
-bravo,conversion|gtm-engineer|c1|e1,conversion|gtm-engineer|c1,2026-07-14,exact,submission_receipt,,,,email,gmail,19f630abd3eb09e5,
-bravo,axiad|unspecified|c1|e1,axiad|unspecified|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,19f663a7ea0c599a,
-bravo,hologram|gtm-engineer-pre-sales|c1|e1,hologram|gtm-engineer-pre-sales|c1,2026-07-15,exact,employer_ack,,,,email,gmail,19f66680cb338333,Your application with Hologram has been activated
-bravo,hologram|gtm-engineer-pre-sales|c1|e2,hologram|gtm-engineer-pre-sales|c1,2026-07-16,exact,employer_ack,,Megan Koch,recruiter,email,gmail,19f6c7190ae437a1,megan.koch@hologram.io Intro-Call Confirmation includes SENT
-bravo,hologram|gtm-engineer-pre-sales|c1|e3,hologram|gtm-engineer-pre-sales|c1,2026-07-20,exact,recruiter_screen,1,Amy Schwartz,recruiter,phone,gmail,19f7b0d6008a9e23,Reminder Preliminary Screening Call Amy Schwartz Jul 20
-bravo,hologram|gtm-engineer-pre-sales|c1|e4,hologram|gtm-engineer-pre-sales|c1,2026-07-22,exact,panel,2,Derrick Calderon,unknown,video,gmail,19f8515939b5e54d,Reminder Cross-Functional Interview Derrick Calderon Jul 22
-bravo,hologram|gtm-engineer-pre-sales|c1|e5,hologram|gtm-engineer-pre-sales|c1,2026-07-22,exact,followup_sent,,unknown,,email,gmail,19f8a5b3c58414df,post-interview portfolio send to derrick@hologram.io
-bravo,hologram|gtm-engineer-pre-sales|c1|e6,hologram|gtm-engineer-pre-sales|c1,2026-07-26,exact,employer_ack,,unknown,,email,gmail,19f9e1b3ff5c4c31,Hologram candidate experience survey
-bravo,productboard|associate-gtm-engineer|c1|e1,productboard|associate-gtm-engineer|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,19f666a4c400d642,
-bravo,handshake|gtm-engineer|c1|e1,handshake|gtm-engineer|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,19f66e96998790fa,
-bravo,yuno|go-to-market-engineer|c1|e1,yuno|go-to-market-engineer|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,19f66efcd7ca225a,
-bravo,lorikeet|gtm-engineer|c1|e1,lorikeet|gtm-engineer|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,19f6712399be4ba0,
-bravo,lorikeet|gtm-engineer|c1|e2,lorikeet|gtm-engineer|c1,2026-07-20,exact,rejection,,unknown,,email,gmail,19f81d8fa98ad7fe,Thank you for applying position filled
-bravo,nooks|gtm-engineer-marketing|c1|e1,nooks|gtm-engineer-marketing|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,19f6712efa07f534,
-bravo,hightouch|go-to-market-engineer|c1|e1,hightouch|go-to-market-engineer|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,19f672b1c753c07d,
-bravo,hightouch|go-to-market-engineer|c1|e2,hightouch|go-to-market-engineer|c1,2026-07-22,exact,submission_receipt,,unknown,,email,gmail,19f8aa4507d11cf0,second Greenhouse Application Received; no terminal between 07-15 and 07-22
-bravo,hightouch|go-to-market-engineer|c1|e3,hightouch|go-to-market-engineer|c1,2026-07-24,exact,rejection,,unknown,,email,gmail,19f954ab2eed0963,Your Application Go-to-Market Engineer declined
-bravo,scribe|unspecified|c1|e1,scribe|unspecified|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,19f672d2bf2e6a71,
-bravo,brighthire|unspecified|c1|e1,brighthire|unspecified|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,19f672edb15894d3,
-bravo,gatherup|unspecified|c1|e1,gatherup|unspecified|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,19f67309cd2aae85,
-bravo,hud|gtm-engineer|c1|e1,hud|gtm-engineer|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,19f673230c047acf,
-bravo,hud|gtm-engineer|c1|e2,hud|gtm-engineer|c1,2026-07-16,exact,rejection,,unknown,,email,gmail,19f687bd5a05c83b,HUD Application Update GTM Engineer declined
-bravo,higgsfield|gtm-engineer|c1|e1,higgsfield|gtm-engineer|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,19f67338d222bbfd,
-bravo,clutch|gtm-engineer|c1|e1,clutch|gtm-engineer|c1,2026-07-19,exact,submission_receipt,,,,email,gmail,19f7a5451367af23,
-bravo,clutch|gtm-engineer|c1|e2,clutch|gtm-engineer|c1,2026-07-22,exact,employer_ack,,unknown,,email,gmail,19f8be37e8a3a67a,A note from Clutch GTM Engineer
-bravo,owner-com|gtm-engineer|c1|e1,owner-com|gtm-engineer|c1,2026-07-22,exact,submission_receipt,,,,email,gmail,19f8aa5a9dee405a,
-bravo,livekit|gtm-systems-engineer|c1|e1,livekit|gtm-systems-engineer|c1,2026-07-20,exact,submission_receipt,,,,email,gmail,19f7fdf16a84eeb7,
-bravo,livekit|gtm-systems-engineer|c1|e2,livekit|gtm-systems-engineer|c1,2026-08-17,exact,rejection,,unknown,,email,gmail,1a00fddbc5de0d9e,LiveKit Application GTM Systems Engineer declined
-bravo,mercor|biology-biophysics-research-collaborator|c1|e1,mercor|biology-biophysics-research-collaborator|c1,2026-07-20,exact,submission_receipt,,,,email,gmail,19f80db568ec6cea,
-bravo,mercor|biology-biophysics-research-collaborator|c1|e2,mercor|biology-biophysics-research-collaborator|c1,2026-07-20,exact,employer_ack,,unknown,,email,gmail,19f80d9fb0e29e3f,You have been referred to Mercor by Victor Ekuta
-bravo,mercor|biology-biophysics-research-collaborator|c1|e3,mercor|biology-biophysics-research-collaborator|c1,2026-07-20,exact,employer_ack,,unknown,,email,gmail,19f80db57bbdf334,Availability & Commitment Confirmation Form Research Collaborator 20 hrs
-bravo,mercor|biology-biophysics-research-collaborator|c1|e4,mercor|biology-biophysics-research-collaborator|c1,2026-07-27,exact,rejection,,unknown,,email,gmail,19fa4f21a7ced918,Update on your application declined
-bravo,hyperbound|founding-revops-lead|c1|e1,hyperbound|founding-revops-lead|c1,2026-07-17,exact,rejection,,,,email,gmail,19f70d1eb116ee40,Application Update Founding RevOps Lead declined
-bravo,great-question|senior-demand-generation-manager|c1|e1,great-question|senior-demand-generation-manager|c1,2026-07-17,exact,submission_receipt,,,,email,gmail,19f7078ecf3d9598,
-bravo,great-question|senior-demand-generation-manager|c1|e2,great-question|senior-demand-generation-manager|c1,2026-07-24,exact,employer_ack,,Harri,unknown,email,gmail,19f922b1dc3fa017,harri@greatquestion.co Next Steps screening call scheduling
-bravo,great-question|senior-demand-generation-manager|c1|e3,great-question|senior-demand-generation-manager|c1,2026-07-25,exact,employer_ack,,unknown,,email,gmail,19f9add09d4e62b9,Reminder Upcoming Interview
-bravo,great-question|senior-demand-generation-manager|c1|e4,great-question|senior-demand-generation-manager|c1,2026-07-26,exact,hiring_manager_interview,1,unknown,unknown,video,gmail,19f9fcc92979fc8b,Reminder Upcoming Interview Google Meet
-bravo,great-question|senior-demand-generation-manager|c1|e5,great-question|senior-demand-generation-manager|c1,2026-07-29,exact,rejection,,unknown,,email,gmail,19fb03b48343c7d3,Update on Your Application post-interview decline
-bravo,great-question|senior-demand-generation-manager|c1|e6,great-question|senior-demand-generation-manager|c1,2026-07-31,exact,employer_ack,,unknown,,email,gmail,19fb842bcb109ac3,Feedback request Senior Demand Generation Manager
-bravo,revic|founding-gtm-ai-engineer|c1|e1,revic|founding-gtm-ai-engineer|c1,2026-07-21,exact,submission_receipt,,,,email,gmail,19f82bde8c27b1f9,
-bravo,gradient-labs|gtm-engineer|c1|e1,gradient-labs|gtm-engineer|c1,2026-07-27,exact,rejection,,,,email,gmail,19fa440801dc6151,Update on your application declined
-bravo,gradient-labs|gtm-engineer|c1|e2,gradient-labs|gtm-engineer|c1,2026-07-21,exact,employer_ack,,unknown,,email,gmail,19f83082e710b328,phil@ziprecruiter.com Gradient Labs would like you to complete your application GTM Engineer
-bravo,firstup|manager-gtm-systems|c1|e1,firstup|manager-gtm-systems|c1,2026-07-23,exact,submission_receipt,,,,email,gmail,19f8ca07274d9777,
-bravo,firstup|manager-gtm-systems|c1|e2,firstup|manager-gtm-systems|c1,2026-07-23,exact,submission_receipt,,unknown,,email,gmail,19f8c9436de2adfd,Apply4Me We're Working on Your Application to Firstup
-bravo,firstup|manager-gtm-systems|c1|e3,firstup|manager-gtm-systems|c1,2026-07-23,exact,submission_receipt,,unknown,,email,gmail,19f8ca096381b67b,Apply4Me Application Sent Manager GTM Systems at Firstup
-bravo,lattice|gtm-engineer|c1|e1,lattice|gtm-engineer|c1,2026-07-24,exact,submission_receipt,,,,email,gmail,19f9445f8807e40b,
-bravo,lattice|gtm-engineer|c1|e2,lattice|gtm-engineer|c1,2026-07-22,exact,employer_ack,,unknown,,email,gmail,19f8bd9b0ccbecd6,Apply4Me Working on Your Application to Lattice
-bravo,lattice|gtm-engineer|c1|e3,lattice|gtm-engineer|c1,2026-07-24,exact,submission_receipt,,unknown,,email,gmail,19f94461c7177b18,Apply4Me Application Sent GTM Engineer at Lattice
-bravo,lattice|gtm-engineer|c1|e4,lattice|gtm-engineer|c1,2026-08-04,exact,rejection,,unknown,,email,gmail,19fcd8eedd9f532c,no-reply@lattice.com Update on the GTM Engineer role position filled
-bravo,ai-digital|growth-director|c1|e1,ai-digital|growth-director|c1,2026-07-24,exact,submission_receipt,,,,email,gmail,19f94904962c2e2b,
-bravo,ai-digital|growth-director|c1|e2,ai-digital|growth-director|c1,2026-07-23,exact,employer_ack,,unknown,,email,gmail,19f8c938964574d8,Apply4Me We're Working on Your Application to AI Digital
-bravo,ai-digital|growth-director|c1|e3,ai-digital|growth-director|c1,2026-07-27,exact,rejection,,unknown,,email,gmail,19fa30ce14801001,aleksandra.ivanova@aidigital.com Growth Director declined
-bravo,tripleseat|gtm-engineer|c1|e1,tripleseat|gtm-engineer|c1,2026-08-06,exact,submission_receipt,,,,email,gmail,19fd83cab4f5a68d,
-bravo,uncapped|gtm-engineer|c1|e1,uncapped|gtm-engineer|c1,2026-08-22,exact,submission_receipt,,,,email,gmail,1a0284aba5f7f81a,
-bravo,uncapped|gtm-engineer|c1|e2,uncapped|gtm-engineer|c1,2026-08-22,exact,rejection,,unknown,,email,gmail,1a0284b142eabff1,GTM Engineer receipt then decline; thread spans to 08-25
-bravo,openobserve|growth-marketer|c1|e1,openobserve|growth-marketer|c1,2026-08-24,exact,rejection,,,,email,gmail,1a0355ff0ad43420,Application Update Growth Marketer declined
-bravo,mercor|sales-and-marketing-expert|c1|e1,mercor|sales-and-marketing-expert|c1,2026-08-18,exact,submission_receipt,,,,email,gmail,1a015e4b3b0e08ad,
-bravo,mercor|sales-engineering-expert|c1|e1,mercor|sales-engineering-expert|c1,2026-08-18,exact,submission_receipt,,,,email,gmail,1a015e476731c1c4,
-bravo,mercor|sales-engineering-expert|c1|e2,mercor|sales-engineering-expert|c1,2026-08-25,exact,rejection,,unknown,,email,gmail,1a039f74d3cf664b,Update on your application declined
-bravo,mercor|b2b-sales-expert|c1|e1,mercor|b2b-sales-expert|c1,2026-08-18,exact,submission_receipt,,,,email,gmail,1a015e4424bbd69e,
-bravo,mercor|b2b-sales-expert|c1|e2,mercor|b2b-sales-expert|c1,2026-08-25,exact,rejection,,unknown,,email,gmail,1a039f739d7803cc,Update on your application declined
-bravo,mercor|gtm-engineer|c1|e1,mercor|gtm-engineer|c1,2026-08-14,exact,recruiter_screen,1,Claire Gauthier,recruiter,email,gmail,19fff060971c9673,clairegauthier@mercor.com Growth @ Mercor recruiter outreach robotics team
-bravo,mercor|gtm-engineer|c1|e2,mercor|gtm-engineer|c1,2026-08-14,exact,followup_sent,,unknown,,email,gmail,1a00228bda07e30c,SENT Thanks for the time today tooling discussion
-bravo,mercor|gtm-engineer|c1|e3,mercor|gtm-engineer|c1,2026-08-17,exact,recruiter_screen,2,Daniel Luo,recruiter,video,gmail,1a001f9e4f310663,Appointment booked 30 min with Daniel
-bravo,mercor|gtm-engineer|c1|e4,mercor|gtm-engineer|c1,2026-08-18,exact,hiring_manager_interview,3,Claire Gauthier,recruiter,video,gmail,1a0161d3e41b96dd,Invitation Claire <> Keegan Aug 18
-bravo,mercor|gtm-engineer|c1|e5,mercor|gtm-engineer|c1,2026-08-18,exact,offer,,Claire Gauthier,recruiter,email,gmail,1a012a5410998554,Working at Mercor includes SENT rate discussion
-bravo,mercor|gtm-engineer|c1|e6,mercor|gtm-engineer|c1,2026-08-20,exact,offer,,unknown,,email,gmail,1a021442493bec48,Instant Work Offer Growth Strategist we know you didn't apply directly
-bravo,mercor|gtm-engineer|c1|e7,mercor|gtm-engineer|c1,2026-08-21,exact,offer,,unknown,,email,gmail,1a025862aa01f0dc,Offer Acceptance Confirmation GTM Engineer hourly contract active
-bravo,mercor|gtm-engineer|c1|e8,mercor|gtm-engineer|c1,2026-08-21,exact,employer_ack,,unknown,,email,gmail,1a021cf914f4c0b0,Certn Background Screening Request From Mercor
-bravo,mercor|gtm-engineer|c1|e9,mercor|gtm-engineer|c1,2026-08-22,exact,employer_ack,,unknown,,email,gmail,1a026f27a9e707e6,Next steps on your new opportunity at Mercor offer accepted
-bravo,mercor|gtm-engineer|c1|e10,mercor|gtm-engineer|c1,2026-08-22,exact,employer_ack,,unknown,,email,gmail,1a0271152bb4bb4e,Certn Background Screening Report Returned
-bravo,mercor|gtm-engineer|c1|e11,mercor|gtm-engineer|c1,2026-08-24,exact,reschedule,,unknown,,email,gmail,1a034b1984eb11ee,Claire <> Keegan invitation and reschedule includes SENT
-bravo,mercor|gtm-engineer|c1|e12,mercor|gtm-engineer|c1,2026-08-29,exact,employer_ack,,unknown,,email,gmail,1a04ec1ebeaea2ff,Contract Paused for Atlanta Furniture Shopper Study 3 identical msgs
-bravo,dekalb-county-school-district|area-3-elementary-star-substitute-murphey-candler-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-murphey-candler-es|c1,2026-08-11,exact,rejection,,,,email,gmail,19ff13b56c64cee0,AppliTrack position you applied for has been filled
-bravo,dekalb-county-school-district|specialty-area-star-substitute-margaret-harris-comprehensive|c1|e1,dekalb-county-school-district|specialty-area-star-substitute-margaret-harris-comprehensive|c1,2026-08-06,exact,rejection,,,,email,gmail,19fd85c477301fa8,AppliTrack position you applied for has been filled
-bravo,dekalb-county-school-district|area-3-elementary-star-substitute-chapel-hill-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-chapel-hill-es|c1,2026-08-04,exact,rejection,,,,email,gmail,19fcf23cec45d3dc,AppliTrack position you applied for has been filled
-bravo,dekalb-county-school-district|area-3-elementary-star-substitute-chapel-hill-es|c1|e2,dekalb-county-school-district|area-3-elementary-star-substitute-chapel-hill-es|c1,2026-07-14,exact,rejection,,unknown,,email,gmail,19f6119f0dd579d3,earlier filled notice same school Chapel Hill ES; merged not a second cycle
-bravo,dekalb-county-school-district|area-3-elementary-star-substitute-canby-lane-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-canby-lane-es|c1,2026-08-04,exact,rejection,,,,email,gmail,19fcd8dec2fb8745,AppliTrack position you applied for has been filled
-bravo,dekalb-county-school-district|area-high-school-star-substitute-columbia-hs|c1|e1,dekalb-county-school-district|area-high-school-star-substitute-columbia-hs|c1,2026-07-28,exact,rejection,,,,email,gmail,19faa500c9abd541,AppliTrack position you applied for has been filled
-bravo,dekalb-county-school-district|area-3-elementary-star-substitute-cedar-grove-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-cedar-grove-es|c1,2026-07-27,exact,rejection,,,,email,gmail,19fa53991ca6a94c,AppliTrack position you applied for has been filled
-bravo,dekalb-county-school-district|area-1-elementary-star-substitute-ashford-park-es|c1|e1,dekalb-county-school-district|area-1-elementary-star-substitute-ashford-park-es|c1,2026-07-24,exact,rejection,,,,email,gmail,19f9592eeee392b1,AppliTrack position you applied for has been filled
-bravo,dekalb-county-school-district|area-4-elementary-substitute-star-browns-mill-es|c1|e1,dekalb-county-school-district|area-4-elementary-substitute-star-browns-mill-es|c1,2026-07-22,exact,rejection,,,,email,gmail,19f8b596fe19b8b0,AppliTrack position you applied for has been filled
-bravo,dekalb-county-school-district|area-3-elementary-star-substitute-rowland-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-rowland-es|c1,2026-07-14,exact,rejection,,,,email,gmail,19f620f9470e136d,AppliTrack position you applied for has been filled
-bravo,dekalb-county-school-district|horizon-area-substitute-star-flat-rock-es|c1|e1,dekalb-county-school-district|horizon-area-substitute-star-flat-rock-es|c1,2026-07-08,exact,rejection,,,,email,gmail,19f4373e9e27352c,AppliTrack position you applied for has been filled
+bravo,inven-ai|unspecified|c1|e1,inven-ai|unspecified|c1,2025-06-11,exact,submission_receipt,,,,email,gmail,gth_2dc7b54c89818c53,
+bravo,runway|go-to-market-ai-engineer|c1|e1,runway|go-to-market-ai-engineer|c1,2025-06-26,exact,submission_receipt,,,,email,gmail,gth_951665f2d42f4160,
+bravo,trace3|sdr|c1|e1,trace3|sdr|c1,2025-06-25,exact,submission_receipt,,,,email,gmail,gth_664f031e9e76c4ce,
+bravo,trace3|sdr|c1|e2,trace3|sdr|c1,2025-06-25,exact,rejection,,unknown,,email,gmail,gth_664f031e9e76c4ce,opening filled; same Greenhouse thread as receipt
+bravo,circle|gtm-engineer-outbound|c1|e1,circle|gtm-engineer-outbound|c1,2025-06-20,exact,submission_receipt,,,,email,gmail,gth_d2d399fc49799ade,
+bravo,drata|sdr-remote|c1|e1,drata|sdr-remote|c1,2025-06-16,exact,employer_ack,,,,email,gmail,gth_c3d031eb13592313,update on application SDR Remote; no separate thank-you receipt in corpus
+bravo,pinterest|apprentice-product-researcher|c1|e1,pinterest|apprentice-product-researcher|c1,2025-06-26,exact,employer_ack,,unknown,,email,gmail,gth_62800691b8758c31,Myriah Towner referred for Apprentice Product Researcher
+bravo,pinterest|apprentice-product-researcher|c1|e2,pinterest|apprentice-product-researcher|c1,2025-06-28,exact,employer_ack,,unknown,,email,gmail,gth_ac4c278fe3c7ffbb,You've Accepted Your Referral at Pinterest
+bravo,pinterest|product-manager-ii-search|c1|e1,pinterest|product-manager-ii-search|c1,2025-06-30,exact,employer_ack,,unknown,,email,gmail,gth_0f3dca0c5885a946,Myriah Towner referred for PM II Search
+bravo,pinterest|product-manager-ii-search|c1|e2,pinterest|product-manager-ii-search|c1,2025-06-30,exact,employer_ack,,unknown,,email,gmail,gth_e9eb93833f5ab340,You've Accepted Your Referral at Pinterest
+bravo,gigs|unspecified|c1|e1,gigs|unspecified|c1,2025-06-30,exact,submission_receipt,,,,email,gmail,gth_7c1890f4eef1ccc1,
+bravo,galileo|growth-engineer|c1|e1,galileo|growth-engineer|c1,2025-07-02,exact,submission_receipt,,,,email,gmail,gth_3773ef97e4ae6325,
+bravo,headway|growth-marketing-specialist|c1|e1,headway|growth-marketing-specialist|c1,2025-07-03,exact,submission_receipt,,,,email,gmail,gth_24f31ba9b6d07994,
+bravo,applause|enterprise-sdr|c1|e1,applause|enterprise-sdr|c1,2025-07-08,exact,submission_receipt,,,,email,gmail,gth_c267ece03dd32903,
+bravo,applause|enterprise-sdr|c1|e2,applause|enterprise-sdr|c1,2025-07-08,exact,submission_receipt,,unknown,,email,gmail,gth_ead7e2e5ff24178c,Workable Enterprise SDR receipt; thread also carries rejection
+bravo,applause|enterprise-sdr|c1|e3,applause|enterprise-sdr|c1,2025-07-09,exact,rejection,,unknown,,email,gmail,gth_ead7e2e5ff24178c,receipt then rejection in gth_ead7e2e5ff24178c
+bravo,designit|unspecified|c1|e1,designit|unspecified|c1,2025-07-08,exact,submission_receipt,,,,email,gmail,gth_a948ba26d1c760e9,
+bravo,scaleops|sales-engineer-usa|c1|e1,scaleops|sales-engineer-usa|c1,2025-07-17,exact,submission_receipt,,,,email,gmail,gth_f6b850f7faab1b86,
+bravo,slingshot-ai|conversation-designer|c1|e1,slingshot-ai|conversation-designer|c1,2025-07-25,exact,submission_receipt,,,,email,gmail,gth_0ad56d4a618a161c,
+bravo,slingshot-ai|conversation-designer|c1|e2,slingshot-ai|conversation-designer|c1,2025-07-28,exact,employer_ack,,unknown,,email,gmail,gth_441b8b5d196004b8,Update on your application with Slingshot AI Conversation Designer
+bravo,exa-labs|growth-lead|c1|e1,exa-labs|growth-lead|c1,2025-07-25,exact,submission_receipt,,,,email,gmail,gth_f7fbf386a2206469,
+bravo,90-seconds|unspecified|c1|e1,90-seconds|unspecified|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,gth_3765f993cf7dedf7,
+bravo,anaconda|senior-bdr|c1|e1,anaconda|senior-bdr|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,gth_cd513ab76e1d81dd,
+bravo,anaconda|senior-bdr|c1|e2,anaconda|senior-bdr|c1,2025-08-22,exact,rejection,,unknown,,email,gmail,gth_ef44ed80a3ab9ffd,Update on Your Application at Anaconda
+bravo,volley|unspecified|c1|e1,volley|unspecified|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,gth_4ed68885f5da7029,
+bravo,weave|business-development-manager|c1|e1,weave|business-development-manager|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,gth_4871569df9c50a18,
+bravo,weave|business-development-manager|c1|e2,weave|business-development-manager|c1,2025-07-31,exact,rejection,,unknown,,email,gmail,gth_c655f424a2f921dd,eml_33349183f8f1 Business Development Manager declined
+bravo,shaped|founding-sdr|c1|e1,shaped|founding-sdr|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,gth_07a51feca3245fbb,
+bravo,gtp-software|revenue-enablement-manager|c1|e1,gtp-software|revenue-enablement-manager|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,gth_6924b3fe0638af29,
+bravo,gtp-software|revenue-enablement-manager|c1|e2,gtp-software|revenue-enablement-manager|c1,2025-08-01,exact,employer_ack,,unknown,,email,gmail,gth_4bb74b4c4bfc7a0b,Thank you from GTP Software Revenue Enablement Manager
+bravo,stedi|unspecified|c1|e1,stedi|unspecified|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,gth_0dafa0f6f8c4b49a,
+bravo,replit|sales-engineer|c1|e1,replit|sales-engineer|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,gth_2f5a31ea4cfaa643,
+bravo,replit|sales-engineer|c1|e2,replit|sales-engineer|c1,2025-07-30,exact,employer_ack,,unknown,,email,gmail,gth_1474078ab0c749e8,Replit Follow Up
+bravo,phiture|us-growth-lead-mobile-marketing-strategist|c1|e1,phiture|us-growth-lead-mobile-marketing-strategist|c1,2025-07-27,exact,submission_receipt,,,,email,gmail,gth_c9f3515a2e4b0ec5,
+bravo,phiture|us-growth-lead-mobile-marketing-strategist|c1|e2,phiture|us-growth-lead-mobile-marketing-strategist|c1,2025-07-29,exact,employer_ack,,unknown,,email,gmail,gth_ae92f37966365c55,eml_3eafe301156a application for US Growth Lead Mobile Marketing Strategist
+bravo,inertia-growth|outbound-campaign-manager|c1|e1,inertia-growth|outbound-campaign-manager|c1,2025-07-26,exact,submission_receipt,,,,email,gmail,gth_fa180bfd756b2a92,
+bravo,inertia-growth|outbound-campaign-manager|c1|e2,inertia-growth|outbound-campaign-manager|c1,2025-07-30,exact,rejection,,unknown,,email,gmail,gth_b32d6c2b2bfb5f2b,eml_63112bdfe422 Outbound Campaign Manager declined
+bravo,hex|sdr|c1|e1,hex|sdr|c1,2025-07-31,exact,submission_receipt,,,,email,gmail,gth_e20c0699bee48877,
+bravo,onboard|unspecified|c1|e1,onboard|unspecified|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,gth_63f80485d914a4d4,
+bravo,sage|director-of-growth-small|c1|e1,sage|director-of-growth-small|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,gth_677cf91c6d68ffaa,
+bravo,sage|director-of-growth-small|c1|e2,sage|director-of-growth-small|c1,2025-09-03,exact,rejection,,unknown,,email,gmail,gth_d24517830e4ccefb,Update on Director of Growth Small role
+bravo,fibr-ai|founding-sdr-ae|c1|e1,fibr-ai|founding-sdr-ae|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,gth_8a3654f6092433d7,
+bravo,ava-labs|growth-lead-core|c1|e1,ava-labs|growth-lead-core|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,gth_f05b94b3d373f04c,
+bravo,ava-labs|growth-lead-core|c1|e2,ava-labs|growth-lead-core|c1,2025-08-14,exact,employer_ack,,unknown,,email,gmail,gth_2ef1129d4affda0a,no-reply@avalabs.org Thanks for your interest in Ava Labs
+bravo,12100-collective|seo-lead|c1|e1,12100-collective|seo-lead|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,gth_9dbe21075064fa41,
+bravo,infisical|founding-growth-marketer|c1|e1,infisical|founding-growth-marketer|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,gth_40efade37d72ed11,
+bravo,airgarage|consumer-growth-hacker|c1|e1,airgarage|consumer-growth-hacker|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,gth_8acfef93a25af4cf,
+bravo,itc-infotech|manager-business-development|c1|e1,itc-infotech|manager-business-development|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,gth_094809d092e62284,
+bravo,4flow|director-go-to-market-strategy|c1|e1,4flow|director-go-to-market-strategy|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,gth_b7e5dba6558a5e97,
+bravo,axon|manager-go-to-market-readiness|c1|e1,axon|manager-go-to-market-readiness|c1,2025-08-04,exact,submission_receipt,,,,email,gmail,gth_60df33526b5d45da,
+bravo,axon|manager-go-to-market-readiness|c1|e2,axon|manager-go-to-market-readiness|c1,2025-08-04,exact,employer_ack,,unknown,,email,gmail,gth_e7990aa8e2799f88,Thank you for your interest reviewed Manager Go-to-Market Readiness
+bravo,beckhoff-automation|sales-engineer|c1|e1,beckhoff-automation|sales-engineer|c1,2025-08-04,exact,employer_ack,,,,email,gmail,gth_fd281859ddfb644d,Paycom password setup Sales Engineer
+bravo,beckhoff-automation|sales-engineer|c1|e2,beckhoff-automation|sales-engineer|c1,2025-08-07,exact,employer_ack,,unknown,,email,gmail,gth_c4c43ebac6543f68,Paycom Your Application not fully completed
+bravo,beckhoff-automation|sales-engineer|c1|e3,beckhoff-automation|sales-engineer|c1,2025-08-08,exact,rejection,,unknown,,email,gmail,gth_7af99df6c0ed420a,Application Status Update Sales Engineer declined
+bravo,crypto-com|product-growth-hacker-exchange-main-app|c1|e1,crypto-com|product-growth-hacker-exchange-main-app|c1,2025-08-05,exact,submission_receipt,,,,email,gmail,gth_2cbb1ee26d2137ac,
+bravo,crypto-com|product-growth-hacker-exchange-main-app|c1|e2,crypto-com|product-growth-hacker-exchange-main-app|c1,2025-11-02,exact,rejection,,unknown,,email,gmail,gth_a5db72a965bb0178,Thank you for applying Product Growth Hacker Exchange; retriever annotated declined
+bravo,blackthorn-io|unspecified|c1|e1,blackthorn-io|unspecified|c1,2025-08-05,exact,submission_receipt,,,,email,gmail,gth_e16c1dce856c6501,
+bravo,seamless-ai|sdr-remote-us|c1|e1,seamless-ai|sdr-remote-us|c1,2025-08-05,exact,submission_receipt,,,,email,gmail,gth_ab6b5f0fdbb449ec,
+bravo,seamless-ai|sdr-remote-us|c1|e2,seamless-ai|sdr-remote-us|c1,2025-08-07,exact,employer_ack,,unknown,,email,gmail,gth_85e6fb438cf83c14,Regarding the Status of Your Application SDR Remote US
+bravo,ambrook|partnerships-lead|c1|e1,ambrook|partnerships-lead|c1,2025-08-06,exact,submission_receipt,,,,email,gmail,gth_a40ab81ae9db447a,
+bravo,thrivelink|healthcare-business-development-rep|c1|e1,thrivelink|healthcare-business-development-rep|c1,2025-08-05,exact,submission_receipt,,,,email,gmail,gth_8469ad4868580c10,
+bravo,proteantecs|sdr|c1|e1,proteantecs|sdr|c1,2025-08-08,exact,submission_receipt,,,,email,gmail,gth_872a8cc666a982c0,
+bravo,classdojo|unspecified|c1|e1,classdojo|unspecified|c1,2025-08-08,exact,employer_ack,,,,email,gmail,gth_8ecd48caabede254,Update from ClassDojo via Gem; no thank-you-for-applying phrase in subject
+bravo,switchyards|launch-manager|c1|e1,switchyards|launch-manager|c1,2025-08-08,exact,submission_receipt,,,,email,gmail,gth_94d60ee6f87c1b6f,
+bravo,switchyards|launch-manager|c1|e2,switchyards|launch-manager|c1,2025-08-08,exact,followup_sent,,unknown,,email,gmail,gth_94d60ee6f87c1b6f,SENT reply on Launch Manager thread
+bravo,switchyards|launch-manager|c1|e3,switchyards|launch-manager|c1,2025-08-19,exact,rejection,,unknown,,email,gmail,gth_38c3b6386463609f,eml_bc320c6d6f08 Switchyards Launch Manager
+bravo,galileo|gtm-engineer|c1|e1,galileo|gtm-engineer|c1,2025-07-28,exact,employer_ack,,,,email,gmail,gth_b3f40741923f1f49,Information about your application Galileo GTM Engineer
+bravo,workos|gtm-engineer|c1|e1,workos|gtm-engineer|c1,2025-08-25,exact,recruiter_screen,1,Somya Shruti,recruiter,email,gmail,gth_7c798c988d52c12f,Somya Shruti TopHire approach remote GTM Engineer; interest confirmed slot booked resume requested
+bravo,fullsteam|senior-sales-development-representative|c1|e1,fullsteam|senior-sales-development-representative|c1,2025-09-29,exact,employer_ack,,,,email,gmail,gth_1a05f5a4e1ffa7ad,Update on Job Application Senior Sales Development Representative
+bravo,insignia-collab|unspecified|c1|e1,insignia-collab|unspecified|c1,2025-11-18,exact,submission_receipt,,,,email,gmail,gth_1aa4bb3bc36115a4,
+bravo,vonage|sdr-api-cpaas|c1|e1,vonage|sdr-api-cpaas|c1,2025-12-08,exact,rejection,,,,email,gmail,gth_4f1dca61418b9c35,SDR API/CPaaS status update declined; no separate receipt in corpus
+bravo,linear|ae-growth|c1|e1,linear|ae-growth|c1,2025-12-08,exact,submission_receipt,,,,email,gmail,gth_b8597f2567fc308f,
+bravo,linear|ae-growth|c1|e2,linear|ae-growth|c1,2025-12-11,exact,rejection,,unknown,,email,gmail,gth_1c9e5ea2129da1aa,Thank you and update from Linear declined
+bravo,primer|unspecified|c1|e1,primer|unspecified|c1,2025-12-09,exact,submission_receipt,,,,email,gmail,gth_983699d74e67f6d7,
+bravo,primer|unspecified|c1|e2,primer|unspecified|c1,2025-12-15,exact,rejection,,unknown,,email,gmail,gth_c243e1805661e8aa,Thank you for applying to Primer declined
+bravo,medialab-ai|unspecified|c1|e1,medialab-ai|unspecified|c1,2026-01-02,exact,submission_receipt,,,,email,gmail,gth_de042b60b756f45f,
+bravo,foursquare|ae-new-business|c1|e1,foursquare|ae-new-business|c1,2026-01-02,exact,submission_receipt,,,,email,gmail,gth_733225d8d4947914,
+bravo,foursquare|ae-new-business|c1|e2,foursquare|ae-new-business|c1,2026-01-08,exact,employer_ack,,unknown,,email,gmail,gth_73f907159f114be7,Update on your application AE New Business; subject does not say declined
+bravo,proofpoint|unspecified|c1|e1,proofpoint|unspecified|c1,2026-01-02,exact,submission_receipt,,,,email,gmail,gth_a3145491c3616deb,
+bravo,thomson-reuters|ae-tax-or-risk|c1|e1,thomson-reuters|ae-tax-or-risk|c1,2026-01-02,exact,submission_receipt,,,,email,gmail,gth_1ac8722715175516,
+bravo,thomson-reuters|ae-tax-or-risk|c1|e2,thomson-reuters|ae-tax-or-risk|c1,2026-02-20,exact,employer_ack,,unknown,,email,gmail,gth_5921d0d724baf4ed,Thomson Reuters Application Update JREQ195996
+bravo,sailpoint|account-exec-enterprise-accounts|c1|e1,sailpoint|account-exec-enterprise-accounts|c1,2026-01-03,exact,submission_receipt,,,,email,gmail,gth_7cca95e87c341b02,
+bravo,sailpoint|account-exec-enterprise-accounts|c1|e2,sailpoint|account-exec-enterprise-accounts|c1,2026-01-03,exact,employer_ack,,unknown,,email,gmail,gth_a63697864876f319,Thank You for Your Application Account Exec Enterprise Accounts
+bravo,nero|founding-engineer|c1|e1,nero|founding-engineer|c1,2026-01-07,exact,submission_receipt,,,,email,gmail,gth_fc0da77b80de52c2,
+bravo,micro1|ai-training-pilot-project|c1|e1,micro1|ai-training-pilot-project|c1,2026-01-12,exact,hiring_manager_interview,1,unknown,unknown,email,gmail,gth_ff754d2101d76c5d,support@micro1.ai Great work on your interview; profile under client review
+bravo,micro1|ai-training-pilot-project|c1|e2,micro1|ai-training-pilot-project|c1,2026-01-14,exact,employer_ack,,unknown,,email,gmail,gth_840667159906faf1,eml_22d59083e49c shortlisted; profile submitted to unnamed client
+bravo,beacon-software|unspecified|c1|e1,beacon-software|unspecified|c1,2026-01-26,exact,submission_receipt,,,,email,gmail,gth_f9737e34553dc0b6,
+bravo,aicro|gtm-engineering-team-lead|c1|e1,aicro|gtm-engineering-team-lead|c1,2026-02-06,exact,submission_receipt,,,,email,gmail,gth_4d6db773dc5a1ad3,
+bravo,manifold|growth-marketing-manager|c1|e1,manifold|growth-marketing-manager|c1,2026-02-06,exact,submission_receipt,,,,email,gmail,gth_55db7a5c8e2dbd7a,
+bravo,manifold|growth-marketing-manager|c1|e2,manifold|growth-marketing-manager|c1,2026-02-06,exact,rejection,,unknown,,email,gmail,gth_7530133b04c50bf9,Important information about your application to Manifold AI declined
+bravo,verkada|enterprise-solutions-engineer-atlanta|c1|e1,verkada|enterprise-solutions-engineer-atlanta|c1,2026-02-04,exact,submission_receipt,,,,email,gmail,gth_8fafa5db68268f59,
+bravo,gather-ai|gtm-engineer|c1|e1,gather-ai|gtm-engineer|c1,2026-02-09,exact,submission_receipt,,,,email,gmail,gth_71a6f9dcebf0a9b0,
+bravo,gitlab|gtm-planning-operations-analyst|c1|e1,gitlab|gtm-planning-operations-analyst|c1,2026-02-10,exact,submission_receipt,,,,email,gmail,gth_d806408b1ae0fa72,
+bravo,gitlab|gtm-planning-operations-analyst|c1|e2,gitlab|gtm-planning-operations-analyst|c1,2026-04-17,exact,rejection,,unknown,,email,gmail,gth_2f100973d6d669c8,position no longer available
+bravo,ambrook|business-operations-lead|c1|e1,ambrook|business-operations-lead|c1,2026-02-11,exact,submission_receipt,,,,email,gmail,gth_aad2435c82a5d834,
+bravo,ambrook|business-operations-lead|c1|e2,ambrook|business-operations-lead|c1,2026-02-12,exact,rejection,,unknown,,email,gmail,gth_028345fa3b82dbe0,Ambrook Application Update Business Operations
+bravo,ambrook|business-operations-lead|c1|e3,ambrook|business-operations-lead|c1,2026-02-12,exact,followup_sent,,unknown,,email,gmail,gth_028345fa3b82dbe0,SENT reply to no-reply asking the team to elaborate on the rejection
+bravo,wilsonhcg|outbound-sales-consultant-iii|c1|e1,wilsonhcg|outbound-sales-consultant-iii|c1,2026-02-13,exact,submission_receipt,,,,email,gmail,gth_f2e8c95a6366fd5d,
+bravo,smeetz|gtm-engineer|c1|e1,smeetz|gtm-engineer|c1,2026-02-20,exact,submission_receipt,,,,email,gmail,gth_d9ec75a3f4991195,
+bravo,smeetz|gtm-engineer|c1|e2,smeetz|gtm-engineer|c1,2026-02-20,exact,employer_ack,,unknown,,email,gmail,gth_5381427b4e51e64b,GTM Engineer application in review
+bravo,testgorilla|go-to-market-engineer|c1|e1,testgorilla|go-to-market-engineer|c1,2026-02-20,exact,assessment_sent,,,,email,gmail,gth_f99a415b023fc244,eml_caca8321aba8 application for GTM Engineer assessment invitation
+bravo,testgorilla|go-to-market-engineer|c1|e2,testgorilla|go-to-market-engineer|c1,2026-02-20,exact,recruiter_screen,1,Mirae Lee,recruiter,email,gmail,gth_3e7b5aedf6286ab2,mirae.lee Teamtailor recruiter intro Go-to-Market Engineer
+bravo,testgorilla|go-to-market-engineer|c1|e3,testgorilla|go-to-market-engineer|c1,2026-04-23,exact,employer_ack,,unknown,,email,gmail,gth_6aabab1d3bdf0f75,mirae.lee update from recruiter
+bravo,sentilink|unspecified|c1|e1,sentilink|unspecified|c1,2026-02-23,exact,submission_receipt,,,,email,gmail,gth_b9233df609a22735,
+bravo,beautiful-ai|unspecified|c1|e1,beautiful-ai|unspecified|c1,2026-03-08,exact,submission_receipt,,,,email,gmail,gth_93b7915bd98264ce,
+bravo,beautiful-ai|unspecified|c1|e2,beautiful-ai|unspecified|c1,2026-03-17,exact,hiring_manager_interview,1,Brandon Ness,hiring manager,video,gmail,gth_ec1fac33cf5f23f1,post-interview follow-up thread names hiring manager Brandon Ness; interview dated from this thread
+bravo,beautiful-ai|unspecified|c1|e3,beautiful-ai|unspecified|c1,2026-03-19,exact,followup_sent,,unknown,,email,gmail,gth_ec1fac33cf5f23f1,SENT follow-up on Beautiful.ai thread
+bravo,beautiful-ai|unspecified|c1|e4,beautiful-ai|unspecified|c1,2026-03-26,exact,rejection,,unknown,,email,gmail,gth_1186b66d0556feda,eml_5b07f5a5583b post-interview decline includes SENT
+bravo,anthropic|software-engineer-business-technology|c1|e1,anthropic|software-engineer-business-technology|c1,2026-03-08,exact,submission_receipt,,,,email,gmail,gth_c126aa1c636566e5,
+bravo,anthropic|software-engineer-business-technology|c1|e2,anthropic|software-engineer-business-technology|c1,2026-03-09,exact,rejection,,unknown,,email,gmail,gth_883dad9a7cc9bfeb,Anthropic Follow-Up for Software Engineer Business Technology declined
+bravo,virtru|director-of-go-to-market-ai|c1|e1,virtru|director-of-go-to-market-ai|c1,2026-03-09,exact,submission_receipt,,,,email,gmail,gth_b58175071492ba76,
+bravo,virtru|director-of-go-to-market-ai|c1|e2,virtru|director-of-go-to-market-ai|c1,2026-04-04,exact,rejection,,unknown,,email,gmail,gth_fdcc88aa227b092b,eml_7c2b99125e82 Director of Go-to-Market AI declined
+bravo,pinterest|apprentice-engineer|c1|e1,pinterest|apprentice-engineer|c1,2026-03-25,exact,submission_receipt,,,,email,gmail,gth_0b75334253c7b6e2,
+bravo,pinterest|apprentice-engineer|c1|e2,pinterest|apprentice-engineer|c1,2026-04-28,exact,rejection,,unknown,,email,gmail,gth_50c59db3de1d64af,no-reply@pinterest.com Apprentice Engineer declined
+bravo,hypergen|gtm-engineer|c1|e1,hypergen|gtm-engineer|c1,2026-03-11,exact,submission_receipt,,,,email,gmail,gth_d34cb1ecb8ba51f6,
+bravo,hypergen|gtm-engineer|c1|e2,hypergen|gtm-engineer|c1,2026-04-14,exact,employer_ack,,unknown,,email,gmail,gth_d34cb1ecb8ba51f6,people@hypergen.io interview invitation in same thread as March 11 confirmation; interview date itself not in the subject
+bravo,glean|gtm-engineer-marketing|c1|e1,glean|gtm-engineer-marketing|c1,2026-03-23,exact,submission_receipt,,,,email,gmail,gth_39354896d7164ae7,
+bravo,lumenalta|unspecified|c1|e1,lumenalta|unspecified|c1,2026-03-24,exact,employer_ack,,,,email,gmail,gth_9b9158b0f51fd5c0,You're In Let's Take the Next Step Together My Application page
+bravo,lumenalta|unspecified|c1|e2,lumenalta|unspecified|c1,2026-04-10,exact,employer_ack,,unknown,,email,gmail,gth_71d8f344076b4818,eml_f1f8b1355bc4 Lumenalta Application Update
+bravo,orchestry|gtm-engineer-sales|c1|e1,orchestry|gtm-engineer-sales|c1,2026-03-24,exact,submission_receipt,,,,email,gmail,gth_397ef5934d0939b2,
+bravo,orchestry|gtm-engineer-sales|c1|e2,orchestry|gtm-engineer-sales|c1,2026-03-24,exact,recruiter_screen,1,unknown,recruiter,video,gmail,gth_75b51a62759f69be,Breezy Recruiter Screen video call
+bravo,orchestry|gtm-engineer-sales|c1|e3,orchestry|gtm-engineer-sales|c1,2026-03-25,exact,reschedule,,unknown,,video,gmail,gth_f5dbe645e66b665d,second Recruiter Screen video call invitation the next day
+bravo,orchestry|gtm-engineer-sales|c1|e4,orchestry|gtm-engineer-sales|c1,2026-03-25,exact,no_show,,unknown,,email,gmail,gth_a704149be7e63a1a,eml_87e77a84a157 missed interview GTM Engineer Sales
+bravo,orchestry|gtm-engineer-sales|c1|e5,orchestry|gtm-engineer-sales|c1,2026-03-27,exact,rejection,,unknown,,email,gmail,gth_0051fcbedbb7f591,jay.banga declined after interview process includes SENT
+bravo,pandadoc|gtm-engineer|c1|e1,pandadoc|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,gth_02ae1915406326ae,
+bravo,pandadoc|gtm-engineer|c1|e2,pandadoc|gtm-engineer|c1,2026-04-27,exact,rejection,,unknown,,email,gmail,gth_9cf0f0e88d27e7b7,careers@pandadoc.com Regarding your application GTM Engineer declined
+bravo,mento|gtm-engineer|c1|e1,mento|gtm-engineer|c1,2026-03-24,exact,submission_receipt,,,,email,gmail,gth_96c704b7fa571558,
+bravo,mento|gtm-engineer|c1|e2,mento|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,unknown,,email,gmail,gth_121bf145a4dbb568,second Greenhouse thank you GTM Engineer same opening
+bravo,dagster-labs|gtm-engineer|c1|e1,dagster-labs|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,gth_89b52fe76388035e,
+bravo,dagster-labs|gtm-engineer|c1|e2,dagster-labs|gtm-engineer|c1,2026-04-03,exact,hiring_manager_interview,1,Delaney Housley,unknown,email,gmail,gth_1c8ae3fa0432b375,eml_d3df7b160e39 follow-up; Keegan SENT thank you for taking the time to chat; interview date on or before this artifact
+bravo,dagster-labs|gtm-engineer|c1|e3,dagster-labs|gtm-engineer|c1,2026-04-03,exact,rejection,,unknown,,email,gmail,gth_1c8ae3fa0432b375,Dagster Labs follow-up decline after chat
+bravo,unstructured|gtm-engineer-operations|c1|e1,unstructured|gtm-engineer-operations|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,gth_a338fb40ebb27dbf,
+bravo,g2|gtm-engineer|c1|e1,g2|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,gth_c812a60595be4bf8,
+bravo,g2|gtm-engineer|c1|e2,g2|gtm-engineer|c1,2026-04-09,exact,rejection,,unknown,,email,gmail,gth_97048b3fe6c1222e,G2 GTM Engineer Update position filled
+bravo,roboflow|revops-gtm-engineer|c1|e1,roboflow|revops-gtm-engineer|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,gth_9bd9c95a760df71b,
+bravo,tapcheck|unspecified|c1|e1,tapcheck|unspecified|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,gth_7ddb451e25699d53,
+bravo,tapcheck|unspecified|c1|e2,tapcheck|unspecified|c1,2026-03-31,exact,employer_ack,,unknown,,email,gmail,gth_489a249f7d38e1bf,Update on Application from Tapcheck
+bravo,tapcheck|unspecified|c1|e3,tapcheck|unspecified|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,gth_d2522feb455b500f,Thank You for Applying to Tapcheck second receipt
+bravo,tapcheck|unspecified|c1|e4,tapcheck|unspecified|c1,2026-04-06,exact,rejection,,unknown,,email,gmail,gth_823e0ec2f78ef924,Update on Application from Tapcheck declined
+bravo,vercel|gtm-engineer|c1|e1,vercel|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,gth_507a0e29346925c4,
+bravo,tiger-data|gtm-ai-engineer|c1|e1,tiger-data|gtm-ai-engineer|c1,2026-03-30,exact,submission_receipt,,,,email,gmail,gth_69cec22bbb737c42,
+bravo,tiger-data|gtm-ai-engineer|c1|e2,tiger-data|gtm-ai-engineer|c1,2026-03-30,exact,rejection,,unknown,,email,gmail,gth_9971e9e90df8dd9e,Update from Tiger Data declined
+bravo,adapt|gtm-engineer-revops-lead|c1|e1,adapt|gtm-engineer-revops-lead|c1,2026-03-27,exact,submission_receipt,,,,email,gmail,gth_692b221836ee7bf9,
+bravo,phrasiq|unspecified|c1|e1,phrasiq|unspecified|c1,2026-03-31,exact,submission_receipt,,,,email,gmail,gth_e9be0ace83621c85,
+bravo,phrasiq|unspecified|c1|e2,phrasiq|unspecified|c1,2026-03-31,exact,employer_ack,,unknown,,email,gmail,gth_cb452c55c8d2edd9,Wellfound relay founder outreach same day as acceptance
+bravo,phrasiq|unspecified|c1|e3,phrasiq|unspecified|c1,2026-04-02,exact,hiring_manager_interview,1,unknown,unknown,,gcal,cal_aa344a710f544818,Calendar Discovery | Keegan Moody<>PhrasIQ. Medium not stated on the calendar row.
+bravo,phrasiq|unspecified|c1|e4,phrasiq|unspecified|c1,2026-04-06,exact,employer_ack,,unknown,,email,gmail,gth_cb452c55c8d2edd9,relay references completed Discovery Session and proposes GTM System Deep Dive as next step; Deep Dive occurrence not evidenced
+bravo,jobright-ai|product-manager-early-career|c1|e1,jobright-ai|product-manager-early-career|c1,2026-03-31,exact,employer_ack,,,,email,gmail,gth_9c34a82d0e7dac19,Update on your application Product Manager Early Career
+bravo,disqo|gtm-engineer|c1|e1,disqo|gtm-engineer|c1,2026-03-31,exact,submission_receipt,,,,email,gmail,gth_824453c938188f5e,
+bravo,boulevard|gtm-engineer|c1|e1,boulevard|gtm-engineer|c1,2026-03-31,exact,submission_receipt,,,,email,gmail,gth_d406fc3067b6a28c,
+bravo,boulevard|gtm-engineer|c1|e2,boulevard|gtm-engineer|c1,2026-06-04,exact,rejection,,unknown,,email,gmail,gth_ee047334d06cfc93,Boulevard GTM Engineer Application Update declined
+bravo,brand-ai|gtme|c1|e1,brand-ai|gtme|c1,2026-04-02,exact,submission_receipt,,,,email,gmail,gth_187b8559e8b2ddc3,
+bravo,brand-ai|gtme|c1|e2,brand-ai|gtme|c1,2026-04-02,exact,followup_sent,,unknown,,email,gmail,gth_187b8559e8b2ddc3,SENT portfolio and resume GTME from the CAFE
+bravo,brand-ai|gtme|c1|e3,brand-ai|gtme|c1,2026-04-07,exact,rejection,,unknown,,email,gmail,gth_187b8559e8b2ddc3,four-message thread includes compensation discussion and rejection
+bravo,companycam|gtm-systems-engineer|c1|e1,companycam|gtm-systems-engineer|c1,2026-04-03,exact,submission_receipt,,,,email,gmail,gth_a6efa263112ad015,
+bravo,fixify|gtm-engineer-contract|c1|e1,fixify|gtm-engineer-contract|c1,2026-04-03,exact,submission_receipt,,,,email,gmail,gth_ff01acda1552b4d3,
+bravo,fixify|gtm-engineer-contract|c1|e2,fixify|gtm-engineer-contract|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,gth_9dc63618f3262956,second Greenhouse thank you for applying to Fixify
+bravo,fixify|gtm-engineer-contract|c1|e3,fixify|gtm-engineer-contract|c1,2026-04-06,exact,employer_ack,,unknown,,email,gmail,gth_c019639a1a7ea755,Update on your Fixify GTM Engineer Contract application
+bravo,montauk-capital|head-of-commercial|c1|e1,montauk-capital|head-of-commercial|c1,2026-04-01,exact,submission_receipt,,,,email,gmail,gth_bd8f44c8203a9798,
+bravo,rula|gtm-engineer-remote|c1|e1,rula|gtm-engineer-remote|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,gth_b6c113b453e1bffe,
+bravo,rula|gtm-engineer-remote|c1|e2,rula|gtm-engineer-remote|c1,2026-04-22,exact,rejection,,unknown,,email,gmail,gth_5500dd6f385b8144,Your application to work at Rula declined
+bravo,unframe|gtm-engineer|c1|e1,unframe|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,gth_4c96edfc630dd59e,
+bravo,unframe|gtm-engineer|c1|e2,unframe|gtm-engineer|c1,2026-04-17,exact,submission_receipt,,unknown,,email,gmail,gth_d4f5b5bf940f71d3,second Greenhouse thank you for applying; no terminal between 04-06 and 04-17
+bravo,unframe|gtm-engineer|c1|e3,unframe|gtm-engineer|c1,2026-05-12,exact,rejection,,unknown,,email,gmail,gth_b138e6544e0d084f,no-reply@unframe.ai GTM Engineer Remote declined
+bravo,solv-health|unspecified|c1|e1,solv-health|unspecified|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,gth_fa5b40e229082ec9,
+bravo,solv-health|unspecified|c1|e2,solv-health|unspecified|c1,2026-04-21,exact,rejection,,unknown,,email,gmail,gth_da7d2946e72ed3a8,mail@ats.rippling.com Thank you from Solv Health declined
+bravo,sardine|gtm-engineer|c1|e1,sardine|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,gth_19f71d91ee76b11c,
+bravo,sardine|gtm-engineer|c1|e2,sardine|gtm-engineer|c1,2026-04-09,exact,rejection,,unknown,,email,gmail,gth_5dfc6cd661b11605,Update on your application to Sardine declined
+bravo,appgate|gtm-engineer|c1|e1,appgate|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,gth_1ab720344bcdf47a,
+bravo,appgate|gtm-engineer|c1|e2,appgate|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,gth_e372576041016b3f,Workable GTM Engineer AppGate Cybersecurity
+bravo,wrapbook|gtm-systems-engineer|c1|e1,wrapbook|gtm-systems-engineer|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,gth_ae2e875da34e8501,
+bravo,payabli|gtm-engineer|c1|e1,payabli|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,gth_9c4cac8383da6f98,
+bravo,valsoft|gtm-engineer|c1|e1,valsoft|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,gth_c2a80a454a3437ef,
+bravo,valsoft|gtm-engineer|c1|e2,valsoft|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,gth_776d2ab8ef4459b1,GTM Engineer DockMaster Valsoft Corporation
+bravo,pearl|lead-gtm-engineer|c1|e1,pearl|lead-gtm-engineer|c1,2026-04-06,exact,submission_receipt,,,,email,gmail,gth_6d883e4b5af47f48,
+bravo,pearl|lead-gtm-engineer|c1|e2,pearl|lead-gtm-engineer|c1,2026-04-30,exact,employer_ack,,Alex DeCeglie,unknown,email,gmail,gth_fb41d68a16ad8c02,eml_50d25fbb9fc0 Interview @ Pearl; Keegan initiates scheduling Alex confirms following week
+bravo,pearl|lead-gtm-engineer|c1|e3,pearl|lead-gtm-engineer|c1,2026-05-05,exact,recruiter_screen,1,unknown,unknown,phone,gmail,gth_0bd16122f1878883,Reminder Upcoming Interview May 5 phone
+bravo,pearl|lead-gtm-engineer|c1|e4,pearl|lead-gtm-engineer|c1,2026-05-11,exact,employer_ack,,unknown,,email,gmail,gth_d0d3b09bb98ccb1f,Reminder Submit Your Availability; two identical msgs 8 seconds apart
+bravo,pearl|lead-gtm-engineer|c1|e5,pearl|lead-gtm-engineer|c1,2026-05-17,exact,hiring_manager_interview,2,unknown,unknown,video,gmail,gth_36d7d2bba0740912,Reminder Upcoming Interview Lead GTM Engineer Zoom
+bravo,liatrio|gtm-revops-engineer|c1|e1,liatrio|gtm-revops-engineer|c1,2026-04-05,exact,submission_receipt,,,,email,gmail,gth_f3649f1c5cd028b0,
+bravo,sur|ai-revenue-engineer|c1|e1,sur|ai-revenue-engineer|c1,2026-04-09,exact,submission_receipt,,,,email,gmail,gth_af0f7a3755fa52f3,
+bravo,sur|ai-revenue-engineer|c1|e2,sur|ai-revenue-engineer|c1,2026-04-09,exact,rejection,,unknown,,email,gmail,gth_63467fe5556d4dea,AI Revenue Engineer receipt then rejection
+bravo,langchain|gtm-engineer|c1|e1,langchain|gtm-engineer|c1,2026-04-10,exact,submission_receipt,,,,email,gmail,gth_53fa9e4321b3a4a5,
+bravo,ontra|unspecified|c1|e1,ontra|unspecified|c1,2026-04-10,exact,submission_receipt,,,,email,gmail,gth_97436fb778aec959,
+bravo,ontra|unspecified|c1|e2,ontra|unspecified|c1,2026-04-24,exact,rejection,,unknown,,email,gmail,gth_cce3ca47aba15799,Ontra Following Up declined
+bravo,redis|gtm-engineer|c1|e1,redis|gtm-engineer|c1,2026-04-10,exact,submission_receipt,,,,email,gmail,gth_aca478c7614dc9a5,
+bravo,auctane|pre-sales-engineer|c1|e1,auctane|pre-sales-engineer|c1,2026-04-10,exact,submission_receipt,,,,email,gmail,gth_d72556f0129de181,
+bravo,auctane|pre-sales-engineer|c1|e2,auctane|pre-sales-engineer|c1,2026-05-14,exact,rejection,,unknown,,email,gmail,gth_ae840ccf3fbf11b6,Thanks for your interest Pre-Sales Engineer declined
+bravo,cresta|gtm-engineer|c1|e1,cresta|gtm-engineer|c1,2026-04-10,exact,submission_receipt,,,,email,gmail,gth_fafd577be7e1a362,
+bravo,airops|growth-engineer|c1|e1,airops|growth-engineer|c1,2026-04-10,exact,submission_receipt,,,,email,gmail,gth_b1fbc862c73e63af,
+bravo,rollstack|ai-growth-hacker|c1|e1,rollstack|ai-growth-hacker|c1,2026-04-10,exact,submission_receipt,,,,email,gmail,gth_203f7f8e466356a4,
+bravo,teleport|gtm-engineer|c1|e1,teleport|gtm-engineer|c1,2026-04-14,exact,submission_receipt,,,,email,gmail,gth_a6bb3627c1238c47,
+bravo,teleport|gtm-engineer|c1|e2,teleport|gtm-engineer|c1,2026-05-07,exact,rejection,,unknown,,email,gmail,gth_cb1a24bed3aad125,Thanks for your interest in Teleport declined
+bravo,every-to|gtm-engineer|c1|e1,every-to|gtm-engineer|c1,2026-04-20,exact,employer_ack,,,,email,gmail,gth_3731d4c2c0e7637c,eml_50d007c54e63 thanks for applying for the GTM Engineer role I'd love to chat call booked
+bravo,every-to|gtm-engineer|c1|e2,every-to|gtm-engineer|c1,2026-04-20,exact,recruiter_screen,1,Austin,unknown,phone,gmail,gth_3731d4c2c0e7637c,call booked after thanks for applying
+bravo,fossa|unspecified|c1|e1,fossa|unspecified|c1,2026-04-22,exact,submission_receipt,,,,email,gmail,gth_a1f6e4b0fb7a200c,
+bravo,fossa|unspecified|c1|e2,fossa|unspecified|c1,2026-05-20,exact,rejection,,unknown,,email,gmail,gth_bd2f135e89181c88,FOSSA Thank you for your interest first cycle declined
+bravo,fossa|unspecified|c2|e1,fossa|unspecified|c2,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_f8fa8c334b800ad6,
+bravo,oxos-medical|gtm-engineer|c1|e1,oxos-medical|gtm-engineer|c1,2026-04-27,exact,submission_receipt,,,,email,gmail,gth_e120aa29b59c54b8,
+bravo,trase|gtm-engineer-healthcare|c1|e1,trase|gtm-engineer-healthcare|c1,2026-04-27,exact,submission_receipt,,,,email,gmail,gth_18c36945a10db7a4,
+bravo,trase|gtm-engineer-healthcare|c1|e2,trase|gtm-engineer-healthcare|c1,2026-06-26,exact,submission_receipt,,unknown,,email,gmail,gth_9ab914047a629b0c,second Greenhouse thank you; no terminal between 04-27 and 06-26
+bravo,trase|gtm-engineer-healthcare|c1|e3,trase|gtm-engineer-healthcare|c1,2026-07-10,exact,rejection,,unknown,,email,gmail,gth_b773f780ce33bd98,Trase Update GTM Engineer Healthcare declined
+bravo,built-recruiting|gtm-engineer|c1|e1,built-recruiting|gtm-engineer|c1,2026-04-16,exact,rejection,,,,email,gmail,gth_0673b068984d168e,Update from Built Recruiting GTM Engineer position filled
+bravo,wallstreetquants|unspecified|c1|e1,wallstreetquants|unspecified|c1,2026-04-17,exact,submission_receipt,,,,email,gmail,gth_d116539760cbc15e,
+bravo,bx-studio|unspecified|c1|e1,bx-studio|unspecified|c1,2026-04-08,exact,submission_receipt,,,,email,gmail,gth_cd9b1dc5bcc04d6c,
+bravo,10x-genomics|unspecified|c1|e1,10x-genomics|unspecified|c1,2026-05-02,exact,submission_receipt,,,,email,gmail,gth_176c6e733d1bb47d,
+bravo,10x-genomics|unspecified|c1|e2,10x-genomics|unspecified|c1,2026-05-02,exact,submission_receipt,,unknown,,email,gmail,gth_4a90aebd605a4cf1,careers@careers.10xgenomics.com duplicate receipt 14 seconds earlier
+bravo,10x-genomics|unspecified|c1|e3,10x-genomics|unspecified|c1,2026-05-14,exact,rejection,,unknown,,email,gmail,gth_d46f3e47582de7d8,Update about your application declined
+bravo,spider-cloud|growth-lead|c1|e1,spider-cloud|growth-lead|c1,2026-05-03,exact,submission_receipt,,,,email,gmail,gth_f8fe98826a08e486,
+bravo,tractian|senior-gtm-engineer-hubspot|c1|e1,tractian|senior-gtm-engineer-hubspot|c1,2026-05-19,exact,submission_receipt,,,,email,gmail,gth_0ab53d541a00e4e3,
+bravo,practical-prospecting|unspecified|c1|e1,practical-prospecting|unspecified|c1,2026-05-20,exact,submission_receipt,,,,email,gmail,gth_75b7c8464647fdc0,
+bravo,tractian|sales-engineer-automation|c1|e1,tractian|sales-engineer-automation|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_7c113a064b48c743,
+bravo,airtable|gtm-engineer|c1|e1,airtable|gtm-engineer|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_9f99d96859f305bc,
+bravo,airtable|gtm-engineer|c1|e2,airtable|gtm-engineer|c1,2026-05-27,exact,rejection,,unknown,,email,gmail,gth_b0d66afda46d77b7,jobs@airtable.com GTM Engineer declined
+bravo,nice|ai-solution-strategist|c1|e1,nice|ai-solution-strategist|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_49380f0d59aa0532,
+bravo,nebius|director-gtm-physical-ai|c1|e1,nebius|director-gtm-physical-ai|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_5d842e9f33e019d8,
+bravo,nebius|director-gtm-physical-ai|c1|e2,nebius|director-gtm-physical-ai|c1,2026-07-16,exact,rejection,,unknown,,email,gmail,gth_ad01fcf337ced1af,Director GTM Physical AI declined
+bravo,dbeaver|gtm-engineer|c1|e1,dbeaver|gtm-engineer|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_a0c4d42732c12c24,
+bravo,dbeaver|gtm-engineer|c1|e2,dbeaver|gtm-engineer|c1,2026-06-05,exact,rejection,,unknown,,email,gmail,gth_f40c7a4a6da6d869,DBeaver Application Update declined
+bravo,telnyx|unspecified|c1|e1,telnyx|unspecified|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_cea9fa54c06f8873,
+bravo,vitalsource|ai-enablement-lead|c1|e1,vitalsource|ai-enablement-lead|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_06b529b78053784a,
+bravo,colab-software|sales-engineer|c1|e1,colab-software|sales-engineer|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_ede7a771a6ee14a0,
+bravo,colab-software|sales-engineer|c1|e2,colab-software|sales-engineer|c1,2026-05-28,exact,employer_ack,,unknown,,email,gmail,gth_6d1d6bc21a550401,no-reply@hiring.colabsoftware.com Sales Engineer
+bravo,pindrop|gtm-systems-platform-specialist|c1|e1,pindrop|gtm-systems-platform-specialist|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_f0187eba1e53317a,
+bravo,pindrop|gtm-systems-platform-specialist|c1|e2,pindrop|gtm-systems-platform-specialist|c1,2026-05-27,exact,rejection,,unknown,,email,gmail,gth_b36d821ba4a32f0e,talent@pindrop.com GTM Systems Platform Specialist declined
+bravo,applied-systems|sales-enablement-gtm-readiness-lead|c1|e1,applied-systems|sales-enablement-gtm-readiness-lead|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_d2bd22c2adab0841,
+bravo,applied-systems|sales-enablement-gtm-readiness-lead|c1|e2,applied-systems|sales-enablement-gtm-readiness-lead|c1,2026-05-21,exact,employer_ack,,unknown,,email,gmail,gth_f71b5af27a79558d,iCIMS verify your email address
+bravo,applied-systems|sales-enablement-gtm-readiness-lead|c1|e3,applied-systems|sales-enablement-gtm-readiness-lead|c1,2026-05-21,exact,employer_ack,,unknown,,email,gmail,gth_8e28ccd6e434e663,Your Amazing Career Moments Starts Here
+bravo,onit|sales-engineer|c1|e1,onit|sales-engineer|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_e4da05bda2874b5e,
+bravo,servicetrade|unspecified|c1|e1,servicetrade|unspecified|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_4be457d1b02d7340,
+bravo,servicetrade|unspecified|c1|e2,servicetrade|unspecified|c1,2026-05-29,exact,rejection,,unknown,,email,gmail,gth_410a4757234ebe53,talent@servicetrade.com Update about your Application declined
+bravo,deepgram|gtm-engineer|c1|e1,deepgram|gtm-engineer|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_cecd897de39b6cdb,
+bravo,deepgram|gtm-engineer|c1|e2,deepgram|gtm-engineer|c1,2026-05-22,exact,rejection,,unknown,,email,gmail,gth_9743d8c14a31e21f,Thanks for your interest declined
+bravo,apartmentiq|unspecified|c1|e1,apartmentiq|unspecified|c1,2026-05-21,exact,submission_receipt,,,,email,gmail,gth_edc01e260d0ef795,
+bravo,apartmentiq|unspecified|c1|e2,apartmentiq|unspecified|c1,2026-05-28,exact,rejection,,unknown,,email,gmail,gth_8bf76f4bf60fbf34,ApartmentIQ Follow Up declined
+bravo,evenup|ai-adoption-manager-southeast|c1|e1,evenup|ai-adoption-manager-southeast|c1,2026-05-25,exact,submission_receipt,,,,email,gmail,gth_aaf36ac9bb30b359,
+bravo,evenup|ai-adoption-manager-southeast|c1|e2,evenup|ai-adoption-manager-southeast|c1,2026-06-04,exact,rejection,,unknown,,email,gmail,gth_6e163f89f4872af8,Update from EvenUp declined
+bravo,speechify|go-to-market-engineer-atlanta|c1|e1,speechify|go-to-market-engineer-atlanta|c1,2026-05-25,exact,submission_receipt,,,,email,gmail,gth_7a05cff9242e33b5,
+bravo,apollo-io|unspecified|c1|e1,apollo-io|unspecified|c1,2026-05-28,exact,submission_receipt,,,,email,gmail,gth_5b932a62ba112b24,
+bravo,huzzle|gtm-engineer|c1|e1,huzzle|gtm-engineer|c1,2026-06-04,exact,submission_receipt,,,,email,gmail,gth_27df3f45e3787608,
+bravo,huzzle|gtm-engineer|c1|e2,huzzle|gtm-engineer|c1,2026-06-04,exact,assessment_sent,,unknown,,email,gmail,gth_985129a717dc5459,support@huzzle.app Next Step Complete Your Interview applying to join our talent pool moving forward to next stage
+bravo,huzzle|gtm-engineer|c1|e3,huzzle|gtm-engineer|c1,2026-06-09,exact,assessment_sent,,unknown,,email,gmail,gth_5f53d8e2d5a99caf,Your Huzzle Video Interview is Still Pending
+bravo,huzzle|gtm-engineer|c1|e4,huzzle|gtm-engineer|c1,2026-06-11,exact,assessment_sent,,unknown,,email,gmail,gth_9792f5230a698358,Final Reminder Complete Your Interview with Huzzle AI video interview required screening step
+bravo,huzzle|gtm-engineer|c1|e5,huzzle|gtm-engineer|c1,2026-06-16,exact,assessment_sent,,unknown,,email,gmail,gth_c01326ed91095875,48 Hours Left Final Chance to Complete Your Interview
+bravo,adaptive6|sales-engineer|c1|e1,adaptive6|sales-engineer|c1,2026-06-04,exact,submission_receipt,,,,email,gmail,gth_522ae6cfc3094c5b,
+bravo,adaptive6|sales-engineer|c1|e2,adaptive6|sales-engineer|c1,2026-06-16,exact,rejection,,unknown,,email,gmail,gth_ef399881f5a0b233,thank you for applying Sales Engineer declined
+bravo,4mindsai|gtm-engineer|c1|e1,4mindsai|gtm-engineer|c1,2026-06-04,exact,submission_receipt,,,,email,gmail,gth_1661e404aac612de,
+bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e1,revspring|lead-agentic-operations-gtm-engineering|c1,2026-06-04,exact,submission_receipt,,,,email,gmail,gth_c6362282bdac9373,
+bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e2,revspring|lead-agentic-operations-gtm-engineering|c1,2026-05-29,exact,employer_ack,,Stephanie Cunningham,recruiter,email,gmail,gth_1202203d544f6fc9,LinkedIn InMail Stephanie Cunningham AI role at RevSpring recruiter approach preceding the screen
+bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e3,revspring|lead-agentic-operations-gtm-engineering|c1,2026-06-10,exact,recruiter_screen,1,unknown,recruiter,email,gmail,gth_d679e7c78f455a3c,Recruiter Screen Request Lead Agentic Operations + GTM Engineering
+bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e4,revspring|lead-agentic-operations-gtm-engineering|c1,2026-06-23,exact,submission_receipt,,unknown,,email,gmail,gth_3a754bf7babaa62d,duplicate Thanks for Applying Newtonsoftware
+bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e5,revspring|lead-agentic-operations-gtm-engineering|c1,2026-06-25,exact,employer_ack,,unknown,,email,gmail,gth_272cbf95970f4335,Lead Agentic Operations + GTM Engineering Newtonsoftware
+bravo,cloudflare|gtm-engineer|c1|e1,cloudflare|gtm-engineer|c1,2026-06-04,exact,submission_receipt,,,,email,gmail,gth_69c4854422c5249c,
+bravo,cloudflare|gtm-engineer|c1|e2,cloudflare|gtm-engineer|c1,2026-06-23,exact,rejection,,unknown,,email,gmail,gth_6c9a388506c32c47,cloudflare.vssend.com Application Update declined
+bravo,pogo-technologies|gtm-engineer|c1|e1,pogo-technologies|gtm-engineer|c1,2026-06-04,exact,submission_receipt,,,,email,gmail,gth_4169aef833260ed9,
+bravo,pogo-technologies|gtm-engineer|c1|e2,pogo-technologies|gtm-engineer|c1,2026-06-26,exact,submission_receipt,,unknown,,email,gmail,gth_cff42e6b8ec6e894,Gem thank you first cycle annotation; no terminal after 06-04
+bravo,pogo-technologies|gtm-engineer|c1|e3,pogo-technologies|gtm-engineer|c1,2026-07-08,exact,submission_receipt,,unknown,,email,gmail,gth_613e210e3d23935a,Ashby thanks for applying GTM Engineer; no terminal after prior receipts
+bravo,atlanta-public-schools|unspecified|c1|e1,atlanta-public-schools|unspecified|c1,2026-06-19,exact,submission_receipt,,,,email,gmail,gth_69afd05b60e34a48,
+bravo,atlanta-public-schools|unspecified|c1|e2,atlanta-public-schools|unspecified|c1,2026-06-19,exact,employer_ack,,unknown,,email,gmail,gth_ca4ec7de603636fa,AppliTrack Application Started
+bravo,atlanta-public-schools|unspecified|c1|e3,atlanta-public-schools|unspecified|c1,2026-06-19,exact,followup_sent,,unknown,,email,gmail,gth_ddaf156bd72853f5,SENT to eml_4dacf4a8f28f stating Frontline application completed to final confirmation page
+bravo,atlanta-public-schools|unspecified|c1|e4,atlanta-public-schools|unspecified|c1,2026-06-22,exact,rejection,,unknown,,email,gmail,gth_ddaf156bd72853f5,APS replies they are not currently accepting substitute applications
+bravo,atlanta-public-schools|unspecified|c1|e5,atlanta-public-schools|unspecified|c1,2026-07-28,exact,rejection,,unknown,,email,gmail,gth_d48351490423f643,Frontline Stellar Substitute Position Update position filled; district not named on this artifact; parented here because APS is the Frontline district in the sent thread
+bravo,anduril|technical-operations-engineer-launched-effects|c1|e1,anduril|technical-operations-engineer-launched-effects|c1,2026-06-21,exact,submission_receipt,,,,email,gmail,gth_c8b5ddd27cce25d9,
+bravo,anduril|technical-operations-engineer-launched-effects|c1|e2,anduril|technical-operations-engineer-launched-effects|c1,2026-07-15,exact,rejection,,unknown,,email,gmail,gth_1a986c962a9a2038,no-reply@recruiting.anduril.com thank you for applying declined; role not restated
+bravo,attentive|unspecified|c1|e1,attentive|unspecified|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,gth_ed449ca6f36aaabd,
+bravo,attentive|unspecified|c1|e2,attentive|unspecified|c1,2026-07-07,exact,rejection,,unknown,,email,gmail,gth_7322aec276b4ff5c,Thank You from Attentive declined
+bravo,attentive|gtm-engineer|c2|e1,attentive|gtm-engineer|c2,2026-07-15,exact,submission_receipt,,,,email,gmail,gth_07f5c11803468801,
+bravo,armada|ai-factory-value-engineer|c1|e1,armada|ai-factory-value-engineer|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,gth_56900e76d4a66f13,
+bravo,mercor|education-school-evaluator|c1|e1,mercor|education-school-evaluator|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,gth_0d17ddc7df5b3ff5,
+bravo,mercor|education-school-evaluator|c1|e2,mercor|education-school-evaluator|c1,2026-06-29,exact,rejection,,unknown,,email,gmail,gth_936b853a89f22d3d,Update on your application declined
+bravo,mercor|general-sales-gtm-evaluator|c1|e1,mercor|general-sales-gtm-evaluator|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,gth_76956966f57e2d8c,
+bravo,mercor|general-sales-gtm-evaluator|c1|e2,mercor|general-sales-gtm-evaluator|c1,2026-06-29,exact,rejection,,unknown,,email,gmail,gth_ec99563e2f3f9166,Update on your application declined
+bravo,wealth-com|gtm-engineer|c1|e1,wealth-com|gtm-engineer|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,gth_31cf19b2d7f93c6d,
+bravo,wealth-com|gtm-engineer|c1|e2,wealth-com|gtm-engineer|c1,2026-06-22,exact,rejection,,unknown,,email,gmail,gth_6c9eef7e51f73df6,Wealth.com Application Update declined
+bravo,syncro|gtm-operations-manager|c1|e1,syncro|gtm-operations-manager|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,gth_331d3bc7e9183987,
+bravo,sentilink|go-to-market-strategy-analyst|c1|e1,sentilink|go-to-market-strategy-analyst|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,gth_2670a5da7c851b05,
+bravo,sentilink|go-to-market-strategy-analyst|c1|e2,sentilink|go-to-market-strategy-analyst|c1,2026-07-13,exact,rejection,,unknown,,email,gmail,gth_76cdb1832dfab760,Update Go-to-Market Strategy Analyst declined
+bravo,jobgether|gtm-engineer|c1|e1,jobgether|gtm-engineer|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,gth_39fd61eed7768f9e,
+bravo,jobgether|gtm-engineer|c1|e2,jobgether|gtm-engineer|c1,2026-06-23,exact,assessment_sent,,unknown,,email,gmail,gth_e14476762165423d,Follow-up Match Score and Assessment Report
+bravo,ibm|manager-applied-ai-gtm-systems-confluent|c1|e1,ibm|manager-applied-ai-gtm-systems-confluent|c1,2026-06-22,exact,submission_receipt,,,,email,gmail,gth_3f4c8312020cfc53,
+bravo,ibm|manager-applied-ai-gtm-systems-confluent|c1|e2,ibm|manager-applied-ai-gtm-systems-confluent|c1,2026-07-26,exact,rejection,,unknown,,email,gmail,gth_088e2c27766ede72,Your IBM Application Status Ref [redacted] declined
+bravo,pindrop|unspecified|c2|e1,pindrop|unspecified|c2,2026-06-22,exact,submission_receipt,,,,email,gmail,gth_c0cbc29cd628c44d,
+bravo,the-hog|gtm-engineer|c1|e1,the-hog|gtm-engineer|c1,2026-06-15,exact,employer_ack,,unknown,,email,gmail,gth_d1989dfb9542a2da,eml_24f646d7eb92 Invitation GTM Interview with Hudson Liao Jun 16
+bravo,the-hog|gtm-engineer|c1|e2,the-hog|gtm-engineer|c1,2026-06-16,exact,hiring_manager_interview,1,Hudson Liao,unknown,video,gmail,gth_d1989dfb9542a2da,GTM Interview with Hudson Liao
+bravo,the-hog|gtm-engineer|c1|e3,the-hog|gtm-engineer|c1,2026-06-18,exact,assessment_sent,,unknown,,email,gmail,gth_df78e875e89e162f,GTM Engineer take-home assignment ~4 hours includes SENT
+bravo,the-hog|gtm-engineer|c1|e4,the-hog|gtm-engineer|c1,2026-06-18,exact,technical_exercise,2,Hudson Liao,unknown,async,gmail,gth_df78e875e89e162f,take-home assignment
+bravo,city-schools-of-decatur|unspecified|c1|e1,city-schools-of-decatur|unspecified|c1,2026-06-26,exact,submission_receipt,,,,email,gmail,gth_a6bd68e720c8c398,
+bravo,city-schools-of-decatur|unspecified|c1|e2,city-schools-of-decatur|unspecified|c1,2026-06-26,exact,employer_ack,,unknown,,email,gmail,gth_9706779d8fd19c1e,AppliTrack Application Started
+bravo,clay|growth-strategist-enterprise|c1|e1,clay|growth-strategist-enterprise|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,gth_b54ed1d0b7cd70ca,
+bravo,clay|growth-strategist-enterprise|c1|e2,clay|growth-strategist-enterprise|c1,2026-06-25,exact,rejection,,unknown,,email,gmail,gth_64a3e8465d11fd56,Thank You for Your Interest Growth Strategist Enterprise declined
+bravo,wirescreen|partnerships-manager|c1|e1,wirescreen|partnerships-manager|c1,2026-06-25,exact,submission_receipt,,,,email,gmail,gth_e7ee14570ffe622a,
+bravo,wirescreen|partnerships-manager|c1|e2,wirescreen|partnerships-manager|c1,2026-07-03,exact,rejection,,unknown,,email,gmail,gth_6426c90b093660d6,Partnerships Manager declined
+bravo,minio|bdr-enterprise|c1|e1,minio|bdr-enterprise|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,gth_40f5f65ab5d529af,
+bravo,minio|bdr-enterprise|c1|e2,minio|bdr-enterprise|c1,2026-06-27,exact,rejection,,unknown,,email,gmail,gth_8d7a7f88edad7270,Important information about your application declined
+bravo,upguard|sdr-manager|c1|e1,upguard|sdr-manager|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,gth_4b10eb2f1db76d3b,
+bravo,upguard|sdr-manager|c1|e2,upguard|sdr-manager|c1,2026-06-24,exact,employer_ack,,unknown,,email,gmail,gth_67767e8f2030e0aa,You've applied what next
+bravo,upguard|sdr-manager|c1|e3,upguard|sdr-manager|c1,2026-06-29,exact,rejection,,unknown,,email,gmail,gth_67da2d8c990fa4e7,Thank you for your interest SDR Manager declined
+bravo,tekion|senior-manager-inside-sales|c1|e1,tekion|senior-manager-inside-sales|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,gth_653430f586268a32,
+bravo,tekion|senior-manager-inside-sales|c1|e2,tekion|senior-manager-inside-sales|c1,2026-06-27,exact,rejection,,unknown,,email,gmail,gth_e03959d7ae59b21f,Senior Manager Inside Sales declined
+bravo,enlace-health|sales-engineer|c1|e1,enlace-health|sales-engineer|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,gth_af78469adf88e697,
+bravo,enlace-health|sales-engineer|c1|e2,enlace-health|sales-engineer|c1,2026-06-26,exact,rejection,,unknown,,email,gmail,gth_8dd3d3e005c68926,Sales Engineer declined
+bravo,canals|sales-manager|c1|e1,canals|sales-manager|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,gth_e4e764ac5937a26a,
+bravo,stackai|sales-engineer|c1|e1,stackai|sales-engineer|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,gth_c08064541ef65721,
+bravo,automation-anywhere|sales-engineer|c1|e1,automation-anywhere|sales-engineer|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,gth_7eb495f5480f0b39,
+bravo,toast|gtm-engineer-sales-workflow-automation|c1|e1,toast|gtm-engineer-sales-workflow-automation|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,gth_8c8f0f471d0e4a6b,
+bravo,toast|gtm-engineer-sales-workflow-automation|c1|e2,toast|gtm-engineer-sales-workflow-automation|c1,2026-07-16,exact,rejection,,unknown,,email,gmail,gth_7bcc095144216d03,GTM Engineer Sales Workflow Automation declined
+bravo,revpartners|gtm-engineer|c1|e1,revpartners|gtm-engineer|c1,2026-06-24,exact,submission_receipt,,,,email,gmail,gth_90376d5350b9a83a,
+bravo,revpartners|gtm-engineer|c1|e2,revpartners|gtm-engineer|c1,2026-06-26,exact,employer_ack,,unknown,,email,gmail,gth_bee2189ccf2d1a6a,RevPartners Application Status
+bravo,revpartners|gtm-engineer|c1|e3,revpartners|gtm-engineer|c1,2026-07-22,exact,employer_ack,,unknown,,email,gmail,gth_54d8899e0028fed1,Complete the application for GTM Engineer email verification
+bravo,revpartners|gtm-engineer|c1|e4,revpartners|gtm-engineer|c1,2026-07-22,exact,employer_ack,,unknown,,email,gmail,gth_71c350353164a95c,felicia.guynn RevPartners Application 2 msgs 93 seconds apart
+bravo,revpartners|gtm-engineer|c1|e5,revpartners|gtm-engineer|c1,2026-07-27,exact,employer_ack,,unknown,,email,gmail,gth_e7ec1a58dc76c2eb,RevPartners Application Status
+bravo,inrule-technology|unspecified|c1|e1,inrule-technology|unspecified|c1,2026-07-06,exact,submission_receipt,,,,email,gmail,gth_14681505c9f65ec0,
+bravo,douglas-county-school-system|unspecified|c1|e1,douglas-county-school-system|unspecified|c1,2026-07-09,exact,submission_receipt,,,,email,gmail,gth_4e49e610ace41a16,
+bravo,douglas-county-school-system|unspecified|c1|e2,douglas-county-school-system|unspecified|c1,2026-06-27,exact,employer_ack,,unknown,,email,gmail,gth_1a54c618dc5009e8,Change your Frontline ID password Douglas County
+bravo,talentpluto|go-to-market-engineer|c1|e1,talentpluto|go-to-market-engineer|c1,2026-07-12,exact,submission_receipt,,,,email,gmail,gth_178d1a4678c84ee6,
+bravo,talentpluto|go-to-market-engineer|c1|e2,talentpluto|go-to-market-engineer|c1,2026-07-12,exact,employer_ack,,unknown,,email,gmail,gth_ec22d1bf60ae491a,eml_4a4e8aed593a thank you next step is a call with Pluto
+bravo,talentpluto|go-to-market-engineer|c1|e3,talentpluto|go-to-market-engineer|c1,2026-07-14,exact,employer_ack,,unknown,,email,gmail,gth_8c42db8841df92ac,A reminder about your application
+bravo,talentpluto|go-to-market-engineer|c1|e4,talentpluto|go-to-market-engineer|c1,2026-07-17,exact,employer_ack,,unknown,,email,gmail,gth_faef1470d278ae7a,Your application process is incomplete
+bravo,talentpluto|go-to-market-engineer|c1|e5,talentpluto|go-to-market-engineer|c1,2026-07-22,exact,employer_ack,,unknown,,email,gmail,gth_a0be8161f6c6cd7e,action required application about to be closed
+bravo,listen-labs|lead-gtm-engineer|c1|e1,listen-labs|lead-gtm-engineer|c1,2026-07-12,exact,submission_receipt,,,,email,gmail,gth_a5148313a18f5ac0,
+bravo,anysphere|gtm-emerging-products|c1|e1,anysphere|gtm-emerging-products|c1,2026-07-12,exact,submission_receipt,,,,email,gmail,gth_15accea51012a907,
+bravo,anysphere|gtm-emerging-products|c1|e2,anysphere|gtm-emerging-products|c1,2026-07-13,exact,rejection,,unknown,,email,gmail,gth_ec368b4890cb9784,Cursor Application Update GTM Emerging Products declined
+bravo,confido|founding-gtm-engineer|c1|e1,confido|founding-gtm-engineer|c1,2026-07-12,exact,submission_receipt,,,,email,gmail,gth_bcd329b8b94614f7,
+bravo,patch|growth-engineering-lead|c1|e1,patch|growth-engineering-lead|c1,2026-07-13,exact,submission_receipt,,,,email,gmail,gth_732e82afc70cd870,
+bravo,together-ai|unspecified|c1|e1,together-ai|unspecified|c1,2026-07-13,exact,submission_receipt,,,,email,gmail,gth_95609241ea8ee9d7,
+bravo,together-ai|unspecified|c1|e2,together-ai|unspecified|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,gth_796a9fcf643cde48,second Greenhouse thank you; no terminal between 07-13 and 07-15
+bravo,productboard|gtm-engineer|c1|e1,productboard|gtm-engineer|c1,2026-07-13,exact,submission_receipt,,,,email,gmail,gth_fa753c8961d636b5,
+bravo,bluejay|founding-gtm|c1|e1,bluejay|founding-gtm|c1,2026-07-13,exact,employer_ack,,,,email,gmail,gth_59384916f1d2f6ca,eml_0a253147bb65 Regarding Your Application GTM Engineer
+bravo,bluejay|founding-gtm|c1|e2,bluejay|founding-gtm|c1,2026-07-13,exact,recruiter_screen,1,Josh Kelly,recruiter,phone,gmail,gth_59384916f1d2f6ca,5 msg thread includes SENT call scheduled same day
+bravo,bluejay|founding-gtm|c1|e3,bluejay|founding-gtm|c1,2026-07-23,exact,rejection,,unknown,,email,gmail,gth_2961922ee1e05822,Update on the Founding GTM Role at Bluejay declined after process
+bravo,conversion|gtm-engineer|c1|e1,conversion|gtm-engineer|c1,2026-07-14,exact,submission_receipt,,,,email,gmail,gth_a06a83e64880f9a3,
+bravo,axiad|unspecified|c1|e1,axiad|unspecified|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,gth_77fd2a371a72600e,
+bravo,hologram|gtm-engineer-pre-sales|c1|e1,hologram|gtm-engineer-pre-sales|c1,2026-07-15,exact,employer_ack,,,,email,gmail,gth_40e600e56434c3e4,Your application with Hologram has been activated
+bravo,hologram|gtm-engineer-pre-sales|c1|e2,hologram|gtm-engineer-pre-sales|c1,2026-07-16,exact,employer_ack,,Megan Koch,recruiter,email,gmail,gth_2a3e6638763bef64,eml_00885ec9fff7 Intro-Call Confirmation includes SENT
+bravo,hologram|gtm-engineer-pre-sales|c1|e3,hologram|gtm-engineer-pre-sales|c1,2026-07-20,exact,recruiter_screen,1,Amy Schwartz,recruiter,phone,gmail,gth_fc3a24d02960b24e,Reminder Preliminary Screening Call Amy Schwartz Jul 20
+bravo,hologram|gtm-engineer-pre-sales|c1|e4,hologram|gtm-engineer-pre-sales|c1,2026-07-22,exact,panel,2,Derrick Calderon,unknown,video,gmail,gth_966e3da56037f91c,Reminder Cross-Functional Interview Derrick Calderon Jul 22
+bravo,hologram|gtm-engineer-pre-sales|c1|e5,hologram|gtm-engineer-pre-sales|c1,2026-07-22,exact,followup_sent,,unknown,,email,gmail,gth_d0dd571860e0bfa7,post-interview portfolio send to eml_50fc12f0536a
+bravo,hologram|gtm-engineer-pre-sales|c1|e6,hologram|gtm-engineer-pre-sales|c1,2026-07-26,exact,employer_ack,,unknown,,email,gmail,gth_4f471501f11f0ada,Hologram candidate experience survey
+bravo,productboard|associate-gtm-engineer|c1|e1,productboard|associate-gtm-engineer|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,gth_36e64a008a81fd84,
+bravo,handshake|gtm-engineer|c1|e1,handshake|gtm-engineer|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,gth_375082948ea0ff94,
+bravo,yuno|go-to-market-engineer|c1|e1,yuno|go-to-market-engineer|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,gth_acdf2f35318498c8,
+bravo,lorikeet|gtm-engineer|c1|e1,lorikeet|gtm-engineer|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,gth_3021dd8327f18e33,
+bravo,lorikeet|gtm-engineer|c1|e2,lorikeet|gtm-engineer|c1,2026-07-20,exact,rejection,,unknown,,email,gmail,gth_9e33971de9a21123,Thank you for applying position filled
+bravo,nooks|gtm-engineer-marketing|c1|e1,nooks|gtm-engineer-marketing|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,gth_48896200b75b682e,
+bravo,hightouch|go-to-market-engineer|c1|e1,hightouch|go-to-market-engineer|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,gth_2477b047c9eee060,
+bravo,hightouch|go-to-market-engineer|c1|e2,hightouch|go-to-market-engineer|c1,2026-07-22,exact,submission_receipt,,unknown,,email,gmail,gth_c268662097399495,second Greenhouse Application Received; no terminal between 07-15 and 07-22
+bravo,hightouch|go-to-market-engineer|c1|e3,hightouch|go-to-market-engineer|c1,2026-07-24,exact,rejection,,unknown,,email,gmail,gth_88147042a38ae78f,Your Application Go-to-Market Engineer declined
+bravo,scribe|unspecified|c1|e1,scribe|unspecified|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,gth_ebcaa0e3a26e7ae0,
+bravo,brighthire|unspecified|c1|e1,brighthire|unspecified|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,gth_06030ef7ce1a1a86,
+bravo,gatherup|unspecified|c1|e1,gatherup|unspecified|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,gth_7f32aa0dee0844c6,
+bravo,hud|gtm-engineer|c1|e1,hud|gtm-engineer|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,gth_0551733f2c4f4e2f,
+bravo,hud|gtm-engineer|c1|e2,hud|gtm-engineer|c1,2026-07-16,exact,rejection,,unknown,,email,gmail,gth_42dee691f6f6c5d2,HUD Application Update GTM Engineer declined
+bravo,higgsfield|gtm-engineer|c1|e1,higgsfield|gtm-engineer|c1,2026-07-15,exact,submission_receipt,,,,email,gmail,gth_585f47fb9573f77c,
+bravo,clutch|gtm-engineer|c1|e1,clutch|gtm-engineer|c1,2026-07-19,exact,submission_receipt,,,,email,gmail,gth_6f15db67a1602feb,
+bravo,clutch|gtm-engineer|c1|e2,clutch|gtm-engineer|c1,2026-07-22,exact,employer_ack,,unknown,,email,gmail,gth_133648dd6a6895a3,A note from Clutch GTM Engineer
+bravo,owner-com|gtm-engineer|c1|e1,owner-com|gtm-engineer|c1,2026-07-22,exact,submission_receipt,,,,email,gmail,gth_42e02c48ed5bf0d4,
+bravo,livekit|gtm-systems-engineer|c1|e1,livekit|gtm-systems-engineer|c1,2026-07-20,exact,submission_receipt,,,,email,gmail,gth_e469b6dd5dcf57de,
+bravo,livekit|gtm-systems-engineer|c1|e2,livekit|gtm-systems-engineer|c1,2026-08-17,exact,rejection,,unknown,,email,gmail,gth_e704f1fc6ae0528c,LiveKit Application GTM Systems Engineer declined
+bravo,mercor|biology-biophysics-research-collaborator|c1|e1,mercor|biology-biophysics-research-collaborator|c1,2026-07-20,exact,submission_receipt,,,,email,gmail,gth_81d08aee9ab37889,
+bravo,mercor|biology-biophysics-research-collaborator|c1|e2,mercor|biology-biophysics-research-collaborator|c1,2026-07-20,exact,employer_ack,,unknown,,email,gmail,gth_62ea130fd6707472,You have been referred to Mercor by Victor Ekuta
+bravo,mercor|biology-biophysics-research-collaborator|c1|e3,mercor|biology-biophysics-research-collaborator|c1,2026-07-20,exact,employer_ack,,unknown,,email,gmail,gth_b408acc51cf3b1c4,Availability & Commitment Confirmation Form Research Collaborator 20 hrs
+bravo,mercor|biology-biophysics-research-collaborator|c1|e4,mercor|biology-biophysics-research-collaborator|c1,2026-07-27,exact,rejection,,unknown,,email,gmail,gth_658f211f1ad320ad,Update on your application declined
+bravo,hyperbound|founding-revops-lead|c1|e1,hyperbound|founding-revops-lead|c1,2026-07-17,exact,rejection,,,,email,gmail,gth_98e8de23b25e899a,Application Update Founding RevOps Lead declined
+bravo,great-question|senior-demand-generation-manager|c1|e1,great-question|senior-demand-generation-manager|c1,2026-07-17,exact,submission_receipt,,,,email,gmail,gth_cf236998e25c2988,
+bravo,great-question|senior-demand-generation-manager|c1|e2,great-question|senior-demand-generation-manager|c1,2026-07-24,exact,employer_ack,,Harri,unknown,email,gmail,gth_8dc62a9ea6433a08,eml_66d981f4af01 Next Steps screening call scheduling
+bravo,great-question|senior-demand-generation-manager|c1|e3,great-question|senior-demand-generation-manager|c1,2026-07-25,exact,employer_ack,,unknown,,email,gmail,gth_8d1927922b817f7a,Reminder Upcoming Interview
+bravo,great-question|senior-demand-generation-manager|c1|e4,great-question|senior-demand-generation-manager|c1,2026-07-26,exact,hiring_manager_interview,1,unknown,unknown,video,gmail,gth_83dac2c7d6e9c709,Reminder Upcoming Interview Google Meet
+bravo,great-question|senior-demand-generation-manager|c1|e5,great-question|senior-demand-generation-manager|c1,2026-07-29,exact,rejection,,unknown,,email,gmail,gth_5929227e95606d2a,Update on Your Application post-interview decline
+bravo,great-question|senior-demand-generation-manager|c1|e6,great-question|senior-demand-generation-manager|c1,2026-07-31,exact,employer_ack,,unknown,,email,gmail,gth_a54360b057aa69a3,Feedback request Senior Demand Generation Manager
+bravo,revic|founding-gtm-ai-engineer|c1|e1,revic|founding-gtm-ai-engineer|c1,2026-07-21,exact,submission_receipt,,,,email,gmail,gth_29fad35aef460808,
+bravo,gradient-labs|gtm-engineer|c1|e1,gradient-labs|gtm-engineer|c1,2026-07-27,exact,rejection,,,,email,gmail,gth_ea6ecb88f1968d3e,Update on your application declined
+bravo,gradient-labs|gtm-engineer|c1|e2,gradient-labs|gtm-engineer|c1,2026-07-21,exact,employer_ack,,unknown,,email,gmail,gth_3596c77f23f1b6ef,eml_5e8c0df85122 Gradient Labs would like you to complete your application GTM Engineer
+bravo,firstup|manager-gtm-systems|c1|e1,firstup|manager-gtm-systems|c1,2026-07-23,exact,submission_receipt,,,,email,gmail,gth_d42d877d4ad1d8a6,
+bravo,firstup|manager-gtm-systems|c1|e2,firstup|manager-gtm-systems|c1,2026-07-23,exact,submission_receipt,,unknown,,email,gmail,gth_7e25fd1739d44863,Apply4Me We're Working on Your Application to Firstup
+bravo,firstup|manager-gtm-systems|c1|e3,firstup|manager-gtm-systems|c1,2026-07-23,exact,submission_receipt,,unknown,,email,gmail,gth_e130e58fb59d0625,Apply4Me Application Sent Manager GTM Systems at Firstup
+bravo,lattice|gtm-engineer|c1|e1,lattice|gtm-engineer|c1,2026-07-24,exact,submission_receipt,,,,email,gmail,gth_241e94478aaca3da,
+bravo,lattice|gtm-engineer|c1|e2,lattice|gtm-engineer|c1,2026-07-22,exact,employer_ack,,unknown,,email,gmail,gth_4e01859f1706380d,Apply4Me Working on Your Application to Lattice
+bravo,lattice|gtm-engineer|c1|e3,lattice|gtm-engineer|c1,2026-07-24,exact,submission_receipt,,unknown,,email,gmail,gth_74adb1f671e72e00,Apply4Me Application Sent GTM Engineer at Lattice
+bravo,lattice|gtm-engineer|c1|e4,lattice|gtm-engineer|c1,2026-08-04,exact,rejection,,unknown,,email,gmail,gth_5d12791102226fed,no-reply@lattice.com Update on the GTM Engineer role position filled
+bravo,ai-digital|growth-director|c1|e1,ai-digital|growth-director|c1,2026-07-24,exact,submission_receipt,,,,email,gmail,gth_1d99ac00eaaf286d,
+bravo,ai-digital|growth-director|c1|e2,ai-digital|growth-director|c1,2026-07-23,exact,employer_ack,,unknown,,email,gmail,gth_65129d75e41ce358,Apply4Me We're Working on Your Application to AI Digital
+bravo,ai-digital|growth-director|c1|e3,ai-digital|growth-director|c1,2026-07-27,exact,rejection,,unknown,,email,gmail,gth_5603b7d8e2e3642c,eml_0130975dcc62 Growth Director declined
+bravo,tripleseat|gtm-engineer|c1|e1,tripleseat|gtm-engineer|c1,2026-08-06,exact,submission_receipt,,,,email,gmail,gth_1c8c8c22b376b3eb,
+bravo,uncapped|gtm-engineer|c1|e1,uncapped|gtm-engineer|c1,2026-08-22,exact,submission_receipt,,,,email,gmail,gth_ad4706bd7af58097,
+bravo,uncapped|gtm-engineer|c1|e2,uncapped|gtm-engineer|c1,2026-08-22,exact,rejection,,unknown,,email,gmail,gth_5c20cbbb0d1537ba,GTM Engineer receipt then decline; thread spans to 08-25
+bravo,openobserve|growth-marketer|c1|e1,openobserve|growth-marketer|c1,2026-08-24,exact,rejection,,,,email,gmail,gth_251fa3a1016af3d2,Application Update Growth Marketer declined
+bravo,mercor|sales-and-marketing-expert|c1|e1,mercor|sales-and-marketing-expert|c1,2026-08-18,exact,submission_receipt,,,,email,gmail,gth_49e6eeca403b197b,
+bravo,mercor|sales-engineering-expert|c1|e1,mercor|sales-engineering-expert|c1,2026-08-18,exact,submission_receipt,,,,email,gmail,gth_ed5180a0df62cd59,
+bravo,mercor|sales-engineering-expert|c1|e2,mercor|sales-engineering-expert|c1,2026-08-25,exact,rejection,,unknown,,email,gmail,gth_6af83859c4df0200,Update on your application declined
+bravo,mercor|b2b-sales-expert|c1|e1,mercor|b2b-sales-expert|c1,2026-08-18,exact,submission_receipt,,,,email,gmail,gth_8a2cdb8923883118,
+bravo,mercor|b2b-sales-expert|c1|e2,mercor|b2b-sales-expert|c1,2026-08-25,exact,rejection,,unknown,,email,gmail,gth_c3d6d80dbe0aa31e,Update on your application declined
+bravo,mercor|gtm-engineer|c1|e1,mercor|gtm-engineer|c1,2026-08-14,exact,recruiter_screen,1,Claire Gauthier,recruiter,email,gmail,gth_eb92df5e2967cf13,eml_61569e66e7d1 Growth @ Mercor recruiter outreach robotics team
+bravo,mercor|gtm-engineer|c1|e2,mercor|gtm-engineer|c1,2026-08-14,exact,followup_sent,,unknown,,email,gmail,gth_efb04ef566f94106,SENT Thanks for the time today tooling discussion
+bravo,mercor|gtm-engineer|c1|e3,mercor|gtm-engineer|c1,2026-08-17,exact,recruiter_screen,2,Daniel Luo,recruiter,video,gmail,gth_7e4ba4ad12edcb62,Appointment booked 30 min with Daniel
+bravo,mercor|gtm-engineer|c1|e4,mercor|gtm-engineer|c1,2026-08-18,exact,hiring_manager_interview,3,Claire Gauthier,recruiter,video,gmail,gth_f7fead83a662997f,Invitation Claire <> Keegan Aug 18
+bravo,mercor|gtm-engineer|c1|e5,mercor|gtm-engineer|c1,2026-08-18,exact,offer,,Claire Gauthier,recruiter,email,gmail,gth_de476d28238e8813,Working at Mercor includes SENT rate discussion
+bravo,mercor|gtm-engineer|c1|e6,mercor|gtm-engineer|c1,2026-08-20,exact,offer,,unknown,,email,gmail,gth_da5b9d0848d88f36,Instant Work Offer Growth Strategist we know you didn't apply directly
+bravo,mercor|gtm-engineer|c1|e7,mercor|gtm-engineer|c1,2026-08-21,exact,offer,,unknown,,email,gmail,gth_04388c5d54511960,Offer Acceptance Confirmation GTM Engineer hourly contract active
+bravo,mercor|gtm-engineer|c1|e8,mercor|gtm-engineer|c1,2026-08-21,exact,employer_ack,,unknown,,email,gmail,gth_30e2ea2fdec22504,Certn Background Screening Request From Mercor
+bravo,mercor|gtm-engineer|c1|e9,mercor|gtm-engineer|c1,2026-08-22,exact,employer_ack,,unknown,,email,gmail,gth_1569a66c61be3497,Next steps on your new opportunity at Mercor offer accepted
+bravo,mercor|gtm-engineer|c1|e10,mercor|gtm-engineer|c1,2026-08-22,exact,employer_ack,,unknown,,email,gmail,gth_a95ac349e4b7a78c,Certn Background Screening Report Returned
+bravo,mercor|gtm-engineer|c1|e11,mercor|gtm-engineer|c1,2026-08-24,exact,reschedule,,unknown,,email,gmail,gth_22c69529d38dc084,Claire <> Keegan invitation and reschedule includes SENT
+bravo,mercor|gtm-engineer|c1|e12,mercor|gtm-engineer|c1,2026-08-29,exact,employer_ack,,unknown,,email,gmail,gth_e175f034ef276a1a,Contract Paused for Atlanta Furniture Shopper Study 3 identical msgs
+bravo,dekalb-county-school-district|area-3-elementary-star-substitute-murphey-candler-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-murphey-candler-es|c1,2026-08-11,exact,rejection,,,,email,gmail,gth_3ee7a7fafe9feee4,AppliTrack position you applied for has been filled
+bravo,dekalb-county-school-district|specialty-area-star-substitute-margaret-harris-comprehensive|c1|e1,dekalb-county-school-district|specialty-area-star-substitute-margaret-harris-comprehensive|c1,2026-08-06,exact,rejection,,,,email,gmail,gth_555da3709c031999,AppliTrack position you applied for has been filled
+bravo,dekalb-county-school-district|area-3-elementary-star-substitute-chapel-hill-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-chapel-hill-es|c1,2026-08-04,exact,rejection,,,,email,gmail,gth_440bc4368a9e0886,AppliTrack position you applied for has been filled
+bravo,dekalb-county-school-district|area-3-elementary-star-substitute-chapel-hill-es|c1|e2,dekalb-county-school-district|area-3-elementary-star-substitute-chapel-hill-es|c1,2026-07-14,exact,rejection,,unknown,,email,gmail,gth_24b057d92a4bfdae,earlier filled notice same school Chapel Hill ES; merged not a second cycle
+bravo,dekalb-county-school-district|area-3-elementary-star-substitute-canby-lane-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-canby-lane-es|c1,2026-08-04,exact,rejection,,,,email,gmail,gth_5e8021bc96301627,AppliTrack position you applied for has been filled
+bravo,dekalb-county-school-district|area-high-school-star-substitute-columbia-hs|c1|e1,dekalb-county-school-district|area-high-school-star-substitute-columbia-hs|c1,2026-07-28,exact,rejection,,,,email,gmail,gth_538352b44682647e,AppliTrack position you applied for has been filled
+bravo,dekalb-county-school-district|area-3-elementary-star-substitute-cedar-grove-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-cedar-grove-es|c1,2026-07-27,exact,rejection,,,,email,gmail,gth_121caf4f0a6b0482,AppliTrack position you applied for has been filled
+bravo,dekalb-county-school-district|area-1-elementary-star-substitute-ashford-park-es|c1|e1,dekalb-county-school-district|area-1-elementary-star-substitute-ashford-park-es|c1,2026-07-24,exact,rejection,,,,email,gmail,gth_d1725cb9ebb1f225,AppliTrack position you applied for has been filled
+bravo,dekalb-county-school-district|area-4-elementary-substitute-star-browns-mill-es|c1|e1,dekalb-county-school-district|area-4-elementary-substitute-star-browns-mill-es|c1,2026-07-22,exact,rejection,,,,email,gmail,gth_1452981a99c8574e,AppliTrack position you applied for has been filled
+bravo,dekalb-county-school-district|area-3-elementary-star-substitute-rowland-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-rowland-es|c1,2026-07-14,exact,rejection,,,,email,gmail,gth_dff168bf3a176124,AppliTrack position you applied for has been filled
+bravo,dekalb-county-school-district|horizon-area-substitute-star-flat-rock-es|c1|e1,dekalb-county-school-district|horizon-area-substitute-star-flat-rock-es|c1,2026-07-08,exact,rejection,,,,email,gmail,gth_0545dc889f7add62,AppliTrack position you applied for has been filled

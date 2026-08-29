@@ -9,15 +9,15 @@ Role: retriever. No coding. Unfiltered. This query matched product marketing fro
 
 ## Page 1
 
-Token for page 2: `06312184732401314300`. 50 threads.
+Token for page 2: `tok_5a39d2b82e26`. 50 threads.
 
-Dominant senders: em@em1.cloudflare.com (Connect conference marketing), info@beautiful.ai (product billing and brand emails), hudson@notifications.thehog.ai (Welcome to The Hog, thread 19edfbeff6d01f38, already in log 022).
+Dominant senders: eml_f098c1e932da (Connect conference marketing), info@beautiful.ai (product billing and brand emails), eml_8eedb7e060e1 (Welcome to The Hog, thread gth_8f0e5c242e623174, already in log 022).
 
 No Greenhouse, Ashby, Lever, Workable, or Mercor employment receipts on this page.
 
 ## Page 2
 
-Token for page 3: `00672851006738270418`. 50 threads.
+Token for page 3: `tok_80387f52c7da`. 50 threads.
 
 Dominant senders: team@mail.airtable.com, notifications@vercel.com, info@beautiful.ai. All product lifecycle mail to the lecturesfrom workspace.
 
@@ -27,51 +27,51 @@ No further token. 45 threads.
 
 | date | sender | subject | thread_id |
 |---|---|---|---|
-| 2026-02-09 | notifications@vercel.com | Payment Failed And Shutdown Coming Soon | 19c4063ebe514de2 |
-| 2026-02-08 | noreply@airtable.com | Limited time offer: Extend Your Team Trial | 19c3e7370fae8295 |
-| 2026-02-07 | notifications@vercel.com | Payment Failed And Shutdown Coming Soon | 19c39f3d0264c62c |
-| 2026-02-07 | noreply@airtable.com | Airtable workspace switched to the Free plan | 19c36e8d230bb6ed |
-| 2026-02-06 | team@mail.airtable.com | Your workflows miss you | 19c33e755ab08e48 |
-| 2026-02-04 | team@mail.airtable.com | Start organizing your app with your team | 19c29996c5e54450 |
-| 2026-02-02 | team@mail.airtable.com | Make your app work for you with automations | 19c1f4d3cadeeb0b |
-| 2026-01-31 | team@mail.airtable.com | Your job just got easier with Airtable templates | 19c15004caac91f5 |
-| 2026-01-29 | team@mail.airtable.com | Create the perfect Airtable database | 19c0ab5aa963ec87 |
-| 2026-01-27 | team@mail.airtable.com | Announcing Superagent | 19c018c857d8dcb2 |
-| 2026-01-27 | team@mail.airtable.com | Bring AI into your day-to-day | 19c0068193bcd1b0 |
-| 2026-01-25 | team@mail.airtable.com | Welcome to Airtable | 19bf61a4706c3952 |
-| 2026-01-23 | system@vercel.com | Vercel Email Verification | 19beb52191712bbb |
-| 2026-01-23 | notifications@vercel.com | New sign-in detected | 19be9137e05fd4b7 |
-| 2026-01-22 | notifications@vercel.com | New sign-in detected | 19be32f03651b605 |
-| 2026-01-22 | notifications@vercel.com | Failed deployment from keeganmoody@gmail.com | 19be313fe181353c |
-| 2026-01-21 | notifications@vercel.com | New sign-in detected | 19be06b27e0e2159 |
-| 2026-01-20 | notifications@vercel.com | Failed deployment from keegan@portfolio.com | 19bdaf33606fd797 |
-| 2026-01-19 | notifications@vercel.com | New sign-in detected | 19bd6d7a1b3e00c3 |
-| 2025-12-27 | notifications@vercel.com | Failed production deployment | 19b61bfb6518e890 |
-| 2025-12-23 | notifications@vercel.com | New sign-in detected | 19b4c3079dd380af |
-| 2025-12-21 | noreply@notify.cloudflare.com | lecturesfrom.com is now active on Cloudflare | 19b3eff24a481531 |
-| 2025-12-08 | noreply@notify.cloudflare.com | Update nameservers for lecturesfrom.com | 19aff4bd31ec007a |
-| 2025-12-08 | notifications@vercel.com | Payment Failed | 19afe53c5f9c01af |
-| 2025-12-08 | system@vercel.com | Vercel Sign-in Verification | 19afc0db5cff5d0a |
-| 2025-12-08 | system@vercel.com | Vercel Sign-in Verification | 19afc0d2d1d1ff2c |
-| 2025-12-07 | notifications@vercel.com | Payment Failed | 19afa5934e94867f |
-| 2025-11-20 | noreply@jobright.ai | AppFollow Instant Alert (not an application) | 19a9f539679d0a2d |
-| 2025-11-20 | noreply@jobright.ai | Informa Instant Alert | 19a9f3bf71e48801 |
-| 2025-11-20 | noreply@jobright.ai | Lane Enterprises Instant Alert | 19a9f1fce6d1d0f2 |
-| 2025-11-20 | noreply@jobright.ai | BSN SPORTS Instant Alert | 19a9f0368129d49d |
-| 2025-11-20 | noreply@jobright.ai | Instep Instant Alert | 19a9eea854706eee |
-| 2025-11-20 | noreply@jobright.ai | Endeavor Instant Alert | 19a9ecfb1670be1f |
-| 2025-11-19 | noreply@jobright.ai | CrossCountry Mortgage Instant Alert | 19a9e78fc2339564 |
-| 2025-11-19 | noreply@jobright.ai | Anywhere Instant Alert | 19a9e2ce093c4e63 |
-| 2025-11-19 | support@jobright.ai | Let's Land your Next Role | 19a9e0ece1ac33eb |
-| 2025-11-19 | noreply@jobright.ai | Rivercity Instant Alert | 19a9e0d2af971e1b |
-| 2025-11-19 | noreply@jobright.ai | QuinStreet Instant Alert | 19a9ce293f3f2d43 |
-| 2025-11-19 | noreply@jobright.ai | Sun Communities Instant Alert | 19a9ca79a5b3606f |
-| 2025-11-19 | noreply@jobright.ai | Techtronic Instant Alert | 19a9c8c4793b0f99 |
-| 2025-11-19 | noreply@jobright.ai | Procore Instant Alert | 19a9a3146303ad06 |
-| 2025-11-19 | noreply@jobright.ai | Hirelyst Instant Alert | 19a9a17171e5886e |
-| 2025-11-19 | noreply@jobright.ai | Henry Schein Instant Alert | 19a99f6ba532b189 |
-| 2025-11-18 | noreply@jobright.ai | Welcome to Turbo | 19a97d3a310e16f1 |
-| 2025-11-18 | support@jobright.ai | Welcome to Jobright | 19a97ca14eff4594 |
+| 2026-02-09 | notifications@vercel.com | Payment Failed And Shutdown Coming Soon | gth_86dfe5d3cd95589a |
+| 2026-02-08 | noreply@airtable.com | Limited time offer: Extend Your Team Trial | gth_f9794aab463ca55e |
+| 2026-02-07 | notifications@vercel.com | Payment Failed And Shutdown Coming Soon | gth_96a7bd12e690b03e |
+| 2026-02-07 | noreply@airtable.com | Airtable workspace switched to the Free plan | gth_a1ea9da1e4a6512f |
+| 2026-02-06 | team@mail.airtable.com | Your workflows miss you | gth_489278b00c5a3cbd |
+| 2026-02-04 | team@mail.airtable.com | Start organizing your app with your team | gth_75ff911cdc55bb49 |
+| 2026-02-02 | team@mail.airtable.com | Make your app work for you with automations | gth_ee4bd5ea71f98239 |
+| 2026-01-31 | team@mail.airtable.com | Your job just got easier with Airtable templates | gth_0c26a3c839c77ac5 |
+| 2026-01-29 | team@mail.airtable.com | Create the perfect Airtable database | gth_16a58b74712c3391 |
+| 2026-01-27 | team@mail.airtable.com | Announcing Superagent | gth_37c10cd931098aed |
+| 2026-01-27 | team@mail.airtable.com | Bring AI into your day-to-day | gth_a0c5432c11e01da5 |
+| 2026-01-25 | team@mail.airtable.com | Welcome to Airtable | gth_d08d37e61e3cbbe9 |
+| 2026-01-23 | eml_fa2ccd9254b1 | Vercel Email Verification | gth_a02229f90652aaba |
+| 2026-01-23 | notifications@vercel.com | New sign-in detected | gth_5f9928a89b9f71c1 |
+| 2026-01-22 | notifications@vercel.com | New sign-in detected | gth_b94cd7c4318e45a5 |
+| 2026-01-22 | notifications@vercel.com | Failed deployment from keeganmoody@gmail.com | gth_fea68212aa72fe0e |
+| 2026-01-21 | notifications@vercel.com | New sign-in detected | gth_dc1512b7569b4cbe |
+| 2026-01-20 | notifications@vercel.com | Failed deployment from eml_478b544ac46a | gth_1c54486a98431310 |
+| 2026-01-19 | notifications@vercel.com | New sign-in detected | gth_b73757055835c874 |
+| 2025-12-27 | notifications@vercel.com | Failed production deployment | gth_2912dd5f1b0d8267 |
+| 2025-12-23 | notifications@vercel.com | New sign-in detected | gth_c9999a02c40f2b5b |
+| 2025-12-21 | noreply@notify.cloudflare.com | lecturesfrom.com is now active on Cloudflare | gth_80d25585157c23e9 |
+| 2025-12-08 | noreply@notify.cloudflare.com | Update nameservers for lecturesfrom.com | gth_4b4f8e9306336842 |
+| 2025-12-08 | notifications@vercel.com | Payment Failed | gth_92f810a1a059ae86 |
+| 2025-12-08 | eml_fa2ccd9254b1 | Vercel Sign-in Verification | gth_1a1b72da389c8dd6 |
+| 2025-12-08 | eml_fa2ccd9254b1 | Vercel Sign-in Verification | gth_c585fdbe0457f9bf |
+| 2025-12-07 | notifications@vercel.com | Payment Failed | gth_10af54ce2664cf3a |
+| 2025-11-20 | noreply@jobright.ai | AppFollow Instant Alert (not an application) | gth_8519a842c5b9ed6a |
+| 2025-11-20 | noreply@jobright.ai | Informa Instant Alert | gth_f3fc895034b63db4 |
+| 2025-11-20 | noreply@jobright.ai | Lane Enterprises Instant Alert | gth_092f24e422b0d397 |
+| 2025-11-20 | noreply@jobright.ai | BSN SPORTS Instant Alert | gth_f6f1ced99eee15ae |
+| 2025-11-20 | noreply@jobright.ai | Instep Instant Alert | gth_4e1def7eb2845b3d |
+| 2025-11-20 | noreply@jobright.ai | Endeavor Instant Alert | gth_0aabac4b7db78406 |
+| 2025-11-19 | noreply@jobright.ai | CrossCountry Mortgage Instant Alert | gth_6b74e706a76eaa26 |
+| 2025-11-19 | noreply@jobright.ai | Anywhere Instant Alert | gth_5cfb4290a688f841 |
+| 2025-11-19 | support@jobright.ai | Let's Land your Next Role | gth_a1cd93365a2b5c2b |
+| 2025-11-19 | noreply@jobright.ai | Rivercity Instant Alert | gth_f9490a68378fde23 |
+| 2025-11-19 | noreply@jobright.ai | QuinStreet Instant Alert | gth_09924326c9b4d543 |
+| 2025-11-19 | noreply@jobright.ai | Sun Communities Instant Alert | gth_3a069aff4f30b0fa |
+| 2025-11-19 | noreply@jobright.ai | Techtronic Instant Alert | gth_aae341a084a706ca |
+| 2025-11-19 | noreply@jobright.ai | Procore Instant Alert | gth_5de1eabe2d5f934f |
+| 2025-11-19 | noreply@jobright.ai | Hirelyst Instant Alert | gth_db472627160c8d3c |
+| 2025-11-19 | noreply@jobright.ai | Henry Schein Instant Alert | gth_8a52c9bcbf0eebbc |
+| 2025-11-18 | noreply@jobright.ai | Welcome to Turbo | gth_db9af840a3624746 |
+| 2025-11-18 | support@jobright.ai | Welcome to Jobright | gth_13480d89c7726a0e |
 
 ## Retriever notes
 
