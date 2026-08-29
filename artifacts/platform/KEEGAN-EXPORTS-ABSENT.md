@@ -17,4 +17,9 @@ Not found:
 - LADDERS.png or Ladders applied-list export
 - YC Work at a Startup dashboard capture
 
-These files remain Keegan-supplied. Coding proceeds on the frozen Gmail and Calendar corpus only. Completeness estimation cannot use LinkedIn overlap until the LinkedIn export arrives.
+These files remain Keegan-supplied except the two received 2026-08-29:
+
+- `artifacts/platform/linkedin_applied_jobs_pages_1_to_10.csv` (99 rows)
+- `artifacts/platform/jobright_applications_log.csv` (40 rows)
+
+Still absent: Ladders export, YC dashboard, [S1], [S2], LinkedIn data-download with ATS channel labels.

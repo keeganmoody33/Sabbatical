@@ -8,9 +8,9 @@ Frozen 2026-08-29 ET for independent coding. Every coder receives this set. A co
 | Gmail 33@lecturesfrom sweep, logs 022–029 | md | same window, Q6 Q7 Q3b Q9 Q10 plus identity check | 177 threads + account notes | 2026-08-29 |
 | Google Calendar 33@lecturesfrom | csv | same window, 90-day blocks, no keyword filter | 31 events | 2026-08-29 |
 | Google Calendar transferred keegan@lecturesfrom | md | same window | 0 events | 2026-08-29 |
-| LinkedIn applied list | csv | all pages | **absent** | waived, see artifacts/STOP-CONDITIONS.md |
-| Jobright tracker | csv | full export | **absent** | waived |
-| Ladders applied list | csv or image | full list | **absent** | waived |
+| LinkedIn applied list | csv | pages 1 to 10, relative stamps, `date_capture` 2026-08-29 | 99 rows | 2026-08-29 Freeze 2 |
+| Jobright tracker | csv | full tracker export | 40 rows | 2026-08-29 Freeze 2 |
+| Ladders applied list | csv or image | full list | **absent** | still unmet |
 | Wellfound applications | csv or screenshots | full list | Wellfound receipts only, inside Gmail logs | 2026-08-29 |
 | YC Work at a Startup | screenshots | applied roles | **absent** | waived |
 | Prior workbooks [S1] [S2] | xlsx | 247 and 212 ledgers | **absent** from this workspace | waived as coding input; they are not artifacts for extraction |
@@ -34,4 +34,4 @@ Git history on this branch before the redaction commit still contains raw identi
 
 ## Freeze rule
 
-No new artifacts after coder 1 begins. If keeganmoody33 Gmail or calendar, LinkedIn export, Ladders, Jobright, YC, or the xlsx workbooks arrive later, every coder re-runs or the addition is excluded from this freeze.
+Freeze 1 (Gmail and Calendar) was coded independently before these platform files existed. Freeze 2 adds the LinkedIn and Jobright CSVs without recoding Gmail. A coder who treats Freeze 2 as the only corpus is running a different study than Freeze 1. Ladders, YC, personal calendar, and the rest of personal Gmail remain outside both freezes.

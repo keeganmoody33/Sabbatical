@@ -1,0 +1,2 @@
+coder_id,candidate_id,date,company,role,exclusion_reason,what_would_promote_it,evidence_system,evidence_id
+freeze2,linkedin-blank-company-p8-r79,,,GTM Engineer,unresolvable_identity,The company name on the applied-list row.,linkedin,linkedin_applied_jobs_pages_1_to_10.csv#page8

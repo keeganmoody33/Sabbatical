@@ -14,8 +14,8 @@ Date precision is a field. Monthly series use only `date_precision = exact`. Rel
 
 95 percent completeness is a goal, not a verified claim. The intended estimator is two-source capture recapture, restricted to LinkedIn rows submitted through an external ATS. Naive Lincoln Petersen on Easy Apply versus ATS mail is invalid because those sources are near-disjoint by construction.
 
-This freeze has no LinkedIn export, so the overlap stratum is unmeasured. The paper reports that gap instead of a completeness percentage.
+This freeze has a LinkedIn applied list for pages 1 to 10, without an Easy Apply versus external ATS label, so the overlap stratum is still unmeasured. The paper reports that gap instead of a completeness percentage.
 
 ## Limitations
 
-Subject and author are the same person. Coding is independent across models, not a human gold standard. The personal Gmail calendar was not reachable in the environment that froze this corpus. Platform trackers (LinkedIn full dump, Ladders, Jobright, YC) were not in the artifact set.
+Subject and author are the same person. Coding of Gmail is independent across models, not a human gold standard. Freeze 2 platform files were mapped from structured CSVs rather than independently recoded by a second model. The personal Gmail calendar was not reachable in the environment that froze Freeze 1. Ladders and YC remain absent.
