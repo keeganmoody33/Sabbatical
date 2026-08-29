@@ -127,9 +127,9 @@ Coders compared: bravo and cursor. Alpha CSVs were not present when this pass ra
 - cursor rows: {len(cursor)}
 - intersection: {len(both)}
 - both `register = application`: {len(both_app)}
-- role_lane percent agreement: 0.9623
-- role_lane Cohen's kappa: 0.9513
-- include percent agreement: 0.9906
+- role_lane percent agreement: 0.9621
+- role_lane Cohen's kappa: 0.9510
+- include percent agreement: 0.9905
 - include kappa: 0.7452 (two disagreements on a rare class)
 
 ## Register disagreements (intersection)
