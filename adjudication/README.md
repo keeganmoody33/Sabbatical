@@ -24,7 +24,7 @@ Cohen's kappa on the intersection of application_ids both coded, using `role_lan
 
 Restricted to the stratum where both LinkedIn and ATS mail could observe the same application: LinkedIn rows submitted through an external ATS, not Easy Apply.
 
-This freeze has no LinkedIn export. Do not run naive Lincoln-Petersen on Gmail vs missing LinkedIn. Report the method and that the overlap stratum is unmeasured until Job Applications.csv arrives.
+Freeze 2 has LinkedIn pages 1 to 10 without that channel label. Do not run naive Lincoln-Petersen. Report the method and that the overlap stratum is unmeasured.
 
 ## Defects
 

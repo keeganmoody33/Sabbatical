@@ -58,16 +58,20 @@ Full census in Freeze 1, before platform files, equals that 221.
 
 ## Freeze 2 platform addendum
 
-Gmail and Calendar extracts were not recoded. LinkedIn pages 1 to 10 and the Jobright tracker were coded as `platform_log` and matched to Freeze 1 on `company_canonical + role_as_listed + cycle`, with named aliases in `adjudication/ingest_platform.py`.
+Gmail and Calendar extracts were not recoded. LinkedIn pages 1 to 10 and the Jobright tracker were coded as `platform_log` and matched to Freeze 1 on `company_canonical + role_as_listed + cycle`. Titles that expand or abbreviate an existing Freeze 1 role at the same company (AE vs Account Executive, location parentheticals) are the same application. They do not increment the census.
 
-- Platform rows overlapping Freeze 1: 51
-- Net-new `platform_log` applications: **82**
-- Full census (Freeze 1 plus net-new): **303**
-- Evidence class on the 303: employer_artifact 220, platform_log 83
+LinkedIn `submission_channel` is `unknown`. The applied-list file does not label Easy Apply versus external ATS.
+
+- Platform rows overlapping Freeze 1: 55
+- Net-new `platform_log` applications: **78**
+- Full census (Freeze 1 plus net-new): **299**
+- Evidence class on the 299: employer_artifact 220, platform_log 79
 - One LinkedIn row with a blank company was excluded (`unresolvable_identity`)
 - The Hog LinkedIn row stays opportunity, matching Freeze 1
 
-This is a documented column mapping of structured applied lists, not a second independent LLM pair. Role-lane kappa is not recomputed on the 82.
+Thomson Reuters AE Tax or Risk, Foursquare AE New Business, UpGuard SDR Manager, and Verkada Enterprise Solutions Engineer Atlanta were already in the 221. Jobright and LinkedIn titles for those openings are overlap, not net-new.
+
+This is a documented column mapping of structured applied lists, not a second independent LLM pair. Role-lane kappa is not recomputed on the 78.
 
 Ladders is still absent.
 
@@ -78,8 +82,8 @@ Interviewed means at least one event whose `event_type` is in {recruiter_screen,
 - Interviewed applications in the Freeze 1 221: **14**
 - Application-to-interview rate on Freeze 1: 14/221
 - Interviewed applications in the Freeze 2 full census: **14**
-- Application-to-interview rate on the 303: 14/303
-- Platform files carry no interview events. Adding Easy Apply and Jobright rows does not add interviews.
+- Application-to-interview rate on the 299: 14/299
+- Platform files carry no interview events. Adding LinkedIn applied-list and Jobright rows does not add interviews.
 - Opportunity-register interviews (WorkOS, Mercor contract path, and other recruiter-only processes) sit outside those denominators
 
 The Hog is opportunity, not an application, so its interview events do not enter the 14.
