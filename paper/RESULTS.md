@@ -35,18 +35,18 @@ Likely bias direction if someone later runs an unstratified estimator anyway: Ea
 
 Coder `cursor` coded the frozen logs independently. This is not the paper total.
 
-- Rows with `register = application`: 222
+- Rows with `register = application`: 221
 - Rows with `register = opportunity`: 10
-- Events: 278
+- Events: 279
 - Exclusions (employment-adjacent only; newsletters classified by sender domain are not one row per thread): 45
 
 `evidence_class` on this extract is `employer_artifact` throughout. The platform_log stratum is empty because LinkedIn, Jobright, Ladders, and YC exports were absent.
 
-Among the 222 application rows, 196 have `date_precision = exact` and 26 do not. A monthly series may use only the 196. The non-exact n is 26 and must sit next to any monthly chart.
+Among the 221 application rows, 195 have `date_precision = exact` and 26 do not. A monthly series may use only the 195. The non-exact n is 26 and must sit next to any monthly chart.
 
-Interviewed-ness is not stored. It is derived from `event_type` in {recruiter_screen, hiring_manager_interview, panel, technical_exercise, final_round}. On this extract that derivation yields 15 interviewed application rows and 3 interviewed opportunity rows. The application-to-interview rate on the employer_artifact stratum would be 15/222. That rate is not adjudicated and is not a headline.
+Interviewed-ness is not stored. It is derived from `event_type` in {recruiter_screen, hiring_manager_interview, panel, technical_exercise, final_round}. On this extract that derivation yields 15 interviewed application rows and 3 interviewed opportunity rows. The application-to-interview rate on the employer_artifact stratum would be 15/221. That rate is not adjudicated and is not a headline.
 
-Exact-date monthly counts on `register = application` only: 2025-06 5, 2025-07 19, 2025-08 16, 2025-09 0, 2025-10 0, 2025-11 1, 2025-12 2, 2026-01 7, 2026-02 10, 2026-03 20, 2026-04 26, 2026-05 22, 2026-06 28, 2026-07 35, 2026-08 5. September and October 2025 being zero on exact dates does not mean zero search activity. Fullsteam 2025-09-29 is evidence_bound. Q1 harvest already showed that empty early months in prior audits were a search-boundary artifact.
+Exact-date monthly counts on `register = application` only: 2025-06 5, 2025-07 19, 2025-08 16, 2025-09 0, 2025-10 0, 2025-11 1, 2025-12 2, 2026-01 7, 2026-02 10, 2026-03 20, 2026-04 26, 2026-05 22, 2026-06 28, 2026-07 34, 2026-08 5. September and October 2025 being zero on exact dates does not mean zero search activity. Fullsteam 2025-09-29 is evidence_bound. Q1 harvest already showed that empty early months in prior audits were a search-boundary artifact.
 
 ## Two strata (method)
 

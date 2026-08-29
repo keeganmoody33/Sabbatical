@@ -195,7 +195,7 @@ APPS: list[tuple] = [
     ("4MindsAI", "4MindsAI", "", "GTM Engineer", "explicit_gtm_engineering", "plain", "2026-06-04", "exact", "", "unknown", "ats_direct", "none_observed", "A", "application", "still_open", "", "unstated", "", "", "high", "Application #49830118.", "19e91037278affa0"),
     ("RevSpring", "RevSpring", "", "Lead, Agentic Operations + GTM Engineering", "explicit_gtm_engineering", "founding_senior_lead", "2026-06-04", "exact", "", "recruiter_inbound", "ats_direct", "none_observed", "A", "application", "still_open", "", "unstated", "Lead", "", "high", "Newton receipt 2026-06-04; duplicate 2026-06-23; LinkedIn recruiter approach 2026-05-29; recruiter screen request 2026-06-10.", "19e91027e41faf49"),
     ("Cloudflare", "Cloudflare", "", "GTM Engineer", "explicit_gtm_engineering", "plain", "2026-06-04", "exact", "", "unknown", "ats_direct", "none_observed", "A", "application", "rejected_no_interview", "2026-06-23", "unstated", "", "", "high", "", "19e90ffd1bc9ed7d"),
-    ("Pogo Technologies", "Pogo Technologies", "", "GTM Engineer", "explicit_gtm_engineering", "plain", "2026-06-04", "exact", "", "unknown", "ats_direct", "Gem", "A", "application", "still_open", "", "unstated", "", "", "medium", "Gem 2026-06-04. Later 2026-06-26 Gem first-cycle note and 2026-07-08 Ashby thank you. 06-26 treated as same cycle unless a terminal outcome exists, which it does not. Title conflict none.", "19e90fa204f97711"),
+    ("Pogo Technologies", "Pogo Technologies", "", "GTM Engineer", "explicit_gtm_engineering", "plain", "2026-06-04", "exact", "", "unknown", "ats_direct", "Gem", "A", "application", "still_open", "", "unstated", "", "", "high", "Gem 2026-06-04. Gem 2026-06-26 and Ashby 2026-07-08 are later receipts on the same title with no terminal outcome, so they stay on c1.", "19e90fa204f97711"),
     ("ServiceTrade", "ServiceTrade", "", "unspecified", "unspecified", "", "2026-05-21", "exact", "", "unknown", "ats_direct", "none_observed", "A", "application", "rejected_no_interview", "2026-05-29", "unstated", "", "", "high", "Role omitted on thank you.", "19e4b44fc00eaf2e"),
     ("CoLab Software", "CoLab Software", "", "Sales Engineer", "sales_solutions_engineering", "", "2026-05-21", "exact", "", "unknown", "ats_direct", "Greenhouse", "A", "application", "still_open", "", "unstated", "", "", "high", "Greenhouse thank you; hiring.colabsoftware.com Sales Engineer 2026-05-28.", "19e48971b300d9ad"),
     ("Apollo.io", "Apollo.io", "", "unspecified", "unspecified", "", "2026-05-28", "exact", "", "unknown", "ats_direct", "Greenhouse", "A", "application", "still_open", "", "unstated", "", "", "high", "Two identical receipts 62 seconds apart. Role omitted.", "19e6c874ef395028"),
@@ -274,7 +274,6 @@ APPS: list[tuple] = [
     ("MinIO", "MinIO", "", "BDR Enterprise", "sales_bd_partnerships", "", "2026-06-24", "exact", "", "unknown", "ats_direct", "none_observed", "A", "application", "rejected_no_interview", "2026-06-27", "unstated", "", "", "high", "", "19efc06d34fcb255"),
     ("Tekion", "Tekion", "", "Senior Manager Inside Sales", "sales_bd_partnerships", "", "2026-06-24", "exact", "", "unknown", "ats_direct", "Greenhouse", "A", "application", "rejected_no_interview", "2026-06-27", "unstated", "Senior Manager", "", "high", "", "19efc04fdbc254f8"),
     ("City Schools Of Decatur", "City Schools Of Decatur", "", "unspecified", "other", "", "2026-06-26", "exact", "", "unknown", "ats_direct", "none_observed", "A", "application", "still_open", "", "unstated", "", "", "high", "AppliTrack started then submission confirmed 6/26/2026. Role omitted.", "19f0591daff91fe0"),
-    ("Pogo Technologies", "Pogo Technologies", "", "GTM Engineer", "explicit_gtm_engineering", "plain", "2026-07-08", "exact", "", "unknown", "ats_direct", "Ashby", "A", "application", "still_open", "", "unstated", "", "", "medium", "Cycle 2 relative to 2026-06-04 Gem receipt. No explicit terminal on c1. Coded as second cycle because a new Ashby receipt arrived after a later Gem first-cycle note 2026-06-26. Could be duplicate channel. See notes__cursor.md.", "19f3f0957b849e79"),
     ("WireScreen", "WireScreen", "", "Partnerships Manager", "sales_bd_partnerships", "", "2026-06-25", "exact", "", "unknown", "ats_direct", "Ashby", "A", "application", "rejected_no_interview", "2026-07-03", "unstated", "", "", "high", "", "19efcac922c14bff"),
     ("Clay", "Clay", "", "Growth Strategist, Enterprise", "growth_demand_marketing", "", "2026-06-24", "exact", "", "unknown", "ats_direct", "Ashby", "A", "application", "rejected_no_interview", "2026-06-25", "unstated", "", "", "high", "", "19efc05ffdf85b11"),
     ("Automation Anywhere", "Automation Anywhere", "", "Sales Engineer", "sales_solutions_engineering", "", "2026-06-24", "exact", "", "unknown", "ats_direct", "Workday", "A", "application", "still_open", "", "unstated", "", "", "high", "", "19efb606b9d8d30c"),
@@ -381,6 +380,8 @@ def extra_event_specs(apps_by_key: dict[str, str]) -> list[dict[str, str]]:
         ("fossa|unspecified|c1", "2026-05-20", "rejection", "", "unknown", "unknown", "email", "gmail", "19e466fffd8be312", "First cycle declined."),
         ("crypto-com|product-growth-hacker-exchange-main-app|c1", "2025-11-02", "rejection", "", "unknown", "unknown", "email", "gmail", "19a45779c86938f1", ""),
         ("huzzle|gtm-engineer|c1", "2026-06-11", "assessment_sent", "", "unknown", "unknown", "async", "gmail", "19eb650805cfef0a", "Final reminder complete your interview."),
+        ("pogo-technologies|gtm-engineer|c1", "2026-06-26", "employer_ack", "", "unknown", "unknown", "email", "gmail", "19f046ca4b4ba350", "Gem first-cycle note. Same title, no terminal on c1."),
+        ("pogo-technologies|gtm-engineer|c1", "2026-07-08", "submission_receipt", "", "unknown", "unknown", "email", "gmail", "19f3f0957b849e79", "Ashby thank you. Same cycle as 2026-06-04 Gem receipt."),
     ]
     rows = []
     for spec in specs:
@@ -488,8 +489,6 @@ def build_app_row(item: tuple, cycle_override: int | None = None) -> dict[str, s
     if canonical == "FOSSA" and date == "2026-05-21":
         cycle = 2
     if canonical == "Attentive" and date == "2026-07-15":
-        cycle = 2
-    if canonical == "Pogo Technologies" and date == "2026-07-08":
         cycle = 2
     if canonical == "Galileo" and role == "Growth Engineer":
         cycle = 1
@@ -656,7 +655,7 @@ Skipped extra events whose application_id did not match a minted key: {skipped_e
 11. Owner.com: used subject GTM Engineer; body Product Builder recorded in notes.
 12. Anysphere canonical for Cursor.
 13. FOSSA and Attentive use cycle 2 after a terminal outcome.
-14. Pogo 2026-07-08 Ashby coded as cycle 2 with medium confidence; may be a channel duplicate of the June Gem receipt.
+14. Pogo Gem 2026-06-04, Gem 2026-06-26, and Ashby 2026-07-08 are one cycle. No terminal between them, so cycle is not incremented.
 15. Unframe 04-06 and 04-17 merged as one cycle.
 16. Productboard 07-13 GTM Engineer and 07-15 Associate GTM Engineer merged as one cycle using the more specific later title.
 17. Meshy 2025-06-01 interview decline: out_of_window (submission likely before window).

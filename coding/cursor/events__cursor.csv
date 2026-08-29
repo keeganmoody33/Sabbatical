@@ -185,7 +185,6 @@ cursor,upguard|sdr-manager|c1|e1,upguard|sdr-manager|c1,2026-06-24,exact,submiss
 cursor,minio|bdr-enterprise|c1|e1,minio|bdr-enterprise|c1,2026-06-24,exact,submission_receipt,,unknown,,email,gmail,19efc06d34fcb255,
 cursor,tekion|senior-manager-inside-sales|c1|e1,tekion|senior-manager-inside-sales|c1,2026-06-24,exact,submission_receipt,,unknown,,email,gmail,19efc04fdbc254f8,
 cursor,city-schools-of-decatur|unspecified|c1|e1,city-schools-of-decatur|unspecified|c1,2026-06-26,exact,submission_receipt,,unknown,,email,gmail,19f0591daff91fe0,
-cursor,pogo-technologies|gtm-engineer|c2|e1,pogo-technologies|gtm-engineer|c2,2026-07-08,exact,submission_receipt,,unknown,,email,gmail,19f3f0957b849e79,
 cursor,wirescreen|partnerships-manager|c1|e1,wirescreen|partnerships-manager|c1,2026-06-25,exact,submission_receipt,,unknown,,email,gmail,19efcac922c14bff,
 cursor,clay|growth-strategist-enterprise|c1|e1,clay|growth-strategist-enterprise|c1,2026-06-24,exact,submission_receipt,,unknown,,email,gmail,19efc05ffdf85b11,
 cursor,automation-anywhere|sales-engineer|c1|e1,automation-anywhere|sales-engineer|c1,2026-06-24,exact,submission_receipt,,unknown,,email,gmail,19efb606b9d8d30c,
@@ -277,3 +276,5 @@ cursor,atlanta-public-schools|unspecified|c1|e2,atlanta-public-schools|unspecifi
 cursor,fossa|unspecified|c1|e2,fossa|unspecified|c1,2026-05-20,exact,rejection,,unknown,unknown,email,gmail,19e466fffd8be312,First cycle declined.
 cursor,crypto-com|product-growth-hacker-exchange-main-app|c1|e2,crypto-com|product-growth-hacker-exchange-main-app|c1,2025-11-02,exact,rejection,,unknown,unknown,email,gmail,19a45779c86938f1,
 cursor,huzzle|gtm-engineer|c1|e3,huzzle|gtm-engineer|c1,2026-06-11,exact,assessment_sent,,unknown,unknown,async,gmail,19eb650805cfef0a,Final reminder complete your interview.
+cursor,pogo-technologies|gtm-engineer|c1|e2,pogo-technologies|gtm-engineer|c1,2026-06-26,exact,employer_ack,,unknown,unknown,email,gmail,19f046ca4b4ba350,"Gem first-cycle note. Same title, no terminal on c1."
+cursor,pogo-technologies|gtm-engineer|c1|e3,pogo-technologies|gtm-engineer|c1,2026-07-08,exact,submission_receipt,,unknown,unknown,email,gmail,19f3f0957b849e79,Ashby thank you. Same cycle as 2026-06-04 Gem receipt.

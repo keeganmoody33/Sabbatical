@@ -2,7 +2,7 @@
 
 Artifacts processed: Gmail logs 001-029 (1171 threads listed), calendar CSV (31 events), platform-absent note. Retriever notes were not treated as facts.
 
-Rows emitted: applications 232 (register=application 222, register=opportunity 10), events 278, exclusions 45.
+Rows emitted: applications 231 (register=application 221, register=opportunity 10), events 279, exclusions 45.
 
 Skipped extra events whose application_id did not match a minted key: 0.
 
@@ -21,7 +21,7 @@ Skipped extra events whose application_id did not match a minted key: 0.
 11. Owner.com: used subject GTM Engineer; body Product Builder recorded in notes.
 12. Anysphere canonical for Cursor.
 13. FOSSA and Attentive use cycle 2 after a terminal outcome.
-14. Pogo 2026-07-08 Ashby coded as cycle 2 with medium confidence; may be a channel duplicate of the June Gem receipt.
+14. Pogo Gem 2026-06-04, Gem 2026-06-26, and Ashby 2026-07-08 are one cycle. No terminal between them, so cycle is not incremented.
 15. Unframe 04-06 and 04-17 merged as one cycle.
 16. Productboard 07-13 GTM Engineer and 07-15 Associate GTM Engineer merged as one cycle using the more specific later title.
 17. Meshy 2025-06-01 interview decline: out_of_window (submission likely before window).

@@ -4,9 +4,11 @@ Run after at least two of `coding/alpha`, `coding/bravo`, and `coding/cursor` ex
 
 ```bash
 python3 adjudication/compare_coders.py
+python3 adjudication/adjudicate.py
+python3 adjudication/derive_metrics.py
 ```
 
-Writes `adjudication/PRE-ADJUDICATION.md` and `adjudication/disagreements.csv`.
+Writes `adjudication/PRE-ADJUDICATION.md`, `adjudication/disagreements.csv`, and `adjudication/applications__adjudicated.csv`.
 
 ## Include/exclude
 
