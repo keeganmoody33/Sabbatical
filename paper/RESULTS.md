@@ -62,16 +62,16 @@ Gmail and Calendar extracts were not recoded. LinkedIn pages 1 to 10 and the Job
 
 LinkedIn `submission_channel` is `unknown`. The applied-list file does not label Easy Apply versus external ATS.
 
-- Platform rows overlapping Freeze 1: 55
-- Net-new `platform_log` applications: **78**
-- Full census (Freeze 1 plus net-new): **299**
-- Evidence class on the 299: employer_artifact 220, platform_log 79
+- Platform rows overlapping Freeze 1: 56
+- Net-new `platform_log` applications: **77**
+- Full census (Freeze 1 plus net-new): **298**
+- Evidence class on the 298: employer_artifact 220, platform_log 78
 - One LinkedIn row with a blank company was excluded (`unresolvable_identity`)
 - The Hog LinkedIn row stays opportunity, matching Freeze 1
 
-Thomson Reuters AE Tax or Risk, Foursquare AE New Business, UpGuard SDR Manager, and Verkada Enterprise Solutions Engineer Atlanta were already in the 221. Jobright and LinkedIn titles for those openings are overlap, not net-new.
+Thomson Reuters AE Tax or Risk, Foursquare AE New Business, UpGuard SDR Manager, Verkada Enterprise Solutions Engineer Atlanta, and Listen Labs Lead GTM Engineer (LinkedIn lists Listen) were already in the 221. Jobright and LinkedIn titles for those openings are overlap, not net-new.
 
-This is a documented column mapping of structured applied lists, not a second independent LLM pair. Role-lane kappa is not recomputed on the 78.
+This is a documented column mapping of structured applied lists, not a second independent LLM pair. Role-lane kappa is not recomputed on the 77.
 
 Ladders is still absent.
 
@@ -82,7 +82,7 @@ Interviewed means at least one event whose `event_type` is in {recruiter_screen,
 - Interviewed applications in the Freeze 1 221: **14**
 - Application-to-interview rate on Freeze 1: 14/221
 - Interviewed applications in the Freeze 2 full census: **14**
-- Application-to-interview rate on the 299: 14/299
+- Application-to-interview rate on the 298: 14/298
 - Platform files carry no interview events. Adding LinkedIn applied-list and Jobright rows does not add interviews.
 - Opportunity-register interviews (WorkOS, Mercor contract path, and other recruiter-only processes) sit outside those denominators
 

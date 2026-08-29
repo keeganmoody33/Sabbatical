@@ -134,6 +134,7 @@ CANONICAL = {
     "jobright.ai": "Jobright.ai",
     "huzzle.com": "Huzzle",
     "anduril industries": "Anduril",
+    "listen": "Listen Labs",
 }
 
 
@@ -565,7 +566,7 @@ def main() -> None:
     report.append("")
     report.append("Capture recapture was not computed. The LinkedIn file is pages 1 to 10 of an applied list and does not label Easy Apply versus external ATS. LinkedIn submission_channel is therefore unknown.")
     report.append("")
-    report.append("Four platform titles matched Freeze 1 as expansions of the same opening: Thomson Reuters AE Tax or Risk, Foursquare AE New Business, UpGuard SDR Manager, Verkada Enterprise Solutions Engineer Atlanta. They are overlap, not net-new.")
+    report.append("Five platform titles matched Freeze 1 as the same opening: Thomson Reuters AE Tax or Risk, Foursquare AE New Business, UpGuard SDR Manager, Verkada Enterprise Solutions Engineer Atlanta, and Listen Lead GTM Engineer (LinkedIn lists Listen, Freeze 1 uses Listen Labs). They are overlap, not net-new.")
     report.append("")
     report.append("## Net-new applications")
     report.append("")
