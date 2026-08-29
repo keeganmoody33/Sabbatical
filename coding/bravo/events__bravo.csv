@@ -1,0 +1,405 @@
+coder_id,event_id,application_id,event_date,event_date_precision,event_type,round_number,counterparty_name,counterparty_role,medium,evidence_system,evidence_id,notes
+bravo,drata|sdr-remote|c1|e1,drata|sdr-remote|c1,2025-06-16,exact,submission_receipt,,unknown,,email,gmail,197794fc216fb2ec,Primary artifact for this row.
+bravo,circle|gtm-engineer-outbound|c1|e1,circle|gtm-engineer-outbound|c1,2025-06-20,exact,submission_receipt,,unknown,,email,gmail,1978fae6c43de77c,Primary artifact for this row.
+bravo,trace3|sdr|c1|e1,trace3|sdr|c1,2025-06-25,exact,submission_receipt,,unknown,,email,gmail,197a864d4c88286e,Primary artifact for this row.
+bravo,runway|go-to-market-ai-engineer|c1|e1,runway|go-to-market-ai-engineer|c1,2025-06-26,exact,submission_receipt,,unknown,,email,gmail,197a9b7e36f15a96,Primary artifact for this row.
+bravo,gigs|unspecified|c1|e1,gigs|unspecified|c1,2025-06-30,exact,submission_receipt,,unknown,,email,gmail,197c324e2c6972a8,Primary artifact for this row.
+bravo,pinterest|apprentice-product-researcher|c1|e1,pinterest|apprentice-product-researcher|c1,2025-06-26,exact,employer_ack,,unknown,,email,gmail,197ad3ae5480d64b,Primary artifact for this row.
+bravo,pinterest|product-manager-ii-search|c1|e1,pinterest|product-manager-ii-search|c1,2025-06-30,exact,employer_ack,,unknown,,email,gmail,197c1531c3b0cd45,Primary artifact for this row.
+bravo,galileo|growth-engineer|c1|e1,galileo|growth-engineer|c1,2025-07-02,exact,submission_receipt,,unknown,,email,gmail,197cbf50d42e42d4,Primary artifact for this row.
+bravo,headway|growth-marketing-specialist|c1|e1,headway|growth-marketing-specialist|c1,2025-07-03,exact,submission_receipt,,unknown,,email,gmail,197d047a6d227e74,Primary artifact for this row.
+bravo,designit|unspecified|c1|e1,designit|unspecified|c1,2025-07-08,exact,submission_receipt,,unknown,,email,gmail,197ea85c50a5e246,Primary artifact for this row.
+bravo,applause|enterprise-sdr|c1|e1,applause|enterprise-sdr|c1,2025-07-08,exact,submission_receipt,,unknown,,email,gmail,197e8533c3fb823c,Primary artifact for this row.
+bravo,scaleops|sales-engineer-usa|c1|e1,scaleops|sales-engineer-usa|c1,2025-07-17,exact,submission_receipt,,unknown,,email,gmail,19816fa4ed2957bf,Primary artifact for this row.
+bravo,exa-labs|growth-lead|c1|e1,exa-labs|growth-lead|c1,2025-07-25,exact,submission_receipt,,unknown,,email,gmail,19843b40babe3689,Primary artifact for this row.
+bravo,slingshot-ai|conversation-designer|c1|e1,slingshot-ai|conversation-designer|c1,2025-07-25,exact,submission_receipt,,unknown,,email,gmail,198417c793254f3f,Primary artifact for this row.
+bravo,phiture|us-growth-lead-mobile-marketing-strategist|c1|e1,phiture|us-growth-lead-mobile-marketing-strategist|c1,2025-07-27,exact,submission_receipt,,unknown,,email,gmail,1984b79b760961bf,Primary artifact for this row.
+bravo,replit|sales-engineer|c1|e1,replit|sales-engineer|c1,2025-07-27,exact,submission_receipt,,unknown,,email,gmail,1984b7803d828099,Primary artifact for this row.
+bravo,stedi|unspecified|c1|e1,stedi|unspecified|c1,2025-07-27,exact,submission_receipt,,unknown,,email,gmail,1984b76f3129f436,Primary artifact for this row.
+bravo,gtp-software|revenue-enablement-manager|c1|e1,gtp-software|revenue-enablement-manager|c1,2025-07-27,exact,submission_receipt,,unknown,,email,gmail,1984b74316b2b6d9,Primary artifact for this row.
+bravo,shaped|founding-sdr|c1|e1,shaped|founding-sdr|c1,2025-07-27,exact,submission_receipt,,unknown,,email,gmail,1984b7295c12359b,Primary artifact for this row.
+bravo,weave|business-development-manager|c1|e1,weave|business-development-manager|c1,2025-07-27,exact,submission_receipt,,unknown,,email,gmail,1984b6cd8216c3a8,Primary artifact for this row.
+bravo,volley|unspecified|c1|e1,volley|unspecified|c1,2025-07-27,exact,submission_receipt,,unknown,,email,gmail,1984b6beef9627b2,Primary artifact for this row.
+bravo,anaconda|senior-bdr|c1|e1,anaconda|senior-bdr|c1,2025-07-27,exact,submission_receipt,,unknown,,email,gmail,1984b6a766e1d92f,Primary artifact for this row.
+bravo,90-seconds|unspecified|c1|e1,90-seconds|unspecified|c1,2025-07-27,exact,submission_receipt,,unknown,,email,gmail,1984b664dfc9c86d,Primary artifact for this row.
+bravo,galileo|gtm-engineer|c1|e1,galileo|gtm-engineer|c1,2025-07-28,exact,submission_receipt,,unknown,,email,gmail,1985321472fcbc46,Primary artifact for this row.
+bravo,hex|sdr|c1|e1,hex|sdr|c1,2025-07-31,exact,submission_receipt,,unknown,,email,gmail,1985e2fcbbc5a557,Primary artifact for this row.
+bravo,inven-ai|unspecified|c1|e1,inven-ai|unspecified|c1,2025-06-11,exact,submission_receipt,,unknown,,email,gmail,19760e837eee9624,Primary artifact for this row.
+bravo,inertia-growth|gtme-role|c1|e1,inertia-growth|gtme-role|c1,2025-07-26,exact,submission_receipt,,unknown,,email,gmail,19844e86afa37157,Primary artifact for this row.
+bravo,smartmode-ai|unspecified|c1|e1,smartmode-ai|unspecified|c1,2025-07-18,exact,employer_ack,,unknown,,email,gmail,1981dd746a37cc50,Primary artifact for this row.
+bravo,4flow|director-go-to-market-strategy|c1|e1,4flow|director-go-to-market-strategy|c1,2025-08-04,exact,submission_receipt,,unknown,,email,gmail,198768e9cb938b46,Primary artifact for this row.
+bravo,itc-infotech|manager-business-development|c1|e1,itc-infotech|manager-business-development|c1,2025-08-04,exact,submission_receipt,,unknown,,email,gmail,198768c3e75ab651,Primary artifact for this row.
+bravo,axon|manager-go-to-market-readiness|c1|e1,axon|manager-go-to-market-readiness|c1,2025-08-04,exact,submission_receipt,,unknown,,email,gmail,198768a8edd78a10,Primary artifact for this row.
+bravo,fibr-ai|founding-sdr-ae|c1|e1,fibr-ai|founding-sdr-ae|c1,2025-08-04,exact,submission_receipt,,unknown,,email,gmail,19874ec5b07b5475,Primary artifact for this row.
+bravo,ava-labs|growth-lead-core|c1|e1,ava-labs|growth-lead-core|c1,2025-08-04,exact,submission_receipt,,unknown,,email,gmail,19874eb54159ac4e,Primary artifact for this row.
+bravo,12100-collective|seo-lead|c1|e1,12100-collective|seo-lead|c1,2025-08-04,exact,submission_receipt,,unknown,,email,gmail,19874e996f09c1dd,Primary artifact for this row.
+bravo,infisical|founding-growth-marketer|c1|e1,infisical|founding-growth-marketer|c1,2025-08-04,exact,submission_receipt,,unknown,,email,gmail,19874e8276978aa8,Primary artifact for this row.
+bravo,airgarage|consumer-growth-hacker|c1|e1,airgarage|consumer-growth-hacker|c1,2025-08-04,exact,submission_receipt,,unknown,,email,gmail,19874e6f875e3d0e,Primary artifact for this row.
+bravo,sage|director-of-growth-small-role|c1|e1,sage|director-of-growth-small-role|c1,2025-08-04,exact,submission_receipt,,unknown,,email,gmail,19874db50c4ae6aa,Primary artifact for this row.
+bravo,onboard|unspecified|c1|e1,onboard|unspecified|c1,2025-08-04,exact,submission_receipt,,unknown,,email,gmail,1987276c3943fd47,Primary artifact for this row.
+bravo,crypto-com|product-growth-hacker-exchange-and-main-app|c1|e1,crypto-com|product-growth-hacker-exchange-and-main-app|c1,2025-08-05,exact,submission_receipt,,unknown,,email,gmail,1987abec68c6f639,Primary artifact for this row.
+bravo,blackthorn-io|unspecified|c1|e1,blackthorn-io|unspecified|c1,2025-08-05,exact,submission_receipt,,unknown,,email,gmail,1987ab36c560b894,Primary artifact for this row.
+bravo,ambrook|partnerships-lead|c1|e1,ambrook|partnerships-lead|c1,2025-08-06,exact,submission_receipt,,unknown,,email,gmail,1987cfcb64fc0b3c,Primary artifact for this row.
+bravo,seamless-ai|sdr-remote-us|c1|e1,seamless-ai|sdr-remote-us|c1,2025-08-05,exact,submission_receipt,,unknown,,email,gmail,1987ae68b5aee0d0,Primary artifact for this row.
+bravo,beckhoff-automation|sales-engineer|c1|e1,beckhoff-automation|sales-engineer|c1,2025-08-04,exact,submission_receipt,,unknown,,email,gmail,198768f7e66bbc31,Primary artifact for this row.
+bravo,proteantecs|sdr|c1|e1,proteantecs|sdr|c1,2025-08-08,exact,submission_receipt,,unknown,,email,gmail,19888824d442ae2c,Primary artifact for this row.
+bravo,switchyards|launch-manager|c1|e1,switchyards|launch-manager|c1,2025-08-08,exact,submission_receipt,,unknown,,email,gmail,1988b77b61974363,Primary artifact for this row.
+bravo,thrivelink|healthcare-business-development-rep|c1|e1,thrivelink|healthcare-business-development-rep|c1,2025-08-05,exact,employer_ack,,unknown,,email,gmail,1987c108c41ff59d,Primary artifact for this row.
+bravo,workos|gtm-engineer|c1|e1,workos|gtm-engineer|c1,2025-08-25,exact,employer_ack,,unknown,,email,gmail,198e28511c2c7be7,Primary artifact for this row.
+bravo,fullsteam|senior-sales-development-representative|c1|e1,fullsteam|senior-sales-development-representative|c1,2025-09-29,exact,submission_receipt,,unknown,,email,gmail,199972ac6d0a123f,Primary artifact for this row.
+bravo,insignia-collab|unspecified|c1|e1,insignia-collab|unspecified|c1,2025-11-18,exact,submission_receipt,,unknown,,email,gmail,19a965b6167b161d,Primary artifact for this row.
+bravo,linear|ae-growth|c1|e1,linear|ae-growth|c1,2025-12-08,exact,submission_receipt,,unknown,,email,gmail,19afe3b978ef29ba,Primary artifact for this row.
+bravo,primer|unspecified|c1|e1,primer|unspecified|c1,2025-12-09,exact,submission_receipt,,unknown,,email,gmail,19b04485943e8fdd,Primary artifact for this row.
+bravo,agroknow|north-america-sales|c1|e1,agroknow|north-america-sales|c1,2025-11-25,exact,employer_ack,,unknown,,email,gmail,19aba7c991e83d06,Primary artifact for this row.
+bravo,proofpoint|unspecified|c1|e1,proofpoint|unspecified|c1,2026-01-02,exact,submission_receipt,,unknown,,email,gmail,19b803c28687651e,Primary artifact for this row.
+bravo,thomson-reuters|ae-tax-or-risk|c1|e1,thomson-reuters|ae-tax-or-risk|c1,2026-01-02,exact,submission_receipt,,unknown,,email,gmail,19b801325a600eb1,Primary artifact for this row.
+bravo,foursquare|ae-new-business|c1|e1,foursquare|ae-new-business|c1,2026-01-02,exact,submission_receipt,,unknown,,email,gmail,19b800cded020e8f,Primary artifact for this row.
+bravo,medialab-ai|unspecified|c1|e1,medialab-ai|unspecified|c1,2026-01-02,exact,submission_receipt,,unknown,,email,gmail,19b7cc5e65e62942,Primary artifact for this row.
+bravo,sailpoint|account-exec-enterprise-accounts|c1|e1,sailpoint|account-exec-enterprise-accounts|c1,2026-01-03,exact,submission_receipt,,unknown,,email,gmail,19b81f2c7de63f3d,Primary artifact for this row.
+bravo,beacon-software|unspecified|c1|e1,beacon-software|unspecified|c1,2026-01-26,exact,submission_receipt,,unknown,,email,gmail,19bf83553cbd0629,Primary artifact for this row.
+bravo,nero|founding-engineer|c1|e1,nero|founding-engineer|c1,2026-01-07,exact,submission_receipt,,unknown,,email,gmail,19b965c7ecaf827d,Primary artifact for this row.
+bravo,glytec|unspecified|c1|e1,glytec|unspecified|c1,2026-01-27,exact,employer_ack,,unknown,,email,gmail,19bfd208daa544b6,Primary artifact for this row.
+bravo,micro1|ai-training-pilot-project|c1|e1,micro1|ai-training-pilot-project|c1,2026-01-14,exact,employer_ack,,unknown,,email,gmail,19bbd5c1dc792315,Primary artifact for this row.
+bravo,micro1|finance-expert|c1|e1,micro1|finance-expert|c1,2026-01-21,exact,employer_ack,,unknown,,email,gmail,19bdf90e1b30ffa0,Primary artifact for this row.
+bravo,verkada|enterprise-solutions-engineer-atlanta|c1|e1,verkada|enterprise-solutions-engineer-atlanta|c1,2026-02-04,exact,submission_receipt,,unknown,,email,gmail,19c2849b7457a18e,Primary artifact for this row.
+bravo,manifold|growth-marketing-manager|c1|e1,manifold|growth-marketing-manager|c1,2026-02-06,exact,submission_receipt,,unknown,,email,gmail,19c30a63128e9d4e,Primary artifact for this row.
+bravo,aicro|gtm-engineering-team-lead|c1|e1,aicro|gtm-engineering-team-lead|c1,2026-02-06,exact,submission_receipt,,unknown,,email,gmail,19c314590d03fe1c,Primary artifact for this row.
+bravo,gather-ai|gtm-engineer|c1|e1,gather-ai|gtm-engineer|c1,2026-02-09,exact,submission_receipt,,unknown,,email,gmail,19c405de94390d83,Primary artifact for this row.
+bravo,gitlab|gtm-planning-and-operations-analyst|c1|e1,gitlab|gtm-planning-and-operations-analyst|c1,2026-02-10,exact,submission_receipt,,unknown,,email,gmail,19c49ec3a2733b19,Primary artifact for this row.
+bravo,ambrook|business-operations-lead|c1|e1,ambrook|business-operations-lead|c1,2026-02-11,exact,submission_receipt,,unknown,,email,gmail,19c4aed736a76871,Primary artifact for this row.
+bravo,unknown-wilsonhcg|outbound-sales-consultant-iii|c1|e1,unknown-wilsonhcg|outbound-sales-consultant-iii|c1,2026-02-13,exact,submission_receipt,,unknown,,email,gmail,19c54cd5aa16fc0d,Primary artifact for this row.
+bravo,testgorilla|go-to-market-engineer|c1|e1,testgorilla|go-to-market-engineer|c1,2026-02-20,exact,submission_receipt,,unknown,,email,gmail,19c7cb89ca3f84c5,Primary artifact for this row.
+bravo,smeetz|gtm-engineer|c1|e1,smeetz|gtm-engineer|c1,2026-02-20,exact,submission_receipt,,unknown,,email,gmail,19c7c6278e50d7ad,Primary artifact for this row.
+bravo,sentilink|go-to-market-strategy-analyst|c1|e1,sentilink|go-to-market-strategy-analyst|c1,2026-02-23,exact,submission_receipt,,unknown,,email,gmail,19c8bb6dffb8003a,Primary artifact for this row.
+bravo,beautiful-ai|unspecified|c1|e1,beautiful-ai|unspecified|c1,2026-03-08,exact,submission_receipt,,unknown,,email,gmail,19ccb2322bf41b13,Primary artifact for this row.
+bravo,anthropic|software-engineer-business-technology|c1|e1,anthropic|software-engineer-business-technology|c1,2026-03-08,exact,submission_receipt,,unknown,,email,gmail,19ccb1821c91f6e0,Primary artifact for this row.
+bravo,virtru|director-of-go-to-market-ai|c1|e1,virtru|director-of-go-to-market-ai|c1,2026-03-09,exact,submission_receipt,,unknown,,email,gmail,19cd373c4ed544d6,Primary artifact for this row.
+bravo,hypergen|gtm-engineer|c1|e1,hypergen|gtm-engineer|c1,2026-03-11,exact,submission_receipt,,unknown,,email,gmail,19cdd6fb062a3cd8,Primary artifact for this row.
+bravo,glean|gtm-engineer-marketing|c1|e1,glean|gtm-engineer-marketing|c1,2026-03-23,exact,submission_receipt,,unknown,,email,gmail,19d185126c9a8d51,Primary artifact for this row.
+bravo,orchestry|gtm-engineer-sales|c1|e1,orchestry|gtm-engineer-sales|c1,2026-03-24,exact,submission_receipt,,unknown,,email,gmail,19d1d7f5546fef70,Primary artifact for this row.
+bravo,mento|gtm-engineer|c1|e1,mento|gtm-engineer|c1,2026-03-24,exact,submission_receipt,,unknown,,email,gmail,19d1d7963478c31c,Primary artifact for this row.
+bravo,lumenalta|unspecified|c1|e1,lumenalta|unspecified|c1,2026-03-24,exact,submission_receipt,,unknown,,email,gmail,19d1d60ce6d16048,Primary artifact for this row.
+bravo,pinterest|apprentice-engineer|c1|e1,pinterest|apprentice-engineer|c1,2026-03-25,exact,submission_receipt,,unknown,,email,gmail,19d2273d2d508ca1,Primary artifact for this row.
+bravo,adapt|gtm-engineer-revops-lead|c1|e1,adapt|gtm-engineer-revops-lead|c1,2026-03-27,exact,submission_receipt,,unknown,,email,gmail,19d305c5bd7e45ef,Primary artifact for this row.
+bravo,pandadoc|gtm-engineer|c1|e1,pandadoc|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,unknown,,email,gmail,19d3f0236cb930e4,Primary artifact for this row.
+bravo,tiger-data|gtm-ai-engineer|c1|e1,tiger-data|gtm-ai-engineer|c1,2026-03-30,exact,submission_receipt,,unknown,,email,gmail,19d3f415525c9364,Primary artifact for this row.
+bravo,vercel|gtm-engineer|c1|e1,vercel|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,unknown,,email,gmail,19d3f09c5fd55395,Primary artifact for this row.
+bravo,tapcheck|unspecified|c1|e1,tapcheck|unspecified|c1,2026-03-30,exact,submission_receipt,,unknown,,email,gmail,19d3f065b6c86f9d,Primary artifact for this row.
+bravo,roboflow|revops-gtm-engineer|c1|e1,roboflow|revops-gtm-engineer|c1,2026-03-30,exact,submission_receipt,,unknown,,email,gmail,19d3f0327312df05,Primary artifact for this row.
+bravo,g2|gtm-engineer|c1|e1,g2|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,unknown,,email,gmail,19d3efd2db98f59f,Primary artifact for this row.
+bravo,dagster-labs|gtm-engineer|c1|e1,dagster-labs|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,unknown,,email,gmail,19d3ef8798237401,Primary artifact for this row.
+bravo,unstructured|gtm-engineer-operations|c1|e1,unstructured|gtm-engineer-operations|c1,2026-03-30,exact,submission_receipt,,unknown,,email,gmail,19d3ebf796ee1523,Primary artifact for this row.
+bravo,phrasiq|unspecified|c1|e1,phrasiq|unspecified|c1,2026-03-31,exact,submission_receipt,,unknown,,email,gmail,19d453fe2506a0f5,Primary artifact for this row.
+bravo,jobright-ai|product-manager-early-career|c1|e1,jobright-ai|product-manager-early-career|c1,2026-03-31,exact,submission_receipt,,unknown,,email,gmail,19d44dbbde83f037,Primary artifact for this row.
+bravo,disqo|gtm-engineer|c1|e1,disqo|gtm-engineer|c1,2026-03-31,exact,submission_receipt,,unknown,,email,gmail,19d45d67bebea78a,Primary artifact for this row.
+bravo,boulevard|gtm-engineer|c1|e1,boulevard|gtm-engineer|c1,2026-03-31,exact,submission_receipt,,unknown,,email,gmail,19d45fc7e04c3dc4,Primary artifact for this row.
+bravo,brand-ai|gtme|c1|e1,brand-ai|gtme|c1,2026-04-02,exact,submission_receipt,,unknown,,email,gmail,19d4e5e256da787a,Primary artifact for this row.
+bravo,companycam|gtm-systems-engineer|c1|e1,companycam|gtm-systems-engineer|c1,2026-04-03,exact,submission_receipt,,unknown,,email,gmail,19d539acd9491585,Primary artifact for this row.
+bravo,fixify|gtm-engineer-contract|c1|e1,fixify|gtm-engineer-contract|c1,2026-04-03,exact,submission_receipt,,unknown,,email,gmail,19d539197b0eccec,Primary artifact for this row.
+bravo,pearl|lead-gtm-engineer|c1|e1,pearl|lead-gtm-engineer|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d639bd2d75a64a,Primary artifact for this row.
+bravo,valsoft|gtm-engineer|c1|e1,valsoft|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d6386d8b135dd0,Primary artifact for this row.
+bravo,payabli|gtm-engineer|c1|e1,payabli|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d6374d64714d79,Primary artifact for this row.
+bravo,wrapbook|gtm-systems-engineer|c1|e1,wrapbook|gtm-systems-engineer|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d636da39acd54c,Primary artifact for this row.
+bravo,appgate|gtm-engineer|c1|e1,appgate|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d630a32187eb2b,Primary artifact for this row.
+bravo,sardine|gtm-engineer|c1|e1,sardine|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d6306f81d1fff8,Primary artifact for this row.
+bravo,solv-health|unspecified|c1|e1,solv-health|unspecified|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d63017a38b1d93,Primary artifact for this row.
+bravo,unframe|gtm-engineer|c1|e1,unframe|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d6301094a74ba5,Primary artifact for this row.
+bravo,rula|gtm-engineer-remote|c1|e1,rula|gtm-engineer-remote|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d62ff8d5126fb6,Primary artifact for this row.
+bravo,liatrio|gtm-revops-engineer|c1|e1,liatrio|gtm-revops-engineer|c1,2026-04-05,exact,submission_receipt,,unknown,,email,gmail,19d5ec03888c1dd9,Primary artifact for this row.
+bravo,bx-studio|unspecified|c1|e1,bx-studio|unspecified|c1,2026-04-08,exact,submission_receipt,,unknown,,email,gmail,19d6bb0d0e645a4a,Primary artifact for this row.
+bravo,sur|ai-revenue-engineer|c1|e1,sur|ai-revenue-engineer|c1,2026-04-09,exact,submission_receipt,,unknown,,email,gmail,19d7311fcb46666b,Primary artifact for this row.
+bravo,langchain|gtm-engineer|c1|e1,langchain|gtm-engineer|c1,2026-04-10,exact,submission_receipt,,unknown,,email,gmail,19d7586f3104286a,Primary artifact for this row.
+bravo,ontra|unspecified|c1|e1,ontra|unspecified|c1,2026-04-10,exact,submission_receipt,,unknown,,email,gmail,19d76be5511647d3,Primary artifact for this row.
+bravo,redis|gtm-engineer|c1|e1,redis|gtm-engineer|c1,2026-04-10,exact,submission_receipt,,unknown,,email,gmail,19d76c3b3e2ae594,Primary artifact for this row.
+bravo,auctane|pre-sales-engineer|c1|e1,auctane|pre-sales-engineer|c1,2026-04-10,exact,submission_receipt,,unknown,,email,gmail,19d76cd69aa1a5ff,Primary artifact for this row.
+bravo,cresta|gtm-engineer|c1|e1,cresta|gtm-engineer|c1,2026-04-10,exact,submission_receipt,,unknown,,email,gmail,19d76d01aa417859,Primary artifact for this row.
+bravo,airops|growth-engineer|c1|e1,airops|growth-engineer|c1,2026-04-10,exact,submission_receipt,,unknown,,email,gmail,19d76ecf6a22732c,Primary artifact for this row.
+bravo,rollstack|ai-growth-hacker|c1|e1,rollstack|ai-growth-hacker|c1,2026-04-10,exact,submission_receipt,,unknown,,email,gmail,19d782b522666c50,Primary artifact for this row.
+bravo,teleport|gtm-engineer|c1|e1,teleport|gtm-engineer|c1,2026-04-14,exact,submission_receipt,,unknown,,email,gmail,19d89d00fa4cd01e,Primary artifact for this row.
+bravo,unknown-saveurdays-com|unspecified|c1|e1,unknown-saveurdays-com|unspecified|c1,2026-04-11,exact,submission_receipt,,unknown,,email,gmail,19d7da158589ce88,Primary artifact for this row.
+bravo,montauk-capital|head-of-commercial|c1|e1,montauk-capital|head-of-commercial|c1,2026-04-01,exact,employer_ack,,unknown,,email,gmail,19d48a4c443ee08c,Primary artifact for this row.
+bravo,every|gtm-engineer|c1|e1,every|gtm-engineer|c1,2026-04-20,exact,submission_receipt,,unknown,,email,gmail,19dab8026601594d,Primary artifact for this row.
+bravo,fossa|unspecified|c1|e1,fossa|unspecified|c1,2026-04-22,exact,submission_receipt,,unknown,,email,gmail,19db79c8ee22ec32,Primary artifact for this row.
+bravo,trase|gtm-engineer-healthcare|c1|e1,trase|gtm-engineer-healthcare|c1,2026-04-27,exact,submission_receipt,,unknown,,email,gmail,19dccd718095daa6,Primary artifact for this row.
+bravo,oxos-medical|gtm-engineer|c1|e1,oxos-medical|gtm-engineer|c1,2026-04-27,exact,submission_receipt,,unknown,,email,gmail,19dccd63689d53b4,Primary artifact for this row.
+bravo,wallstreetquants|unspecified|c1|e1,wallstreetquants|unspecified|c1,2026-04-17,exact,submission_receipt,,unknown,,email,gmail,19d99de120567117,Primary artifact for this row.
+bravo,10x-genomics|unspecified|c1|e1,10x-genomics|unspecified|c1,2026-05-02,exact,submission_receipt,,unknown,,email,gmail,19de744df3cc8058,Primary artifact for this row.
+bravo,spider-cloud|growth-lead|c1|e1,spider-cloud|growth-lead|c1,2026-05-03,exact,submission_receipt,,unknown,,email,gmail,19deeeb2c2f91f78,Primary artifact for this row.
+bravo,practical-prospecting|unspecified|c1|e1,practical-prospecting|unspecified|c1,2026-05-20,exact,submission_receipt,,unknown,,email,gmail,19e464b4cc0113a9,Primary artifact for this row.
+bravo,fossa|unspecified|c2|e1,fossa|unspecified|c2,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e484115163beb9,Primary artifact for this row.
+bravo,airtable|gtm-engineer|c1|e1,airtable|gtm-engineer|c1,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e483d68ffad276,Primary artifact for this row.
+bravo,tractian|senior-gtm-engineer-hubspot|c1|e1,tractian|senior-gtm-engineer-hubspot|c1,2026-05-19,exact,submission_receipt,,unknown,,email,gmail,19e4291127b40a17,Primary artifact for this row.
+bravo,tractian|sales-engineer-automation|c1|e1,tractian|sales-engineer-automation|c1,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e48a2ceaaaf575,Primary artifact for this row.
+bravo,nice|ai-solution-strategist|c1|e1,nice|ai-solution-strategist|c1,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e488224ece6bbd,Primary artifact for this row.
+bravo,nebius|director-gtm-physical-ai|c1|e1,nebius|director-gtm-physical-ai|c1,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e48813db65a1ed,Primary artifact for this row.
+bravo,dbeaver|gtm-engineer|c1|e1,dbeaver|gtm-engineer|c1,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e4859d61d1fb64,Primary artifact for this row.
+bravo,apartmentiq|unspecified|c1|e1,apartmentiq|unspecified|c1,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e48830325dab6d,Primary artifact for this row.
+bravo,deepgram|gtm-engineer|c1|e1,deepgram|gtm-engineer|c1,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e4885d926c2eef,Primary artifact for this row.
+bravo,telnyx|unspecified|c1|e1,telnyx|unspecified|c1,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e4887929bac69d,Primary artifact for this row.
+bravo,vitalsource|ai-enablement-lead|c1|e1,vitalsource|ai-enablement-lead|c1,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e489445bf1588b,Primary artifact for this row.
+bravo,colab-software|sales-engineer|c1|e1,colab-software|sales-engineer|c1,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e48971b300d9ad,Primary artifact for this row.
+bravo,pindrop|gtm-systems-platform-specialist|c1|e1,pindrop|gtm-systems-platform-specialist|c1,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e48980896f8941,Primary artifact for this row.
+bravo,applied-systems|sales-enablement-gtm-readiness-lead|c1|e1,applied-systems|sales-enablement-gtm-readiness-lead|c1,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e48a0f793edaa7,Primary artifact for this row.
+bravo,onit|sales-engineer|c1|e1,onit|sales-engineer|c1,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e4b49694584b22,Primary artifact for this row.
+bravo,servicetrade|unspecified|c1|e1,servicetrade|unspecified|c1,2026-05-21,exact,submission_receipt,,unknown,,email,gmail,19e4b44fc00eaf2e,Primary artifact for this row.
+bravo,speechify|go-to-market-engineer-atlanta|c1|e1,speechify|go-to-market-engineer-atlanta|c1,2026-05-25,exact,submission_receipt,,unknown,,email,gmail,19e5eab99cdf81af,Primary artifact for this row.
+bravo,evenup|ai-adoption-manager-southeast|c1|e1,evenup|ai-adoption-manager-southeast|c1,2026-05-25,exact,submission_receipt,,unknown,,email,gmail,19e5dd62d00d3326,Primary artifact for this row.
+bravo,apollo-io|unspecified|c1|e1,apollo-io|unspecified|c1,2026-05-28,exact,submission_receipt,,unknown,,email,gmail,19e6c874ef395028,Primary artifact for this row.
+bravo,huzzle|gtm-engineer|c1|e1,huzzle|gtm-engineer|c1,2026-06-04,exact,submission_receipt,,unknown,,email,gmail,19e9214f255608aa,Primary artifact for this row.
+bravo,adaptive6|sales-engineer|c1|e1,adaptive6|sales-engineer|c1,2026-06-04,exact,submission_receipt,,unknown,,email,gmail,19e920eb6b7b55f0,Primary artifact for this row.
+bravo,4mindsai|gtm-engineer|c1|e1,4mindsai|gtm-engineer|c1,2026-06-04,exact,submission_receipt,,unknown,,email,gmail,19e91037278affa0,Primary artifact for this row.
+bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e1,revspring|lead-agentic-operations-gtm-engineering|c1,2026-06-04,exact,submission_receipt,,unknown,,email,gmail,19e91027e41faf49,Primary artifact for this row.
+bravo,cloudflare|gtm-engineer|c1|e1,cloudflare|gtm-engineer|c1,2026-06-04,exact,submission_receipt,,unknown,,email,gmail,19e90ffd1bc9ed7d,Primary artifact for this row.
+bravo,pogo-technologies|gtm-engineer|c1|e1,pogo-technologies|gtm-engineer|c1,2026-06-04,exact,submission_receipt,,unknown,,email,gmail,19e90fa204f97711,Primary artifact for this row.
+bravo,pindrop|unspecified|c2|e1,pindrop|unspecified|c2,2026-06-22,exact,submission_receipt,,unknown,,email,gmail,19ef0c2f0b159d24,Primary artifact for this row.
+bravo,the-hog|gtm-engineer|c1|e1,the-hog|gtm-engineer|c1,2026-06-15,exact,hiring_manager_interview,1,Hudson Liao,unknown,email,gmail,19ecda5fa25e0d35,Primary artifact for this row.
+bravo,atlanta-public-schools|unspecified|c1|e1,atlanta-public-schools|unspecified|c1,2026-06-19,exact,submission_receipt,,unknown,,email,gmail,19ee1ef014efde21,Primary artifact for this row.
+bravo,ibm|manager-applied-ai-and-gtm-systems-confluent|c1|e1,ibm|manager-applied-ai-and-gtm-systems-confluent|c1,2026-06-22,exact,submission_receipt,,unknown,,email,gmail,19ef0dc6fd9601c2,Primary artifact for this row.
+bravo,anduril-industries|technical-operations-engineer-launched-effects|c1|e1,anduril-industries|technical-operations-engineer-launched-effects|c1,2026-06-21,exact,submission_receipt,,unknown,,email,gmail,19ee93283584432d,Primary artifact for this row.
+bravo,attentive|unspecified|c1|e1,attentive|unspecified|c1,2026-06-22,exact,submission_receipt,,unknown,,email,gmail,19eefbc31ff6b3b6,Primary artifact for this row.
+bravo,armada|ai-factory-value-engineer|c1|e1,armada|ai-factory-value-engineer|c1,2026-06-22,exact,submission_receipt,,unknown,,email,gmail,19eefba5be8f7ef6,Primary artifact for this row.
+bravo,mercor|education-school-evaluator|c1|e1,mercor|education-school-evaluator|c1,2026-06-22,exact,submission_receipt,,unknown,,email,gmail,19eefdfd5fb4bb63,Primary artifact for this row.
+bravo,mercor|general-sales-gtm-evaluator|c1|e1,mercor|general-sales-gtm-evaluator|c1,2026-06-22,exact,submission_receipt,,unknown,,email,gmail,19eefdeb355c085a,Primary artifact for this row.
+bravo,wealth-com|gtm-engineer|c1|e1,wealth-com|gtm-engineer|c1,2026-06-22,exact,submission_receipt,,unknown,,email,gmail,19eefcd985ae33a4,Primary artifact for this row.
+bravo,syncro|gtm-operations-manager|c1|e1,syncro|gtm-operations-manager|c1,2026-06-22,exact,submission_receipt,,unknown,,email,gmail,19eefe0d482170d6,Primary artifact for this row.
+bravo,unknown-jobgether|gtm-engineer|c1|e1,unknown-jobgether|gtm-engineer|c1,2026-06-22,exact,submission_receipt,,unknown,,email,gmail,19ef0388de687866,Primary artifact for this row.
+bravo,dexian|outbound-sales-consultant-iii-remote|c1|e1,dexian|outbound-sales-consultant-iii-remote|c1,2026-06-05,exact,employer_ack,,unknown,,email,gmail,19e9805d2feb7656,Primary artifact for this row.
+bravo,luzmo|sdr|c1|e1,luzmo|sdr|c1,2026-06-30,exact,employer_ack,,unknown,,email,gmail,19f18abcd6c662a8,Primary artifact for this row.
+bravo,tekion|senior-manager-inside-sales|c1|e1,tekion|senior-manager-inside-sales|c1,2026-06-24,exact,submission_receipt,,unknown,,email,gmail,19efc04fdbc254f8,Primary artifact for this row.
+bravo,automation-anywhere|sales-engineer|c1|e1,automation-anywhere|sales-engineer|c1,2026-06-24,exact,submission_receipt,,unknown,,email,gmail,19efb606b9d8d30c,Primary artifact for this row.
+bravo,canals|sales-manager|c1|e1,canals|sales-manager|c1,2026-06-24,exact,submission_receipt,,unknown,,email,gmail,19efb4665f5d3e35,Primary artifact for this row.
+bravo,stackai|sales-engineer|c1|e1,stackai|sales-engineer|c1,2026-06-24,exact,submission_receipt,,unknown,,email,gmail,19efb45de31b9ab1,Primary artifact for this row.
+bravo,enlace-health|sales-engineer|c1|e1,enlace-health|sales-engineer|c1,2026-06-24,exact,submission_receipt,,unknown,,email,gmail,19efb21f0d264cc7,Primary artifact for this row.
+bravo,toast|gtm-engineer-sales-workflow-automation|c1|e1,toast|gtm-engineer-sales-workflow-automation|c1,2026-06-24,exact,submission_receipt,,unknown,,email,gmail,19efaf07476920ba,Primary artifact for this row.
+bravo,minio|bdr-enterprise|c1|e1,minio|bdr-enterprise|c1,2026-06-24,exact,submission_receipt,,unknown,,email,gmail,19efc06d34fcb255,Primary artifact for this row.
+bravo,clay|growth-strategist-enterprise|c1|e1,clay|growth-strategist-enterprise|c1,2026-06-24,exact,submission_receipt,,unknown,,email,gmail,19efc05ffdf85b11,Primary artifact for this row.
+bravo,upguard|sdr-manager|c1|e1,upguard|sdr-manager|c1,2026-06-24,exact,submission_receipt,,unknown,,email,gmail,19efc056918b6c04,Primary artifact for this row.
+bravo,city-schools-of-decatur|unspecified|c1|e1,city-schools-of-decatur|unspecified|c1,2026-06-26,exact,submission_receipt,,unknown,,email,gmail,19f0591daff91fe0,Primary artifact for this row.
+bravo,wirescreen|partnerships-manager|c1|e1,wirescreen|partnerships-manager|c1,2026-06-25,exact,submission_receipt,,unknown,,email,gmail,19efcac922c14bff,Primary artifact for this row.
+bravo,inrule-technology|unspecified|c1|e1,inrule-technology|unspecified|c1,2026-07-06,exact,submission_receipt,,unknown,,email,gmail,19f3945ca9b2c382,Primary artifact for this row.
+bravo,unknown-jobmail-io|growth-lead|c1|e1,unknown-jobmail-io|growth-lead|c1,2026-07-07,exact,submission_receipt,,unknown,,email,gmail,19f3ec27ee050c8d,Primary artifact for this row.
+bravo,douglas-county-school-system|unspecified|c1|e1,douglas-county-school-system|unspecified|c1,2026-07-09,exact,submission_receipt,,unknown,,email,gmail,19f47b33ae935a1d,Primary artifact for this row.
+bravo,unknown-talentpluto|go-to-market-engineer|c1|e1,unknown-talentpluto|go-to-market-engineer|c1,2026-07-12,exact,submission_receipt,,unknown,,email,gmail,19f5862ce3bd83b7,Primary artifact for this row.
+bravo,unknown-greenhouse|gtm-engineer|c1|e1,unknown-greenhouse|gtm-engineer|c1,2026-07-12,exact,submission_receipt,,unknown,,email,gmail,19f586b7fbc50265,Primary artifact for this row.
+bravo,listen-labs|lead-gtm-engineer|c1|e1,listen-labs|lead-gtm-engineer|c1,2026-07-12,exact,submission_receipt,,unknown,,email,gmail,19f581abc17d4940,Primary artifact for this row.
+bravo,anysphere|gtm-emerging-products|c1|e1,anysphere|gtm-emerging-products|c1,2026-07-12,exact,submission_receipt,,unknown,,email,gmail,19f581850e4bdee5,Primary artifact for this row.
+bravo,confido|founding-gtm-engineer|c1|e1,confido|founding-gtm-engineer|c1,2026-07-12,exact,submission_receipt,,unknown,,email,gmail,19f5811658f16a5d,Primary artifact for this row.
+bravo,bluejay|founding-gtm-role|c1|e1,bluejay|founding-gtm-role|c1,2026-07-13,exact,submission_receipt,,unknown,,email,gmail,19f59c69bc094dbf,Primary artifact for this row.
+bravo,together-ai|unspecified|c1|e1,together-ai|unspecified|c1,2026-07-13,exact,submission_receipt,,unknown,,email,gmail,19f59187b2f99900,Primary artifact for this row.
+bravo,patch|growth-engineering-lead|c1|e1,patch|growth-engineering-lead|c1,2026-07-13,exact,submission_receipt,,unknown,,email,gmail,19f591484e264a9d,Primary artifact for this row.
+bravo,productboard|gtm-engineer|c1|e1,productboard|gtm-engineer|c1,2026-07-13,exact,submission_receipt,,unknown,,email,gmail,19f591197ecd2b88,Primary artifact for this row.
+bravo,conversion|gtm-engineer|c1|e1,conversion|gtm-engineer|c1,2026-07-14,exact,submission_receipt,,unknown,,email,gmail,19f630abd3eb09e5,Primary artifact for this row.
+bravo,higgsfield|gtm-engineer|c1|e1,higgsfield|gtm-engineer|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f67338d222bbfd,Primary artifact for this row.
+bravo,hud|gtm-engineer|c1|e1,hud|gtm-engineer|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f673230c047acf,Primary artifact for this row.
+bravo,gatherup|unspecified|c1|e1,gatherup|unspecified|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f67309cd2aae85,Primary artifact for this row.
+bravo,brighthire|unspecified|c1|e1,brighthire|unspecified|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f672edb15894d3,Primary artifact for this row.
+bravo,scribe|unspecified|c1|e1,scribe|unspecified|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f672d2bf2e6a71,Primary artifact for this row.
+bravo,hightouch|go-to-market-engineer|c1|e1,hightouch|go-to-market-engineer|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f672b1c753c07d,Primary artifact for this row.
+bravo,nooks|gtm-engineer-marketing|c1|e1,nooks|gtm-engineer-marketing|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f6712efa07f534,Primary artifact for this row.
+bravo,lorikeet|gtm-engineer|c1|e1,lorikeet|gtm-engineer|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f6712399be4ba0,Primary artifact for this row.
+bravo,yuno|go-to-market-engineer|c1|e1,yuno|go-to-market-engineer|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f66efcd7ca225a,Primary artifact for this row.
+bravo,handshake|gtm-engineer|c1|e1,handshake|gtm-engineer|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f66e96998790fa,Primary artifact for this row.
+bravo,attentive|gtm-engineer|c2|e1,attentive|gtm-engineer|c2,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f66e0efd40b3f4,Primary artifact for this row.
+bravo,productboard|associate-gtm-engineer|c1|e1,productboard|associate-gtm-engineer|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f666a4c400d642,Primary artifact for this row.
+bravo,hologram|gtm-engineer-pre-sales|c1|e1,hologram|gtm-engineer-pre-sales|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f66680cb338333,Primary artifact for this row.
+bravo,axiad|unspecified|c1|e1,axiad|unspecified|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f663a7ea0c599a,Primary artifact for this row.
+bravo,great-question|senior-demand-generation-manager|c1|e1,great-question|senior-demand-generation-manager|c1,2026-07-17,exact,submission_receipt,,unknown,,email,gmail,19f7078ecf3d9598,Primary artifact for this row.
+bravo,clutch|gtm-engineer|c1|e1,clutch|gtm-engineer|c1,2026-07-19,exact,submission_receipt,,unknown,,email,gmail,19f7a5451367af23,Primary artifact for this row.
+bravo,livekit|gtm-systems-engineer|c1|e1,livekit|gtm-systems-engineer|c1,2026-07-20,exact,submission_receipt,,unknown,,email,gmail,19f7fdf16a84eeb7,Primary artifact for this row.
+bravo,mercor|biology-and-biophysics-research-collaborator|c1|e1,mercor|biology-and-biophysics-research-collaborator|c1,2026-07-20,exact,submission_receipt,,unknown,,email,gmail,19f80db568ec6cea,Primary artifact for this row.
+bravo,revic|founding-gtm-ai-engineer|c1|e1,revic|founding-gtm-ai-engineer|c1,2026-07-21,exact,submission_receipt,,unknown,,email,gmail,19f82bde8c27b1f9,Primary artifact for this row.
+bravo,owner-com|gtm-engineer|c1|e1,owner-com|gtm-engineer|c1,2026-07-22,exact,submission_receipt,,unknown,,email,gmail,19f8aa5a9dee405a,Primary artifact for this row.
+bravo,lattice|gtm-engineer|c1|e1,lattice|gtm-engineer|c1,2026-07-24,exact,submission_receipt,,unknown,,email,gmail,19f9445f8807e40b,Primary artifact for this row.
+bravo,firstup|manager-gtm-systems|c1|e1,firstup|manager-gtm-systems|c1,2026-07-23,exact,submission_receipt,,unknown,,email,gmail,19f8ca07274d9777,Primary artifact for this row.
+bravo,ai-digital|growth-director|c1|e1,ai-digital|growth-director|c1,2026-07-24,exact,submission_receipt,,unknown,,email,gmail,19f94904962c2e2b,Primary artifact for this row.
+bravo,tripleseat|gtm-engineer|c1|e1,tripleseat|gtm-engineer|c1,2026-08-06,exact,submission_receipt,,unknown,,email,gmail,19fd83cab4f5a68d,Primary artifact for this row.
+bravo,uncapped|gtm-engineer|c1|e1,uncapped|gtm-engineer|c1,2026-08-22,exact,submission_receipt,,unknown,,email,gmail,1a0284aba5f7f81a,Primary artifact for this row.
+bravo,mercor|sales-and-marketing-expert|c1|e1,mercor|sales-and-marketing-expert|c1,2026-08-18,exact,submission_receipt,,unknown,,email,gmail,1a015e4b3b0e08ad,Primary artifact for this row.
+bravo,mercor|sales-engineering-expert|c1|e1,mercor|sales-engineering-expert|c1,2026-08-18,exact,submission_receipt,,unknown,,email,gmail,1a015e476731c1c4,Primary artifact for this row.
+bravo,mercor|b2b-sales-expert|c1|e1,mercor|b2b-sales-expert|c1,2026-08-18,exact,submission_receipt,,unknown,,email,gmail,1a015e4424bbd69e,Primary artifact for this row.
+bravo,mercor|gtm-engineer|c1|e1,mercor|gtm-engineer|c1,2026-08-14,exact,employer_ack,,unknown,,email,gmail,19fff060971c9673,Primary artifact for this row.
+bravo,mercor|growth-strategist|c1|e1,mercor|growth-strategist|c1,2026-08-20,exact,employer_ack,,unknown,,email,gmail,1a021442493bec48,Primary artifact for this row.
+bravo,dekalb-county-school-district|area-3-elementary-star-substitute-murphey-candler-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-murphey-candler-es|c1,2026-08-11,exact,submission_receipt,,unknown,,email,gmail,19ff13b56c64cee0,Primary artifact for this row.
+bravo,dekalb-county-school-district|specialty-area-star-substitute-margaret-harris-comprehensive|c1|e1,dekalb-county-school-district|specialty-area-star-substitute-margaret-harris-comprehensive|c1,2026-08-06,exact,submission_receipt,,unknown,,email,gmail,19fd85c477301fa8,Primary artifact for this row.
+bravo,dekalb-county-school-district|area-3-elementary-star-substitute-chapel-hill-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-chapel-hill-es|c1,2026-08-04,exact,submission_receipt,,unknown,,email,gmail,19fcf23cec45d3dc,Primary artifact for this row.
+bravo,dekalb-county-school-district|area-3-elementary-star-substitute-canby-lane-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-canby-lane-es|c1,2026-08-04,exact,submission_receipt,,unknown,,email,gmail,19fcd8dec2fb8745,Primary artifact for this row.
+bravo,dekalb-county-school-district|area-high-school-star-substitute-columbia-hs|c1|e1,dekalb-county-school-district|area-high-school-star-substitute-columbia-hs|c1,2026-07-28,exact,submission_receipt,,unknown,,email,gmail,19faa500c9abd541,Primary artifact for this row.
+bravo,dekalb-county-school-district|area-3-elementary-star-substitute-cedar-grove-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-cedar-grove-es|c1,2026-07-27,exact,submission_receipt,,unknown,,email,gmail,19fa53991ca6a94c,Primary artifact for this row.
+bravo,dekalb-county-school-district|area-1-elementary-star-substitute-ashford-park-es|c1|e1,dekalb-county-school-district|area-1-elementary-star-substitute-ashford-park-es|c1,2026-07-24,exact,submission_receipt,,unknown,,email,gmail,19f9592eeee392b1,Primary artifact for this row.
+bravo,dekalb-county-school-district|area-4-elementary-substitute-star-browns-mill-es|c1|e1,dekalb-county-school-district|area-4-elementary-substitute-star-browns-mill-es|c1,2026-07-22,exact,submission_receipt,,unknown,,email,gmail,19f8b596fe19b8b0,Primary artifact for this row.
+bravo,dekalb-county-school-district|area-3-elementary-star-substitute-rowland-es|c1|e1,dekalb-county-school-district|area-3-elementary-star-substitute-rowland-es|c1,2026-07-14,exact,submission_receipt,,unknown,,email,gmail,19f620f9470e136d,Primary artifact for this row.
+bravo,dekalb-county-school-district|horizon-area-substitute-star-flat-rock-es|c1|e1,dekalb-county-school-district|horizon-area-substitute-star-flat-rock-es|c1,2026-07-08,exact,submission_receipt,,unknown,,email,gmail,19f4373e9e27352c,Primary artifact for this row.
+bravo,micro1|certified-expert-pool-chatgpt-ai-training-project|c1|e1,micro1|certified-expert-pool-chatgpt-ai-training-project|c1,2026-06-05,exact,employer_ack,,unknown,,email,gmail,19e9866ed62fb9b9,Primary artifact for this row.
+bravo,applause|enterprise-sdr|c1|e2,applause|enterprise-sdr|c1,2025-07-08,exact,rejection,,unknown,,email,gmail,197e8563609b2b60,Receipt then rejection in thread.
+bravo,slingshot-ai|conversation-designer|c1|e2,slingshot-ai|conversation-designer|c1,2025-07-28,exact,employer_ack,,unknown,,email,gmail,198500cf4b9cf0f2,
+bravo,phiture|us-growth-lead-mobile-marketing-strategist|c1|e2,phiture|us-growth-lead-mobile-marketing-strategist|c1,2025-07-29,exact,employer_ack,,unknown,,email,gmail,19855246bd3510bf,
+bravo,gtp-software|revenue-enablement-manager|c1|e2,gtp-software|revenue-enablement-manager|c1,2025-08-01,exact,employer_ack,,unknown,,email,gmail,19866f31583b7516,
+bravo,weave|business-development-manager|c1|e2,weave|business-development-manager|c1,2025-07-31,exact,employer_ack,,unknown,,email,gmail,19862454367cf6f1,Employer names Business Development Manager.
+bravo,anaconda|senior-bdr|c1|e2,anaconda|senior-bdr|c1,2025-08-22,exact,employer_ack,,unknown,,email,gmail,198d3b3bf3993a49,
+bravo,axon|manager-go-to-market-readiness|c1|e2,axon|manager-go-to-market-readiness|c1,2025-08-04,exact,employer_ack,,unknown,,email,gmail,198769522c958870,
+bravo,ava-labs|growth-lead-core|c1|e2,ava-labs|growth-lead-core|c1,2025-08-14,exact,employer_ack,,unknown,,email,gmail,198a9f80268b55a5,
+bravo,sage|director-of-growth-small-role|c1|e2,sage|director-of-growth-small-role|c1,2025-09-03,exact,employer_ack,,unknown,,email,gmail,1990fabad455beb5,
+bravo,crypto-com|product-growth-hacker-exchange-and-main-app|c1|e2,crypto-com|product-growth-hacker-exchange-and-main-app|c1,2025-11-02,exact,employer_ack,,unknown,,email,gmail,19a45779c86938f1,
+bravo,seamless-ai|sdr-remote-us|c1|e2,seamless-ai|sdr-remote-us|c1,2025-08-07,exact,employer_ack,,unknown,,email,gmail,1988561b3341f748,
+bravo,replit|sales-engineer|c1|e2,replit|sales-engineer|c1,2025-07-30,exact,employer_ack,,unknown,,email,gmail,1985bf4a7f1cded7,
+bravo,beckhoff-automation|sales-engineer|c1|e2,beckhoff-automation|sales-engineer|c1,2025-08-07,exact,employer_ack,,unknown,,email,gmail,1988608ae766bb44,Paycom not fully completed.
+bravo,beckhoff-automation|sales-engineer|c1|e3,beckhoff-automation|sales-engineer|c1,2025-08-08,exact,employer_ack,,unknown,,email,gmail,1988bb3318ed28b3,
+bravo,switchyards|launch-manager|c1|e2,switchyards|launch-manager|c1,2025-08-19,exact,employer_ack,,unknown,,email,gmail,198c3d0762671231,
+bravo,inertia-growth|gtme-role|c1|e2,inertia-growth|gtme-role|c1,2025-07-30,exact,rejection,,unknown,,email,gmail,1985d0a9011176a8,Counterparty named Outbound Campaign Manager.
+bravo,pinterest|apprentice-product-researcher|c1|e2,pinterest|apprentice-product-researcher|c1,2025-06-28,exact,employer_ack,,unknown,,email,gmail,197b4e0054e600c8,
+bravo,pinterest|product-manager-ii-search|c1|e2,pinterest|product-manager-ii-search|c1,2025-06-30,exact,employer_ack,,unknown,,email,gmail,197c192980869142,
+bravo,linear|ae-growth|c1|e2,linear|ae-growth|c1,2025-12-11,exact,employer_ack,,unknown,,email,gmail,19b0e68efb49c557,
+bravo,primer|unspecified|c1|e2,primer|unspecified|c1,2025-12-15,exact,employer_ack,,unknown,,email,gmail,19b21b8f861feccc,
+bravo,thomson-reuters|ae-tax-or-risk|c1|e2,thomson-reuters|ae-tax-or-risk|c1,2026-02-20,exact,employer_ack,,unknown,,email,gmail,19c7a359b58ab0c0,
+bravo,foursquare|ae-new-business|c1|e2,foursquare|ae-new-business|c1,2026-01-08,exact,employer_ack,,unknown,,email,gmail,19b9e8ee32ff6228,
+bravo,sailpoint|account-exec-enterprise-accounts|c1|e2,sailpoint|account-exec-enterprise-accounts|c1,2026-01-03,exact,employer_ack,,unknown,,email,gmail,19b8497068491dca,
+bravo,beacon-software|unspecified|c1|e2,beacon-software|unspecified|c1,2026-01-26,exact,employer_ack,,unknown,,email,gmail,19bf8341c7bf4ee8,Security code.
+bravo,manifold|growth-marketing-manager|c1|e2,manifold|growth-marketing-manager|c1,2026-02-06,exact,employer_ack,,unknown,,email,gmail,19c3331ba7802c72,
+bravo,ambrook|business-operations-lead|c1|e2,ambrook|business-operations-lead|c1,2026-02-12,exact,employer_ack,,unknown,,email,gmail,19c52cbdcc25bd0d,Includes SENT followup_sent to no-reply.
+bravo,testgorilla|go-to-market-engineer|c1|e2,testgorilla|go-to-market-engineer|c1,2026-02-20,exact,recruiter_screen,1,Mirae Lee,recruiter,email,gmail,19c7cad276dff04a,
+bravo,testgorilla|go-to-market-engineer|c1|e3,testgorilla|go-to-market-engineer|c1,2026-04-23,exact,employer_ack,,Mirae Lee,recruiter,email,gmail,19dba87a5f49ae09,
+bravo,smeetz|gtm-engineer|c1|e2,smeetz|gtm-engineer|c1,2026-02-20,exact,employer_ack,,unknown,,email,gmail,19c7c661593dbcbf,
+bravo,gitlab|gtm-planning-and-operations-analyst|c1|e2,gitlab|gtm-planning-and-operations-analyst|c1,2026-04-17,exact,rejection,,unknown,,email,gmail,19d9d236e17ffb61,Position no longer available.
+bravo,beautiful-ai|unspecified|c1|e2,beautiful-ai|unspecified|c1,2026-03-17,exact,hiring_manager_interview,1,Brandon Ness,hiring manager,email,gmail,19cfd5722bd49b45,Post-interview follow-up names Brandon Ness.
+bravo,beautiful-ai|unspecified|c1|e3,beautiful-ai|unspecified|c1,2026-03-26,exact,rejection,,Emily,unknown,email,gmail,19d2c002fd6328f6,
+bravo,anthropic|software-engineer-business-technology|c1|e2,anthropic|software-engineer-business-technology|c1,2026-03-09,exact,employer_ack,,unknown,,email,gmail,19cd424f34c5379e,
+bravo,virtru|director-of-go-to-market-ai|c1|e2,virtru|director-of-go-to-market-ai|c1,2026-04-04,exact,employer_ack,,Rachel Downs,unknown,email,gmail,19d596affbecf602,
+bravo,orchestry|gtm-engineer-sales|c1|e2,orchestry|gtm-engineer-sales|c1,2026-03-24,exact,recruiter_screen,1,unknown,,video,gmail,19d20d67ae959204,
+bravo,orchestry|gtm-engineer-sales|c1|e3,orchestry|gtm-engineer-sales|c1,2026-03-25,exact,recruiter_screen,2,unknown,,video,gmail,19d26fa4dceba5a6,
+bravo,orchestry|gtm-engineer-sales|c1|e4,orchestry|gtm-engineer-sales|c1,2026-03-25,exact,no_show,,Jay Banga,unknown,email,gmail,19d26be3aa1d4344,
+bravo,orchestry|gtm-engineer-sales|c1|e5,orchestry|gtm-engineer-sales|c1,2026-03-27,exact,rejection,,Jay Banga,unknown,email,gmail,19d31b20a0dfedb3,
+bravo,mento|gtm-engineer|c1|e2,mento|gtm-engineer|c1,2026-03-30,exact,submission_receipt,,unknown,,email,gmail,19d40a113f180bf5,
+bravo,lumenalta|unspecified|c1|e2,lumenalta|unspecified|c1,2026-04-10,exact,employer_ack,,unknown,,email,gmail,19d770d1f6e1934d,
+bravo,pinterest|apprentice-engineer|c1|e2,pinterest|apprentice-engineer|c1,2026-04-28,exact,rejection,,unknown,,email,gmail,19dd5e3359a9ccab,
+bravo,pandadoc|gtm-engineer|c1|e2,pandadoc|gtm-engineer|c1,2026-03-30,exact,employer_ack,,unknown,,email,gmail,19d3ebc1d0bb91a6,Greenhouse security code.
+bravo,pandadoc|gtm-engineer|c1|e3,pandadoc|gtm-engineer|c1,2026-04-27,exact,rejection,,unknown,,email,gmail,19dcf9174d4a446f,
+bravo,tiger-data|gtm-ai-engineer|c1|e2,tiger-data|gtm-ai-engineer|c1,2026-03-30,exact,employer_ack,,unknown,,email,gmail,19d403563f7e04c0,
+bravo,tapcheck|unspecified|c1|e2,tapcheck|unspecified|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d6309a625eabd0,
+bravo,tapcheck|unspecified|c1|e3,tapcheck|unspecified|c1,2026-03-31,exact,employer_ack,,unknown,,email,gmail,19d452f3f045ac93,
+bravo,tapcheck|unspecified|c1|e4,tapcheck|unspecified|c1,2026-04-06,exact,employer_ack,,unknown,,email,gmail,19d63c2dadb6e136,
+bravo,g2|gtm-engineer|c1|e2,g2|gtm-engineer|c1,2026-04-09,exact,rejection,,unknown,,email,gmail,19d72b8cd8da95a3,Position filled.
+bravo,dagster-labs|gtm-engineer|c1|e2,dagster-labs|gtm-engineer|c1,2026-03-30,exact,employer_ack,,unknown,,email,gmail,19d3eb97daebde93,Security code.
+bravo,dagster-labs|gtm-engineer|c1|e3,dagster-labs|gtm-engineer|c1,2026-04-03,exact,hiring_manager_interview,1,Delaney Housley,unknown,email,gmail,19d54b76f8ffb104,Thank you for taking the time to chat.
+bravo,phrasiq|unspecified|c1|e2,phrasiq|unspecified|c1,2026-03-31,exact,employer_ack,,unknown,,email,gmail,19d453dbfa5af222,Founder outreach then GTM System Deep Dive proposed after Discovery.
+bravo,phrasiq|unspecified|c1|e3,phrasiq|unspecified|c1,2026-04-02,exact,hiring_manager_interview,1,unknown,,,gcal,bac9katosqoobn46ohd1hemm5k,Calendar Discovery | Keegan Moody<>PhrasIQ. Medium not stated.
+bravo,fixify|gtm-engineer-contract|c1|e2,fixify|gtm-engineer-contract|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d6302e9af64d84,
+bravo,fixify|gtm-engineer-contract|c1|e3,fixify|gtm-engineer-contract|c1,2026-04-06,exact,employer_ack,,unknown,,email,gmail,19d650ce9fc868fa,
+bravo,pearl|lead-gtm-engineer|c1|e2,pearl|lead-gtm-engineer|c1,2026-04-30,exact,followup_sent,,Alex DeCeglie,unknown,email,gmail,19ddebc217206005,Keegan initiates scheduling.
+bravo,pearl|lead-gtm-engineer|c1|e3,pearl|lead-gtm-engineer|c1,2026-05-04,exact,hiring_manager_interview,1,unknown,,phone,gmail,19df3f05ef98302b,Reminder for May 5 phone interview.
+bravo,pearl|lead-gtm-engineer|c1|e4,pearl|lead-gtm-engineer|c1,2026-05-11,exact,employer_ack,,unknown,,email,gmail,19e17cc7e99d523e,"Submit availability reminder, two identical msgs."
+bravo,pearl|lead-gtm-engineer|c1|e5,pearl|lead-gtm-engineer|c1,2026-05-17,exact,hiring_manager_interview,2,unknown,,video,gmail,19e363d55b30e7dd,Zoom reminder.
+bravo,valsoft|gtm-engineer|c1|e2,valsoft|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d638eb381bdfd1,
+bravo,appgate|gtm-engineer|c1|e2,appgate|gtm-engineer|c1,2026-04-06,exact,submission_receipt,,unknown,,email,gmail,19d630ee95237e6c,
+bravo,sardine|gtm-engineer|c1|e2,sardine|gtm-engineer|c1,2026-04-09,exact,employer_ack,,unknown,,email,gmail,19d73000b16e8496,
+bravo,solv-health|unspecified|c1|e2,solv-health|unspecified|c1,2026-04-21,exact,employer_ack,,unknown,,email,gmail,19db1ec73e853739,
+bravo,unframe|gtm-engineer|c1|e2,unframe|gtm-engineer|c1,2026-04-17,exact,submission_receipt,,unknown,,email,gmail,19d9bc38883d43fc,
+bravo,unframe|gtm-engineer|c1|e3,unframe|gtm-engineer|c1,2026-05-12,exact,rejection,,unknown,,email,gmail,19e1b422395bfa5a,
+bravo,rula|gtm-engineer-remote|c1|e2,rula|gtm-engineer-remote|c1,2026-04-22,exact,rejection,,unknown,,email,gmail,19db50b5a6fb409d,
+bravo,sur|ai-revenue-engineer|c1|e2,sur|ai-revenue-engineer|c1,2026-04-09,exact,rejection,,unknown,,email,gmail,19d73129b631de6e,
+bravo,ontra|unspecified|c1|e2,ontra|unspecified|c1,2026-04-24,exact,employer_ack,,unknown,,email,gmail,19dc05867fe8fb7c,
+bravo,auctane|pre-sales-engineer|c1|e2,auctane|pre-sales-engineer|c1,2026-05-14,exact,employer_ack,,unknown,,email,gmail,19e26fe5ff10715a,
+bravo,teleport|gtm-engineer|c1|e2,teleport|gtm-engineer|c1,2026-05-07,exact,employer_ack,,unknown,,email,gmail,19e032b4926fea88,
+bravo,fossa|unspecified|c1|e2,fossa|unspecified|c1,2026-05-20,exact,rejection,,unknown,,email,gmail,19e466fffd8be312,
+bravo,trase|gtm-engineer-healthcare|c1|e2,trase|gtm-engineer-healthcare|c1,2026-06-26,exact,submission_receipt,,unknown,,email,gmail,19f045de92738bc2,
+bravo,trase|gtm-engineer-healthcare|c1|e3,trase|gtm-engineer-healthcare|c1,2026-07-10,exact,employer_ack,,unknown,,email,gmail,19f4de2747e2411b,
+bravo,10x-genomics|unspecified|c1|e2,10x-genomics|unspecified|c1,2026-05-02,exact,submission_receipt,,unknown,,email,gmail,19de744aab60ad7a,
+bravo,10x-genomics|unspecified|c1|e3,10x-genomics|unspecified|c1,2026-05-14,exact,employer_ack,,unknown,,email,gmail,19e27418ea29b3a7,
+bravo,airtable|gtm-engineer|c1|e2,airtable|gtm-engineer|c1,2026-05-27,exact,employer_ack,,unknown,,email,gmail,19e6b2afee593d82,
+bravo,dbeaver|gtm-engineer|c1|e2,dbeaver|gtm-engineer|c1,2026-06-05,exact,employer_ack,,unknown,,email,gmail,19e988e1447a03fe,
+bravo,apartmentiq|unspecified|c1|e2,apartmentiq|unspecified|c1,2026-05-28,exact,employer_ack,,unknown,,email,gmail,19e701e7bbb96826,
+bravo,deepgram|gtm-engineer|c1|e2,deepgram|gtm-engineer|c1,2026-05-22,exact,employer_ack,,unknown,,email,gmail,19e5021519a70ba7,
+bravo,colab-software|sales-engineer|c1|e2,colab-software|sales-engineer|c1,2026-05-28,exact,employer_ack,,unknown,,email,gmail,19e6f4599d4e49ae,
+bravo,pindrop|gtm-systems-platform-specialist|c1|e2,pindrop|gtm-systems-platform-specialist|c1,2026-05-27,exact,rejection,,unknown,,email,gmail,19e6a74411d02fb8,
+bravo,applied-systems|sales-enablement-gtm-readiness-lead|c1|e2,applied-systems|sales-enablement-gtm-readiness-lead|c1,2026-05-21,exact,employer_ack,,unknown,,email,gmail,19e48a083e9459da,iCIMS email verification.
+bravo,applied-systems|sales-enablement-gtm-readiness-lead|c1|e3,applied-systems|sales-enablement-gtm-readiness-lead|c1,2026-05-21,exact,employer_ack,,unknown,,email,gmail,19e48a087297332a,
+bravo,servicetrade|unspecified|c1|e2,servicetrade|unspecified|c1,2026-05-29,exact,employer_ack,,unknown,,email,gmail,19e757a9612aef35,
+bravo,evenup|ai-adoption-manager-southeast|c1|e2,evenup|ai-adoption-manager-southeast|c1,2026-06-04,exact,employer_ack,,unknown,,email,gmail,19e930fda494e3f1,
+bravo,huzzle|gtm-engineer|c1|e2,huzzle|gtm-engineer|c1,2026-06-04,exact,assessment_sent,,unknown,,email,gmail,19e92180ca58bd3a,Complete your interview; talent-pool language in same message.
+bravo,huzzle|gtm-engineer|c1|e3,huzzle|gtm-engineer|c1,2026-06-09,exact,employer_ack,,unknown,,email,gmail,19eabc7bbc1aa40f,
+bravo,huzzle|gtm-engineer|c1|e4,huzzle|gtm-engineer|c1,2026-06-11,exact,employer_ack,,unknown,,email,gmail,19eb650805cfef0a,
+bravo,huzzle|gtm-engineer|c1|e5,huzzle|gtm-engineer|c1,2026-06-16,exact,employer_ack,,unknown,,email,gmail,19ed00aa4e9b1478,
+bravo,adaptive6|sales-engineer|c1|e2,adaptive6|sales-engineer|c1,2026-06-16,exact,employer_ack,,unknown,,email,gmail,19ed06966e43cb5b,
+bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e2,revspring|lead-agentic-operations-gtm-engineering|c1,2026-05-29,exact,employer_ack,,Stephanie Cunningham,recruiter,email,gmail,19e74662ea5ede3c,
+bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e3,revspring|lead-agentic-operations-gtm-engineering|c1,2026-06-10,exact,recruiter_screen,1,unknown,,email,gmail,19eb280cfa60523e,
+bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e4,revspring|lead-agentic-operations-gtm-engineering|c1,2026-06-23,exact,submission_receipt,,unknown,,email,gmail,19ef46124504d022,
+bravo,revspring|lead-agentic-operations-gtm-engineering|c1|e5,revspring|lead-agentic-operations-gtm-engineering|c1,2026-06-25,exact,employer_ack,,unknown,,email,gmail,19eff2f62ca18205,
+bravo,cloudflare|gtm-engineer|c1|e2,cloudflare|gtm-engineer|c1,2026-06-23,exact,employer_ack,,unknown,,email,gmail,19ef4cb49b74227b,
+bravo,pogo-technologies|gtm-engineer|c1|e2,pogo-technologies|gtm-engineer|c1,2026-06-26,exact,submission_receipt,,unknown,,email,gmail,19f046ca4b4ba350,
+bravo,pogo-technologies|gtm-engineer|c1|e3,pogo-technologies|gtm-engineer|c1,2026-07-08,exact,submission_receipt,,unknown,,email,gmail,19f3f0957b849e79,
+bravo,the-hog|gtm-engineer|c1|e2,the-hog|gtm-engineer|c1,2026-06-18,exact,technical_exercise,2,Hudson Liao,unknown,email,gmail,19ed8711b82f46a2,
+bravo,atlanta-public-schools|unspecified|c1|e2,atlanta-public-schools|unspecified|c1,2026-06-19,exact,employer_ack,,unknown,,email,gmail,19eddc4876071497,AppliTrack started.
+bravo,atlanta-public-schools|unspecified|c1|e3,atlanta-public-schools|unspecified|c1,2026-06-19,exact,followup_sent,,unknown,,email,gmail,19edf97699db02b8,Candidate wrote he reached confirmation page; APS replied 06-22 not accepting substitutes.
+bravo,ibm|manager-applied-ai-and-gtm-systems-confluent|c1|e2,ibm|manager-applied-ai-and-gtm-systems-confluent|c1,2026-07-26,exact,rejection,,unknown,,email,gmail,19f9eed2a79487bf,
+bravo,anduril-industries|technical-operations-engineer-launched-effects|c1|e2,anduril-industries|technical-operations-engineer-launched-effects|c1,2026-07-15,exact,employer_ack,,unknown,,email,gmail,19f66b93c6e79e48,
+bravo,attentive|unspecified|c1|e2,attentive|unspecified|c1,2026-07-07,exact,rejection,,unknown,,email,gmail,19f3dd07daaab373,
+bravo,mercor|education-school-evaluator|c1|e2,mercor|education-school-evaluator|c1,2026-06-29,exact,rejection,,unknown,,email,gmail,19f13f185041b1dc,
+bravo,mercor|general-sales-gtm-evaluator|c1|e2,mercor|general-sales-gtm-evaluator|c1,2026-06-29,exact,rejection,,unknown,,email,gmail,19f13f16729b311e,
+bravo,wealth-com|gtm-engineer|c1|e2,wealth-com|gtm-engineer|c1,2026-06-22,exact,employer_ack,,unknown,,email,gmail,19ef05d170b5e420,
+bravo,unknown-jobgether|gtm-engineer|c1|e2,unknown-jobgether|gtm-engineer|c1,2026-06-23,exact,assessment_sent,,unknown,,email,gmail,19ef55efa8ce30cd,Jobgether match score. Parent is Jobgether unknown-employer row.
+bravo,sentilink|go-to-market-strategy-analyst|c1|e2,sentilink|go-to-market-strategy-analyst|c1,2026-06-22,exact,submission_receipt,,unknown,,email,gmail,19eefe0dd8894c92,
+bravo,sentilink|go-to-market-strategy-analyst|c1|e3,sentilink|go-to-market-strategy-analyst|c1,2026-07-13,exact,employer_ack,,unknown,,email,gmail,19f5c35571905cf8,
+bravo,tekion|senior-manager-inside-sales|c1|e2,tekion|senior-manager-inside-sales|c1,2026-06-27,exact,employer_ack,,unknown,,email,gmail,19f090ef87b415f9,
+bravo,enlace-health|sales-engineer|c1|e2,enlace-health|sales-engineer|c1,2026-06-26,exact,employer_ack,,unknown,,email,gmail,19f055b8281670e6,
+bravo,toast|gtm-engineer-sales-workflow-automation|c1|e2,toast|gtm-engineer-sales-workflow-automation|c1,2026-07-16,exact,employer_ack,,unknown,,email,gmail,19f6ce89823237ff,
+bravo,minio|bdr-enterprise|c1|e2,minio|bdr-enterprise|c1,2026-06-27,exact,employer_ack,,unknown,,email,gmail,19f091daa99e4e31,
+bravo,clay|growth-strategist-enterprise|c1|e2,clay|growth-strategist-enterprise|c1,2026-06-25,exact,employer_ack,,unknown,,email,gmail,19effc7f4c9d1bb1,
+bravo,upguard|sdr-manager|c1|e2,upguard|sdr-manager|c1,2026-06-24,exact,employer_ack,,unknown,,email,gmail,19efc056b004c92c,
+bravo,upguard|sdr-manager|c1|e3,upguard|sdr-manager|c1,2026-06-29,exact,employer_ack,,unknown,,email,gmail,19f111b4c91336a5,
+bravo,city-schools-of-decatur|unspecified|c1|e2,city-schools-of-decatur|unspecified|c1,2026-06-26,exact,employer_ack,,unknown,,email,gmail,19f047e5069cac88,
+bravo,wirescreen|partnerships-manager|c1|e2,wirescreen|partnerships-manager|c1,2026-07-03,exact,employer_ack,,unknown,,email,gmail,19f28122429663bc,
+bravo,unknown-jobmail-io|growth-lead|c1|e2,unknown-jobmail-io|growth-lead|c1,2026-07-07,exact,employer_ack,,unknown,,email,gmail,19f3ef96ca92c157,
+bravo,unknown-jobmail-io|growth-lead|c1|e3,unknown-jobmail-io|growth-lead|c1,2026-07-13,exact,rejection,,unknown,,email,gmail,19f5b79c8f0892a7,Steps completed through Jack.
+bravo,unknown-talentpluto|go-to-market-engineer|c1|e2,unknown-talentpluto|go-to-market-engineer|c1,2026-07-12,exact,employer_ack,,unknown,,email,gmail,19f586869aa3577d,Talentpluto next step is a call with Pluto.
+bravo,unknown-talentpluto|go-to-market-engineer|c1|e3,unknown-talentpluto|go-to-market-engineer|c1,2026-07-14,exact,employer_ack,,unknown,,email,gmail,19f62b55cb2667f8,
+bravo,unknown-talentpluto|go-to-market-engineer|c1|e4,unknown-talentpluto|go-to-market-engineer|c1,2026-07-17,exact,employer_ack,,unknown,,email,gmail,19f7228aa86c15ca,
+bravo,unknown-talentpluto|go-to-market-engineer|c1|e5,unknown-talentpluto|go-to-market-engineer|c1,2026-07-22,exact,employer_ack,,unknown,,email,gmail,19f8be8b879d43f0,
+bravo,anysphere|gtm-emerging-products|c1|e2,anysphere|gtm-emerging-products|c1,2026-07-13,exact,employer_ack,,unknown,,email,gmail,19f5cedf251d981e,
+bravo,bluejay|founding-gtm-role|c1|e2,bluejay|founding-gtm-role|c1,2026-07-23,exact,rejection,,Josh Kelly,recruiter,email,gmail,19f8e4194f9a477d,
+bravo,together-ai|unspecified|c1|e2,together-ai|unspecified|c1,2026-07-13,exact,employer_ack,,unknown,,email,gmail,19f591743f53f90b,Security code.
+bravo,together-ai|unspecified|c1|e3,together-ai|unspecified|c1,2026-07-15,exact,submission_receipt,,unknown,,email,gmail,19f6738e39456b2d,
+bravo,hud|gtm-engineer|c1|e2,hud|gtm-engineer|c1,2026-07-16,exact,employer_ack,,unknown,,email,gmail,19f687bd5a05c83b,
+bravo,hightouch|go-to-market-engineer|c1|e2,hightouch|go-to-market-engineer|c1,2026-07-15,exact,employer_ack,,unknown,,email,gmail,19f67290c9968b53,Security code.
+bravo,hightouch|go-to-market-engineer|c1|e3,hightouch|go-to-market-engineer|c1,2026-07-22,exact,submission_receipt,,unknown,,email,gmail,19f8aa4507d11cf0,
+bravo,hightouch|go-to-market-engineer|c1|e4,hightouch|go-to-market-engineer|c1,2026-07-24,exact,rejection,,unknown,,email,gmail,19f954ab2eed0963,
+bravo,lorikeet|gtm-engineer|c1|e2,lorikeet|gtm-engineer|c1,2026-07-20,exact,rejection,,unknown,,email,gmail,19f81d8fa98ad7fe,Position filled.
+bravo,hologram|gtm-engineer-pre-sales|c1|e2,hologram|gtm-engineer-pre-sales|c1,2026-07-15,exact,employer_ack,,unknown,,email,gmail,19f66645332727b3,Security code.
+bravo,hologram|gtm-engineer-pre-sales|c1|e3,hologram|gtm-engineer-pre-sales|c1,2026-07-16,exact,employer_ack,,Megan Koch,unknown,email,gmail,19f6c7190ae437a1,Intro-call confirmation includes SENT.
+bravo,hologram|gtm-engineer-pre-sales|c1|e4,hologram|gtm-engineer-pre-sales|c1,2026-07-19,exact,recruiter_screen,1,Amy Schwartz,recruiter,email,gmail,19f7b0d6008a9e23,Preliminary Screening Call Jul 20.
+bravo,hologram|gtm-engineer-pre-sales|c1|e5,hologram|gtm-engineer-pre-sales|c1,2026-07-21,exact,panel,2,Derrick Calderon,unknown,email,gmail,19f8515939b5e54d,Cross-Functional Interview Jul 22.
+bravo,hologram|gtm-engineer-pre-sales|c1|e6,hologram|gtm-engineer-pre-sales|c1,2026-07-22,exact,followup_sent,,Derrick Calderon,unknown,email,gmail,19f8a5b3c58414df,
+bravo,hologram|gtm-engineer-pre-sales|c1|e7,hologram|gtm-engineer-pre-sales|c1,2026-07-26,exact,employer_ack,,unknown,,email,gmail,19f9e1b3ff5c4c31,Candidate experience survey.
+bravo,axiad|unspecified|c1|e2,axiad|unspecified|c1,2026-07-15,exact,employer_ack,,unknown,,email,gmail,19f6637d7a6e7e7d,Security code.
+bravo,great-question|senior-demand-generation-manager|c1|e2,great-question|senior-demand-generation-manager|c1,2026-07-24,exact,recruiter_screen,1,Harri,unknown,email,gmail,19f922b1dc3fa017,
+bravo,great-question|senior-demand-generation-manager|c1|e3,great-question|senior-demand-generation-manager|c1,2026-07-25,exact,hiring_manager_interview,2,unknown,,email,gmail,19f9add09d4e62b9,
+bravo,great-question|senior-demand-generation-manager|c1|e4,great-question|senior-demand-generation-manager|c1,2026-07-26,exact,hiring_manager_interview,2,unknown,,video,gmail,19f9fcc92979fc8b,Google Meet reminder.
+bravo,great-question|senior-demand-generation-manager|c1|e5,great-question|senior-demand-generation-manager|c1,2026-07-29,exact,rejection,,unknown,,email,gmail,19fb03b48343c7d3,
+bravo,great-question|senior-demand-generation-manager|c1|e6,great-question|senior-demand-generation-manager|c1,2026-07-31,exact,employer_ack,,unknown,,email,gmail,19fb842bcb109ac3,
+bravo,clutch|gtm-engineer|c1|e2,clutch|gtm-engineer|c1,2026-07-22,exact,employer_ack,,unknown,,email,gmail,19f8be37e8a3a67a,
+bravo,livekit|gtm-systems-engineer|c1|e2,livekit|gtm-systems-engineer|c1,2026-08-17,exact,employer_ack,,unknown,,email,gmail,1a00fddbc5de0d9e,
+bravo,mercor|biology-and-biophysics-research-collaborator|c1|e2,mercor|biology-and-biophysics-research-collaborator|c1,2026-07-20,exact,employer_ack,,unknown,,email,gmail,19f80d9fb0e29e3f,Referred by Victor Ekuta.
+bravo,mercor|biology-and-biophysics-research-collaborator|c1|e3,mercor|biology-and-biophysics-research-collaborator|c1,2026-07-27,exact,rejection,,unknown,,email,gmail,19fa4f21a7ced918,
+bravo,lattice|gtm-engineer|c1|e2,lattice|gtm-engineer|c1,2026-07-22,exact,employer_ack,,unknown,,email,gmail,19f8bd9b0ccbecd6,
+bravo,lattice|gtm-engineer|c1|e3,lattice|gtm-engineer|c1,2026-07-24,exact,submission_receipt,,unknown,,email,gmail,19f94461c7177b18,Apply4Me Application Sent.
+bravo,lattice|gtm-engineer|c1|e4,lattice|gtm-engineer|c1,2026-08-04,exact,rejection,,unknown,,email,gmail,19fcd8eedd9f532c,Position filled.
+bravo,firstup|manager-gtm-systems|c1|e2,firstup|manager-gtm-systems|c1,2026-07-23,exact,employer_ack,,unknown,,email,gmail,19f8c9436de2adfd,
+bravo,firstup|manager-gtm-systems|c1|e3,firstup|manager-gtm-systems|c1,2026-07-23,exact,submission_receipt,,unknown,,email,gmail,19f8ca096381b67b,
+bravo,ai-digital|growth-director|c1|e2,ai-digital|growth-director|c1,2026-07-23,exact,employer_ack,,unknown,,email,gmail,19f8c938964574d8,
+bravo,ai-digital|growth-director|c1|e3,ai-digital|growth-director|c1,2026-07-27,exact,rejection,,Aleksandra Ivanova,unknown,email,gmail,19fa30ce14801001,
+bravo,uncapped|gtm-engineer|c1|e2,uncapped|gtm-engineer|c1,2026-08-22,exact,rejection,,unknown,,email,gmail,1a0284b142eabff1,
+bravo,mercor|sales-engineering-expert|c1|e2,mercor|sales-engineering-expert|c1,2026-08-25,exact,rejection,,unknown,,email,gmail,1a039f74d3cf664b,
+bravo,mercor|b2b-sales-expert|c1|e2,mercor|b2b-sales-expert|c1,2026-08-25,exact,rejection,,unknown,,email,gmail,1a039f739d7803cc,
+bravo,mercor|gtm-engineer|c1|e2,mercor|gtm-engineer|c1,2026-08-18,exact,recruiter_screen,1,Claire Gauthier,recruiter,email,gmail,1a0161d3e41b96dd,
+bravo,mercor|gtm-engineer|c1|e3,mercor|gtm-engineer|c1,2026-08-17,exact,recruiter_screen,1,Daniel Luo,recruiter,email,gmail,1a001f9e4f310663,30 min with Daniel.
+bravo,mercor|gtm-engineer|c1|e4,mercor|gtm-engineer|c1,2026-08-18,exact,employer_ack,,Claire Gauthier,recruiter,email,gmail,1a012a5410998554,Working at Mercor rate discussion includes SENT.
+bravo,mercor|gtm-engineer|c1|e5,mercor|gtm-engineer|c1,2026-08-19,exact,offer,,Claire Gauthier,recruiter,email,gmail,1a01a7862d42b4b0,
+bravo,mercor|gtm-engineer|c1|e6,mercor|gtm-engineer|c1,2026-08-21,exact,offer,,unknown,,email,gmail,1a025862aa01f0dc,"Offer Acceptance Confirmation, hourly contract active."
+bravo,mercor|gtm-engineer|c1|e7,mercor|gtm-engineer|c1,2026-08-21,exact,employer_ack,,unknown,,email,gmail,1a021cf914f4c0b0,Certn background screening request.
+bravo,mercor|gtm-engineer|c1|e8,mercor|gtm-engineer|c1,2026-08-22,exact,employer_ack,,unknown,,email,gmail,1a0271152bb4bb4e,Certn report returned.
+bravo,mercor|gtm-engineer|c1|e9,mercor|gtm-engineer|c1,2026-08-22,exact,employer_ack,,unknown,,email,gmail,1a026f27a9e707e6,
+bravo,mercor|gtm-engineer|c1|e10,mercor|gtm-engineer|c1,2026-08-24,exact,reschedule,,Claire Gauthier,recruiter,email,gmail,1a034b1984eb11ee,
+bravo,mercor|gtm-engineer|c1|e11,mercor|gtm-engineer|c1,2026-08-24,exact,reschedule,,Claire Gauthier,recruiter,email,gmail,1a035dcb76fa9938,
+bravo,mercor|gtm-engineer|c1|e12,mercor|gtm-engineer|c1,2026-08-29,exact,employer_ack,,unknown,,email,gmail,1a04ec1ebeaea2ff,Contract Paused for Atlanta Furniture Shopper Study.
+bravo,dekalb-county-school-district|area-3-elementary-star-substitute-chapel-hill-es|c1|e2,dekalb-county-school-district|area-3-elementary-star-substitute-chapel-hill-es|c1,2026-07-14,exact,employer_ack,,unknown,,email,gmail,19f6119f0dd579d3,Earlier filled notice for same school.
+bravo,micro1|ai-training-pilot-project|c1|e2,micro1|ai-training-pilot-project|c1,2026-01-12,exact,recruiter_screen,1,unknown,,email,gmail,19bb104f9bba99a6,Great work on your interview.
+bravo,nebius|director-gtm-physical-ai|c1|e2,nebius|director-gtm-physical-ai|c1,2026-07-16,exact,rejection,,unknown,,email,gmail,19f6bb84c56cd75e,
+bravo,boulevard|gtm-engineer|c1|e2,boulevard|gtm-engineer|c1,2026-06-04,exact,employer_ack,,unknown,,email,gmail,19e93396d0330980,
