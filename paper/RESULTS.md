@@ -81,8 +81,8 @@ Ladders is still absent.
 Gmail Freeze 1 extracts and Freeze 2 platform files were not recoded. Personal Gmail Q6, Q7, Q3b, and Q9 were run to exhaustion. The keeganmoody33 primary calendar was swept in 90-day blocks with no keyword filter (338 events).
 
 - Net-new `register = application` rows: **0**
-- Full application census remains **299**
-- Three new opportunity rows: Pin, Hotglue BDM, Opsin. They stay out of the 299.
+- Full application census remains **298**
+- Three new opportunity rows: Pin, Hotglue BDM, Opsin. They stay out of the 298.
 - PhrasIQ GTM Deep Dive on 2026-04-15 is now on the personal calendar. Freeze 1 had only a proposed date.
 - Interviewed applications remain **14**. Pin, Hotglue, Opsin, and The Hog interviews sit in the opportunity register.
 

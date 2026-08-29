@@ -31,7 +31,7 @@ These stay out of the application census.
 | Hotglue | BDM Role | yes, 2026-04-20 | still_open |
 | Opsin | unspecified | yes, James Pham 2026-03-13 | still_open |
 
-No ATS submission receipt exists for those three. They do not enter the 299.
+No ATS submission receipt exists for those three. They do not enter the 298.
 
 ### Calendar corroboration on existing rows
 
@@ -53,9 +53,9 @@ No ATS submission receipt exists for those three. They do not enter the 299.
 ## Census
 
 - Freeze 1 application census: 221
-- Freeze 2 full census: **299**
+- Freeze 2 full census: **298**
 - Freeze 3 net-new `register = application` rows: **0**
-- Interviewed applications: **14** (14/299)
+- Interviewed applications: **14** (14/298)
 - Opportunity-register interviews (Pin, Hotglue, Opsin, The Hog, WorkOS, and others) stay outside that rate
 
 Capture recapture was not computed. The LinkedIn file still lacks an Easy Apply versus external ATS label.
