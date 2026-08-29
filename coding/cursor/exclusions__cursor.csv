@@ -1,0 +1,46 @@
+coder_id,candidate_id,date,company,role,exclusion_reason,what_would_promote_it,evidence_system,evidence_id
+cursor,meshy-interview-prewindow,2025-06-01,Meshy,unspecified,out_of_window,A submission receipt dated on or after 2025-06-01,gmail,gth_8fa8bbcc79f30307
+cursor,graph-one-not-in-ats,2025-07-27,graph.one,unspecified,attempted_not_submitted,An ATS receipt the founder can see,gmail,gth_130b96eacec9f065
+cursor,beckhoff-incomplete-first,2025-08-07,Beckhoff Automation,Sales Engineer,attempted_not_submitted,Superseded by 2025-08-08 completed rejection thanking him for applying,gmail,gth_c4c43ebac6543f68
+cursor,gwinnett-started-expired,2026-06-08,Gwinnett County Public Schools,unspecified,attempted_not_submitted,AppliTrack submission confirmation,gmail,gth_2032ad4875645a59
+cursor,dekalb-general-expired,2026-07-23,DeKalb County School District,unspecified,attempted_not_submitted,Already have position-level filled notices as applications. General file confirmation would still help,gmail,gth_32be8996b8ef0914
+cursor,gwinnett-expire-warning,2026-07-04,Gwinnett County Public Schools,unspecified,attempted_not_submitted,Submission confirmation,gmail,gth_11a583cffff742fb
+cursor,sbga-prewindow,2025-04-11,SBGA,Remote Outside Sales Rep,out_of_window,A submission inside 2025-06-01 to 2026-08-29,gmail,gth_c689e114e0941fe1
+cursor,umicas-openai,2025-06-21,getcrate.app / Umicas,OpenAI Backend Software Engineer,unresolvable_identity,Employer-domain confirmation from OpenAI,gmail,gth_dabc46cd132a51bf
+cursor,umicas-google,2025-06-21,getcrate.app / Umicas,Google Senior Software Engineer Gemini,unresolvable_identity,Employer-domain confirmation from Google,gmail,gth_3770b36755228c64
+cursor,crate-missing-materials,2025-06-23,Crate,Software Engineering,unresolvable_identity,Employer-domain receipt,gmail,gth_73b9f98c99a2ac43
+cursor,pinterest-referral-pm,2025-06-30,Pinterest,"Product Manager II, Search",attempted_not_submitted,Submission confirmation. Referral accept said application may still be unsubmitted,gmail,gth_e9eb93833f5ab340
+cursor,pinterest-referral-apr,2025-06-28,Pinterest,Apprentice Product Researcher,attempted_not_submitted,Submission confirmation,gmail,gth_ac4c278fe3c7ffbb
+cursor,gong-gdpr,2025-07-08,Gong.io,unspecified,unresolvable_identity,Dated submission receipt,gmail,gth_a9bc41cdfddf6b61
+cursor,spot-ai-gdpr,2025-07-26,Spot AI,unspecified,unresolvable_identity,Dated submission receipt,gmail,gth_07fb922f7018f5b8
+cursor,new-relic-retention,2026-03-28,New Relic,unspecified,unresolvable_identity,Dated submission receipt,gmail,gth_99e82290d8b26754
+cursor,celonis-retention,2026-04-02,Celonis,unspecified,unresolvable_identity,Dated submission receipt,gmail,gth_3d703a46e1412abb
+cursor,saveurdays-unnamed,2026-04-11,unknown,unspecified,unresolvable_identity,Named employer and role plus submission language,gmail,gth_515966939c6fbad4
+cursor,mixmax-welcome,2025-09-04,Mixmax,unspecified,marketplace_profile,An employment application receipt. Product welcome is not an application,gmail,gth_beb7124e93244a82
+cursor,apple-card,2025-09-12,Apple Card,unspecified,marketplace_profile,Not employment,gmail,gth_3fe2a9bc11c39212
+cursor,leidos-dover-unverified,2025-09-23,Leidos Systems,Software Engineer III REQ16295,unresolvable_identity,Employer-domain receipt. Sender is eml_93bc653507a1,gmail,gth_1d79fc9cee4208fb
+cursor,dover-rippling-sem,2025-12-12,Rippling,"Software Engineering Manager, Banking",unresolvable_identity,Employer-domain receipt. Sender eml_93bc653507a1,gmail,gth_31655c2958e28390
+cursor,wellfound-podium-saved,2025-06-04,Podium,SDR,attempted_not_submitted,Wellfound application submitted receipt,gmail,gth_62004513dadf9afb
+cursor,wellfound-nomi-saved,2025-07-16,Nomi.ai,Growth Hacker,attempted_not_submitted,Wellfound application submitted receipt,gmail,gth_b2786ede1d5085b4
+cursor,exa-product-june,2025-06-12,Exa,unspecified,consulting_prospect,"This is product outreach after API signup, not employment",gmail,gth_19ce04c195e366c4
+cursor,coldiq-accelerator,2025-06-11,ColdIQ,Accelerator Program,marketplace_profile,Employment submission,gmail,gth_fb1f9d2f933f8ecd
+cursor,breakthrough-z,2025-07-08,Breakthrough Z,Clarity Call,consulting_prospect,Employment application,gmail,gth_2fbc4346a1749093
+cursor,wells-fargo-banking,2026-03-06,Wells Fargo,Clear Access Banking,marketplace_profile,Not a job application,gmail,gth_11b5eab2896d7f3d
+cursor,kimi-beta,2026-06-20,Kimi,Code Beta Program,marketplace_profile,Not employment,gmail,gth_4eb58e96e49a35dd
+cursor,alibaba-paylater,2026-06-21,Alibaba.com,Pay Later for Business,marketplace_profile,Not employment,gmail,gth_4d700ecc18af3ae8
+cursor,yc-profile-sharing,2025-10-08,Y Combinator Work at a Startup,unspecified,marketplace_profile,Dashboard export of applied roles,gmail,gth_75ea4ea59eca0ed0
+cursor,anthropic-job-alerts,2026-04-14,Anthropic,unspecified,marketplace_profile,Job alert is not an application,gmail,gth_d1b6761640fd5283
+cursor,ziprecruiter-alerts,2026-07-21,ZipRecruiter,unspecified,marketplace_profile,A completed-application receipt for a named role,gmail,gth_6a4d3c24bfcfa43a
+cursor,jobright-alerts,2025-11-18,Jobright,unspecified,marketplace_profile,Tracker export or application-submitted receipt,gmail,log-028
+cursor,jorge-gtme-calendar,2026-04-29,gtm-engineering.io,unspecified,unresolvable_identity,Artifact stating this meeting was a job process,gcal,cal_58e3b990c3e121a5
+cursor,kivira-connect,2026-04-06,kivira.health,unspecified,consulting_prospect,Submission or explicit job-interview language,gcal,cal_b8a710c6ac400259
+cursor,rocketeer-onboarding,2026-04-07,Rocketeer,unspecified,consulting_prospect,Employment application,gcal,chn54lrp98p6uta7cor62rjqah432krfe5940gr1dgn66rrd
+cursor,common-room-chilipiper,2026-05-28,Common Room,unspecified,unresolvable_identity,Purpose of meeting stated as job process plus submission,gmail,gth_b9d4242b85dd638d
+cursor,anyint-inmail,2026-06-09,unknown,unspecified,unresolvable_identity,"Named employer, role, and submission",gmail,gth_4f89ecf4c7cbd2dd
+cursor,greenhouse-unnamed-jul12,2026-07-12,unknown,GTM Engineer,unresolvable_identity,Employer name on the Greenhouse receipt,gmail,gth_4b81cb9e7d93d7a6
+cursor,talentpluto-incomplete-chase,2026-07-14,Talentpluto,unspecified,attempted_not_submitted,This chase is about an incomplete Pluto call. Workable submissions already coded as applications,gmail,gth_8c42db8841df92ac
+cursor,josh-pappas-clinics,2026-06-04,Pappas Healthtech,unspecified,consulting_prospect,Employment application,gmail,gth_92516c1c9f589417
+cursor,certn-mercor-screen,2026-08-21,Mercor,unspecified,marketplace_profile,Background screen is contract onboarding not a new application,gmail,gth_30e2ea2fdec22504
+cursor,micro1-finance-expert,2026-01-21,micro1,Finance Expert,recruiter_initiated,Submission artifact,gmail,gth_505e2213c50c65c4
+cursor,micro1-chatgpt-pool,2026-06-05,micro1,Certified Expert Pool,recruiter_initiated,Titled role submission,gmail,gth_b3bb07f0ab28b8d1
+cursor,the-hog-product-welcome,2026-06-16,The Hog,unspecified,marketplace_profile,Product signup is not an application,gmail,gth_4f900acf4573a3ad

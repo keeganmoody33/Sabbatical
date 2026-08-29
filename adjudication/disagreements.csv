@@ -1,0 +1,48 @@
+pair,match_key,field,left_value,right_value
+bravo-vs-cursor,airops|growth engineer|c1,role_lane,explicit_gtm_engineering,growth_demand_marketing
+bravo-vs-cursor,"evenup|ai adoption manager, southeast|c1",role_lane,revops_gtm_ops_strategy,other
+bravo-vs-cursor,"firstup|manager, gtm systems|c1",role_lane,revops_gtm_ops_strategy,explicit_gtm_engineering
+bravo-vs-cursor,galileo|growth engineer|c1,role_lane,explicit_gtm_engineering,growth_demand_marketing
+bravo-vs-cursor,mercor|biology & biophysics research collaborator|c1,role_lane,other,product_ai_technical
+bravo-vs-cursor,mercor|sales and marketing expert|c1,role_lane,sales_bd_partnerships,growth_demand_marketing
+bravo-vs-cursor,patch|growth engineering lead|c1,role_lane,explicit_gtm_engineering,growth_demand_marketing
+bravo-vs-cursor,vitalsource|ai enablement lead|c1,role_lane,explicit_gtm_engineering,other
+bravo-vs-cursor,bx studio|unspecified|c1,register,application,opportunity
+bravo-vs-cursor,the hog|gtm engineer|c1,register,opportunity,application
+bravo-vs-cursor,"anduril|technical operations engineer, launched effects|c1",presence,present,absent
+bravo-vs-cursor,attentive|unspecified|c1,presence,present,absent
+bravo-vs-cursor,bluejay|founding gtm|c1,presence,present,absent
+bravo-vs-cursor,exa labs|growth lead|c1,presence,present,absent
+bravo-vs-cursor,"glean|gtm engineer, marketing|c1",presence,present,absent
+bravo-vs-cursor,"ibm|manager, applied ai & gtm systems, confluent|c1",presence,present,absent
+bravo-vs-cursor,jobright.ai|product manager (early career)|c1,presence,present,absent
+bravo-vs-cursor,manifold|growth marketing manager|c1,presence,present,absent
+bravo-vs-cursor,mercor|gtm engineer|c1,presence,present,absent
+bravo-vs-cursor,montauk capital|head of commercial|c1,presence,present,absent
+bravo-vs-cursor,pindrop|unspecified|c2,presence,present,absent
+bravo-vs-cursor,pinterest|apprentice product researcher|c1,presence,present,absent
+bravo-vs-cursor,"pinterest|product manager ii, search|c1",presence,present,absent
+bravo-vs-cursor,productboard|gtm engineer|c1,presence,present,absent
+bravo-vs-cursor,sentilink|unspecified|c1,presence,present,absent
+bravo-vs-cursor,"tekion|senior manager, inside sales|c1",presence,present,absent
+bravo-vs-cursor,valsoft|gtm engineer|c1,presence,present,absent
+bravo-vs-cursor,agroknow|north america sales|c1,presence,absent,present
+bravo-vs-cursor,"anduril industries|technical operations engineer, launched effects|c1",presence,absent,present
+bravo-vs-cursor,attentive|gtm engineer|c1,presence,absent,present
+bravo-vs-cursor,classet|head of gtm|c1,presence,absent,present
+bravo-vs-cursor,crossing hurdles|head of commercial|c1,presence,absent,present
+bravo-vs-cursor,dexian|outbound sales consultant iii (remote)|c1,presence,absent,present
+bravo-vs-cursor,exa|growth lead|c1,presence,absent,present
+bravo-vs-cursor,glytec|unspecified|c1,presence,absent,present
+bravo-vs-cursor,hartleyco|founding gtm|c1,presence,absent,present
+bravo-vs-cursor,"ibm|manager, applied ai & gtm systems|c1",presence,absent,present
+bravo-vs-cursor,jobmail.io|growth lead|c1,presence,absent,present
+bravo-vs-cursor,luzmo|sdr|c1,presence,absent,present
+bravo-vs-cursor,manifold ai|growth marketing manager|c1,presence,absent,present
+bravo-vs-cursor,mercor|growth strategist|c1,presence,absent,present
+bravo-vs-cursor,smartmode ai|unspecified|c1,presence,absent,present
+bravo-vs-cursor,stellar substitute|unspecified|c1,presence,absent,present
+bravo-vs-cursor,switchyards|digital product builder|c1,presence,absent,present
+bravo-vs-cursor,talentpluto|gtm engineer|c1,presence,absent,present
+bravo-vs-cursor,tekion|senior manager inside sales|c1,presence,absent,present
+bravo-vs-cursor,"valsoft|gtm engineer, dockmaster|c1",presence,absent,present
