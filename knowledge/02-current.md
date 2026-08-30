@@ -35,16 +35,16 @@ figures that used to sit at the top of this file (247 applications, 11 interview
 
 | Lane | n | Interviewed |
 |---|---|---|
-| explicit_gtm_engineering | 87 | 10 |
-| unspecified | 36 | 2 |
-| sales_bd_partnerships | 28 | 0 |
-| growth_demand_marketing | 22 | 2 |
+| explicit_gtm_engineering | 92 | 10 |
+| sales_bd_partnerships | 31 | 0 |
+| unspecified | 25 | 2 |
+| growth_demand_marketing | 23 | 2 |
 | other | 18 | 0 |
-| sales_solutions_engineering | 15 | 0 |
-| revops_gtm_ops_strategy | 9 | 0 |
+| sales_solutions_engineering | 16 | 0 |
+| revops_gtm_ops_strategy | 10 | 0 |
 | product_ai_technical | 8 | 0 |
 
-All 14 interviews sit in three lanes. The five lanes covering the other 78 applications produced
+All 14 interviews sit in three lanes. The five lanes covering the other 83 applications produced
 none. Wilson intervals in `views/funnel_by_role_lane.csv`. Descriptive only.
 
 ## Monthly distribution
@@ -143,6 +143,10 @@ findings. The full blocklist with reasons is in `paper/RESULTS.md`.
 ## Changelog
 
 - 2026-08-29 13:37 ET: created from [S1] [S2] [S3] [S4] [S5] [S6].
+- 2026-08-30 ET, Freeze 3.1: role titles backfilled onto 11 census rows from the Jobright and LinkedIn
+  artifacts already committed here, after re-reading the challenger for what it got right. Unspecified
+  lanes 36 to 25, unspecified titles 40 to 29, explicit_gtm 87 to 92. Census, interviews and latency
+  base unchanged. See `adjudication/title_backfill.csv`.
 - 2026-08-30 ET, Freeze 3: LinkedIn formal export ingested, The Hog and BX Studio reversed to the
   application register on new evidence. 221 to 223, 13 to 14, 298 to 317, 196 to 197. Origin restated
   as three recovery tiers. See `challenge/CHALLENGE.md`.

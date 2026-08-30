@@ -80,6 +80,34 @@ So no completeness figure is published. A completeness figure with a method and 
 
 One more absence, stated plainly because it is easy to miss: **`company_stage` does not exist in this schema at all.** No cut by company size or stage is available anywhere in this dataset. That is not a suppressed cell, it is a missing instrument.
 
+## Part 1b: the field the census had and was not reading
+
+There is a second version of this failure, and it is less forgivable than the first.
+
+Forty census rows carried `role_as_listed = unspecified`. Coding them that way was correct: the
+Gmail receipt genuinely omits the role, and counting rule 8 forbids guessing one.
+
+But absent from the Gmail artifact is not the same as absent from the corpus. For **11 of those 40**
+the title was sitting in plain text in the Jobright tracker and the LinkedIn export, both committed
+in this repository. The record matcher had seen those rows, marked them `overlap`, kept the Gmail
+row wholesale, and discarded the title the platform row was carrying.
+
+The challenger is what surfaced it. It resolves titles down to 8 unrecoverable rows against this
+census's 40, and reading its resolutions carefully is what sent me back to my own artifacts.
+
+Applied at Freeze 3.1, with strict company matching and a refusal on any company carrying more than
+one platform title: unspecified role lanes fall from 36 to 25, `explicit_gtm_engineering` gains 5
+rows, and every backfilled title matches what the challenger gives independently. The census, the
+interview count and the latency base are unchanged. `application_id` is deliberately not
+regenerated, because the events tables join on it.
+
+Nineteen further titles the challenger resolves are **not** adopted. Its routes are specific, a
+contemporaneous job newsletter or a same-period LinkedIn job recommendation, and each establishes
+that the company had an opening by that name in that period. None establishes which opening the
+application was for, and a company running two openings makes the inference wrong with nothing in
+the data showing it. A platform applied-list row does not have that problem: it is a record of a
+submission, not of a posting that existed nearby.
+
 ## Part 2: the challenger
 
 ### What arrived

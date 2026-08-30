@@ -12,13 +12,13 @@ No dashes are used as punctuation in this paper. Every number traces to a named 
 
 I spent fifteen months applying for go-to-market engineering roles, then treated my own job search as a dataset and tried to establish how many applications I could actually prove. Evidence was harvested from email, calendar, and platform exports into a frozen corpus, coded independently by two language models blind to each other, and resolved in a named adjudication pass. The result is 223 applications with employer-side proof, 317 including rows visible only in platform logs, and 14 that reached an interview, a rate of 14/223.
 
-Three findings. Roughly half of all applications produced a receipt and then silence: 97/197 of the rows with an exact-dated receipt drew no response, and the median substantive response, among those that did respond, arrived in 7 days. All 14 interviews sat in three of eight role lanes, and the five lanes covering the other 78 applications produced none. Third, and most useful to anyone building a tracker: **the study could not answer the question it most wanted to answer.** Origin was captured at the time on 15 of 223 rows, recoverable afterwards on 60 more only because a platform logged them, and unrecoverable on the remaining 148. That is a failure of the instrument, and it is reproducible in almost any job-search log kept the ordinary way.
+Three findings. Roughly half of all applications produced a receipt and then silence: 97/197 of the rows with an exact-dated receipt drew no response, and the median substantive response, among those that did respond, arrived in 7 days. All 14 interviews sat in three of eight role lanes, and the five lanes covering the other 83 applications produced none. Third, and most useful to anyone building a tracker: **the study could not answer the question it most wanted to answer.** Origin was captured at the time on 15 of 223 rows, recoverable afterwards on 60 more only because a platform logged them, and unrecoverable on the remaining 148. That is a failure of the instrument, and it is reproducible in almost any job-search log kept the ordinary way.
 
 This is a single subject studied by himself: a case study, not a market study. A second, independently produced reconstruction of the same fifteen months was used to attack these numbers after they were written; the companion piece, [The Field You Cannot Recover](COMPANION.md), reports what it moved and what it failed to move.
 
 ## 1. Introduction
 
-Go-to-market engineering is a new enough job title that neither side of the hiring table agrees on what it means. In this dataset the same lane covers 36 distinct titles, from "GTM Engineer" through "Lead, Agentic Operations + GTM Engineering". Companies posting the role are still deciding what it is. People trying to enter it, most of them arriving from adjacent disciplines, are guessing at what to call themselves.
+Go-to-market engineering is a new enough job title that neither side of the hiring table agrees on what it means. In this dataset the same lane covers 37 distinct titles, from "GTM Engineer" through "Lead, Agentic Operations + GTM Engineering". Companies posting the role are still deciding what it is. People trying to enter it, most of them arriving from adjacent disciplines, are guessing at what to call themselves.
 
 There is no public dataset on how this role actually hires. Aggregate job-board statistics do not resolve to a funnel, and the funnel is what a candidate or a hiring team needs. In that absence, one carefully instrumented log is worth something, provided it is honest about being one.
 
@@ -87,20 +87,22 @@ All 14 interviews sit in three of eight lanes.
 
 | Role lane | n | Interviewed | Rate | Wilson 95 percent |
 |---|---|---|---|---|
-| explicit_gtm_engineering | 87 | 10 | 10/87 | 0.064 to 0.199 |
-| unspecified | 36 | 2 | 2/36 | 0.015 to 0.181 |
-| growth_demand_marketing | 22 | 2 | 2/22 | 0.025 to 0.278 |
-| sales_bd_partnerships | 28 | 0 | 0/28 | 0.000 to 0.121 |
+| explicit_gtm_engineering | 92 | 10 | 10/92 | 0.060 to 0.189 |
+| sales_bd_partnerships | 31 | 0 | 0/31 | 0.000 to 0.110 |
+| unspecified | 25 | 2 | 2/25 | 0.022 to 0.250 |
+| growth_demand_marketing | 23 | 2 | 2/23 | 0.024 to 0.268 |
 | other | 18 | 0 | 0/18 | 0.000 to 0.176 |
-| sales_solutions_engineering | 15 | 0 | 0/15 | 0.000 to 0.204 |
-| revops_gtm_ops_strategy | 9 | 0 | 0/9 | 0.000 to 0.299 |
+| sales_solutions_engineering | 16 | 0 | 0/16 | 0.000 to 0.194 |
+| revops_gtm_ops_strategy | 10 | 0 | 0/10 | 0.000 to 0.278 |
 | product_ai_technical | 8 | 0 | 0/8 | 0.000 to 0.324 |
 
-Five lanes covering 78 applications produced no interviews at all. That is the strongest pattern in the dataset, and the intervals show how much weight it can bear: the upper bound on the zero lanes runs from 0.12 to 0.32, so "zero" is consistent with a true rate near the explicit-GTM rate in the smaller lanes. What the data supports is that adjacent-title applications did not visibly outperform on-title ones, not that they cannot.
+Five lanes covering 83 applications produced no interviews at all. That is the strongest pattern in the dataset, and the intervals show how much weight it can bear: the upper bound on the zero lanes runs from 0.11 to 0.32, so "zero" is consistent with a true rate near the explicit-GTM rate in the smaller lanes. What the data supports is that adjacent-title applications did not visibly outperform on-title ones, not that they cannot.
 
 Within explicit GTM engineering, titles carrying seniority or founding language show the highest rate in the set, 3/7, with a Wilson interval of 0.158 to 0.750. The interval is the finding. A 43 percent point estimate on seven rows is not a result, and quoting it without the interval is quoting noise.
 
 The whole interview set is small enough to print, which is itself the honest way to present it. Ten of the fourteen titles carry GTM or go-to-market language.
+
+Two of the titles below were not in the Gmail receipt at all. They were recovered at Freeze 3.1 from platform exports already in the corpus, which is described in the companion piece.
 
 | Company | Title as listed | Lane | Terminal outcome |
 |---|---|---|---|
@@ -171,7 +173,7 @@ Three things in this data are actionable from the employer side.
 
 **Half your applicants hear nothing after the receipt.** Here 97/197 applications produced an automated receipt and then silence. That is one candidate's view of many companies, so read it as a market norm rather than an indictment of any firm. The norm is the opportunity: the median substantive response arrived in 7 days, p75 19. A team that reliably responds inside a week is not competing against a high bar.
 
-**Your title is doing recruiting work you have not accounted for.** This dataset contains 36 distinct titles inside a single role lane. When the same job is posted as GTM Engineer, Founding GTM, Lead Agentic Operations, and Go-to-Market Engineer, applicants cannot search for it and cannot tell whether they are qualified. The internal cost is a smaller and worse-sorted pipeline. The external cost is that nobody can build the labor-market data that would tell you what to pay.
+**Your title is doing recruiting work you have not accounted for.** This dataset contains 37 distinct titles inside a single role lane. When the same job is posted as GTM Engineer, Founding GTM, Lead Agentic Operations, and Go-to-Market Engineer, applicants cannot search for it and cannot tell whether they are qualified. The internal cost is a smaller and worse-sorted pipeline. The external cost is that nobody can build the labor-market data that would tell you what to pay.
 
 **Distinguish the acknowledgment from the response in your own metrics.** That choice moved this study's median from 5.5 days to 7 and doubled the same-day share. If your ATS reports time-to-first-touch counting the auto-acknowledgment, your reported responsiveness is measuring your mail server.
 
@@ -179,7 +181,7 @@ Three things in this data are actionable from the employer side.
 
 I came to this from a biochemistry research background, so this section is the one I would have wanted.
 
-**Apply on-title, and expect the adjacent lanes to be quieter.** Every interview in this log came from three of eight lanes. The other five, covering 78 of 223 applications across sales, solutions engineering, RevOps, product-adjacent, and miscellaneous titles, produced none. The intervals do not permit "those lanes do not work". They do support a resource-allocation reading: the adjacent-title strategy did not visibly outperform here, and it consumed more than a third of the applications.
+**Apply on-title, and expect the adjacent lanes to be quieter.** Every interview in this log came from three of eight lanes. The other five, covering 83 of 223 applications across sales, solutions engineering, RevOps, product-adjacent, and miscellaneous titles, produced none. The intervals do not permit "those lanes do not work". They do support a resource-allocation reading: the adjacent-title strategy did not visibly outperform here, and it consumed more than a third of the applications.
 
 **Expect a low rate and budget accordingly.** 14/223 is the honest headline. Most applications end in silence rather than rejection, so a pipeline built on applications alone gives very little to steer on. Half of what you send never resolves into anything you can learn from.
 
