@@ -13,10 +13,54 @@ punctuation in this file.
 
 > **Superseded in part by `challenge/SUPPLEMENTARY-LEDGER.md`.** The comparison here is at company
 > grain, which was too coarse to adjudicate anything. The supplementary ledger redoes it at row
-> grain, a full outer join over all 353 workbook records and all 329 repository records, with a
-> disposition and a reason on every row. Where the two disagree, the row-grain figures are the ones
-> to quote: 257 of 353 workbook records agree outright, 3 records are genuinely workbook-only rather
-> than 20 companies, and 41 census records are missing from the workbook rather than 27 companies.
+> grain, a full outer join with a disposition and a reason on every row. It is also reconciled
+> against the **refined 343-record workbook**, where this file still reads the earlier 353-record
+> version. Where the two disagree, the row-grain figures against 343 are the ones to quote: 256 of
+> 343 workbook records agree outright, 5 records are genuinely workbook-only rather than 20
+> companies, and 50 census records are missing from the workbook rather than 27 companies.
+
+## The finding this exchange produced: two 14s that are not the same 14
+
+The refined workbook added an `Interview & Opportunity Register` sheet. Counting its rows with at
+least one formal round gives **14 interviews**. This census also derives **14**. The totals match
+exactly.
+
+They are not the same fourteen. They agree on **eight**.
+
+| Both | This census only | Workbook only |
+|---|---|---|
+| Beautiful.ai | HartleyCo | Glytec |
+| Dagster Labs | Hypergen | Mixmax |
+| Every | Orchestry | Pinn |
+| Great Question | RevSpring | Mercor |
+| Hologram | TestGorilla | Opsin Security |
+| Pearl | jobmail.io | Hotglue |
+| PhrasIQ | | |
+| The Hog | | |
+
+This is the most useful thing in the exchange, and it would have been invisible at the level of
+totals. Two independent reconstructions of the same fifteen months, both reporting 14 interviews,
+agreeing on 8 of them. **A matching headline is not agreement.** Anyone comparing two funnel
+datasets by their summary rows would have concluded these instruments corroborate each other.
+
+The six on each side are not symmetric, and the reasons are known:
+
+- **Workbook only.** Glytec and Mercor are `register_disagreement`: this repository holds both in
+  the opportunity register because no submission artifact establishes that the applicant applied.
+  Opsin Security is `declined_opportunity_register` on the same rule. Mixmax, Pinn and Hotglue are
+  `open_workbook_only`, records this corpus does not hold at all, and Hotglue's stated origin is
+  YC Work at a Startup, which is **unmet stop condition 6**.
+- **This census only.** Six interviews the workbook's register does not carry, each derived from a
+  coded interview event on a census row.
+
+So four of the six workbook-only interviews are the two-register rule working as designed, and two
+of them plus Hotglue are genuine coverage this study never retrieved. None of the six is a
+fabrication on either side.
+
+**What this costs the headline.** Nothing, and that is the point worth stating plainly. The rate
+stays 14/223 because every one of the six census-only interviews sits on a census row and none of
+the six workbook-only ones does. The two instruments arrive at the same number by different routes,
+and the agreement of the totals is a coincidence rather than a corroboration.
 
 ## What the challenger is, and what it is not
 

@@ -110,3 +110,46 @@ Stop condition 3 is now Met for the applied list and still Unmet for the channel
 The protocol restricts two-source capture recapture to LinkedIn rows submitted through an external ATS, not Easy Apply. Freeze 2 has LinkedIn pages 1 to 10 without that channel label. Naive Lincoln Petersen on Gmail overlap versus Easy Apply is a misuse and was not run.
 
 The overlap stratum is unmeasured. Completeness is therefore not reported as a percentage.
+
+## Four redaction defects wrote real names into a public repository
+
+Found by auditing the committed extracts under `challenge/`, not reported by anyone. Every one was
+introduced by this repository's own code. They are recorded here in full because the failure mode
+is the interesting part: each fix was individually reasonable and each created the next hole.
+
+1. **The shape test required two to three tokens.** A `Contacts / Rounds` cell reading
+   `Clayton (1 interview)` reduces to one word, which no rule matched. Thirteen interviewer given
+   names shipped in the clear. Inside a column that holds people by definition, the absence of a
+   surname is not evidence that a word is not a person.
+2. **Parentheses were stripped after splitting, not before.** A semicolon inside the parentheses of
+   `Eddie (2 interviews; final was 1 hour)` split it into fragments no shape test could judge. `+`
+   was not a separator at all, so `Gurjap Sandhu + Kofi Boamah O.` stayed one six-token fragment and
+   two full names survived.
+3. **The organization guard matched raw substrings in both directions.** The workbook holds a
+   company called `Vi`. That two-letter string is inside `Teresa Vitale` and `Vikas CV`, so the
+   guard protected both names from redaction. The reverse direction is now gated at four characters.
+4. **`UNKNOWN — <person>'s company` placeholders were treated as company names.** `Jacob Bowman` was
+   shielded from redaction by a string built out of his own name.
+
+Two further problems surfaced while fixing these, both of them over-redaction rather than leakage.
+Redacting bare given names everywhere destroyed `Austin` the city inside a role title and two
+locations, so given names are now scoped to columns that are not a company, role, title, location or
+join key, while full names stay global. And the organization guard could only see companies the
+workbook **kept**: `Lumenalta`, `Proofpoint` and `Designit` were dropped from its ledger, survive
+only in a prose note about their removal, and were hashed as people until the guard was seeded from
+this repository's own census, which still holds all three.
+
+**What is now in place.** A review gate runs on the redacted text before anything is written. Any
+capitalized word that survives redaction in a person-bearing column and appears on no list fails the
+extraction with the list printed. The single-token prose case cannot be settled by shape, because
+`Patrick originated the opportunity` and `Community post is the source` have identical form, so it
+is settled by review once and recorded in two named sets. The previous version made that call
+silently, which is precisely how the names shipped.
+
+The extracts were audited in both directions after the fix: no person in the clear, and no company
+or job title destroyed. No published figure moved. `challenge/supplementary_ledger.csv` changed only
+because two redacted join keys changed, with every disposition count identical.
+
+**What this does not fix.** The redaction is a best-effort heuristic over free text, not a
+guarantee. It is now loud instead of silent, which is a real improvement and not the same as being
+correct. The workbook itself remains uncommitted for this reason.

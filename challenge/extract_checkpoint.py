@@ -69,6 +69,48 @@ KNOWN_NON_PERSONS = {
     "New York", "San Francisco", "CRO idea",
 }
 
+# Single capitalized words that are never a given name in this workbook. Kept
+# separate from KNOWN_NON_PERSONS because the single-token rule is the loose one
+# and needs its own stop list.
+NON_NAME_WORDS = {
+    "unknown", "none", "no", "n/a", "na", "tbd", "various", "multiple", "yes",
+    "unresolved", "pending", "unnamed", "unidentified", "recruiter", "founder",
+    "ceo", "cto", "cro", "vp", "interviewer", "interview", "interviews",
+    "contact", "contacts", "round", "rounds", "self", "team", "panel", "hiring",
+    "manager", "director", "head", "lead", "unclear", "other",
+}
+
+# Given names that appear ONLY in prose, where no split rule isolates them and a
+# single capitalized word cannot be told from a sentence-initial common word.
+# This list is the output of the review guard below, classified by hand, and the
+# guard fails the extraction when it finds a candidate that is on neither list.
+# A name here is redacted wherever it appears, in any column.
+PROSE_GIVEN_NAMES = {
+    "Patrick", "Kellen", "Eoin",
+}
+
+# Capitalized words seen in this workbook's prose that are not people. Reviewed
+# once, recorded here so the guard stays quiet about them and loud about
+# anything new. Three kinds: sentence words, company names that must survive
+# redaction because the study is about companies, and the tools the workbook
+# names as evidence sources.
+PROSE_NON_NAMES = {
+    # Sentence words.
+    "Calendar", "Community", "Company", "Completed", "Contact", "Do", "First",
+    "Interview", "Interviewer", "Job", "Not", "One", "Paid", "Real", "Take",
+    "Track", "Two", "No", "Second", "Prior", "Existing", "Exact", "Title",
+    "Preserve", "Three", "Both", "Only", "Its", "The", "This", "That", "There",
+    "These", "Where", "When", "While", "After", "Before", "Because", "If",
+    "Alignment", "Cybersecurity", "Direct", "Eight", "Engineer", "Facilitated",
+    "Fifteen", "Good", "Met", "Receipts", "Work",
+    # Companies. A word here is a company this study reports on, and hashing it
+    # would destroy the finding rather than protect anyone.
+    "Apollo", "Beautiful", "Blackthorn", "Cargo", "Kivira", "Morph", "Numeric",
+    "Pin",
+    # Tools and platforms the workbook cites as evidence sources.
+    "Ashby", "Gem", "Gmail", "Jobright", "Wellfound", "Zoom",
+}
+
 # Tokens that mark an organization or a job title rather than a person. Used
 # ONLY by the prose harvest, which is a heuristic net over free text. The
 # explicit person columns are not filtered this way: those hold people by
@@ -82,6 +124,26 @@ ORG_TOKENS = {
     "data", "software", "media", "digital", "consulting", "recruiting",
     "talent", "startup", "cafe", "café", "team", "studio", "collective",
 }
+
+
+def load_csv_column(relative: str, columns: tuple[str, ...]) -> set[str]:
+    """Values from named columns of a committed CSV, for the organization guard.
+
+    Returns empty when the file is absent rather than failing: the extractor must
+    still run on a fresh checkout that has not built the census yet. Losing this
+    source over-redacts, which is the safe direction.
+    """
+    path = ROOT / relative
+    if not path.is_file():
+        return set()
+    values: set[str] = set()
+    with path.open(newline="", encoding="utf-8") as handle:
+        for row in csv.DictReader(handle):
+            for column in columns:
+                value = (row.get(column) or "").strip()
+                if value:
+                    values.add(value)
+    return values
 
 
 def person_pointer(name: str) -> str:
@@ -160,7 +222,15 @@ def looks_like_person(part: str, organizations: set[str]) -> bool:
         return False
     # Substring rather than equality: "Atlanta Public Schools" must be protected
     # by an organization recorded as "Atlanta Public Schools, GA".
-    if any(part in org or org in part for org in organizations):
+    #
+    # The reverse direction is length-gated. The workbook holds a company called
+    # "Vi", and an ungated `org in part` test made that two-letter string block
+    # every name containing it: "Teresa Vitale" and "Vikas CV" both shipped in
+    # the clear because of it. Four characters is the same floor `company_key`
+    # uses before it stops stripping.
+    if any(part in org for org in organizations):
+        return False
+    if any(org in part for org in organizations if len(org) >= 4):
         return False
     # Applied to BOTH harvests. The explicit columns were meant to hold people
     # only, but the workbook puts institutions in them too: four school
@@ -171,7 +241,62 @@ def looks_like_person(part: str, organizations: set[str]) -> bool:
     return True
 
 
-def build_person_roster(wb) -> dict[str, str]:
+def looks_like_given_name(part: str, organization_words: set[str]) -> bool:
+    """Shape test for a bare first name, used ONLY in explicit person columns.
+
+    `looks_like_person` requires two tokens, because in free text a lone
+    capitalized word is far more often a sentence opener than a person. Inside a
+    column headed `Contacts / Rounds` that reasoning inverts: a lone capitalized
+    word there is a person by default, and requiring a surname leaked thirteen
+    real interviewer names into a public repository.
+
+    Organizations are excluded by WORD rather than by substring. Substring
+    matching blocks "Heath" because the corpus holds "Solv Health", and a
+    blocked name is a name shipped in the clear.
+    """
+    if " " in part or not part:
+        return False
+    if not part[:1].isupper() or part.isupper():
+        return False
+    # Letters, apostrophes and hyphens only. Stops "2025", "1x" and "per_ab12cd".
+    if not re.fullmatch(r"[A-Z][A-Za-z'’\-]+", part):
+        return False
+    lowered = part.lower()
+    if lowered in NON_NAME_WORDS or lowered in ORG_TOKENS:
+        return False
+    if part in KNOWN_NON_PERSONS:
+        return False
+    if lowered in organization_words:
+        return False
+    return True
+
+
+def review_candidates(texts: list[str], organization_words: set[str]) -> set[str]:
+    """Capitalized words that survived redaction and nothing has accounted for.
+
+    The single-token prose case cannot be decided by shape: "Patrick originated
+    the opportunity" and "Community post is the source" are the same shape. So it
+    is decided by review, once, and this guard makes the review mandatory.
+
+    It runs over the REDACTED text, not the source. What matters is what actually
+    ships, and a name that the roster already replaced needs no review. Scanning
+    the input instead flags every name the redaction handled correctly, which
+    buries the real leaks in noise.
+    """
+    seen: set[str] = set()
+    for text in texts:
+        for word in re.findall(r"\b[A-Z][a-z]{2,}\b", text):
+            if word in PROSE_GIVEN_NAMES or word in PROSE_NON_NAMES:
+                continue
+            if word.lower() in organization_words:
+                continue
+            if word.lower() in NON_NAME_WORDS or word.lower() in ORG_TOKENS:
+                continue
+            seen.add(word)
+    return seen
+
+
+def build_person_roster(wb) -> tuple[dict[str, str], set[str], list[str]]:
     """Names to redact, gathered from the workbook rather than hardcoded.
 
     Two harvests with different rules.
@@ -196,10 +321,33 @@ def build_person_roster(wb) -> dict[str, str]:
         _, rows = sheet_rows(wb, sheet)
         for row in rows:
             value = clean(row.get(column))
-            if value:
+            # `UNKNOWN — Jacob Bowman's company` is not a company name, it is a
+            # description of a company nobody could identify, and several of them
+            # are built out of the person's own name. Admitting those to the
+            # organization set lets a name protect itself from redaction, which
+            # is exactly how Jacob Bowman shipped in the clear.
+            if value and not value.startswith("UNKNOWN"):
                 organizations.add(value)
 
+    # This repository's own company names count as organizations too. The
+    # workbook's Company column only lists companies it KEPT, so every company it
+    # dropped is invisible to the guard: Lumenalta, Proofpoint and Designit were
+    # removed from its ledger, appear only in a prose note about their removal,
+    # and were hashed as people. This census still holds all three, so it can say
+    # what they are.
+    for row in load_csv_column("adjudication/applications__full_census.csv", ("company_canonical", "company_as_listed")):
+        organizations.add(row)
+
+    # Word-level view of the same set, for the single-token test. See
+    # looks_like_given_name for why substring matching is wrong there.
+    organization_words = {w.lower().strip(".,()") for org in organizations for w in org.split()}
+
     roster: set[str] = set()
+    # Given names of people confirmed by an explicit person column. Prose refers
+    # to them by first name only, "the message to Andrew", "Jorge was a TA", and
+    # the full-name roster never fires on those.
+    given: set[str] = set()
+    person_texts: list[str] = []
 
     for sheet, column in (
         ("LinkedIn Job Threads", "Person"),
@@ -211,19 +359,39 @@ def build_person_roster(wb) -> dict[str, str]:
         _, rows = sheet_rows(wb, sheet)
         for row in rows:
             value = clean(row.get(column))
-            # Parentheses are stripped BEFORE splitting, so "Claire (2); David
-            # Lou (1)" cannot produce the unbalanced fragment "Claire (2".
+            person_texts.append(value)
+
+            # Parenthetical content is removed from the WHOLE value before any
+            # split. Splitting first breaks on separators that live inside the
+            # parentheses: "Eddie (2 interviews; final was 1 hour)" split on `;`
+            # yields "Eddie (2 interviews", an unbalanced fragment that no shape
+            # test matches, and the name ships in the clear.
+            # `+` is a separator too. Without it "Gurjap Sandhu + Kofi Boamah O."
+            # stays one six-token fragment that no shape test matches, and two
+            # full names ship in the clear.
+            for raw in re.split(r"→|/|;|,|\+|\band\b", re.sub(r"\([^)]*\)", " ", value)):
+                candidate = " ".join(raw.split())
+                if looks_like_person(candidate, organizations):
+                    roster.add(candidate)
+                    given.add(candidate.split()[0])
+                elif looks_like_given_name(candidate, organization_words):
+                    # A bare first name. The column says it is a person, so the
+                    # absence of a surname is not evidence that it is not one.
+                    # It joins the given set, not the global one: a lone name is
+                    # ambiguous outside a person column.
+                    given.add(candidate)
+
+            # The ORIGINAL forms too. "Jim (Boris) Ryss" reduces to "Jim Ryss",
+            # and rostering only the reduction leaves the original written out in
+            # full, which is how a real name shipped unredacted once already.
             for raw in re.split(r"→|/|;|,|\band\b", value):
-                # Two forms are rostered. The stripped form is what the shape
-                # test can judge; the ORIGINAL is what actually appears in the
-                # text. "Jim (Boris) Ryss" reduces to "Jim Ryss", and rostering
-                # only that leaves the original written out in full, which is
-                # how a real name shipped unredacted in the previous version.
-                stripped = " ".join(re.sub(r"\([^)]*\)", " ", raw).split())
                 original = " ".join(raw.split())
-                if looks_like_person(stripped, organizations):
-                    roster.add(stripped)
-                    if original != stripped and "(" in original:
+                if "(" in original and ")" in original:
+                    inner = " ".join(re.sub(r"\([^)]*\)", " ", original).split())
+                    if inner and (
+                        looks_like_person(inner, organizations)
+                        or looks_like_given_name(inner, organization_words)
+                    ):
                         roster.add(original)
 
     prose_name = re.compile(r"\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,2}\b")
@@ -237,19 +405,59 @@ def build_person_roster(wb) -> dict[str, str]:
             continue
         _, rows = sheet_rows(wb, sheet)
         for row in rows:
-            for candidate in prose_name.findall(clean(row.get(column))):
+            value = clean(row.get(column))
+            person_texts.append(value)
+            for candidate in prose_name.findall(value):
                 candidate = " ".join(candidate.split())
                 if looks_like_person(candidate, organizations):
                     roster.add(candidate)
+                    given.add(candidate.split()[0])
 
-    return {name: person_pointer(name) for name in sorted(roster, key=len, reverse=True)}
+    # Reviewed single-token names from prose, where shape cannot decide.
+    given |= PROSE_GIVEN_NAMES
+    # A given name is only kept when it is not also a company word, so a person
+    # called Every cannot take the company Every out of the data with them.
+    given = {g for g in given if g.lower() not in organization_words}
+
+    return (
+        {name: person_pointer(name) for name in sorted(roster, key=len, reverse=True)},
+        {name: person_pointer(name) for name in sorted(given, key=len, reverse=True)},
+        organization_words,
+        person_texts,
+    )
 
 
-def redact(text: str, roster: dict[str, str]) -> str:
-    """Replace every rostered personal name with its stable pointer."""
+def is_structural_column(header: str) -> bool:
+    """True for columns holding a company, role, location or join key.
+
+    Bare given names are NOT redacted in these. "Austin" is an interviewer at
+    Every and also the city in "SDR Manager (Austin; relocation available)" and
+    in two Jobright locations. Redacting the given name everywhere hashes the
+    city out of a role title, which destroys data to protect nobody, since the
+    person is already covered wherever they are actually named.
+
+    Full names stay global. "Teresa Vitale" is distinctive enough to redact
+    anywhere it appears; "Austin" is not.
+    """
+    lowered = header.strip().lower()
+    if lowered.endswith("key"):
+        return True
+    return any(word in lowered for word in ("company", "role", "title", "location"))
+
+
+def redact(text: str, roster: dict[str, str], given: dict[str, str] | None = None) -> str:
+    """Replace every rostered personal name with its stable pointer.
+
+    `given` holds bare first names and is passed only for columns where a lone
+    capitalized word means a person. See is_structural_column.
+    """
     for name, pointer in roster.items():
         if name and name in text:
             text = text.replace(name, pointer)
+    for name, pointer in (given or {}).items():
+        # Word-bounded: without it "Chris" rewrites the middle of "Christina"
+        # and leaves a pointer glued to a name fragment.
+        text = re.sub(rf"\b{re.escape(name)}\b", pointer, text)
     # Residual pattern: "Recruiter outbound: Firstname Lastname / Company".
     # Catches names that never appear in a dedicated person column.
     def _sub(match: re.Match) -> str:
@@ -264,14 +472,21 @@ def redact(text: str, roster: dict[str, str]) -> str:
     )
 
 
-def write_csv(path: Path, header: list[str], rows: list[dict], roster: dict[str, str]) -> None:
+def write_csv(
+    path: Path,
+    header: list[str],
+    rows: list[dict],
+    roster: dict[str, str],
+    given: dict[str, str],
+) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     fields = [h for h in header if h]
+    scoped = {f: ({} if is_structural_column(f) else given) for f in fields}
     with path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields, extrasaction="ignore")
         writer.writeheader()
         for row in rows:
-            writer.writerow({f: redact(clean(row.get(f)), roster) for f in fields})
+            writer.writerow({f: redact(clean(row.get(f)), roster, scoped[f]) for f in fields})
     print(f"wrote {path.relative_to(ROOT)} ({len(rows)} rows)")
 
 
@@ -324,15 +539,35 @@ def main() -> int:
         )
 
     wb = load_workbook(path)
-    roster = build_person_roster(wb)
-    print(f"redacting {len(roster)} personal names to per_ pointers")
+    roster, given, organization_words, person_texts = build_person_roster(wb)
+    print(
+        f"redacting {len(roster)} personal names to per_ pointers, "
+        f"plus {len(given)} bare given names in person-bearing columns only"
+    )
+
+    # Review gate. Runs on the redacted text and BEFORE anything is written, so a
+    # failure leaves no half-redacted CSVs behind for the next run to be judged
+    # against.
+    unclassified = review_candidates(
+        [redact(text, roster, given) for text in person_texts], organization_words
+    )
+    if unclassified:
+        raise SystemExit(
+            "Redaction review required. These capitalized words survive redaction in\n"
+            "person-bearing columns and are on no list, so the extractor cannot tell\n"
+            "whether they are people. Classify every one into PROSE_GIVEN_NAMES\n"
+            "(redact it) or PROSE_NON_NAMES (leave it), then re-run.\n\n"
+            "  " + "\n  ".join(sorted(unclassified)) + "\n\n"
+            "Nothing was written. Failing here is the point: the previous version made\n"
+            "this call silently and shipped real names into a public repository."
+        )
 
     for sheet, destination in SHEETS.items():
         if sheet not in wb.sheetnames:
             print(f"skipping {sheet}, absent from this workbook version")
             continue
         header, rows = sheet_rows(wb, sheet)
-        write_csv(destination, header, rows, roster)
+        write_csv(destination, header, rows, roster, given)
 
     return 0
 
