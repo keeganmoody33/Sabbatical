@@ -32,10 +32,15 @@ corpus is frozen and the coder CSVs are frozen, so a re-run that moves a byte me
 pipeline is not deterministic or something changed without being logged. A census that cannot be
 reproduced cannot be defended.
 
-A file that did not exist before splits two ways. If git does not track it, it is `created`, which is
-what a first run of a new view looks like. If git **does** track it, it is `RESTORED` and the run
-fails: a committed output missing before the run means the checkout was incomplete, so regenerating
-it verifies nothing. There was nothing to compare against.
+A file that did not exist before splits two ways, decided by whether **HEAD** carries the path. If it
+does not, the file is `created`, which is what a first run of a new view looks like. If HEAD does
+carry it, the file is `RESTORED` and the run fails: a committed output missing before the run means
+the checkout was incomplete, so regenerating it verifies nothing. There was nothing to compare
+against.
+
+HEAD rather than the index, deliberately. `git ls-files` reads the index, so `git rm` would take the
+path out of it and quietly restore the hole this check exists to close. A staged deletion cannot
+change what HEAD holds.
 
 When a change is intended, run `make run` (`--write`), then log it in the `knowledge/protocol.md`
 changelog with a date and a reason and disclose it in `paper/DEFECTS.md`. That rule is at the head

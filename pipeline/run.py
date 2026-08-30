@@ -132,19 +132,27 @@ def digest(path: Path) -> str | None:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def tracked_in_git(rel: str) -> bool:
-    """True when the path is committed. Distinguishes a genuinely new output
+def committed_at_head(rel: str) -> bool:
+    """True when HEAD carries this path. Distinguishes a genuinely new output
     from a committed one that is missing because the checkout is incomplete.
 
     Without this, deleting a committed output and running check mode passes:
     the stage regenerates the file, it is classified as `created`, and
     verification reports success on a tree that never contained the thing being
-    verified. Returns False if git is unavailable, which degrades to the old
-    behaviour rather than failing a run for the absence of a tool.
+    verified.
+
+    HEAD rather than the index, deliberately. `git ls-files` reads the index, so
+    `git rm` removes the path from it and the check silently reverts to the
+    behaviour this function exists to prevent. The question being asked is
+    whether the committed state holds this file, and only HEAD answers that.
+    A staged deletion cannot change it.
+
+    Returns False if git is unavailable or there is no HEAD yet, which degrades
+    to the old behaviour rather than failing a run for the absence of a tool.
     """
     try:
         result = subprocess.run(
-            ["git", "ls-files", "--error-unmatch", "--", rel],
+            ["git", "cat-file", "-e", f"HEAD:{rel}"],
             cwd=ROOT,
             capture_output=True,
             text=True,
@@ -201,7 +209,7 @@ def main() -> int:
     # A committed output that was missing before the run is an incomplete
     # checkout, not a new view. Regenerating it and calling that success would
     # verify a tree that never held the file.
-    restored = [p for p in absent_before if tracked_in_git(p)]
+    restored = [p for p in absent_before if committed_at_head(p)]
     created = [p for p in absent_before if p not in restored]
     changed = [p for p in after if before[p] is not None and before[p] != after[p]]
     missing = [p for p in after if after[p] is None]
