@@ -59,4 +59,6 @@ Erika as a spelling returned zero events. The Pin hiring contact is Erica.
 
 TrueRestore and TrueBuilt returned zero calendar events under those names. The TrueBuilt GTM project lived in Gmail, not as a surviving calendar event after cancel.
 
+The Kiln, Giorgio Zanella, Mathias Powell, and GTME Intro returned zero calendar events. 2026-03-04 holds only Cold Outbound Masterclass (`cal_c5b57b854c64fe70`). Patrick Spychalski appears 2025-10-21 as Clay Club Atlanta, which is not a Kiln interview. The LinkedIn thread says Keegan sent a calendar invite that day. That event is not in this sweep.
+
 Q8c is **done** on the primary calendar.

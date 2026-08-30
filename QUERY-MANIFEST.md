@@ -4,7 +4,7 @@ Tracks every retrieval query against the study window 2025-06-01 to 2026-08-29. 
 
 Account for logs 001–021: keeganmoody33@gmail.com (prior run).
 Account for logs 022–029: 33@lecturesfrom.com (Freeze 1).
-Account for logs 030–035: keeganmoody33@gmail.com after the personal mailbox was connected (Freeze 3).
+Account for logs 030–036: keeganmoody33@gmail.com after the personal mailbox was connected (Freeze 3).
 
 | id | source | query | window | status | threads | logs |
 |---|---|---|---|---|---|---|
@@ -30,6 +30,8 @@ Account for logs 030–035: keeganmoody33@gmail.com after the personal mailbox w
 | Q9 | Gmail keeganmoody33 | same | full window | **done**, 178 unique threads | 178 | 032 |
 | Q10 | Gmail 33@lecturesfrom | aggregator channels | full window | **done**, zero threads | 0 | 026 |
 | Q10 | Gmail keeganmoody33 | same | full window | **blocked**, Q3 already covered most of this set on that account | 163 | 014–017 |
+| Kiln | Gmail keeganmoody33 | thekiln.com, Zanella, Spychalski, Powell, GTME Intro | full window | **done**, 0 Kiln process mail | 0 process | 036 |
+| Kiln | LinkedIn screenshots | GTME Intro thread, user-supplied | 2026-03-04 | transcribed, mailbox hashed | 1 thread | linkedin/gtme-intro-the-kiln.md |
 
 ## Stop rule
 

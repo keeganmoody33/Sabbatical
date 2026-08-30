@@ -6,7 +6,8 @@ Frozen 2026-08-29 ET for independent coding. Every coder receives this set. A co
 |---|---|---|---|---|
 | Gmail keeganmoody33 sweep, logs 001–021 | md | 2025-06-01 to 2026-08-29, queries Q1–Q5, Q3, Q4, Q7 page 1 | 994 threads | 2026-08-29 |
 | Gmail 33@lecturesfrom sweep, logs 022–029 | md | same window, Q6 Q7 Q3b Q9 Q10 plus identity check | 177 threads + account notes | 2026-08-29 |
-| Gmail keeganmoody33 remainder, logs 030–035 | md | Q7 from start, Q6, Q9, Q3b, pressure-test names | Q7 195 unique threads; Q6 3; Q9 178; Q3b 183 | 2026-08-29 Freeze 3 |
+| Gmail keeganmoody33 remainder, logs 030–036 | md | Q7 from start, Q6, Q9, Q3b, pressure-test names, The Kiln | Q7 195 unique threads; Q6 3; Q9 178; Q3b 183; Kiln log 036 | 2026-08-30 Freeze 3 addendum |
+| LinkedIn GTME Intro (The Kiln) | md transcription | two user screenshots, mailbox redacted | 1 thread, 2026-03-04 | 2026-08-30 |
 | Google Calendar keeganmoody33 primary | csv | same window, 90-day blocks, no keyword filter | 338 events | 2026-08-29 Freeze 3 |
 | Google Calendar 33@lecturesfrom | csv | same window, 90-day blocks, no keyword filter | 31 events | 2026-08-29 |
 | Google Calendar transferred keegan@lecturesfrom | md | same window | 0 events | 2026-08-29 |
@@ -19,7 +20,7 @@ Frozen 2026-08-29 ET for independent coding. Every coder receives this set. A co
 
 ## Retrieval is not coding
 
-Logs 001–035 are artifacts. They contain retriever notes. Coders treat subject, sender, date, hashed `thread_id`, and quoted snippets as observations. Retriever notes are not coded as facts. If a note asserts a count, ignore the count.
+Logs 001–036 are artifacts. They contain retriever notes. Coders treat subject, sender, date, hashed `thread_id`, and quoted snippets as observations. Retriever notes are not coded as facts. If a note asserts a count, ignore the count.
 
 ## Redaction
 
@@ -36,4 +37,4 @@ Git history on this branch before the redaction commit still contains raw identi
 
 ## Freeze rule
 
-Freeze 1 (Gmail and Calendar) was coded independently before these platform files existed. Freeze 2 adds the LinkedIn and Jobright CSVs without recoding Gmail. Freeze 3 adds personal Gmail remainder and the keeganmoody33 primary calendar without recoding Freeze 1 or Freeze 2. A coder who treats a later freeze as the only corpus is running a different study. Ladders and YC remain outside all three freezes.
+Freeze 1 (Gmail and Calendar) was coded independently before these platform files existed. Freeze 2 adds the LinkedIn and Jobright CSVs without recoding Gmail. Freeze 3 adds personal Gmail remainder and the keeganmoody33 primary calendar without recoding Freeze 1 or Freeze 2. The Kiln LinkedIn transcription is a Freeze 3 addendum from user-supplied screenshots. A coder who treats a later freeze as the only corpus is running a different study. Ladders and YC remain outside all three freezes.
