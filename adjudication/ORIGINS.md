@@ -31,7 +31,7 @@ Two different questions were being mixed.
 
 That is why Mixmax, Mercor contract, Pin, The Hog, Glytec, Opsin, Hotglue, The Kiln, Adam, Doug, Kivira, BCOFA, Jorge, and Kellen were not poured into 298. Adding them there would make the application-to-interview rate uninterpretable.
 
-We also did not invent employer names (Adam and Doug have no company string in the artifacts). We did not overwrite frozen `discovery_source` values. GTM Cafe is not in this tree's codebook vocabulary (`newsletter_community` is the closest slot). Origins live in this overlay so Freeze 1 and Freeze 2 stay reproducible.
+We also did not overwrite frozen `discovery_source` values. GTM Cafe is not in this tree's codebook vocabulary (`newsletter_community` is the closest slot). Origins live in this overlay so Freeze 1 and Freeze 2 stay reproducible. Adam's employer at meeting date is Stellar Growth (screenshot). Doug's employer at meeting date stays unknown because the conversation predates AICRO.
 
 Names the subject supplied that are absent from mail and calendar titles (Eddie, Chris, Harry, Giorgio as interviewer, Colossus phone round, Dagster phone) are logged as memory. They do not mint extra artifact rounds.
 
@@ -63,7 +63,7 @@ Already in Freeze 3 or cursor as `register = opportunity`, interviews evidenced:
 Overlay, subject-confirmed:
 
 - Adam Andrewjeski, founder of Stellar Growth (informal, Clay Cafe / GTM Cafe)
-- Doug Shankman, founder and CEO of AICRO (informal plus CRO idea, GTM Cafe). Distinct from the two AICRO application rows in the 298.
+- Doug Shankman (informal plus CRO idea, GTM Cafe). Conversation 2025-10-27 predates AICRO. Screenshot is later identity. Distinct from the two AICRO application rows in the 298.
 
 ### C. Employment and consulting (made money or tried to; not search applications)
 
@@ -113,7 +113,7 @@ TrueBuilt is in the 298 and not in the 14. LinkedIn applied-list GTM Engineer st
 | Mercor contract | Claire Gauthier inbound | artifact | gth_da5b9d0848d88f36 (Instant Work Offer); gth_04388c5d54511960 (contract); two interviews Claire then Daniel Luo | tok_10c69501feb3 (count is two) |
 | WorkOS | TopHire recruiter | artifact | gth_7c798c988d52c12f | none |
 | Adam / Stellar Growth | Clay Cafe now GTM Cafe | memory (Calendly note names Clay Cafe); company from LinkedIn screenshot | cal_f3694776d5518b14 | tok_4c79cbbc329f; tok_155d133e690a |
-| Doug / AICRO | GTM Cafe | memory; company from LinkedIn screenshot | cal_c20ca257f9bdfd6c | tok_654cb884181e; tok_53b6c592660c |
+| Doug Shankman | GTM Cafe | memory. Screenshot is later AICRO identity, not employer at meeting date | cal_c20ca257f9bdfd6c | tok_654cb884181e; tok_53b6c592660c |
 
 Memory `tok_` values on overlay events are stable recall pointers. They are not Gmail page tokens. Frozen `gth_` and `cal_` pointers stay the reproducible subset.
 
@@ -131,15 +131,15 @@ Search applications in the 298 did not produce these paid engagements. The paper
 
 Mercor marketplace evaluator and expert receipts remain in the 298 without interviews. They are a different process from the Growth Strategist / GTM Engineer hourly contract.
 
-## Same company, different process (do not merge)
+## Same person, later company (do not merge)
 
-AICRO appears three times. They are not one row.
+AICRO applications in the 298 are not the 2025-10-27 Doug conversation. That meeting predates AICRO.
 
 | application_id | register | in_298 | in_14 | what |
 |---|---|---|---|---|
 | aicro\|gtm-engineering-team-lead\|c1 | application | yes | no | Email 2026-02-06 |
 | aicro\|gtm-engineer\|c1 | application | yes | no | LinkedIn applied list |
-| aicro\|informal-cro-idea\|c1 | overlay opportunity | no | no | Doug Shankman 2025-10-27. Founder identity from LinkedIn screenshot tok_53b6c592660c |
+| unknown\|cro-idea-doug-shankman\|c1 | overlay opportunity | no | no | Doug Shankman 2025-10-27. Screenshot tok_53b6c592660c is later identity |
 
 Stellar Growth vs Stellar Substitute are different employers. Overlay `stellar-growth|informal|c1` is Adam. `stellar-substitute|unspecified|c1` is a Frontline substitute notice in the 298.
 
@@ -153,7 +153,7 @@ Stellar Growth vs Stellar Substitute are different employers. Overlay `stellar-g
 | Memory overlay applications | `coding/confirmed/applications__confirmed.csv` |
 | Memory overlay events | `coding/confirmed/events__confirmed.csv` |
 | This writeup | `adjudication/ORIGINS.md` |
-| Retrieval | `logs/retrieval-log-057.md` (this confirmation), `056.md` (first overlay), `055.md` (pressure-test) |
+| Retrieval | `logs/retrieval-log-058.md` (Doug predates AICRO; headlines), `057.md`, `056.md`, `055.md` |
 | Freeze 4 census lock | `adjudication/FREEZE-4.md` |
 | Adam company screenshot | `artifacts/linkedin/profile-adam-andrewjeski-stellar-growth.md` |
 | Doug company screenshot | `artifacts/linkedin/profile-doug-shankman-aicro.md` |
@@ -164,8 +164,8 @@ Stellar Growth vs Stellar Substitute are different employers. Overlay `stellar-g
 
 - Recode Freeze 1 or Freeze 2 CSVs to plant GTM Cafe on `discovery_source`
 - Put overlay opportunity or employment interviews into the 14
-- Invent a company for Adam or Doug when a screenshot is absent. Screenshots now name Stellar Growth and AICRO.
-- Merge Doug's AICRO overlay into `aicro|gtm-engineer|c1` or `aicro|gtm-engineering-team-lead|c1`. That would move 14.
+- Invent a company for Adam or Doug when a screenshot is absent, or plant AICRO as Doug's employer on 2025-10-27. The screenshot is later identity.
+- Merge Doug's overlay into `aicro|gtm-engineer|c1` or `aicro|gtm-engineering-team-lead|c1`. That would move 14.
 - Merge Adam's Stellar Growth overlay into `stellar-substitute|unspecified|c1`
 - Adopt package 321 or 325 as this freeze's census
 - Mint the twelve held LinkedIn rows without a per-row application confirmation

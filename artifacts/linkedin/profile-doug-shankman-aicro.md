@@ -23,13 +23,15 @@ Banner: AICRO logo. Text: AI EXECUTION. CRO INTELLIGENCE. FROM PIPELINE TO REVEN
 
 ## What this is used for
 
-Company identity on the overlay opportunity row `aicro|informal-cro-idea|c1`. Calendar meeting 2025-10-27 (`cal_c20ca257f9bdfd6c`). Informal interview plus CRO idea. Subject: count Doug as founder of AICRO.
+Later identity of Doug Shankman. Headline on 2026-08-30: Founder and CEO at AICRO. Overlay row is `unknown|cro-idea-doug-shankman|c1`. Calendar meeting 2025-10-27 (`cal_c20ca257f9bdfd6c`). Informal interview plus CRO idea.
+
+Subject correction 2026-08-30: the conversation happened **before he created AICRO**. The screenshot is not the employer at the meeting date. `company_canonical` on the overlay stays `unknown`.
 
 ## What this does not do
 
-It does not merge this conversation into the two AICRO rows already in the 298:
+It does not make the 2025-10-27 meeting an AICRO application or an AICRO interview. The two AICRO rows already in the 298 stay applications without interviews:
 
 - `aicro|gtm-engineering-team-lead|c1` (email 2026-02-06)
 - `aicro|gtm-engineer|c1` (LinkedIn applied list)
 
-Those stay applications without interviews. This overlay stays opportunity, outside 14/298.
+Overlay stays opportunity, outside 14/298. See log 058.
