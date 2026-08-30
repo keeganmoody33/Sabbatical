@@ -32,8 +32,10 @@ corpus is frozen and the coder CSVs are frozen, so a re-run that moves a byte me
 pipeline is not deterministic or something changed without being logged. A census that cannot be
 reproduced cannot be defended.
 
-A file that did not exist before is reported as `created` rather than `CHANGED`. That is what a
-first run of a new view looks like.
+A file that did not exist before splits two ways. If git does not track it, it is `created`, which is
+what a first run of a new view looks like. If git **does** track it, it is `RESTORED` and the run
+fails: a committed output missing before the run means the checkout was incomplete, so regenerating
+it verifies nothing. There was nothing to compare against.
 
 When a change is intended, run `make run` (`--write`), then log it in the `knowledge/protocol.md`
 changelog with a date and a reason and disclose it in `paper/DEFECTS.md`. That rule is at the head

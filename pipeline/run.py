@@ -132,6 +132,28 @@ def digest(path: Path) -> str | None:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def tracked_in_git(rel: str) -> bool:
+    """True when the path is committed. Distinguishes a genuinely new output
+    from a committed one that is missing because the checkout is incomplete.
+
+    Without this, deleting a committed output and running check mode passes:
+    the stage regenerates the file, it is classified as `created`, and
+    verification reports success on a tree that never contained the thing being
+    verified. Returns False if git is unavailable, which degrades to the old
+    behaviour rather than failing a run for the absence of a tool.
+    """
+    try:
+        result = subprocess.run(
+            ["git", "ls-files", "--error-unmatch", "--", rel],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
+    except OSError:
+        return False
+    return result.returncode == 0
+
+
 def snapshot(stages: list[Stage]) -> dict[str, str | None]:
     return {out: digest(ROOT / out) for stage in stages for out in stage.outputs}
 
@@ -175,14 +197,22 @@ def main() -> int:
 
     after = snapshot(STAGES)
 
-    created = [p for p in after if before[p] is None and after[p] is not None]
+    absent_before = [p for p in after if before[p] is None and after[p] is not None]
+    # A committed output that was missing before the run is an incomplete
+    # checkout, not a new view. Regenerating it and calling that success would
+    # verify a tree that never held the file.
+    restored = [p for p in absent_before if tracked_in_git(p)]
+    created = [p for p in absent_before if p not in restored]
     changed = [p for p in after if before[p] is not None and before[p] != after[p]]
     missing = [p for p in after if after[p] is None]
 
     print()
-    print(f"outputs unchanged: {len(after) - len(created) - len(changed) - len(missing)}")
+    unchanged = len(after) - len(created) - len(restored) - len(changed) - len(missing)
+    print(f"outputs unchanged: {unchanged}")
     for path in created:
         print(f"created: {path}")
+    for path in restored:
+        print(f"RESTORED: {path}")
     for path in changed:
         print(f"CHANGED: {path}")
     for path in missing:
@@ -190,6 +220,16 @@ def main() -> int:
 
     if missing:
         print("\nA declared output was not written. The stage list and the scripts disagree.")
+        return 1
+
+    if restored and not args.write:
+        print(
+            "\nA committed output was missing before this run and the pipeline regenerated it.\n"
+            "That is an incomplete checkout, not a verification: the run cannot confirm the\n"
+            "committed file reproduces, because the committed file was not there to compare\n"
+            "against. Restore the working tree (git checkout -- <path>) and re-run, or use\n"
+            "--write if the regeneration is intended."
+        )
         return 1
 
     if changed and not args.write:

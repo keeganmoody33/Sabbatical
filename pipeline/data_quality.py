@@ -266,27 +266,55 @@ def section_duplicates(lines: list[str], full: list[dict]) -> None:
                 delta = abs((d1 - d2).days)
                 if delta <= DUPLICATE_WINDOW_DAYS:
                     rows.append(entry + [f"{delta} days", "review"])
+                    continue
+
+                # Beyond the window is not automatically clean. The rule is that
+                # a second cycle is licensed by a TERMINAL OUTCOME on the first,
+                # not by elapsed time, so the licensing condition is checked here
+                # rather than assumed from the gap.
+                earlier, later = sorted((left, right), key=lambda r: r["date_applied"])
+                terminal = earlier["terminal_outcome"].strip()
+                terminal_date = iso_date(earlier["terminal_outcome_date"])
+                later_date = iso_date(later["date_applied"])
+                if not terminal:
+                    verdict = "UNLICENSED, earlier row has no terminal outcome"
+                elif terminal_date is None:
+                    verdict = f"undated terminal outcome `{terminal}`, cannot verify ordering"
+                elif later_date is not None and terminal_date > later_date:
+                    verdict = f"UNLICENSED, `{terminal}` dated after the later submission"
                 else:
-                    beyond_window.append((delta, entry))
+                    verdict = f"licensed by `{terminal}` on {terminal_date.isoformat()}"
+                beyond_window.append((delta, entry, verdict))
 
     lines += table(["company", "role", "row A", "row B", "gap", "status"], rows)
     lines.append("")
 
     # A duplicate check that finds nothing proves nothing unless you can see it
     # had candidates to reject. These are the same-company, same-role pairs that
-    # fell outside the window, closest first.
+    # fell outside the window, closest first, each carrying the reason it is or
+    # is not a legitimate second cycle. Elapsed time alone never licenses one.
+    unlicensed = [row for row in beyond_window if row[2].startswith("UNLICENSED")]
     lines += [
         f"Same company and role pairs beyond the {DUPLICATE_WINDOW_DAYS} day window, closest first.",
-        "These are the pairs the check considered and cleared, which is what makes an empty",
-        "result above meaningful. A legitimate second cycle is licensed by a terminal outcome",
-        "on the first, and both pairs below carry one.",
+        "These are the pairs the check considered, which is what makes an empty result above",
+        "mean something. A second cycle is licensed by a terminal outcome on the first, never",
+        "by elapsed time, so the licensing condition is verified per pair rather than assumed.",
         "",
     ]
     lines += table(
-        ["company", "role", "row A", "row B", "gap"],
-        [entry + [f"{delta} days"] for delta, entry in sorted(beyond_window)[:10]],
+        ["company", "role", "row A", "row B", "gap", "second cycle licensed?"],
+        [entry + [f"{delta} days", verdict] for delta, entry, verdict in sorted(beyond_window)[:10]],
     )
     lines.append("")
+    lines += [
+        f"Unlicensed pairs: {len(unlicensed)}."
+        + (
+            " Each is a candidate duplicate that the cycle key would not catch, and needs an artifact or an adjudication decision."
+            if unlicensed
+            else " Every beyond-window pair carries a terminal outcome on the earlier row, dated before the later submission."
+        ),
+        "",
+    ]
 
     same_key = [k for k, v in Counter(r["application_id"] for r in full).items() if v > 1]
     lines += [

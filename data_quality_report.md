@@ -100,14 +100,16 @@ is a candidate duplicate that the key would not catch.
 None.
 
 Same company and role pairs beyond the 7 day window, closest first.
-These are the pairs the check considered and cleared, which is what makes an empty
-result above meaningful. A legitimate second cycle is licensed by a terminal outcome
-on the first, and both pairs below carry one.
+These are the pairs the check considered, which is what makes an empty result above
+mean something. A second cycle is licensed by a terminal outcome on the first, never
+by elapsed time, so the licensing condition is verified per pair rather than assumed.
 
-| company | role | row A | row B | gap |
-|---|---|---|---|---|
-| attentive | gtm engineer | `attentive\|gtm-engineer\|c2` | `attentive\|gtm-engineer\|c1` | 23 days |
-| fossa | unspecified | `fossa\|unspecified\|c1` | `fossa\|unspecified\|c2` | 29 days |
+| company | role | row A | row B | gap | second cycle licensed? |
+|---|---|---|---|---|---|
+| attentive | gtm engineer | `attentive\|gtm-engineer\|c2` | `attentive\|gtm-engineer\|c1` | 23 days | licensed by `rejected_no_interview` on 2026-07-07 |
+| fossa | unspecified | `fossa\|unspecified\|c1` | `fossa\|unspecified\|c2` | 29 days | licensed by `rejected_no_interview` on 2026-05-20 |
+
+Unlicensed pairs: 0. Every beyond-window pair carries a terminal outcome on the earlier row, dated before the later submission.
 
 Rows sharing an `application_id`: 0.
 
