@@ -1,6 +1,8 @@
-# Results
+# Results ledger
 
 These are the numbers this freeze can defend. Prior-audit figures 247, 11 interviews, and 4.45 percent are not restated as findings.
+
+Prose for the Results section is `paper/results-narrative.md`. Figure IDs and captions are `paper/figures.md`. This file remains the number ledger.
 
 No dashes are used as punctuation in this file.
 
@@ -195,13 +197,61 @@ Kappa on the intersection is 0.9510. Lane counts on the 221, using the adjudicat
 - revops_gtm_ops_strategy: 9
 - product_ai_technical: 8
 
+Lane counts on the full 298, recomputed from `adjudication/applications__full_census.csv`. Freeze 2 is a documented mapping, not a second kappa.
+
+- explicit_gtm_engineering: 113
+- unspecified: 35
+- sales_bd_partnerships: 34
+- growth_demand_marketing: 32
+- sales_solutions_engineering: 31
+- other: 30
+- revops_gtm_ops_strategy: 14
+- product_ai_technical: 9
+
+Freeze 2's 77 added: GTM 27, solutions 16, other 12, growth 10, sales/BD 6, RevOps 5, product/AI 1, unspecified 0.
+
+Interviewed applications by Freeze 1 lane (all 14 sit in Freeze 1): GTM 9/86, unspecified 2/35, growth 2/22, sales/BD 1/28. Solutions, RevOps, product/AI, and other: 0 interviewed of those Freeze 1 rows.
+
+GTM modifiers on the 86 Freeze 1 GTM rows: plain 55, systems/operations 11, founding/senior/lead 7, AI/product/vertical 7, sales/presales 4, growth/marketing 2. On the 113 in the 298: plain 71, founding/senior/lead 15, systems/operations 11, AI/product/vertical 8, sales/presales 4, growth/marketing 4.
+
+Companies on the 298 applications: **273**. Thirteen companies have more than one row (25 extra rows). DeKalb County School District is 10 STAR substitute rows, all `other`. Mercor is 6 marketplace evaluator/expert rows. FOSSA and Attentive are c1/c2. Two AICRO rows are two cycles, not a twin of the Doug overlay.
+
+Evidence class on the 298: employer_artifact 220, platform_log 78. Evidence tier: A 205, B 16, C 77. The 77 Freeze 2 rows are the C stratum.
+
+`work_type = Atlanta` on 3 rows is a vocabulary error. Do not interpret it as a location finding.
+
 ## Monthly series (`date_precision = exact` only)
 
-n exact = 195. n not exact = 26. The 26 must be printed next to any chart.
+Freeze 1, n exact = 195, n not exact = 26 (all `evidence_bound`). The 26 must be printed next to any Freeze 1 chart (Fig 1).
 
-Exact-date counts: 2025-06 5, 2025-07 19, 2025-08 16, 2025-09 0, 2025-10 0, 2025-11 1, 2025-12 2, 2026-01 7, 2026-02 10, 2026-03 21, 2026-04 26, 2026-05 22, 2026-06 28, 2026-07 33, 2026-08 5.
+Freeze 1 exact-date counts: 2025-06 5, 2025-07 19, 2025-08 16, 2025-09 0, 2025-10 0, 2025-11 1, 2025-12 2, 2026-01 7, 2026-02 10, 2026-03 21, 2026-04 26, 2026-05 22, 2026-06 28, 2026-07 33, 2026-08 5.
+
+Full 298, n exact = 201, n not exact = 97 (71 `relative_display` LinkedIn, 26 `evidence_bound`). The 71 LinkedIn relative stamps stay off the chart (Fig 2).
+
+Full 298 exact-date counts: 2025-06 5, 2025-07 19, 2025-08 16, 2025-09 0, 2025-10 0, 2025-11 1, 2025-12 2, 2026-01 9, 2026-02 10, 2026-03 21, 2026-04 26, 2026-05 24, 2026-06 30, 2026-07 33, 2026-08 5.
+
+Freeze 2 added 6 exact Jobright dates: 2026-01 +2, 2026-05 +2, 2026-06 +2. Peak 2026-07 is 33 exact on both series.
 
 Zero exact rows in September and October 2025 is not a claim of zero search activity. Fullsteam 2025-09-29 is evidence_bound. Prior audits that treated Q1 as about one row were looking at a search-boundary artifact.
+
+## Terminal outcomes of the 14
+
+Derived interview membership is not a stored field. Stored `terminal_outcome` on those 14 rows (Freeze 1 coding, not recoded):
+
+- `rejected_after_interview`: 6 (Beautiful.ai, Dagster Labs, Great Question, HartleyCo, Orchestry, Weave)
+- `still_open`: 7 (Every.to, Hologram, Hypergen, Pearl, PhrasIQ, RevSpring, TestGorilla)
+- `rejected_no_interview`: 1 (jobmail.io)
+
+jobmail.io is in the 14 because cursor events include a `recruiter_screen`. The stored close is `rejected_no_interview`. That is a stored-outcome versus derived-interview disagreement. It is disclosed. It is not recoded in this freeze.
+
+## Freeze 1 coded closes (221)
+
+- `rejected_no_interview`: 73
+- `rejected_after_interview`: 6
+- `role_paused_or_closed`: 18
+- `still_open`: 124
+
+Zero `no_response`. Amendment A2 was not applied. The 77 platform rows are blank. A reply statistic, if used, is 73/221 on Freeze 1 only.
 
 ## Defects
 

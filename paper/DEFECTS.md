@@ -30,6 +30,12 @@ Attentive: receipt 2026-06-22, decline 2026-07-07, second receipt 2026-07-15. Th
 
 A key that omitted cycle would collide those pairs.
 
+## Stored outcome versus derived interview (jobmail.io)
+
+Disclosed, not recoded.
+
+`jobmail-io|growth-lead|c1` is in the 14 because cursor events include `recruiter_screen`. Stored `terminal_outcome` is `rejected_no_interview`. Interviewed is derived from Table 2 and is never stored. The disagreement is expected under that rule. Recoding the close would rewrite Freeze 1.
+
 ## Capture recapture not computed
 
 The protocol restricts two-source capture recapture to LinkedIn rows submitted through an external ATS, not Easy Apply. Freeze 2 has LinkedIn pages 1 to 10 without that channel label. Naive Lincoln Petersen on Gmail overlap versus Easy Apply is a misuse and was not run.
