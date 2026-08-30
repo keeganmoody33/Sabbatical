@@ -1,0 +1,322 @@
+company,role,applied_date,date_precision,outcome,outcome_date,channel,evidence_tier,stratum,source
+SBGA,Remote Outside Sales Rep,2025-04-11,evidence_bound,unknown,2025-07-24,workable,B,gmail/ATS,logs 002
+Inven.ai,unspecified,2025-06-11,exact,no_response,,email_direct,C,gmail/ATS,logs 020
+Databar.ai,GTM Engineer (Growth & Sales),2025-06-14,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-001 · net_new
+Circle,"GTM Engineer, Outbound",2025-06-20,exact,no_response,,greenhouse,A,gmail/ATS,logs 003
+Datricks,Sales Engineer - US (Remote),2025-06-20,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-002 · net_new
+Runway,Go-To-Market AI Engineer,2025-06-26,exact,no_response,,ashby,A,gmail/ATS,logs 003
+Bitovi,AI Enablement Engineer,2025-06-30,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-003 · net_new
+Gigs,unspecified,2025-06-30,exact,no_response,,greenhouse,A,gmail/ATS,logs 003
+ScoutLab.io,"Solutions Engineer (AI FinTech, Series B)",2025-06-30,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-005 · net_new
+Galileo,Growth Engineer,2025-07-02,exact,no_response,,rippling,A,gmail/ATS,logs 003
+Headway,Growth Marketing Specialist,2025-07-03,exact,no_response,,greenhouse,A,gmail/ATS,logs 003
+JetBridge AI,Sr. SDR for Profitable AI Startup,2025-07-03,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-006 · net_new
+Abacus.AI,Senior Sales Development Representative,2025-07-07,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-007 · net_new
+Brainfish,Sales Development Representative (SDR),2025-07-07,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-009 · net_new
+JetBridge AI,Sr. SDR for Profitable AI Startup,2025-07-07,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-008 · net_new
+Applause,Enterprise SDR,2025-07-08,exact,rejected_no_interview,2025-07-09,workable,A,gmail/ATS,logs 003
+ClosedWon Talent,Founding Account Executive,2025-07-08,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-011 · net_new
+Designit,unspecified,2025-07-08,exact,no_response,,email_direct,A,gmail/ATS,logs 003
+SWARM,Sales Engineer,2025-07-09,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-012 · net_new
+ScaleOps,"Sales Engineer, USA",2025-07-17,exact,no_response,,unknown,A,gmail/ATS,logs 003
+Exa,Growth Lead,2025-07-25,exact,no_response,,lever,A,gmail/ATS,logs 002
+Slingshot AI,Conversation Designer,2025-07-25,exact,unknown,2025-07-28,email_direct,A,gmail/ATS,logs 002
+Inertia Growth,Outbound Campaign Manager,2025-07-26,exact,rejected_no_interview,2025-07-30,email_direct,A,gmail/ATS,logs 019;020;024;025
+90 Seconds,unspecified,2025-07-27,exact,no_response,,lever,A,gmail/ATS,logs 002
+Anaconda,Senior BDR,2025-07-27,exact,unknown,2025-08-22,rippling,A,gmail/ATS,logs 001;002
+GTP Software,Revenue Enablement Manager,2025-07-27,exact,unknown,2025-08-01,rippling,A,gmail/ATS,logs 002
+Phiture,"US Growth Lead, Mobile Marketing Strategist",2025-07-27,exact,unknown,2025-07-29,email_direct,A,gmail/ATS,logs 002;004
+Replit,Sales Engineer,2025-07-27,exact,unknown,2025-07-30,ashby,A,gmail/ATS,logs 002
+Shaped,Founding SDR,2025-07-27,exact,no_response,,dover,A,gmail/ATS,logs 002
+Stedi,unspecified,2025-07-27,exact,no_response,,ashby,A,gmail/ATS,logs 002
+Volley,unspecified,2025-07-27,exact,no_response,,greenhouse,A,gmail/ATS,logs 002
+Weave,Business Development Manager,2025-07-27,exact,rejected_no_interview,2025-07-31,greenhouse,A,gmail/ATS,logs 002
+Hex,SDR,2025-07-31,exact,no_response,,greenhouse,A,gmail/ATS,logs 002
+12100 Collective,SEO Lead,2025-08-04,exact,no_response,,wellfound,A,gmail/ATS,logs 002
+4flow,"Director, Go To Market Strategy",2025-08-04,exact,no_response,,workday,A,gmail/ATS,logs 002
+AirGarage,Consumer Growth Hacker,2025-08-04,exact,no_response,,wellfound,A,gmail/ATS,logs 002
+Ava Labs,"Growth Lead, Core",2025-08-04,exact,unknown,2025-08-14,wellfound,A,gmail/ATS,logs 001;002
+Axon,"Manager, Go-to-Market Readiness",2025-08-04,exact,unknown,2025-08-04,email_direct,A,gmail/ATS,logs 002
+Fibr AI,Founding SDR + AE,2025-08-04,exact,no_response,,wellfound,A,gmail/ATS,logs 002
+Infisical,Founding Growth Marketer,2025-08-04,exact,no_response,,wellfound,A,gmail/ATS,logs 002
+ITC Infotech,"Manager, Business Development",2025-08-04,exact,no_response,,email_direct,A,gmail/ATS,logs 002
+OnBoard,unspecified,2025-08-04,exact,no_response,,greenhouse,A,gmail/ATS,logs 002
+Sage,"Director of Growth, Small",2025-08-04,exact,unknown,2025-09-03,email_direct,A,gmail/ATS,logs 001;002
+Blackthorn.io,unspecified,2025-08-05,exact,no_response,,greenhouse,A,gmail/ATS,logs 002
+Crypto.com,Product Growth Hacker,2025-08-05,exact,rejected_no_interview,2025-11-02,lever,A,gmail/ATS,logs 001;002;004
+Seamless.AI,SDR Remote US,2025-08-05,exact,unknown,2025-08-07,greenhouse,A,gmail/ATS,logs 002
+ThriveLink,Healthcare Business Development Rep,2025-08-05,evidence_bound,no_response,,email_direct,B,gmail/ATS,logs 020
+Ambrook,Partnerships Lead,2025-08-06,exact,no_response,,ashby,A,gmail/ATS,logs 002;007
+proteanTecs,SDR,2025-08-08,exact,no_response,,comeet,A,gmail/ATS,logs 002
+Insignia Assets,Head of Digital,2025-11-18,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-014 · net_new
+Insignia Collab,unspecified,2025-11-18,exact,no_response,,email_direct,C,gmail/ATS,logs 020
+Linear,AE Growth,2025-12-08,exact,rejected_no_interview,2025-12-11,ashby,A,gmail/ATS,logs 004
+Primer,unspecified,2025-12-09,exact,rejected_no_interview,2025-12-15,ashby,A,gmail/ATS,logs 004
+Foursquare,AE New Business,2026-01-02,exact,unknown,2026-01-08,ashby,A,gmail/ATS,logs 004
+MediaLab.AI,unspecified,2026-01-02,exact,no_response,,greenhouse,A,gmail/ATS,logs 004
+Proofpoint,unspecified,2026-01-02,exact,no_response,,email_direct,A,gmail/ATS,logs 004
+Thomson Reuters,AE Tax or Risk,2026-01-02,exact,unknown,2026-02-20,workday,A,gmail/ATS,logs 004;007
+SailPoint,Account Exec Enterprise Accounts,2026-01-03,exact,no_response,,workday,A,gmail/ATS,logs 004
+nero.fan,Founding Engineer,2026-01-07,exact,no_response,,email_direct,C,gmail/ATS,logs 020
+micro1,unspecified,2026-01-14,exact,unknown,,unknown,B,gmail/ATS,logs 004
+Pickering Interfaces,Field Sales Engineer - Southeast,2026-01-20,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-015 · net_new
+Beacon Software,unspecified,2026-01-26,exact,no_response,,greenhouse,A,gmail/ATS,logs 007
+DevSignal,Growth Specialist,2026-01-26,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-016 · net_new
+Verkada,"Enterprise Solutions Engineer, Atlanta",2026-02-04,exact,no_response,,greenhouse,A,gmail/ATS,logs 007
+AICRO,GTM Engineering Team Lead,2026-02-06,exact,no_response,,email_direct,C,gmail/ATS,logs 020
+Manifold AI,Growth Marketing Manager,2026-02-06,exact,rejected_no_interview,2026-02-06,greenhouse,A,gmail/ATS,logs 007
+Flexbone,Founding GTM Account Executive,2026-02-08,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-018 · net_new
+Gather AI,GTM Engineer,2026-02-09,exact,no_response,,email_direct,A,gmail/ATS,logs 007
+Databar.ai,GTM Engineer (Growth & Sales),2026-02-10,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-019 · net_new
+GitLab,GTM Planning & Operations Analyst,2026-02-10,exact,role_paused_or_closed,2026-04-17,greenhouse,A,gmail/ATS,logs 007;009
+MICHELIN Connected Fleet,Demand Generation and Growth Marketing Manager,2026-02-10,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-020 · net_new
+Pegasystems,GTM GenAI Product Owner,2026-02-10,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-021 · net_new
+Ambrook,Business Operations Lead,2026-02-11,exact,rejected_no_interview,2026-02-12,ashby,A,gmail/ATS,logs 007
+WilsonHCG,Outbound Sales Consultant III,2026-02-13,exact,no_response,,email_direct,A,gmail/ATS,logs 007
+Smeetz,GTM Engineer,2026-02-20,exact,unknown,2026-02-20,workable,A,gmail/ATS,logs 007
+SentiLink,unspecified,2026-02-23,exact,no_response,,ashby,A,gmail/ATS,logs 006
+Propel,Founding Sales Engineer,2026-03-05,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-022 · net_new
+Scout Global,Founding Sales Engineer,2026-03-05,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-023 · net_new
+Anthropic,"Software Engineer, Business Technology",2026-03-08,exact,rejected_no_interview,2026-03-09,greenhouse,A,gmail/ATS,logs 006
+Beautiful.ai,GTM Engineer,2026-03-08,exact,rejected_after_interview,2026-03-26,greenhouse,A,gmail/ATS,logs 006
+Virtru,Director of Go-to-Market AI,2026-03-09,exact,rejected_no_interview,2026-04-04,greenhouse,A,gmail/ATS,logs 005;006
+Hypergen,GTM Engineer,2026-03-11,exact,interview_scheduled,2026-04-14,recruitee,A,gmail/ATS,logs 006
+Casper Studios,GTM Engineer,2026-03-23,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-024 · net_new
+Glean,"GTM Engineer, Marketing",2026-03-23,exact,no_response,,greenhouse,A,gmail/ATS,logs 006
+Mento,GTM Engineer,2026-03-24,exact,no_response,,greenhouse,A,gmail/ATS,logs 006
+Orchestry,GTM Engineer (Sales),2026-03-24,exact,rejected_after_interview,2026-03-27,breezy,A,gmail/ATS,logs 006
+Pinterest,Apprentice Engineer,2026-03-25,exact,rejected_no_interview,2026-04-28,greenhouse,A,gmail/ATS,logs 006;009
+Adapt,GTM Engineer / RevOps Lead,2026-03-27,exact,no_response,,dover,A,gmail/ATS,logs 006
+Dagster Labs,GTM Engineer,2026-03-30,exact,rejected_after_interview,2026-04-03,greenhouse,A,gmail/ATS,logs 006
+G2,GTM Engineer,2026-03-30,exact,role_paused_or_closed,2026-04-09,ashby,A,gmail/ATS,logs 005;006
+PandaDoc,GTM Engineer,2026-03-30,exact,rejected_no_interview,2026-04-27,greenhouse,A,gmail/ATS,logs 006;009
+Roboflow,RevOps GTM Engineer,2026-03-30,exact,no_response,,ashby,A,gmail/ATS,logs 006
+Tapcheck,unspecified,2026-03-30,exact,unknown,2026-03-31,ashby,A,gmail/ATS,logs 005;006
+Tiger Data,GTM AI Engineer,2026-03-30,exact,rejected_no_interview,2026-03-30,ashby,A,gmail/ATS,logs 006
+Unstructured,"GTM Engineer, Operations",2026-03-30,exact,no_response,,lever,A,gmail/ATS,logs 006
+Vercel,GTM Engineer,2026-03-30,exact,no_response,,email_direct,A,gmail/ATS,logs 006
+Boulevard,GTM Engineer,2026-03-31,exact,rejected_no_interview,2026-06-04,greenhouse,A,gmail/ATS,logs 005;008
+DISQO,GTM Engineer,2026-03-31,exact,rejected_no_interview,2026-03-31,lever,A,gmail/ATS,logs 005
+Fractional Demand,GTM Engineer,2026-03-31,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-028 · net_new
+NetRise,Go To Market (GTM) Engineer / Outbound Pipeline Development,2026-03-31,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-027 · net_new
+Montauk Capital,Head of Commercial,2026-04-01,exact,no_response,,ceipal,B,gmail/ATS,logs 005
+brand.ai,unspecified,2026-04-02,exact,rejected_no_interview,2026-04-07,email_direct,B,gmail/ATS,logs 005;020
+CompanyCam,GTM Systems Engineer,2026-04-03,exact,no_response,,email_direct,A,gmail/ATS,logs 005
+Fixify,GTM Engineer (Contract),2026-04-03,exact,unknown,2026-04-06,greenhouse,A,gmail/ATS,logs 005
+Liatrio,GTM RevOps Engineer,2026-04-05,exact,no_response,,lever,A,gmail/ATS,logs 005
+2X,GTM Engineer,2026-04-06,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-035 · net_new
+AppGate,GTM Engineer,2026-04-06,exact,no_response,,workable,A,gmail/ATS,logs 005
+Bask Health,Sales Engineer,2026-04-06,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-033 · net_new_employer_artifact_exists · Q3b: eml_520bf8c2802d outreach with Calendly 2026-04-08
+BX Studio,GTM Engineer,2026-04-06,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-036 · net_new_employer_artifact_exists
+COLOSSUS TECHNOLOGY GROUP,GTM Engineer,2026-04-06,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-034 · net_new
+Payabli,GTM Engineer,2026-04-06,exact,no_response,,ashby,A,gmail/ATS,logs 005
+Pearl,Lead GTM Engineer,2026-04-06,exact,rejected_after_interview,2026-05-20,ashby,A,gmail/ATS,"logs 005;009;021 · Q3b: 2 interviews (05-05 phone, 05-18 Zoom), decline 2026-05-20 from eml_50d25fbb9fc0"
+QuadSci,Marketing GTM Engineer,2026-04-06,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-030 · net_new
+Recur Software,GTM Engineer,2026-04-06,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-031 · net_new
+Rula,GTM Engineer Remote,2026-04-06,exact,rejected_no_interview,2026-04-22,ashby,A,gmail/ATS,logs 005;009
+Sardine,GTM Engineer,2026-04-06,exact,rejected_no_interview,2026-04-09,ashby,A,gmail/ATS,logs 005
+Solv Health,unspecified,2026-04-06,exact,rejected_no_interview,2026-04-21,rippling,A,gmail/ATS,logs 005;009
+Unframe,GTM Engineer,2026-04-06,exact,rejected_no_interview,2026-05-12,greenhouse,A,gmail/ATS,logs 005;009
+Valsoft Corporation,GTM Engineer,2026-04-06,exact,no_response,,workable,A,gmail/ATS,logs 005
+Wrapbook,GTM Systems Engineer,2026-04-06,exact,no_response,,ashby,A,gmail/ATS,logs 005
+RevPilots,GTM Engineer,2026-04-09,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-037 · net_new
+Sur,AI Revenue Engineer,2026-04-09,exact,rejected_no_interview,2026-04-09,workable,A,gmail/ATS,logs 005
+AirOps,Growth Engineer,2026-04-10,exact,no_response,,ashby,A,gmail/ATS,logs 005
+Auctane,Pre-Sales Engineer,2026-04-10,exact,rejected_no_interview,2026-05-14,greenhouse,A,gmail/ATS,logs 005;009
+Cresta,GTM Engineer,2026-04-10,exact,no_response,,email_direct,A,gmail/ATS,logs 005
+CRMIT Solutions,Ai Solutions Sales Specialist,2026-04-10,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-040 · net_new
+LangChain,GTM Engineer,2026-04-10,exact,no_response,,ashby,A,gmail/ATS,logs 005
+Ontra,unspecified,2026-04-10,exact,rejected_no_interview,2026-04-24,ashby,A,gmail/ATS,logs 005;009
+Redis,GTM Engineer,2026-04-10,exact,no_response,,ashby,A,gmail/ATS,logs 005
+Rollstack,AI Growth Hacker,2026-04-10,exact,no_response,,ashby,A,gmail/ATS,logs 005
+Verdent AI,Growth Marketing,2026-04-10,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-038 · net_new
+saveurdays,unspecified,2026-04-11,exact,no_response,,email_direct,B,gmail/ATS,logs 005
+Teleport,GTM Engineer,2026-04-14,exact,rejected_no_interview,2026-05-07,ashby,A,gmail/ATS,logs 005;009
+Crash Override,Growth Engineer,2026-04-16,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-041 · net_new
+WallStreetQuants,unspecified,2026-04-17,exact,no_response,,workable,A,gmail/ATS,logs 009
+Durham Geo Slope Indicator (DGSI),Technical Sales Engineer,2026-04-19,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-043 · net_new
+FOSSA,unspecified,2026-04-22,exact,rejected_no_interview,2026-05-20,greenhouse,A,gmail/ATS,logs 009
+OXOS Medical,GTM Engineer,2026-04-27,exact,no_response,,greenhouse,A,gmail/ATS,logs 009
+Trase,unspecified,2026-04-27,exact,no_response,,greenhouse,A,gmail/ATS,logs 009
+10x Genomics,unspecified,2026-05-02,exact,rejected_no_interview,2026-05-14,greenhouse,A,gmail/ATS,logs 009
+spider.cloud,Growth Lead,2026-05-03,exact,no_response,,email_direct,C,gmail/ATS,logs 020
+Freshtix,Business Development Manager,2026-05-19,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-044 · net_new
+TRACTIAN,"Senior GTM Engineer, Hubspot",2026-05-19,exact,no_response,,lever,A,gmail/ATS,logs 009
+Practical Prospecting,unspecified,2026-05-20,exact,no_response,,email_direct,C,gmail/ATS,logs 020
+Airtable,GTM Engineer,2026-05-21,exact,rejected_no_interview,2026-05-27,email_direct,A,gmail/ATS,logs 008;009
+ApartmentIQ,unspecified,2026-05-21,exact,rejected_no_interview,2026-05-28,greenhouse,A,gmail/ATS,logs 008
+Applied Systems,Sales Enablement GTM Readiness Lead,2026-05-21,exact,no_response,,icims,A,gmail/ATS,logs 008
+CoLab Software,Sales Engineer,2026-05-21,exact,unknown,2026-05-28,greenhouse,A,gmail/ATS,logs 008
+DBeaver,GTM Engineer,2026-05-21,exact,rejected_no_interview,2026-06-05,greenhouse,A,gmail/ATS,logs 008;009
+Deepgram,GTM Engineer,2026-05-21,exact,rejected_no_interview,2026-05-22,ashby,A,gmail/ATS,logs 008
+FOSSA,unspecified,2026-05-21,exact,no_response,,greenhouse,A,gmail/ATS,logs 009
+Nebius,Director GTM Physical AI,2026-05-21,exact,rejected_no_interview,2026-07-16,greenhouse,A,gmail/ATS,logs 009;011
+NICE,AI Solution Strategist,2026-05-21,exact,no_response,,greenhouse,A,gmail/ATS,logs 009
+Onit,Sales Engineer,2026-05-21,exact,no_response,,lever,A,gmail/ATS,logs 008
+Pindrop,GTM Systems Platform Specialist,2026-05-21,exact,rejected_no_interview,2026-05-27,greenhouse,A,gmail/ATS,logs 008
+ServiceTrade,unspecified,2026-05-21,exact,rejected_no_interview,2026-05-29,email_direct,A,gmail/ATS,logs 008
+Telnyx,unspecified,2026-05-21,exact,no_response,,greenhouse,A,gmail/ATS,logs 008
+TRACTIAN,"Sales Engineer, Automation",2026-05-21,exact,no_response,,lever,A,gmail/ATS,logs 008
+VitalSource,AI Enablement Lead,2026-05-21,exact,no_response,,jobvite,A,gmail/ATS,logs 008
+AICRO,GTM Engineer,2026-05-25,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-045 · distinct_cycle_net_new
+EvenUp,"AI Adoption Manager, Southeast",2026-05-25,exact,rejected_no_interview,2026-06-04,ashby,A,gmail/ATS,logs 008
+Speechify,"Go-to-Market Engineer, Atlanta",2026-05-25,exact,no_response,,greenhouse,A,gmail/ATS,logs 008
+Jobright.ai,"Product Manager, Entry Level",2026-05-26,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-048 · distinct_cycle_net_new
+Piper AI,Growth & Content,2026-05-26,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-047 · net_new
+SoTalent,Generative AI Agent Engineer (Remote),2026-05-26,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-046 · net_new
+Apollo.io,unspecified,2026-05-28,exact,no_response,,greenhouse,A,gmail/ATS,logs 008
+Kognitos,Senior Solutions Engineer,2026-06-03,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-050 · net_new
+Valoh,Fractional GTM Operations Lead,2026-06-03,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-049 · net_new
+4MindsAI,GTM Engineer,2026-06-04,exact,no_response,,unknown,A,gmail/ATS,logs 008
+Adaptive6,Sales Engineer,2026-06-04,exact,rejected_no_interview,2026-06-16,comeet,A,gmail/ATS,logs 008;013
+Cloudflare,GTM Engineer,2026-06-04,exact,rejected_no_interview,2026-06-23,email_direct,A,gmail/ATS,logs 008;013
+Evolution USA,Forward Deployed Engineer (FDE) - Applied AI / GenAI,2026-06-04,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-060 · net_new
+GridBank,GTM Engineer,2026-06-04,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-061 · net_new
+Huzzle,GTM Engineer,2026-06-04,exact,assessment_sent,2026-06-16,workable,A,gmail/ATS,logs 008;013
+IntelliPro,Founding Sales - AI Generic,2026-06-04,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-053 · net_new
+Jobright.ai,AI Engineer,2026-06-04,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-058 · net_new
+Lyra Health,Senior GTM Enablement Specialist,2026-06-04,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-056 · net_new
+MAJC,Revenue Operations & Business Development,2026-06-04,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-051 · net_new
+Pogo Technologies,GTM Engineer,2026-06-04,exact,no_response,,gem,A,gmail/ATS,logs 008;012
+RevSpring,"Lead, Agentic Operations + GTM Engineering",2026-06-04,exact,rejected_no_interview,2026-06-25,newton,A,gmail/ATS,"logs 008;013;021 · Q3b: recruiter screen requested 2026-06-10, 'one last try' 06-15, no candidate reply"
+Scout Global,Forward Deployed Engineer,2026-06-04,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-059 · net_new
+The Hog (YC F25),Founding GTM Engineer,2026-06-04,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-054 · net_new_employer_artifact_exists
+Vi,Sr. Forward Deployed Engineer,2026-06-04,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-057 · net_new
+SOLAYA,GTM Engineer,2026-06-07,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-062 · net_new
+Greenway Collins,GTM Engineer | Remote (US),2026-06-08,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-063 · net_new
+RTScale AI,Founding Growth Lead,2026-06-17,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-064 · net_new
+Atlanta Public Schools,unspecified,2026-06-19,exact,role_paused_or_closed,2026-06-22,applitrack,A,gmail/ATS,logs 013;016;020
+Anduril Industries,"Technical Operations Engineer, Launched Effects",2026-06-21,exact,rejected_no_interview,2026-07-15,email_direct,A,gmail/ATS,logs 011;013
+DripShop,Growth Lead - User Acquisition,2026-06-21,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-068 · net_new
+Durham Geo Slope Indicator (DGSI),Technical Sales Engineer,2026-06-21,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-066 · net_new
+The Vincit Group,Systems Engineering and Sales,2026-06-21,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-065 · net_new
+TrueBuilt,GTM Engineer,2026-06-21,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-067 · net_new
+Armada,"AI Factory, Value Engineer",2026-06-22,exact,no_response,,greenhouse,A,gmail/ATS,logs 013
+Attentive,GTM Engineer,2026-06-22,exact,rejected_no_interview,2026-07-07,greenhouse,A,gmail/ATS,logs 012;013
+Franklin Fitch,AI Training and Adoption Consultant,2026-06-22,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-071 · net_new
+Hartfiel Automation,Sales Engineer,2026-06-22,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-070 · net_new
+HorizonAI Talent,Forward Deployed Engineer,2026-06-22,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-072 · net_new
+IBM,"Manager, Applied AI & GTM Systems",2026-06-22,exact,rejected_no_interview,2026-07-26,email_direct,A,gmail/ATS,logs 010;013
+Jobgether,GTM Engineer,2026-06-22,exact,unknown,2026-06-23,unknown,B,gmail/ATS,logs 013
+Mercor,Education / school Evaluator,2026-06-22,exact,rejected_no_interview,2026-06-29,mercor,A,gmail/ATS,logs 012;013
+Mercor,General Sales / GTM Evaluator,2026-06-22,exact,rejected_no_interview,2026-06-29,mercor,A,gmail/ATS,logs 012;013
+Pindrop,unspecified,2026-06-22,exact,no_response,,greenhouse,A,gmail/ATS,logs 013
+Ritz Instrument Transformers USA,Sales Engineer,2026-06-22,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-069 · net_new
+Roc Search,Founding GTM Strategy,2026-06-22,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-076 · net_new
+SentiLink,Go-to-Market Strategy Analyst,2026-06-22,exact,rejected_no_interview,2026-07-13,ashby,A,gmail/ATS,logs 012;013
+Syncro,GTM Operations Manager,2026-06-22,exact,no_response,,email_direct,A,gmail/ATS,logs 013
+Wealth.com,GTM Engineer,2026-06-22,exact,rejected_no_interview,2026-06-22,ashby,A,gmail/ATS,logs 013
+Automation Anywhere,Sales Engineer,2026-06-24,exact,no_response,,workday,A,gmail/ATS,logs 013
+Canals,Sales Manager,2026-06-24,exact,no_response,,ashby,A,gmail/ATS,logs 013
+Clay,"Growth Strategist, Enterprise",2026-06-24,exact,rejected_no_interview,2026-06-25,ashby,A,gmail/ATS,logs 012
+Enlace Health,Sales Engineer,2026-06-24,exact,rejected_no_interview,2026-06-26,greenhouse,A,gmail/ATS,logs 012;013
+Hippocratic AI,Deployment Strategist,2026-06-24,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-079 · net_new
+Melavex,Founding GTM Lead,2026-06-24,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-077 · net_new
+MinIO,BDR Enterprise,2026-06-24,exact,rejected_no_interview,2026-06-27,email_direct,A,gmail/ATS,logs 012
+RevPartners,GTM Engineer,2026-06-24,evidence_bound,rejected_no_interview,2026-07-27,teamtailor,B,gmail/ATS,logs 010;011;012;013
+Robert Half,Go-To-Market Lead,2026-06-24,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-078 · net_new
+StackAI,Sales Engineer,2026-06-24,exact,no_response,,ashby,A,gmail/ATS,logs 013
+Tekion,"Senior Manager, Inside Sales",2026-06-24,exact,rejected_no_interview,2026-06-27,greenhouse,A,gmail/ATS,logs 012;013
+Toast,"GTM Engineer, Sales Workflow Automation",2026-06-24,exact,rejected_no_interview,2026-07-16,greenhouse,A,gmail/ATS,logs 011;013
+UpGuard,SDR Manager,2026-06-24,exact,rejected_no_interview,2026-06-29,lever,A,gmail/ATS,logs 012
+Hermetic AI,"Sales Development Representative - Atlanta, GA",2026-06-25,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-080 · net_new
+WireScreen,Partnerships Manager,2026-06-25,exact,rejected_no_interview,2026-07-03,ashby,A,gmail/ATS,logs 012
+City Schools of Decatur,unspecified,2026-06-26,exact,no_response,,applitrack,A,gmail/ATS,logs 012;015
+Trase,"GTM Engineer, Healthcare",2026-06-26,exact,rejected_no_interview,2026-07-10,greenhouse,A,gmail/ATS,logs 012
+Company.ai,GTM Sales Lead,2026-07-06,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-083 · net_new
+InRule Technology,unspecified,2026-07-06,exact,no_response,,rippling,A,gmail/ATS,logs 012
+Inworld AI,GTM Lead,2026-07-06,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-082 · net_new
+TechLinkSphere,Micro-SaaS Launch & Growth Engineer,2026-07-06,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-081 · net_new
+Duckbill,Founding Sales / GTM,2026-07-07,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-084 · net_new
+jobmail.io,Growth Lead,2026-07-07,exact,rejected_after_interview,2026-07-13,unknown,B,gmail/ATS,logs 012;015;018
+Pogo Technologies,GTM Engineer,2026-07-08,exact,no_response,,ashby,A,gmail/ATS,logs 012
+Douglas County School System,unspecified,2026-07-09,exact,no_response,,applitrack,A,gmail/ATS,logs 012;015
+Baton AI,Founding GTM,2026-07-12,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-101 · net_new
+Confido,Founding GTM Engineer,2026-07-12,exact,no_response,,ashby,A,gmail/ATS,logs 012
+Coverwatch,Founding GTM,2026-07-12,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-099 · net_new
+Cursor,"GTM, Emerging Products",2026-07-12,exact,rejected_no_interview,2026-07-13,ashby,A,gmail/ATS,logs 012
+Entelligence.AI,Founding GTM,2026-07-12,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-085 · net_new
+Human Delta,Founding GTM Engineer,2026-07-12,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-087 · net_new
+Kana,GTM Engineer,2026-07-12,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-098 · net_new
+Light Labs,"GTM Engineer, Agents",2026-07-12,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-095 · net_new
+Listen Labs,Lead GTM Engineer,2026-07-12,exact,no_response,,ashby,A,gmail/ATS,logs 012
+Logicbroker,AI GTM Engineer,2026-07-12,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-091 · net_new
+Massive,GTM,2026-07-12,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-100 · net_new
+Method Recruiting,Founding GTM Engineer,2026-07-12,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-092 · net_new
+Nudge AI,Growth Lead,2026-07-12,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-086 · net_new
+Sidepocket,Go-To-Market Growth Engineer,2026-07-12,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-090 · net_new
+Stealth Startup,GTM Leader / Head of Growth,2026-07-12,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-096 · net_new
+talentpluto,Go-to-Market Engineer,2026-07-12,exact,unknown,2026-07-22,workable,A,gmail/ATS,logs 011;012
+talentpluto,GTM Engineer,2026-07-12,exact,unknown,2026-07-22,workable,A,gmail/ATS,logs 011;012
+Taste Labs,Growth Lead,2026-07-12,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-093 · net_new
+The Biological Computing Co. (TBC),Lead Sales and Product Engineer,2026-07-12,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-088 · net_new
+Patch,Growth Engineering Lead,2026-07-13,exact,no_response,,ashby,A,gmail/ATS,logs 012
+Productboard,Associate GTM Engineer,2026-07-13,exact,no_response,,gem,A,gmail/ATS,logs 011;012
+Together AI,unspecified,2026-07-13,exact,no_response,,greenhouse,A,gmail/ATS,logs 011;012
+Conversion,GTM Engineer,2026-07-14,exact,no_response,,ashby,A,gmail/ATS,logs 011
+Attentive,GTM Engineer,2026-07-15,exact,no_response,,greenhouse,A,gmail/ATS,logs 011
+Axiad,unspecified,2026-07-15,exact,no_response,,greenhouse,A,gmail/ATS,logs 011
+BrightHire,unspecified,2026-07-15,exact,no_response,,greenhouse,A,gmail/ATS,logs 011
+GatherUp,unspecified,2026-07-15,exact,no_response,,greenhouse,A,gmail/ATS,logs 011
+Handshake,GTM Engineer,2026-07-15,exact,no_response,,ashby,A,gmail/ATS,logs 011
+Higgsfield,GTM Engineer,2026-07-15,exact,no_response,,ashby,A,gmail/ATS,logs 011
+Hightouch,Go-to-Market Engineer,2026-07-15,exact,rejected_no_interview,2026-07-24,greenhouse,A,gmail/ATS,logs 010;011
+Hologram,GTM Engineer Pre-Sales,2026-07-15,exact,interview_scheduled,2026-07-22,greenhouse,A,gmail/ATS,logs 010;011;020
+HUD,GTM Engineer,2026-07-15,exact,rejected_no_interview,2026-07-16,ashby,A,gmail/ATS,logs 011
+Lorikeet,GTM Engineer,2026-07-15,exact,role_paused_or_closed,2026-07-20,ashby,A,gmail/ATS,logs 011
+Nooks,"GTM Engineer, Marketing",2026-07-15,exact,no_response,,ashby,A,gmail/ATS,logs 011
+Scribe,unspecified,2026-07-15,exact,no_response,,ashby,A,gmail/ATS,logs 011
+Yuno,Go To Market Engineer,2026-07-15,exact,no_response,,lever,A,gmail/ATS,logs 011
+Great Question,Senior Demand Generation Manager,2026-07-17,exact,rejected_after_interview,2026-07-29,ashby,A,gmail/ATS,logs 010;011
+Elios AI,Senior Forward Deployed Engineer,2026-07-18,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-102 · net_new
+Clutch,GTM Engineer,2026-07-19,exact,unknown,2026-07-22,ashby,A,gmail/ATS,logs 011
+Cincinnatus,Biology & Biophysics Research Collaborator,2026-07-20,exact,rejected_no_interview,2026-07-27,mercor,A,gmail/ATS,logs 010;011;015
+LiveKit,GTM Systems Engineer,2026-07-20,exact,rejected_no_interview,2026-08-17,ashby,A,gmail/ATS,logs 010;011
+Revic,Founding GTM AI Engineer,2026-07-21,exact,no_response,,ziprecruiter,A,gmail/ATS,logs 011;014;015
+Ailytics,Revenue Operations (RevOps) Specialist,2026-07-22,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-103 · net_new
+Owner.com,GTM Engineer,2026-07-22,exact,no_response,,ashby,A,gmail/ATS,logs 011
+Firstup,"Manager, GTM Systems",2026-07-23,exact,no_response,,apply4me,A,gmail/ATS,logs 010;015
+AI Digital,Growth Director,2026-07-24,exact,rejected_no_interview,2026-07-27,apply4me,A,gmail/ATS,logs 010;015
+Lattice,GTM Engineer,2026-07-24,exact,role_paused_or_closed,2026-08-04,apply4me,A,gmail/ATS,logs 010;015;018
+Doomers AI,Founding GTM,2026-07-26,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-105 · net_new
+Fractional Demand,GTM Engineer,2026-07-26,exact,unknown,,linkedin_easy_apply,A,LinkedIn,LI-104 · net_new
+Tripleseat,GTM Engineer,2026-08-06,exact,no_response,,hirebridge,A,gmail/ATS,logs 010;014
+Mercor,Sales and Marketing Expert,2026-08-18,exact,converted_to_contract,2026-08-21,mercor,A,gmail/ATS,logs 010;014 · contract activated 2026-08-21
+Mercor,Sales Engineering Expert,2026-08-18,exact,rejected_no_interview,2026-08-25,mercor,A,gmail/ATS,logs 010;014
+Mercor,B2B Sales Expert,2026-08-18,exact,rejected_no_interview,2026-08-25,mercor,A,gmail/ATS,logs 010;014
+Uncapped,GTM Engineer,2026-08-22,exact,rejected_no_interview,2026-08-25,workable,A,gmail/ATS,logs 010
+Agroknow,North America Sales,,unknown,unknown,2025-11-25,email_direct,B,gmail/ATS,logs 004
+AnyInt AI,unspecified,,unknown,unknown,2026-06-09,linkedin,B,gmail/ATS,logs 008
+Beckhoff Automation,Sales Engineer,,unknown,rejected_no_interview,2025-08-08,paycom,A,gmail/ATS,logs 019
+Bluejay,Founding GTM,,unknown,rejected_after_interview,2026-07-23,unknown,A,gmail/ATS,logs 018;020
+Built Recruiting,GTM Engineer,,unknown,role_paused_or_closed,2026-04-16,greenhouse,A,gmail/ATS,logs 009
+Celonis,unspecified,,unknown,unknown,,greenhouse,B,gmail/ATS,logs 005
+ClassDojo,unspecified,,unknown,unknown,2025-08-08,gem,B,gmail/ATS,logs 001
+Classet,Head of GTM,,unknown,rejected_no_interview,2025-07-09,wellfound,A,gmail/ATS,logs 003
+DeKalb County School District,STAR Substitute (11 schools),,unknown,role_paused_or_closed,2026-08-11,applitrack,A,gmail/ATS,logs 014;015
+Drata,SDR Remote,,unknown,unknown,2025-06-16,greenhouse,A,gmail/ATS,logs 003
+Every,GTM Engineer,,unknown,interview_scheduled,2026-04-20,unknown,A,gmail/ATS,logs 020;022
+Fullsteam,Senior Sales Development Representative,,unknown,unknown,2025-09-29,workday,A,gmail/ATS,logs 001
+Galileo,GTM Engineer,,unknown,unknown,2025-07-28,rippling,A,gmail/ATS,logs 002
+Gong.io,unspecified,,unknown,unknown,,email_direct,B,gmail/ATS,logs 003
+Gradient Labs,GTM Engineer,,unknown,rejected_no_interview,2026-07-27,ashby,A,gmail/ATS,logs 010;011
+graph.one,unspecified,,unknown,unknown,2025-08-05,email_direct,C,gmail/ATS,logs 002
+Hyperbound,Founding RevOps Lead,,unknown,rejected_no_interview,2026-07-17,ashby,A,gmail/ATS,logs 011
+Jobright.ai,Product Manager (Early Career),,unknown,rejected_no_interview,2026-03-31,unknown,B,gmail/ATS,logs 006
+Leidos Systems,Software Engineer III REQ16295,,unknown,interview_scheduled,2025-09-26,dover,B,gmail/ATS,logs 001
+Lumenalta,unspecified,,unknown,unknown,2026-04-10,email_direct,B,gmail/ATS,logs 005;006
+Meshy,unspecified,,unknown,unknown,2025-06-01,email_direct,A,gmail/ATS,logs 003
+New Relic,unspecified,,unknown,unknown,,email_direct,B,gmail/ATS,logs 006
+OpenObserve,Growth Marketer,,unknown,rejected_no_interview,2026-08-24,ashby,A,gmail/ATS,logs 010
+PhrasIQ,Founding GTM / GTME,,unknown,interview_scheduled,2026-03-31,wellfound,A,gmail/ATS,logs 006
+Pin,unspecified,,unknown,rejected_after_interview,2025-07-07,unknown,A,gmail/ATS,logs 024;025
+Rippling,"Software Engineering Manager, Banking",,unknown,interview_scheduled,2025-12-14,dover,B,gmail/ATS,logs 004
+SmartMode AI,unspecified,,unknown,interview_scheduled,2025-07-18,email_direct,B,gmail/ATS,logs 002
+Spot AI,unspecified,,unknown,unknown,,greenhouse,B,gmail/ATS,logs 002
+Stellar,Substitute,,unknown,role_paused_or_closed,2026-07-28,unknown,B,gmail/ATS,logs 010;015
+Switchyards,Launch Manager,,unknown,rejected_no_interview,2025-08-19,unknown,A,gmail/ATS,logs 018;020
+Switchyards,Digital Product Builder,,unknown,rejected_no_interview,2026-04-25,unknown,A,gmail/ATS,logs 018
+TestGorilla,GTM Engineer,,unknown,assessment_sent,2026-02-20,teamtailor,A,gmail/ATS,logs 006;007;009
+The Hog,Founding GTM Engineer,,unknown,assessment_sent,2026-06-18,unknown,B,gmail/ATS,logs 021
+Trace3,SDR,,unknown,role_paused_or_closed,2025-06-25,greenhouse,A,gmail/ATS,logs 003
+Vonage,SDR API/CPaaS,,unknown,rejected_no_interview,2025-12-08,greenhouse,A,gmail/ATS,logs 004

@@ -17,6 +17,7 @@ Frozen 2026-08-29 ET for independent coding. Every coder receives this set. A co
 | Wellfound applications | csv or screenshots | full list | Wellfound receipts only, inside Gmail logs | 2026-08-29 |
 | YC Work at a Startup | screenshots | applied roles | **absent** | waived |
 | Prior workbooks [S1] [S2] | xlsx | 247 and 212 ledgers | **absent** from this workspace | waived as coding input; they are not artifacts for extraction |
+| Claude care package (sidecar) | md/csv | comparison corpus only, not a coding freeze | 86 unique files, see `package/INVENTORY.md` | 2026-08-30 Freeze 4. Does not replace Freeze 1–3. Package logs 001–036 are a different sequence from `artifacts/gmail/` |
 
 ## Retrieval is not coding
 
@@ -37,4 +38,4 @@ Git history on this branch before the redaction commit still contains raw identi
 
 ## Freeze rule
 
-Freeze 1 (Gmail and Calendar) was coded independently before these platform files existed. Freeze 2 adds the LinkedIn and Jobright CSVs without recoding Gmail. Freeze 3 adds personal Gmail remainder and the keeganmoody33 primary calendar without recoding Freeze 1 or Freeze 2. The Kiln LinkedIn transcription is a Freeze 3 addendum from user-supplied screenshots. A coder who treats a later freeze as the only corpus is running a different study. Ladders and YC remain outside all three freezes.
+Freeze 1 (Gmail and Calendar) was coded independently before these platform files existed. Freeze 2 adds the LinkedIn and Jobright CSVs without recoding Gmail. Freeze 3 adds personal Gmail remainder and the keeganmoody33 primary calendar without recoding Freeze 1 or Freeze 2. The Kiln LinkedIn transcription is a Freeze 3 addendum from user-supplied screenshots. Freeze 4 adds the Claude care package as a sidecar (`package/`) without recoding Freeze 1, Freeze 2, or Freeze 3 and without changing the 298. A coder who treats a later freeze as the only corpus is running a different study. Ladders and YC remain outside all four freezes.

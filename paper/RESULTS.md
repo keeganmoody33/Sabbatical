@@ -15,8 +15,9 @@ Harvest coverage of the frozen corpus, 2026-08-29:
 - Calendar transferred keegan@lecturesfrom.com: reachable and empty.
 - Calendar keeganmoody33@gmail.com primary: 338 events across five 90-day blocks with no keyword filter. Hidden MCAT PREP and SI CHM222 calendars were listed and not swept.
 - LinkedIn applied list pages 1 to 10: 99 rows in `artifacts/platform/linkedin_applied_jobs_pages_1_to_10.csv`. Relative stamps. `date_capture = 2026-08-29`. Page 10 has 10 rows, so a later page is not ruled out. The file does not label Easy Apply versus external ATS.
+- LinkedIn dated in-window extract: 105 rows in `artifacts/platform/linkedin-applications-in-window.csv`. Claude coding table from a care package, not the LinkedIn `Job Applications.csv` download. Minute timestamps. Not independently recoded into the census. See Freeze 4.
 - Jobright tracker: 40 rows in `artifacts/platform/jobright_applications_log.csv`. Exact dates.
-- Ladders full list, YC dashboard, [S1] and [S2] workbooks: absent.
+- Ladders full list, YC dashboard, [S1] and [S2] workbooks: absent. The 2026-08-30 care package did not contain them.
 - LinkedIn GTME Intro screenshots (The Kiln): transcribed 2026-08-30 in `artifacts/linkedin/gtme-intro-the-kiln.md`. Not a LinkedIn data download.
 
 Stop conditions: see `artifacts/STOP-CONDITIONS.md`. Personal Gmail Q6, Q7, Q3b, and Q9 are exhausted. Personal primary calendar is swept.
@@ -25,13 +26,13 @@ Stop conditions: see `artifacts/STOP-CONDITIONS.md`. Personal Gmail Q6, Q7, Q3b,
 
 95 percent completeness is a goal, not a verified claim. The intended estimator is stratified two-source capture recapture on the overlap where LinkedIn and external ATS mail could both have seen the same application.
 
-That overlap stratum is still unmeasured. The LinkedIn file that arrived is pages 1 to 10 of an applied list. It does not mark which rows were Easy Apply versus an external ATS. No completeness percentage is published. No Lincoln Petersen estimate is computed.
+That overlap stratum is still unmeasured. The LinkedIn file that arrived in Freeze 2 is pages 1 to 10 of an applied list. It does not mark which rows were Easy Apply versus an external ATS. A later 105-row dated extract from the care package is a Claude coding table, not an independently labeled channel stratum. No completeness percentage is published. No Lincoln Petersen estimate is computed.
 
 Independence assumption: LinkedIn applied-list rows and employer ATS mail are not independent for Easy Apply, which is why that channel is excluded from the overlap stratum.
 
 Likely bias direction if someone later runs an unstratified estimator anyway: Easy Apply is visible to LinkedIn and invisible to ATS mail, which would inflate apparent uniqueness and understate completeness.
 
-Unmet or waived stops that still bound this census: LinkedIn pages beyond 10 and a channel-labeled ATS stratum; Ladders; YC; [S1] and [S2] workbooks. Personal Gmail Q7 page 2+, Q6, Q3b, Q9, and personal calendar are no longer in that list.
+Unmet or waived stops that still bound this census: LinkedIn pages beyond 10 and a channel-labeled ATS stratum; Ladders; YC; [S1] and [S2] workbooks. The care package did not fill those holes. Personal Gmail Q7 page 2+, Q6, Q3b, Q9, and personal calendar are no longer in that list.
 
 ## Pre-adjudication agreement
 
@@ -106,6 +107,21 @@ Pressure-test names (origin, what happened, interviewed):
 - BCOFA: GTM strategy and copywriting with Dr. Blaney. **No. Consulting.**
 - Kivira.health: connect meetings and weekly outbound. **No. Consulting. Meetings happened.**
 
+## Freeze 4 care package
+
+Gmail Freeze 1 extracts, Freeze 2 platform files, and Freeze 3 personal mail and calendar were not recoded. The Claude care package dropped 2026-08-30 is inventoried in `package/INVENTORY.md`. Package logs 001 to 036 are a second sequence under `package/logs/`. They are not this tree's `artifacts/gmail/` files.
+
+- Net-new `register = application` rows: **0**
+- Full application census remains **298**
+- Interviewed applications remain **14**
+- Opportunity register unchanged
+
+A 105-row dated LinkedIn extract arrived as a Claude coding table. Independent match against the 298: 89 overlap, one Evolution USA title typo on an existing row, three opportunity or non-census rows (BX Studio, The Hog, Colossus), twelve candidates held. No `application_id` was added. Package totals are a different assembly and are not this freeze's finding.
+
+Jobright's four rows that a package log would add to reach a higher ledger (Axon KAE, Autodesk, MavenAI, Vanco) are already in the 298 from Freeze 2.
+
+VERIFY Part A is `logs/retrieval-log-052.md`. Ingest completion is `logs/retrieval-log-053.md`.
+
 ## Interviews (derived, never stored)
 
 Interviewed means at least one event whose `event_type` is in {recruiter_screen, hiring_manager_interview, panel, technical_exercise, final_round}.
@@ -157,3 +173,4 @@ Zero exact rows in September and October 2025 is not a claim of zero search acti
 - Weave treated as recruiter-initiated with no application (Greenhouse receipt, log 002)
 - The Hog counted in the application-to-interview rate
 - The Kiln counted in the application-to-interview rate
+- A care-package ledger adopted as this freeze's census
