@@ -93,7 +93,7 @@ Pressure-test names (origin, what happened, interviewed). Origins tagged memory 
 
 - Glytec: LinkedIn DMs with CEO Patrick F. Cua (messages analysis). Calendar Clayton Maike 2026-01-27. No submission receipt. **Yes, opportunity, outside the 14.**
 - The Hog: invitation 2026-06-15, calendar Hudson Liao 2026-06-16, take-home after. One live interview. No ATS receipt. **Yes, opportunity, outside the 14.**
-- Mixmax: No Agenda Meeting with Heath 2025-08-14, then a Mixmax service agreement. **No. Exclusion.** Not a search interview.
+- Mixmax: No Agenda Meeting with Heath 2025-08-14, then a Mixmax service agreement. Subject calls it an interview. Overlay keeps it employment. **No. Exclusion from 298.** Not a search application.
 - Every.to: thanks for applying, calendar 2026-04-21 with Austin. GTM Cafe origin is memory. Census discovery_source is unknown. **Yes, in the 14.**
 - PhrasIQ: Wellfound acceptance 2026-03-31. Discovery 2026-04-02 (30 min) and Deep Dive 2026-04-15 (60 min). User named Eddie. That string is not in the frozen mail or calendar titles, so counterparty stays unknown. **Yes, in the 14.**
 - Beautiful.ai: Greenhouse receipt 2026-03-08. Calendar interview 2026-03-17. Hiring manager named in follow-up is Brandon Ness. Decline 2026-03-26 from Emily. Emily is the decline sender, not the interviewer. **Yes, in the 14.**
@@ -101,16 +101,16 @@ Pressure-test names (origin, what happened, interviewed). Origins tagged memory 
 - Great Question: Ashby receipt 2026-07-17. Screening named Harri. Calendar interview 2026-07-26. Decline 2026-07-29. User named Harry. Corpus uses Harri. GTM Cafe origin is memory. **Yes, in the 14.**
 - Dagster Labs: Greenhouse 2026-03-30. Delaney Housley thank-you for chatting 2026-04-03 then decline. No calendar event. Phone medium is memory. **Yes, in the 14.**
 - TrueBuilt: LinkedIn applied-list GTM Engineer in Freeze 2. Posting later marked no longer accepting applications. Separate Gmail GTM project quote after a Loom, passed on budget. That project is not an interview. **Application in the 298. Not in the 14.**
-- Opsin: Colossus TG prep mail 2026-03-12. Calendar Opsin Sync with James Pham 2026-03-13. User recalled a Colossus phone alignment before James. No dated artifact for that first round. No ATS receipt. **Yes, opportunity, outside the 14.**
+- Opsin: Colossus TG prep mail 2026-03-12. Calendar Opsin Sync with James Pham 2026-03-13. User recalled a Colossus phone alignment before James. No dated artifact for that first round. Overlay logs that round as memory (`tok_b1f3dc9b0958`). No ATS receipt. **Yes, opportunity, outside the 14.**
 - Hotglue: Kevin Wright BDM conversation 2026-04-20. YC Work at a Startup origin is in the meetings file. No ATS receipt. Missing from the LinkedIn 54-thread analysis. **Yes, opportunity, outside the 14.**
 - Mobb / mobb.dev: Gusto first-day and a Mobb employment mailbox. Employment, not a search application.
 - Pin: Erica Stacy Tarwater 2025-06-30, Conor Kline 2025-07-07, then rejection. No ATS receipt. User recalled Erika. Mail uses Erica. GTM Cafe origin is memory. **Yes, opportunity, outside the 14.**
 - Mercor contract: calendar Claire 2026-08-14, Daniel 2026-08-17, Claire 08-18, Claire 08-25. Gmail names Daniel Luo, not David Lou. Instant Work Offer 2026-08-20, contract 08-21. Separate Mercor marketplace receipts stay in the 298 without interviews. **Yes, opportunity, outside the 14.**
-- The Kiln: LinkedIn GTME Intro on 2026-03-04. Giorgio Zanella introduced Keegan to co-founders Patrick Spychalski and Mathias Powell. Same-day call with Patrick. User recalled two interviews including Giorgio. Giorgio's artifact role is introducer. No second dated interview event. **Yes, opportunity, outside the 14.**
-- Doug Shankman: calendar 2025-10-27, 15 min, workshop connect brainstorm. Informal interview plus CRO idea. GTM Cafe origin is memory. **Meeting happened. Not minted. Not in the 14.**
+- The Kiln: LinkedIn GTME Intro on 2026-03-04. Giorgio Zanella introduced Keegan to co-founders Patrick Spychalski and Mathias Powell. Same-day call with Patrick. User recalled two interviews including Giorgio. Giorgio's artifact role is introducer. Overlay logs Giorgio as interviewer (`tok_8c8acbc92d3c`). **Yes, opportunity, outside the 14.**
+- Doug Shankman: calendar 2025-10-27, 15 min, workshop connect brainstorm. Informal interview plus CRO idea. GTM Cafe origin is memory. Overlay mints `unknown|cro-idea-doug-shankman|c1` as opportunity. Company stays unknown. **Meeting happened. Overlay opportunity. Not in the 14.**
 - Jorge Macias / GTM-engineering.io: recurring calendar from 2025-07-04. GTM Engineering School TA, mentorship. **No. Communal. Not a job opportunity.**
 - BCOFA: GTM strategy with Dr. Blaney 2026-03-06. Fizzled on budget. Josh Pappas is not in this tree's census files. Origins before the window stay outside harvest. **No. Consulting.**
-- Adam Andrewjeski: calendar 2025-06-18. Calendly note names Clay Cafe Slack. No company. Informal interview. **Meeting happened. Not minted. Not in the 14.**
+- Adam Andrewjeski: calendar 2025-06-18. Calendly note names Clay Cafe Slack. No company. Informal interview. Overlay mints `unknown|informal-adam-andrewjeski|c1` as opportunity. Company stays unknown. **Meeting happened. Overlay opportunity. Not in the 14.**
 - Kellen Casebeer: calendar 2025-06-16, thedeallab.com. Founder of Clay Cafe / gtmcafe.com and a GTM Engineering School TA. Met as Mobb prep. **No. Communal.**
 - Kivira.health: GTM Overview 2026-06-03 and weekly outbound check-ins. User described a three month GTM contract via Josh Pappas. **No. Consulting. Meetings happened.**
 
@@ -121,15 +121,33 @@ Gmail Freeze 1 extracts, Freeze 2 platform files, and Freeze 3 personal mail and
 - Net-new `register = application` rows: **0**
 - Full application census remains **298**
 - Interviewed applications remain **14**
-- Opportunity register unchanged
+- Opportunity register in freeze files unchanged. Adam and Doug sit in `coding/confirmed/`, not in the freeze opportunity register.
 
 A 105-row dated LinkedIn extract arrived as a Claude coding table. Independent match against the 298: 89 overlap, one Evolution USA title typo on an existing row, three opportunity or non-census rows (BX Studio, The Hog, Colossus), twelve candidates held. No `application_id` was added. Package totals are a different assembly and are not this freeze's finding.
 
 Jobright's four rows that a package log would add to reach a higher ledger (Axon KAE, Autodesk, MavenAI, Vanco) are already in the 298 from Freeze 2.
 
-A LinkedIn messages analysis arrived 2026-08-30. It is a Claude coding of `messages.csv`, not the export. Independent match of 54 job-related threads and 20 uncertain threads: nine already in the 298, six already opportunity, one held application candidate (AnyInt AI), the rest exclusion, unidentifiable, or held opportunity. No `application_id` added. No interview minted. The Kiln Giorgio DM does not mint a second interview. Hotglue is missing from the 54. Pin is missing from the 54.
+A LinkedIn messages analysis arrived 2026-08-30. It is a Claude coding of `messages.csv`, not the export. Independent match of 54 job-related threads and 20 uncertain threads: nine already in the 298, six already opportunity, one held application candidate (AnyInt AI), the rest exclusion, unidentifiable, or held opportunity. No `application_id` added. The Kiln Giorgio DM does not mint a second artifact interview. Overlay logs Giorgio as a memory interviewer. Hotglue is missing from the 54. Pin is missing from the 54.
 
-VERIFY Part A is `logs/retrieval-log-052.md`. Ingest completion is `logs/retrieval-log-053.md`. Messages unpacking is `logs/retrieval-log-054.md`. Pressure-test restatement is `logs/retrieval-log-055.md`. Census still 298. Interviewed applications still 14.
+VERIFY Part A is `logs/retrieval-log-052.md`. Ingest completion is `logs/retrieval-log-053.md`. Messages unpacking is `logs/retrieval-log-054.md`. Pressure-test restatement is `logs/retrieval-log-055.md`. Subject-confirmed overlay is `logs/retrieval-log-056.md`. Census still 298. Interviewed applications still 14.
+
+## How the tally combines
+
+The application census and the interview rate stay **298** and **14/298**. Other conversations are logged in a subject-confirmed overlay so they are traceable without entering that rate.
+
+Four scoreboards, kept separate. Full tables and hashed pointers: `adjudication/ORIGINS.md`. Machine-readable flags: `adjudication/origins__subject_confirmed.csv`.
+
+A. Artifact applications: 298. Interviewed applications: 14. Rate 14/298.
+
+B. Opportunity conversations outside the 14: Glytec, The Hog, Pin, Hotglue, Opsin, The Kiln, Mercor contract, WorkOS (slot booked). Overlay adds Adam Andrewjeski and Doug Shankman with company unknown.
+
+C. Money: Mixmax contractor GTM, Mercor hourly contract, Mobb employment, Kivira.health three month GTM. BCOFA unpaid. None of these sit in 298 or in the 14.
+
+D. Communal: Jorge Macias, Kellen Casebeer.
+
+If the subject says a conversation happened, it is in that overlay, tagged `evidence_system = memory` when the source is recall. That is not the same as adding it to 298. Frozen `discovery_source` is not recoded. GTM Cafe is not in this tree's codebook vocabulary.
+
+Do not print 321 or 325 as this freeze's census. Do not print a combined conversation count as if it replaced 14/298.
 
 ## Interviews (derived, never stored)
 
@@ -141,8 +159,9 @@ Interviewed means at least one event whose `event_type` is in {recruiter_screen,
 - Application-to-interview rate on the 298: 14/298
 - Platform files carry no interview events. Adding LinkedIn applied-list and Jobright rows does not add interviews.
 - Opportunity-register interviews (WorkOS, Mercor contract path, Pin, Hotglue, Opsin, The Kiln, The Hog, Glytec, and other recruiter-only processes) sit outside those denominators
+- Overlay opportunity rows (Adam, Doug) and overlay memory rounds (Opsin Colossus phone, Kiln Giorgio) also sit outside those denominators
 
-The Hog, Pin, Hotglue, Opsin, The Kiln, and Glytec are opportunity, not applications, so those interview events do not enter the 14.
+The Hog, Pin, Hotglue, Opsin, The Kiln, and Glytec are opportunity, not applications, so those interview events do not enter the 14. Adam and Doug are overlay opportunity with no employer string, so they do not enter the 14.
 
 ## Role lane (after kappa)
 
@@ -183,3 +202,5 @@ Zero exact rows in September and October 2025 is not a claim of zero search acti
 - The Hog counted in the application-to-interview rate
 - The Kiln counted in the application-to-interview rate
 - A care-package ledger adopted as this freeze's census
+- Overlay interviews (Adam, Doug, Mixmax, Opsin Colossus phone, Kiln Giorgio) mixed into 14/298
+- A combined conversation count printed as if it replaced the application-to-interview rate

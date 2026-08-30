@@ -31,3 +31,14 @@ Freeze 2 has LinkedIn pages 1 to 10 without that channel label. Do not run naive
 - WorkOS: artifacts in log 020 (TopHire). Register is adjudicated, not assumed.
 - 212-to-163: workbooks absent. Still undocumented.
 - Dedupe key: `company|role|cycle` as coded in application_id.
+
+## Subject-confirmed overlay (not a fourth independent coder)
+
+Coder `confirmed` records recall and origins after Freeze 1 through Freeze 4. It does not recode Freeze 1 Gmail or Freeze 2 platform files. `adjudication/derive_metrics.py` does not read it, so 14/298 cannot move by accident.
+
+- Paper-facing tally: `adjudication/ORIGINS.md`
+- Flags for the paper: `adjudication/origins__subject_confirmed.csv`
+- Overlay rows: `coding/confirmed/`
+- Retrieval: `logs/retrieval-log-056.md`
+
+Filter the origins CSV. Do not union opportunity, employment, consulting, or communal rows into the application census.
