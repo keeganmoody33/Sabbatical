@@ -89,24 +89,30 @@ Gmail Freeze 1 extracts and Freeze 2 platform files were not recoded. Personal G
 - PhrasIQ GTM Deep Dive on 2026-04-15 is now on the personal calendar. Freeze 1 had only a proposed date.
 - Interviewed applications remain **14**. Pin, Hotglue, Opsin, The Kiln, The Hog, and Glytec interviews sit in the opportunity register.
 
-Pressure-test names (origin, what happened, interviewed):
+Pressure-test names (origin, what happened, interviewed). Origins tagged memory are not written onto frozen `discovery_source` fields.
 
-- Glytec: interview logistics 2026-01-27 and calendar with Clayton Maike the same day. No submission receipt. **Yes, opportunity, outside the 14.**
-- The Hog: invitation 2026-06-15, calendar 2026-06-16 with Hudson Liao, take-home. No ATS receipt. **Yes, opportunity, outside the 14.**
-- Mixmax: product welcome and No Agenda Meeting with Heath 2025-08-14. **No. Exclusion.**
-- Every.to: thanks for applying, calendar 2026-04-21 with Austin. **Yes, in the 14.**
-- PhrasIQ: Wellfound acceptance, Discovery 2026-04-02 and Deep Dive 2026-04-15. User named Eddie. That string is not in the frozen mail or calendar titles, so counterparty stays unknown. **Yes, in the 14.**
-- Beautiful.ai: Greenhouse receipt 2026-03-08. Calendar interview 2026-03-17. Decline 2026-03-26 from Emily. Hiring manager named in follow-up is Brandon Ness. **Yes, in the 14.**
-- Pearl: Ashby receipt 2026-04-06. Calendar interviews 2026-05-05 and 2026-05-18. Scheduler named in mail is Alex DeCeglie. User named Chris. That string is not on the Pearl artifacts. **Yes, in the 14.**
-- Great Question: Ashby receipt 2026-07-17. Screening named Harri. Calendar interview 2026-07-26. Decline 2026-07-29. User named Harry. Corpus uses Harri. **Yes, in the 14.**
-- TrueBuilt: LinkedIn applied-list GTM Engineer in Freeze 2, posting later marked no longer accepting applications. Separate Gmail GTM project quote, passed on budget. That project is not an interview. **Application in the 298. Not in the 14.**
-- Opsin: Colossus TG video interview with James Pham 2026-03-13. No ATS receipt. **Yes, opportunity.**
-- Hotglue: Kevin Wright BDM conversation 2026-04-20. No ATS receipt. **Yes, opportunity.**
+- Glytec: LinkedIn DMs with CEO Patrick F. Cua (messages analysis). Calendar Clayton Maike 2026-01-27. No submission receipt. **Yes, opportunity, outside the 14.**
+- The Hog: invitation 2026-06-15, calendar Hudson Liao 2026-06-16, take-home after. One live interview. No ATS receipt. **Yes, opportunity, outside the 14.**
+- Mixmax: No Agenda Meeting with Heath 2025-08-14, then a Mixmax service agreement. **No. Exclusion.** Not a search interview.
+- Every.to: thanks for applying, calendar 2026-04-21 with Austin. GTM Cafe origin is memory. Census discovery_source is unknown. **Yes, in the 14.**
+- PhrasIQ: Wellfound acceptance 2026-03-31. Discovery 2026-04-02 (30 min) and Deep Dive 2026-04-15 (60 min). User named Eddie. That string is not in the frozen mail or calendar titles, so counterparty stays unknown. **Yes, in the 14.**
+- Beautiful.ai: Greenhouse receipt 2026-03-08. Calendar interview 2026-03-17. Hiring manager named in follow-up is Brandon Ness. Decline 2026-03-26 from Emily. Emily is the decline sender, not the interviewer. **Yes, in the 14.**
+- Pearl: Ashby receipt 2026-04-06. Calendar interviews 2026-05-05 (mail says phone) and 2026-05-18. Scheduler named in mail is Alex DeCeglie. User named Chris on the second. That string is not on the Pearl artifacts. Garrett Wolfe / GTM Cafe origin is memory. **Yes, in the 14.**
+- Great Question: Ashby receipt 2026-07-17. Screening named Harri. Calendar interview 2026-07-26. Decline 2026-07-29. User named Harry. Corpus uses Harri. GTM Cafe origin is memory. **Yes, in the 14.**
+- Dagster Labs: Greenhouse 2026-03-30. Delaney Housley thank-you for chatting 2026-04-03 then decline. No calendar event. Phone medium is memory. **Yes, in the 14.**
+- TrueBuilt: LinkedIn applied-list GTM Engineer in Freeze 2. Posting later marked no longer accepting applications. Separate Gmail GTM project quote after a Loom, passed on budget. That project is not an interview. **Application in the 298. Not in the 14.**
+- Opsin: Colossus TG prep mail 2026-03-12. Calendar Opsin Sync with James Pham 2026-03-13. User recalled a Colossus phone alignment before James. No dated artifact for that first round. No ATS receipt. **Yes, opportunity, outside the 14.**
+- Hotglue: Kevin Wright BDM conversation 2026-04-20. YC Work at a Startup origin is in the meetings file. No ATS receipt. Missing from the LinkedIn 54-thread analysis. **Yes, opportunity, outside the 14.**
 - Mobb / mobb.dev: Gusto first-day and a Mobb employment mailbox. Employment, not a search application.
-- Pin: Erica Stacy Tarwater 2025-06-30, Conor Kline 2025-07-07, then rejection. No ATS receipt. User recalled Erika. Mail uses Erica. **Yes, opportunity.**
-- The Kiln: LinkedIn GTME Intro on 2026-03-04. Giorgio Zanella introduced Keegan to co-founders Patrick Spychalski and Mathias Powell. Same-day call with Patrick. User recalled two interviews including Giorgio. Giorgio's artifact role is introducer. No second dated artifact. No ATS receipt. No surviving calendar event. Clay AMA with Elias Stravik and Clay Club Patrick events are not this process. **Yes, opportunity, outside the 14.**
-- BCOFA: GTM strategy and copywriting with Dr. Blaney. **No. Consulting.**
-- Kivira.health: connect meetings and weekly outbound. **No. Consulting. Meetings happened.**
+- Pin: Erica Stacy Tarwater 2025-06-30, Conor Kline 2025-07-07, then rejection. No ATS receipt. User recalled Erika. Mail uses Erica. GTM Cafe origin is memory. **Yes, opportunity, outside the 14.**
+- Mercor contract: calendar Claire 2026-08-14, Daniel 2026-08-17, Claire 08-18, Claire 08-25. Gmail names Daniel Luo, not David Lou. Instant Work Offer 2026-08-20, contract 08-21. Separate Mercor marketplace receipts stay in the 298 without interviews. **Yes, opportunity, outside the 14.**
+- The Kiln: LinkedIn GTME Intro on 2026-03-04. Giorgio Zanella introduced Keegan to co-founders Patrick Spychalski and Mathias Powell. Same-day call with Patrick. User recalled two interviews including Giorgio. Giorgio's artifact role is introducer. No second dated interview event. **Yes, opportunity, outside the 14.**
+- Doug Shankman: calendar 2025-10-27, 15 min, workshop connect brainstorm. Informal interview plus CRO idea. GTM Cafe origin is memory. **Meeting happened. Not minted. Not in the 14.**
+- Jorge Macias / GTM-engineering.io: recurring calendar from 2025-07-04. GTM Engineering School TA, mentorship. **No. Communal. Not a job opportunity.**
+- BCOFA: GTM strategy with Dr. Blaney 2026-03-06. Fizzled on budget. Josh Pappas is not in this tree's census files. Origins before the window stay outside harvest. **No. Consulting.**
+- Adam Andrewjeski: calendar 2025-06-18. Calendly note names Clay Cafe Slack. No company. Informal interview. **Meeting happened. Not minted. Not in the 14.**
+- Kellen Casebeer: calendar 2025-06-16, thedeallab.com. Founder of Clay Cafe / gtmcafe.com and a GTM Engineering School TA. Met as Mobb prep. **No. Communal.**
+- Kivira.health: GTM Overview 2026-06-03 and weekly outbound check-ins. User described a three month GTM contract via Josh Pappas. **No. Consulting. Meetings happened.**
 
 ## Freeze 4 care package
 
@@ -123,7 +129,7 @@ Jobright's four rows that a package log would add to reach a higher ledger (Axon
 
 A LinkedIn messages analysis arrived 2026-08-30. It is a Claude coding of `messages.csv`, not the export. Independent match of 54 job-related threads and 20 uncertain threads: nine already in the 298, six already opportunity, one held application candidate (AnyInt AI), the rest exclusion, unidentifiable, or held opportunity. No `application_id` added. No interview minted. The Kiln Giorgio DM does not mint a second interview. Hotglue is missing from the 54. Pin is missing from the 54.
 
-VERIFY Part A is `logs/retrieval-log-052.md`. Ingest completion is `logs/retrieval-log-053.md`. Messages unpacking is `logs/retrieval-log-054.md`.
+VERIFY Part A is `logs/retrieval-log-052.md`. Ingest completion is `logs/retrieval-log-053.md`. Messages unpacking is `logs/retrieval-log-054.md`. Pressure-test restatement is `logs/retrieval-log-055.md`. Census still 298. Interviewed applications still 14.
 
 ## Interviews (derived, never stored)
 
