@@ -58,6 +58,20 @@ Consequence for downstream numbers: none in this freeze. Zero rows hit the branc
 
 The defect survived the original build because it was invisible. A refusal that produces no distinguishable output looks exactly like a decision that was never needed.
 
+## A derived interview contradicts a stored terminal outcome
+
+Open. Found 2026-08-30 by a check added in `pipeline/data_quality.py`, which now runs on every pipeline run.
+
+`jobmail-io|growth-lead|c1` carries an interview event and a `terminal_outcome` of `rejected_no_interview`. Both values came from cursor, on a cursor-unique row that bravo never coded, so no blind second reading exists to break the tie.
+
+No published figure moves. `interviewed` is derived from the events table and never stored, so the count of 13 and the rate 13/221 are unaffected either way. What is affected is the terminal-outcome distribution, where this row sits in `rejected_no_interview` while also appearing in the interview set.
+
+It is not resolved here, for the same reason the Weave row was not resolved by preference. Terminal outcome is a field the adjudication pass never covered, this row has one coder rather than two, and closing it would require either a new artifact or a recall-sourced decision. Recall is what `prompts/extraction.md` rule 8 forbids writing into a structured field.
+
+What would close it: the underlying artifact for that process, which would establish whether an interview happened and therefore which of the two fields is wrong.
+
+The general point is the reason the check was added. `interviewed` is derived and `terminal_outcome` is stored, so the codebook's first design principle, store observations and compute rollups, was followed in one direction and not the other. Two representations of the same fact will eventually disagree, and this is what it looks like when they do.
+
 ## Capture recapture not computed
 
 The protocol restricts two-source capture recapture to LinkedIn rows submitted through an external ATS, not Easy Apply. Freeze 2 has LinkedIn pages 1 to 10 without that channel label. Naive Lincoln Petersen on Gmail overlap versus Easy Apply is a misuse and was not run.

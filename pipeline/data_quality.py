@@ -24,6 +24,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "adjudication"))
 
 from _common import INTERVIEW_TYPES, iso_date, load_csv  # noqa: E402
+from _common import is_excluded_event as _excluded  # noqa: E402
 
 ADJ = ROOT / "adjudication"
 REPORT = ROOT / "data_quality_report.md"
@@ -328,6 +329,33 @@ def section_outliers(lines: list[str], census: list[dict], latency: list[dict]) 
             f"interview events over {ROUNDS_OUTLIER} on one application (both coders unioned)",
             str(len(many_rounds)),
             ", ".join(f"`{a}` at {n}" for a, n in sorted(many_rounds.items())) or "none",
+        ]
+    )
+
+    # Interviewed is derived from events and terminal_outcome is stored on the
+    # row, so the two can contradict each other. This is the check that finds
+    # it. Where they disagree the derived value governs every published count,
+    # because the codebook forbids a stored rollup, but the contradiction is a
+    # real coding defect and is reported rather than resolved silently.
+    interviewed = {
+        event["application_id"]
+        for coder in ("cursor", "bravo")
+        for event in load_csv(ROOT / "coding" / coder / f"events__{coder}.csv")
+        if event["event_type"] in INTERVIEW_TYPES and not _excluded(event)
+    }
+    contradictions = []
+    for row in census:
+        was_interviewed = row["application_id"] in interviewed
+        outcome = row["terminal_outcome"]
+        if was_interviewed and outcome == "rejected_no_interview":
+            contradictions.append(f"`{row['application_id']}` has an interview event and `{outcome}`")
+        if not was_interviewed and outcome in {"rejected_after_interview", "ghosted_after_interview"}:
+            contradictions.append(f"`{row['application_id']}` has `{outcome}` and no interview event")
+    rows.append(
+        [
+            "derived interview status contradicts stored terminal_outcome",
+            str(len(contradictions)),
+            "; ".join(contradictions) or "none",
         ]
     )
 

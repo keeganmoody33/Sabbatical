@@ -118,6 +118,7 @@ Rows sharing an `application_id`: 0.
 | days to any response over 120 | 1 | `sentilink\|go-to-market-strategy-analyst\|c1` at 140 |
 | negative response latency | 0 | none |
 | interview events over 6 on one application (both coders unioned) | 0 | none |
+| derived interview status contradicts stored terminal_outcome | 1 | `jobmail-io\|growth-lead\|c1` has an interview event and `rejected_no_interview` |
 | terminal outcome dated before submission | 0 | none |
 | submission date outside the study window | 0 | none |
 
