@@ -1,0 +1,101 @@
+# Response latency
+
+Secondary outcomes named in `knowledge/protocol.md`, computed under the rule stated there: only rows where both dates carry `precision = exact`, with the excluded n reported alongside. This executes the pre-registration and does not deviate from it.
+
+## Base population
+
+- Adjudicated application census: 221
+- With an exact-dated `submission_receipt`, the base for every figure below: 196
+- Excluded for lacking one: 25
+
+The base is not the census. Any rate below is stated against 196, and the published application-to-interview rate remains 14/221.
+
+## Response rate and latency are separate
+
+- Substantive response, `employer_ack` excluded: 79/196
+- Any response, `employer_ack` included: 100/196
+- No response at all beyond the receipt: 96/196
+
+The medians below are conditional on having responded. They describe responders only and must not be quoted as a typical response time for an application.
+
+| definition | n | median | p25 | p75 | mean | max | day zero |
+|---|---|---|---|---|---|---|---|
+| substantive, headline | 79 | 7 | 3 | 19 | 15.1 | 140 | 9 (11.4%) |
+| any, includes ack | 100 | 5.5 | 1 | 15 | 12.8 | 140 | 22 (22.0%) |
+
+The day-zero share roughly doubles when `employer_ack` is included, which is what an automated acknowledgment arriving with the receipt looks like. The substantive figure is the headline for that reason. The distribution is right-skewed in both cases, mean well above median, so the median is the statistic to quote.
+
+## Time to first interview
+
+- n = 12, median 6 days, mean 40.3, range 0 to 387
+
+Two things make this figure weaker than its n suggests, and both are about the interview set rather than the latency arithmetic.
+
+**Provenance.** The census records 14 interviewed applications. Both coders independently found 10. The remaining 4 rest on cursor alone, and bravo contributes none that cursor missed: `hartleyco|founding-gtm|c1`, `hypergen|gtm-engineer|c1`, `jobmail-io|growth-lead|c1`, `weave|business-development-manager|c1`. Agreement on which applications were interviewed is therefore 10/14, which is much weaker than the published role-lane kappa of 0.9510 implies. Event-level agreement is not among the reliability statistics `knowledge/protocol.md` requires, so this is unmeasured rather than measured and small.
+
+**Ordering.** These carry an interview event dated after a rejection on the same application:
+
+- `weave|business-development-manager|c1`: rejection 2025-07-31, then `hiring_manager_interview` on 2026-08-18 by cursor, 383 days later.
+
+An interview that postdates the rejection closing the same cycle is either a genuine re-engagement or an event coded under the wrong type. `coding/cursor/notes__cursor.md` describes the Weave case as an "interview decline", and a decline is a `rejection` under the codebook vocabulary, not an interview. Resolve this in adjudication before either the interview count or this latency figure is published. It is not a latency question and this script does not decide it.
+
+## Right censoring
+
+Applications submitted near the 2026-08-29 window end have had less time to draw a response. The rate is stable across exposure windows, so censoring is not driving it.
+
+| minimum exposure | base n | responded | rate |
+|---|---|---|---|
+| 0 days | 196 | 100 | 0.510 |
+| 14 days | 192 | 97 | 0.505 |
+| 30 days | 191 | 97 | 0.508 |
+| 60 days | 158 | 84 | 0.532 |
+| 90 days | 130 | 65 | 0.500 |
+
+Applications with under 30 days of exposure: 5.
+
+## Slices, cells under 5 suppressed
+
+Median days to any response, `employer_ack` included, so the cells are as populated as the data allows. Suppressed groups are named with their counts rather than dropped silently.
+
+### By role lane
+
+| role_lane | n | median days |
+|---|---|---|
+| explicit_gtm_engineering | 43 | 5 |
+| sales_bd_partnerships | 15 | 3 |
+| unspecified | 11 | 8 |
+| growth_demand_marketing | 9 | 6 |
+| sales_solutions_engineering | 7 | 7 |
+| revops_gtm_ops_strategy | 6 | 3 |
+| other | 5 | 7 |
+
+Suppressed, 1 of 8 groups: product_ai_technical (n=4).
+
+### By ATS
+
+| ats_system | n | median days |
+|---|---|---|
+| Greenhouse | 28 | 10 |
+| none_observed | 26 | 4.5 |
+| Ashby | 25 | 5 |
+| Workable | 6 | 0 |
+
+Suppressed, 9 of 13 groups: Rippling (n=4), Lever (n=2), Teamtailor (n=2), Workday (n=2), Comeet (n=1), iCIMS (n=1), Recruitee (n=1), Breezy (n=1), Gem (n=1).
+
+### By month applied
+
+| month | n | median days |
+|---|---|---|
+| 2026-06 | 19 | 3 |
+| 2026-03 | 14 | 6.5 |
+| 2026-07 | 13 | 3 |
+| 2026-04 | 13 | 16 |
+| 2026-05 | 11 | 7 |
+| 2025-07 | 9 | 3 |
+| 2025-08 | 7 | 10 |
+| 2026-02 | 5 | 1 |
+
+Suppressed, 4 of 12 groups: 2026-01 (n=3), 2026-08 (n=3), 2025-12 (n=2), 2025-06 (n=1).
+
+The ATS table is the one to read carefully. Most systems in this corpus appear too few times to support a median, so the published rows are a minority of the systems observed and are not a ranking of ATS platforms.
+
