@@ -2,7 +2,7 @@
 file: protocol.md
 tier: 0 (durable)
 created: 2026-08-29 14:24 ET
-updated: 2026-08-29 14:24 ET
+updated: 2026-08-30 ET
 review-by: 2027-08-29
 sources: [S1] [S2] [S6]
 -->
@@ -82,3 +82,4 @@ The census is not closed until all of these are met or explicitly waived in writ
 ## Changelog
 
 - 2026-08-29 14:24 ET: created from [S1] [S2] [S6]. Window set to 2025-06-01 through 2026-08-29. Gmail and Google Calendar named as authorized sources by the user on 2026-08-29.
+- 2026-08-30 ET: pipeline change after coding and adjudication were complete, logged here under the rule at the head of this file. `adjudication/ingest_platform.py` gained an `ambiguous` match status. The tier 3 matcher already refused to choose when token-prefix equivalence returned more than one Freeze 1 candidate, but the refused row fell through to the net-new branch, where it was indistinguishable from a row with no counterpart. A possible duplicate could therefore enter the full census with nothing recording that it was unresolved. Ambiguous rows now carry `match_status = ambiguous` and a `candidate_parent_ids` column, are written to `adjudication/platform_match.csv`, and are held out of `adjudication/applications__full_census.csv`, on the ground that an omitted row is recoverable and an inflated census is not. Reason for the change: a defect found while auditing the repository, disclosed in `paper/DEFECTS.md`. No published figure moved. Zero rows hit the branch on the current corpus, verified by instrumenting the three tiers before the change: 46 exact, 6 unspecified-fallback, 4 unique-equivalent, 77 with no candidate. `platform_match.csv` remains 134 rows at overlap 56, net-new 77, opportunity or non-census 1. `applications__full_census.csv` remains 298 and byte-identical. Because no real row exercises the new branch, it was tested against synthetic Freeze 1 rows rather than by re-running alone. This change alters the instrument, not the frozen corpus, and no coder output was recoded.

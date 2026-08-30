@@ -1,6 +1,6 @@
 # Audit findings
 
-Internal QA record. Sections 1 and 2 of the adversarial translation pass. Not for publication.
+Sections 1 and 2 of the adversarial translation pass. This is a working QA record, not a finished piece of writing. It is committed to a public repository deliberately: the repository already publishes its own defect register, its unmet stop conditions, and a list of numbers its author refuses to show a skeptic, and this belongs with them. Read it as the audit trail behind `SUBSTACK-DRAFT.md`, which is the part written to be read.
 
 The reader this audit assumes: a smart GTM or marketing professional who understands funnels, denominators, and outcomes, and who has never written a line of code. A meaningful subset of that audience is trying to break into GTM engineering and is reading this repository as evidence of how a practitioner thinks.
 

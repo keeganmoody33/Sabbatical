@@ -8,7 +8,7 @@ This layer exists because the repository is written for itself. It is rigorous, 
 
 | File | Audience | Purpose |
 |---|---|---|
-| `AUDIT-FINDINGS.md` | internal | Sections 1 and 2. A file-by-file adversarial score and the aggregate gaps. This is a QA record, not a publication. |
+| `AUDIT-FINDINGS.md` | audit trail | Sections 1 and 2. A file-by-file adversarial score and the aggregate gaps. A working QA record rather than finished writing, published here on purpose, beside the repository's own defect register and unmet stop conditions. |
 | `SUBSTACK-DRAFT.md` | public | Sections 3 through 6. Reader leverage map, plain-language rewrite, extracted templates, closing takeaways. Paste-ready in order. |
 | `templates/` | public | The five extracted templates as individual files, so each can be forked on its own. |
 

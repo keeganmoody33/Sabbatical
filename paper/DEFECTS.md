@@ -30,6 +30,18 @@ Attentive: receipt 2026-06-22, decline 2026-07-07, second receipt 2026-07-15. Th
 
 A key that omitted cycle would collide those pairs.
 
+## Ambiguous platform matches were counted as net-new
+
+Closed for this freeze. Pipeline change logged in `knowledge/protocol.md`.
+
+`adjudication/ingest_platform.py` matches platform rows against Freeze 1 in three tiers, the last of which treats two titles as the same opening when one token sequence is an ordered prefix of the other. That tier already refused to act when more than one Freeze 1 row matched, which is correct. The refusal had nowhere to go. The row fell through to the net-new branch and became indistinguishable from a row with no counterpart, so a possible duplicate could enter the full census with nothing marking it unresolved.
+
+Rule applied: a platform row matching more than one Freeze 1 row carries `match_status = ambiguous` and a `candidate_parent_ids` column listing the rows it could not choose between. It is recorded in `adjudication/platform_match.csv` and held out of `adjudication/applications__full_census.csv`. An omitted row can be recovered later. An inflated census cannot be corrected once nothing distinguishes the inflating rows.
+
+Consequence for downstream numbers: none in this freeze. Zero rows hit the branch on the current corpus. The three tiers were instrumented before the change and resolve to 46 exact, 6 unspecified-fallback, 4 unique-equivalent, and 77 with no candidate at all. `platform_match.csv` remains 134 rows at overlap 56, net-new 77, opportunity or non-census 1. `applications__full_census.csv` remains 298 and byte-identical. `FREEZE-2.md` now reports the ambiguous count, which is 0, and states the census as n with k unresolved whenever k is not 0.
+
+The defect survived the original build because it was invisible. A refusal that produces no distinguishable output looks exactly like a decision that was never needed.
+
 ## Capture recapture not computed
 
 The protocol restricts two-source capture recapture to LinkedIn rows submitted through an external ATS, not Easy Apply. Freeze 2 has LinkedIn pages 1 to 10 without that channel label. Naive Lincoln Petersen on Gmail overlap versus Easy Apply is a misuse and was not run.
