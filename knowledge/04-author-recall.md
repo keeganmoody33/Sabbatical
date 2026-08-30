@@ -21,14 +21,16 @@ It is not a census input.
 So this file exists to do three things: record the claims verbatim in structure, say exactly what
 each one would change, and name the artifact that would settle it.
 
-## Two claims verified against committed files before anything else
+## Four claims verified against committed files before anything else
 
 The author's recall reproduces redacted values in a file the author has not read.
 
 | Author's statement | Pointer it hashes to | Where that pointer already sits |
 |---|---|---|
-| One interview at Hotglue with a named person | `per_8c8479ce1bf3` | Challenger register, Hotglue row, verbatim |
+| One interview at Hotglue with a named person | `per_8c8479ce1bf3` | Challenger data quality register, Hotglue evidence, verbatim |
 | Two interviews at PhrasIQ with a named person | `per_3b9d8298f1b5` | Challenger register, PhrasIQ row, verbatim |
+| A call with a named community contact | `per_9256fc6cfc1a` | Challenger register, informal conversation row, verbatim |
+| A call with a second named community contact | `per_64532c58061b` | Challenger register, informal conversation row, verbatim |
 
 The challenger workbook was produced independently and its extracts here are redacted, so a name
 supplied from memory landing on the same hash is not something recall can fake. This does not make
@@ -60,6 +62,67 @@ board or from a friend.
 study is built on, and it is missing hardest exactly where the outcomes concentrate.** That is a
 stronger and more useful claim than the one currently in the paper, and it does not depend on
 believing any specific recall claim, only on the structural point about what a receipt contains.
+
+## Artifacts supplied 2026-08-30, not yet frozen
+
+The author supplied five screenshots. They are **not committed**: they show faces, full names and a
+third party's email address, and this repository is public. They are held outside it on the same
+rule as the challenger workbook. What each one does and does not establish:
+
+| Artifact | Establishes | Does not establish |
+|---|---|---|
+| LinkedIn group thread, 4 March, a named third party introducing the author to two co-founders of The Kiln | The opportunity is real. Origin is a referral introduction by DM. Two counterparties, one of them a co-founder | **That an interview happened.** The visible thread ends at "find some time this week for a chat" |
+| YC Work at a Startup inbox, inbound message from Hotglue's Head of GTM and Partnerships | Origin is YC Work at a Startup. **Role is Business Development Manager**, resolving the workbook's "Role title unresolved". The approach was inbound | **That the author applied.** It is outreach to the author |
+| Calendar booking, `connect | KM`, 2025-10-27 15:30 EDT | An exploratory call occurred on an exact date, with a named counterparty | That it was a hiring round. See below |
+| Two LinkedIn profiles of community contacts | Identity of two counterparties | Any hiring process |
+
+Year is not visible on the LinkedIn thread. March 4 falls inside the window only as 2026, and that
+is an inference rather than a reading, so it is recorded as `evidence_bound` and not as an exact
+date.
+
+### Two of these were already correctly classified, and add nothing
+
+The two community contacts hash to `per_9256fc6cfc1a` and `per_64532c58061b`. Both are already in
+the challenger's register, both as `Informal opportunity conversation`, **0 formal rounds, 1
+informal**, origin "Community origins, Clay Cafe (now GTM Cafe)", with the note *"Do not count as a
+formal hiring interview."*
+
+The author's screenshots confirm the conversations happened, which is what the register already
+says. They add no interview to either dataset, and the challenger's classification stands. What
+they do add is an exact date, 2025-10-27, for one conversation the register carried undated, and
+two more relationships traceable to the same community.
+
+That now makes **four independent hash confirmations** of author recall against a redacted file the
+author has not read, at Hotglue, PhrasIQ, and these two.
+
+### The decisive property of all of them
+
+The Kiln is a referral introduction. Hotglue is inbound recruiter outreach. Both community contacts
+are relationship conversations. **Not one is an application**, so not one enters the 223 denominator
+even if the corpus adopts them in full. The same holds for Mixmax, Glytec and Opsin Security.
+
+This is the origin finding arriving from the other direction. Every process the author has now
+evidenced reached its outcome through a channel that generates no application receipt, which is
+exactly why an email-built corpus could not see any of them.
+
+## A conflation to keep out of the record
+
+The author's position on the three weaker disputes is that a "thank you for applying" receipt from
+RevSpring, TestGorilla or jobmail.io proves an application was made, and that 500 applications
+cannot be recalled individually.
+
+**Both points are correct and neither is in dispute.** All three rows stay in the 223 as
+applications. Nothing here proposes removing them. The open question on those three is narrower: a
+submission receipt establishes the submission and is silent on whether an interview followed, and
+the interview flag on each derives from a screen *request*, a recruiter *intro*, or a single coder.
+
+The author's own reasoning is the argument for how to settle it. If 500 applications cannot be
+recalled, then recall is the wrong instrument for the interview flag **in both directions**, and the
+three should be resolved by re-reading artifacts already held rather than by asking the author.
+
+Hypergen is not in that class. It is a specific memory of a distinctive non-event, that no date was
+ever scheduled, and it is corroborated by a blind coder who read the same artifact as
+`employer_ack`.
 
 ## Interviews the census does not count
 
