@@ -2,15 +2,16 @@
 
 Coder `confirmed`. 2026-08-30.
 
-This layer does **not** recode Freeze 1 Gmail, Freeze 2 platform CSVs, or Freeze 3 extracts. It records what the subject confirmed after those freezes: recall tagged `evidence_system = memory`, origins, money, and two opportunity rows that had calendar meetings but no named employer application.
+This layer does **not** recode Freeze 1 Gmail, Freeze 2 platform CSVs, or Freeze 3 extracts. It records what the subject confirmed after those freezes: recall tagged `evidence_system = memory`, origins, money, and overlay opportunity rows that are not copied into the 298.
 
-Join to frozen rows on `application_id`. Memory events may attach to an existing freeze3 or cursor parent.
+Join to frozen rows on `application_id`. Memory events may attach to an existing freeze3 or cursor parent. Overlay events with `event_type = unknown` confirm a name or count and do not add a round.
 
-Two overlay application rows are minted here and not copied into `adjudication/applications__full_census.csv`:
+Overlay application rows, not copied into `adjudication/applications__full_census.csv`:
 
-- `unknown|informal-adam-andrewjeski|c1`
-- `unknown|cro-idea-doug-shankman|c1`
+- `stellar-growth|informal|c1` (Adam Andrewjeski, founder of Stellar Growth). Distinct from `stellar-substitute|unspecified|c1`.
+- `aicro|informal-cro-idea|c1` (Doug Shankman, founder and CEO of AICRO). Distinct from `aicro|gtm-engineering-team-lead|c1` and `aicro|gtm-engineer|c1`. Do not merge.
+- `mixmax|contractor-gtm|c1` (Heath interview; parent for the overlay event). Freeze 3 exclusion from 298 stands. Origins tracks money as employment.
 
-`company_canonical` stays `unknown`. They are opportunity, not applications.
+LinkedIn profile transcriptions: `artifacts/linkedin/profile-adam-andrewjeski-stellar-growth.md`, `artifacts/linkedin/profile-doug-shankman-aicro.md`.
 
-See `adjudication/ORIGINS.md` for the paper-facing tally. Retrieval log 056.
+See `adjudication/ORIGINS.md`. Retrieval logs 056 and 057.

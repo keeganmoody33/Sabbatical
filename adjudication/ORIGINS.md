@@ -55,19 +55,19 @@ Already in Freeze 3 or cursor as `register = opportunity`, interviews evidenced:
 - The Hog (Hudson, one live plus take-home)
 - Pin (Erica then Conor)
 - Hotglue (Kevin Wright; YC Work at a Startup)
-- Opsin (James Pham dated; Colossus phone round is memory)
-- The Kiln (Patrick dated; Giorgio interview is memory)
-- Mercor contract (Claire and Daniel Luo; made money)
+- Opsin (James Pham interview happened, freeze3 calendar; Colossus phone round is memory)
+- The Kiln (Patrick interview happened, freeze3; Giorgio interview is memory)
+- Mercor contract (two interviews: Claire then Daniel Luo; made money)
 - WorkOS (TopHire slot booked; live call not separately dated)
 
-Overlay, subject-confirmed, company unnamed:
+Overlay, subject-confirmed:
 
-- Adam Andrewjeski (informal, Clay Cafe / GTM Cafe)
-- Doug Shankman (informal plus CRO idea, GTM Cafe)
+- Adam Andrewjeski, founder of Stellar Growth (informal, Clay Cafe / GTM Cafe)
+- Doug Shankman, founder and CEO of AICRO (informal plus CRO idea, GTM Cafe). Distinct from the two AICRO application rows in the 298.
 
 ### C. Employment and consulting (made money or tried to; not search applications)
 
-- Mixmax / Heath: contractor GTM after GTM Engineer School. Calendar 2025-08-14 (`cal_3e5387362a5b33e3`). Subject calls it an interview. Freeze 3 exclusion from 298 stands.
+- Mixmax / Heath: interview happened. Calendar 2025-08-14 (`cal_3e5387362a5b33e3`). Follow-up SENT in Welcome to Mixmax (`gth_beb7124e93244a82`). Two-week trial then three-month contract. Freeze 3 exclusion from 298 stands.
 - Mobb: employment. Gusto first-day (`gth_96b8c659b5fa2546`). Not a search application.
 - Kivira.health: three month GTM contract via Josh Pappas. Calendar GTM Overview (`cal_cc9f94b847eb65aa`) and weekly outbound. Consulting.
 - BCOFA / Dr. Blaney: consulting that fizzled. Calendar 2026-03-06. No money.
@@ -90,7 +90,7 @@ Only four of the 14 have an origin the subject stated in this pass. PhrasIQ is t
 | Beautiful.ai | not restated | artifact | unknown | gth_93b7915bd98264ce; cal_68d3d2165c13499a; HM Brandon Ness gth_ec1fac33cf5f23f1; Emily decline gth_1186b66d0556feda | none |
 | Dagster Labs | not restated | artifact | unknown | gth_89b52fe76388035e; chat gth_1c8ae3fa0432b375 | tok_6ad68eb83f3c (phone) |
 | HartleyCo | recruiter (Josh Kelly; client Bluejay) | artifact | recruiter_inbound | gth_59384916f1d2f6ca | none |
-| Hologram | not restated | artifact | unknown | gth_40e600e56434c3e4; Amy gth_fc3a24d02960b24e; Derrick gth_966e3da56037f91c | none |
+| Hologram | not restated beyond count | artifact | unknown | Amy gth_fc3a24d02960b24e cal_1e35ab92e7cb411b; Derrick gth_966e3da56037f91c cal_7f6169cd30cea34e | tok_3c7dc3e90dd6 (subject: two interviews) |
 | Hypergen | not restated | artifact | unknown | gth_d34cb1ecb8ba51f6 | none |
 | jobmail.io | not restated | artifact | unknown | gth_531b132d1253925a; Jack gth_a1cbc75584147ef9 | none |
 | Orchestry | not restated | artifact | unknown | gth_397ef5934d0939b2 | none |
@@ -108,12 +108,12 @@ TrueBuilt is in the 298 and not in the 14. LinkedIn applied-list GTM Engineer st
 | The Hog | not restated | artifact | gth_d1989dfb9542a2da; cal_629a071abb61bce9; take-home gth_df78e875e89e162f | none |
 | Pin | GTM Cafe channel jobsandopportunities | memory | cal_ad843b81c501a0fe (Erica); cal_1d949b06d7b86c9a (Conor) | origin is the CSV row |
 | Hotglue | YC Work at a Startup | artifact plus subject | cal_ccc88f3db9f64129; gth_e5448b420f510900 | none |
-| Opsin | Colossus Technology Group | artifact (Adrianna mail) | gth_e756940c516829cf; James cal_d8dafd5d42786dbb | tok_b1f3dc9b0958 (Colossus phone) |
-| The Kiln | GTM Engineer School testimonial | artifact | tok_ad8a6c7aa631 (GTME Intro); Patrick freeze3 e2 | tok_8c8acbc92d3c (Giorgio interview) |
-| Mercor contract | Claire Gauthier inbound | artifact | gth_da5b9d0848d88f36 (Instant Work Offer); gth_04388c5d54511960 (contract); Daniel Luo not David Lou | none |
+| Opsin | Colossus Technology Group | artifact (Adrianna mail) | gth_e756940c516829cf; James cal_d8dafd5d42786dbb | tok_b1f3dc9b0958 (Colossus phone); tok_8d0c98c0fb17 (subject: James happened) |
+| The Kiln | GTM Engineer School testimonial | artifact | tok_ad8a6c7aa631 (GTME Intro); Patrick freeze3 e2 | tok_8c8acbc92d3c (Giorgio interview); tok_1bdfc7313b38 (subject: Patrick happened) |
+| Mercor contract | Claire Gauthier inbound | artifact | gth_da5b9d0848d88f36 (Instant Work Offer); gth_04388c5d54511960 (contract); two interviews Claire then Daniel Luo | tok_10c69501feb3 (count is two) |
 | WorkOS | TopHire recruiter | artifact | gth_7c798c988d52c12f | none |
-| Adam | Clay Cafe now GTM Cafe | memory (Calendly note names Clay Cafe) | cal_f3694776d5518b14 | tok_4c79cbbc329f |
-| Doug | GTM Cafe | memory | cal_c20ca257f9bdfd6c | tok_654cb884181e |
+| Adam / Stellar Growth | Clay Cafe now GTM Cafe | memory (Calendly note names Clay Cafe); company from LinkedIn screenshot | cal_f3694776d5518b14 | tok_4c79cbbc329f; tok_155d133e690a |
+| Doug / AICRO | GTM Cafe | memory; company from LinkedIn screenshot | cal_c20ca257f9bdfd6c | tok_654cb884181e; tok_53b6c592660c |
 
 Memory `tok_` values on overlay events are stable recall pointers. They are not Gmail page tokens. Frozen `gth_` and `cal_` pointers stay the reproducible subset.
 
@@ -121,7 +121,7 @@ Memory `tok_` values on overlay events are stable recall pointers. They are not 
 
 | process | kind | origin | in 298 | in 14 | artifact pointer |
 |---|---|---|---|---|---|
-| Mixmax | contractor GTM | GTM Engineer School, then Heath | no | no | cal_3e5387362a5b33e3; welcome gth_beb7124e93244a82 |
+| Mixmax | two-week trial then three-month contractor GTM | GTM Engineer School, then Heath interview | no | no | cal_3e5387362a5b33e3; welcome/SENT gth_beb7124e93244a82 |
 | Mercor contract | hourly contract | Claire Gauthier inbound | no | no | gth_04388c5d54511960 |
 | Mobb | employment | employment onboarding (Kellen meeting was prep) | no | no | gth_96b8c659b5fa2546 |
 | Kivira.health | three month GTM consulting | Josh Pappas | no | no | cal_cc9f94b847eb65aa |
@@ -130,6 +130,18 @@ Memory `tok_` values on overlay events are stable recall pointers. They are not 
 Search applications in the 298 did not produce these paid engagements. The paper can say that without mixing Mixmax or Mercor contract into 14/298.
 
 Mercor marketplace evaluator and expert receipts remain in the 298 without interviews. They are a different process from the Growth Strategist / GTM Engineer hourly contract.
+
+## Same company, different process (do not merge)
+
+AICRO appears three times. They are not one row.
+
+| application_id | register | in_298 | in_14 | what |
+|---|---|---|---|---|
+| aicro\|gtm-engineering-team-lead\|c1 | application | yes | no | Email 2026-02-06 |
+| aicro\|gtm-engineer\|c1 | application | yes | no | LinkedIn applied list |
+| aicro\|informal-cro-idea\|c1 | overlay opportunity | no | no | Doug Shankman 2025-10-27. Founder identity from LinkedIn screenshot tok_53b6c592660c |
+
+Stellar Growth vs Stellar Substitute are different employers. Overlay `stellar-growth|informal|c1` is Adam. `stellar-substitute|unspecified|c1` is a Frontline substitute notice in the 298.
 
 ## Files a later coder or the paper should open
 
@@ -141,8 +153,10 @@ Mercor marketplace evaluator and expert receipts remain in the 298 without inter
 | Memory overlay applications | `coding/confirmed/applications__confirmed.csv` |
 | Memory overlay events | `coding/confirmed/events__confirmed.csv` |
 | This writeup | `adjudication/ORIGINS.md` |
-| Retrieval | `logs/retrieval-log-056.md` (overlay), `055.md` (pressure-test before overlay mint) |
+| Retrieval | `logs/retrieval-log-057.md` (this confirmation), `056.md` (first overlay), `055.md` (pressure-test) |
 | Freeze 4 census lock | `adjudication/FREEZE-4.md` |
+| Adam company screenshot | `artifacts/linkedin/profile-adam-andrewjeski-stellar-growth.md` |
+| Doug company screenshot | `artifacts/linkedin/profile-doug-shankman-aicro.md` |
 
 `adjudication/derive_metrics.py` reads `cursor`, `alpha`, and `bravo` only. Coder `confirmed` is excluded so 14/298 cannot move by accident.
 
@@ -150,7 +164,9 @@ Mercor marketplace evaluator and expert receipts remain in the 298 without inter
 
 - Recode Freeze 1 or Freeze 2 CSVs to plant GTM Cafe on `discovery_source`
 - Put overlay opportunity or employment interviews into the 14
-- Invent a company for Adam or Doug
+- Invent a company for Adam or Doug when a screenshot is absent. Screenshots now name Stellar Growth and AICRO.
+- Merge Doug's AICRO overlay into `aicro|gtm-engineer|c1` or `aicro|gtm-engineering-team-lead|c1`. That would move 14.
+- Merge Adam's Stellar Growth overlay into `stellar-substitute|unspecified|c1`
 - Adopt package 321 or 325 as this freeze's census
 - Mint the twelve held LinkedIn rows without a per-row application confirmation
 - Print a combined conversation count as if it were the application-to-interview rate
