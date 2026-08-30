@@ -479,8 +479,20 @@ def match_freeze1(
     for row in platform_apps:
         if row.get("register") != "application":
             key = role_key(row["company_canonical"], row["role_as_listed"])
-            parents = by_cr.get(key) or by_company.get(norm_company(row["company_canonical"])) or []
-            overlaps.append({**row, "match_status": "opportunity_or_non_census", "parent_id": parents[0]["application_id"] if parents else ""})
+            parents = sorted(
+                by_cr.get(key) or by_company.get(norm_company(row["company_canonical"])) or [],
+                key=lambda p: p["application_id"],
+            )
+            overlaps.append(
+                {
+                    **row,
+                    "match_status": "opportunity_or_non_census",
+                    "parent_id": parents[0]["application_id"] if parents else "",
+                    "candidate_parent_ids": ";".join(p["application_id"] for p in parents)
+                    if len(parents) > 1
+                    else "",
+                }
+            )
             continue
         key = role_key(row["company_canonical"], row["role_as_listed"])
         parents = by_cr.get(key, [])
@@ -514,6 +526,13 @@ def match_freeze1(
                     )
                     continue
         if parents:
+            # Tiers 1 and 2 can return several Freeze 1 rows, because role_key
+            # omits cycle and two cycles of one company and role collapse to one
+            # key. The row is an overlap either way, so the census is unaffected,
+            # but which parent it belongs to is then a choice. Sort so the choice
+            # is stable rather than dependent on input row order, and record the
+            # alternatives so the choice is visible and correctable.
+            parents = sorted(parents, key=lambda p: p["application_id"])
             parent = parents[0]
             overlaps.append(
                 {
@@ -522,6 +541,9 @@ def match_freeze1(
                     "parent_id": parent["application_id"],
                     "parent_register": parent.get("register"),
                     "parent_evidence_class": parent.get("evidence_class"),
+                    "candidate_parent_ids": ";".join(p["application_id"] for p in parents)
+                    if len(parents) > 1
+                    else "",
                 }
             )
         else:
@@ -589,7 +611,9 @@ def main() -> None:
     report.append(f"- Platform exclusions: {len(excl)}")
     report.append(f"- Platform rows overlapping Freeze 1 applications: {sum(1 for r in overlaps if r.get('match_status')=='overlap')}")
     report.append(f"- Net-new platform_log applications: {len(novel)}")
+    multi_parent = [r for r in overlaps if r.get("candidate_parent_ids")]
     report.append(f"- Ambiguous, matched more than one Freeze 1 row, held out of the census: {len(ambiguous)}")
+    report.append(f"- Overlaps whose parent was one of several candidates: {len(multi_parent)}")
     report.append(f"- Freeze 1 application census: {len(freeze1_apps)}")
     report.append(f"- Full census (Freeze 1 plus net-new): {len(union)}")
     report.append(f"- Interviewed in Freeze 1 (cursor events, application register): {len(interviewed_221)}")
@@ -611,6 +635,19 @@ def main() -> None:
             "cannot count an unresolved possible duplicate as a new application."
         )
     report.append("")
+    if multi_parent:
+        report.append(
+            f"{len(multi_parent)} overlap rows matched more than one Freeze 1 row on the exact key or the "
+            "unspecified-role fallback. These are overlaps either way, so the census is unaffected, but the parent "
+            "attribution is a choice among candidates rather than a lookup. `role_key` omits cycle, so two cycles of "
+            "one company and role collapse to a single key, which is the same collision `paper/DEFECTS.md` records "
+            "for the dedupe key. The parent is taken in sorted order so it is stable across runs, and every "
+            "candidate is written to `candidate_parent_ids` in `platform_match.csv` so the choice can be reviewed:"
+        )
+        report.append("")
+        for row in multi_parent:
+            report.append(f"- `{row['application_id']}` matched {row['candidate_parent_ids'].replace(';', ' and ')}, attributed to `{row['parent_id']}`.")
+        report.append("")
     report.append("Five platform titles matched Freeze 1 as the same opening: Thomson Reuters AE Tax or Risk, Foursquare AE New Business, UpGuard SDR Manager, Verkada Enterprise Solutions Engineer Atlanta, and Listen Lead GTM Engineer (LinkedIn lists Listen, Freeze 1 uses Listen Labs). They are overlap, not net-new.")
     report.append("")
     report.append("## Net-new applications")

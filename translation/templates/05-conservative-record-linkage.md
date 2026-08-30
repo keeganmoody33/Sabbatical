@@ -62,6 +62,14 @@ TIER 2, ENTITY-LEVEL FALLBACK.
   match on entity alone. Use this ONLY where the schema records an admitted
   unknown, never as a general loosening.
 
+ANY TIER CAN RETURN MORE THAN ONE. Tiers 1 and 2 are lookups, so it is easy to
+  assume they yield at most one row. They do not, whenever the match key omits
+  a dimension the identity key includes. Sort the candidates so the pick is
+  stable across runs, take the first, and record all of them. Recording is the
+  point: the record is a match either way, so the count does not move, but
+  which parent it belongs to has quietly become a choice, and an unrecorded
+  choice is indistinguishable from a lookup.
+
 TIER 3, TOKEN-PREFIX EQUIVALENCE.
   Tokenize both subjects. Drop {{NOISE_TOKENS}}: location words, posting-site
   boilerplate, and workplace-type words. Expand {{ABBREVIATIONS}}. Delete
@@ -117,7 +125,9 @@ What was missing was the record of it. `match_status` took exactly three values 
 
 That is fixed. Ambiguous rows now carry `match_status = ambiguous` and a `candidate_parent_ids` column, and are held out of the census. Zero rows hit the branch on the current corpus, so no published figure moved.
 
-The reason it is worth telling: the gap survived the original build precisely because it was invisible. A refusal that produces no distinguishable output looks exactly like a decision that was never needed. If you implement the refusal, implement its record in the same commit, or you will not find out for a year.
+Then the same defect turned up one tier earlier. The exact-key and unspecified-role lookups can also return several candidates, because `role_key` omits cycle while the identity key includes it, so two application cycles at one company collapse to a single match key. One row hits this today: a FOSSA platform row matches both `fossa|unspecified|c1` and `fossa|unspecified|c2`, and the code took whichever came first in file order. The census never moved, since the row is an overlap either way, but the parent attribution was an unrecorded coin flip. Candidates are now sorted for stability and written to `candidate_parent_ids`.
+
+The reason both are worth telling: each gap survived the original build precisely because it was invisible. A refusal that produces no distinguishable output looks exactly like a decision that was never needed, and an arbitrary pick among candidates looks exactly like a lookup. If you implement the choice, implement its record in the same commit, or you will not find out for a year.
 
 ## What breaks if you skip it
 

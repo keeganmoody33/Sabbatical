@@ -8,6 +8,7 @@ Freeze 1 Gmail and Calendar extracts were not recoded.
 - Platform rows overlapping Freeze 1 applications: 56
 - Net-new platform_log applications: 77
 - Ambiguous, matched more than one Freeze 1 row, held out of the census: 0
+- Overlaps whose parent was one of several candidates: 1
 - Freeze 1 application census: 221
 - Full census (Freeze 1 plus net-new): 298
 - Interviewed in Freeze 1 (cursor events, application register): 14
@@ -16,6 +17,10 @@ Freeze 1 Gmail and Calendar extracts were not recoded.
 Capture recapture was not computed. The LinkedIn file is pages 1 to 10 of an applied list and does not label Easy Apply versus external ATS. LinkedIn submission_channel is therefore unknown.
 
 No platform row matched more than one Freeze 1 row under token-prefix equivalence, so no row is ambiguous in this freeze. The status is emitted rather than folded into net-new so that a later run cannot count an unresolved possible duplicate as a new application.
+
+1 overlap rows matched more than one Freeze 1 row on the exact key or the unspecified-role fallback. These are overlaps either way, so the census is unaffected, but the parent attribution is a choice among candidates rather than a lookup. `role_key` omits cycle, so two cycles of one company and role collapse to a single key, which is the same collision `paper/DEFECTS.md` records for the dedupe key. The parent is taken in sorted order so it is stable across runs, and every candidate is written to `candidate_parent_ids` in `platform_match.csv` so the choice can be reviewed:
+
+- `fossa|gtm-engineer|c1` matched fossa|unspecified|c1 and fossa|unspecified|c2, attributed to `fossa|unspecified|c1`.
 
 Five platform titles matched Freeze 1 as the same opening: Thomson Reuters AE Tax or Risk, Foursquare AE New Business, UpGuard SDR Manager, Verkada Enterprise Solutions Engineer Atlanta, and Listen Lead GTM Engineer (LinkedIn lists Listen, Freeze 1 uses Listen Labs). They are overlap, not net-new.
 
