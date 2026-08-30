@@ -1,0 +1,50 @@
+dimension,value,n_base,n_responded_substantive,n_responded_any,median_days_substantive,median_days_any,suppressed_because
+role_lane,explicit_gtm_engineering,82,36,43,6,5,
+role_lane,unspecified,34,10,11,8.5,8,
+role_lane,sales_bd_partnerships,23,11,15,4,3,
+role_lane,growth_demand_marketing,21,7,9,6,6,
+role_lane,sales_solutions_engineering,15,5,7,7,7,
+role_lane,revops_gtm_ops_strategy,8,3,6,,3,substantive responders n=3
+role_lane,other,7,4,5,,7,substantive responders n=4
+role_lane,product_ai_technical,6,3,4,,,substantive responders n=3; any responders n=4
+month,2026-07,33,11,13,6,3,
+month,2026-06,28,16,19,4,3,
+month,2026-04,26,12,13,19.5,16,
+month,2026-05,22,9,11,8,7,
+month,2026-03,21,13,14,9,6.5,
+month,2025-07,19,4,9,,3,substantive responders n=4
+month,2025-08,17,4,7,,10,substantive responders n=4
+month,2026-02,10,4,5,,1,substantive responders n=4
+month,2026-01,7,0,3,,,substantive responders n=0; any responders n=3
+month,2025-06,5,1,1,,,substantive responders n=1; any responders n=1
+month,2026-08,5,3,3,,,substantive responders n=3; any responders n=3
+month,2025-12,2,2,2,,,base n=2
+month,2025-11,1,0,0,,,base n=1
+ats_system,Greenhouse,54,25,28,12,10,
+ats_system,none_observed,53,20,26,6,4.5,
+ats_system,Ashby,46,22,25,6.5,5,
+ats_system,Lever,12,2,2,,,substantive responders n=2; any responders n=2
+ats_system,Workable,9,4,6,,0,substantive responders n=4
+ats_system,Rippling,6,2,4,,,substantive responders n=2; any responders n=4
+ats_system,Workday,4,0,2,,,base n=4
+ats_system,Comeet,2,1,1,,,base n=2
+ats_system,Dover,2,0,0,,,base n=2
+ats_system,Gem,2,0,1,,,base n=2
+ats_system,Teamtailor,2,1,2,,,base n=2
+ats_system,Breezy,1,1,1,,,base n=1
+ats_system,Jobvite,1,0,0,,,base n=1
+ats_system,Recruitee,1,1,1,,,base n=1
+ats_system,iCIMS,1,0,1,,,base n=1
+submission_channel,ats_direct,166,66,85,7,5,
+submission_channel,email_direct,9,3,3,,,substantive responders n=3; any responders n=3
+submission_channel,marketplace_profile_submission,6,5,5,7,7,
+submission_channel,wellfound_apply,6,1,2,,,substantive responders n=1; any responders n=2
+submission_channel,unknown,4,2,3,,,base n=4
+submission_channel,apply4me_agent,3,2,2,,,base n=3
+submission_channel,recruiter_submitted,2,0,0,,,base n=2
+discovery_source,unknown,184,73,93,7,5,
+discovery_source,wellfound,6,1,2,,,substantive responders n=1; any responders n=2
+discovery_source,ladders,3,2,2,,,base n=3
+discovery_source,referral,2,2,2,,,base n=2
+discovery_source,recruiter_inbound,1,1,1,,,base n=1
+evidence_class,employer_artifact,196,79,100,7,5.5,
