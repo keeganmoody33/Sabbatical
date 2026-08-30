@@ -6,10 +6,15 @@ stamps stay relative_display with date_capture 2026-08-29. LinkedIn
 submission_channel is unknown because the applied list does not label
 Easy Apply versus external ATS.
 
-A platform row that matches more than one Freeze 1 row is emitted with
-match_status ambiguous and its candidate parent ids, and held out of the
-full census. Counting an unresolved possible duplicate as net-new would
-inflate the census with nothing downstream to correct it by.
+Multi-candidate matches are handled two ways, because they mean two things.
+At tier 3 the open question is whether the row is a match at all, which the
+census depends on, so it is emitted as match_status ambiguous with its
+candidates and held out. Counting an unresolved possible duplicate as
+net-new would inflate the census with nothing downstream to correct it by.
+At tiers 1 and 2 the row matched either way and only the parent is in doubt,
+so it stays counted as an overlap under match_status overlap_parent_ambiguous
+with an empty parent_id and every candidate recorded. Naming one of several
+equally eligible parents would assert a resolution that does not exist.
 """
 
 from __future__ import annotations
@@ -531,21 +536,27 @@ def match_freeze1(
             # Tiers 1 and 2 can return several Freeze 1 rows, because role_key
             # omits cycle and two cycles of one company and role collapse to one
             # key. The row is an overlap either way, so the census is unaffected,
-            # but which parent it belongs to is then a choice. Sort so the choice
-            # is stable rather than dependent on input row order, and record the
-            # alternatives so the choice is visible and correctable.
+            # but which parent it belongs to is then a choice among equals.
             parents = sorted(parents, key=lambda p: p["application_id"])
             parent = parents[0]
+            resolved = len(parents) == 1
+            # Naming one of several equally eligible parents in parent_id would
+            # assert a resolution that does not exist, and a reader joining on
+            # that field would never see the choice. So the status carries the
+            # distinction and parent_id is left empty, with every candidate
+            # recorded. Fields that agree across all candidates stay populated,
+            # because those are not in doubt.
+            agreed = lambda f: (
+                parents[0].get(f) if len({p.get(f) for p in parents}) == 1 else ""
+            )
             overlaps.append(
                 {
                     **row,
-                    "match_status": "overlap",
-                    "parent_id": parent["application_id"],
-                    "parent_register": parent.get("register"),
-                    "parent_evidence_class": parent.get("evidence_class"),
-                    "candidate_parent_ids": ";".join(p["application_id"] for p in parents)
-                    if len(parents) > 1
-                    else "",
+                    "match_status": "overlap" if resolved else "overlap_parent_ambiguous",
+                    "parent_id": parent["application_id"] if resolved else "",
+                    "parent_register": parent.get("register") if resolved else agreed("register"),
+                    "parent_evidence_class": parent.get("evidence_class") if resolved else agreed("evidence_class"),
+                    "candidate_parent_ids": "" if resolved else ";".join(p["application_id"] for p in parents),
                 }
             )
         else:
@@ -611,11 +622,11 @@ def main() -> None:
     report.append(f"- Jobright tracker rows coded as applications: {len(jr_apps)}")
     report.append(f"- LinkedIn applied-list rows coded (including opportunity): {len(li_apps)}")
     report.append(f"- Platform exclusions: {len(excl)}")
-    report.append(f"- Platform rows overlapping Freeze 1 applications: {sum(1 for r in overlaps if r.get('match_status')=='overlap')}")
+    report.append(f"- Platform rows overlapping Freeze 1 applications: {sum(1 for r in overlaps if r.get('match_status') in ('overlap', 'overlap_parent_ambiguous'))}")
     report.append(f"- Net-new platform_log applications: {len(novel)}")
-    multi_parent = [r for r in overlaps if r.get("candidate_parent_ids")]
+    multi_parent = [r for r in overlaps if r.get("match_status") == "overlap_parent_ambiguous"]
     report.append(f"- Ambiguous, matched more than one Freeze 1 row, held out of the census: {len(ambiguous)}")
-    report.append(f"- Overlaps whose parent was one of several candidates: {len(multi_parent)}")
+    report.append(f"- Of those, overlaps whose parent is unresolved and therefore unnamed: {len(multi_parent)}")
     report.append(f"- Freeze 1 application census: {len(freeze1_apps)}")
     report.append(f"- Full census (Freeze 1 plus net-new): {len(union)}")
     report.append(f"- Interviewed in Freeze 1 (cursor events, application register): {len(interviewed_221)}")
@@ -643,12 +654,15 @@ def main() -> None:
             "unspecified-role fallback. These are overlaps either way, so the census is unaffected, but the parent "
             "attribution is a choice among candidates rather than a lookup. `role_key` omits cycle, so two cycles of "
             "one company and role collapse to a single key, which is the same collision `paper/DEFECTS.md` records "
-            "for the dedupe key. The parent is taken in sorted order so it is stable across runs, and every "
-            "candidate is written to `candidate_parent_ids` in `platform_match.csv` so the choice can be reviewed:"
+            "for the dedupe key. Naming one of several equally eligible parents in `parent_id` would assert a "
+            "resolution that does not exist, and a reader joining on that field would never see the choice. So "
+            "these carry `match_status = overlap_parent_ambiguous`, an empty `parent_id`, and every candidate in "
+            "`candidate_parent_ids`. They still count as overlap, so the census is unaffected. Fields that agree "
+            "across all candidates stay populated, because those are not in doubt:"
         )
         report.append("")
         for row in multi_parent:
-            report.append(f"- `{row['application_id']}` matched {row['candidate_parent_ids'].replace(';', ' and ')}, attributed to `{row['parent_id']}`.")
+            report.append(f"- `{row['application_id']}` matched {row['candidate_parent_ids'].replace(';', ' and ')}. Both are equally eligible, so no parent is named.")
         report.append("")
     report.append("Five platform titles matched Freeze 1 as the same opening: Thomson Reuters AE Tax or Risk, Foursquare AE New Business, UpGuard SDR Manager, Verkada Enterprise Solutions Engineer Atlanta, and Listen Lead GTM Engineer (LinkedIn lists Listen, Freeze 1 uses Listen Labs). They are overlap, not net-new.")
     report.append("")

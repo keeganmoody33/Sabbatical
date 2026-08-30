@@ -71,9 +71,12 @@ TIERS 1 AND 2 CAN ALSO RETURN MORE THAN ONE, AND IT MEANS SOMETHING ELSE.
   The record matched, so it is an overlap either way and the count does not
   move. What has quietly become a choice is WHICH parent it belongs to.
 
-  So here, and only here: sort the candidates, take the first so the pick is
-  stable across runs, record every candidate, and keep the record. Do not
-  hold it out.
+  So here, and only here: keep the record and keep it counted, but do NOT
+  name one of the candidates as the parent. Give it a status that says the
+  parent is unresolved, leave the parent field empty, and record every
+  candidate. A populated parent field asserts a resolution, and a reader
+  joining on that field would never see that it was a coin flip. Fields that
+  agree across all candidates stay populated, because those are not in doubt.
 
   At tier 3 the open question is whether it is a match at all, which the
   count does depend on, so the answer there is to refuse. See THE RULE THAT
@@ -134,7 +137,7 @@ What was missing was the record of it. `match_status` took exactly three values 
 
 That is fixed. Ambiguous rows now carry `match_status = ambiguous` and a `candidate_parent_ids` column, and are held out of the census. Zero rows hit the branch on the current corpus, so no published figure moved.
 
-Then the same defect turned up one tier earlier. The exact-key and unspecified-role lookups can also return several candidates, because `role_key` omits cycle while the identity key includes it, so two application cycles at one company collapse to a single match key. One row hits this today: a FOSSA platform row matches both `fossa|unspecified|c1` and `fossa|unspecified|c2`, and the code took whichever came first in file order. The census never moved, since the row is an overlap either way, but the parent attribution was an unrecorded coin flip. Candidates are now sorted for stability and written to `candidate_parent_ids`.
+Then the same defect turned up one tier earlier. The exact-key and unspecified-role lookups can also return several candidates, because `role_key` omits cycle while the identity key includes it, so two application cycles at one company collapse to a single match key. One row hits this today: a FOSSA platform row matches both `fossa|unspecified|c1` and `fossa|unspecified|c2`, and the code took whichever came first in file order. The census never moved, since the row is an overlap either way, but the parent attribution was an unrecorded coin flip. Recording the candidates turned out not to be enough on its own: a populated `parent_id` beside `match_status = overlap` still asserts a resolution, and a reader joining on that field never sees the choice. Those rows now carry `overlap_parent_ambiguous`, an empty `parent_id`, and every candidate.
 
 The reason both are worth telling: each gap survived the original build precisely because it was invisible. A refusal that produces no distinguishable output looks exactly like a decision that was never needed, and an arbitrary pick among candidates looks exactly like a lookup. If you implement the choice, implement its record in the same commit, or you will not find out for a year.
 

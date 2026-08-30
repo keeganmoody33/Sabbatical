@@ -428,9 +428,12 @@ TIERS 1 AND 2 CAN ALSO RETURN MORE THAN ONE, AND IT MEANS SOMETHING ELSE.
   The record matched, so it is an overlap either way and the count does not
   move. What has quietly become a choice is WHICH parent it belongs to.
 
-  So here, and only here: sort the candidates, take the first so the pick is
-  stable across runs, record every candidate, and keep the record. Do not
-  hold it out.
+  So here, and only here: keep the record and keep it counted, but do NOT
+  name one of the candidates as the parent. Give it a status that says the
+  parent is unresolved, leave the parent field empty, and record every
+  candidate. A populated parent field asserts a resolution, and a reader
+  joining on that field would never see that it was a coin flip. Fields that
+  agree across all candidates stay populated, because those are not in doubt.
 
   At tier 3 the open question is whether it is a match at all, which the
   count does depend on, so the answer there is to refuse. See THE RULE THAT
