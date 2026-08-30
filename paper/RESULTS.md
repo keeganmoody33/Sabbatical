@@ -19,6 +19,7 @@ Harvest coverage of the frozen corpus, 2026-08-29:
 - Jobright tracker: 40 rows in `artifacts/platform/jobright_applications_log.csv`. Exact dates.
 - Ladders full list, YC dashboard, [S1] and [S2] workbooks: absent. The 2026-08-30 care package did not contain them.
 - LinkedIn GTME Intro screenshots (The Kiln): transcribed 2026-08-30 in `artifacts/linkedin/gtme-intro-the-kiln.md`. Not a LinkedIn data download.
+- LinkedIn messages unpacking: Claude analysis of a 2026-08-23 `messages.csv` (5,262 messages, 497 conversations claimed). 54 job-related threads plus 20 uncertain, matched in `adjudication/linkedin_dm_match.csv`. Raw `messages.csv` and `Job Applications.csv` are still absent. See Freeze 4.
 
 Stop conditions: see `artifacts/STOP-CONDITIONS.md`. Personal Gmail Q6, Q7, Q3b, and Q9 are exhausted. Personal primary calendar is swept.
 
@@ -120,7 +121,9 @@ A 105-row dated LinkedIn extract arrived as a Claude coding table. Independent m
 
 Jobright's four rows that a package log would add to reach a higher ledger (Axon KAE, Autodesk, MavenAI, Vanco) are already in the 298 from Freeze 2.
 
-VERIFY Part A is `logs/retrieval-log-052.md`. Ingest completion is `logs/retrieval-log-053.md`.
+A LinkedIn messages analysis arrived 2026-08-30. It is a Claude coding of `messages.csv`, not the export. Independent match of 54 job-related threads and 20 uncertain threads: nine already in the 298, six already opportunity, one held application candidate (AnyInt AI), the rest exclusion, unidentifiable, or held opportunity. No `application_id` added. No interview minted. The Kiln Giorgio DM does not mint a second interview. Hotglue is missing from the 54. Pin is missing from the 54.
+
+VERIFY Part A is `logs/retrieval-log-052.md`. Ingest completion is `logs/retrieval-log-053.md`. Messages unpacking is `logs/retrieval-log-054.md`.
 
 ## Interviews (derived, never stored)
 

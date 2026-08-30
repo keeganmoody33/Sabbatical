@@ -41,9 +41,19 @@ Datricks, Bitovi, ScoutLab.io, JetBridge AI (two dates, same title), Abacus.AI, 
 
 BX Studio, The Hog (YC F25), COLOSSUS TECHNOLOGY GROUP. Opportunity register unchanged.
 
+## LinkedIn messages unpacking (same freeze)
+
+Claude analysis of `messages.csv` from a 2026-08-23 LinkedIn data export. Not the raw CSV. Independent match in `adjudication/linkedin_dm_match.csv`. Retrieval log 054.
+
+- Net-new application rows from DMs: **0**
+- Net-new opportunity rows from DMs: **0** (Cyft, Starbridge, Aptean, Ambient.ai, Claudomat, Parallel, and others remain held)
+- AnyInt AI is a held application candidate (named in DMs as an applied role, absent from the 105 and the 298)
+- Hotglue and Pin are not in the 54 threads
+- The Kiln Giorgio DM does not mint a second interview
+
 ## Still absent
 
-Ladders, YC Work at a Startup dashboard, [S1] and [S2] workbooks, LinkedIn `Job Applications.csv`, package log 029, Gmail thread bodies, raw calendar export, applied-list UI pages after 10 with Easy Apply labels.
+Ladders, YC Work at a Startup dashboard, [S1] and [S2] workbooks, LinkedIn `Job Applications.csv`, raw `messages.csv`, package log 029, Gmail thread bodies, raw calendar export, applied-list UI pages after 10 with Easy Apply labels.
 
 ## VERIFY
 

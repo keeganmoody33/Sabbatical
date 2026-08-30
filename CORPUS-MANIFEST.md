@@ -18,6 +18,7 @@ Frozen 2026-08-29 ET for independent coding. Every coder receives this set. A co
 | YC Work at a Startup | screenshots | applied roles | **absent** | waived |
 | Prior workbooks [S1] [S2] | xlsx | 247 and 212 ledgers | **absent** from this workspace | waived as coding input; they are not artifacts for extraction |
 | Claude care package (sidecar) | md/csv | comparison corpus only, not a coding freeze | 86 unique files, see `package/INVENTORY.md` | 2026-08-30 Freeze 4. Does not replace Freeze 1–3. Package logs 001–036 are a different sequence from `artifacts/gmail/` |
+| LinkedIn messages analysis | md | Claude coding of `messages.csv`, export dated 2026-08-23 | 54 job-related threads, 20 uncertain | 2026-08-30 Freeze 4. Raw CSV absent. Match table `adjudication/linkedin_dm_match.csv` |
 
 ## Retrieval is not coding
 
