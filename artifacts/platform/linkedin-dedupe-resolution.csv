@@ -1,0 +1,106 @@
+linkedin_row_id,date_applied,company_as_listed,dedupe_status,matched_entity,evidence_logs,note
+LI-001,2025-06-14,Databar.ai,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-002,2025-06-20,Datricks,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-003,2025-06-30,Bitovi,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-004,2025-06-30,Gigs,duplicate_gmail_receipt,Gigs,003,"Greenhouse-class receipt 2025-06-30, same day as LinkedIn submission."
+LI-005,2025-06-30,ScoutLab.io,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-006,2025-07-03,JetBridge AI,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-007,2025-07-07,Abacus.AI,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-008,2025-07-07,JetBridge AI,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-009,2025-07-07,Brainfish,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-010,2025-07-07,Applause,duplicate_gmail_receipt,Applause,"003,019",Receipt then rejection 2025-07-08/09 with full application data copy; LinkedIn stamp 2025-07-07 21:34.
+LI-011,2025-07-08,ClosedWon Talent,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-012,2025-07-09,SWARM,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-013,2025-08-04,proteanTecs,duplicate_gmail_receipt,proteanTecs,"002,019","Receipt 2025-08-08 (SDR), rejection re-confirmed log 019. Four days after the LinkedIn stamp; adjudicate if a same-day receipt is required."
+LI-014,2025-11-18,Insignia Assets,net_new,"Insignia Collab (separate artifact, not a receipt)",020,"ADJUDICATED log 039. No employer artifact exists. The only Gmail item is Keegan's own SENT mail 2025-11-18 09:53 UTC to eml_16011a3a61e9, subject 'Operator / architect / Atlanta resident', resume attached, no role named, no reply. That is outbound cold outreach, not a receipt, so evidence_class stays platform_log. Open coding note, non-blocking: whether 'Insignia Assets' (LinkedIn, Head of Digital, req 4323010631) and insigniacollab.com are one entity. If yes, the email is a followup_sent event on this row; if no, it is a separate opportunity-register row. Not resolvable from the corpus."
+LI-015,2026-01-20,Pickering Interfaces,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-016,2026-01-26,DevSignal,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-017,2026-02-04,Verkada,duplicate_gmail_receipt,Verkada,007,"Receipt 2026-02-04, Enterprise Solutions Engineer Atlanta, same day."
+LI-018,2026-02-08,Flexbone,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-019,2026-02-10,Databar.ai,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-020,2026-02-10,MICHELIN Connected Fleet,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-021,2026-02-10,Pegasystems,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-022,2026-03-05,Propel,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-023,2026-03-05,Scout Global,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-024,2026-03-23,Casper Studios,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-025,2026-03-27,DISQO,duplicate_gmail_receipt,DISQO,"005,018",Lever receipt/decline 2026-03-31.
+LI-026,2026-03-30,PandaDoc,duplicate_gmail_receipt,PandaDoc,"006,009,018","Greenhouse security code and receipt 2026-03-30, same day; rejection 2026-04-27."
+LI-027,2026-03-31,NetRise,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-028,2026-03-31,Fractional Demand,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-029,2026-04-01,Crossing Hurdles,duplicate_gmail_receipt,Crossing Hurdles,005,Ceipal artifact 2026-04-01 presenting Montauk Capital Head of Commercial. Intermediary: underlying_employer = Montauk Capital.
+LI-030,2026-04-06,QuadSci,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-031,2026-04-06,Recur Software,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-032,2026-04-06,AppGate,duplicate_gmail_receipt,AppGate,005,"Workable receipt plus application data copy plus EEO survey, 2026-04-06, same day."
+LI-033,2026-04-06,Bask Health,net_new_employer_artifact_exists,Bask Health,022,Gmail holds Sales Engineer outreach with Calendly links 2026-04-08 and NO submission receipt. The LinkedIn row is the only submission record. Not a duplicate; upgrade evidence_class to employer_artifact.
+LI-034,2026-04-06,COLOSSUS TECHNOLOGY GROUP,net_new,Colossus Technology Group [intermediary],"047,048","CONFIRMED net_new. Colossus is a recruiting firm, not an employer. The subject confirms this 2026-04-06 application is for a DIFFERENT Colossus client than the Opsin process of March 2026, so there is no double count with that opportunity-register row. underlying_employer = unknown — joins Talentpluto and Jobgether under stop condition 7."
+LI-035,2026-04-06,2X,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-036,2026-04-06,BX Studio,net_new_employer_artifact_exists,BX Studio,"020,022","Gmail holds a 2026-04-08 thread with video sent and forwarded to the hiring manager, no submission receipt. LinkedIn row is the only submission record; upgrade evidence_class."
+LI-037,2026-04-09,RevPilots,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-038,2026-04-10,Verdent AI,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-039,2026-04-10,Auctane,duplicate_gmail_receipt,Auctane,"005,009",Receipt 2026-04-10 same day; Pre-Sales Engineer decline 2026-05-14.
+LI-040,2026-04-10,CRMIT Solutions,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-041,2026-04-16,Crash Override,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-042,2026-04-16,Wall Street Quants,duplicate_gmail_receipt,Wall Street Quants,009,"Receipt plus application data copy 2026-04-17, one day after the LinkedIn stamp."
+LI-043,2026-04-19,Durham Geo Slope Indicator (DGSI),net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-044,2026-05-19,Freshtix,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-045,2026-05-25,AICRO,distinct_cycle_net_new,AICRO,020,"Log 020 records a direct emailed application 2026-02-06. This LinkedIn row is 2026-05-25 via a different channel. Different cycle, so a net addition, not a duplicate. Set cycle = 2 if the codebook cycle rule is satisfied."
+LI-046,2026-05-26,SoTalent,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-047,2026-05-26,Piper AI,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-048,2026-05-26,Jobright.ai,distinct_cycle_net_new,Jobright.ai,006,"ADJUDICATED log 039. Cycle 2. The Gmail artifact (noreply@jobright.ai, 2026-03-31 17:05) is a REJECTION for Product Manager (Early Career), two months BEFORE this 2026-05-26 submission. It cannot be the same event. Cycle 1 carried a terminal outcome before cycle 2 was submitted, which is exactly what the codebook cycle rule requires. Set cycle = 2. Coding note: role_as_listed differs verbatim, 'Early Career' vs 'Entry Level'; role_slug must normalize them or this becomes two c1 rows instead of c1/c2."
+LI-049,2026-06-03,Valoh,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-050,2026-06-03,Kognitos,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-051,2026-06-04,MAJC,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-052,2026-06-04,Adaptive6,duplicate_gmail_receipt,Adaptive6,"008,013,018",Receipt 2026-06-04 same day; decline 2026-06-16.
+LI-053,2026-06-04,IntelliPro,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-054,2026-06-04,The Hog (YC F25),net_new_employer_artifact_exists,The Hog (thehog.ai),021,"Gmail holds interview invitation 2026-06-15, interview 06-16, take-home 06-18, credits 06-20, and no submission receipt. LinkedIn row is the only submission record; upgrade evidence_class. This is one of the 11 in-census interviews."
+LI-055,2026-06-04,Huzzle.com,duplicate_gmail_receipt,Huzzle.com,"008,013,016","Workable receipt plus data copy 2026-06-04 same day, plus required AI video interview."
+LI-056,2026-06-04,Lyra Health,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-057,2026-06-04,Vi,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-058,2026-06-04,Jobright.ai,net_new,,,"ADJUDICATED log 039. AI Engineer, a different role from LI-048. No Gmail artifact of any kind. Net addition."
+LI-059,2026-06-04,Scout Global,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-060,2026-06-04,Evolution USA,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-061,2026-06-04,GridBank,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-062,2026-06-07,SOLAYA,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-063,2026-06-08,Greenway Collins,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-064,2026-06-17,RTScale AI,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-065,2026-06-21,The Vincit Group,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-066,2026-06-21,Durham Geo Slope Indicator (DGSI),net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-067,2026-06-21,TrueBuilt,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-068,2026-06-21,DripShop,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-069,2026-06-22,Ritz Instrument Transformers USA,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-070,2026-06-22,Hartfiel Automation,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-071,2026-06-22,Franklin Fitch,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-072,2026-06-22,HorizonAI Talent,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-073,2026-06-22,Armada,duplicate_gmail_receipt,Armada,013,"Receipt 2026-06-22 same day, AI Factory Value Engineer."
+LI-074,2026-06-22,Attentive,duplicate_gmail_receipt,Attentive,"011,012,013",Receipt 2026-06-22 same day; decline 2026-07-07; a second cycle receipt 2026-07-15 exists in Gmail and is NOT represented in the LinkedIn export.
+LI-075,2026-06-22,Jobgether,duplicate_gmail_receipt,Jobgether,"013,015,016","Receipt 2026-06-22 same day; match-score follow-up 06-23. Intermediary: underlying_employer unresolved, open thread."
+LI-076,2026-06-22,Roc Search,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-077,2026-06-24,Melavex,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-078,2026-06-24,Robert Half,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-079,2026-06-24,Hippocratic AI,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-080,2026-06-25,Hermetic AI,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-081,2026-07-06,TechLinkSphere,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-082,2026-07-06,Inworld AI,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-083,2026-07-06,Company.ai,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-084,2026-07-07,Duckbill,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-085,2026-07-12,Entelligence.AI,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-086,2026-07-12,Nudge AI,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-087,2026-07-12,Human Delta,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-088,2026-07-12,The Biological Computing Co. (TBC),net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-089,2026-07-12,talentpluto,duplicate_gmail_receipt,talentpluto,"010,011,012,015","Workable receipt plus application data copy 2026-07-12 same day. Intermediary: underlying employer unresolved, open thread."
+LI-090,2026-07-12,Sidepocket,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-091,2026-07-12,Logicbroker,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-092,2026-07-12,Method Recruiting,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-093,2026-07-12,Taste Labs,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-094,2026-07-12,talentpluto,duplicate_gmail_receipt,talentpluto,"010,011,012,015","Second Workable receipt plus data copy 2026-07-12 same day. Two distinct submissions, both matched."
+LI-095,2026-07-12,Light Labs,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-096,2026-07-12,Stealth Startup,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-097,2026-07-12,HartleyCo,duplicate_of_ledger_row,HartleyCo / Bluejay,"012,018,020","ADJUDICATED log 039. NOT a net addition. eml_0a253147bb65 wrote 2026-07-13 04:39, 'Thanks for applying for the GTM Engineer position I'm working on for a client in SF' - this row IS that application. Screen booked and held the same day, recap 07-14 naming a YC-backed AI infrastructure startup, decline 2026-07-23 subject 'Update on the Founding GTM Role at Bluejay'. The reconciled ledger already counts this as one of the 11 interviews ('confidential client via HartleyCo'), so adding it would double count. It instead SUPPLIES that row's missing submission evidence and exact date. underlying_employer = Bluejay. terminal_outcome = rejected_after_interview, 2026-07-23, exact. Upgrade evidence_class to employer_artifact."
+LI-098,2026-07-12,Kana,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-099,2026-07-12,Coverwatch,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-100,2026-07-12,Massive,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-101,2026-07-12,Baton AI,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-102,2026-07-18,Elios AI,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-103,2026-07-22,Ailytics,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-104,2026-07-26,Fractional Demand,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).
+LI-105,2026-07-26,Doomers AI,net_new,,,No company match in the Gmail/Calendar corpus (logs 001-034).

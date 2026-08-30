@@ -18,4 +18,4 @@ This freeze has a LinkedIn applied list for pages 1 to 10, without an Easy Apply
 
 ## Limitations
 
-Subject and author are the same person. Coding of Gmail is independent across models, not a human gold standard. Freeze 2 platform files were mapped from structured CSVs rather than independently recoded by a second model. Freeze 3 personal calendar and remaining personal Gmail were coded as a documented addendum, not a second independent pair. Ladders and YC remain absent.
+Subject and author are the same person. Coding of Gmail is independent across models, not a human gold standard. Freeze 2 platform files were mapped from structured CSVs rather than independently recoded by a second model. Freeze 3 personal calendar and remaining personal Gmail were coded as a documented addendum, not a second independent pair. Freeze 4 keeps the Claude care package as a sidecar comparison corpus and does not recode Freeze 1, Freeze 2, or Freeze 3. Ladders and YC remain absent.

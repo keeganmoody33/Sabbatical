@@ -1,0 +1,1 @@
+Sabbatical: a peer-review-grade write-up of Keegan Moody's 12-month job search (2025-08 to 2026-08), treating the application record as a dataset and the count as a measurement problem. Holds the publication standard, the counting rules, the reconciled census, and the derivative Substack and LinkedIn drafts.
