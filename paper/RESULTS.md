@@ -80,7 +80,7 @@ Ladders is still absent.
 Interviewed means at least one event whose `event_type` is in {recruiter_screen, hiring_manager_interview, panel, technical_exercise, final_round}.
 
 - Interviewed applications in the Freeze 1 221: **14**
-- Application-to-interview rate on Freeze 1: 14/221
+- Application-to-interview rate on Freeze 1: 13/221
 - Interviewed applications in the Freeze 2 full census: **14**
 - Application-to-interview rate on the 298: 14/298
 - Platform files carry no interview events. Adding LinkedIn applied-list and Jobright rows does not add interviews.
@@ -123,5 +123,5 @@ Zero exact rows in September and October 2025 is not a claim of zero search acti
 - Naive capture recapture on 17 overlap versus 163 and 99
 - Mixmax product onboarding in the application denominator
 - Mercor Growth Strategist contract mixed into the application denominator
-- Weave treated as recruiter-initiated with no application (Greenhouse receipt, log 002)
+- Weave treated as recruiter-initiated with no application (Greenhouse receipt, log 002). Resolved 2026-08-30: the 2025 Business Development Manager application is real and stays in the census, rejected without interview. The separate 2026 opening is inbound with no submission artifact and sits in the opportunity register. See `paper/DEFECTS.md`.
 - The Hog counted in the application-to-interview rate

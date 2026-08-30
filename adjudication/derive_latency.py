@@ -26,7 +26,7 @@ import csv
 import datetime
 import statistics
 
-from _common import INTERVIEW_TYPES, ROOT, iso_date, load_csv
+from _common import EVENT_EXCLUSIONS, INTERVIEW_TYPES, ROOT, is_excluded_event, iso_date, load_csv
 
 OUT = ROOT / "adjudication"
 
@@ -72,6 +72,10 @@ def build_rows() -> tuple[list[dict], int, int]:
 
     by_app: dict[str, list[dict[str, str]]] = collections.defaultdict(list)
     for event in events:
+        # Named adjudication decisions remove events from every derived metric,
+        # not only from the census that adjudicate.py builds.
+        if is_excluded_event(event):
+            continue
         if event.get("application_id") in apps:
             by_app[event["application_id"]].append(event)
 
@@ -164,7 +168,15 @@ def interview_provenance() -> tuple[set, set, set, list]:
     events: dict[str, list] = collections.defaultdict(list)
     for coder in ("cursor", "bravo"):
         path = ROOT / "coding" / coder / f"events__{coder}.csv"
-        rows = [e for e in load_csv(path) if e.get("application_id") in census] if path.exists() else []
+        rows = (
+            [
+                e
+                for e in load_csv(path)
+                if e.get("application_id") in census and not is_excluded_event(e)
+            ]
+            if path.exists()
+            else []
+        )
         per_coder[coder] = {e["application_id"] for e in rows if e.get("event_type") in INTERVIEW_TYPES}
         for e in rows:
             events[e["application_id"]].append(e)
@@ -215,7 +227,7 @@ def main() -> None:
     r.append(f"- With an exact-dated `submission_receipt`, the base for every figure below: {base}")
     r.append(f"- Excluded for lacking one: {excluded}")
     r.append("")
-    r.append("The base is not the census. Any rate below is stated against " f"{base}, and the published application-to-interview rate remains 14/{census_n}.")
+    r.append(f"The base is not the census. Any rate below is stated against {base}, and the published application-to-interview rate remains {len(interviewed_union)}/{census_n}.")
     r.append("")
     r.append("## Response rate and latency are separate")
     r.append("")
@@ -239,17 +251,26 @@ def main() -> None:
     r.append("")
     r.append(f"- n = {interview['n']}, median {fmt(interview['median'])} days, mean {interview['mean']:.1f}, range {interview['min']} to {interview['max']}")
     r.append("")
-    r.append("Two things make this figure weaker than its n suggests, and both are about the interview set rather than the latency arithmetic.")
+    r.append("What follows is about the interview set rather than the latency arithmetic, because this figure inherits whatever that set gets wrong.")
     r.append("")
+    if EVENT_EXCLUSIONS:
+        r.append("**Excluded by named adjudication decision.** These events are removed from this figure and from the census interview count, and the reason is recorded rather than the event silently disappearing:")
+        r.append("")
+        for app_id, etype, date, reason in EVENT_EXCLUSIONS:
+            r.append(f"- `{app_id}`, `{etype}` dated {date}. {reason}")
+        r.append("")
     r.append(f"**Provenance.** The census records {len(interviewed_union)} interviewed applications. Both coders independently found {len(interviewed_both)}. The remaining {len(interviewed_cursor_only)} rest on cursor alone, and bravo contributes none that cursor missed: {cursor_only_names}. Agreement on which applications were interviewed is therefore {len(interviewed_both)}/{len(interviewed_union)}, which is much weaker than the published role-lane kappa of 0.9510 implies. Event-level agreement is not among the reliability statistics `knowledge/protocol.md` requires, so this is unmeasured rather than measured and small.")
     r.append("")
     if post_rejection:
-        r.append("**Ordering.** These carry an interview event dated after a rejection on the same application:")
+        r.append("**Ordering.** These carry an interview event dated after a rejection on the same application, and are not yet resolved:")
         r.append("")
         for aid, rej, iv, coder, etype, gap in post_rejection:
             r.append(f"- `{aid}`: rejection {rej}, then `{etype}` on {iv} by {coder}, {gap} days later.")
         r.append("")
-        r.append("An interview that postdates the rejection closing the same cycle is either a genuine re-engagement or an event coded under the wrong type. `coding/cursor/notes__cursor.md` describes the Weave case as an \"interview decline\", and a decline is a `rejection` under the codebook vocabulary, not an interview. Resolve this in adjudication before either the interview count or this latency figure is published. It is not a latency question and this script does not decide it.")
+        r.append("An interview that postdates the rejection closing the same cycle is either a genuine re-engagement or an event attached to the wrong application. Resolve it in adjudication before either the interview count or this latency figure is published. It is not a latency question and this script does not decide it.")
+        r.append("")
+    else:
+        r.append("No interview event postdates a rejection on the same application.")
         r.append("")
     r.append("## Right censoring")
     r.append("")

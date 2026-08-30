@@ -8,7 +8,7 @@ Secondary outcomes named in `knowledge/protocol.md`, computed under the rule sta
 - With an exact-dated `submission_receipt`, the base for every figure below: 196
 - Excluded for lacking one: 25
 
-The base is not the census. Any rate below is stated against 196, and the published application-to-interview rate remains 14/221.
+The base is not the census. Any rate below is stated against 196, and the published application-to-interview rate remains 13/221.
 
 ## Response rate and latency are separate
 
@@ -27,17 +27,17 @@ The day-zero share roughly doubles when `employer_ack` is included, which is wha
 
 ## Time to first interview
 
-- n = 12, median 6 days, mean 40.3, range 0 to 387
+- n = 11, median 6 days, mean 8.8, range 0 to 34
 
-Two things make this figure weaker than its n suggests, and both are about the interview set rather than the latency arithmetic.
+What follows is about the interview set rather than the latency arithmetic, because this figure inherits whatever that set gets wrong.
 
-**Provenance.** The census records 14 interviewed applications. Both coders independently found 10. The remaining 4 rest on cursor alone, and bravo contributes none that cursor missed: `hartleyco|founding-gtm|c1`, `hypergen|gtm-engineer|c1`, `jobmail-io|growth-lead|c1`, `weave|business-development-manager|c1`. Agreement on which applications were interviewed is therefore 10/14, which is much weaker than the published role-lane kappa of 0.9510 implies. Event-level agreement is not among the reliability statistics `knowledge/protocol.md` requires, so this is unmeasured rather than measured and small.
+**Excluded by named adjudication decision.** These events are removed from this figure and from the census interview count, and the reason is recorded rather than the event silently disappearing:
 
-**Ordering.** These carry an interview event dated after a rejection on the same application:
+- `weave|business-development-manager|c1`, `hiring_manager_interview` dated 2026-08-18. Belongs to a separate inbound Weave process, not this application. gth_0339a17e3860d167 is a post-interview decline, so an interview did happen, but the BDM application was already rejected 2025-07-31. Bravo excluded this artifact during blind coding as having no parent.
 
-- `weave|business-development-manager|c1`: rejection 2025-07-31, then `hiring_manager_interview` on 2026-08-18 by cursor, 383 days later.
+**Provenance.** The census records 13 interviewed applications. Both coders independently found 10. The remaining 3 rest on cursor alone, and bravo contributes none that cursor missed: `hartleyco|founding-gtm|c1`, `hypergen|gtm-engineer|c1`, `jobmail-io|growth-lead|c1`. Agreement on which applications were interviewed is therefore 10/13, which is much weaker than the published role-lane kappa of 0.9510 implies. Event-level agreement is not among the reliability statistics `knowledge/protocol.md` requires, so this is unmeasured rather than measured and small.
 
-An interview that postdates the rejection closing the same cycle is either a genuine re-engagement or an event coded under the wrong type. `coding/cursor/notes__cursor.md` describes the Weave case as an "interview decline", and a decline is a `rejection` under the codebook vocabulary, not an interview. Resolve this in adjudication before either the interview count or this latency figure is published. It is not a latency question and this script does not decide it.
+No interview event postdates a rejection on the same application.
 
 ## Right censoring
 

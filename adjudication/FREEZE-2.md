@@ -11,8 +11,8 @@ Freeze 1 Gmail and Calendar extracts were not recoded.
 - Overlaps whose parent was one of several candidates: 1
 - Freeze 1 application census: 221
 - Full census (Freeze 1 plus net-new): 298
-- Interviewed in Freeze 1 (cursor events, application register): 14
-- Interviewed in full census: 14 (platform files carry no interview events)
+- Interviewed in Freeze 1 (cursor events, application register): 13
+- Interviewed in full census: 13 (platform files carry no interview events)
 
 Capture recapture was not computed. The LinkedIn file is pages 1 to 10 of an applied list and does not label Easy Apply versus external ATS. LinkedIn submission_channel is therefore unknown.
 

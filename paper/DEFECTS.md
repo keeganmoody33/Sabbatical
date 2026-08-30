@@ -30,6 +30,22 @@ Attentive: receipt 2026-06-22, decline 2026-07-07, second receipt 2026-07-15. Th
 
 A key that omitted cycle would collide those pairs.
 
+## Weave 2026 interview attached to the wrong application
+
+Closed for this freeze. Coding correction logged in `knowledge/protocol.md`.
+
+Artifact: `gth_0339a17e3860d167`, Ashby, 2026-08-18, retrieval log 010, reading "thank you for taking the time to meet and interview with us." That is a post-interview decline, so an interview did happen.
+
+Cursor attached it to `weave|business-development-manager|c1` as a `hiring_manager_interview` and set that application's terminal outcome to `rejected_after_interview`. The BDM application was submitted 2025-07-27 and declined 2025-07-31, so the interview event sat 383 days after the rejection that closed the same cycle. Bravo did not attach it at all, filing it as an exclusion with reason `unresolvable_identity` and the note that it has no parent. The two coders also disagreed on this row's terminal outcome, a field the adjudication pass never covered.
+
+Rule applied: the 2026 process is a separate opening at the same company. It is inbound with no submission artifact anywhere in the corpus, which is the same case as The Hog, so it goes to the opportunity register. An interview with no submission does not mint an application row. The event is excluded from the interview derivation by named decision in `adjudication/adjudicate.py`, and the BDM application reverts to `rejected_no_interview` dated 2025-07-31.
+
+Consequence for downstream numbers: interviewed applications 14 becomes 13. The application-to-interview rate 14/221 = 0.0633 becomes 13/221 = 0.0588. `rejected_after_interview` 6 becomes 5, `rejected_no_interview` 73 becomes 74. The application census stays 221 and the full census stays 298, because the opening moved to the opportunity register rather than out of the dataset. Time to first interview moves from n = 12, median 6, mean 40.3, max 387 to n = 11, median 6, mean 8.8, max 34, so that single event was carrying the mean.
+
+Provenance of the correction, stated because it matters: it came from the author, from recall, after seeing the analysis. The subject and the author are the same person, which `knowledge/instructions.md` requires be treated as a stated limitation rather than softened. Two things support it. Bravo reached nearly the same conclusion independently under blind conditions, so the correction moves the census toward the blind coder's judgement rather than away from it. And the artifact itself establishes that an interview happened; only its attachment was wrong.
+
+What remains recall and is not recorded as evidence: the 2026 role title, the counterparty's name, and the inbound origination. The corpus establishes none of the three. Under `prompts/extraction.md` rule 8 recall is never disguised as evidence, so none is written into a structured field. The interview date is unknown and bounded by the 2026-08-18 decline. The personal Gmail calendar, stop condition 2, remains unreachable and is where a calendar artifact for it would live.
+
 ## Ambiguous platform matches were counted as net-new
 
 Closed for this freeze. Pipeline change logged in `knowledge/protocol.md`.

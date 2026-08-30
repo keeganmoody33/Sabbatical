@@ -83,7 +83,7 @@ The interview events survive in `coding/bravo/events__bravo.csv`. The applicatio
 
 The source repository closes it. `adjudication/adjudicate.py:102-108` computes the numerator by walking both coders' event tables and keeping only events whose id is in `census_ids`. That single condition is what makes the exclusion conservative rather than inflationary.
 
-The numbers show it working. Across both coders, 21 distinct records carry an event with a qualifying interview type. Fourteen of them are in the census. The seven that are not include The Hog. So the published rate is 14/221, and a numerator counted straight off the event tables would report 21/221, which is 0.0950 against 0.0633. The denominator shrank and the rate would have grown by half.
+The numbers show it working. Across both coders, 20 distinct records carry an event with a qualifying interview type. Thirteen of them are in the census. The seven that are not include The Hog. So the published rate is 13/221, and a numerator counted straight off the event tables would report 20/221, which is 0.0905 against 0.0588. The denominator shrank and the rate would have grown by more than half.
 
 **BX Studio.** A video forwarded to a hiring manager. Coded application by one coder, opportunity by the other. Adjudicated **opportunity**: "Video forwarded to a hiring manager is not a submission."
 

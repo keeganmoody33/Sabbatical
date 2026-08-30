@@ -16,7 +16,7 @@ This layer exists because the repository is written for itself. It is rigorous, 
 
 **Placeholder syntax.** The templates use `{{VARIABLE}}`. This repository does not use that syntax anywhere. Its own placeholder conventions are `company_slug|role_slug|c{n}`, `{application_id}|e{n}`, and `applications__{coder_id}.csv`. The `{{VARIABLE}}` form was chosen for the extracted templates because they are meant to leave this repository and be adapted elsewhere. Do not mistake it for existing repo syntax.
 
-**House style.** Files in this directory follow the repository's stated conventions: no dashes as punctuation, "percent" spelled out, rates written as unreduced fractions such as `14/221`, dates in ISO form.
+**House style.** Files in this directory follow the repository's stated conventions: no dashes as punctuation, "percent" spelled out, rates written as unreduced fractions such as `13/221`, dates in ISO form.
 
 ## Verification status
 

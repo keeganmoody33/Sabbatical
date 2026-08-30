@@ -129,7 +129,7 @@ So the interview stays in the dataset, and the application does not. Which sound
 
 **The third move is reconciling the platform exports against what email already proved.** Ninety-nine LinkedIn rows and 40 Jobright rows were matched against the existing census. Five turned out to be the same roles under different names: LinkedIn lists "Listen" where the email record says "Listen Labs", and "AE Tax or Risk" where the receipt says "Account Executive, Tax or Risk Products" (see: `adjudication/FREEZE-2.md`). Those are overlap, not new applications. When the matcher cannot tell whether two records are the same, it deliberately declines to merge them.
 
-**The result is 221 applications with employer-side proof, plus 77 more visible only in platform logs, for 298 total. Fourteen produced interviews, a rate of 14/221** (see: `adjudication/ADJUDICATION.md`).
+**The result is 221 applications with employer-side proof, plus 77 more visible only in platform logs, for 298 total. Thirteen produced interviews, a rate of 13/221** (see: `adjudication/ADJUDICATION.md`).
 
 And the repository refuses to turn that into a completeness percentage. The standard method for estimating what you missed requires two sources that could each have seen the same record. Here they cannot: LinkedIn Easy Apply usually generates no email at all, so the two sources barely overlap by construction (see: `knowledge/protocol.md`). Rather than run the estimator anyway, the file names the method, explains why it fails, and states the direction the wrong answer would err in.
 
@@ -481,7 +481,7 @@ The most useful contribution is what broke. Three rows here carry a city name in
 
 ## Why publish the method rather than the result
 
-The result is 221 applications and a 14/221 interview rate. Neither number is interesting alone.
+The result is 221 applications and a 13/221 interview rate. Neither number is interesting alone.
 
 What is interesting is what it publishes that a case study normally hides: a list of numbers the author refuses to show a skeptic, two of which would have flattered him. A stop-conditions table with four items marked Partial and two Unmet. A defect register entry that reads "Still undocumented. Workbooks absent."
 

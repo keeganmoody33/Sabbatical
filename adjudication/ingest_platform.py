@@ -18,6 +18,8 @@ import csv
 import re
 from pathlib import Path
 
+from _common import is_excluded_event
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "adjudication"
 PLATFORM = ROOT / "coding" / "platform"
@@ -593,7 +595,7 @@ def main() -> None:
     interviewed = {
         e["application_id"]
         for e in events
-        if e.get("event_type") in interviewed_types
+        if e.get("event_type") in interviewed_types and not is_excluded_event(e)
     }
     freeze1_ids = {r["application_id"] for r in freeze1_apps}
     interviewed_221 = interviewed & freeze1_ids
