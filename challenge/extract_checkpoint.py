@@ -62,13 +62,25 @@ SOURCE_NAME = "combined_job_search_audit_checkpoint_refined.xlsx"
 EXPORT_FRESHNESS = "2026-08-23"
 
 
-# Capitalized bigrams that the prose harvest would otherwise treat as people.
-# Kept deliberately short: over-redacting a company is the safer error, so this
-# list only holds phrases whose loss would damage the analysis.
+# Phrases the harvests must never treat as a person.
 KNOWN_NON_PERSONS = {
     "Clay Café", "Clay Cafe", "GTM Café", "GTM Cafe", "Work at a Startup",
     "Easy Apply", "Saved Jobs", "Job Applications", "United States",
-    "New York", "San Francisco", "Data Strategies", "Security Group",
+    "New York", "San Francisco", "CRO idea",
+}
+
+# Tokens that mark an organization or a job title rather than a person. Used
+# ONLY by the prose harvest, which is a heuristic net over free text. The
+# explicit person columns are not filtered this way: those hold people by
+# definition, and blocking a token there would leave a real name unredacted,
+# which is the error this module exists to prevent.
+ORG_TOKENS = {
+    "school", "schools", "college", "university", "district", "county", "city",
+    "public", "global", "business", "development", "engineering", "technology",
+    "technologies", "group", "security", "labs", "systems", "solutions",
+    "services", "health", "capital", "ventures", "partners", "strategies",
+    "data", "software", "media", "digital", "consulting", "recruiting",
+    "talent", "startup", "cafe", "café", "team", "studio", "collective",
 }
 
 
@@ -98,9 +110,7 @@ def sheet_rows(wb, name: str) -> tuple[list[str], list[dict]]:
 
     A banner is recognized by its shape rather than its position: the workbook
     writes a merged title, which openpyxl returns as the SAME string repeated
-    across every cell in the range. A header row has distinct values. Requiring
-    three or more DISTINCT non-empty cells therefore skips banners and summary
-    strips without needing to know how many of them a sheet has.
+    across every cell in the range. A header row has distinct values.
     """
     rows = [r for r in wb[name].iter_rows(values_only=True)]
     header_index = 1
@@ -115,6 +125,11 @@ def sheet_rows(wb, name: str) -> tuple[list[str], list[dict]]:
         for r in rows[header_index + 1 :]
         if any(c not in (None, "") for c in r)
     ]
+    if not [h for h in header if h]:
+        raise SystemExit(
+            f"sheet {name!r}: no header row found in the first 12 rows. "
+            "Header detection failed rather than silently writing empty columns."
+        )
     return header, data
 
 
@@ -128,65 +143,92 @@ def clean(value) -> str:
     return text
 
 
-def build_person_roster(wb) -> dict[str, str]:
-    """Names to redact, gathered from the columns that hold them explicitly.
+def looks_like_person(part: str, organizations: set[str]) -> bool:
+    """One shared shape test, so the two harvests cannot drift apart.
 
-    Built from data rather than a hardcoded list, so a name added to the
-    workbook later is redacted on the next run instead of leaking.
-
-    The refined workbook added an Interview and Opportunity Register whose
-    `Contacts / Rounds` column is personal names by definition. That column is
-    the reason this function exists in its current form: the first version drew
-    only on the thread sheets and let every register contact through.
-
-    ORGANIZATIONS ARE PROTECTED FROM THE ROSTER. The contacts column sometimes
-    holds a company ("Morph Data Strategies"), and the study is about companies,
-    so any candidate that also appears as an organization anywhere in the
-    workbook is dropped from the roster rather than redacted everywhere.
+    Every token must start uppercase, which is what stops "CRO idea" being
+    rostered. Whitespace is normalized by the caller, because a roster key with
+    a doubled space can never match the text it came from and the name then
+    ships unredacted.
     """
-    # Only genuine company columns feed this guard. The register's
-    # "Organization / Context" mixes companies with person-led entries
-    # ("Doug Shankman / CRO idea"), so using it here would add those people to
-    # the protected set and guarantee they are never redacted.
+    tokens = part.split()
+    if not 2 <= len(tokens) <= 3:
+        return False
+    if part in KNOWN_NON_PERSONS or part.isupper():
+        return False
+    if not all(token[:1].isupper() for token in tokens):
+        return False
+    # Substring rather than equality: "Atlanta Public Schools" must be protected
+    # by an organization recorded as "Atlanta Public Schools, GA".
+    if any(part in org or org in part for org in organizations):
+        return False
+    # Applied to BOTH harvests. The explicit columns were meant to hold people
+    # only, but the workbook puts institutions in them too: four school
+    # districts reached the roster this way and were hashed out of the data.
+    # None of these tokens is plausible as a personal name in this corpus.
+    if any(token.lower() in ORG_TOKENS for token in tokens):
+        return False
+    return True
+
+
+def build_person_roster(wb) -> dict[str, str]:
+    """Names to redact, gathered from the workbook rather than hardcoded.
+
+    Two harvests with different rules.
+
+    EXPLICIT COLUMNS hold people by definition, so only shape is checked. A
+    company that lands in one of them is over-redacted, which is the safe error.
+
+    PROSE COLUMNS are free text where no split rule isolates a name, so a
+    capitalized bigram is a candidate and organization tokens are filtered out.
+    Missing a person here is no worse than before this harvest existed, while
+    hashing a company name would destroy data the analysis needs.
+    """
     organizations: set[str] = set()
     for sheet, column in (
         ("Combined Ledger", "Company"),
+        ("Remaining Excluded", "Company"),
+        ("LinkedIn Applications", "Company"),
+        ("Jobright Applications", "Company"),
     ):
         if sheet not in wb.sheetnames:
             continue
         _, rows = sheet_rows(wb, sheet)
         for row in rows:
             value = clean(row.get(column))
-            for part in re.split(r"/|→|;", value):
-                if part.strip():
-                    organizations.add(part.strip())
+            if value:
+                organizations.add(value)
 
     roster: set[str] = set()
+
     for sheet, column in (
         ("LinkedIn Job Threads", "Person"),
         ("Uncertain and Quarantined", "Contact"),
         ("Interview & Opportunity Register", "Contacts / Rounds"),
-        ("Interview & Opportunity Register", "Organization / Context"),
     ):
         if sheet not in wb.sheetnames:
             continue
         _, rows = sheet_rows(wb, sheet)
         for row in rows:
-            name = clean(row.get(column))
-            # Split compound entries such as "Claire (2); David Lou (1)" and
-            # "Marina Ghilchik → Jacob Bowman".
-            for part in re.split(r"→|/|;|,|\band\b", name):
-                part = re.sub(r"\([^)]*\)", "", part).strip()
-                # A person here is two or more capitalized words. Single tokens
-                # are skipped: too likely to be a company or a common word.
-                if len(part.split()) >= 2 and not part.isupper() and part not in organizations:
-                    roster.add(part)
-    # Free-text columns name people in prose ("Garrett Wolfe referral via ...")
-    # where no split rule isolates them. Harvest capitalized bigrams from those
-    # columns and subtract the organization set. "GTM Engineering School" does
-    # not match, because the pattern requires a lowercase tail on each word.
+            value = clean(row.get(column))
+            # Parentheses are stripped BEFORE splitting, so "Claire (2); David
+            # Lou (1)" cannot produce the unbalanced fragment "Claire (2".
+            for raw in re.split(r"→|/|;|,|\band\b", value):
+                # Two forms are rostered. The stripped form is what the shape
+                # test can judge; the ORIGINAL is what actually appears in the
+                # text. "Jim (Boris) Ryss" reduces to "Jim Ryss", and rostering
+                # only that leaves the original written out in full, which is
+                # how a real name shipped unredacted in the previous version.
+                stripped = " ".join(re.sub(r"\([^)]*\)", " ", raw).split())
+                original = " ".join(raw.split())
+                if looks_like_person(stripped, organizations):
+                    roster.add(stripped)
+                    if original != stripped and "(" in original:
+                        roster.add(original)
+
     prose_name = re.compile(r"\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+){1,2}\b")
     for sheet, column in (
+        ("Interview & Opportunity Register", "Organization / Context"),
         ("Interview & Opportunity Register", "Origin"),
         ("Interview & Opportunity Register", "Reconciliation Notes"),
         ("Data Quality Findings", "Evidence"),
@@ -196,7 +238,8 @@ def build_person_roster(wb) -> dict[str, str]:
         _, rows = sheet_rows(wb, sheet)
         for row in rows:
             for candidate in prose_name.findall(clean(row.get(column))):
-                if candidate not in organizations and candidate not in KNOWN_NON_PERSONS:
+                candidate = " ".join(candidate.split())
+                if looks_like_person(candidate, organizations):
                     roster.add(candidate)
 
     return {name: person_pointer(name) for name in sorted(roster, key=len, reverse=True)}
