@@ -4,7 +4,7 @@
 
 **Extracted from:** `adjudication/ingest_platform.py:328-507`, `codebook.md`, `paper/DEFECTS.md:31`, `knowledge/01-engagement.md:61`.
 
-**One-line form:** Match `{{SOURCE_A_RECORDS}}` against `{{SOURCE_B_RECORDS}}` using `{{NORMALIZATION}}` plus `{{ALIAS_TABLE}}` plus `{{EQUIVALENCE_RULE}}`, bounded by `{{REFUSE_ON_AMBIGUITY}}`, and output `{{OVERLAP_VS_NET_NEW}}`.
+**One-line form:** Match `{{SOURCE_A_RECORDS}}` against `{{SOURCE_B_RECORDS}}` using `{{NORMALIZATION}}` plus `{{ALIAS_TABLE}}` plus `{{EQUIVALENCE_RULE}}`, bounded by `{{REFUSE_ON_AMBIGUITY}}`, and output `{{MATCH_STATUS}}` per record, one of overlap, net_new, ambiguous with its candidate parent ids, or {{NON_CENSUS}}.
 
 ---
 

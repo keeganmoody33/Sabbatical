@@ -48,7 +48,7 @@ The reason is stated plainly: those opportunities "produced real interviews and 
 
 **Extractable?** Yes, and it generalizes further than the repository claims. The repository says so itself: "a job search has two independent pipelines, and mixing them makes both unmeasurable" (see: `knowledge/00-core.md`). Substitute any funnel with both an outbound motion and an inbound motion.
 
-**What it proves you can do.** Recognize denominator contamination and design a schema that prevents it structurally, rather than a convention that discourages it. Note which direction the contamination runs: three of the seven opportunity-register processes converted to paid work (see: `knowledge/02-current.md`). The rows that would have inflated the rate are the ones with the good outcomes, which is exactly why nobody catches this.
+**What it proves you can do.** Recognize denominator contamination and design a schema that prevents it structurally, rather than a convention that discourages it. Note which direction the contamination runs. Ten processes were adjudicated into the opportunity register in this freeze (see: `adjudication/ADJUDICATION.md`), and Mercor, a matching-platform contract path that converted to paid work, is one of them. The rows that would have inflated the rate are the ones with the good outcomes, which is exactly why nobody catches this.
 
 **Template:** `templates/03-two-register-funnel-split.md`.
 
@@ -298,7 +298,7 @@ is the job done correctly.
 
 *Proves you can spot denominator contamination and design it out structurally.*
 
-> Split `{{ALL_RECORDS}}` into `{{PRIMARY_REGISTER}}` and `{{SECONDARY_REGISTER}}` using `{{ORIGINATION_TEST}}`, bounded by `{{HARD_EVIDENCE_REQUIREMENT}}`, and report `{{RATE}}` against the primary register only.
+> Split `{{ALL_RECORDS}}` into `{{PRIMARY_REGISTER}}` and `{{SECONDARY_REGISTER}}` using `{{ORIGINATION_TEST}}`, bounded by `{{HARD_EVIDENCE_REQUIREMENT}}`, and report `{{RATE}}` with BOTH its denominator and its numerator restricted to `{{PRIMARY_REGISTER}}`.
 
 ```
 You are separating {{ALL_RECORDS}} into two registers before any rate is
@@ -392,7 +392,7 @@ ADJUDICATION RULES:
 
 *Proves you can reconcile overlapping sources without inflating the total, and know which way to fail.*
 
-> Match `{{SOURCE_A_RECORDS}}` against `{{SOURCE_B_RECORDS}}` using `{{NORMALIZATION}}` plus `{{ALIAS_TABLE}}` plus `{{EQUIVALENCE_RULE}}`, bounded by `{{REFUSE_ON_AMBIGUITY}}`, and output `{{OVERLAP_VS_NET_NEW}}`.
+> Match `{{SOURCE_A_RECORDS}}` against `{{SOURCE_B_RECORDS}}` using `{{NORMALIZATION}}` plus `{{ALIAS_TABLE}}` plus `{{EQUIVALENCE_RULE}}`, bounded by `{{REFUSE_ON_AMBIGUITY}}`, and output `{{MATCH_STATUS}}` per record, one of overlap, net_new, ambiguous with its candidate parent ids, or {{NON_CENSUS}}.
 
 ```
 KEY = {{NORMALIZED_ENTITY}} | {{NORMALIZED_SUBJECT}} | {{CYCLE}}

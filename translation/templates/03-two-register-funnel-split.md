@@ -4,7 +4,7 @@
 
 **Extracted from:** `knowledge/00-core.md:62-69`, `prompts/extraction.md` rule 7, `adjudication/ADJUDICATION.md:18-19` and `:32-34`.
 
-**One-line form:** Split `{{ALL_RECORDS}}` into `{{PRIMARY_REGISTER}}` and `{{SECONDARY_REGISTER}}` using `{{ORIGINATION_TEST}}`, bounded by `{{HARD_EVIDENCE_REQUIREMENT}}`, and report `{{RATE}}` against the primary register only.
+**One-line form:** Split `{{ALL_RECORDS}}` into `{{PRIMARY_REGISTER}}` and `{{SECONDARY_REGISTER}}` using `{{ORIGINATION_TEST}}`, bounded by `{{HARD_EVIDENCE_REQUIREMENT}}`, and report `{{RATE}}` with BOTH its denominator and its numerator restricted to `{{PRIMARY_REGISTER}}`.
 
 ---
 
@@ -87,7 +87,9 @@ The numbers show it working. Across both coders, 21 distinct records carry an ev
 
 **BX Studio.** A video forwarded to a hiring manager. Coded application by one coder, opportunity by the other. Adjudicated **opportunity**: "Video forwarded to a hiring manager is not a submission."
 
-Ten processes ended up in the secondary register, including three that converted to paid work (`knowledge/02-current.md:54`). None of them counts in the 221.
+Ten processes ended up in the secondary register in this freeze (`adjudication/ADJUDICATION.md:34`): WorkOS, Mercor, ThriveLink, Dexian, Luzmo, Glytec, SmartMode AI, Crossing Hurdles, micro1, and Pinterest. None of them counts in the 221.
+
+Mercor is the one to look at. It is a matching-platform contract path that converted to paid work, and it is held out of the application census anyway, because the money did not come from applying.
 
 ## Adapting it
 
@@ -101,4 +103,6 @@ Ten processes ended up in the secondary register, including three that converted
 
 ## What breaks if you skip it
 
-Your best-performing channel is whichever one you accidentally let into the denominator, and you will not find out for a year. In the source study the contaminating rows were the ones with the *good* outcomes: three of the seven secondary-register processes converted to paid work. Merging the registers would have raised the reported conversion rate using outcomes that the measured activity did not produce.
+Your best-performing channel is whichever one you accidentally let into the denominator, and you will not find out for a year.
+
+The contaminating rows tend to be the ones with the *good* outcomes, which is why nobody catches this. In the source study, Mercor sits in the secondary register and converted to paid work (`adjudication/ADJUDICATION.md:34`). A separate prior audit, whose figures this freeze deliberately does not restate, recorded seven such opportunities of which three converted (`knowledge/02-current.md:54`). Either way the shape is the same: merging the registers would raise the reported conversion rate using outcomes the measured activity did not produce.
