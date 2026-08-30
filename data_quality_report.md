@@ -21,12 +21,12 @@ Every table the pipeline reads or writes, with its row count and the date range 
 | `coding/cursor/applications__cursor.csv` | 231 | 28 | 2025-06-11 to 2026-08-24 (231 of 231 parse) |
 | `coding/cursor/events__cursor.csv` | 279 | 13 | 2025-06-11 to 2026-08-24 (279 of 279 parse) |
 | `coding/cursor/exclusions__cursor.csv` | 45 | 9 | 2025-04-11 to 2026-08-21 (45 of 45 parse) |
-| `coding/platform/applications__freeze2.csv` | 134 | 28 | 2025-07-27 to 2026-06-26 (40 of 134 parse) |
+| `coding/platform/applications__freeze2.csv` | 157 | 28 | 2025-06-14 to 2026-08-22 (142 of 157 parse) |
 | `coding/platform/exclusions__freeze2.csv` | 1 | 9 | no parseable dates |
-| `adjudication/applications__adjudicated.csv` | 221 | 30 | 2025-06-11 to 2026-08-24 (221 of 221 parse) |
-| `adjudication/applications__full_census.csv` | 298 | 30 | 2025-06-11 to 2026-08-24 (227 of 298 parse) |
-| `adjudication/platform_match.csv` | 134 | 33 | not date-keyed |
-| `adjudication/latency__by_application.csv` | 196 | 11 | 2025-06-11 to 2026-08-22 (196 of 196 parse) |
+| `adjudication/applications__adjudicated.csv` | 223 | 30 | 2025-06-11 to 2026-08-24 (223 of 223 parse) |
+| `adjudication/applications__full_census.csv` | 317 | 30 | 2025-06-11 to 2026-08-24 (311 of 317 parse) |
+| `adjudication/platform_match.csv` | 157 | 33 | not date-keyed |
+| `adjudication/latency__by_application.csv` | 197 | 11 | 2025-06-11 to 2026-08-22 (197 of 197 parse) |
 
 ## 2. Field population
 
@@ -40,41 +40,41 @@ coder omission, an admitted unknown is a fact about the artifact.
 
 | field | empty | share empty | admitted unknown |
 |---|---|---|---|
-| `underlying_employer` | 215 | 97.3 percent | 4 |
-| `role_as_listed` | 0 | 0.0 percent | 39 |
-| `role_lane` | 0 | 0.0 percent | 35 |
-| `gtm_modifier` | 135 | 61.1 percent | 0 |
-| `date_capture` | 221 | 100.0 percent | 0 |
-| `date_evidence_anchor` | 195 | 88.2 percent | 0 |
-| `discovery_source` | 0 | 0.0 percent | 206 |
-| `submission_channel` | 0 | 0.0 percent | 9 |
-| `ats_system` | 0 | 0.0 percent | 70 |
-| `terminal_outcome_date` | 124 | 56.1 percent | 0 |
-| `terminal_outcome_precision` | 124 | 56.1 percent | 0 |
-| `location` | 221 | 100.0 percent | 0 |
-| `level_as_listed` | 189 | 85.5 percent | 0 |
-| `notes` | 87 | 39.4 percent | 0 |
+| `underlying_employer` | 217 | 97.3 percent | 4 |
+| `role_as_listed` | 0 | 0.0 percent | 40 |
+| `role_lane` | 0 | 0.0 percent | 36 |
+| `gtm_modifier` | 136 | 61.0 percent | 0 |
+| `date_capture` | 223 | 100.0 percent | 0 |
+| `date_evidence_anchor` | 196 | 87.9 percent | 0 |
+| `discovery_source` | 0 | 0.0 percent | 208 |
+| `submission_channel` | 0 | 0.0 percent | 10 |
+| `ats_system` | 0 | 0.0 percent | 72 |
+| `terminal_outcome_date` | 126 | 56.5 percent | 0 |
+| `terminal_outcome_precision` | 126 | 56.5 percent | 0 |
+| `location` | 223 | 100.0 percent | 0 |
+| `level_as_listed` | 191 | 85.7 percent | 0 |
+| `notes` | 87 | 39.0 percent | 0 |
 
 ### Full census, n = 298
 
 | field | empty | share empty | admitted unknown |
 |---|---|---|---|
-| `underlying_employer` | 283 | 95.0 percent | 13 |
-| `role_as_listed` | 0 | 0.0 percent | 39 |
-| `role_lane` | 0 | 0.0 percent | 35 |
-| `gtm_modifier` | 185 | 62.1 percent | 0 |
-| `date_applied` | 71 | 23.8 percent | 0 |
-| `date_capture` | 227 | 76.2 percent | 0 |
-| `date_evidence_anchor` | 272 | 91.3 percent | 0 |
-| `discovery_source` | 0 | 0.0 percent | 206 |
-| `submission_channel` | 0 | 0.0 percent | 81 |
-| `ats_system` | 0 | 0.0 percent | 147 |
-| `terminal_outcome` | 77 | 25.8 percent | 0 |
-| `terminal_outcome_date` | 201 | 67.4 percent | 0 |
-| `terminal_outcome_precision` | 201 | 67.4 percent | 0 |
-| `location` | 221 | 74.2 percent | 0 |
-| `level_as_listed` | 260 | 87.2 percent | 0 |
-| `notes` | 87 | 29.2 percent | 0 |
+| `underlying_employer` | 311 | 98.1 percent | 4 |
+| `role_as_listed` | 0 | 0.0 percent | 40 |
+| `role_lane` | 0 | 0.0 percent | 36 |
+| `gtm_modifier` | 198 | 62.5 percent | 0 |
+| `date_applied` | 6 | 1.9 percent | 0 |
+| `date_capture` | 229 | 72.2 percent | 0 |
+| `date_evidence_anchor` | 290 | 91.5 percent | 0 |
+| `discovery_source` | 0 | 0.0 percent | 208 |
+| `submission_channel` | 0 | 0.0 percent | 99 |
+| `ats_system` | 0 | 0.0 percent | 166 |
+| `terminal_outcome` | 94 | 29.7 percent | 0 |
+| `terminal_outcome_date` | 220 | 69.4 percent | 0 |
+| `terminal_outcome_precision` | 220 | 69.4 percent | 0 |
+| `location` | 305 | 96.2 percent | 0 |
+| `level_as_listed` | 279 | 88.0 percent | 0 |
+| `notes` | 87 | 27.4 percent | 0 |
 
 ## 3. Controlled vocabulary violations
 
@@ -152,18 +152,18 @@ Required fields: `application_id`, `company_canonical`, `role_as_listed`, `date_
 
 | bucket | rows | share of census |
 |---|---|---|
-| Complete | 11 | 5.0 percent |
-| Partial | 210 | 95.0 percent |
+| Complete | 11 | 4.9 percent |
+| Partial | 212 | 95.1 percent |
 | Unusable | 0 | 0.0 percent |
 
 Which condition each Partial row failed. A row can fail more than one, so these do not sum.
 
 | condition | rows failing | share of census |
 |---|---|---|
-| `exact_date` | 26 | 11.8 percent |
-| `named_role` | 39 | 17.6 percent |
-| `known_origin` | 206 | 93.2 percent |
-| `observable_outcome` | 1 | 0.5 percent |
+| `exact_date` | 27 | 12.1 percent |
+| `named_role` | 40 | 17.9 percent |
+| `known_origin` | 208 | 93.3 percent |
+| `observable_outcome` | 1 | 0.4 percent |
 
 The `known_origin` row is the finding this report exists to surface. It is the
 single largest completeness failure in the dataset, and it is the one that blocks

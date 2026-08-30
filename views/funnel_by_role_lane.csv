@@ -1,6 +1,6 @@
 role_lane,n_applications,n_latency_base,n_responded_any,n_responded_substantive,n_interviewed,interview_rate,interview_rate_wilson_lo,interview_rate_wilson_hi,suppressed
-explicit_gtm_engineering,86,82,43,36,9,9/86,0.0560,0.1871,no
-unspecified,35,34,11,10,2,2/35,0.0158,0.1861,no
+explicit_gtm_engineering,87,82,43,36,10,10/87,0.0636,0.1988,no
+unspecified,36,35,11,10,2,2/36,0.0154,0.1814,no
 sales_bd_partnerships,28,23,15,11,0,0/28,0.0000,0.1206,no
 growth_demand_marketing,22,21,9,7,2,2/22,0.0253,0.2781,no
 other,18,7,5,4,0,0/18,0.0000,0.1759,no

@@ -1,0 +1,224 @@
+application_id,company_canonical,coded_discovery_source,recovery_tier,recovered_source,evidence_class
+10x-genomics|unspecified|c1,10x Genomics,unknown,unrecoverable,,employer_artifact
+12100-collective|seo-lead|c1,12100 Collective,wellfound,captured_at_write_time,wellfound,employer_artifact
+4flow|director-go-to-market-strategy|c1,4flow,unknown,unrecoverable,,employer_artifact
+4mindsai|gtm-engineer|c1,4MindsAI,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+90-seconds|unspecified|c1,90 Seconds,unknown,recoverable_from_platform_export,jobright,employer_artifact
+adaptive6|sales-engineer|c1,Adaptive6,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+adapt|gtm-engineer-revops-lead|c1,Adapt,unknown,unrecoverable,,employer_artifact
+ai-digital|growth-director|c1,AI Digital,ladders,captured_at_write_time,ladders,employer_artifact
+aicro|gtm-engineering-team-lead|c1,AICRO,unknown,unrecoverable,,employer_artifact
+airgarage|consumer-growth-hacker|c1,AirGarage,wellfound,captured_at_write_time,wellfound,employer_artifact
+airops|growth-engineer|c1,AirOps,unknown,unrecoverable,,employer_artifact
+airtable|gtm-engineer|c1,Airtable,unknown,unrecoverable,,employer_artifact
+ambrook|business-operations-lead|c1,Ambrook,unknown,unrecoverable,,employer_artifact
+ambrook|partnerships-lead|c1,Ambrook,unknown,unrecoverable,,employer_artifact
+anaconda|senior-bdr|c1,Anaconda,unknown,recoverable_from_platform_export,jobright,employer_artifact
+anthropic|software-engineer-business-technology|c1,Anthropic,unknown,unrecoverable,,employer_artifact
+anysphere|gtm-emerging-products|c1,Anysphere,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+apartmentiq|unspecified|c1,ApartmentIQ,unknown,unrecoverable,,employer_artifact
+apollo-io|unspecified|c1,Apollo.io,unknown,unrecoverable,,employer_artifact
+appgate|gtm-engineer|c1,AppGate,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+applause|enterprise-sdr|c1,Applause,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+applied-systems|sales-enablement-gtm-readiness-lead|c1,Applied Systems,unknown,recoverable_from_platform_export,jobright,employer_artifact
+armada|ai-factory-value-engineer|c1,Armada,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+atlanta-public-schools|unspecified|c1,Atlanta Public Schools,unknown,unrecoverable,,employer_artifact
+attentive|gtm-engineer|c2,Attentive,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+auctane|pre-sales-engineer|c1,Auctane,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+automation-anywhere|sales-engineer|c1,Automation Anywhere,unknown,recoverable_from_platform_export,jobright,employer_artifact
+ava-labs|growth-lead-core|c1,Ava Labs,wellfound,captured_at_write_time,wellfound,employer_artifact
+axiad|unspecified|c1,Axiad,unknown,unrecoverable,,employer_artifact
+axon|manager-go-to-market-readiness|c1,Axon,unknown,unrecoverable,,employer_artifact
+beacon-software|unspecified|c1,Beacon Software,unknown,unrecoverable,,employer_artifact
+beautiful-ai|unspecified|c1,Beautiful.ai,unknown,unrecoverable,,employer_artifact
+beckhoff-automation|sales-engineer|c1,Beckhoff Automation,unknown,unrecoverable,,employer_artifact
+blackthorn-io|unspecified|c1,Blackthorn.io,unknown,unrecoverable,,employer_artifact
+boulevard|gtm-engineer|c1,Boulevard,unknown,unrecoverable,,employer_artifact
+brand-ai|gtme|c1,Brand.ai,unknown,unrecoverable,,employer_artifact
+brighthire|unspecified|c1,BrightHire,unknown,unrecoverable,,employer_artifact
+built-recruiting|gtm-engineer|c1,Built Recruiting,unknown,unrecoverable,,employer_artifact
+canals|sales-manager|c1,Canals,unknown,recoverable_from_platform_export,jobright,employer_artifact
+circle|gtm-engineer-outbound|c1,Circle,unknown,unrecoverable,,employer_artifact
+city-schools-of-decatur|unspecified|c1,City Schools Of Decatur,unknown,unrecoverable,,employer_artifact
+classdojo|unspecified|c1,ClassDojo,unknown,unrecoverable,,employer_artifact
+clay|growth-strategist-enterprise|c1,Clay,unknown,recoverable_from_platform_export,jobright,employer_artifact
+cloudflare|gtm-engineer|c1,Cloudflare,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+clutch|gtm-engineer|c1,Clutch,unknown,unrecoverable,,employer_artifact
+colab-software|sales-engineer|c1,CoLab Software,unknown,recoverable_from_platform_export,jobright,employer_artifact
+companycam|gtm-systems-engineer|c1,CompanyCam,unknown,unrecoverable,,employer_artifact
+confido|founding-gtm-engineer|c1,Confido,unknown,unrecoverable,,employer_artifact
+conversion|gtm-engineer|c1,Conversion,unknown,unrecoverable,,employer_artifact
+cresta|gtm-engineer|c1,Cresta,unknown,unrecoverable,,employer_artifact
+crypto-com|product-growth-hacker-exchange-main-app|c1,Crypto.com,unknown,unrecoverable,,employer_artifact
+dagster-labs|gtm-engineer|c1,Dagster Labs,unknown,unrecoverable,,employer_artifact
+dbeaver|gtm-engineer|c1,DBeaver,unknown,recoverable_from_platform_export,jobright,employer_artifact
+deepgram|gtm-engineer|c1,Deepgram,unknown,recoverable_from_platform_export,jobright,employer_artifact
+dekalb-county-school-district|area-1-elementary-star-substitute-ashford-park-es|c1,DeKalb County School District,unknown,unrecoverable,,employer_artifact
+dekalb-county-school-district|area-3-elementary-star-substitute-canby-lane-es|c1,DeKalb County School District,unknown,unrecoverable,,employer_artifact
+dekalb-county-school-district|area-3-elementary-star-substitute-cedar-grove-es|c1,DeKalb County School District,unknown,unrecoverable,,employer_artifact
+dekalb-county-school-district|area-3-elementary-star-substitute-chapel-hill-es|c1,DeKalb County School District,unknown,unrecoverable,,employer_artifact
+dekalb-county-school-district|area-3-elementary-star-substitute-murphey-candler-es|c1,DeKalb County School District,unknown,unrecoverable,,employer_artifact
+dekalb-county-school-district|area-3-elementary-star-substitute-rowland-es|c1,DeKalb County School District,unknown,unrecoverable,,employer_artifact
+dekalb-county-school-district|area-4-elementary-substitute-star-browns-mill-es|c1,DeKalb County School District,unknown,unrecoverable,,employer_artifact
+dekalb-county-school-district|area-high-school-star-substitute-columbia-hs|c1,DeKalb County School District,unknown,unrecoverable,,employer_artifact
+dekalb-county-school-district|horizon-area-substitute-star-flat-rock-es|c1,DeKalb County School District,unknown,unrecoverable,,employer_artifact
+dekalb-county-school-district|specialty-area-star-substitute-margaret-harris-comprehensive|c1,DeKalb County School District,unknown,unrecoverable,,employer_artifact
+designit|unspecified|c1,Designit,unknown,unrecoverable,,employer_artifact
+disqo|gtm-engineer|c1,DISQO,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+douglas-county-school-system|unspecified|c1,Douglas County School System,unknown,unrecoverable,,employer_artifact
+drata|sdr-remote|c1,Drata,unknown,unrecoverable,,employer_artifact
+enlace-health|sales-engineer|c1,Enlace Health,unknown,recoverable_from_platform_export,jobright,employer_artifact
+evenup|ai-adoption-manager-southeast|c1,EvenUp,unknown,unrecoverable,,employer_artifact
+every-to|gtm-engineer|c1,Every.to,unknown,unrecoverable,,employer_artifact
+fibr-ai|founding-sdr-ae|c1,Fibr AI,wellfound,captured_at_write_time,wellfound,employer_artifact
+firstup|manager-gtm-systems|c1,Firstup,ladders,captured_at_write_time,ladders,employer_artifact
+fixify|gtm-engineer-contract|c1,Fixify,unknown,unrecoverable,,employer_artifact
+fossa|unspecified|c1,FOSSA,unknown,recoverable_from_platform_export,jobright,employer_artifact
+fossa|unspecified|c2,FOSSA,unknown,recoverable_from_platform_export,jobright,employer_artifact
+foursquare|ae-new-business|c1,Foursquare,unknown,recoverable_from_platform_export,jobright,employer_artifact
+fullsteam|senior-sales-development-representative|c1,Fullsteam,unknown,unrecoverable,,employer_artifact
+g2|gtm-engineer|c1,G2,unknown,unrecoverable,,employer_artifact
+galileo|growth-engineer|c1,Galileo,unknown,unrecoverable,,employer_artifact
+galileo|gtm-engineer|c1,Galileo,unknown,unrecoverable,,employer_artifact
+gather-ai|gtm-engineer|c1,Gather AI,unknown,unrecoverable,,employer_artifact
+gatherup|unspecified|c1,GatherUp,unknown,unrecoverable,,employer_artifact
+gigs|unspecified|c1,Gigs,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+gitlab|gtm-planning-operations-analyst|c1,GitLab,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+gradient-labs|gtm-engineer|c1,Gradient Labs,unknown,unrecoverable,,employer_artifact
+great-question|senior-demand-generation-manager|c1,Great Question,unknown,unrecoverable,,employer_artifact
+gtp-software|revenue-enablement-manager|c1,GTP Software,unknown,unrecoverable,,employer_artifact
+handshake|gtm-engineer|c1,Handshake,unknown,unrecoverable,,employer_artifact
+headway|growth-marketing-specialist|c1,Headway,unknown,unrecoverable,,employer_artifact
+hex|sdr|c1,Hex,unknown,unrecoverable,,employer_artifact
+higgsfield|gtm-engineer|c1,Higgsfield,unknown,unrecoverable,,employer_artifact
+hightouch|go-to-market-engineer|c1,Hightouch,unknown,unrecoverable,,employer_artifact
+hologram|gtm-engineer-pre-sales|c1,Hologram,unknown,unrecoverable,,employer_artifact
+hud|gtm-engineer|c1,HUD,unknown,unrecoverable,,employer_artifact
+huzzle|gtm-engineer|c1,Huzzle,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+hyperbound|founding-revops-lead|c1,Hyperbound,unknown,unrecoverable,,employer_artifact
+hypergen|gtm-engineer|c1,Hypergen,unknown,unrecoverable,,employer_artifact
+inertia-growth|outbound-campaign-manager|c1,Inertia Growth,unknown,unrecoverable,,employer_artifact
+infisical|founding-growth-marketer|c1,Infisical,wellfound,captured_at_write_time,wellfound,employer_artifact
+inrule-technology|unspecified|c1,InRule Technology,unknown,unrecoverable,,employer_artifact
+insignia-collab|unspecified|c1,Insignia Collab,unknown,unrecoverable,,employer_artifact
+inven-ai|unspecified|c1,Inven.ai,unknown,unrecoverable,,employer_artifact
+itc-infotech|manager-business-development|c1,ITC Infotech,unknown,unrecoverable,,employer_artifact
+jobgether|gtm-engineer|c1,Jobgether,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+langchain|gtm-engineer|c1,LangChain,unknown,unrecoverable,,employer_artifact
+lattice|gtm-engineer|c1,Lattice,ladders,captured_at_write_time,ladders,employer_artifact
+liatrio|gtm-revops-engineer|c1,Liatrio,unknown,unrecoverable,,employer_artifact
+linear|ae-growth|c1,Linear,unknown,unrecoverable,,employer_artifact
+listen-labs|lead-gtm-engineer|c1,Listen Labs,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+livekit|gtm-systems-engineer|c1,LiveKit,unknown,unrecoverable,,employer_artifact
+lorikeet|gtm-engineer|c1,Lorikeet,unknown,unrecoverable,,employer_artifact
+lumenalta|unspecified|c1,Lumenalta,unknown,unrecoverable,,employer_artifact
+medialab-ai|unspecified|c1,MediaLab.AI,unknown,unrecoverable,,employer_artifact
+mento|gtm-engineer|c1,Mento,unknown,unrecoverable,,employer_artifact
+mercor|b2b-sales-expert|c1,Mercor,unknown,unrecoverable,,employer_artifact
+mercor|biology-biophysics-research-collaborator|c1,Mercor,referral,captured_at_write_time,referral,employer_artifact
+mercor|education-school-evaluator|c1,Mercor,unknown,unrecoverable,,employer_artifact
+mercor|general-sales-gtm-evaluator|c1,Mercor,unknown,unrecoverable,,employer_artifact
+mercor|sales-and-marketing-expert|c1,Mercor,unknown,unrecoverable,,employer_artifact
+mercor|sales-engineering-expert|c1,Mercor,unknown,unrecoverable,,employer_artifact
+minio|bdr-enterprise|c1,MinIO,unknown,recoverable_from_platform_export,jobright,employer_artifact
+nebius|director-gtm-physical-ai|c1,Nebius,unknown,recoverable_from_platform_export,jobright,employer_artifact
+nero|founding-engineer|c1,Nero,unknown,unrecoverable,,employer_artifact
+nice|ai-solution-strategist|c1,NICE,unknown,recoverable_from_platform_export,jobright,employer_artifact
+nooks|gtm-engineer-marketing|c1,Nooks,unknown,unrecoverable,,employer_artifact
+onboard|unspecified|c1,OnBoard,unknown,unrecoverable,,employer_artifact
+onit|sales-engineer|c1,Onit,unknown,recoverable_from_platform_export,jobright,employer_artifact
+ontra|unspecified|c1,Ontra,unknown,unrecoverable,,employer_artifact
+openobserve|growth-marketer|c1,OpenObserve,unknown,recoverable_from_platform_export,jobright,employer_artifact
+orchestry|gtm-engineer-sales|c1,Orchestry,unknown,unrecoverable,,employer_artifact
+owner-com|gtm-engineer|c1,Owner.com,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+oxos-medical|gtm-engineer|c1,OXOS Medical,unknown,unrecoverable,,employer_artifact
+pandadoc|gtm-engineer|c1,PandaDoc,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+patch|growth-engineering-lead|c1,Patch,unknown,unrecoverable,,employer_artifact
+payabli|gtm-engineer|c1,Payabli,unknown,unrecoverable,,employer_artifact
+pearl|lead-gtm-engineer|c1,Pearl,unknown,unrecoverable,,employer_artifact
+phiture|us-growth-lead-mobile-marketing-strategist|c1,Phiture,unknown,unrecoverable,,employer_artifact
+phrasiq|unspecified|c1,PhrasIQ,wellfound,captured_at_write_time,wellfound,employer_artifact
+pindrop|gtm-systems-platform-specialist|c1,Pindrop,unknown,recoverable_from_platform_export,jobright,employer_artifact
+pinterest|apprentice-engineer|c1,Pinterest,referral,captured_at_write_time,referral,employer_artifact
+pogo-technologies|gtm-engineer|c1,Pogo Technologies,unknown,unrecoverable,,employer_artifact
+practical-prospecting|unspecified|c1,Practical Prospecting,unknown,unrecoverable,,employer_artifact
+primer|unspecified|c1,Primer,unknown,recoverable_from_platform_export,jobright,employer_artifact
+productboard|associate-gtm-engineer|c1,Productboard,unknown,unrecoverable,,employer_artifact
+proofpoint|unspecified|c1,Proofpoint,unknown,unrecoverable,,employer_artifact
+proteantecs|sdr|c1,proteanTecs,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+redis|gtm-engineer|c1,Redis,unknown,unrecoverable,,employer_artifact
+replit|sales-engineer|c1,Replit,unknown,recoverable_from_platform_export,jobright,employer_artifact
+revic|founding-gtm-ai-engineer|c1,Revic,unknown,unrecoverable,,employer_artifact
+revpartners|gtm-engineer|c1,RevPartners,unknown,unrecoverable,,employer_artifact
+revspring|lead-agentic-operations-gtm-engineering|c1,RevSpring,recruiter_inbound,captured_at_write_time,recruiter_inbound,employer_artifact
+roboflow|revops-gtm-engineer|c1,Roboflow,unknown,unrecoverable,,employer_artifact
+rollstack|ai-growth-hacker|c1,Rollstack,unknown,unrecoverable,,employer_artifact
+rula|gtm-engineer-remote|c1,Rula,unknown,unrecoverable,,employer_artifact
+runway|go-to-market-ai-engineer|c1,Runway,unknown,unrecoverable,,employer_artifact
+sage|director-of-growth-small|c1,Sage,unknown,unrecoverable,,employer_artifact
+sailpoint|account-exec-enterprise-accounts|c1,SailPoint,unknown,unrecoverable,,employer_artifact
+sardine|gtm-engineer|c1,Sardine,unknown,unrecoverable,,employer_artifact
+scaleops|sales-engineer-usa|c1,ScaleOps,unknown,unrecoverable,,employer_artifact
+scribe|unspecified|c1,Scribe,unknown,unrecoverable,,employer_artifact
+seamless-ai|sdr-remote-us|c1,Seamless.AI,unknown,unrecoverable,,employer_artifact
+sentilink|go-to-market-strategy-analyst|c1,SentiLink,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+servicetrade|unspecified|c1,ServiceTrade,unknown,recoverable_from_platform_export,jobright,employer_artifact
+shaped|founding-sdr|c1,Shaped,unknown,unrecoverable,,employer_artifact
+slingshot-ai|conversation-designer|c1,Slingshot AI,unknown,unrecoverable,,employer_artifact
+smeetz|gtm-engineer|c1,Smeetz,unknown,unrecoverable,,employer_artifact
+solv-health|unspecified|c1,Solv Health,unknown,unrecoverable,,employer_artifact
+speechify|go-to-market-engineer-atlanta|c1,Speechify,unknown,unrecoverable,,employer_artifact
+spider-cloud|growth-lead|c1,Spider.cloud,unknown,unrecoverable,,employer_artifact
+stackai|sales-engineer|c1,StackAI,unknown,recoverable_from_platform_export,jobright,employer_artifact
+stedi|unspecified|c1,Stedi,unknown,recoverable_from_platform_export,jobright,employer_artifact
+sur|ai-revenue-engineer|c1,Sur,unknown,unrecoverable,,employer_artifact
+switchyards|launch-manager|c1,Switchyards,unknown,unrecoverable,,employer_artifact
+syncro|gtm-operations-manager|c1,Syncro,unknown,unrecoverable,,employer_artifact
+talentpluto|go-to-market-engineer|c1,Talentpluto,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+tapcheck|unspecified|c1,Tapcheck,unknown,unrecoverable,,employer_artifact
+teleport|gtm-engineer|c1,Teleport,unknown,unrecoverable,,employer_artifact
+telnyx|unspecified|c1,Telnyx,unknown,recoverable_from_platform_export,jobright,employer_artifact
+testgorilla|go-to-market-engineer|c1,TestGorilla,unknown,unrecoverable,,employer_artifact
+thomson-reuters|ae-tax-or-risk|c1,Thomson Reuters,unknown,recoverable_from_platform_export,jobright,employer_artifact
+tiger-data|gtm-ai-engineer|c1,Tiger Data,unknown,unrecoverable,,employer_artifact
+toast|gtm-engineer-sales-workflow-automation|c1,Toast,unknown,unrecoverable,,employer_artifact
+together-ai|unspecified|c1,Together AI,unknown,unrecoverable,,employer_artifact
+trace3|sdr|c1,Trace3,unknown,unrecoverable,,employer_artifact
+tractian|sales-engineer-automation|c1,TRACTIAN,unknown,recoverable_from_platform_export,jobright,employer_artifact
+tractian|senior-gtm-engineer-hubspot|c1,TRACTIAN,unknown,unrecoverable,,employer_artifact
+trase|gtm-engineer-healthcare|c1,Trase,unknown,recoverable_from_platform_export,jobright,employer_artifact
+tripleseat|gtm-engineer|c1,Tripleseat,unknown,unrecoverable,,employer_artifact
+uncapped|gtm-engineer|c1,Uncapped,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+unframe|gtm-engineer|c1,Unframe,unknown,recoverable_from_platform_export,jobright,employer_artifact
+unstructured|gtm-engineer-operations|c1,Unstructured,unknown,unrecoverable,,employer_artifact
+upguard|sdr-manager|c1,UpGuard,unknown,recoverable_from_platform_export,jobright,employer_artifact
+vercel|gtm-engineer|c1,Vercel,unknown,unrecoverable,,employer_artifact
+verkada|enterprise-solutions-engineer-atlanta|c1,Verkada,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+virtru|director-of-go-to-market-ai|c1,Virtru,unknown,unrecoverable,,employer_artifact
+vitalsource|ai-enablement-lead|c1,VitalSource,unknown,recoverable_from_platform_export,jobright,employer_artifact
+volley|unspecified|c1,Volley,unknown,recoverable_from_platform_export,jobright,employer_artifact
+vonage|sdr-api-cpaas|c1,Vonage,unknown,unrecoverable,,employer_artifact
+wallstreetquants|unspecified|c1,WallStreetQuants,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+wealth-com|gtm-engineer|c1,Wealth.com,unknown,unrecoverable,,employer_artifact
+weave|business-development-manager|c1,Weave,unknown,unrecoverable,,employer_artifact
+wilsonhcg|outbound-sales-consultant-iii|c1,WilsonHCG,unknown,unrecoverable,,employer_artifact
+wirescreen|partnerships-manager|c1,WireScreen,unknown,recoverable_from_platform_export,jobright,employer_artifact
+wrapbook|gtm-systems-engineer|c1,Wrapbook,unknown,unrecoverable,,employer_artifact
+yuno|go-to-market-engineer|c1,Yuno,unknown,unrecoverable,,employer_artifact
+anduril-industries|technical-operations-engineer-launched-effects|c1,Anduril Industries,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+attentive|gtm-engineer|c1,Attentive,unknown,recoverable_from_platform_export,linkedin,employer_artifact
+hartleyco|founding-gtm|c1,HartleyCo,recruiter_inbound,captured_at_write_time,recruiter_inbound,employer_artifact
+exa|growth-lead|c1,Exa,unknown,unrecoverable,,employer_artifact
+ibm|manager-applied-ai-gtm-systems|c1,IBM,unknown,unrecoverable,,employer_artifact
+manifold-ai|growth-marketing-manager|c1,Manifold AI,unknown,unrecoverable,,employer_artifact
+tekion|senior-manager-inside-sales|c1,Tekion,unknown,recoverable_from_platform_export,jobright,employer_artifact
+valsoft|gtm-engineer-dockmaster|c1,Valsoft,unknown,unrecoverable,,employer_artifact
+agroknow|north-america-sales|c1,Agroknow,unknown,unrecoverable,,employer_artifact
+classet|head-of-gtm|c1,Classet,wellfound,captured_at_write_time,wellfound,employer_artifact
+jobmail-io|growth-lead|c1,jobmail.io,unknown,unrecoverable,,employer_artifact
+stellar-substitute|unspecified|c1,Stellar Substitute,unknown,unrecoverable,,employer_artifact
+switchyards|digital-product-builder|c1,Switchyards,unknown,unrecoverable,,employer_artifact
+glean|gtm-engineer-marketing|c1,Glean,unknown,unrecoverable,,employer_artifact
+jobright-ai|product-manager-early-career|c1,Jobright.ai,jobright,captured_at_write_time,jobright,platform_log
+the-hog|gtm-engineer|c1,The Hog,unknown,unrecoverable,,employer_artifact
+bx-studio|unspecified|c1,BX Studio,unknown,recoverable_from_platform_export,linkedin,employer_artifact

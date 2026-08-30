@@ -68,7 +68,7 @@ STAGES: list[Stage] = [
     Stage(
         name="adjudicate",
         script="adjudication/adjudicate.py",
-        owns="The 221-row application census, and the written rule behind every resolved disagreement.",
+        owns="The 223-row application census, and the written rule behind every resolved disagreement.",
         outputs=[
             "adjudication/applications__adjudicated.csv",
             "adjudication/ADJUDICATION.md",
@@ -77,7 +77,7 @@ STAGES: list[Stage] = [
     Stage(
         name="ingest_platform",
         script="adjudication/ingest_platform.py",
-        owns="Freeze 2 platform rows, the match cascade, and the 298-row full census.",
+        owns="Platform rows through Freeze 3, the match cascade, and the 317-row full census.",
         outputs=[
             "coding/platform/applications__freeze2.csv",
             "coding/platform/exclusions__freeze2.csv",
@@ -107,6 +107,7 @@ STAGES: list[Stage] = [
         owns="The analysis views every number in the paper is quoted from.",
         outputs=[
             "views/origin_coverage.csv",
+            "views/origin_recoverability.csv",
             "views/funnel_by_role_lane.csv",
             "views/funnel_by_submission_channel.csv",
             "views/funnel_by_evidence_class.csv",

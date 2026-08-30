@@ -4,17 +4,17 @@ Secondary outcomes named in `knowledge/protocol.md`, computed under the rule sta
 
 ## Base population
 
-- Adjudicated application census: 221
-- With an exact-dated `submission_receipt`, the base for every figure below: 196
-- Excluded for lacking one: 25
+- Adjudicated application census: 223
+- With an exact-dated `submission_receipt`, the base for every figure below: 197
+- Excluded for lacking one: 26
 
-The base is not the census. Any rate below is stated against 196, and the published application-to-interview rate remains 13/221.
+The base is not the census. Any rate below is stated against 197, and the published application-to-interview rate remains 14/223.
 
 ## Response rate and latency are separate
 
-- Substantive response, `employer_ack` excluded: 79/196
-- Any response, `employer_ack` included: 100/196
-- No response at all beyond the receipt: 96/196
+- Substantive response, `employer_ack` excluded: 79/197
+- Any response, `employer_ack` included: 100/197
+- No response at all beyond the receipt: 97/197
 
 The medians below are conditional on having responded. They describe responders only and must not be quoted as a typical response time for an application.
 
@@ -35,7 +35,7 @@ What follows is about the interview set rather than the latency arithmetic, beca
 
 - `weave|business-development-manager|c1`, `hiring_manager_interview` dated 2026-08-18. Belongs to a separate inbound Weave process, not this application. gth_0339a17e3860d167 is a post-interview decline, so an interview did happen, but the BDM application was already rejected 2025-07-31. Bravo excluded this artifact during blind coding as having no parent.
 
-**Provenance.** The census records 13 interviewed applications. Both coders independently found 10. The remaining 3 rest on cursor alone, and bravo contributes none that cursor missed: `hartleyco|founding-gtm|c1`, `hypergen|gtm-engineer|c1`, `jobmail-io|growth-lead|c1`. Agreement on which applications were interviewed is therefore 10/13, which is much weaker than the published role-lane kappa of 0.9510 implies. Event-level agreement is not among the reliability statistics `knowledge/protocol.md` requires, so this is unmeasured rather than measured and small.
+**Provenance.** The census records 14 interviewed applications. Both coders independently found 11. The remaining 3 rest on cursor alone, and bravo contributes none that cursor missed: `hartleyco|founding-gtm|c1`, `hypergen|gtm-engineer|c1`, `jobmail-io|growth-lead|c1`. Agreement on which applications were interviewed is therefore 11/14, which is much weaker than the published role-lane kappa of 0.9510 implies. Event-level agreement is not among the reliability statistics `knowledge/protocol.md` requires, so this is unmeasured rather than measured and small.
 
 No interview event postdates a rejection on the same application.
 
@@ -45,11 +45,11 @@ Applications submitted near the 2026-08-29 window end have had less time to draw
 
 | minimum exposure | base n | responded | rate |
 |---|---|---|---|
-| 0 days | 196 | 100 | 0.510 |
-| 14 days | 192 | 97 | 0.505 |
-| 30 days | 191 | 97 | 0.508 |
-| 60 days | 158 | 84 | 0.532 |
-| 90 days | 130 | 65 | 0.500 |
+| 0 days | 197 | 100 | 0.508 |
+| 14 days | 193 | 97 | 0.503 |
+| 30 days | 192 | 97 | 0.505 |
+| 60 days | 159 | 84 | 0.528 |
+| 90 days | 131 | 65 | 0.496 |
 
 Applications with under 30 days of exposure: 5.
 

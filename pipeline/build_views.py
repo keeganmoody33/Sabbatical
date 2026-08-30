@@ -18,7 +18,7 @@ Three rules hold across every view here.
    `suppressed = yes`. A silently dropped group is indistinguishable from a
    group that does not exist.
 
-3. RATES CARRY AN INTERVAL. With 13 interviews across 221 applications, every
+3. RATES CARRY AN INTERVAL. With 14 interviews across 223 applications, every
    per-group rate is a small-sample estimate. Each rate ships with a Wilson 95
    percent interval so the width is visible next to the point. No p-values.
 """
@@ -188,7 +188,7 @@ def build_origin_coverage(census: list[dict], full: list[dict], interviewed: set
     }
     census_ids = {r["application_id"] for r in census}
     rows = []
-    for stratum, data in (("application_census_221", census), ("full_census_298", full)):
+    for stratum, data in ((f"application_census_{len(census)}", census), (f"full_census_{len(full)}", full)):
         for field in ("discovery_source", "submission_channel", "evidence_class"):
             for value, n in sorted(
                 Counter(r[field] for r in data).items(), key=lambda kv: (-kv[1], kv[0])
@@ -440,6 +440,78 @@ def build_latency_by_slice(census: list[dict], latency: dict[str, dict]) -> None
     )
 
 
+def build_origin_recoverability(census: list[dict]) -> None:
+    """How much origin is recoverable after the fact, and how much never is.
+
+    This view exists because of the Freeze 3 challenge. Before it, the origin
+    finding was stated as a flat 93 percent unknown, which is true of the coded
+    field and implies the information is simply gone. It is not quite gone. A
+    platform export that recorded an application lets its origin be recovered
+    later by matching, and Freeze 3 added a LinkedIn export that does exactly
+    that for a further 29 rows.
+
+    So the honest shape is three tiers, not two. Origin captured at write time
+    is small. Origin recoverable later by matching a platform export is a third
+    of the census. Origin that no route recovers is the remaining two thirds,
+    and those are the rows whose only record is employer-side mail, which never
+    says where the applicant found the posting.
+
+    The recovered value is NOT written into `discovery_source`. The coded field
+    stays as the blind coders left it, and this view sits beside it. A derived
+    value overwriting a coded one would make the census unauditable against the
+    coder tables.
+    """
+    matches = load_csv(ADJ / "platform_match.csv")
+    census_ids = {r["application_id"] for r in census}
+    corroborated: dict[str, set[str]] = {}
+    for row in matches:
+        if not row["match_status"].startswith("overlap"):
+            continue
+        parents = row["parent_id"] or row["candidate_parent_ids"] or ""
+        for parent in (p.strip() for p in parents.split(";") if p.strip()):
+            if parent in census_ids:
+                corroborated.setdefault(parent, set()).add(row["discovery_source"])
+
+    rows = []
+    for row in census:
+        aid = row["application_id"]
+        coded = row["discovery_source"]
+        sources = corroborated.get(aid, set())
+        if coded != "unknown":
+            tier, recovered = "captured_at_write_time", coded
+        elif sources:
+            tier, recovered = "recoverable_from_platform_export", ";".join(sorted(sources))
+        else:
+            tier, recovered = "unrecoverable", ""
+        rows.append(
+            {
+                "application_id": aid,
+                "company_canonical": row["company_canonical"],
+                "coded_discovery_source": coded,
+                "recovery_tier": tier,
+                "recovered_source": recovered,
+                "evidence_class": row["evidence_class"],
+            }
+        )
+    write_view(
+        "origin_recoverability.csv",
+        [
+            "application_id",
+            "company_canonical",
+            "coded_discovery_source",
+            "recovery_tier",
+            "recovered_source",
+            "evidence_class",
+        ],
+        rows,
+    )
+    counts = Counter(r["recovery_tier"] for r in rows)
+    total = len(rows)
+    for tier in ("captured_at_write_time", "recoverable_from_platform_export", "unrecoverable"):
+        n = counts.get(tier, 0)
+        print(f"    {tier}: {n} of {total} ({n / total:.1%})")
+
+
 def main() -> None:
     census = load_csv(ADJ / "applications__adjudicated.csv")
     full = load_csv(ADJ / "applications__full_census.csv")
@@ -451,10 +523,12 @@ def main() -> None:
     # Guards. These are the published figures. If a view is built on a census
     # that no longer matches them, the failure should be loud and immediate
     # rather than discovered later in a table.
-    assert len(census) == 221, f"application census is {len(census)}, expected 221"
-    assert len(full) == 298, f"full census is {len(full)}, expected 298"
-    assert len(interviewed) == 13, f"interviewed is {len(interviewed)}, expected 13"
-    assert len(latency) == 196, f"latency base is {len(latency)}, expected 196"
+    # Freeze 3 figures. Freeze 2 was 221 / 298 / 13 / 196; the LinkedIn formal
+    # export and the two register reversals moved all four.
+    assert len(census) == 223, f"application census is {len(census)}, expected 223"
+    assert len(full) == 317, f"full census is {len(full)}, expected 317"
+    assert len(interviewed) == 14, f"interviewed is {len(interviewed)}, expected 14"
+    assert len(latency) == 197, f"latency base is {len(latency)}, expected 197"
 
     # Sanity on the dates the monthly view depends on.
     for row in census:
@@ -479,6 +553,7 @@ def main() -> None:
         funnel_rows(census, interviewed, latency, "evidence_class", "evidence_class"),
     )
 
+    build_origin_recoverability(census)
     build_monthly_trend(census, interviewed)
     build_title_language(census, interviewed, latency)
     build_latency_by_slice(census, latency)
