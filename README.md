@@ -17,7 +17,7 @@ of the frozen corpus moved a byte of any committed output. See `pipeline/README.
 
 247 applications, 11 interviews, and 4.45 percent are prior-audit figures. They are not the output of this freeze. See `knowledge/protocol.md` and `artifacts/STOP-CONDITIONS.md`.
 
-The paper is drafted and unpublished. `paper/NAMED-COMPANIES.md` lists seven still-open processes that need a naming decision before anything goes out.
+The paper and its companion are drafted and unpublished. `paper/NAMED-COMPANIES.md` lists eight still-open processes that need a naming decision before anything goes out, and the companion names ten companies the paper does not.
 
 ## What this freeze found
 
@@ -44,7 +44,7 @@ reconstruction of the same fifteen months. It moved two figures and failed to mo
 - `pipeline/` the single entrypoint and the view and validation layer
 - `views/` analysis tables the paper quotes from
 - `data_quality_report.md` generated on every run
-- `paper/` the draft, its number trace, figure specs, and naming checklist
+- `paper/` the paper and its companion piece, plus the number trace, figure specs, and naming checklist
 - `challenge/` the adversarial reconciliation against a second reconstruction
 - `translation/` the companion piece written for non-technical readers
 

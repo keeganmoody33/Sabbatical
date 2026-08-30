@@ -14,7 +14,7 @@ I spent fifteen months applying for go-to-market engineering roles, then treated
 
 Three findings. Roughly half of all applications produced a receipt and then silence: 97/197 of the rows with an exact-dated receipt drew no response, and the median substantive response, among those that did respond, arrived in 7 days. All 14 interviews sat in three of eight role lanes, and the five lanes covering the other 78 applications produced none. Third, and most useful to anyone building a tracker: **the study could not answer the question it most wanted to answer.** Origin was captured at the time on 15 of 223 rows, recoverable afterwards on 60 more only because a platform logged them, and unrecoverable on the remaining 148. That is a failure of the instrument, and it is reproducible in almost any job-search log kept the ordinary way.
 
-This is a single subject studied by himself: a case study, not a market study. A second, independently produced reconstruction of the same fifteen months was used to attack these numbers after they were written, and section 3.7 reports what it moved.
+This is a single subject studied by himself: a case study, not a market study. A second, independently produced reconstruction of the same fifteen months was used to attack these numbers after they were written; the companion piece, [The Field You Cannot Recover](COMPANION.md), reports what it moved and what it failed to move.
 
 ## 1. Introduction
 
@@ -63,20 +63,9 @@ The plainest line in the funnel is the one worth keeping: **roughly half of all 
 
 The question this study most wanted to answer is which origination channels convert. It cannot.
 
-`discovery_source` is `unknown` on 208 of 223 census rows, 93.3 percent. That alone would be a coverage problem. The structure underneath it is worse.
+`discovery_source` reads `unknown` on 208 of 223 census rows, 93.3 percent. The structure underneath that number is what matters: on the full census, 88 rows know they came from LinkedIn and **zero** of them have an observable outcome, because a platform applied-list row carries no employer-side artifact and therefore no events. The rows that do have outcomes are the 208 whose origin is unknown. **Origin is known almost exactly where outcome is not**, and the overlap that could answer the question is 15 rows of 223.
 
-| Stratum | Rows knowing their origin | Of those, rows with an observable outcome |
-|---|---|---|
-| Application census, 223 | 15 | 15 |
-| Full census, 317 | 109 | 15 |
-
-On the full census, 88 rows know they came from LinkedIn and **zero** of them have an observable outcome, because a platform applied-list row carries no employer-side artifact and therefore no events. The rows that do have outcomes are the 208 whose origin is unknown. Origin is known almost exactly where outcome is not.
-
-The overlap that could answer the question is 15 rows out of 223, spread across five channels, the largest of which has 7. Nothing publishable lives there. The clearest expression of it is in the latency slices: the only origin group large enough to publish a median response time is the group labeled `unknown`.
-
-### Origin is not simply gone
-
-An earlier draft stated the gap as a flat 93 percent unknown, which implies the information no longer exists. That is too strong. Splitting the census by how origin could be recovered gives three tiers, not two.
+It is not simply gone, which is a correction to an earlier draft of this paper. Splitting the census by how origin could be recovered gives three tiers:
 
 | Recovery tier | n | Share |
 |---|---|---|
@@ -84,13 +73,13 @@ An earlier draft stated the gap as a flat 93 percent unknown, which implies the 
 | Recoverable later, only because a platform export recorded the row | 60 | 26.9 percent |
 | Unrecoverable by any route | 148 | 66.4 percent |
 
-The middle tier is recoverable only because a platform kept its own log, and what it recovers is the platform that *recorded* the application rather than where the role was found. The bottom tier, two thirds of the census, is evidenced entirely by employer-side mail, and an ATS receipt never says where the applicant found the posting. For those, the information is gone.
-
-Recovered values are deliberately **not** written into `discovery_source`. The coded field stays as the blind coders left it, with the recovery beside it in `views/origin_recoverability.csv`. A derived value overwriting a coded one would make the census unauditable against the coder tables.
+The middle tier is a proxy and a biased one: it recovers the platform that *recorded* the application, not where the role was found, and only where a platform kept a log. The bottom tier, two thirds of the census, is evidenced entirely by employer-side mail, and an ATS receipt never says where the applicant found the posting.
 
 This is not a withheld analysis. There is no analysis to withhold. The field existed in the schema from the beginning; the data never got into it, because at the moment of applying, where I found the role felt like the least important thing to write down.
 
 `company_stage` is worse still. It does not exist in the schema at all, so no cut by company size or stage is available anywhere in this dataset.
+
+**The full treatment is in the companion piece, [The Field You Cannot Recover](COMPANION.md)**, along with why no completeness percentage is published and what a second, independently produced reconstruction of this search did to these numbers.
 
 ### 3.3 Role lane and title language
 
@@ -130,7 +119,7 @@ The whole interview set is small enough to print, which is itself the honest way
 | TestGorilla | Go-to-Market Engineer | explicit GTM | still open |
 | The Hog | GTM Engineer | explicit GTM | still open |
 
-Two rows carry a caveat. The jobmail.io row is the contradiction described in section 5: it carries an interview event and a stored outcome of `rejected_no_interview`, from one coder, with no blind second reading. The Hog entered the census only at Freeze 3, when a submission artifact for it was found; section 3.7 gives that story.
+Two rows carry a caveat. The jobmail.io row is the contradiction described in section 5: it carries an interview event and a stored outcome of `rejected_no_interview`, from one coder, with no blind second reading. The Hog entered the census only at Freeze 3, when a submission artifact for it was found; the companion piece gives that story.
 
 Correlation and causation are not close here. I chose which roles to apply to, so title language is confounded with where I was a plausible fit, with what I was willing to spend effort on, and with market timing. Nothing is randomized, and no causal claim is available.
 
@@ -166,25 +155,13 @@ Zero in September and October 2025 is a count of exact-dated rows, not a claim t
 | Role lane Cohen's kappa | 0.9510 |
 | Include or exclude percent agreement | 0.9905 |
 | Include or exclude kappa | 0.7452 |
-| Interview set found by both coders | 10 of 14 |
+| Interview set found by both coders | 11 of 14 |
 
 The 24-point gap between the two include statistics is the whole reason kappa exists. Almost every record was an include, so two raters guessing "include" every time would agree nearly as often. The honest number is the lower one, and it rests on two disagreements.
 
-Those same two disagreements are the ones Freeze 3 later reversed. They were the only rows where the coders split on whether a record counted at all, and new evidence eventually showed that on both, one coder was right and the adjudication was wrong. A kappa of 0.7452 on two contested rows was, in hindsight, pointing exactly where the weakness was.
+Those same two disagreements are the ones Freeze 3 later reversed. They were the only rows where the coders split on whether a record counted at all, and new evidence eventually showed that on both, one coder was right and the adjudication was wrong. A kappa of 0.7452 on two contested rows was, in hindsight, pointing exactly where the weakness was. The companion piece has the reversal in full.
 
-The last row is the one that should temper everything above it. Agreement on *which applications were interviewed* is 10/13. Three rest on one coder alone. Event-level agreement is not among the reliability statistics the protocol requires, so it is unmeasured rather than measured and small, and the interview-based findings inherit that.
-
-### 3.7 What a second reconstruction did to these numbers
-
-After the results above were written, a second independently produced audit of the same fifteen months arrived, built from a different source set including a LinkedIn data download this study never had. It holds 353 records against this one's 317, and it was used to attack these findings. Full reconciliation in `challenge/CHALLENGE.md`. It is not a third blind coder: the protocol requires an identical corpus, so a different source set is a different study, and no agreement statistic is computed against it.
-
-**What it moved.** Its LinkedIn export carries 107 rows with job IDs and exact application dates, against the 99 relative stamps this study had. Two of those rows are submissions to The Hog and BX Studio, dated 11 and 2 days before the first process events already recorded here. Those two were the only include-or-exclude disagreements between the blind coders, and both had been adjudicated out of the census on the single ground that no submission artifact existed. The rule did not change. Its premise did. Census 221 became 223, interviews 13 became 14, and 13/221 became 14/223.
-
-**What it failed to move.** It drops 10 rows for unresolvable origin, and eight of those sit here with Tier A employer artifacts, including PhrasIQ, one of the fourteen interviews. It is missing 27 companies this census holds. It labels 252 of 353 records GHOSTED, which its own defect register calls an overloaded residual, and its interview count is UNKNOWN on 334 of 353 rows.
-
-**The finding underneath that.** A schema organized around *where a role came from* loses rows whose origin cannot be resolved. A schema organized around *whether a submission can be proved* keeps them. Origin is the more useful field and the more fragile one, and it must never gate inclusion. That is a correction to the advice this paper would otherwise have given.
-
-Neither reconstruction is complete, and the union of the two is larger than either. That is the most honest available statement about coverage, and it is another reason no completeness percentage appears anywhere here.
+The last row is the one that should temper everything above it. Agreement on *which applications were interviewed* is 11/14. Three rest on one coder alone. Event-level agreement is not among the reliability statistics the protocol requires, so it is unmeasured rather than measured and small, and the interview-based findings inherit that.
 
 ## 4. Discussion
 

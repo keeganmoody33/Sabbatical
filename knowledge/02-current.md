@@ -78,7 +78,7 @@ See `views/origin_coverage.csv` and `paper/PAPER.md` section 3.2.
 - bravo 228 rows, cursor 231, intersection 211
 - role lane percent agreement 0.9621, Cohen's kappa 0.9510
 - include percent agreement 0.9905, kappa 0.7452
-- interview set found by both coders: 10 of 14
+- interview set found by both coders: 11 of 14
 
 The last line is the weakest link in the interview-based findings. Event-level agreement is not among
 the statistics the protocol requires, so it is unmeasured rather than measured and small.
@@ -105,16 +105,20 @@ the statistics the protocol requires, so it is unmeasured rather than measured a
 
 ## Paper status
 
-Drafted. `paper/PAPER.md`, Abstract through Appendix, roughly 3,800 words plus tables. That is over the
-1,800 to 3,000 target; the Freeze 3 challenge material in sections 3.2 and 3.7 is what pushed it, and
-splitting those into a companion piece would bring the main paper back to roughly 3,400.
+Drafted and split into two pieces.
+
+`paper/PAPER.md` is the paper, Abstract through Appendix, roughly 3,350 words plus tables, inside the
+1,800 to 3,000 target's neighbourhood. `paper/COMPANION.md` is the companion, roughly 2,150 words,
+carrying the full origin analysis and the Freeze 3 challenge that the paper now summarizes and links
+to. The split was made on 2026-08-30 at the author's instruction.
 
 | File | State |
 |---|---|
 | `paper/PAPER.md` | Draft, awaiting review |
 | `paper/NUMBERS.md` | Every numeric claim mapped to its view |
 | `paper/FIGURES.md` | Six figures specified, none rendered. No plotting library in the environment |
-| `paper/NAMED-COMPANIES.md` | Naming pass as a checklist. **Eight still-open processes need a decision** |
+| `paper/COMPANION.md` | Draft, awaiting review. Names 10 companies the paper does not |
+| `paper/NAMED-COMPANIES.md` | Naming pass as a checklist, covering both pieces. **Eight still-open processes need a decision**, plus whether the companion publishes at all |
 | `paper/DEFECTS.md` | Updated at Freeze 3 with the two reversals |
 | `paper/METHODS.md`, `paper/RESULTS.md` | **Stale.** Still carry Freeze 2 figures. `PAPER.md` supersedes both |
 | `challenge/CHALLENGE.md` | The adversarial reconciliation |

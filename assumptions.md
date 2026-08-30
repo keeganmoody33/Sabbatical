@@ -98,9 +98,9 @@ instrument.
 *Frozen.* Implemented once, in `adjudication/_common.py`, and imported by every consumer rather than
 restated. Rules out: two published interview counts that disagree.
 
-**D4. The interview numerator is the union of both coders' events.** *Frozen.* Both coders found 10
+**D4. The interview numerator is the union of both coders' events.** *Frozen.* Both coders found 11
 of the 14 independently. Three rest on cursor alone and bravo contributes none that cursor missed, so
-interview-set agreement is 10/14, weaker than the role-lane kappa of 0.9510 suggests. Event-level
+interview-set agreement is 11/14, weaker than the role-lane kappa of 0.9510 suggests. Event-level
 agreement is not among the reliability statistics the protocol requires, so it is **unmeasured
 rather than measured and small**, and the paper says so.
 

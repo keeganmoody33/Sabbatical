@@ -2,7 +2,8 @@
 
 `knowledge/01-engagement.md` requires a naming pass before anything is published, because the ledger
 names companies including active relationships. This file is that pass as a checklist rather than a
-re-read: every company `paper/PAPER.md` names, where it appears, and the risk of naming it.
+re-read: every company named in `paper/PAPER.md` **or** its companion `paper/COMPANION.md`, where it
+appears, and the risk of naming it. Both pieces are publication candidates, so both are covered.
 
 **Which names survive is the author's decision alone.** Nothing here recommends removing a name. It
 flags what needs a decision.
@@ -24,7 +25,7 @@ hand back, so these are listed first.
 | PhrasIQ | Section 3.3 interview table | Applied, interviewed, process open. Title unknown from the receipt | Live process |
 | RevSpring | Section 3.3 interview table | Applied, interviewed, process open | Live process |
 | TestGorilla | Section 3.3 interview table | Applied, interviewed, process open | Live process |
-| The Hog | Section 3.3 interview table, and sections 3.7 and 5 | Applied, interviewed, process open. Also named as a row reversed from opportunity to application at Freeze 3 | Live process, and named as a methodology example |
+| The Hog | Paper section 3.3 interview table and section 5; companion part 2 | Applied, interviewed, process open. Also named as a row reversed from opportunity to application at Freeze 3, with its submission date | Live process, and named as a methodology example in both pieces |
 
 Options if any of these should not be named: replace the cell with a stable pseudonym (Company A,
 Company B) and keep the row, so the count of 14 still reconciles. Dropping a row silently would
@@ -40,8 +41,8 @@ break the arithmetic in section 3.1.
 | HartleyCo | Section 3.3 interview table | Applied, interviewed, rejected after interview | Closed. HartleyCo is an intermediary, so the underlying employer is not named |
 | Orchestry | Section 3.3 interview table | Applied, interviewed, rejected after interview | Closed. Discloses a rejection |
 | jobmail.io | Section 3.3 interview table and section 5 | Applied, interviewed, and named as the row carrying a coding contradiction | Closed. The row is named as a data defect, which is a second thing to weigh |
-| BX Studio | Sections 3.7 and 5 | Applied. Named as the second row reversed from opportunity to application at Freeze 3 | Closed. No interview |
-| PhrasIQ | Section 3.7 | Named again as one of the eight rows the competing reconstruction dropped | Already listed above as a live process |
+| BX Studio | Paper section 5; companion part 2 | Applied. Named as the second row reversed from opportunity to application at Freeze 3, with its submission date | Closed. No interview |
+| PhrasIQ | Companion part 2, twice | Named as one of the eight rows the competing reconstruction dropped, and again as one of the fourteen interviews | Already listed above as a live process. The companion names it more prominently than the paper does |
 
 ## Platforms and vendors, not employers
 
@@ -50,11 +51,26 @@ public repository.
 
 | Name | Where | Note |
 |---|---|---|
-| LinkedIn | Sections 3.2, 3.7, 5, Appendix B | Named as a source with 88 outcome-blind rows, as the origin of the Freeze 3 export, and in the Easy Apply explanation |
+| LinkedIn | Paper sections 3.2, 5, Appendix B; companion throughout | Named as a source with 88 outcome-blind rows, as the origin of the Freeze 3 export, and in the Easy Apply explanation |
 | Wellfound, Jobright, Ladders, Apply4Me | Appendix B only | Channel names in the taxonomy table |
 | Greenhouse, Ashby, Lever, Workable | Not in the paper | In `views/latency_by_slice.csv` and `paper/RESULTS.md`. The paper deliberately publishes no per-ATS ranking, so no ATS is named in it |
 
-## Named elsewhere in the repository but not in the paper
+## Named only in the companion piece
+
+The companion names the eight companies the competing reconstruction dropped and this census keeps
+with employer-side proof. Seven are not named in the paper at all, so publishing the companion
+discloses more than publishing the paper alone.
+
+| Company | What is disclosed | Risk |
+|---|---|---|
+| Lattice, Firstup | Applied, Tier A evidence, dropped by the other reconstruction | Closed. Discloses an application only, no outcome |
+| Ava Labs, Fibr AI, 12100 Collective, Infisical, Classet | Same | Closed. Discloses an application only, no outcome |
+| Fullsteam, Toast | Named as companies the other reconstruction missed entirely | Closed. Discloses an application only |
+
+None of these discloses a rejection or an interview. PhrasIQ is the exception and is listed above,
+because the companion names it as an interview.
+
+## Named elsewhere in the repository but not in either piece
 
 Listed so the pass is complete. Publishing the paper does not publish these, but the repository is
 public and they are in it.
@@ -83,5 +99,7 @@ public and they are in it.
 - [ ] Closed processes reviewed
 - [ ] jobmail.io reviewed specifically, since it is named as a data defect
 - [ ] The Hog and BX Studio reviewed, since both are named as methodology examples as well as applications
+- [ ] Companion-only names reviewed: the eight dropped-row companies plus Fullsteam and Toast
+- [ ] Decided whether the companion publishes at all, and whether it publishes with or after the paper
 - [ ] Confirmed no compensation or individual names entered the draft
 - [ ] Approved for publication
