@@ -114,3 +114,58 @@ number, so both are published.
 
 The `discovery_source` block is the sharpest version of the null result: the only origin group
 large enough to publish a median is `unknown`.
+
+### `discovery_source.csv`
+
+One row per census application, 223 rows. This is the recall layer the author asked for, kept
+**outside** the census on purpose.
+
+Four columns carry the answer rather than one:
+
+| Column | Source |
+|---|---|
+| `discovery_source_coded` | The frozen field. Blind-coded from artifacts. `unknown` on 208 |
+| `discovery_source_recalled` | `knowledge/discovery_source_recalled.csv`, supplied by the author |
+| `discovery_source_resolved` | Coded when it is informative, recalled only in the residual |
+| `basis` | `coded_artifact`, `author_recall`, or `none`. Never blank |
+
+**Coded always wins over recalled.** Recall fills the residual and never overwrites an artifact, so
+adopting this layer cannot move a value a blind coder established. `basis` makes every resolved
+value's provenance queryable, which means any figure quoted from this view can be recomputed with
+the recall layer excluded.
+
+`conflict` flags a row where both exist and disagree. There is exactly one, a Mercor row the author
+places on the marketplace's internal board where the artifact names a referring person. It is
+surfaced, not resolved.
+
+`root_venue` walks `knowledge/discovery_venues.csv`, a venue-to-venue edge list. A job found in a
+Slack channel was not really found in a Slack channel, it was found through whatever led there, so
+`gtm_cafe_slack` resolves to `gtm_engineering_school`. The walk is cycle-guarded.
+
+The vocabulary is read from `codebook.md` at run time and extended by exactly four terms
+(`gtm_cafe_slack`, `gtm_engineering_school`, `linkedin_inbound_dm`, `platform_internal_board`).
+**`codebook.md` itself is not edited**, because the coders worked against it and adding a term
+retroactively would change the instrument they used. The frozen `newsletter_community` was left
+unused: it collapses a named channel into a generic bucket, and the named channel is the finding.
+
+### `funnel_by_discovery_source.csv`
+
+The `funnel_by_origin` the brief originally asked for, finally buildable, and it should be read for
+its shape rather than its rates.
+
+| Resolved source | n | Interviewed | Rate |
+|---|---|---|---|
+| `unknown` | 200 | 8 | 8/200 |
+| `wellfound` | 7 | 1 | 1/7 |
+| `platform_internal_board` | 5 | 0 | 0/5 |
+| `gtm_cafe_slack` | 3 | 3 | **suppressed** |
+| `recruiter_inbound` | 2 | 2 | **suppressed** |
+
+Two things at once. **200 of 223 rows are still `unknown`**, so the null result stands and this view
+does not overturn it. And the most interesting cell in the table is the one that cannot be
+published: every application the author can trace to one community channel reached an interview,
+three for three, and n=3 is below the MIN_CELL floor of 5.
+
+That is the honest outcome and the view is built to make it unmissable rather than to smuggle a
+3/3 into a chart. `n_from_author_recall` is printed on every row so a reader can see exactly how
+much of any cell rests on recall rather than an artifact.

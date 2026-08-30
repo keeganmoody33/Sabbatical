@@ -115,6 +115,8 @@ STAGES: list[Stage] = [
             "views/monthly_trend.csv",
             "views/title_language.csv",
             "views/latency_by_slice.csv",
+            "views/discovery_source.csv",
+            "views/funnel_by_discovery_source.csv",
         ],
     ),
     Stage(

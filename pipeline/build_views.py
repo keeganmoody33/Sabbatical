@@ -512,6 +512,174 @@ def build_origin_recoverability(census: list[dict]) -> None:
         print(f"    {tier}: {n} of {total} ({n / total:.1%})")
 
 
+KNOWLEDGE = ROOT / "knowledge"
+
+# Author-supplied discovery sources live OUTSIDE the census on purpose. The
+# census is artifact-derived and its reproducibility is the whole claim, so a
+# layer the author can revise at any time must not sit inside it, or every
+# recall edit becomes a census change. Keeping it a side table also means the
+# author can revise freely without touching a frozen file.
+#
+# `discovery_source` (coded, blind, frozen) and `discovery_source_recalled`
+# (author, revisable) are never merged into one stored value. The view carries
+# both plus a `basis` naming which one the resolved value came from.
+# The extension terms. Everything else in the vocabulary is read from
+# `codebook.md` at run time, the same way data_quality.py reads it, so the
+# recalled field cannot drift from the frozen instrument.
+#
+# Only four terms are added, and only where the frozen vocabulary genuinely
+# cannot express the value. `newsletter_community` exists but collapses a
+# specific Slack channel into the same bucket as a newsletter, and the whole
+# point of this layer is that the specific channel is the finding.
+DISCOVERY_VOCAB_EXTENSION = {
+    "gtm_cafe_slack",
+    "gtm_engineering_school",
+    "linkedin_inbound_dm",
+    "platform_internal_board",
+}
+
+
+def discovery_vocab() -> set[str]:
+    """Frozen codebook terms plus the four extensions."""
+    text = (ROOT / "codebook.md").read_text(encoding="utf-8")
+    for line in text.splitlines():
+        if line.startswith("**discovery_source**:"):
+            terms = {
+                t.strip().strip("`")
+                for t in line.split(":", 1)[1].split(",")
+            }
+            return {t for t in terms if t} | DISCOVERY_VOCAB_EXTENSION
+    raise SystemExit(
+        "codebook.md has no `**discovery_source**:` vocabulary line. The view "
+        "layer reads it at run time rather than holding a copy, so a rename "
+        "there must not silently pass here."
+    )
+
+
+def venue_edges() -> dict[str, str]:
+    """venue -> the venue it was discovered through, or `root`."""
+    edges = {}
+    for row in load_csv(KNOWLEDGE / "discovery_venues.csv"):
+        venue = row["venue"].strip()
+        if venue:
+            edges[venue] = row["discovered_via"].strip() or "root"
+    return edges
+
+
+def root_venue(venue: str, edges: dict[str, str]) -> str:
+    """Walk the discovery chain to its root.
+
+    The author's point: a job found in a Slack channel was not really found in
+    a Slack channel, it was found through whatever led to that channel. Here
+    `gtm_cafe_slack` resolves to `gtm_engineering_school`, so a rollup can ask
+    how many processes trace back to one root rather than counting the
+    proximate venue.
+
+    Cycle-guarded. A chain that loops returns the venue it started from rather
+    than hanging, and the loop is a data error the vocabulary check will not
+    catch on its own.
+    """
+    seen = set()
+    current = venue
+    while True:
+        nxt = edges.get(current, "root")
+        if nxt == "root" or nxt == "" or nxt in seen:
+            return current
+        seen.add(current)
+        current = nxt
+
+
+def build_discovery_source(census: list[dict], interviewed: set[str]) -> None:
+    """Per-application discovery, coded beside recalled, with the basis named.
+
+    Every census row appears. A row with neither a coded nor a recalled value
+    resolves to `unknown`, which keeps the residual visible instead of letting
+    the populated rows look like the whole picture.
+    """
+    vocab = discovery_vocab()
+    edges = venue_edges()
+    recalled = {}
+    for row in load_csv(KNOWLEDGE / "discovery_source_recalled.csv"):
+        value = row["discovery_source_recalled"].strip()
+        if value and value not in vocab:
+            raise SystemExit(
+                f"discovery_source_recalled.csv: {row['application_id']!r} carries "
+                f"{value!r}, which is not in the controlled vocabulary. Add it to "
+                f"DISCOVERY_VOCAB_EXTENSION and to knowledge/discovery_venues.csv, or fix the value."
+            )
+        recalled[row["application_id"]] = row
+
+    rows = []
+    for r in census:
+        aid = r["application_id"]
+        coded = (r.get("discovery_source") or "").strip() or "unknown"
+        rec = recalled.get(aid, {})
+        rec_value = (rec.get("discovery_source_recalled") or "").strip()
+
+        # Coded wins when it is informative, because it came from an artifact
+        # read blind. Recall fills the residual only.
+        if coded != "unknown":
+            resolved, basis = coded, "coded_artifact"
+        elif rec_value:
+            resolved, basis = rec_value, "author_recall"
+        else:
+            resolved, basis = "unknown", "none"
+
+        conflict = "yes" if (coded != "unknown" and rec_value and rec_value != coded) else "no"
+        rows.append({
+            "application_id": aid,
+            "company_canonical": r["company_canonical"],
+            "discovery_source_coded": coded,
+            "discovery_source_recalled": rec_value,
+            "discovery_source_resolved": resolved,
+            "basis": basis,
+            "conflict": conflict,
+            "root_venue": root_venue(resolved, edges),
+            "interviewed": "yes" if aid in interviewed else "no",
+        })
+
+    rows.sort(key=lambda r: (r["discovery_source_resolved"], r["application_id"]))
+    write_view(
+        "discovery_source.csv",
+        ["application_id", "company_canonical", "discovery_source_coded",
+         "discovery_source_recalled", "discovery_source_resolved", "basis",
+         "conflict", "root_venue", "interviewed"],
+        rows,
+    )
+
+    # Funnel on the resolved value. This is the `funnel_by_origin` the brief
+    # asked for, finally buildable, and still mostly one enormous unknown cell.
+    by_source = {}
+    for row in rows:
+        bucket = by_source.setdefault(row["discovery_source_resolved"], {"n": 0, "iv": 0, "recall": 0})
+        bucket["n"] += 1
+        bucket["iv"] += row["interviewed"] == "yes"
+        bucket["recall"] += row["basis"] == "author_recall"
+
+    funnel = []
+    for source, b in sorted(by_source.items(), key=lambda kv: -kv[1]["n"]):
+        suppressed = b["n"] < MIN_CELL
+        lo, hi = wilson(b["iv"], b["n"])
+        funnel.append({
+            "discovery_source_resolved": source,
+            "root_venue": root_venue(source, edges),
+            "n_applications": b["n"],
+            "n_from_author_recall": b["recall"],
+            "n_interviewed": b["iv"],
+            "interview_rate": "" if suppressed else f"{b['iv']}/{b['n']}",
+            "interview_rate_wilson_lo": "" if suppressed else f"{lo:.4f}",
+            "interview_rate_wilson_hi": "" if suppressed else f"{hi:.4f}",
+            "suppressed": "yes" if suppressed else "no",
+        })
+    write_view(
+        "funnel_by_discovery_source.csv",
+        ["discovery_source_resolved", "root_venue", "n_applications",
+         "n_from_author_recall", "n_interviewed", "interview_rate",
+         "interview_rate_wilson_lo", "interview_rate_wilson_hi", "suppressed"],
+        funnel,
+    )
+
+
 def main() -> None:
     census = load_csv(ADJ / "applications__adjudicated.csv")
     full = load_csv(ADJ / "applications__full_census.csv")
@@ -557,6 +725,7 @@ def main() -> None:
     build_monthly_trend(census, interviewed)
     build_title_language(census, interviewed, latency)
     build_latency_by_slice(census, latency)
+    build_discovery_source(census, interviewed)
 
 
 if __name__ == "__main__":

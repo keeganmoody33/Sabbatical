@@ -212,6 +212,34 @@ it was not.
 available anywhere in this dataset. This is a gap in the instrument rather than a suppressed cell,
 and it means the brief's question about which company stages convert has no answer here at all.
 
+## H2. The recalled discovery layer
+
+Added 2026-08-30 at the author's direction, after the author read the analysis and objected that a
+field forbidden to hold recall will stay empty forever on a question where recall is the only
+witness. The objection is correct and the design answers it without weakening the census.
+
+**Status: active. Author-sourced, tier C, never merged into a coded field.**
+
+| Assumption | Reason | What it rules out |
+|---|---|---|
+| A recalled discovery source is stored in a **separate file**, `knowledge/discovery_source_recalled.csv`, and never written into `discovery_source` | The census is artifact-derived and its byte reproducibility is the study's central claim. A layer the author can revise at any time must not sit inside it, or every recall edit becomes a census change with a freeze and a changelog entry | Recall silently becoming indistinguishable from a blind coding |
+| A coded value **always** beats a recalled one | The coded field was read blind from an artifact. Recall arrives after the author has seen the results | Recall overwriting anything a coder established |
+| Every resolved value carries a `basis` of `coded_artifact`, `author_recall` or `none`, never blank | Any figure quoted from this layer must be recomputable with recall excluded | A rate whose dependence on recall cannot be measured |
+| A conflict between coded and recalled is **surfaced, not resolved** | One exists, on a Mercor row. Picking a winner would hide a real disagreement between an artifact and the author | Silent adjudication of the author against the record |
+| The vocabulary is read from `codebook.md` at run time and extended by exactly four terms | The frozen vocabulary already anticipated community origins with `newsletter_community`, but it collapses a named channel into a generic bucket and the named channel is the finding | The recalled field drifting into a private vocabulary |
+| **`codebook.md` is not edited** | The blind coders worked against it. Adding a term retroactively changes the instrument they used | Invalidating prior rows, which `codebook.md` warns against explicitly |
+| Discovery venues form a directed edge list with a cycle-guarded walk to a root | A job found in a Slack channel was found through whatever led to that channel. The author reports reaching GTM Cafe through GTM Engineering School, so a rollup can ask which root a process traces to | Treating the proximate venue as the origin |
+
+**What it changed: nothing published.** 223, 317, 14, 197 all hold, and 200 of 223 rows remain
+`unknown`, so section H stands as written. Eight rows gained a value from recall and fifteen already
+had one from an artifact.
+
+**What it revealed.** Every application the author can trace to one community channel reached an
+interview, three of three, and the cell is suppressed because n=3 is below the MIN_CELL floor. The
+view prints it suppressed rather than omitting the row, so the shape is visible and the rate is not
+quotable. That is the correct outcome and it is also the sharpest illustration in the study of why
+n=1 research needs a cell floor.
+
 ## I. Analysis and presentation
 
 These change no census figure. They govern how figures are presented, and each one could reasonably
