@@ -17,7 +17,7 @@ These holes from the ingest plan remain empty. They were named in the package an
 | Ladders full list / `LADDERS.png` [S5] | absent |
 | YC Work at a Startup dashboard | absent |
 | Prior workbooks [S1] and [S2] xlsx | absent. Log 046 stopped on [S1] |
-| LinkedIn data download `Job Applications.csv` / `messages.csv` | absent. The 105-row file is a Claude extract of that download, not the download |
+| LinkedIn data download `Job Applications.csv` / `messages.csv` | Raw CSVs still absent. The 105-row file is a Claude extract of that download, not the download. A Claude analysis of `messages.csv` arrived separately 2026-08-30 (`artifacts/linkedin/job-threads-analysis-2025-06-to-2026-08.md`). 54 job threads matched, census unchanged |
 | Package `retrieval-log-029.md` (ENG-B / Mobb evidence) | absent. This tree's `artifacts/gmail/retrieval-log-029.md` is the 33@lecturesfrom identity check, a different document |
 | Gmail thread bodies | absent. Package logs are summaries |
 | Raw Google Calendar export | absent. `meetings-to-classify.csv` is a 34-row Claude coding, not the export |
@@ -134,6 +134,7 @@ The ingest plan forbids adding, merging, or removing an `application_id` until a
 | Paper drafts, methods, READMEs, AGENTS, VERIFY | Citation and structure. Not a data source. VERIFY Part A already in log 052. Proposed package AGENTS/ledger edits are not applied here | **applied** |
 | Raw Gmail/Calendar/ATS in the drop | None present | n/a |
 | Screenshot / transcription | None in the drop. Kiln screenshots were already Freeze 3 | n/a |
+| LinkedIn messages analysis (separate drop) | Claude coding of `messages.csv`. Match, do not mint. Log 054 | **applied as match, census unchanged** |
 
 ## Questions still asked (not guessed)
 
@@ -143,8 +144,11 @@ For any later confirmation that would move a number:
 2. For each of the 12 held LinkedIn rows: application, opportunity, consulting, or employment?
 3. JetBridge AI LI-006 and LI-008: one cycle or two?
 4. Insignia Assets versus Insignia Collab: same employer, or two strings from two artifacts?
-5. Package log 037 codes two Kiln interviews (Giorgio 2026-03-03 and Patrick 2026-03-04). This tree has one dated artifact (Patrick, 2026-03-04) and Giorgio as introducer. Is there a second dated artifact, or is Giorgio `evidence_system = memory`?
+5. Package log 037 codes two Kiln interviews (Giorgio 2026-03-03 and Patrick 2026-03-04). This tree has one dated artifact (Patrick, 2026-03-04) and Giorgio as introducer. The messages analysis adds a Giorgio same-day video on 2026-03-03 in a different thread. Mint a Giorgio interview, or keep `evidence_system = memory` for a second round?
 6. Can package log 029 (ENG-B) be recovered from the original chat?
+7. AnyInt AI: mint as `platform_log` application, or wait for `Job Applications.csv`?
+8. Cyft and Starbridge: mint as opportunity from package Gmail 024 plus these DMs, or wait?
+9. Hotglue is not in the 54 threads. Was Kevin Wright's inbound in `messages.csv` under a different keyword, or a different channel?
 
 ## What this inventory will not do
 

@@ -1,0 +1,44 @@
+side,package_company,census_company,role,applied_date,package_stratum,census_application_id,classification,notes
+package_only,SBGA,,Remote Outside Sales Rep,2025-04-11,gmail/ATS,,out_of_window,Applied date is before this freeze window 2025-06-01.
+package_only,Datricks,,Sales Engineer - US (Remote),2025-06-20,LinkedIn,,held_linkedin_candidate,Freeze 4 held. Subject has not confirmed as an application. Not in 298.
+package_only,Bitovi,,AI Enablement Engineer,2025-06-30,LinkedIn,,held_linkedin_candidate,Freeze 4 held. Subject has not confirmed as an application. Not in 298.
+package_only,ScoutLab.io,,"Solutions Engineer (AI FinTech, Series B)",2025-06-30,LinkedIn,,held_linkedin_candidate,Freeze 4 held. Subject has not confirmed as an application. Not in 298.
+package_only,JetBridge AI,,Sr. SDR for Profitable AI Startup,2025-07-03,LinkedIn,,held_linkedin_candidate,Freeze 4 held. Subject has not confirmed as an application. Not in 298.
+package_only,Abacus.AI,,Senior Sales Development Representative,2025-07-07,LinkedIn,,held_linkedin_candidate,Freeze 4 held. Subject has not confirmed as an application. Not in 298.
+package_only,Brainfish,,Sales Development Representative (SDR),2025-07-07,LinkedIn,,held_linkedin_candidate,Freeze 4 held. Subject has not confirmed as an application. Not in 298.
+package_only,JetBridge AI,,Sr. SDR for Profitable AI Startup,2025-07-07,LinkedIn,,held_linkedin_candidate,Freeze 4 held. Subject has not confirmed as an application. Not in 298.
+package_only,ClosedWon Talent,,Founding Account Executive,2025-07-08,LinkedIn,,held_linkedin_candidate,Freeze 4 held. Subject has not confirmed as an application. Not in 298.
+package_only,SWARM,,Sales Engineer,2025-07-09,LinkedIn,,held_linkedin_candidate,Freeze 4 held. Subject has not confirmed as an application. Not in 298.
+package_only,ThriveLink,,Healthcare Business Development Rep,2025-08-05,gmail/ATS,,package_only_unmatched,Present in the package register. No company_canonical match in this freeze 298 after aliasing.
+package_only,Insignia Assets,,Head of Digital,2025-11-18,LinkedIn,,held_linkedin_candidate,Freeze 4 held. Subject has not confirmed as an application. Not in 298.
+package_only,micro1,,unspecified,2026-01-14,gmail/ATS,,package_only_unmatched,Present in the package register. No company_canonical match in this freeze 298 after aliasing.
+package_split,Montauk Capital,Crossing Hurdles,Head of Commercial,2026-04-01,gmail/ATS,crossing-hurdles|gtm-lead|c1,split_vs_intermediary,This freeze keys Crossing Hurdles (freeze2 platform_log). Package listed Montauk Capital as the employer on the Ceipal Head of Commercial receipt.
+package_only,BX Studio,,GTM Engineer,2026-04-06,LinkedIn,,opportunity_on_this_tree,This freeze keeps this process in the opportunity register. Package coded it as an application.
+package_only,COLOSSUS TECHNOLOGY GROUP,,GTM Engineer,2026-04-06,LinkedIn,,opportunity_on_this_tree,This freeze keeps this process in the opportunity register. Package coded it as an application.
+package_only,saveurdays,,unspecified,2026-04-11,gmail/ATS,,package_only_unmatched,Present in the package register. No company_canonical match in this freeze 298 after aliasing.
+package_only,The Hog (YC F25),,Founding GTM Engineer,2026-06-04,LinkedIn,,opportunity_on_this_tree,This freeze keeps this process in the opportunity register. Package coded it as an application.
+package_alias,Cursor,Anysphere,"GTM, Emerging Products",2026-07-12,gmail/ATS,anysphere|gtm-emerging-products|c1,alias,"This freeze keys Anysphere, not Cursor, with the alias in notes. Same 2026-07-12 GTM Emerging Products row."
+package_only,Kana,,GTM Engineer,2026-07-12,LinkedIn,,held_linkedin_candidate,Freeze 4 held. Subject has not confirmed as an application. Not in 298.
+package_only,Stealth Startup,,GTM Leader / Head of Growth,2026-07-12,LinkedIn,,held_linkedin_candidate,Freeze 4 held. Subject has not confirmed as an application. Not in 298.
+package_alias,Cincinnatus,Mercor,Biology & Biophysics Research Collaborator,2026-07-20,gmail/ATS,mercor|biology-biophysics-research-collaborator|c1,alias,Mercor biology row is mercor|biology-biophysics-research-collaborator|c1. Package listed the ATS brand Cincinnatus as company.
+package_only,AnyInt AI,,unspecified,,gmail/ATS,,held_application_candidate,LinkedIn DM analysis names an application. Not in the 105 extract and not in 298. Hold.
+package_split,Bluejay,HartleyCo,Founding GTM,,gmail/ATS,hartleyco|founding-gtm|c1,split_vs_underlying_employer,This freeze keys HartleyCo with underlying_employer Bluejay. Package split Bluejay as its own application row.
+package_only,Celonis,,unspecified,,gmail/ATS,,package_only_unmatched,Present in the package register. No company_canonical match in this freeze 298 after aliasing.
+package_only,Gong.io,,unspecified,,gmail/ATS,,package_only_unmatched,Present in the package register. No company_canonical match in this freeze 298 after aliasing.
+package_only,graph.one,,unspecified,,gmail/ATS,,package_only_unmatched,Present in the package register. No company_canonical match in this freeze 298 after aliasing.
+package_only,Leidos Systems,,Software Engineer III REQ16295,,gmail/ATS,,package_only_unmatched,Present in the package register. No company_canonical match in this freeze 298 after aliasing.
+package_only,Meshy,,unspecified,,gmail/ATS,,package_only_unmatched,Present in the package register. No company_canonical match in this freeze 298 after aliasing.
+package_only,New Relic,,unspecified,,gmail/ATS,,package_only_unmatched,Present in the package register. No company_canonical match in this freeze 298 after aliasing.
+package_only,Pin,,unspecified,,gmail/ATS,,opportunity_on_this_tree,This freeze keeps this process in the opportunity register. Package coded it as an application.
+package_only,Rippling,,"Software Engineering Manager, Banking",,gmail/ATS,,package_only_unmatched,Present in the package register. No company_canonical match in this freeze 298 after aliasing.
+package_only,SmartMode AI,,unspecified,,gmail/ATS,,package_only_unmatched,Present in the package register. No company_canonical match in this freeze 298 after aliasing.
+package_only,Spot AI,,unspecified,,gmail/ATS,,package_only_unmatched,Present in the package register. No company_canonical match in this freeze 298 after aliasing.
+package_only,The Hog,,Founding GTM Engineer,,gmail/ATS,,opportunity_on_this_tree,This freeze keeps this process in the opportunity register. Package coded it as an application.
+census_only,,Autodesk,"Sr. Sales Specialist, Fusion Enterprise",2026-01-02,,autodesk|sr-sales-specialist-fusion-enterprise|c1,jobright_already_in_298,Package log 051 would add this to reach 325. This freeze already has it from Freeze 2. Do not add again.
+census_only,,MavenAI,GTM Engineer,2026-05-20,,mavenai|gtm-engineer|c1,jobright_already_in_298,Package log 051 would add this to reach 325. This freeze already has it from Freeze 2. Do not add again.
+census_only,,Vanco,GTM Enablement Manager,2026-06-24,,vanco|gtm-enablement-manager|c1,jobright_already_in_298,Package log 051 would add this to reach 325. This freeze already has it from Freeze 2. Do not add again.
+census_only,,Block+Tackle,Forward Deployed Marketing Engineer,,,block-tackle|forward-deployed-marketing-engineer|c1,census_only_after_alias,coder=freeze2; channel=unknown; evidence_class=platform_log. In this freeze 298. Absent from package register company label.
+census_only,,Armanino,"AI Factory, Value Engineer",,,armanino|ai-factory-value-engineer|c1,census_only_after_alias,coder=freeze2; channel=unknown; evidence_class=platform_log. In this freeze 298. Absent from package register company label.
+census_only,,8X,GTM Engineer,,,8x|gtm-engineer|c1,census_only_after_alias,coder=freeze2; channel=unknown; evidence_class=platform_log. In this freeze 298. Absent from package register company label.
+package_split,Montauk Capital,Crossing Hurdles,GTM Lead,,gmail/ATS,crossing-hurdles|gtm-lead|c1,split_vs_intermediary,Companion to the Montauk Capital package row. This freeze2 platform_log Crossing Hurdles GTM Lead is the LinkedIn twin; package treated Crossing Hurdles as a Gmail duplicate of Montauk (log 038). Not a 27-hole.
+census_only,,Axon,Key Account Executive,2026-01-02,,axon|key-account-executive|c1,jobright_already_in_298,"Package register has Axon Manager GTM Readiness. This KAE row is Freeze 2 Jobright, already in 298."
