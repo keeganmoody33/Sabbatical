@@ -40,6 +40,7 @@ This calendar holds the interview loops that lecturesfrom did not. Job-process t
 
 - Pin: 1 Hour Meeting with Erica Stacy Tarwater 2025-06-30. 30 Min Meeting with Conor Kline 2025-07-07.
 - Mixmax: No Agenda Meeting with Heath 2025-08-14.
+- Glytec: Keegan Moody and Clayton Maike 2026-01-27.
 - Mobb: Weekly BD Huddle 2025-06-09, organizer at mobb.ai, attendee eml_b0aac6b6d044.
 - BCOFA: GTM Strategy Discussion with Dr. Blaney 2026-03-06.
 - Opsin Sync 2026-03-13.
@@ -57,5 +58,7 @@ This calendar holds the interview loops that lecturesfrom did not. Job-process t
 Erika as a spelling returned zero events. The Pin hiring contact is Erica.
 
 TrueRestore and TrueBuilt returned zero calendar events under those names. The TrueBuilt GTM project lived in Gmail, not as a surviving calendar event after cancel.
+
+The Kiln, Giorgio Zanella, Mathias Powell, and GTME Intro returned zero calendar events. 2026-03-04 holds only Cold Outbound Masterclass (`cal_c5b57b854c64fe70`). Patrick Spychalski appears 2025-10-21 as Clay Club Atlanta, which is not a Kiln interview. The LinkedIn thread says Keegan sent a calendar invite that day. That event is not in this sweep.
 
 Q8c is **done** on the primary calendar.

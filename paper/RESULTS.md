@@ -9,7 +9,7 @@ No dashes are used as punctuation in this file.
 Harvest coverage of the frozen corpus, 2026-08-29:
 
 - Gmail keeganmoody33@gmail.com, logs 001 to 021: 994 threads. Queries Q1 through Q5, Q3, Q4 exhausted. Q7 page 1 captured in Freeze 1.
-- Gmail keeganmoody33@gmail.com, logs 030 to 035: Q7 re-run from start exhausted (195 unique threads). Q6, Q9, and Q3b exhausted. Pressure-test names in log 034.
+- Gmail keeganmoody33@gmail.com, logs 030 to 036: Q7 re-run from start exhausted (195 unique threads). Q6, Q9, and Q3b exhausted. Pressure-test names in log 034. The Kiln in log 036.
 - Gmail 33@lecturesfrom.com, logs 022 to 029: 177 threads. Q6, Q7, Q3b, Q9, Q10 exhausted on this mailbox. Almost none were employment ATS receipts.
 - Calendar 33@lecturesfrom.com: 31 events across five 90-day blocks with no keyword filter.
 - Calendar transferred keegan@lecturesfrom.com: reachable and empty.
@@ -17,6 +17,7 @@ Harvest coverage of the frozen corpus, 2026-08-29:
 - LinkedIn applied list pages 1 to 10: 99 rows in `artifacts/platform/linkedin_applied_jobs_pages_1_to_10.csv`. Relative stamps. `date_capture = 2026-08-29`. Page 10 has 10 rows, so a later page is not ruled out. The file does not label Easy Apply versus external ATS.
 - Jobright tracker: 40 rows in `artifacts/platform/jobright_applications_log.csv`. Exact dates.
 - Ladders full list, YC dashboard, [S1] and [S2] workbooks: absent.
+- LinkedIn GTME Intro screenshots (The Kiln): transcribed 2026-08-30 in `artifacts/linkedin/gtme-intro-the-kiln.md`. Not a LinkedIn data download.
 
 Stop conditions: see `artifacts/STOP-CONDITIONS.md`. Personal Gmail Q6, Q7, Q3b, and Q9 are exhausted. Personal primary calendar is swept.
 
@@ -82,23 +83,27 @@ Gmail Freeze 1 extracts and Freeze 2 platform files were not recoded. Personal G
 
 - Net-new `register = application` rows: **0**
 - Full application census remains **298**
-- Three new opportunity rows: Pin, Hotglue BDM, Opsin. They stay out of the 298.
+- Net-new opportunity rows in this freeze: Pin, Hotglue BDM, Opsin, The Kiln. They stay out of the 298.
 - PhrasIQ GTM Deep Dive on 2026-04-15 is now on the personal calendar. Freeze 1 had only a proposed date.
-- Interviewed applications remain **14**. Pin, Hotglue, Opsin, and The Hog interviews sit in the opportunity register.
+- Interviewed applications remain **14**. Pin, Hotglue, Opsin, The Kiln, The Hog, and Glytec interviews sit in the opportunity register.
 
 Pressure-test names (origin, what happened, interviewed):
 
-- Beautiful.ai: Greenhouse receipt 2026-03-08. Interview on personal calendar 2026-03-17. Decline 2026-03-26. **Yes, in the 14.**
-- The Hog: invitation 2026-06-15, calendar 2026-06-16, take-home. No ATS receipt. **Yes, opportunity, outside the 14.**
+- Glytec: interview logistics 2026-01-27 and calendar with Clayton Maike the same day. No submission receipt. **Yes, opportunity, outside the 14.**
+- The Hog: invitation 2026-06-15, calendar 2026-06-16 with Hudson Liao, take-home. No ATS receipt. **Yes, opportunity, outside the 14.**
+- Mixmax: product welcome and No Agenda Meeting with Heath 2025-08-14. **No. Exclusion.**
+- Every.to: thanks for applying, calendar 2026-04-21 with Austin. **Yes, in the 14.**
+- PhrasIQ: Wellfound acceptance, Discovery 2026-04-02 and Deep Dive 2026-04-15. User named Eddie. That string is not in the frozen mail or calendar titles, so counterparty stays unknown. **Yes, in the 14.**
+- Beautiful.ai: Greenhouse receipt 2026-03-08. Calendar interview 2026-03-17. Decline 2026-03-26 from Emily. Hiring manager named in follow-up is Brandon Ness. **Yes, in the 14.**
+- Pearl: Ashby receipt 2026-04-06. Calendar interviews 2026-05-05 and 2026-05-18. Scheduler named in mail is Alex DeCeglie. User named Chris. That string is not on the Pearl artifacts. **Yes, in the 14.**
+- Great Question: Ashby receipt 2026-07-17. Screening named Harri. Calendar interview 2026-07-26. Decline 2026-07-29. User named Harry. Corpus uses Harri. **Yes, in the 14.**
+- TrueBuilt: LinkedIn applied-list GTM Engineer in Freeze 2, posting later marked no longer accepting applications. Separate Gmail GTM project quote, passed on budget. That project is not an interview. **Application in the 298. Not in the 14.**
 - Opsin: Colossus TG video interview with James Pham 2026-03-13. No ATS receipt. **Yes, opportunity.**
 - Hotglue: Kevin Wright BDM conversation 2026-04-20. No ATS receipt. **Yes, opportunity.**
-- Every.to: thanks for applying, calendar 2026-04-21 with Austin. **Yes, in the 14.**
-- Mixmax: product welcome and Heath meeting. **No. Exclusion.**
 - Mobb / mobb.dev: Gusto first-day and a Mobb employment mailbox. Employment, not a search application.
 - Pin: Erica Stacy Tarwater 2025-06-30, Conor Kline 2025-07-07, then rejection. No ATS receipt. User recalled Erika. Mail uses Erica. **Yes, opportunity.**
+- The Kiln: LinkedIn GTME Intro on 2026-03-04. Giorgio Zanella introduced Keegan to co-founders Patrick Spychalski and Mathias Powell. Same-day call with Patrick. User recalled two interviews including Giorgio. Giorgio's artifact role is introducer. No second dated artifact. No ATS receipt. No surviving calendar event. Clay AMA with Elias Stravik and Clay Club Patrick events are not this process. **Yes, opportunity, outside the 14.**
 - BCOFA: GTM strategy and copywriting with Dr. Blaney. **No. Consulting.**
-- PhrasIQ: Discovery 2026-04-02 and Deep Dive 2026-04-15. **Yes, in the 14.**
-- TrueBuilt: LinkedIn applied-list GTM Engineer already in Freeze 2. Separate Gmail project quote, passed on budget. **No interview on the LinkedIn row.**
 - Kivira.health: connect meetings and weekly outbound. **No. Consulting. Meetings happened.**
 
 ## Interviews (derived, never stored)
@@ -110,9 +115,9 @@ Interviewed means at least one event whose `event_type` is in {recruiter_screen,
 - Interviewed applications in the Freeze 2 full census: **14**
 - Application-to-interview rate on the 298: 14/298
 - Platform files carry no interview events. Adding LinkedIn applied-list and Jobright rows does not add interviews.
-- Opportunity-register interviews (WorkOS, Mercor contract path, Pin, Hotglue, Opsin, The Hog, and other recruiter-only processes) sit outside those denominators
+- Opportunity-register interviews (WorkOS, Mercor contract path, Pin, Hotglue, Opsin, The Kiln, The Hog, Glytec, and other recruiter-only processes) sit outside those denominators
 
-The Hog, Pin, Hotglue, and Opsin are opportunity, not applications, so those interview events do not enter the 14.
+The Hog, Pin, Hotglue, Opsin, The Kiln, and Glytec are opportunity, not applications, so those interview events do not enter the 14.
 
 ## Role lane (after kappa)
 
@@ -151,3 +156,4 @@ Zero exact rows in September and October 2025 is not a claim of zero search acti
 - Mercor Growth Strategist contract mixed into the application denominator
 - Weave treated as recruiter-initiated with no application (Greenhouse receipt, log 002)
 - The Hog counted in the application-to-interview rate
+- The Kiln counted in the application-to-interview rate

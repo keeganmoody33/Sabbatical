@@ -14,6 +14,7 @@ This freeze adds the remaining personal-mailbox queries and an unfiltered sweep 
 | Q3b reconstructed remaining domains | exhausted | 183 unique threads |
 | Q8c primary calendar, 90-day blocks | exhausted | 338 events |
 | Pressure-test name and domain searches | done | log 034 |
+| The Kiln / Zanella / Spychalski | done | log 036 plus LinkedIn GTME Intro transcription |
 
 MCAT PREP and SI CHM222 calendars were listed and not swept.
 
@@ -30,8 +31,9 @@ These stay out of the application census.
 | Pin | unspecified | yes, Erica 2025-06-30 then Conor 2025-07-07 | rejected_after_interview 2025-07-07 |
 | Hotglue | BDM Role | yes, 2026-04-20 | still_open |
 | Opsin | unspecified | yes, James Pham 2026-03-13 | still_open |
+| The Kiln | unspecified | yes, Patrick Spychalski 2026-03-04 | still_open |
 
-No ATS submission receipt exists for those three. They do not enter the 298.
+No ATS submission receipt exists for those four. They do not enter the 298.
 
 ### Calendar corroboration on existing rows
 
@@ -41,6 +43,7 @@ No ATS submission receipt exists for those three. They do not enter the 298.
 | every-to\|gtm-engineer\|c1 | gcal 30 min with Austin 2026-04-21 | yes |
 | phrasiq\|unspecified\|c1 | gcal GTM Deep Dive 2026-04-15, occurrence now evidenced | yes |
 | the-hog\|gtm-engineer\|c1 | gcal Hudson Liao 2026-06-16 | yes, opportunity |
+| glytec\|unspecified\|c1 | gcal Clayton Maike 2026-01-27 | yes, opportunity. No submission receipt |
 
 ### Exclusions added
 
@@ -56,7 +59,7 @@ No ATS submission receipt exists for those three. They do not enter the 298.
 - Freeze 2 full census: **298**
 - Freeze 3 net-new `register = application` rows: **0**
 - Interviewed applications: **14** (14/298)
-- Opportunity-register interviews (Pin, Hotglue, Opsin, The Hog, WorkOS, and others) stay outside that rate
+- Opportunity-register interviews (Pin, Hotglue, Opsin, The Kiln, The Hog, Glytec, WorkOS, and others) stay outside that rate
 
 Capture recapture was not computed. The LinkedIn file still lacks an Easy Apply versus external ATS label.
 
@@ -66,3 +69,5 @@ Capture recapture was not computed. The LinkedIn file still lacks an Easy Apply 
 2. Opsin recruiter called the Pham meeting a video interview and a later take-home the 2nd round. Round_number on the Pham event is 1 because no earlier interview event is in the corpus.
 3. TrueBuilt LinkedIn applied-list GTM Engineer and the July GTM project quote are not merged. Different artifact classes.
 4. Mobb is excluded rather than coded as an application. Gusto first-day and a Mobb employment mailbox are employment, not a search cycle.
+5. Glytec stays opportunity. Clayton Maike is on the personal calendar the same day as the interview logistics thread. That does not mint a submission. Calendar title does not name a medium, so the Freeze 3 event uses `unknown`.
+6. The Kiln is opportunity. LinkedIn intro, no ATS receipt. One evidenced interview with Patrick Spychalski on 2026-03-04. User recalled a second interview with Giorgio Zanella. Giorgio's visible role in the thread is introducer. No second dated artifact, so no second interview event. Clay AMA with Elias Stravik and Clay Club Patrick Spychalski events are not this process.
