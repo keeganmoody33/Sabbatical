@@ -79,14 +79,76 @@ Ladders is still absent.
 
 Interviewed means at least one event whose `event_type` is in {recruiter_screen, hiring_manager_interview, panel, technical_exercise, final_round}.
 
-- Interviewed applications in the Freeze 1 221: **14**
-- Application-to-interview rate on Freeze 1: 14/221
-- Interviewed applications in the Freeze 2 full census: **14**
-- Application-to-interview rate on the 298: 14/298
+- Interviewed applications in the Freeze 1 221: **13**
+- Application-to-interview rate on Freeze 1: 13/221
+- Interviewed applications in the Freeze 2 full census: **13**
+- Application-to-interview rate on the 298: 13/298
 - Platform files carry no interview events. Adding LinkedIn applied-list and Jobright rows does not add interviews.
-- Opportunity-register interviews (WorkOS, Mercor contract path, and other recruiter-only processes) sit outside those denominators
+- Opportunity-register interviews (WorkOS, Mercor contract path, Weave 2026, and other recruiter-only processes) sit outside those denominators
 
-The Hog is opportunity, not an application, so its interview events do not enter the 14.
+The Hog is opportunity, not an application, so its interview events do not enter the 13.
+
+Both coders independently found 10 of the 13. Three rest on cursor alone, and bravo contributes none that cursor missed. Agreement on the interview set is therefore 10/13, weaker than the role-lane kappa of 0.9510 suggests. Event-level agreement is not among the reliability statistics the protocol requires, so it is unmeasured rather than measured and small. See `adjudication/LATENCY.md`.
+
+One event was removed from this count by named adjudication decision on 2026-08-30: a Weave `hiring_manager_interview` that belonged to a separate 2026 opening, not to the 2025 application it was attached to. That opening is inbound with no submission artifact, so it sits in the opportunity register. See `paper/DEFECTS.md`.
+
+## Response latency (`precision = exact` on both dates)
+
+Secondary outcomes named in the protocol, computed under the rule stated there. Full tables in `adjudication/LATENCY.md`, row-level data in `adjudication/latency__by_application.csv`.
+
+### Base
+
+196 of the 221 carry an exact-dated `submission_receipt`. That is the denominator for every figure in this section. The 25 without one are excluded and must be printed alongside, the same way the 26 non-exact dates are printed beside the monthly series.
+
+The base is not the census. The application-to-interview rate stays 13/221.
+
+### Rate and latency are reported separately
+
+- Substantive response, `employer_ack` excluded: 79/196
+- Any response, `employer_ack` included: 100/196
+- No response beyond the receipt: 96/196
+
+Roughly half of all applications produced a receipt and then nothing.
+
+The medians below are conditional on having responded. They describe responders only. A single "typical response time" that folded in the 96 silent applications would drop them from the denominator, which is the same error the two-register rule exists to prevent on the interview rate.
+
+| definition | n | median | p25 | p75 | mean | max | day zero |
+|---|---|---|---|---|---|---|---|
+| substantive, headline | 79 | 7 | 3 | 19 | 15.1 | 140 | 9 (11.4 percent) |
+| any, includes ack | 100 | 5.5 | 1 | 15 | 12.8 | 140 | 22 (22.0 percent) |
+
+Two definitions are published because the choice moves the number. The day-zero share doubles when `employer_ack` is counted, which is what an automated acknowledgment arriving with the receipt looks like. The substantive figure is the headline for that reason. Both distributions are right-skewed, mean well above median, so the median is the statistic to quote.
+
+### Time to first interview
+
+n = 11, median 6 days, mean 8.8, range 0 to 34. Small, and it inherits whatever the interview set gets wrong. See the agreement note above.
+
+### Right censoring is not driving the rate
+
+Applications submitted near the window end have had less time to draw a response. The rate is stable across exposure windows, so the response rate is not an artifact of the cutoff.
+
+| minimum exposure | base n | responded | rate |
+|---|---|---|---|
+| 0 days | 196 | 100 | 0.510 |
+| 30 days | 191 | 97 | 0.508 |
+| 60 days | 158 | 84 | 0.532 |
+| 90 days | 130 | 65 | 0.500 |
+
+Five applications have under 30 days of exposure.
+
+### Slices, cells under 5 suppressed
+
+Median days to any response. Suppressed groups are named with their counts rather than dropped silently.
+
+By role lane, 7 of 8 groups reach n = 5: explicit_gtm_engineering 43 at 5 days, sales_bd_partnerships 15 at 3, unspecified 11 at 8, growth_demand_marketing 9 at 6, sales_solutions_engineering 7 at 7, revops_gtm_ops_strategy 6 at 3, other 5 at 7. Suppressed: product_ai_technical (n=4).
+
+By month applied, 8 of 12 groups reach n = 5. Suppressed: 2026-01 (n=3), 2026-08 (n=3), 2025-12 (n=2), 2025-06 (n=1).
+
+By ATS, only 4 of 13 groups reach n = 5: Greenhouse 28 at 10 days, none_observed 26 at 4.5, Ashby 25 at 5, Workable 6 at 0. Nine systems are suppressed at n = 1 to 4. **The published rows are a minority of the systems observed and are not a ranking of ATS platforms.** Anyone reading a per-ATS response time out of this table is reading four cells and nine absences.
+
+### What this section does not support
+
+Discovery source is `unknown` on 206 of the 221, and the 78 rows that do know their source carry one terminal outcome between them, because platform exports contain no events. No claim about which platform or job board produced faster or better responses is available from this data, and none is made.
 
 ## Role lane (after kappa)
 
@@ -114,6 +176,7 @@ Zero exact rows in September and October 2025 is not a claim of zero search acti
 1. WorkOS: closed as opportunity. TopHire recruiter path, 2025-08-25. No submission receipt.
 2. 212 to 163: still undocumented. Workbooks absent.
 3. Cycle is in the key. FOSSA c1/c2 and Attentive c1/c2 are separate rows.
+4. Weave 2026 interview: closed 2026-08-30. Attached to the wrong application, corrected by named adjudication decision. Interviews 14 became 13. The correction came from the author, from recall, which is disclosed rather than smoothed. Bravo had independently excluded the same artifact under blind conditions.
 
 ## What a skeptic should not be shown as a finding
 
@@ -123,5 +186,5 @@ Zero exact rows in September and October 2025 is not a claim of zero search acti
 - Naive capture recapture on 17 overlap versus 163 and 99
 - Mixmax product onboarding in the application denominator
 - Mercor Growth Strategist contract mixed into the application denominator
-- Weave treated as recruiter-initiated with no application (Greenhouse receipt, log 002)
+- Weave treated as recruiter-initiated with no application (Greenhouse receipt, log 002). Resolved 2026-08-30: the 2025 Business Development Manager application is real and stays in the census, rejected without interview. The separate 2026 opening is inbound with no submission artifact and sits in the opportunity register. See `paper/DEFECTS.md`.
 - The Hog counted in the application-to-interview rate

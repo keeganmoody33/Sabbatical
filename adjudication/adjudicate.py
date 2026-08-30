@@ -5,6 +5,8 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
+from _common import EVENT_EXCLUSIONS, is_excluded_event
+
 ROOT = Path(__file__).resolve().parents[1]
 INTERVIEW_TYPES = {
     "recruiter_screen",
@@ -68,6 +70,18 @@ def main() -> None:
         "jobright.ai|product manager (early career)|c1",
     ]
 
+    # Terminal outcomes corrected after coding, by name and with a reason.
+    # application_id -> (terminal_outcome, terminal_outcome_date, reason)
+    terminal_overrides = {
+        "weave|business-development-manager|c1": (
+            "rejected_no_interview",
+            "2025-07-31",
+            "The interview belonged to a separate opening, so this application was "
+            "declined without one. Reverts to bravo's coding; cursor and bravo "
+            "disagreed on this field and adjudication did not cover it.",
+        ),
+    }
+
     census_rows: list[dict[str, str]] = []
     seen = set()
 
@@ -77,6 +91,13 @@ def main() -> None:
             return
         seen.add(k)
         out = dict(row)
+        override = terminal_overrides.get(out.get("application_id", ""))
+        if override:
+            outcome, outcome_date, _ = override
+            out["terminal_outcome"] = outcome
+            out["terminal_outcome_date"] = outcome_date
+            out["terminal_outcome_precision"] = "exact"
+            decision = "adjudicated_terminal_outcome"
         out["adjudication_source"] = source
         out["adjudication_note"] = decision
         census_rows.append(out)
@@ -104,6 +125,8 @@ def main() -> None:
     for coder in ("cursor", "bravo"):
         for event in load_events(ROOT / f"coding/{coder}/events__{coder}.csv"):
             if (event.get("event_type") or "") in INTERVIEW_TYPES:
+                if is_excluded_event(event):
+                    continue
                 if event.get("application_id") in census_ids:
                     interviewed.add(event["application_id"])
 
@@ -136,6 +159,21 @@ Coders compared: bravo and cursor. Alpha CSVs were not present when this pass ra
 
 1. The Hog GTM Engineer. Bravo: opportunity. Cursor: application. Adjudicated **opportunity**. No ATS or sent-mail submission artifact. Interview plus take-home do not mint an application row.
 2. BX Studio unspecified. Bravo: application. Cursor: opportunity. Adjudicated **opportunity**. Video forwarded to a hiring manager is not a submission.
+3. Weave GTM Engineer, 2026. Adjudicated **opportunity**, and separated from the 2025 Business Development Manager application it had been attached to. Same rule as The Hog: an interview with no submission artifact does not mint an application row. See the corrections below.
+
+## Corrections applied after coding
+
+These are named changes to coder output, applied here rather than by editing the coder CSVs. Both were disclosed in `knowledge/protocol.md` and `paper/DEFECTS.md` on the date they were made.
+
+Events excluded from the interview derivation:
+
+{chr(10).join(f"- `{a}`, `{t}` dated {d}. {reason}" for a, t, d, reason in EVENT_EXCLUSIONS)}
+
+Terminal outcomes corrected:
+
+{chr(10).join(f"- `{a}` set to `{v[0]}` dated {v[1]}. {v[2]}" for a, v in terminal_overrides.items())}
+
+The Weave role title, the counterparty, and the inbound origination are author recall, not artifact. The corpus establishes only that an interview at Weave happened and was declined on 2026-08-18, from `gth_0339a17e3860d167`. Under `prompts/extraction.md` rule 8 recall is not recorded as evidence, so none of those three is written into a structured field.
 
 ## Alias merges (same process, different keys)
 
@@ -150,7 +188,7 @@ From cursor: Agroknow North America Sales; Classet Head of GTM; jobmail.io Growt
 
 ## Opportunity, not census
 
-WorkOS (TopHire). Mercor Growth Strategist / GTM Engineer contract path. ThriveLink referral. Dexian. Luzmo. Glytec. SmartMode AI. Crossing Hurdles / Montauk Capital. micro1 client submissions. Pinterest June 2025 referral-accept messages.
+WorkOS (TopHire). Mercor Growth Strategist / GTM Engineer contract path. ThriveLink referral. Dexian. Luzmo. Glytec. SmartMode AI. Crossing Hurdles / Montauk Capital. micro1 client submissions. Pinterest June 2025 referral-accept messages. Weave GTM Engineer 2026, inbound, interview evidenced by the 2026-08-18 decline with no submission artifact.
 
 ## Adjudicated application census
 
