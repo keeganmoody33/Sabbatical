@@ -5,6 +5,11 @@ Does not recode Gmail. Interviewed-ness is not stored. Relative LinkedIn
 stamps stay relative_display with date_capture 2026-08-29. LinkedIn
 submission_channel is unknown because the applied list does not label
 Easy Apply versus external ATS.
+
+A platform row that matches more than one Freeze 1 row is emitted with
+match_status ambiguous and its candidate parent ids, and held out of the
+full census. Counting an unresolved possible duplicate as net-new would
+inflate the census with nothing downstream to correct it by.
 """
 
 from __future__ import annotations
@@ -458,7 +463,7 @@ def dedupe_platform(apps: list[dict[str, str]]) -> list[dict[str, str]]:
 
 def match_freeze1(
     platform_apps: list[dict[str, str]], freeze1: list[dict[str, str]]
-) -> tuple[list[dict[str, str]], list[dict[str, str]]]:
+) -> tuple[list[dict[str, str]], list[dict[str, str]], list[dict[str, str]]]:
     census = [r for r in freeze1 if r.get("register") == "application"]
     opportunities = [r for r in freeze1 if r.get("register") == "opportunity"]
     by_cr: dict[tuple[str, str], list[dict[str, str]]] = {}
@@ -470,6 +475,7 @@ def match_freeze1(
 
     overlaps: list[dict[str, str]] = []
     novel: list[dict[str, str]] = []
+    ambiguous: list[dict[str, str]] = []
     for row in platform_apps:
         if row.get("register") != "application":
             key = role_key(row["company_canonical"], row["role_as_listed"])
@@ -491,6 +497,22 @@ def match_freeze1(
                 ]
                 if len(equivalent) == 1:
                     parents = equivalent
+                elif equivalent:
+                    # Refusing to guess is only conservative if the refusal is
+                    # recorded. Emitting these as net_new would count a possible
+                    # duplicate as a new application, with nothing downstream to
+                    # correct it by. They are held out of the census instead.
+                    ambiguous.append(
+                        {
+                            **row,
+                            "match_status": "ambiguous",
+                            "parent_id": "",
+                            "candidate_parent_ids": ";".join(
+                                p["application_id"] for p in equivalent
+                            ),
+                        }
+                    )
+                    continue
         if parents:
             parent = parents[0]
             overlaps.append(
@@ -504,7 +526,7 @@ def match_freeze1(
             )
         else:
             novel.append({**row, "match_status": "net_new"})
-    return overlaps, novel
+    return overlaps, novel, ambiguous
 
 
 def main() -> None:
@@ -515,15 +537,23 @@ def main() -> None:
     apps = dedupe_platform(apps)
     freeze1 = load_csv(ROOT / "adjudication" / "applications__adjudicated.csv")
     freeze1_apps = [r for r in freeze1 if r.get("register") == "application"]
-    overlaps, novel = match_freeze1(apps, freeze1)
+    overlaps, novel, ambiguous = match_freeze1(apps, freeze1)
 
     PLATFORM.mkdir(parents=True, exist_ok=True)
     write_csv(PLATFORM / "applications__freeze2.csv", APP_FIELDS, apps)
     write_csv(PLATFORM / "exclusions__freeze2.csv", EXCL_FIELDS, excl)
 
-    match_fields = APP_FIELDS + ["match_status", "parent_id", "parent_register", "parent_evidence_class"]
-    write_csv(OUT / "platform_match.csv", match_fields, overlaps + novel)
+    match_fields = APP_FIELDS + [
+        "match_status",
+        "parent_id",
+        "parent_register",
+        "parent_evidence_class",
+        "candidate_parent_ids",
+    ]
+    write_csv(OUT / "platform_match.csv", match_fields, overlaps + novel + ambiguous)
 
+    # Ambiguous rows are recorded above and deliberately excluded here. They may
+    # be duplicates of a Freeze 1 row, so counting them would inflate the census.
     union = list(freeze1_apps)
     for row in novel:
         union.append({**row, "adjudication_source": "freeze2_platform", "adjudication_note": "net_new_platform_log"})
@@ -559,12 +589,27 @@ def main() -> None:
     report.append(f"- Platform exclusions: {len(excl)}")
     report.append(f"- Platform rows overlapping Freeze 1 applications: {sum(1 for r in overlaps if r.get('match_status')=='overlap')}")
     report.append(f"- Net-new platform_log applications: {len(novel)}")
+    report.append(f"- Ambiguous, matched more than one Freeze 1 row, held out of the census: {len(ambiguous)}")
     report.append(f"- Freeze 1 application census: {len(freeze1_apps)}")
     report.append(f"- Full census (Freeze 1 plus net-new): {len(union)}")
     report.append(f"- Interviewed in Freeze 1 (cursor events, application register): {len(interviewed_221)}")
     report.append(f"- Interviewed in full census: {len(interviewed_full)} (platform files carry no interview events)")
     report.append("")
     report.append("Capture recapture was not computed. The LinkedIn file is pages 1 to 10 of an applied list and does not label Easy Apply versus external ATS. LinkedIn submission_channel is therefore unknown.")
+    report.append("")
+    if ambiguous:
+        report.append(
+            f"{len(ambiguous)} platform rows matched more than one Freeze 1 row under token-prefix equivalence. "
+            "The matcher refuses to choose between candidates, so these carry match_status ambiguous in "
+            "platform_match.csv with their candidate parent ids, and they are held out of the full census. "
+            f"The census is {len(union)} with {len(ambiguous)} unresolved, not {len(union) + len(ambiguous)}."
+        )
+    else:
+        report.append(
+            "No platform row matched more than one Freeze 1 row under token-prefix equivalence, so no row is "
+            "ambiguous in this freeze. The status is emitted rather than folded into net-new so that a later run "
+            "cannot count an unresolved possible duplicate as a new application."
+        )
     report.append("")
     report.append("Five platform titles matched Freeze 1 as the same opening: Thomson Reuters AE Tax or Risk, Foursquare AE New Business, UpGuard SDR Manager, Verkada Enterprise Solutions Engineer Atlanta, and Listen Lead GTM Engineer (LinkedIn lists Listen, Freeze 1 uses Listen Labs). They are overlap, not net-new.")
     report.append("")

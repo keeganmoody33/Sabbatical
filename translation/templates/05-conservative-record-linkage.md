@@ -109,13 +109,15 @@ The refusal rule is `ingest_platform.py:491`, a single line, `if len(equivalent)
 
 `{{ALIAS_TABLE}}` is inherently hand-maintained and that is fine. Expect it to grow every time you ingest a new source.
 
-## Where the source implementation stops short
+## Where this template came from, including the part that was wrong
 
-The refusal itself is implemented. `ingest_platform.py:491` declines to match when more than one candidate survives tier 3, which is the hard part and the right call.
+The refusal was always implemented. `ingest_platform.py` declines to match when more than one candidate survives tier 3, which is the hard part and the right call.
 
-What is missing is the record of it. `match_status` takes exactly three values, verified across all 134 rows of `adjudication/platform_match.csv`: `net_new` on 77, `overlap` on 56, `opportunity_or_non_census` on 1. There is no ambiguous status. So a record refused at line 491 falls through to line 506 and is emitted as `net_new`, indistinguishable from a record that genuinely had no counterpart.
+What was missing was the record of it. `match_status` took exactly three values across all 134 rows of `adjudication/platform_match.csv`: `net_new` on 77, `overlap` on 56, `opportunity_or_non_census` on 1. There was no ambiguous status, so a refused record shipped as `net_new`, indistinguishable from one that genuinely had no counterpart. Nobody reading the 298-row census could tell which rows were new and which were unresolved.
 
-The refusal is therefore invisible downstream. Nobody reading the 298-row full census can tell which rows are new and which are unresolved, and the count carries no "of which K unresolved" caveat. That is why the template above adds a fourth status. Add it before you reuse this.
+That is fixed. Ambiguous rows now carry `match_status = ambiguous` and a `candidate_parent_ids` column, and are held out of the census. Zero rows hit the branch on the current corpus, so no published figure moved.
+
+The reason it is worth telling: the gap survived the original build precisely because it was invisible. A refusal that produces no distinguishable output looks exactly like a decision that was never needed. If you implement the refusal, implement its record in the same commit, or you will not find out for a year.
 
 ## What breaks if you skip it
 
