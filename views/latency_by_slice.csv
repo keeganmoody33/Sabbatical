@@ -1,10 +1,10 @@
 dimension,value,n_base,n_responded_substantive,n_responded_any,median_days_substantive,median_days_any,suppressed_because
-role_lane,explicit_gtm_engineering,82,36,43,6,5,
-role_lane,unspecified,35,10,11,8.5,8,
-role_lane,sales_bd_partnerships,23,11,15,4,3,
-role_lane,growth_demand_marketing,21,7,9,6,6,
-role_lane,sales_solutions_engineering,15,5,7,7,7,
-role_lane,revops_gtm_ops_strategy,8,3,6,,3,substantive responders n=3
+role_lane,explicit_gtm_engineering,87,38,45,7,6,
+role_lane,sales_bd_partnerships,26,12,16,4.5,3.5,
+role_lane,unspecified,24,7,8,9,8,
+role_lane,growth_demand_marketing,22,7,9,6,6,
+role_lane,sales_solutions_engineering,16,5,7,7,7,
+role_lane,revops_gtm_ops_strategy,9,3,6,,3,substantive responders n=3
 role_lane,other,7,4,5,,7,substantive responders n=4
 role_lane,product_ai_technical,6,3,4,,,substantive responders n=3; any responders n=4
 month,2026-07,33,11,13,6,3,

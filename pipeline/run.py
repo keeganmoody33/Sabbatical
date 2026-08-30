@@ -71,6 +71,7 @@ STAGES: list[Stage] = [
         owns="The 223-row application census, and the written rule behind every resolved disagreement.",
         outputs=[
             "adjudication/applications__adjudicated.csv",
+            "adjudication/title_backfill.csv",
             "adjudication/ADJUDICATION.md",
         ],
     ),

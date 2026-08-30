@@ -6,6 +6,7 @@ import csv
 from pathlib import Path
 
 from _common import EVENT_EXCLUSIONS, is_excluded_event
+from ingest_platform import norm_company, role_lane as derive_role_lane
 
 ROOT = Path(__file__).resolve().parents[1]
 INTERVIEW_TYPES = {
@@ -34,6 +35,44 @@ def key(row: dict[str, str]) -> str:
     role = (row.get("role_as_listed") or "").strip().lower()
     cycle = (row.get("cycle") or "1").strip() or "1"
     return f"{company}|{role}|c{cycle}"
+
+
+# Platform artifacts that carry a role title. Both are committed inputs, not
+# pipeline outputs, so they are readable at census-build time.
+TITLE_SOURCES = [
+    ("artifacts/platform/linkedin_job_applications_export.csv", "Company", "Role/Title"),
+    ("artifacts/platform/jobright_applications_log.csv", "Company", "Role Applied For"),
+]
+
+
+def platform_titles() -> dict[str, tuple[str, str]]:
+    """Company to (title, source file), for companies with exactly one title.
+
+    A receipt that omits the role is coded `unspecified` and never guessed, per
+    counting rule 8, and that was correct: the Gmail artifact genuinely does not
+    name it. But the platform exports sitting in `artifacts/platform/` DO name
+    it for some of those same companies, and the census was never reading them.
+    A title present in the committed corpus and absent from the census is a gap
+    in this pipeline, not an admitted unknown.
+
+    A company carrying more than one distinct platform title is REFUSED rather
+    than guessed at, on the same rule the record matcher uses: if you cannot
+    state which opening a row is, you cannot name it.
+    """
+    seen: dict[str, set[str]] = {}
+    origin: dict[str, tuple[str, str]] = {}
+    for rel, company_col, title_col in TITLE_SOURCES:
+        path = ROOT / rel
+        if not path.exists():
+            continue
+        for row in load_apps(path):
+            company = norm_company(row.get(company_col, ""))
+            title = (row.get(title_col) or "").strip()
+            if not company or not title:
+                continue
+            seen.setdefault(company, set()).add(title)
+            origin.setdefault(company, (title, path.name))
+    return {c: origin[c] for c, titles in seen.items() if len(titles) == 1}
 
 
 def main() -> None:
@@ -107,6 +146,8 @@ def main() -> None:
         ),
     }
 
+    titles = platform_titles()
+    backfilled: list[dict[str, str]] = []
     census_rows: list[dict[str, str]] = []
     seen = set()
 
@@ -123,6 +164,32 @@ def main() -> None:
             out["terminal_outcome_date"] = outcome_date
             out["terminal_outcome_precision"] = "exact"
             decision = "adjudicated_terminal_outcome"
+        # Backfill a role title from the platform artifacts when the Gmail
+        # receipt omitted one. application_id is NOT regenerated: the events
+        # tables join on it, so a new slug would orphan every event on the row.
+        # The id keeps the slug it was coded with, and role_title_source records
+        # that the title and the id no longer agree.
+        out["role_title_source"] = ""
+        if out.get("role_as_listed") == "unspecified":
+            found = titles.get(norm_company(out.get("company_canonical", "")))
+            if found:
+                title, source_file = found
+                lane, modifier = derive_role_lane(title)
+                out["role_as_listed"] = title
+                out["role_lane"] = lane
+                out["gtm_modifier"] = modifier if lane == "explicit_gtm_engineering" else ""
+                # Corroborated across two artifacts is exactly evidence tier B.
+                out["evidence_tier"] = "B"
+                out["role_title_source"] = source_file
+                out["notes"] = (out.get("notes", "") + f" Role title backfilled from {source_file}; the Gmail receipt omitted it. application_id retains its original slug.").strip()
+                backfilled.append({
+                    "application_id": out["application_id"],
+                    "company_canonical": out["company_canonical"],
+                    "role_as_listed": title,
+                    "role_lane": lane,
+                    "source_file": source_file,
+                })
+                decision = decision + "+title_backfill"
         out["adjudication_source"] = source
         out["adjudication_note"] = decision
         census_rows.append(out)
@@ -139,6 +206,14 @@ def main() -> None:
         add(source_rows[k], source_label, "freeze3_register_reversal_submission_artifact")
 
     out_dir = ROOT / "adjudication"
+    with (out_dir / "title_backfill.csv").open("w", newline="", encoding="utf-8") as handle:
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=["application_id", "company_canonical", "role_as_listed", "role_lane", "source_file"],
+        )
+        writer.writeheader()
+        writer.writerows(sorted(backfilled, key=lambda r: r["application_id"]))
+
     fields = list(census_rows[0].keys())
     path = out_dir / "applications__adjudicated.csv"
     with path.open("w", newline="", encoding="utf-8") as handle:

@@ -44,10 +44,39 @@ count as a checkpoint rather than a census.
 | Coverage breadth | **Split** | 20 companies only in the workbook, 27 only here |
 | Outcome model | **Repository** | GHOSTED is a residual the workbook itself calls overloaded |
 | Interview measurement | **Repository** | 13 derived from events against 334 of 353 UNKNOWN |
-| Origin coverage | **Challenger, but not adoptable** | 353 of 353 against 15 of 221. See below |
+| Origin coverage | **Challenger, but not adoptable** | 353 of 353 against 15 of 223. See below |
+| Unresolved role titles | **Challenger** | It carries 8 unresolved against this census's 40. Eleven are now fixed from this repository's own artifacts |
 | Capture recapture | **Neither** | Still unmeasured, now for a precisely stated reason |
 
 ## 1. Where the challenger wins
+
+### 1.0 It found a gap this pipeline had left open in its own corpus
+
+This is the finding that most deserved to lead and did not in the first version of this file.
+
+The challenger resolves role titles down to **8 unrecoverable rows**. This census carried **40** rows
+at `role_as_listed = unspecified`. Coding them that way was correct under counting rule 8, because
+the Gmail receipt genuinely omits the title and a guess is forbidden.
+
+But the title was not always absent from the corpus. It was absent from the *Gmail* artifact while
+sitting in plain text in `artifacts/platform/jobright_applications_log.csv` and
+`artifacts/platform/linkedin_job_applications_export.csv`, both of which this repository has
+committed. The platform matcher marked those rows `overlap`, kept the Freeze 1 row wholesale, and
+discarded the title the platform row was carrying.
+
+**Eleven of the 40 are resolvable from this repository's own committed artifacts, under strict
+company normalization, with zero ambiguous companies, and every one matches the title the challenger
+gives.** That is not a disagreement between the two datasets. It is this pipeline failing to read
+evidence it already had, and the challenger is what surfaced it.
+
+Applied at Freeze 3.1: unspecified role lanes fall from 36 to 25, and `explicit_gtm_engineering`
+gains 5 rows. `application_id` is deliberately not regenerated, because the events tables join on it
+and a new slug would orphan every event on the row. Audit trail in
+`adjudication/title_backfill.csv`.
+
+The remaining 29 split three ways: 19 the challenger resolves from evidence outside this corpus
+(contemporaneous job newsletters, LinkedIn job recommendations, archived listings), 6 it cannot
+resolve either, and 4 whose companies it does not hold. The 19 are addressed in section 3.1.
 
 ### 1.1 The LinkedIn formal export is the artifact stop condition 3 was waiting for
 
@@ -175,6 +204,25 @@ carries the derivation in code. It also publishes the weakness of that set hones
 independently found 10 of the 13, and event-level agreement is unmeasured.
 
 Thirteen measured beats nineteen estimated, and the challenger's own defect register agrees.
+
+## 3.1 The 19 title resolutions that rest on outside evidence
+
+Beyond the 11 above, the challenger resolves 19 more titles from sources this corpus does not hold.
+Its stated routes are specific and checkable in principle: "a contemporaneous job newsletter", "a
+same-period LinkedIn job recommendation", "an archived contemporaneous job listing".
+
+These are not adopted, and the reason is a distinction rather than a doubt. Each establishes **that
+the company had an opening by that name in that period**. None establishes **which opening the
+application was for**. A company running two openings makes the inference wrong without anything in
+the data showing it. The eleven adopted above do not have this problem: a platform applied-list row
+is a record of a specific submission, not of a posting that existed nearby.
+
+One labeling defect is worth recording, because it is the kind of thing that makes a good workbook
+look worse than it is. Eight rows carry `Role Title Resolution = "Exact title present in source
+evidence"` while their own `Notes` say the role was absent or unresolved. Reading the notes resolves
+it: each names a Jobright or LinkedIn source, so the title came from the platform log and the Gmail
+receipt is what omitted it. The finding is right and the label is wrong. Those eight are a subset of
+the eleven this repository has now adopted from its own copies of those same platform files.
 
 ## 3. Origin: the challenger has it, and it still cannot be adopted
 

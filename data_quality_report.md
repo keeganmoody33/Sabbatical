@@ -23,8 +23,8 @@ Every table the pipeline reads or writes, with its row count and the date range 
 | `coding/cursor/exclusions__cursor.csv` | 45 | 9 | 2025-04-11 to 2026-08-21 (45 of 45 parse) |
 | `coding/platform/applications__freeze2.csv` | 157 | 28 | 2025-06-14 to 2026-08-22 (142 of 157 parse) |
 | `coding/platform/exclusions__freeze2.csv` | 1 | 9 | no parseable dates |
-| `adjudication/applications__adjudicated.csv` | 223 | 30 | 2025-06-11 to 2026-08-24 (223 of 223 parse) |
-| `adjudication/applications__full_census.csv` | 317 | 30 | 2025-06-11 to 2026-08-24 (311 of 317 parse) |
+| `adjudication/applications__adjudicated.csv` | 223 | 31 | 2025-06-11 to 2026-08-24 (223 of 223 parse) |
+| `adjudication/applications__full_census.csv` | 317 | 31 | 2025-06-11 to 2026-08-24 (311 of 317 parse) |
 | `adjudication/platform_match.csv` | 157 | 33 | not date-keyed |
 | `adjudication/latency__by_application.csv` | 197 | 11 | 2025-06-11 to 2026-08-22 (197 of 197 parse) |
 
@@ -41,9 +41,9 @@ coder omission, an admitted unknown is a fact about the artifact.
 | field | empty | share empty | admitted unknown |
 |---|---|---|---|
 | `underlying_employer` | 217 | 97.3 percent | 4 |
-| `role_as_listed` | 0 | 0.0 percent | 40 |
-| `role_lane` | 0 | 0.0 percent | 36 |
-| `gtm_modifier` | 136 | 61.0 percent | 0 |
+| `role_as_listed` | 0 | 0.0 percent | 29 |
+| `role_lane` | 0 | 0.0 percent | 25 |
+| `gtm_modifier` | 131 | 58.7 percent | 0 |
 | `date_capture` | 223 | 100.0 percent | 0 |
 | `date_evidence_anchor` | 196 | 87.9 percent | 0 |
 | `discovery_source` | 0 | 0.0 percent | 208 |
@@ -54,15 +54,16 @@ coder omission, an admitted unknown is a fact about the artifact.
 | `location` | 223 | 100.0 percent | 0 |
 | `level_as_listed` | 191 | 85.7 percent | 0 |
 | `notes` | 87 | 39.0 percent | 0 |
+| `role_title_source` | 212 | 95.1 percent | 0 |
 
 ### Full census, n = 298
 
 | field | empty | share empty | admitted unknown |
 |---|---|---|---|
 | `underlying_employer` | 311 | 98.1 percent | 4 |
-| `role_as_listed` | 0 | 0.0 percent | 40 |
-| `role_lane` | 0 | 0.0 percent | 36 |
-| `gtm_modifier` | 198 | 62.5 percent | 0 |
+| `role_as_listed` | 0 | 0.0 percent | 29 |
+| `role_lane` | 0 | 0.0 percent | 25 |
+| `gtm_modifier` | 193 | 60.9 percent | 0 |
 | `date_applied` | 6 | 1.9 percent | 0 |
 | `date_capture` | 229 | 72.2 percent | 0 |
 | `date_evidence_anchor` | 290 | 91.5 percent | 0 |
@@ -75,6 +76,7 @@ coder omission, an admitted unknown is a fact about the artifact.
 | `location` | 305 | 96.2 percent | 0 |
 | `level_as_listed` | 279 | 88.0 percent | 0 |
 | `notes` | 87 | 27.4 percent | 0 |
+| `role_title_source` | 306 | 96.5 percent | 0 |
 
 ## 3. Controlled vocabulary violations
 
@@ -107,7 +109,7 @@ by elapsed time, so the licensing condition is verified per pair rather than ass
 | company | role | row A | row B | gap | second cycle licensed? |
 |---|---|---|---|---|---|
 | attentive | gtm engineer | `attentive\|gtm-engineer\|c2` | `attentive\|gtm-engineer\|c1` | 23 days | licensed by `rejected_no_interview` on 2026-07-07 |
-| fossa | unspecified | `fossa\|unspecified\|c1` | `fossa\|unspecified\|c2` | 29 days | licensed by `rejected_no_interview` on 2026-05-20 |
+| fossa | gtm engineer | `fossa\|unspecified\|c1` | `fossa\|unspecified\|c2` | 29 days | licensed by `rejected_no_interview` on 2026-05-20 |
 
 Unlicensed pairs: 0. Every beyond-window pair carries a terminal outcome on the earlier row, dated before the later submission.
 
@@ -163,7 +165,7 @@ Which condition each Partial row failed. A row can fail more than one, so these 
 | condition | rows failing | share of census |
 |---|---|---|
 | `exact_date` | 27 | 12.1 percent |
-| `named_role` | 40 | 17.9 percent |
+| `named_role` | 29 | 13.0 percent |
 | `known_origin` | 208 | 93.3 percent |
 | `observable_outcome` | 1 | 0.4 percent |
 

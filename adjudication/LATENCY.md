@@ -61,10 +61,10 @@ Median days to any response, `employer_ack` included, so the cells are as popula
 
 | role_lane | n | median days |
 |---|---|---|
-| explicit_gtm_engineering | 43 | 5 |
-| sales_bd_partnerships | 15 | 3 |
-| unspecified | 11 | 8 |
+| explicit_gtm_engineering | 45 | 6 |
+| sales_bd_partnerships | 16 | 3.5 |
 | growth_demand_marketing | 9 | 6 |
+| unspecified | 8 | 8 |
 | sales_solutions_engineering | 7 | 7 |
 | revops_gtm_ops_strategy | 6 | 3 |
 | other | 5 | 7 |
