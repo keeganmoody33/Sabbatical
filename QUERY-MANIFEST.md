@@ -32,12 +32,14 @@ Account for logs 030–036: keeganmoody33@gmail.com after the personal mailbox w
 | Q10 | Gmail keeganmoody33 | same | full window | **blocked**, Q3 already covered most of this set on that account | 163 | 014–017 |
 | Kiln | Gmail keeganmoody33 | thekiln.com, Zanella, Spychalski, Powell, GTME Intro | full window | **done**, 0 Kiln process mail | 0 process | 036 |
 | Kiln | LinkedIn screenshots | GTME Intro thread, user-supplied | 2026-03-04 | transcribed, mailbox hashed | 1 thread | linkedin/gtme-intro-the-kiln.md |
+| Q11 | Gmail 33@lecturesfrom | offer language (`pleased to offer`, `offer letter`, `compensation package`, `job offer`, `background check`, `reference check`, `start date`, subject:offer) including spam and trash | full window | **done** on this mailbox, no employment offer letter | 0 employment offers | 059 |
+| Q11 | Gmail keeganmoody33 | same offer language including spam and trash | full window | **not run this pass**. Authenticated MCP mailbox was 33@lecturesfrom.com. Personal Q9 (receipt language, not offer language) was exhausted in log 032 | n/a | 032, 059 |
 
 ## Stop rule
 
 Retrieval is exhaustive when Q1 through Q9 all return no further page token on **both** mailboxes, and when a final pass on any new sender domains also returns nothing new.
 
-That stop rule is **met for Q1 through Q9 on both mailboxes**. Personal primary calendar is swept. Remaining unmet census stops: LinkedIn pages beyond 10 and ATS channel labels, Ladders, YC, [S1] and [S2] workbooks, Talentpluto and Jobgether unnamed clients.
+That stop rule is **met for Q1 through Q9 on both mailboxes**. Personal primary calendar is swept. Q11 offer language is **done on 33@lecturesfrom.com** and **not closed on keeganmoody33@gmail.com**. Remaining unmet census stops: LinkedIn pages beyond 10 and ATS channel labels, Ladders, YC, [S1] and [S2] workbooks, Talentpluto and Jobgether unnamed clients.
 
 ## Running total
 

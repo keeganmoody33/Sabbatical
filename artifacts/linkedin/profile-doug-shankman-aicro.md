@@ -23,9 +23,9 @@ Banner: AICRO logo. Text: AI EXECUTION. CRO INTELLIGENCE. FROM PIPELINE TO REVEN
 
 ## What this is used for
 
-Later identity of Doug Shankman. Headline on 2026-08-30: Founder and CEO at AICRO. Overlay row is `unknown|cro-idea-doug-shankman|c1`. Calendar meeting 2025-10-27 (`cal_c20ca257f9bdfd6c`). Informal interview plus CRO idea.
+Later identity of Doug Shankman. Headline on 2026-08-30: Founder and CEO at AICRO. Overlay row is `renoir|informal-cro-idea|c1`. Calendar meeting 2025-10-27 (`cal_c20ca257f9bdfd6c`). Informal interview plus CRO idea.
 
-Subject correction 2026-08-30: the conversation happened **before he created AICRO**. The screenshot is not the employer at the meeting date. `company_canonical` on the overlay stays `unknown`.
+Subject correction 2026-08-30: the conversation happened **before he created AICRO**. The screenshot is not the employer at the meeting date. Log 044 already keyed `company_canonical = Renoir` (`renoir.one`). AICRO stays in notes as later identity. `unknown` is reserved for genuinely unresolved keys.
 
 ## What this does not do
 
@@ -34,4 +34,4 @@ It does not make the 2025-10-27 meeting an AICRO application or an AICRO intervi
 - `aicro|gtm-engineering-team-lead|c1` (email 2026-02-06)
 - `aicro|gtm-engineer|c1` (LinkedIn applied list)
 
-Overlay stays opportunity, outside 14/298. See log 058.
+Overlay stays opportunity, outside 14/298. See logs 058 and 059.

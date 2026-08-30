@@ -42,3 +42,7 @@ Coder `confirmed` records recall and origins after Freeze 1 through Freeze 4. It
 - Retrieval: `logs/retrieval-log-056.md`
 
 Filter the origins CSV. Do not union opportunity, employment, consulting, or communal rows into the application census.
+
+## Package vs this freeze
+
+`adjudication/package_vs_census_delta.csv` is the bidirectional set comparison of package 321/325 against this freeze 298. Log 059. Do not adopt 321 or 325.

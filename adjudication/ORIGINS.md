@@ -31,7 +31,7 @@ Two different questions were being mixed.
 
 That is why Mixmax, Mercor contract, Pin, The Hog, Glytec, Opsin, Hotglue, The Kiln, Adam, Doug, Kivira, BCOFA, Jorge, and Kellen were not poured into 298. Adding them there would make the application-to-interview rate uninterpretable.
 
-We also did not overwrite frozen `discovery_source` values. GTM Cafe is not in this tree's codebook vocabulary (`newsletter_community` is the closest slot). Origins live in this overlay so Freeze 1 and Freeze 2 stay reproducible. Adam's employer at meeting date is Stellar Growth (screenshot). Doug's employer at meeting date stays unknown because the conversation predates AICRO.
+We also did not overwrite frozen `discovery_source` values. GTM Cafe is not in this tree's codebook vocabulary (`newsletter_community` is the closest slot). Origins live in this overlay so Freeze 1 and Freeze 2 stay reproducible. Adam's employer at meeting date is Stellar Growth (screenshot). Doug's employer at meeting date is Renoir (`renoir.one`, log 044). AICRO is later identity.
 
 Names the subject supplied that are absent from mail and calendar titles (Eddie, Chris, Harry, Giorgio as interviewer, Colossus phone round, Dagster phone) are logged as memory. They do not mint extra artifact rounds.
 
@@ -63,7 +63,7 @@ Already in Freeze 3 or cursor as `register = opportunity`, interviews evidenced:
 Overlay, subject-confirmed:
 
 - Adam Andrewjeski, founder of Stellar Growth (informal, Clay Cafe / GTM Cafe)
-- Doug Shankman (informal plus CRO idea, GTM Cafe). Conversation 2025-10-27 predates AICRO. Screenshot is later identity. Distinct from the two AICRO application rows in the 298.
+- Doug Shankman (informal plus CRO idea, GTM Cafe). Conversation 2025-10-27 predates AICRO. Employer at meeting date is Renoir. Screenshot is later identity. Distinct from the two AICRO application rows in the 298.
 
 ### C. Employment and consulting (made money or tried to; not search applications)
 
@@ -127,9 +127,9 @@ Memory `tok_` values on overlay events are stable recall pointers. They are not 
 | Kivira.health | three month GTM consulting | Josh Pappas | no | no | cal_cc9f94b847eb65aa |
 | BCOFA | unpaid, fizzled | Josh Pappas; prior engagements before window | no | no | calendar 2026-03-06 in freeze3 exclusions |
 
-Search applications in the 298 did not produce these paid engagements. The paper can say that without mixing Mixmax or Mercor contract into 14/298.
+The largest paid outcomes came through channels the applications instrument cannot treat as 14/298. Mercor marketplace evaluator and expert receipts sit in the 298 without interviews and did not convert. The Mercor hourly contract is a separate opportunity process and is the one that made money. TrueBuilt applied (in the 298), then rescoped to a project quote; that quote is not paid and is not an interview.
 
-Mercor marketplace evaluator and expert receipts remain in the 298 without interviews. They are a different process from the Growth Strategist / GTM Engineer hourly contract.
+Do not write "none of the money is in 298." Mercor marketplace rows are in 298. Do not mix Mixmax or the Mercor contract into 14/298.
 
 ## Same person, later company (do not merge)
 
@@ -139,7 +139,7 @@ AICRO applications in the 298 are not the 2025-10-27 Doug conversation. That mee
 |---|---|---|---|---|
 | aicro\|gtm-engineering-team-lead\|c1 | application | yes | no | Email 2026-02-06 |
 | aicro\|gtm-engineer\|c1 | application | yes | no | LinkedIn applied list |
-| unknown\|cro-idea-doug-shankman\|c1 | overlay opportunity | no | no | Doug Shankman 2025-10-27. Screenshot tok_53b6c592660c is later identity |
+| renoir\|informal-cro-idea\|c1 | overlay opportunity | no | no | Doug Shankman 2025-10-27 at Renoir. Screenshot tok_53b6c592660c is later identity (AICRO) |
 
 Stellar Growth vs Stellar Substitute are different employers. Overlay `stellar-growth|informal|c1` is Adam. `stellar-substitute|unspecified|c1` is a Frontline substitute notice in the 298.
 
@@ -153,7 +153,8 @@ Stellar Growth vs Stellar Substitute are different employers. Overlay `stellar-g
 | Memory overlay applications | `coding/confirmed/applications__confirmed.csv` |
 | Memory overlay events | `coding/confirmed/events__confirmed.csv` |
 | This writeup | `adjudication/ORIGINS.md` |
-| Retrieval | `logs/retrieval-log-058.md` (Doug predates AICRO; headlines), `057.md`, `056.md`, `055.md` |
+| Retrieval | `logs/retrieval-log-059.md` (red-team contact), `058.md` (Doug predates AICRO; headlines), `057.md`, `056.md`, `055.md` |
+| 298 vs package 321/325 | `adjudication/package_vs_census_delta.csv` |
 | Freeze 4 census lock | `adjudication/FREEZE-4.md` |
 | Adam company screenshot | `artifacts/linkedin/profile-adam-andrewjeski-stellar-growth.md` |
 | Doug company screenshot | `artifacts/linkedin/profile-doug-shankman-aicro.md` |
@@ -164,9 +165,10 @@ Stellar Growth vs Stellar Substitute are different employers. Overlay `stellar-g
 
 - Recode Freeze 1 or Freeze 2 CSVs to plant GTM Cafe on `discovery_source`
 - Put overlay opportunity or employment interviews into the 14
-- Invent a company for Adam or Doug when a screenshot is absent, or plant AICRO as Doug's employer on 2025-10-27. The screenshot is later identity.
-- Merge Doug's overlay into `aicro|gtm-engineer|c1` or `aicro|gtm-engineering-team-lead|c1`. That would move 14.
+- Invent a company for Adam, or plant AICRO as Doug's employer on 2025-10-27. The screenshot is later identity. Log 044 resolved Doug to Renoir. Do not put `unknown` back in the overlay key.
+- Merge Doug's overlay into `aicro|gtm-engineer|c1` or `aicro|gtm-engineering-team-lead|c1`. That would move 14. The two AICRO rows are two cycles (email 2026-02-06 and LinkedIn 2026-05-25), not one row plus its twin.
 - Merge Adam's Stellar Growth overlay into `stellar-substitute|unspecified|c1`
 - Adopt package 321 or 325 as this freeze's census
 - Mint the twelve held LinkedIn rows without a per-row application confirmation
 - Print a combined conversation count as if it were the application-to-interview rate
+- Publish Mixmax, Mercor, Mobb, Kivira.health, or BCOFA in the paper without Keegan's naming pass. Working record keeps names. Package log 027 flags Mixmax for a disputed-invoice sensitivity that is not a naming question.

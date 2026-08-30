@@ -6,16 +6,16 @@ No dashes are used as punctuation in this file.
 
 ## Headlines
 
-Sources: `adjudication/applications__full_census.csv`, freeze events, `adjudication/ORIGINS.md`. Log 058.
+Sources: `adjudication/applications__full_census.csv`, freeze events, `adjudication/ORIGINS.md`. Logs 058 and 059. Unit is **298 applications**, not 298 companies. The package register spans 298 companies. Those are different quantities.
 
-- Applications: **298**. Freeze 1 was 221. Freeze 2 added 77 `platform_log` rows. Freeze 3 and Freeze 4 added 0.
-- Interviewed applications: **14**. Rate **14/298**. On Freeze 1 only: **14/221**. The 77 platform rows added zero interviews.
-- The 14: Beautiful.ai, Dagster Labs, Every.to, Great Question, HartleyCo, Hologram (two rounds), Hypergen, jobmail.io, Orchestry, Pearl, PhrasIQ, RevSpring, TestGorilla, Weave.
-- Offers from the 298: **0**. No `offer_accepted` or `offer_declined` on census rows. The cursor `offer` event is Mercor contract, opportunity, not an application.
-- Application-to-interview rate is the response statistic this freeze can defend. A single reply percent is not stored. Freeze 1 coded closes on the 221: 73 `rejected_no_interview`, 6 `rejected_after_interview`, 18 `role_paused_or_closed`, 124 `still_open`. The 77 platform rows mostly have no terminal outcome yet.
-- Money (none of this is in 298 or in the 14): Mixmax two-week trial then three-month contractor GTM; Mercor hourly contract; Mobb employment; Kivira.health three-month GTM. BCOFA unpaid.
+- Applications: **298**. Freeze 1 was 221. Freeze 2 added 77 `platform_log` rows. Freeze 3 and Freeze 4 added 0. Package ledgers 321 and 325 are a different assembly. Bidirectional set comparison: `adjudication/package_vs_census_delta.csv`.
+- Interviewed applications: **14**. Rate **14/298**. On Freeze 1 only: **14/221**. The 77 net-new platform_log rows carry no interview-set events. That is not a claim that LinkedIn produced no conversations.
+- The 14: Beautiful.ai, Dagster Labs, Every.to, Great Question, HartleyCo, Hologram (two rounds), Hypergen, jobmail.io, Orchestry, Pearl, PhrasIQ, RevSpring, TestGorilla, Weave. Glytec is not in it. Dagster, Hypergen, and Orchestry are. Opsin is opportunity, not in it. Numerator is derived from freeze events after the Freeze 3 calendar sweep, not from package log 049.
+- Offers from the 298: **0** coded `offer_accepted` or `offer_declined`. The cursor `offer` event is Mercor contract, opportunity, not an application. Q11 offer-language family on 33@lecturesfrom.com (`in:anywhere`, trash included) found no employment offer letter. Personal mailbox keeganmoody33 was not the authenticated mailbox for that pass, so the zero on that mailbox is still a coded-outcome claim, not a closed offer-language sweep.
+- Application-to-interview rate is the response statistic this freeze can defend. A single reply percent is not stored. Freeze 1 coded closes on the 221: 73 `rejected_no_interview`, 6 `rejected_after_interview`, 18 `role_paused_or_closed`, 124 `still_open`. Amendment A2 (`no_response` with an outbound-anchor) was not applied on this freeze. The 124 are not a ghosting count. The 77 platform rows mostly have no terminal outcome yet.
+- Money: Mixmax two-week trial then three-month contractor GTM; Mercor hourly contract; Mobb employment; Kivira.health three-month GTM. BCOFA unpaid. None of those paid paths sit in the 14. Mercor marketplace evaluator receipts sit in the 298 and did not convert. TrueBuilt applied, then a project quote, not paid. Names in this working record still need a publication naming pass.
 
-What stood out: the applications instrument did not see the paid work. Volume after Freeze 2 did not add interviews. Community channels (GTM Cafe, GTM Engineer School) produced interviews and money without ATS receipts. Doug 2025-10-27 predates AICRO.
+What stood out: the largest paid outcomes came through channels the applications instrument cannot treat as 14/298. Mercor marketplace rows are in 298 without conversion. Volume after Freeze 2 did not add interview-set events on the 77. Community channels (GTM Cafe, GTM Engineer School) produced interviews and money without ATS receipts. Doug 2025-10-27 is Renoir, and predates AICRO.
 
 ## Search coverage (measured, not a census)
 
@@ -23,7 +23,7 @@ Harvest coverage of the frozen corpus, 2026-08-29:
 
 - Gmail keeganmoody33@gmail.com, logs 001 to 021: 994 threads. Queries Q1 through Q5, Q3, Q4 exhausted. Q7 page 1 captured in Freeze 1.
 - Gmail keeganmoody33@gmail.com, logs 030 to 036: Q7 re-run from start exhausted (195 unique threads). Q6, Q9, and Q3b exhausted. Pressure-test names in log 034. The Kiln in log 036.
-- Gmail 33@lecturesfrom.com, logs 022 to 029: 177 threads. Q6, Q7, Q3b, Q9, Q10 exhausted on this mailbox. Almost none were employment ATS receipts.
+- Gmail 33@lecturesfrom.com, logs 022 to 029: 177 threads. Q6, Q7, Q3b, Q9, Q10 exhausted on this mailbox. Almost none were employment ATS receipts. Q11 offer language, log 059: no employment offer letter.
 - Calendar 33@lecturesfrom.com: 31 events across five 90-day blocks with no keyword filter.
 - Calendar transferred keegan@lecturesfrom.com: reachable and empty.
 - Calendar keeganmoody33@gmail.com primary: 338 events across five 90-day blocks with no keyword filter. Hidden MCAT PREP and SI CHM222 calendars were listed and not swept.
@@ -34,7 +34,7 @@ Harvest coverage of the frozen corpus, 2026-08-29:
 - LinkedIn GTME Intro screenshots (The Kiln): transcribed 2026-08-30 in `artifacts/linkedin/gtme-intro-the-kiln.md`. Not a LinkedIn data download.
 - LinkedIn messages unpacking: Claude analysis of a 2026-08-23 `messages.csv` (5,262 messages, 497 conversations claimed). 54 job-related threads plus 20 uncertain, matched in `adjudication/linkedin_dm_match.csv`. Raw `messages.csv` and `Job Applications.csv` are still absent. See Freeze 4.
 
-Stop conditions: see `artifacts/STOP-CONDITIONS.md`. Personal Gmail Q6, Q7, Q3b, and Q9 are exhausted. Personal primary calendar is swept.
+Stop conditions: see `artifacts/STOP-CONDITIONS.md`. Personal Gmail Q6, Q7, Q3b, and Q9 are exhausted. Personal primary calendar is swept. Q11 offer language is closed on 33@lecturesfrom.com and open on keeganmoody33@gmail.com.
 
 ## Completeness
 
@@ -121,7 +121,7 @@ Pressure-test names (origin, what happened, interviewed). Origins tagged memory 
 - Pin: Erica Stacy Tarwater 2025-06-30, Conor Kline 2025-07-07, then rejection. No ATS receipt. User recalled Erika. Mail uses Erica. GTM Cafe origin is memory. **Yes, opportunity, outside the 14.**
 - Mercor contract: two interviews. Claire 2026-08-14, Daniel Luo 2026-08-17. Inbound does not change that count. Later Claire meetings 08-18 and 08-25 are not additional interviews. Instant Work Offer 2026-08-20, contract 08-21. Separate Mercor marketplace receipts stay in the 298 without interviews. **Yes, opportunity, outside the 14.**
 - The Kiln: LinkedIn GTME Intro on 2026-03-04. Giorgio Zanella introduced Keegan to co-founders Patrick Spychalski and Mathias Powell. Subject: I interviewed with Patrick. It happened. Artifact freeze3 e2. Giorgio as interviewer is memory (`tok_8c8acbc92d3c`). **Yes, opportunity, outside the 14.**
-- Doug Shankman: calendar 2025-10-27, 15 min, workshop connect brainstorm. Informal interview plus CRO idea. Conversation predates AICRO. LinkedIn screenshot `tok_53b6c592660c` is later identity. Overlay `unknown|cro-idea-doug-shankman|c1`. Distinct from AICRO rows in the 298. **Meeting happened. Overlay opportunity. Not in the 14.**
+- Doug Shankman: calendar 2025-10-27, 15 min, workshop connect brainstorm. Informal interview plus CRO idea. Conversation predates AICRO. Employer at meeting date is Renoir (`renoir.one`, log 044). LinkedIn screenshot `tok_53b6c592660c` is later identity. Overlay `renoir|informal-cro-idea|c1`. Distinct from AICRO rows in the 298 (email February 2026 and LinkedIn May 2026, two cycles). **Meeting happened. Overlay opportunity. Not in the 14.**
 - Jorge Macias / GTM-engineering.io: recurring calendar from 2025-07-04. GTM Engineering School TA, mentorship. **No. Communal. Not a job opportunity.**
 - BCOFA: GTM strategy with Dr. Blaney 2026-03-06. Fizzled on budget. Josh Pappas is not in this tree's census files. Origins before the window stay outside harvest. **No. Consulting.**
 - Adam Andrewjeski: calendar 2025-06-18. Calendly note names Clay Cafe Slack. Founder of Stellar Growth (LinkedIn screenshot `tok_155d133e690a`). Overlay `stellar-growth|informal|c1`. Distinct from stellar-substitute in the 298. **Meeting happened. Overlay opportunity. Not in the 14.**
@@ -143,7 +143,7 @@ Jobright's four rows that a package log would add to reach a higher ledger (Axon
 
 A LinkedIn messages analysis arrived 2026-08-30. It is a Claude coding of `messages.csv`, not the export. Independent match of 54 job-related threads and 20 uncertain threads: nine already in the 298, six already opportunity, one held application candidate (AnyInt AI), the rest exclusion, unidentifiable, or held opportunity. No `application_id` added. The Kiln Giorgio DM does not mint a second artifact interview. Overlay logs Giorgio as a memory interviewer. Hotglue is missing from the 54. Pin is missing from the 54.
 
-VERIFY Part A is `logs/retrieval-log-052.md`. Ingest completion is `logs/retrieval-log-053.md`. Messages unpacking is `logs/retrieval-log-054.md`. Pressure-test restatement is `logs/retrieval-log-055.md`. Subject-confirmed overlay is `logs/retrieval-log-056.md` and confirmation pass `logs/retrieval-log-057.md`. Doug predates AICRO and headlines are `logs/retrieval-log-058.md`. Census still 298. Interviewed applications still 14.
+VERIFY Part A is `logs/retrieval-log-052.md`. Ingest completion is `logs/retrieval-log-053.md`. Messages unpacking is `logs/retrieval-log-054.md`. Pressure-test restatement is `logs/retrieval-log-055.md`. Subject-confirmed overlay is `logs/retrieval-log-056.md` and confirmation pass `logs/retrieval-log-057.md`. Doug predates AICRO and headlines are `logs/retrieval-log-058.md`. Red-team contact is `logs/retrieval-log-059.md`. Census still 298. Interviewed applications still 14.
 
 ## How the tally combines
 
@@ -153,9 +153,9 @@ Four scoreboards, kept separate. Full tables and hashed pointers: `adjudication/
 
 A. Artifact applications: 298. Interviewed applications: 14. Rate 14/298.
 
-B. Opportunity conversations outside the 14: Glytec, The Hog, Pin, Hotglue, Opsin (James happened), The Kiln (Patrick happened), Mercor contract (Claire then Daniel), WorkOS (slot booked). Overlay adds Adam Andrewjeski (Stellar Growth) and Doug Shankman (person meeting that predates AICRO, not the AICRO rows in the 298).
+B. Opportunity conversations outside the 14: Glytec, The Hog, Pin, Hotglue, Opsin (James happened), The Kiln (Patrick happened), Mercor contract (Claire then Daniel), WorkOS (slot booked). Overlay adds Adam Andrewjeski (Stellar Growth) and Doug Shankman (Renoir, meeting predates AICRO, not the AICRO rows in the 298).
 
-C. Money: Mixmax two-week trial then three-month contractor GTM after Heath interview, Mercor hourly contract, Mobb employment, Kivira.health three month GTM. BCOFA unpaid. None of these sit in 298 or in the 14.
+C. Money: Mixmax two-week trial then three-month contractor GTM after Heath interview, Mercor hourly contract, Mobb employment, Kivira.health three month GTM. BCOFA unpaid. None of those paid paths sit in the 14. Mercor marketplace receipts sit in 298 without conversion. TrueBuilt is in 298 and is not paid.
 
 D. Communal: Jorge Macias, Kellen Casebeer.
 
@@ -171,11 +171,11 @@ Interviewed means at least one event whose `event_type` is in {recruiter_screen,
 - Application-to-interview rate on Freeze 1: 14/221
 - Interviewed applications in the Freeze 2 full census: **14**
 - Application-to-interview rate on the 298: 14/298
-- Platform files carry no interview events. Adding LinkedIn applied-list and Jobright rows does not add interviews.
+- Platform files carry no interview-set events on the 77 net-new rows. Adding LinkedIn applied-list and Jobright rows does not add interviews to the 14. LinkedIn DMs still include conversations (Melavex founder reply, The Hog phone screen, TrueBuilt founder re-engagement). Those do not mint Melavex into the 14, and The Hog is opportunity.
 - Opportunity-register interviews (WorkOS, Mercor contract path, Pin, Hotglue, Opsin, The Kiln, The Hog, Glytec, and other recruiter-only processes) sit outside those denominators
 - Overlay opportunity rows (Adam, Doug) and overlay memory rounds (Opsin Colossus phone, Kiln Giorgio) also sit outside those denominators
 
-The Hog, Pin, Hotglue, Opsin, The Kiln, and Glytec are opportunity, not applications, so those interview events do not enter the 14. Adam is overlay opportunity at Stellar Growth. Doug is overlay opportunity with company unknown (meeting predates AICRO). Neither enters the 14.
+The Hog, Pin, Hotglue, Opsin, The Kiln, and Glytec are opportunity, not applications, so those interview events do not enter the 14. Adam is overlay opportunity at Stellar Growth. Doug is overlay opportunity at Renoir (meeting predates AICRO). Neither enters the 14.
 
 ## Role lane (after kappa)
 
@@ -218,4 +218,8 @@ Zero exact rows in September and October 2025 is not a claim of zero search acti
 - A care-package ledger adopted as this freeze's census
 - Overlay interviews (Adam, Doug, Mixmax, Opsin Colossus phone, Kiln Giorgio) mixed into 14/298
 - Merge a 2025-10-27 Doug conversation into an AICRO application
+- Package 321 or 325 printed as this freeze's census
+- "Zero interviews from Freeze 2" as a claim about LinkedIn conversations rather than about interview-set events on the 77
+- "None of the money is in 298" (Mercor marketplace rows are in 298)
 - A combined conversation count printed as if it replaced the application-to-interview rate
+- Package 101 `no_response` of 200, or 51 of 325 unlaned, printed as this freeze's finding
