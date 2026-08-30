@@ -2,91 +2,129 @@
 file: 02-current.md
 tier: 2 (volatile)
 created: 2026-08-29 13:37 ET
-updated: 2026-08-29 13:37 ET
-review-by: 2026-09-29
-sources: [S1] [S2] [S3] [S4] [S5] [S6]
+updated: 2026-08-30 ET
+review-by: 2026-09-30
+sources: [S1] [S2] [S3] [S4] [S5] [S6] plus this repository's own generated outputs
 -->
 
 # Current state
 
 Everything here is assumed stale until the meta block says otherwise. Delete and regenerate freely.
 
-## Headline numbers, as of the reconciled audit [S1]
+The numbers below are the output of this freeze, reproducible with `make check`. The prior-audit
+figures that used to sit at the top of this file (247 applications, 11 interviews, 4.45 percent) are
+**not findings** and have been moved to the superseded section at the bottom.
 
-| Metric | Value | Note |
+## Headline numbers
+
+| Metric | Value | Source |
 |---|---|---|
-| Confirmed unique applications | 247 | all status Confirmed |
-| High-confidence rows | 244 | 3 Medium |
-| Increment over prior Gmail floor | 84 | 163 to 247 |
-| Applied companies interviewed | 11 | |
-| Application to interview rate | 4.45 percent | 11 of 247 |
-| Census completeness | 88 to 93 percent | estimated, stop conditions unmet |
-| Distinct normalized companies | 229 | |
-| Distinct non-empty title variants | 133 | |
+| Application census, employer-side proof | 221 | `adjudication/applications__adjudicated.csv` |
+| Full census, including platform-only rows | 298 | `adjudication/applications__full_census.csv` |
+| Interviewed applications, derived from events | 13 | `views/funnel_by_role_lane.csv` |
+| Application to interview rate | 13/221 | same |
+| Latency base, exact-dated receipt | 196 | `adjudication/latency__by_application.csv` |
+| Any response | 100/196 | `views/latency_by_slice.csv` |
+| Substantive response | 79/196 | same |
+| No response beyond the receipt | 96/196 | derived |
+| Median days to substantive response, responders only | 7 | `adjudication/LATENCY.md` |
+| Time to first interview | n = 11, median 6 | same |
+| Census completeness | not published | no method available, see below |
 
-## Role lanes, 247 applications [S1 Role Analytics]
+## Role lanes, 221 applications
 
-| Lane | n |
-|---|---|
-| Explicit GTM engineering | 108 |
-| Sales / solutions engineering | 30 |
-| RevOps / GTM ops / strategy | 30 |
-| Growth / demand / marketing | 23 |
-| Sales / BD / partnerships | 22 |
-| Unspecified / unresolved | 15 |
-| Product / AI / technical adjacent | 15 |
-| Other | 4 |
+| Lane | n | Interviewed |
+|---|---|---|
+| explicit_gtm_engineering | 86 | 9 |
+| unspecified | 35 | 2 |
+| sales_bd_partnerships | 28 | 0 |
+| growth_demand_marketing | 22 | 2 |
+| other | 18 | 0 |
+| sales_solutions_engineering | 15 | 0 |
+| revops_gtm_ops_strategy | 9 | 0 |
+| product_ai_technical | 8 | 0 |
 
-GTM title modifiers within the 108: Plain GTM Engineer 78, Founding/senior/lead 10, Growth/marketing 6, Systems/operations 6, Sales/pre-sales 4, AI/product/vertical 4.
+All 13 interviews sit in three lanes. The five lanes covering the other 78 applications produced
+none. Wilson intervals in `views/funnel_by_role_lane.csv`. Descriptive only.
 
-## Monthly distribution, two versions
+## Monthly distribution
 
-Both are in play and they disagree. The paper must show one and explain the other.
+One version now, not two. Exact-dated rows only, n = 195, with 26 non-exact rows excluded and
+reported alongside. From `views/monthly_trend.csv`:
 
-Prior 212-row ledger, By_Month [S2]: 2025-08 1, 2025-09 0, 2025-10 0, 2025-11 2, 2025-12 3, 2026-01 9, 2026-02 11, 2026-03 11, 2026-04 27, 2026-05 20, 2026-06 62, 2026-07 58, 2026-08 8.
+2025-06 5, 2025-07 19, 2025-08 16, 2025-09 0, 2025-10 0, 2025-11 1, 2025-12 2, 2026-01 7,
+2026-02 10, 2026-03 21, 2026-04 26, 2026-05 22, 2026-06 28, 2026-07 33, 2026-08 5.
 
-Reconciled 247-row ledger, parsed from Submitted Date where parseable (154 of 247 rows parse cleanly; the remainder carry relative or unknown stamps and are excluded from this cut): 2025-11 1, 2025-12 2, 2026-01 9, 2026-02 9, 2026-03 17, 2026-04 27, 2026-05 23, 2026-06 29, 2026-07 33, 2026-08 4. [computed from S1 Master Ledger, 2026-08-29]
+The two prior curves that disagreed are both superseded. Zero in September and October 2025 is a
+count of exact-dated rows, not a claim of zero activity.
 
-The shapes differ most in June and July. Until the relative dates are resolved to calendar dates, neither curve is publishable as-is without a stated caveat.
+## Origin: the finding is an absence
 
-## Opportunity attribution register [S1]
+`discovery_source` is `unknown` on 206 of 221 census rows. On the full census, 71 rows know they came
+from LinkedIn and none of them has an observable outcome, because a platform applied-list row carries
+no employer-side artifact and therefore no events. The overlap that could support a channel analysis
+is 15 rows of 221.
 
-Seven non-application opportunities identified. Three converted to paid work: Mixmax, Kivira Health, Mercor. BCOFA did not convert. Weave, TrueBuilt, and Luzmo produced no engagement. None of these count in the 247.
+No origination-channel conversion figure exists anywhere in this repository, and none should be
+produced without new data. `company_stage` does not exist in the schema at all.
 
-Interviews outside the application census: Mixmax (relationship-led, 2 interactions), Mercor (matching pathway, 4 conversations), Weave / WorkWeave (recruiter-initiated, 1 screen).
+See `views/origin_coverage.csv` and `paper/PAPER.md` section 3.2.
 
-The 11 in-census interviews: Fullsteam, Glytec, Beautiful.ai, Orchestry Software, PhrasIQ, Every (Every.to), Pearl, The Hog, confidential client via HartleyCo, Hologram, Great Question.
+## Reliability
+
+- bravo 228 rows, cursor 231, intersection 211
+- role lane percent agreement 0.9621, Cohen's kappa 0.9510
+- include percent agreement 0.9905, kappa 0.7452
+- interview set found by both coders: 10 of 13
+
+The last line is the weakest link in the interview-based findings. Event-level agreement is not among
+the statistics the protocol requires, so it is unmeasured rather than measured and small.
 
 ## Open threads
 
-| Thread | Status | Next action | Since |
-|---|---|---|---|
-| LinkedIn Applied pages 11 and beyond | Unknown whether they exist | Export LinkedIn Job Applications.csv via Settings, Data privacy, Get a copy of your data | [S2] |
-| Full Ladders Applied List | Not exported, only 3 Apply4Me rows captured | Export the Ladders applied list, not just Gmail receipts | [S2] |
-| YC Work at a Startup applied roles | No Gmail artifacts found | Inspect the YC dashboard directly | [S2] |
-| Talentpluto underlying employers | Two 2026-07-12 submissions unresolved | Check the Talentpluto submission dashboard | [S1] |
-| Jobgether intermediary row | LinkedIn shows applied, employer unknown | Pull the Jobgether tracker | [S1] |
-| AnyInt AI, Founding Sales | Recruiter references an application, no receipt | Find the LinkedIn applied row or ATS receipt | [S1] |
-| LinkedIn row with no company name | Cannot form a valid dedupe key | Recover the job URL from the archive | [S3 row 80] |
-| Dedupe key missing cycle component | Two duplicate keys in the ledger | Decide: fix key or document the exception | [S1] |
-| Window disagreement, 08-25 vs 08-27 | Unresolved | Pick one and restate in Methods | [S1] [S2] |
-| 212 to 163 reconciliation | Undocumented | Write the note before publication | [S1] [S2] |
+| Thread | Status | Next action |
+|---|---|---|
+| Ladders applied list | Unmet stop condition | Export the full applied list |
+| YC Work at a Startup dashboard | Unmet stop condition | Inspect the dashboard directly |
+| LinkedIn pages beyond 10, and an Easy Apply label | Partial | LinkedIn data download, Job Applications.csv. The label is what would make capture recapture possible |
+| Personal Gmail Q7 page 2 and beyond, Q6, Q3b, Q9 | Partial | Requires a connector on `keeganmoody33@gmail.com` |
+| Personal Gmail calendar | Not reachable | Same |
+| Talentpluto and Jobgether underlying employers | Partial | Resolve or formally exclude |
+| 212 to 163 reconciliation | Open | Workbooks absent, may be unreconstructable |
+| `jobmail-io|growth-lead|c1` contradiction | Open, found 2026-08-30 | Interview event against a stored `rejected_no_interview`, one coder. Needs the artifact |
+| Codebook exists twice and the copies differ | Open | Resolve to one file, point the other at it |
+| Three rows carry a city in `work_type` | Open by design | Coder files are frozen. Reported by the validator on every run |
 
 ## Paper status
 
-Nothing drafted yet. Structure agreed: Abstract, Introduction, Methods, Results, Discussion, Conclusion, with figures. [S6]
+Drafted. `paper/PAPER.md`, Abstract through Appendix, roughly 3,100 words plus tables.
 
-Figures under consideration, none built:
-- Applications per month, exact-date subset only, with the approximate-date count annotated
-- Source reconciliation waterfall, raw rows to net unique
-- Role lane distribution
-- Evidence tier composition of the census
-- Funnel: applications, interviews, offers, with the opportunity register shown as a separate parallel track
+| File | State |
+|---|---|
+| `paper/PAPER.md` | Draft, awaiting review |
+| `paper/NUMBERS.md` | Every numeric claim mapped to its view |
+| `paper/FIGURES.md` | Six figures specified, none rendered. No plotting library in the environment |
+| `paper/NAMED-COMPANIES.md` | Naming pass as a checklist. **Seven still-open processes need a decision** |
+| `paper/METHODS.md`, `paper/RESULTS.md`, `paper/DEFECTS.md` | Unchanged, still the internal record |
+| `translation/SUBSTACK-DRAFT.md` | Unchanged, the companion methods-translation piece |
 
-## Derivatives planned
+**Nothing has been published.** No Substack post, no LinkedIn post. Both remain downstream of the
+author's approval of the draft.
 
-Substack post and LinkedIn post, both downstream of the paper. Not started. [S6]
+## Superseded, kept so nobody reintroduces them
+
+These are prior-audit figures. They are not the output of this freeze and must not be quoted as
+findings. The full blocklist with reasons is in `paper/RESULTS.md`.
+
+- 247 confirmed unique applications
+- 11 applied companies interviewed
+- 4.45 percent application to interview rate
+- Census completeness of 88 to 93 percent, or 80 to 85 percent
+- The two disagreeing monthly curves from the 212-row and 247-row ledgers
 
 ## Changelog
 
 - 2026-08-29 13:37 ET: created from [S1] [S2] [S3] [S4] [S5] [S6].
+- 2026-08-30 ET: rewritten against this freeze's own output. Prior-audit headline figures moved to
+  Superseded. Monthly curve reduced to the one publishable version. Origin section added. Paper
+  status updated from "nothing drafted" to drafted and awaiting review.
