@@ -344,6 +344,20 @@ def main() -> None:
             "evidence_id": "cal_629a071abb61bce9",
             "notes": "Personal calendar. Freeze 1 already had the invitation. The Hog remains opportunity.",
         },
+        {
+            "event_id": "glytec|unspecified|c1|e3",
+            "application_id": "glytec|unspecified|c1",
+            "event_date": "2026-01-27",
+            "event_date_precision": "exact",
+            "event_type": "hiring_manager_interview",
+            "round_number": "1",
+            "counterparty_name": "Clayton Maike",
+            "counterparty_role": "unknown",
+            "medium": "video",
+            "evidence_system": "gcal",
+            "evidence_id": "cal_335a1749b1f26d6d",
+            "notes": "Keegan Moody and Clayton Maike. Same day as Freeze 1 Glytec interview logistics. No submission receipt. Glytec stays opportunity.",
+        },
     ]
     for row in events:
         row["coder_id"] = CODER

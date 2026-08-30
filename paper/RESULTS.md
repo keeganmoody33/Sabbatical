@@ -84,21 +84,24 @@ Gmail Freeze 1 extracts and Freeze 2 platform files were not recoded. Personal G
 - Full application census remains **298**
 - Three new opportunity rows: Pin, Hotglue BDM, Opsin. They stay out of the 298.
 - PhrasIQ GTM Deep Dive on 2026-04-15 is now on the personal calendar. Freeze 1 had only a proposed date.
-- Interviewed applications remain **14**. Pin, Hotglue, Opsin, and The Hog interviews sit in the opportunity register.
+- Interviewed applications remain **14**. Pin, Hotglue, Opsin, The Hog, and Glytec interviews sit in the opportunity register.
 
 Pressure-test names (origin, what happened, interviewed):
 
-- Beautiful.ai: Greenhouse receipt 2026-03-08. Interview on personal calendar 2026-03-17. Decline 2026-03-26. **Yes, in the 14.**
-- The Hog: invitation 2026-06-15, calendar 2026-06-16, take-home. No ATS receipt. **Yes, opportunity, outside the 14.**
+- Glytec: interview logistics 2026-01-27 and calendar with Clayton Maike the same day. No submission receipt. **Yes, opportunity, outside the 14.**
+- The Hog: invitation 2026-06-15, calendar 2026-06-16 with Hudson Liao, take-home. No ATS receipt. **Yes, opportunity, outside the 14.**
+- Mixmax: product welcome and No Agenda Meeting with Heath 2025-08-14. **No. Exclusion.**
+- Every.to: thanks for applying, calendar 2026-04-21 with Austin. **Yes, in the 14.**
+- PhrasIQ: Wellfound acceptance, Discovery 2026-04-02 and Deep Dive 2026-04-15. User named Eddie. That string is not in the frozen mail or calendar titles, so counterparty stays unknown. **Yes, in the 14.**
+- Beautiful.ai: Greenhouse receipt 2026-03-08. Calendar interview 2026-03-17. Decline 2026-03-26 from Emily. Hiring manager named in follow-up is Brandon Ness. **Yes, in the 14.**
+- Pearl: Ashby receipt 2026-04-06. Calendar interviews 2026-05-05 and 2026-05-18. Scheduler named in mail is Alex DeCeglie. User named Chris. That string is not on the Pearl artifacts. **Yes, in the 14.**
+- Great Question: Ashby receipt 2026-07-17. Screening named Harri. Calendar interview 2026-07-26. Decline 2026-07-29. User named Harry. Corpus uses Harri. **Yes, in the 14.**
+- TrueBuilt: LinkedIn applied-list GTM Engineer in Freeze 2, posting later marked no longer accepting applications. Separate Gmail GTM project quote, passed on budget. That project is not an interview. **Application in the 298. Not in the 14.**
 - Opsin: Colossus TG video interview with James Pham 2026-03-13. No ATS receipt. **Yes, opportunity.**
 - Hotglue: Kevin Wright BDM conversation 2026-04-20. No ATS receipt. **Yes, opportunity.**
-- Every.to: thanks for applying, calendar 2026-04-21 with Austin. **Yes, in the 14.**
-- Mixmax: product welcome and Heath meeting. **No. Exclusion.**
 - Mobb / mobb.dev: Gusto first-day and a Mobb employment mailbox. Employment, not a search application.
 - Pin: Erica Stacy Tarwater 2025-06-30, Conor Kline 2025-07-07, then rejection. No ATS receipt. User recalled Erika. Mail uses Erica. **Yes, opportunity.**
 - BCOFA: GTM strategy and copywriting with Dr. Blaney. **No. Consulting.**
-- PhrasIQ: Discovery 2026-04-02 and Deep Dive 2026-04-15. **Yes, in the 14.**
-- TrueBuilt: LinkedIn applied-list GTM Engineer already in Freeze 2. Separate Gmail project quote, passed on budget. **No interview on the LinkedIn row.**
 - Kivira.health: connect meetings and weekly outbound. **No. Consulting. Meetings happened.**
 
 ## Interviews (derived, never stored)
@@ -110,9 +113,9 @@ Interviewed means at least one event whose `event_type` is in {recruiter_screen,
 - Interviewed applications in the Freeze 2 full census: **14**
 - Application-to-interview rate on the 298: 14/298
 - Platform files carry no interview events. Adding LinkedIn applied-list and Jobright rows does not add interviews.
-- Opportunity-register interviews (WorkOS, Mercor contract path, Pin, Hotglue, Opsin, The Hog, and other recruiter-only processes) sit outside those denominators
+- Opportunity-register interviews (WorkOS, Mercor contract path, Pin, Hotglue, Opsin, The Hog, Glytec, and other recruiter-only processes) sit outside those denominators
 
-The Hog, Pin, Hotglue, and Opsin are opportunity, not applications, so those interview events do not enter the 14.
+The Hog, Pin, Hotglue, Opsin, and Glytec are opportunity, not applications, so those interview events do not enter the 14.
 
 ## Role lane (after kappa)
 
