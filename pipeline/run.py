@@ -118,6 +118,12 @@ STAGES: list[Stage] = [
         ],
     ),
     Stage(
+        name="supplementary_ledger",
+        script="challenge/build_supplementary_ledger.py",
+        owns="Row-grain reconciliation of the challenger workbook against the census and the opportunity register.",
+        outputs=["challenge/supplementary_ledger.csv"],
+    ),
+    Stage(
         name="data_quality",
         script="pipeline/data_quality.py",
         owns="The generated data quality report: missing fields, duplicates, vocabulary violations, outliers, row completeness.",

@@ -11,6 +11,13 @@ direction.** Both answers turned out to be substantive.
 Everything below recomputes from `python3 challenge/reconcile.py`. No dashes are used as
 punctuation in this file.
 
+> **Superseded in part by `challenge/SUPPLEMENTARY-LEDGER.md`.** The comparison here is at company
+> grain, which was too coarse to adjudicate anything. The supplementary ledger redoes it at row
+> grain, a full outer join over all 353 workbook records and all 329 repository records, with a
+> disposition and a reason on every row. Where the two disagree, the row-grain figures are the ones
+> to quote: 257 of 353 workbook records agree outright, 3 records are genuinely workbook-only rather
+> than 20 companies, and 41 census records are missing from the workbook rather than 27 companies.
+
 ## What the challenger is, and what it is not
 
 It is an independent reconstruction built from a different source set, including a LinkedIn data
@@ -41,9 +48,9 @@ count as a checkpoint rather than a census.
 | LinkedIn application evidence | **Challenger** | 107 exact-dated rows with job IDs against 99 relative stamps |
 | The Hog and BX Studio register | **Challenger** | Submission artifacts exist. Two adjudications reversed |
 | Companies with employer-side proof | **Repository** | 8 rows the workbook excluded are Tier A here |
-| Coverage breadth | **Split** | 20 companies only in the workbook, 27 only here |
+| Coverage breadth | **Split** | At row grain: 3 records only in the workbook, 41 only here. See `SUPPLEMENTARY-LEDGER.md` |
 | Outcome model | **Repository** | GHOSTED is a residual the workbook itself calls overloaded |
-| Interview measurement | **Repository** | 13 derived from events against 334 of 353 UNKNOWN |
+| Interview measurement | **Repository** | 14 derived from events against 334 of 353 UNKNOWN |
 | Origin coverage | **Challenger, but not adoptable** | 353 of 353 against 15 of 223. See below |
 | Unresolved role titles | **Challenger** | It carries 8 unresolved against this census's 40. Eleven are now fixed from this repository's own artifacts |
 | Capture recapture | **Neither** | Still unmeasured, now for a precisely stated reason |

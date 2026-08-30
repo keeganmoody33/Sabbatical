@@ -59,13 +59,27 @@ COMPANY_ALIASES = {
     "cursor": "anysphere",
     "everyto": "every",
     "thehogycf25": "thehog",
+    # Prefix equivalence needs the shorter key to be at least MIN_PREFIX long,
+    # so a three-character canonical name can never match its own longer form.
+    # Found by the supplementary ledger, which reported Exa Labs as workbook-only
+    # while `exa|growth-lead|c1` sat in the census. ADJUDICATION.md already
+    # records "Exa / Exa Labs" as a hand alias merge, so this restates a
+    # decision rather than making a new one.
+    "exalabs": "exa",
 }
 
 MIN_PREFIX = 4
 
 
 def company_key(name: str) -> str:
-    """Normalize, then strip trailing legal and descriptive suffixes."""
+    """Normalize, strip trailing legal and descriptive suffixes, alias twice.
+
+    The alias table is consulted BEFORE and AFTER stripping. Before, so a rename
+    keyed on the raw form ("cursor" to "anysphere") fires. After, because
+    stripping can leave a form the raw lookup never saw: "Exa Labs Inc." reaches
+    "exalabs" only once "inc" is gone, and an alias keyed on the raw
+    "exalabsinc" would never match it.
+    """
     key = COMPANY_ALIASES.get(norm_company(name), norm_company(name))
     changed = True
     while changed and len(key) > MIN_PREFIX:
@@ -74,7 +88,7 @@ def company_key(name: str) -> str:
             if key.endswith(suffix) and len(key) - len(suffix) >= MIN_PREFIX:
                 key, changed = key[: -len(suffix)], True
                 break
-    return key
+    return COMPANY_ALIASES.get(key, key)
 
 
 def equivalent(left: str, right: str) -> bool:
