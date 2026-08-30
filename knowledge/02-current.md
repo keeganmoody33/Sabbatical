@@ -102,6 +102,12 @@ the statistics the protocol requires, so it is unmeasured rather than measured a
 | Possible 2025-08-08 interview, company unknown | Open | If real, both datasets understate interviews |
 | Codebook exists twice and the copies differ | Open | Resolve to one file, point the other at it |
 | Three rows carry a city in `work_type` | Open by design | Coder files are frozen. Reported by the validator on every run |
+| The Kiln, two interviews | Open, author recall 2026-08-30 | In no census row, no opportunity row and no challenger record. Origin a LinkedIn DM. Needs the thread |
+| Pinn, Opsin Security, Hotglue, Mixmax interviews | Open, author recall 2026-08-30 | Four more interviewing processes absent from the corpus. See `knowledge/04-author-recall.md` |
+| Hypergen interview disputed | Open, author recall 2026-08-30 | Author says none happened. Bravo coded `employer_ack` on an invitation, cursor coded an interview, adjudication took cursor |
+| RevSpring, TestGorilla interviews disputed | Open, author recall 2026-08-30 | Both derive from a screen *request* or an *intro*. Answerable from artifacts already held |
+| GTM Cafe Slack `#jobsandopportunities` | Never authorized | Named by the author as the origin of at least four interviewing processes. Not in the protocol source list |
+| Mercor register | Open | Author says the rows were self-submissions through an account. Two sit in the opportunity register |
 
 ## Paper status
 
