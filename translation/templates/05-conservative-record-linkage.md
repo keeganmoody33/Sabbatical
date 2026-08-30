@@ -75,15 +75,24 @@ TIER 3, TOKEN-PREFIX EQUIVALENCE.
   are different tokens.
 
 THE RULE THAT MATTERS MOST:
-  If tier 3 produces more than one candidate, MATCH NOTHING. Emit the record
-  as net-new and flag it for review. A wrong merge silently destroys a
-  record. An unmerged duplicate is visible and fixable later.
+  If tier 3 produces more than one candidate, MATCH NOTHING. A wrong merge
+  silently destroys a record. An unmerged duplicate is visible and fixable
+  later, but ONLY if you can still see it.
+
+  So do not emit an ambiguous record as plain net_new. Give it its own
+  status, `ambiguous`, and carry the candidate parent ids it could not
+  choose between. A refusal you cannot find later is not conservative, it
+  is an unrecorded merge decision.
 
   Never merge on a similarity score. If you cannot state the rule that made
   two records the same, you cannot defend the count.
 
-OUTPUT, per record: overlap with a named parent id, or net_new, or
-{{NON_CENSUS}}. Never a bare merged total with no provenance.
+OUTPUT, per record, one of FOUR statuses: overlap with a named parent id;
+net_new; ambiguous with its candidate parent ids; or {{NON_CENSUS}}.
+Never a bare merged total with no provenance.
+
+REPORT the ambiguous count alongside the total. A census of {{N}} with
+{{K}} unresolved is a different claim from a census of {{N}}.
 ```
 
 The refusal rule is `ingest_platform.py:491`, a single line, `if len(equivalent) == 1`. It is the most defensible decision in the file.
@@ -99,6 +108,14 @@ The refusal rule is `ingest_platform.py:491`, a single line, `if len(equivalent)
 `{{NOISE_TOKENS}}` in the source is hardcoded to one person's geography: `atlanta`, `ga`, `austin`, `tx`, plus `remote`, `onsite`, `hybrid`, `greater`, `area`, `us`, `usa`, `united`, `states`, `based`, `in`, `role`, `relocation`, `package`, `products`. Replace the geography with your own. Note that `in` and `products` are aggressive, and `products` will strip a substantive word out of a title like "GTM Emerging Products". Prune before you reuse.
 
 `{{ALIAS_TABLE}}` is inherently hand-maintained and that is fine. Expect it to grow every time you ingest a new source.
+
+## Where the source implementation stops short
+
+The refusal itself is implemented. `ingest_platform.py:491` declines to match when more than one candidate survives tier 3, which is the hard part and the right call.
+
+What is missing is the record of it. `match_status` takes exactly three values, verified across all 134 rows of `adjudication/platform_match.csv`: `net_new` on 77, `overlap` on 56, `opportunity_or_non_census` on 1. There is no ambiguous status. So a record refused at line 491 falls through to line 506 and is emitted as `net_new`, indistinguishable from a record that genuinely had no counterpart.
+
+The refusal is therefore invisible downstream. Nobody reading the 298-row full census can tell which rows are new and which are unresolved, and the count carries no "of which K unresolved" caveat. That is why the template above adds a fourth status. Add it before you reuse this.
 
 ## What breaks if you skip it
 

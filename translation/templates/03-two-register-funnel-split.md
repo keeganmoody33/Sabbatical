@@ -52,6 +52,15 @@ WHEN IN DOUBT:
   direction, which is the direction nobody catches.
 
 REPORTING:
+  - The numerator MUST be intersected with {{PRIMARY_REGISTER}} ids before
+    the rate is computed:
+        numerator = {ids with a qualifying outcome} INTERSECT
+                    {ids in {{PRIMARY_REGISTER}}}
+    Moving a doubtful record to {{SECONDARY_REGISTER}} removes it from the
+    denominator. Its outcomes stay visible in the interaction table, so a
+    numerator counted straight off that table still includes them, and the
+    rate goes UP. Without this intersection, "when in doubt, exclude" is
+    not conservative. It is the opposite.
   - Report {{RATE}} as an unreduced fraction against
     {{PRIMARY_REGISTER}} only.
   - Report {{SECONDARY_REGISTER}} as a separate parallel track with its own
@@ -70,7 +79,11 @@ Both of these were live disagreements between two independent coders, resolved i
 
 > "Interview plus take-home do not mint an application row."
 
-The interview events survive in `coding/bravo/events__bravo.csv`. The application row does not. So the interview is visible in the dataset and absent from the denominator, which is exactly right.
+The interview events survive in `coding/bravo/events__bravo.csv`. The application row does not. So the interview is visible in the dataset and absent from the denominator, which is exactly right, and which is also exactly the trap the intersection rule above exists to close.
+
+The source repository closes it. `adjudication/adjudicate.py:102-108` computes the numerator by walking both coders' event tables and keeping only events whose id is in `census_ids`. That single condition is what makes the exclusion conservative rather than inflationary.
+
+The numbers show it working. Across both coders, 21 distinct records carry an event with a qualifying interview type. Fourteen of them are in the census. The seven that are not include The Hog. So the published rate is 14/221, and a numerator counted straight off the event tables would report 21/221, which is 0.0950 against 0.0633. The denominator shrank and the rate would have grown by half.
 
 **BX Studio.** A video forwarded to a hiring manager. Coded application by one coder, opportunity by the other. Adjudicated **opportunity**: "Video forwarded to a hiring manager is not a submission."
 

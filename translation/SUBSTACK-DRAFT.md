@@ -74,6 +74,8 @@ The cycle component is the part people omit. This repository documents what omit
 
 The matcher runs exact-after-normalization, then an entity-level fallback for admitted unknowns, then ordered token-prefix equivalence after stripping location noise and expanding abbreviations. And then the line that earns the most credit in the whole codebase: if the third tier produces more than one candidate, it matches nothing (see: `adjudication/ingest_platform.py`). A wrong merge silently destroys a record. An unmerged duplicate is visible and fixable.
 
+One caveat on that credit, found while auditing this section. The refusal is implemented; the record of it is not. `match_status` carries three values across all 134 platform rows, `net_new` on 77, `overlap` on 56, and one non-census, with no ambiguous state (see: `adjudication/platform_match.csv`). A refused record is emitted as `net_new` and becomes indistinguishable from one that genuinely had no counterpart. The extracted template adds a fourth status, because a refusal nobody can find downstream is an unrecorded merge decision rather than a conservative one.
+
 **Extractable?** Yes, with pruning. The noise-token list is hardcoded to one person's geography.
 
 **What it proves you can do.** Reconcile overlapping sources without inflating the total, and know which direction to fail in when you cannot tell. The payoff is measurable: 40 raw tracker rows produced 5 net-new applications, and "a naive sum across four trackers would have reported roughly 315 instead of 247" (see: `knowledge/01-engagement.md`).
@@ -324,6 +326,15 @@ register makes {{RATE}} conservative. Over-counting makes it wrong in the
 flattering direction, which is the direction nobody catches.
 
 REPORTING:
+- The numerator MUST be intersected with {{PRIMARY_REGISTER}} ids before the
+  rate is computed:
+      numerator = {ids with a qualifying outcome} INTERSECT
+                  {ids in {{PRIMARY_REGISTER}}}
+  Moving a doubtful record to {{SECONDARY_REGISTER}} removes it from the
+  denominator. Its outcomes stay visible in the interaction table, so a
+  numerator counted straight off that table still includes them and the rate
+  goes UP. Without this intersection, "when in doubt, exclude" is not
+  conservative. It is the opposite.
 - Report {{RATE}} as an unreduced fraction against {{PRIMARY_REGISTER}} only.
 - Report {{SECONDARY_REGISTER}} as a separate parallel track with its own
   outcomes.
@@ -415,14 +426,23 @@ TIER 3, TOKEN-PREFIX EQUIVALENCE. Tokenize both subjects. Drop
   other.
 
 THE RULE THAT MATTERS MOST: if tier 3 produces more than one candidate, MATCH
-  NOTHING. Emit the record as net-new and flag it for review. A wrong merge
-  silently destroys a record. An unmerged duplicate is visible and fixable.
+  NOTHING. A wrong merge silently destroys a record. An unmerged duplicate is
+  visible and fixable later, but ONLY if you can still see it.
+
+  So do not emit an ambiguous record as plain net_new. Give it its own status,
+  `ambiguous`, carrying the candidate parent ids it could not choose between.
+  A refusal you cannot find later is not conservative. It is an unrecorded
+  merge decision.
 
   Never merge on a similarity score. If you cannot state the rule that made
   two records the same, you cannot defend the count.
 
-OUTPUT, per record: overlap with a named parent id, or net_new, or
-{{NON_CENSUS}}. Never a bare merged total with no provenance.
+OUTPUT, per record, one of FOUR statuses: overlap with a named parent id;
+net_new; ambiguous with its candidate parent ids; or {{NON_CENSUS}}. Never a
+bare merged total with no provenance.
+
+REPORT the ambiguous count alongside the total. A census of {{N}} with {{K}}
+unresolved is a different claim from a census of {{N}}.
 ```
 
 ---
