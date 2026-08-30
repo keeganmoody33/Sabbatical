@@ -2,7 +2,7 @@
 
 These are the numbers this freeze can defend. Prior-audit figures 247, 11 interviews, and 4.45 percent are not restated as findings.
 
-Prose for the Results section is `paper/results-narrative.md`. Figure IDs and captions are `paper/figures.md`. This file remains the number ledger.
+Prose for the Results section is `paper/results-narrative.md`. Figure IDs and captions are `paper/figures.md`. Assembled paper: `paper/manuscript.md`. This file remains the number ledger.
 
 No dashes are used as punctuation in this file.
 

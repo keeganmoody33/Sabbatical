@@ -74,19 +74,15 @@ The 11 in-census interviews: Fullsteam, Glytec, Beautiful.ai, Orchestry Software
 
 ## Paper status
 
-Nothing drafted yet. Structure agreed: Abstract, Introduction, Methods, Results, Discussion, Conclusion, with figures. [S6]
+Working manuscript drafted 2026-08-30 on this freeze. Assembled copy: `paper/manuscript.md`. Ledger: `paper/RESULTS.md`. Headlines this freeze can defend: 298 applications, 14 interviewed, 14/298, 0 coded offers. Completeness unmeasured. Naming pass not done.
 
-Figures under consideration, none built:
-- Applications per month, exact-date subset only, with the approximate-date count annotated
-- Source reconciliation waterfall, raw rows to net unique
-- Role lane distribution
-- Evidence tier composition of the census
-- Funnel: applications, interviews, offers, with the opportunity register shown as a separate parallel track
+Figures built (SVG, from census CSVs): monthly exact dates (Freeze 1 and full 298), role lane, two denominators, Freeze 1 outcomes, four scoreboards, GTM modifiers.
 
 ## Derivatives planned
 
-Substack post and LinkedIn post, both downstream of the paper. Not started. [S6]
+Substack and LinkedIn drafts in `paper/derivatives/`. Downstream of the paper. Paid-engagement employers redacted there pending naming pass. [S6]
 
 ## Changelog
 
 - 2026-08-29 13:37 ET: created from [S1] [S2] [S3] [S4] [S5] [S6].
+- 2026-08-30: manuscript drafted; figures built; 02-current paper status no longer "nothing drafted."

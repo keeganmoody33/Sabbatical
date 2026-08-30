@@ -18,7 +18,7 @@ That is not a claim that LinkedIn produced no conversations. Melavex is in the 2
 
 Exact-date volume still has a shape (Fig 1, Fig 2). Peak 2026-07 is 33 exact on both series. 2025-09 and 2025-10 are 0 exact and are not a claim of zero activity. Freeze 2's six exact Jobright dates move January, May, and June slightly. The 71 LinkedIn relative stamps stay off the chart. Adding them by guesswork would invent a monthly series.
 
-The rate drop from 14/221 to 14/298 is arithmetic from a larger denominator with the same numerator. It is not an inherited prior-audit figure. I do not restate the retired 4.45 percent as this freeze's finding, and I do not treat 14/298 as a rebuilt version of that figure.
+The rate drop from 14/221 to 14/298 is arithmetic from a larger denominator with the same numerator. It is not an inherited prior-audit figure. I do not restate that retired percent as this freeze's finding, and I do not treat 14/298 as a rebuilt version of it.
 
 ## Community channels show up in interviews and money more than in frozen ATS receipts
 

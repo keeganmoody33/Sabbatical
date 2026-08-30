@@ -1,0 +1,112 @@
+"""Assemble paper/manuscript.md in publication order. Regenerates; do not hand-edit the output."""
+
+from __future__ import annotations
+
+import re
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent
+
+
+def strip_claims(text: str) -> str:
+    return re.sub(r"\n<!-- claims.*?-->\s*", "\n", text, flags=re.S)
+
+
+def drop_first_heading(text: str) -> str:
+    return re.sub(r"^# [^\n]+\n+", "", text)
+
+
+def title_and_abstract() -> str:
+    raw = (ROOT / "title-and-abstract.md").read_text(encoding="utf-8")
+    raw = strip_claims(raw)
+    # Keep recommended title and the Abstract section only.
+    rec = re.search(r"## Recommended title\n\n\*\*(.+?)\*\*", raw)
+    abstract = re.search(r"## Abstract\n\n(.+?)(?:\n<!--|\Z)", raw, flags=re.S)
+    if not rec or not abstract:
+        raise SystemExit("title-and-abstract.md missing recommended title or abstract")
+    return f"# {rec.group(1)}\n\n## Abstract\n\n{abstract.group(1).strip()}\n"
+
+
+def section(filename: str, heading: str | None = None) -> str:
+    text = strip_claims((ROOT / filename).read_text(encoding="utf-8"))
+    if heading:
+        body = drop_first_heading(text).strip()
+        return f"# {heading}\n\n{body}\n"
+    return text.strip() + "\n"
+
+
+def figures_block() -> str:
+    items = [
+        (
+            "Figure 1. Applications per month, Freeze 1, exact dates only",
+            "fig-01-monthly-freeze1.svg",
+            "Applications with date_precision = exact in the Freeze 1 census of 221. n exact = 195. n not exact = 26, all evidence_bound, not plotted. Window 2025-06-01 through 2026-08-29, America/New_York. Zero in 2025-09 and 2025-10 is not a claim of zero search activity. Fullsteam 2025-09-29 is evidence_bound.",
+        ),
+        (
+            "Figure 2. Applications per month, full 298, exact dates only",
+            "fig-02-monthly-full.svg",
+            "Applications with date_precision = exact in the full census of 298. n exact = 201. n not exact = 97, of which 71 are LinkedIn relative_display stamps from pages 1 to 10 (date_capture 2026-08-29) and 26 are Freeze 1 evidence_bound. The 71 relative stamps are off-chart. Freeze 2 added 6 exact Jobright dates. Peak 2026-07 remains 33.",
+        ),
+        (
+            "Figure 3. Role lane, Freeze 1 versus full census",
+            "fig-03-role-lane.svg",
+            "Mutually exclusive role_lane. Freeze 1 n = 221, licensed by Cohen's kappa 0.9510 on 211 matched keys. Full census n = 298. Freeze 2 is a documented mapping of structured lists; kappa is not recomputed on the 77.",
+        ),
+        (
+            "Figure 4. Application-to-interview rate on two denominators",
+            "fig-04-two-denominators.svg",
+            "Interviewed applications are derived from freeze events intersected with the application census. Freeze 1: 14/221. Full census: 14/298. Employer-artifact stratum: 14/220. The 77 net-new platform_log rows carry no interview-set events. That is not a claim about LinkedIn conversations.",
+        ),
+        (
+            "Figure 5. Freeze 1 terminal outcomes (n = 221)",
+            "fig-05-freeze1-outcomes.svg",
+            "Coded terminal_outcome on Freeze 1 only. rejected_no_interview 73, rejected_after_interview 6, role_paused_or_closed 18, still_open 124. Zero no_response. Amendment A2 was not applied. The 77 Freeze 2 rows are blank. The 124 are not a ghosting count.",
+        ),
+        (
+            "Figure 6. Four scoreboards",
+            "fig-06-scoreboards.svg",
+            "Four boards kept separate. A: 298 applications, 14 interviewed, rate 14/298. B: opportunity conversations outside the 14. C: money, listed beside the rate; marketplace rows sit in A without conversion. D: communal, not jobs. Paid-engagement names still need a publication naming pass.",
+        ),
+        (
+            "Figure 7. GTM title modifiers among explicit GTM rows",
+            "fig-07-gtm-modifiers.svg",
+            "Explicit GTM only. Freeze 1 n = 86. Full census n = 113. Plain is the majority in both. Not a second kappa.",
+        ),
+    ]
+    blocks = ["# Figures\n"]
+    for title, filename, caption in items:
+        blocks.append(f"## {title}\n")
+        blocks.append(f"![{title}](figures/{filename})\n")
+        blocks.append(f"*{caption}*\n")
+    return "\n".join(blocks)
+
+
+def citations() -> str:
+    text = strip_claims((ROOT / "citations.md").read_text(encoding="utf-8"))
+    text = drop_first_heading(text)
+    if "## Punch list" in text:
+        text = text.split("## Punch list")[0].rstrip()
+    return f"# Sources\n\n{text}\n"
+
+
+def main() -> None:
+    parts = [
+        title_and_abstract(),
+        section("introduction.md", "Introduction"),
+        section("METHODS.md"),
+        section("results-narrative.md", "Results"),
+        figures_block(),
+        section("discussion.md", "Discussion"),
+        section("conclusion.md", "Conclusion"),
+        section("acknowledgments.md", "Acknowledgments"),
+        citations(),
+    ]
+    header = (
+        "<!-- Generated by paper/build_manuscript.py. Edit the section files, then regenerate. -->\n\n"
+    )
+    (ROOT / "manuscript.md").write_text(header + "\n".join(parts).strip() + "\n", encoding="utf-8")
+    print("wrote paper/manuscript.md")
+
+
+if __name__ == "__main__":
+    main()

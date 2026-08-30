@@ -14,6 +14,7 @@ Publication copy does not include hashed provider IDs.
 | Fig 4 | Two denominators, 14/221 and 14/298 | Results (interviews); Discussion (volume without interview-set events) |
 | Fig 5 | Freeze 1 terminal outcomes | Results (closes); Discussion (do not call 124 ghosted) |
 | Fig 6 | Four scoreboards | Results (money listed beside the rate); Discussion (instrument blind to most paid work); Conclusion |
+| Fig 7 | GTM modifiers among explicit GTM | Results (modifiers) |
 | Table 1 | Role-lane counts | Results |
 | Table 2 | The 14 interviewed applications | Results |
 | Table 3 | Exact-date monthly series | Results; Fig 1 and Fig 2 source |
@@ -26,7 +27,11 @@ Publication copy does not include hashed provider IDs.
 
 **Series.** 2025-06 5, 2025-07 19, 2025-08 16, 2025-09 0, 2025-10 0, 2025-11 1, 2025-12 2, 2026-01 7, 2026-02 10, 2026-03 21, 2026-04 26, 2026-05 22, 2026-06 28, 2026-07 33, 2026-08 5.
 
+**Artwork.** `figures/fig-01-monthly-freeze1.svg` (built from the census CSV; `python3 paper/figures/build_figures.py`).
+
 **Annotation.** Peak 2026-07 = 33. Print "n not exact = 26" in the figure area, not only in the caption.
+
+![Figure 1. Freeze 1 monthly exact dates](fig-01-monthly-freeze1.svg)
 
 ## Fig 2. Applications per month, full 298, exact dates only
 
@@ -36,7 +41,11 @@ Publication copy does not include hashed provider IDs.
 
 **Series.** 2025-06 5, 2025-07 19, 2025-08 16, 2025-09 0, 2025-10 0, 2025-11 1, 2025-12 2, 2026-01 9, 2026-02 10, 2026-03 21, 2026-04 26, 2026-05 24, 2026-06 30, 2026-07 33, 2026-08 5.
 
+**Artwork.** `figures/fig-02-monthly-full.svg`.
+
 **Do not.** Upgrade relative stamps. Do not draw a second peak from the 71.
+
+![Figure 2. Full census monthly exact dates](fig-02-monthly-full.svg)
 
 ## Fig 3. Role lane, Freeze 1 versus full census
 
@@ -44,7 +53,11 @@ Publication copy does not include hashed provider IDs.
 
 **Series, Freeze 1 / 298.** explicit_gtm_engineering 86 / 113; unspecified 35 / 35; sales_bd_partnerships 28 / 34; growth_demand_marketing 22 / 32; sales_solutions_engineering 15 / 31; other 18 / 30; revops_gtm_ops_strategy 9 / 14; product_ai_technical 8 / 9.
 
+**Artwork.** `figures/fig-03-role-lane.svg`.
+
 **Do not.** Treat Freeze 2 lanes as a second independent coding study.
+
+![Figure 3. Role lane](fig-03-role-lane.svg)
 
 ## Fig 4. Application-to-interview rate on two denominators
 
@@ -52,19 +65,31 @@ Publication copy does not include hashed provider IDs.
 
 **Annotation.** All 14 are Freeze 1. Glytec and Opsin are opportunity and are not in the 14.
 
+**Artwork.** `figures/fig-04-two-denominators.svg`.
+
 **Do not.** Stack overlay or opportunity interviews onto the 14. Do not print a retired prior-audit percent as this freeze's rate.
+
+![Figure 4. Two denominators](fig-04-two-denominators.svg)
 
 ## Fig 5. Freeze 1 terminal outcomes (n = 221)
 
 **Caption.** Coded `terminal_outcome` on Freeze 1 only. rejected_no_interview 73, rejected_after_interview 6, role_paused_or_closed 18, still_open 124. Zero `no_response`. Amendment A2 was not applied. The 77 Freeze 2 rows are blank and are not in this figure. The 124 are not a ghosting count.
 
+**Artwork.** `figures/fig-05-freeze1-outcomes.svg`.
+
 **Do not.** Draw a 298 reply pie.
+
+![Figure 5. Freeze 1 outcomes](fig-05-freeze1-outcomes.svg)
 
 ## Fig 6. Four scoreboards (schematic)
 
 **Caption.** Four boards kept separate. A: 298 applications, 14 interviewed, rate 14/298. B: opportunity conversations outside the 14 (Glytec, The Hog, Pin, Hotglue, Opsin, The Kiln, Mercor contract, WorkOS, overlay Adam at Stellar Growth, overlay Doug at Renoir). C: money. Mixmax, Mercor contract, Mobb, Kivira.health paid. Mercor marketplace rows sit in A without conversion. TrueBuilt sits in A; the quote is not paid. D: communal (Jorge, Kellen). Names in C still need a publication naming pass.
 
+**Artwork.** `figures/fig-06-scoreboards.svg`.
+
 **Do not.** Add B into A and print one interview rate. Do not title the figure as if none of the money is in 298.
+
+![Figure 6. Four scoreboards](fig-06-scoreboards.svg)
 
 ```mermaid
 flowchart TB
@@ -74,11 +99,13 @@ flowchart TB
   D["D. Communal\nnot jobs"]
 ```
 
-## Optional figures (not required for this draft)
+## Fig 7. GTM title modifiers among explicit GTM rows
 
-**Fig 7 optional.** GTM modifier among explicit GTM rows (86, then 113). Plain is the majority in both.
+![Figure 7. GTM title modifiers](fig-07-gtm-modifiers.svg)
 
-**Fig 8 optional.** Exact-date GTM share by month, Freeze 1, March through July 2026. Exact GTM counts: 2026-03 15, 2026-04 19, 2026-05 7, 2026-06 11, 2026-07 21. Do not treat the optional figure as a second kappa.
+**Caption.** Explicit GTM only. Freeze 1 n = 86. Full census n = 113. Plain is the majority in both. Not a second kappa.
+
+**Optional, not drawn.** Exact-date GTM share by month, Freeze 1, March through July 2026. Exact GTM counts: 2026-03 15, 2026-04 19, 2026-05 7, 2026-06 11, 2026-07 21.
 
 ## What is not a figure
 

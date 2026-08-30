@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="280" viewBox="0 0 820 280" role="img">
+<rect width="820" height="280" fill="#faf8f5"/>
+<text x="40.0" y="22.0" font-family="Georgia, 'Times New Roman', serif" font-size="12" fill="#57534e" text-anchor="start" font-weight="normal">Freeze 1 only (n = 221). The 77 platform rows are blank and are not in this figure.</text>
+<text x="208.0" y="64.0" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#1c1917" text-anchor="end" font-weight="normal">still open</text>
+<rect x="220" y="48" width="291.8" height="22" fill="#57534e"/>
+<text x="519.8" y="64.0" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#1c1917" text-anchor="start" font-weight="normal">124/221</text>
+<text x="208.0" y="112.0" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#1c1917" text-anchor="end" font-weight="normal">rejected, no interview</text>
+<rect x="220" y="96" width="171.8" height="22" fill="#1e3a5f"/>
+<text x="399.8" y="112.0" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#1c1917" text-anchor="start" font-weight="normal">73/221</text>
+<text x="208.0" y="160.0" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#1c1917" text-anchor="end" font-weight="normal">role paused or closed</text>
+<rect x="220" y="144" width="42.4" height="22" fill="#1e3a5f"/>
+<text x="270.4" y="160.0" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#1c1917" text-anchor="start" font-weight="normal">18/221</text>
+<text x="208.0" y="208.0" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#1c1917" text-anchor="end" font-weight="normal">rejected after interview</text>
+<rect x="220" y="192" width="14.1" height="22" fill="#1e3a5f"/>
+<text x="242.1" y="208.0" font-family="Georgia, 'Times New Roman', serif" font-size="13" fill="#1c1917" text-anchor="start" font-weight="normal">6/221</text>
+</svg>

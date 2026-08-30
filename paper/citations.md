@@ -78,7 +78,7 @@ Scanned `paper/METHODS.md`, `paper/results-narrative.md`, `paper/discussion.md`,
 | sentence risk | disposition |
 |---|---|
 | 14/298 printed as 4.70 percent in the abstract | Not used. Abstract prints 14/298. |
-| Retired 4.45 percent | Discussion names it retired only. Not in abstract. |
+| Retired 4.45 percent | Sources and RESULTS ledger only, marked retired. Discussion no longer prints the digits. |
 | Package 321/325 | Cited in citations and Results ledger as a different assembly. Not a finding. |
 | Completeness percent | Not printed. |
 | Combined conversation count as a rate | Not printed. |

@@ -1,6 +1,16 @@
 # paper/
 
-Working manuscript for Sabbatical. `paper/RESULTS.md` is the number ledger, not the Results section prose.
+Working manuscript for Sabbatical. `paper/RESULTS.md` is the number ledger, not the Results section prose. The assembled paper is `paper/manuscript.md` (regenerated; edit the section files).
+
+## Build
+
+```
+python3 paper/figures/build_figures.py
+python3 paper/build_manuscript.py
+python3 paper/verify_numbers.py
+```
+
+Figures are SVG under `paper/figures/`. Derivatives (redaction-safe money labels): `paper/derivatives/`.
 
 ## Publication order
 

@@ -102,7 +102,7 @@ Interviewed applications by Freeze 1 lane:
 | revops_gtm_ops_strategy | 0/9 |
 | product_ai_technical | 0/8 |
 
-GTM modifiers among the 86 Freeze 1 explicit GTM rows: plain 55, systems/operations 11, founding/senior/lead 7, AI/product/vertical 7, sales/presales 4, growth/marketing 2. Among the 113 in the 298: plain 71, founding/senior/lead 15, systems/operations 11, AI/product/vertical 8, sales/presales 4, growth/marketing 4.
+GTM modifiers among the 86 Freeze 1 explicit GTM rows: plain 55, systems/operations 11, founding/senior/lead 7, AI/product/vertical 7, sales/presales 4, growth/marketing 2. Among the 113 in the 298: plain 71, founding/senior/lead 15, systems/operations 11, AI/product/vertical 8, sales/presales 4, growth/marketing 4 (Fig 7).
 
 ## Monthly series, exact dates only
 
