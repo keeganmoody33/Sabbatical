@@ -419,13 +419,22 @@ TIER 2, ENTITY-LEVEL FALLBACK. If the subject on the {{SOURCE_B}} side is
   literally "{{UNSPECIFIED}}", match on entity alone. Use this ONLY where the
   schema records an admitted unknown, never as a general loosening.
 
-ANY TIER CAN RETURN MORE THAN ONE. Tiers 1 and 2 are lookups, so it is easy to
-  assume they yield at most one row. They do not, whenever the match key omits
-  a dimension the identity key includes. Sort the candidates so the pick is
-  stable across runs, take the first, and record all of them. Recording is the
-  point: the record is a match either way, so the count does not move, but
-  which parent it belongs to has quietly become a choice, and an unrecorded
-  choice is indistinguishable from a lookup.
+TIERS 1 AND 2 CAN ALSO RETURN MORE THAN ONE, AND IT MEANS SOMETHING ELSE.
+  These two are lookups, so it is easy to assume they yield at most one row.
+  They do not, whenever the match key omits a dimension the identity key
+  includes.
+
+  A multi-hit here is NOT the tier 3 case and is not resolved the same way.
+  The record matched, so it is an overlap either way and the count does not
+  move. What has quietly become a choice is WHICH parent it belongs to.
+
+  So here, and only here: sort the candidates, take the first so the pick is
+  stable across runs, record every candidate, and keep the record. Do not
+  hold it out.
+
+  At tier 3 the open question is whether it is a match at all, which the
+  count does depend on, so the answer there is to refuse. See THE RULE THAT
+  MATTERS MOST below.
 
 TIER 3, TOKEN-PREFIX EQUIVALENCE. Tokenize both subjects. Drop
   {{NOISE_TOKENS}}: location words, posting-site boilerplate, workplace-type
