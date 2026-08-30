@@ -17,7 +17,7 @@ These holes from the ingest plan remain empty. They were named in the package an
 | Ladders full list / `LADDERS.png` [S5] | absent |
 | YC Work at a Startup dashboard | absent |
 | Prior workbooks [S1] and [S2] xlsx | absent. Log 046 stopped on [S1] |
-| LinkedIn data download `Job Applications.csv` / `messages.csv` | Raw CSVs still absent. A Claude analysis of `messages.csv` arrived separately 2026-08-30 (`artifacts/linkedin/job-threads-analysis-2025-06-to-2026-08.md`). 54 job threads matched, census unchanged |
+| LinkedIn data download `Job Applications.csv` / `messages.csv` | Raw CSVs still absent. The 105-row file is a Claude extract of that download, not the download. A Claude analysis of `messages.csv` arrived separately 2026-08-30 (`artifacts/linkedin/job-threads-analysis-2025-06-to-2026-08.md`). 54 job threads matched, census unchanged |
 | Package `retrieval-log-029.md` (ENG-B / Mobb evidence) | absent. This tree's `artifacts/gmail/retrieval-log-029.md` is the 33@lecturesfrom identity check, a different document |
 | Gmail thread bodies | absent. Package logs are summaries |
 | Raw Google Calendar export | absent. `meetings-to-classify.csv` is a 34-row Claude coding, not the export |
