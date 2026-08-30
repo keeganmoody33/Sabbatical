@@ -2,6 +2,29 @@
 
 None of these is closed by inventing a number. Each is closed by an artifact or disclosed as unmet.
 
+## The Hog and BX Studio were adjudicated out on a premise that turned out to be false
+
+Closed at Freeze 3, 2026-08-30. Logged in `knowledge/protocol.md`.
+
+Both were adjudicated to the opportunity register at Freeze 1 on one stated ground: no submission artifact existed anywhere in the corpus. They were also the only two include-or-exclude disagreements between the blind coders, the pair that produced the include kappa of 0.7452.
+
+The LinkedIn formal export, ingested at Freeze 3, carries a submission row for each. The Hog applied 2026-06-04, eleven days before its interview invitation. BX Studio applied 2026-04-06, two days before its employer acknowledgment. Both precede the process events already coded here, which is the corroboration pattern that makes them submissions rather than coincidence.
+
+The rule did not change. An interview with no submission still does not mint an application row. Its premise did. Each row was taken from the coder who had read it as an application, so the surviving row is a real coder's judgement rather than one assembled during adjudication.
+
+Consequence: census 221 becomes 223, interviewed applications 13 becomes 14, the rate 13/221 becomes 14/223, the latency base 196 becomes 197, and the full census 298 becomes 317.
+
+This is the `what_would_promote_it` column working as designed. It is also a caution: the adjudication was correct on the evidence available and still produced the wrong answer for fifteen months, which is what a bounded census means in practice.
+
+## The ambiguous match branch fired on real rows for the first time
+
+Not a defect. Recorded because an earlier entry in this file stated that zero rows hit the branch, and that is no longer true.
+
+When the LinkedIn export was ingested at Freeze 3, two rows hit the multi-candidate refusal: Attentive GTM Engineer and FOSSA GTM Engineer, each matching both cycles of a genuine re-application. The matcher declined to name a parent, carried both candidate ids, and counted the rows as overlap without asserting which cycle they belong to.
+
+That is exactly the case the branch was written for. `platform_match.csv` now reports 61 overlap, 2 overlap with an unresolved parent, and 94 net-new.
+
+
 ## WorkOS register assignment
 
 Closed for this freeze.
@@ -71,6 +94,16 @@ It is not resolved here, for the same reason the Weave row was not resolved by p
 What would close it: the underlying artifact for that process, which would establish whether an interview happened and therefore which of the two fields is wrong.
 
 The general point is the reason the check was added. `interviewed` is derived and `terminal_outcome` is stored, so the codebook's first design principle, store observations and compute rollups, was followed in one direction and not the other. Two representations of the same fact will eventually disagree, and this is what it looks like when they do.
+
+## Capture recapture still not computed, now for a sharper reason
+
+The Freeze 3 export was the best remaining chance at the stratum the protocol requires, and it does not deliver it.
+
+The estimator is restricted to LinkedIn rows submitted through an external ATS rather than Easy Apply. The export carries no such flag. Twenty rows mention "Easy Apply" in free text and all twenty also carry a downstream ATS confirmation, so the phrase describes the export record rather than the channel.
+
+What the export does give: 16 LinkedIn rows with downstream employer-side confirmation, and 83 without. The 83 mix rows that were Easy Apply and therefore structurally invisible to ATS mail with rows that generated ATS mail Gmail retrieval missed. Only the second is informative about completeness, and nothing distinguishes them. Inferring the split from whether ATS mail was found would assume the thing being estimated.
+
+Stop condition 3 is now Met for the applied list and still Unmet for the channel label.
 
 ## Capture recapture not computed
 

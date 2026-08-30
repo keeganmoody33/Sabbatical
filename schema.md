@@ -48,9 +48,9 @@ lose the history of why a row is out, so they are filtered rather than relocated
 |---|---|---|
 | `coding/bravo/applications__bravo.csv` | 228 | Blind coder output. Frozen. |
 | `coding/cursor/applications__cursor.csv` | 231 | Blind coder output. Frozen. |
-| `coding/platform/applications__freeze2.csv` | 134 | Platform exports mapped to the schema. Generated. |
-| `adjudication/applications__adjudicated.csv` | 221 | The application census. Generated. |
-| `adjudication/applications__full_census.csv` | 298 | Census plus net-new platform rows. Generated. |
+| `coding/platform/applications__freeze2.csv` | 241 | Platform exports mapped to the schema, through Freeze 3. Generated. |
+| `adjudication/applications__adjudicated.csv` | 223 | The application census. Generated. |
+| `adjudication/applications__full_census.csv` | 317 | Census plus net-new platform rows. Generated. |
 
 The coder files carry 28 columns. The adjudicated files carry those 28 plus `adjudication_source`
 and `adjudication_note`, which record where each surviving row came from and under which rule.
@@ -87,7 +87,7 @@ work queue rather than a graveyard.
 
 **Grain.** One row per platform export row, carrying its resolution against Freeze 1.
 
-**File.** `adjudication/platform_match.csv`, 134 rows.
+**File.** `adjudication/platform_match.csv`, 157 rows.
 
 **Key columns.** `match_status` is one of `overlap`, `net_new`, `ambiguous`, or a non-census status.
 `parent_id` is populated only on `overlap`. `candidate_parent_ids` is populated only on `ambiguous`
@@ -95,12 +95,12 @@ and lists the rows the matcher could not choose between.
 
 `ambiguous` exists because a refusal that produces no distinguishable output is not conservative,
 it is an unrecorded merge decision. Ambiguous rows are held out of the full census on the ground
-that an omitted row is recoverable and an inflated census is not. Zero rows hit that branch on the
-current corpus.
+that an omitted row is recoverable and an inflated census is not. Two rows hit the multi-candidate
+refusal at Freeze 3, on the Attentive and FOSSA second cycles, which is the case it was written for.
 
 ### `latency__by_application`
 
-**Grain.** One row per census application that carries an exact-dated submission receipt. 196 rows.
+**Grain.** One row per census application that carries an exact-dated submission receipt. 197 rows.
 
 **Foreign key.** `application_id` references the adjudicated census.
 
@@ -111,7 +111,7 @@ footnote.
 ## How the tables join
 
 ```
-applications (221 census / 298 full)
+applications (223 census / 317 full)
     |
     | application_id  1..n
     v
@@ -119,7 +119,7 @@ events (414 bravo, 279 cursor)          exclusions (44 bravo, 45 cursor)
     |
     | derives
     v
-latency__by_application (196)           views/*.csv
+latency__by_application (197)           views/*.csv
 ```
 
 Platform rows enter through `platform_match`, which resolves each export row against the census
@@ -132,21 +132,22 @@ errors. Every metric below names what one observation is and what it is divided 
 
 | Metric | Unit of analysis | Numerator | Denominator | View |
 |---|---|---|---|---|
-| Application census | per-opportunity | n/a | n/a, it is a count: 221 | `adjudication/applications__adjudicated.csv` |
-| Full census | per-opportunity | n/a | n/a, it is a count: 298 | `adjudication/applications__full_census.csv` |
+| Application census | per-opportunity | n/a | n/a, it is a count: 223 | `adjudication/applications__adjudicated.csv` |
+| Full census | per-opportunity | n/a | n/a, it is a count: 317 | `adjudication/applications__full_census.csv` |
 | Application to interview rate | per-opportunity | applications with at least one interview event | all census applications | `funnel_by_role_lane.csv`, `funnel_by_evidence_class.csv` |
 | Interview rate by lane | per-opportunity | interviewed in the lane | applications in the lane | `funnel_by_role_lane.csv` |
-| Substantive response rate | per-opportunity | applications with a non-ack response | 196 with an exact-dated receipt | `latency_by_slice.csv` |
-| Any response rate | per-opportunity | applications with any response | 196 with an exact-dated receipt | `latency_by_slice.csv` |
+| Substantive response rate | per-opportunity | applications with a non-ack response | 197 with an exact-dated receipt | `latency_by_slice.csv` |
+| Any response rate | per-opportunity | applications with any response | 197 with an exact-dated receipt | `latency_by_slice.csv` |
 | Median days to first response | per-opportunity, conditional on responding | n/a | responders only, count printed per row | `latency_by_slice.csv` |
 | Time to first interview | per-opportunity, conditional on interviewing | n/a | 11 with both dates exact | `adjudication/LATENCY.md` |
-| Applications per month | per-month | n/a | 195 exact-dated rows, 26 excluded | `monthly_trend.csv` |
-| Origin channel share | per-opportunity | n/a | stated per stratum, 221 or 298 | `origin_coverage.csv` |
+| Applications per month | per-month | n/a | 196 exact-dated rows, 27 excluded | `monthly_trend.csv` |
+| Origin channel share | per-opportunity | n/a | stated per stratum, 223 or 317 | `origin_coverage.csv` |
+| Origin recoverability | per-opportunity | rows in each recovery tier | 223 | `origin_recoverability.csv` |
 | Role lane agreement (kappa) | per-opportunity | n/a | 211 rows both coders coded | `adjudication/PRE-ADJUDICATION.md` |
 
-Three denominators are in play and they are not interchangeable: **221** (the census), **196** (the
-exact-dated receipt base), and **298** (the full census including platform-only rows). Any figure
-quoting one of them must name it. The 298 in particular adds 77 rows that carry no events, so an
+Three denominators are in play and they are not interchangeable: **223** (the census), **197** (the
+exact-dated receipt base), and **317** (the full census including platform-only rows). Any figure
+quoting one of them must name it. The 317 in particular adds 94 rows that carry no events, so an
 interview rate against it is arithmetically smaller for a reason that has nothing to do with the
 search.
 
@@ -157,8 +158,12 @@ one. A LinkedIn stamp reading "2mo ago" is `relative_display` and carries `date_
 the stamp was read. It is never upgraded to a calendar date, because "2mo ago" read on 2026-08-29 is
 a range, and writing 2026-06-29 into a date column would convert a range into a false fact.
 
-Consequence: the monthly series runs on `date_precision = exact` only, n = 195, with the 26
+Consequence: the monthly series runs on `date_precision = exact` only, n = 196, with the 27
 excluded rows printed beside it.
+
+The Freeze 3 LinkedIn export improved this materially. It carries exact dates where the paged scrape
+carried relative stamps, so the full census now holds 284 exact dates of 317 with 6 relative stamps
+left, against 227 parseable of 298 before.
 
 ## Two things this schema does not have
 
@@ -167,7 +172,9 @@ dataset, so no cut by company size or stage is available. This is a genuine gap 
 suppressed cell.
 
 **No usable origin on most rows.** `discovery_source` exists and is populated, but its value is
-`unknown` on 206 of 221 census rows. The field is in the schema. The data is not in the field.
+`unknown` on 208 of 223 census rows. The field is in the schema. The data is not in the field.
+`views/origin_recoverability.csv` splits that into what was captured at write time (15), what a
+platform export lets you recover afterwards (60), and what no route recovers (148).
 
 ## A hazard worth naming
 

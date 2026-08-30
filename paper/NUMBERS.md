@@ -12,30 +12,30 @@ No dashes are used as punctuation in this file.
 
 | Claim | Value | Source | How to check |
 |---|---|---|---|
-| Application census | 221 | `adjudication/applications__adjudicated.csv` | row count minus header |
-| Full census | 298 | `adjudication/applications__full_census.csv` | row count minus header |
-| Net-new platform rows | 77 | `adjudication/platform_match.csv` | rows with `match_status = net_new` |
-| Interviewed applications | 13 | `views/funnel_by_role_lane.csv` | sum of `n_interviewed` |
-| Application to interview rate | 13/221 | `views/funnel_by_role_lane.csv` | sum `n_interviewed` over sum `n_applications` |
-| Latency base | 196 | `adjudication/latency__by_application.csv` | row count minus header |
-| Any response | 100/196 | `views/latency_by_slice.csv` | `evidence_class` row, `n_responded_any` |
-| Substantive response | 79/196 | `views/latency_by_slice.csv` | `evidence_class` row, `n_responded_substantive` |
-| No response beyond the receipt | 96/196 | derived | 196 minus 100 |
-| Employer artifact / platform log on the census | 220 / 1 | `views/funnel_by_evidence_class.csv` | `n_applications` column |
+| Application census | 223 | `adjudication/applications__adjudicated.csv` | row count minus header |
+| Full census | 317 | `adjudication/applications__full_census.csv` | row count minus header |
+| Net-new platform rows | 94 | `adjudication/platform_match.csv` | rows with `match_status = net_new` |
+| Interviewed applications | 14 | `views/funnel_by_role_lane.csv` | sum of `n_interviewed` |
+| Application to interview rate | 14/223 | `views/funnel_by_role_lane.csv` | sum `n_interviewed` over sum `n_applications` |
+| Latency base | 197 | `adjudication/latency__by_application.csv` | row count minus header |
+| Any response | 100/197 | `views/latency_by_slice.csv` | `evidence_class` row, `n_responded_any` |
+| Substantive response | 79/197 | `views/latency_by_slice.csv` | `evidence_class` row, `n_responded_substantive` |
+| No response beyond the receipt | 97/197 | derived | 197 minus 100 |
+| Employer artifact / platform log on the census | 222 / 1 | `views/funnel_by_evidence_class.csv` | `n_applications` column |
 
-`build_views.py` asserts 221, 298, 13, and 196 on every run, so a drift in any of them fails the
+`build_views.py` asserts 223, 317, 14, and 197 on every run, so a drift in any of them fails the
 pipeline rather than reaching a table.
 
 ## Section 3.2, the origin null result
 
 | Claim | Value | Source |
 |---|---|---|
-| `discovery_source = unknown` on the census | 206 of 221, 93.2 percent | `views/origin_coverage.csv`, `data_quality_report.md` section 7 |
+| `discovery_source = unknown` on the census | 208 of 223, 93.3 percent | `views/origin_coverage.csv`, `data_quality_report.md` section 7 |
 | Census rows knowing their origin | 15 | `views/origin_coverage.csv`, sum `n` where `origin_is_known = yes`, `discovery_source` block |
 | Largest known-origin channel on the census | 7, wellfound | same |
-| Full census rows knowing their origin | 92 | same, `full_census_298` stratum |
+| Full census rows knowing their origin | 109 | same, `full_census_298` stratum |
 | Of those, rows with an observable outcome | 15 | same, sum `n_outcome_observable` where `origin_is_known = yes` |
-| LinkedIn rows on the full census | 71 | same |
+| LinkedIn rows on the full census | 88 | same |
 | LinkedIn rows with an observable outcome | 0 | same, `n_outcome_observable` |
 | Only origin group large enough for a median | `unknown` | `views/latency_by_slice.csv`, `discovery_source` block |
 | `company_stage` absent from the schema | n/a | `schema.md`, `codebook.md` |
@@ -55,11 +55,11 @@ pipeline rather than reaching a table.
 
 | Claim | Value | Source |
 |---|---|---|
-| Substantive: n 79, median 7, p25 3, p75 19, mean 15.1, max 140, day zero 9 at 11.4 percent | as stated | `adjudication/LATENCY.md` |
-| Any: n 100, median 5.5, p25 1, p75 15, mean 12.8, max 140, day zero 22 at 22.0 percent | as stated | `adjudication/LATENCY.md` |
+| Substantive: n 79 of 197, median 7, p25 3, p75 19 | as stated | `adjudication/LATENCY.md` |
+| Any: n 100 of 197, median 5.5, p25 1, p75 15 | as stated | `adjudication/LATENCY.md` |
 | Time to first interview: n 11, median 6, mean 8.8, range 0 to 34 | as stated | `adjudication/LATENCY.md` |
 | Right censoring: 0.510, 0.508, 0.532, 0.500 at 0, 30, 60, 90 days | as stated | `adjudication/LATENCY.md` |
-| Excluded for lacking an exact-dated receipt | 25 | `adjudication/LATENCY.md`, 221 minus 196 |
+| Excluded for lacking an exact-dated receipt | 26 | `adjudication/LATENCY.md`, 223 minus 197 |
 
 Medians by slice, including the role lane and ATS figures quoted in section 4, are in
 `views/latency_by_slice.csv`. They reproduce the values in `adjudication/LATENCY.md` exactly, which
@@ -69,9 +69,9 @@ is a cross-check between two independently written implementations of the same c
 
 | Claim | Value | Source |
 |---|---|---|
-| Exact-dated monthly counts, 2025-06 through 2026-08 | 5, 19, 16, 0, 0, 1, 2, 7, 10, 21, 26, 22, 28, 33, 5 | `views/monthly_trend.csv` |
-| Exact-dated total | 195 | same, `n_exact_date_total` |
-| Non-exact excluded | 26 | same, `n_not_exact_total` |
+| Exact-dated monthly counts, 2025-06 through 2026-08 | 5, 19, 16, 0, 0, 1, 2, 7, 10, 21, 27, 22, 28, 33, 5 | `views/monthly_trend.csv` |
+| Exact-dated total | 196 | same, `n_exact_date_total` |
+| Non-exact excluded | 27 | same, `n_not_exact_total` |
 | The 2025-09 evidence-bound row | Fullsteam 2025-09-29 | `paper/RESULTS.md` |
 
 ## Section 3.6, reliability
@@ -85,7 +85,7 @@ Every value from `adjudication/PRE-ADJUDICATION.md`, generated by `adjudication/
 | role lane Cohen's kappa | 0.9510 |
 | include percent agreement | 0.9905 |
 | include kappa | 0.7452 |
-| interview set found by both coders | 10 of 13, `adjudication/LATENCY.md` |
+| interview set found by both coders | 10 of 14, `adjudication/LATENCY.md` |
 
 ## Sections 4 and 5
 
@@ -93,7 +93,7 @@ Every value from `adjudication/PRE-ADJUDICATION.md`, generated by `adjudication/
 |---|---|---|
 | Median substantive response 7 days, p75 19 | as stated | `adjudication/LATENCY.md` |
 | 36 titles in one lane | 36 | `views/title_language.csv` |
-| Applications in lanes producing zero interviews | 78 of 221 | `views/funnel_by_role_lane.csv` |
+| Applications in lanes producing zero interviews | 78 of 223 | `views/funnel_by_role_lane.csv` |
 | Engagements converting to paid work came through the opportunity register | 3 | `knowledge/02-current.md`, `adjudication/ADJUDICATION.md` |
 | Prior estimates ranged 163 to 247 | as stated | `knowledge/01-engagement.md`, `paper/DEFECTS.md` |
 | Naive sum across four trackers would report roughly 315 | as stated | `knowledge/01-engagement.md` |
@@ -101,15 +101,34 @@ Every value from `adjudication/PRE-ADJUDICATION.md`, generated by `adjudication/
 | Stop conditions Partial or Unmet | 4 of 7 | `artifacts/STOP-CONDITIONS.md` |
 | Rows with a city in `work_type` | 3 | `data_quality_report.md` section 3 |
 | Derived interview contradicting stored outcome | 1 | `data_quality_report.md` section 5, `paper/DEFECTS.md` |
-| Row completeness: Complete 11, Partial 210, Unusable 0 | as stated | `data_quality_report.md` section 7 |
+| Row completeness | see report | `data_quality_report.md` section 7 | `data_quality_report.md` section 7 |
 | Calendar keyword search returning 0 against 31 unfiltered | as stated | `knowledge/protocol.md`, `artifacts/calendar/q8-lecturesfrom-primary.csv` |
+
+## Section 3.2 origin recoverability, and 3.7 the challenge
+
+| Claim | Value | Source |
+|---|---|---|
+| Origin captured at write time | 15 of 223, 6.7 percent | `views/origin_recoverability.csv` |
+| Origin recoverable from a platform export | 60 of 223, 26.9 percent | same |
+| Origin unrecoverable by any route | 148 of 223, 66.4 percent | same |
+| Workbook records | 353 | `challenge/checkpoint__ledger.csv` |
+| LinkedIn formal export rows | 107 | `artifacts/platform/linkedin_job_applications_export.csv` |
+| Workbook exclusions that are Tier A applications here | 8 of 10 | `challenge/CHALLENGE.md` section 2.1 |
+| Companies here and not in the workbook | 27 | `challenge/reconciliation__companies.csv` |
+| Companies in the workbook and not here | 20 | same |
+| Workbook records labeled GHOSTED | 252 of 353 | `challenge/checkpoint__ledger.csv` |
+| Workbook Interview Count UNKNOWN | 334 of 353 | same |
+| The Hog submission date, against its first process event | 2026-06-04 against 2026-06-15 | export, and `coding/*/events__*.csv` |
+| BX Studio submission date, against its first process event | 2026-04-06 against 2026-04-08 | same |
 
 ## Numbers deliberately not in the paper
 
 Carried forward from the blocklist in `paper/RESULTS.md`, which lists numbers a skeptic should not
 be shown as findings. Two of them would have flattered the author.
 
-- 247 applications, 11 interviews, 4.45 percent. Prior-audit figures, not the output of this freeze.
+- 247 applications, 11 interviews, 4.45 percent. Prior-audit figures, not the output of any freeze here.
+- 221 applications and 13/221. Superseded at Freeze 3 by 223 and 14/223.
+- The workbook's 353. It mixes both registers and is not comparable to 223.
 - Any completeness percentage. The overlap stratum that would support one is unmeasured.
 - Any naive Lincoln Petersen estimate.
 - Any origination-channel conversion rate. Section 3.2 is why.

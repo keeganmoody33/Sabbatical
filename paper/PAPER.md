@@ -1,4 +1,4 @@
-# What 221 Job Applications Actually Show
+# What 223 Job Applications Actually Show
 
 ### A forensic census of one GTM engineering job search, and the question the data could not answer
 
@@ -10,11 +10,11 @@ No dashes are used as punctuation in this paper. Every number traces to a named 
 
 ## Abstract
 
-I spent fifteen months applying for go-to-market engineering roles, then treated my own job search as a dataset and tried to establish how many applications I could actually prove. Evidence was harvested from email, calendar, and platform exports into a frozen corpus, coded independently by two language models blind to each other, and resolved in a named adjudication pass. The result is 221 applications with employer-side proof, 298 including rows visible only in platform logs, and 13 applications that reached an interview, a rate of 13/221.
+I spent fifteen months applying for go-to-market engineering roles, then treated my own job search as a dataset and tried to establish how many applications I could actually prove. Evidence was harvested from email, calendar, and platform exports into a frozen corpus, coded independently by two language models blind to each other, and resolved in a named adjudication pass. The result is 223 applications with employer-side proof, 317 including rows visible only in platform logs, and 14 that reached an interview, a rate of 14/223.
 
-Three findings. First, roughly half of all applications produced a receipt and then silence: 96/196 of the rows with an exact-dated receipt drew no response at all, and the median substantive response, among those that did respond, arrived in 7 days. Second, all 13 interviews sat in three of eight role lanes, and the five lanes covering the other 78 applications produced none. Third, and most useful to anyone building their own tracker: **the study could not answer the question it most wanted to answer.** Where each role was found is unknown on 206 of 221 rows, and on the rows where origin *is* known, no outcome is observable. That is a failure of the instrument, not of the analysis, and it is reproducible in almost any job-search log kept the ordinary way.
+Three findings. Roughly half of all applications produced a receipt and then silence: 97/197 of the rows with an exact-dated receipt drew no response, and the median substantive response, among those that did respond, arrived in 7 days. All 14 interviews sat in three of eight role lanes, and the five lanes covering the other 78 applications produced none. Third, and most useful to anyone building a tracker: **the study could not answer the question it most wanted to answer.** Origin was captured at the time on 15 of 223 rows, recoverable afterwards on 60 more only because a platform logged them, and unrecoverable on the remaining 148. That is a failure of the instrument, and it is reproducible in almost any job-search log kept the ordinary way.
 
-This is a single subject studied by himself. It is a case study, not a market study. It should be read for the method and for the shape of the funnel, not as evidence about the labor market.
+This is a single subject studied by himself: a case study, not a market study. A second, independently produced reconstruction of the same fifteen months was used to attack these numbers after they were written, and section 3.7 reports what it moved.
 
 ## 1. Introduction
 
@@ -28,19 +28,19 @@ This paper has two subjects. The visible one is what fifteen months of applying 
 
 ## 2. Methods
 
-**Window and unit.** 2025-06-01 to 2026-08-29, America/New_York, fifteen months. The unit of analysis is one application cycle, keyed `company_canonical + role_as_listed + cycle`. Cycle is in the key because a genuine re-application after a closed first attempt is a second row, and a key without it collapses the pair. Two such pairs exist here, and in both the rejection on the first cycle is what licenses the second.
+**Window and unit.** 2025-06-01 to 2026-08-29, America/New_York, fifteen months. The unit is one application cycle, keyed `company_canonical + role_as_listed + cycle`. Cycle is in the key because a re-application after a closed first attempt is a second row, and a key without it collapses the pair. Two such pairs exist here, and in both the rejection on the first cycle licenses the second.
 
-**Two registers, one denominator.** Applications are roles I submitted. Opportunities are referrals, recruiter-initiated processes, and matching-platform contracts where no submission exists. Both stay in the dataset. Only applications are ever a denominator. This matters more than it sounds: the opportunity register contains three engagements that converted to paid work. The rows that would inflate the conversion rate are the ones with the good outcomes, which is exactly why this contamination usually goes uncaught.
+**Two registers, one denominator.** Applications are roles I submitted. Opportunities are referrals, recruiter-initiated processes, and matching-platform contracts where no submission exists. Both stay in the dataset; only applications are ever a denominator. The opportunity register contains three engagements that converted to paid work, so the rows that would inflate the conversion rate are the ones with the good outcomes, which is exactly why this contamination usually goes uncaught.
 
-**Retrieval with a stop condition.** Twenty-two queries, each with a stable id, a plain-language intent, a date window, and a termination condition the source itself reports: a query is done only when the API returns no next page. Four of seven stop conditions remain Partial or Unmet, and the census is reported as bounded by those gaps. One lesson is recorded in the protocol: searching the calendar for "interview" returned zero events, because interview loops lived inside invites titled "30 minute meeting". Sweeping the window in 90-day blocks with no keyword returned 31.
+**Retrieval with a stop condition.** Twenty-two queries, each with a stable id, an intent, a date window, and a termination condition the source reports: done only when the API returns no next page. Four of seven stop conditions remain Partial or Unmet, and the census is reported as bounded by those gaps. One lesson is in the protocol: searching the calendar for "interview" returned zero events, because interview loops lived inside invites titled "30 minute meeting". Sweeping in 90-day blocks with no keyword returned 31.
 
 **Blind independent coding.** The codebook was frozen, then the corpus, then two language-model coders extracted the same artifact set into the same tables without seeing each other's output. Disagreements were counted before anyone resolved them. This is what makes the categories measurable rather than assertable.
 
-**Derived, never stored.** Whether an application was interviewed is computed from the events table on every run and never written on the application row. A stored rollup and a stored event list will eventually disagree, and then neither can be trusted. Section 5 reports what happened where this principle was applied in one direction and not the other.
+**Derived, never stored.** Whether an application was interviewed is computed from the events table on every run, never written on the application row. A stored rollup and a stored event list will eventually disagree, and then neither can be trusted. Section 5 reports what happened where this was applied in one direction and not the other.
 
 **Precision as a field.** Every date carries a precision label. A LinkedIn stamp reading "2mo ago" is never upgraded to a calendar date, because it is a range and writing a date would convert a range into a false fact. The monthly series runs on 195 exact-dated rows with the 26 excluded printed beside it.
 
-**Reproducibility.** One command, `make check`, rebuilds every published figure from the frozen inputs. It hashes every output before and after and fails if a re-run moved a byte. It currently passes, which means the numbers below are reproducible rather than merely recorded.
+**Reproducibility.** One command, `make check`, rebuilds every published figure from the frozen inputs, hashing every output before and after and failing if a re-run moved a byte. It passes, so the numbers below are reproducible rather than merely recorded.
 
 ## 3. Results
 
@@ -48,14 +48,14 @@ This paper has two subjects. The visible one is what fifteen months of applying 
 
 | Stage | n | Against |
 |---|---|---|
-| Applications with employer-side proof | 221 | the census |
-| Full census including platform-only rows | 298 | census plus 77 net-new |
-| Applications reaching at least one interview | 13 | 13/221 |
-| Applications with any response beyond the receipt | 100 | 100/196 exact-dated base |
-| Applications with a substantive response | 79 | 79/196 |
-| Applications with no response at all | 96 | 96/196 |
+| Applications with employer-side proof | 223 | the census |
+| Full census including platform-only rows | 317 | census plus 94 net-new |
+| Applications reaching at least one interview | 14 | 14/223 |
+| Applications with any response beyond the receipt | 100 | 100/197 exact-dated base |
+| Applications with a substantive response | 79 | 79/197 |
+| Applications with no response at all | 97 | 97/197 |
 
-Three denominators are in play and they are not interchangeable. 221 is the census. 196 is the subset carrying an exact-dated receipt, the only rows where a response time can be computed. 298 adds 77 rows visible only in platform exports, which carry no employer-side artifact and therefore no events, so an interview rate against 298 is arithmetically smaller for a reason unrelated to the search.
+Three denominators are in play and they are not interchangeable. 223 is the census. 197 is the subset carrying an exact-dated receipt, the only rows where a response time can be computed. 317 adds 94 rows visible only in platform exports, which carry no employer-side artifact and therefore no events, so an interview rate against 317 is arithmetically smaller for a reason unrelated to the search.
 
 The plainest line in the funnel is the one worth keeping: **roughly half of all applications produced a receipt and then nothing.**
 
@@ -63,16 +63,30 @@ The plainest line in the funnel is the one worth keeping: **roughly half of all 
 
 The question this study most wanted to answer is which origination channels convert. It cannot.
 
-`discovery_source` is `unknown` on 206 of 221 census rows, 93.2 percent. That alone would be a coverage problem. The structure underneath it is worse.
+`discovery_source` is `unknown` on 208 of 223 census rows, 93.3 percent. That alone would be a coverage problem. The structure underneath it is worse.
 
 | Stratum | Rows knowing their origin | Of those, rows with an observable outcome |
 |---|---|---|
-| Application census, 221 | 15 | 15 |
-| Full census, 298 | 92 | 15 |
+| Application census, 223 | 15 | 15 |
+| Full census, 317 | 109 | 15 |
 
-On the full census, 71 rows know they came from LinkedIn and **zero** of them have an observable outcome, because a platform applied-list row carries no employer-side artifact and therefore no events. The rows that do have outcomes are the 206 whose origin is unknown. Origin is known almost exactly where outcome is not.
+On the full census, 88 rows know they came from LinkedIn and **zero** of them have an observable outcome, because a platform applied-list row carries no employer-side artifact and therefore no events. The rows that do have outcomes are the 208 whose origin is unknown. Origin is known almost exactly where outcome is not.
 
-The overlap that could answer the question is 15 rows out of 221, spread across five channels, the largest of which has 7. Nothing publishable lives there. The clearest expression of it is in the latency slices: the only origin group large enough to publish a median response time is the group labeled `unknown`.
+The overlap that could answer the question is 15 rows out of 223, spread across five channels, the largest of which has 7. Nothing publishable lives there. The clearest expression of it is in the latency slices: the only origin group large enough to publish a median response time is the group labeled `unknown`.
+
+### Origin is not simply gone
+
+An earlier draft stated the gap as a flat 93 percent unknown, which implies the information no longer exists. That is too strong. Splitting the census by how origin could be recovered gives three tiers, not two.
+
+| Recovery tier | n | Share |
+|---|---|---|
+| Captured at write time | 15 | 6.7 percent |
+| Recoverable later, only because a platform export recorded the row | 60 | 26.9 percent |
+| Unrecoverable by any route | 148 | 66.4 percent |
+
+The middle tier is recoverable only because a platform kept its own log, and what it recovers is the platform that *recorded* the application rather than where the role was found. The bottom tier, two thirds of the census, is evidenced entirely by employer-side mail, and an ATS receipt never says where the applicant found the posting. For those, the information is gone.
+
+Recovered values are deliberately **not** written into `discovery_source`. The coded field stays as the blind coders left it, with the recovery beside it in `views/origin_recoverability.csv`. A derived value overwriting a coded one would make the census unauditable against the coder tables.
 
 This is not a withheld analysis. There is no analysis to withhold. The field existed in the schema from the beginning; the data never got into it, because at the moment of applying, where I found the role felt like the least important thing to write down.
 
@@ -80,12 +94,12 @@ This is not a withheld analysis. There is no analysis to withhold. The field exi
 
 ### 3.3 Role lane and title language
 
-All 13 interviews sit in three of eight lanes.
+All 14 interviews sit in three of eight lanes.
 
 | Role lane | n | Interviewed | Rate | Wilson 95 percent |
 |---|---|---|---|---|
-| explicit_gtm_engineering | 86 | 9 | 9/86 | 0.056 to 0.187 |
-| unspecified | 35 | 2 | 2/35 | 0.016 to 0.186 |
+| explicit_gtm_engineering | 87 | 10 | 10/87 | 0.064 to 0.199 |
+| unspecified | 36 | 2 | 2/36 | 0.015 to 0.181 |
 | growth_demand_marketing | 22 | 2 | 2/22 | 0.025 to 0.278 |
 | sales_bd_partnerships | 28 | 0 | 0/28 | 0.000 to 0.121 |
 | other | 18 | 0 | 0/18 | 0.000 to 0.176 |
@@ -97,7 +111,7 @@ Five lanes covering 78 applications produced no interviews at all. That is the s
 
 Within explicit GTM engineering, titles carrying seniority or founding language show the highest rate in the set, 3/7, with a Wilson interval of 0.158 to 0.750. The interval is the finding. A 43 percent point estimate on seven rows is not a result, and quoting it without the interval is quoting noise.
 
-The whole interview set is small enough to print, which is itself the honest way to present it. Nine of the thirteen titles carry GTM or go-to-market language.
+The whole interview set is small enough to print, which is itself the honest way to present it. Ten of the fourteen titles carry GTM or go-to-market language.
 
 | Company | Title as listed | Lane | Terminal outcome |
 |---|---|---|---|
@@ -114,14 +128,15 @@ The whole interview set is small enough to print, which is itself the honest way
 | PhrasIQ | unspecified | unspecified | still open |
 | RevSpring | Lead, Agentic Operations + GTM Engineering | explicit GTM | still open |
 | TestGorilla | Go-to-Market Engineer | explicit GTM | still open |
+| The Hog | GTM Engineer | explicit GTM | still open |
 
-The jobmail.io row is the contradiction described in section 5: it carries an interview event and a stored outcome of `rejected_no_interview`, from one coder, with no blind second reading to break the tie.
+Two rows carry a caveat. The jobmail.io row is the contradiction described in section 5: it carries an interview event and a stored outcome of `rejected_no_interview`, from one coder, with no blind second reading. The Hog entered the census only at Freeze 3, when a submission artifact for it was found; section 3.7 gives that story.
 
 Correlation and causation are not close here. I chose which roles to apply to, so title language is confounded with where I was a plausible fit, with what I was willing to spend effort on, and with market timing. Nothing is randomized, and no causal claim is available.
 
 ### 3.4 Response latency
 
-Computed only on rows where both dates are exact, n = 196, with the 25 excluded rows reported alongside.
+Computed only on rows where both dates are exact, n = 197, with the 26 excluded rows reported alongside.
 
 | Definition | n responders | Median days | p25 | p75 | Mean | Max | Same-day share |
 |---|---|---|---|---|---|---|---|
@@ -130,7 +145,7 @@ Computed only on rows where both dates are exact, n = 196, with the 25 excluded 
 
 Two definitions are published because the choice moves the number, and it is not the analyst's to make silently. The same-day share roughly doubles when automated acknowledgments count, which is what a receipt and an acknowledgment arriving together looks like. Both distributions are right skewed, so the median is the statistic to quote.
 
-The medians are conditional on having responded. They describe responders only. Folding in the 96 silent applications would drop them from the denominator, which is the same error the two-register split exists to prevent on the interview rate.
+The medians are conditional on having responded. They describe responders only. Folding in the 97 silent applications would drop them from the denominator, which is the same error the two-register split exists to prevent on the interview rate.
 
 Time to first interview: n = 11, median 6 days, mean 8.8, range 0 to 34.
 
@@ -138,7 +153,7 @@ Right censoring is not driving the response rate. Applications submitted near th
 
 ### 3.5 Timeline
 
-Exact-dated applications per month, n = 195, with 26 non-exact rows excluded and printed here rather than hidden: 2025-06 5, 2025-07 19, 2025-08 16, 2025-09 0, 2025-10 0, 2025-11 1, 2025-12 2, 2026-01 7, 2026-02 10, 2026-03 21, 2026-04 26, 2026-05 22, 2026-06 28, 2026-07 33, 2026-08 5.
+Exact-dated applications per month, n = 196, with 27 non-exact rows excluded and printed here rather than hidden: 2025-06 5, 2025-07 19, 2025-08 16, 2025-09 0, 2025-10 0, 2025-11 1, 2025-12 2, 2026-01 7, 2026-02 10, 2026-03 21, 2026-04 27, 2026-05 22, 2026-06 28, 2026-07 33, 2026-08 5.
 
 Zero in September and October 2025 is a count of exact-dated rows, not a claim that nothing happened. At least one application in that gap is dated only by an evidence bound. Prior audits that read the same period as near-empty were reading a search-boundary artifact: they had searched only from 2025-08-25 forward, which made five unharvested months look like a quiet period.
 
@@ -151,11 +166,25 @@ Zero in September and October 2025 is a count of exact-dated rows, not a claim t
 | Role lane Cohen's kappa | 0.9510 |
 | Include or exclude percent agreement | 0.9905 |
 | Include or exclude kappa | 0.7452 |
-| Interview set found by both coders | 10 of 13 |
+| Interview set found by both coders | 10 of 14 |
 
 The 24-point gap between the two include statistics is the whole reason kappa exists. Almost every record was an include, so two raters guessing "include" every time would agree nearly as often. The honest number is the lower one, and it rests on two disagreements.
 
+Those same two disagreements are the ones Freeze 3 later reversed. They were the only rows where the coders split on whether a record counted at all, and new evidence eventually showed that on both, one coder was right and the adjudication was wrong. A kappa of 0.7452 on two contested rows was, in hindsight, pointing exactly where the weakness was.
+
 The last row is the one that should temper everything above it. Agreement on *which applications were interviewed* is 10/13. Three rest on one coder alone. Event-level agreement is not among the reliability statistics the protocol requires, so it is unmeasured rather than measured and small, and the interview-based findings inherit that.
+
+### 3.7 What a second reconstruction did to these numbers
+
+After the results above were written, a second independently produced audit of the same fifteen months arrived, built from a different source set including a LinkedIn data download this study never had. It holds 353 records against this one's 317, and it was used to attack these findings. Full reconciliation in `challenge/CHALLENGE.md`. It is not a third blind coder: the protocol requires an identical corpus, so a different source set is a different study, and no agreement statistic is computed against it.
+
+**What it moved.** Its LinkedIn export carries 107 rows with job IDs and exact application dates, against the 99 relative stamps this study had. Two of those rows are submissions to The Hog and BX Studio, dated 11 and 2 days before the first process events already recorded here. Those two were the only include-or-exclude disagreements between the blind coders, and both had been adjudicated out of the census on the single ground that no submission artifact existed. The rule did not change. Its premise did. Census 221 became 223, interviews 13 became 14, and 13/221 became 14/223.
+
+**What it failed to move.** It drops 10 rows for unresolvable origin, and eight of those sit here with Tier A employer artifacts, including PhrasIQ, one of the fourteen interviews. It is missing 27 companies this census holds. It labels 252 of 353 records GHOSTED, which its own defect register calls an overloaded residual, and its interview count is UNKNOWN on 334 of 353 rows.
+
+**The finding underneath that.** A schema organized around *where a role came from* loses rows whose origin cannot be resolved. A schema organized around *whether a submission can be proved* keeps them. Origin is the more useful field and the more fragile one, and it must never gate inclusion. That is a correction to the advice this paper would otherwise have given.
+
+Neither reconstruction is complete, and the union of the two is larger than either. That is the most honest available statement about coverage, and it is another reason no completeness percentage appears anywhere here.
 
 ## 4. Discussion
 
@@ -163,7 +192,7 @@ The last row is the one that should temper everything above it. Agreement on *wh
 
 Three things in this data are actionable from the employer side.
 
-**Half your applicants hear nothing after the receipt.** In this log 96/196 applications produced an automated receipt and then silence. That is one candidate's view of many companies, so read it as a market norm rather than an indictment of any firm. The norm is the opportunity: the median substantive response here arrived in 7 days and the p75 was 19. A team that reliably responds inside a week is not competing against a high bar.
+**Half your applicants hear nothing after the receipt.** Here 97/197 applications produced an automated receipt and then silence. That is one candidate's view of many companies, so read it as a market norm rather than an indictment of any firm. The norm is the opportunity: the median substantive response arrived in 7 days, p75 19. A team that reliably responds inside a week is not competing against a high bar.
 
 **Your title is doing recruiting work you have not accounted for.** This dataset contains 36 distinct titles inside a single role lane. When the same job is posted as GTM Engineer, Founding GTM, Lead Agentic Operations, and Go-to-Market Engineer, applicants cannot search for it and cannot tell whether they are qualified. The internal cost is a smaller and worse-sorted pipeline. The external cost is that nobody can build the labor-market data that would tell you what to pay.
 
@@ -173,9 +202,9 @@ Three things in this data are actionable from the employer side.
 
 I came to this from a biochemistry research background, so this section is the one I would have wanted.
 
-**Apply on-title, and expect the adjacent lanes to be quieter.** Every interview in this log came from three of eight lanes. The other five, covering 78 of 221 applications across sales, solutions engineering, RevOps, product-adjacent, and miscellaneous titles, produced none. The intervals do not permit "those lanes do not work". They do support a resource-allocation reading: the adjacent-title strategy did not visibly outperform here, and it consumed more than a third of the applications.
+**Apply on-title, and expect the adjacent lanes to be quieter.** Every interview in this log came from three of eight lanes. The other five, covering 78 of 223 applications across sales, solutions engineering, RevOps, product-adjacent, and miscellaneous titles, produced none. The intervals do not permit "those lanes do not work". They do support a resource-allocation reading: the adjacent-title strategy did not visibly outperform here, and it consumed more than a third of the applications.
 
-**Expect a low rate and budget accordingly.** 13/221 is the honest headline. Most applications end in silence rather than rejection, so a pipeline built on applications alone gives very little to steer on. Half of what you send never resolves into anything you can learn from.
+**Expect a low rate and budget accordingly.** 14/223 is the honest headline. Most applications end in silence rather than rejection, so a pipeline built on applications alone gives very little to steer on. Half of what you send never resolves into anything you can learn from.
 
 **The second pipeline is the one that paid.** Every engagement that converted to paid work in these fifteen months came through the opportunity register rather than the application register: referrals, recruiter-initiated processes, and matching platforms. Keeping those out of the application denominator is what makes the observation visible. Mixed together, applying would look more effective than it was, and I would have done more of the thing that was not working.
 
@@ -185,9 +214,11 @@ I came to this from a biochemistry research background, so this section is the o
 
 The subject matter here is incidental. The transferable practice is not.
 
-**Decide what one row means before you decide what columns it has.** Every wrong number in this project's prior audits was a grain error, not a field error: a rejection thread counted as a second application, a recruiter process counted in an application denominator, a re-application collapsed into its first attempt. The fields were fine in all three.
+**Decide what one row means before you decide what columns it has.** Every wrong number in this project's prior audits was a grain error, not a field error: a rejection thread counted as a second application, a recruiter process counted in an application denominator, a re-application collapsed into its first attempt.
 
-**Capture origin at write time or lose it forever.** This is the paper's central practical finding, and it cost the study its headline analysis. The receipt does not know where you found the posting. Only you do, and only for a few days. One required field at the moment of the event would have made the whole channel analysis possible.
+**Capture origin at write time, because only a third of it is recoverable later.** This is the paper's central practical finding, and it cost the study its headline analysis. Sixty of 223 rows here could have origin reattached afterwards, but only because a platform kept its own log, and what that recovers is the platform that recorded the application rather than where the role was found. For the other 148 the only evidence is employer-side mail, and a receipt never says where you found the posting. One required field at the moment of the event would have made the whole channel analysis possible.
+
+**Never let a fragile field gate inclusion.** The competing reconstruction organized around origin and dropped eight applications this study proves with employer artifacts, one of which produced an interview. Record origin, and separately record whether a submission can be proved. Only the second decides whether a row counts.
 
 **Give yourself a legal way to say "I do not know".** `unknown` is a recorded observation, not a missing value. Without it a tracker fills gaps with plausible guesses, and you can no longer tell an observation from an inference.
 
@@ -195,27 +226,31 @@ The subject matter here is incidental. The transferable practice is not.
 
 **Suppress small cells, and keep the row.** A group that disappears is indistinguishable from a group that never existed. Keep the n, blank the rate, say why.
 
-**Split any funnel with both an inbound and an outbound motion into two registers.** Only one is ever a denominator. The contaminating rows are usually the ones with the best outcomes, which is why nobody catches this on their own data.
+**Write down what would reverse each exclusion.** Every excluded row carries a `what_would_promote_it` column naming the artifact that would put it back. Two rows were reinstated by exactly that route, which turns an exclusion list into a work queue rather than a graveyard.
+
+**Split any funnel with an inbound and an outbound motion into two registers.** Only one is ever a denominator. The contaminating rows usually have the best outcomes, which is why nobody catches this on their own data.
 
 ## 5. Limitations
 
-**N = 1, and the subject is the author.** Nothing here estimates a population parameter, and no reader should treat 13/221 as a rate to expect.
+**N = 1, and the subject is the author.** Nothing here estimates a population parameter, and no reader should treat 14/223 as a rate to expect.
 
-**Self-authored, and it showed.** One correction came from me, from recall, after I had seen the analysis. It was right, and one blind coder had independently reached nearly the same conclusion, but the provenance is exactly the failure mode blind coding exists to prevent, and it is disclosed rather than smoothed.
+**Self-authored, and it showed.** One correction came from me, from recall, after I had seen the analysis. It was right, and a blind coder had independently reached nearly the same conclusion, but the provenance is the exact failure mode blind coding exists to prevent, and it is disclosed rather than smoothed.
 
-**A stored field contradicts a derived one.** One application carries an interview event and a terminal outcome of `rejected_no_interview`. Both values came from the same coder on a row the other coder never saw, so no blind second reading exists to break the tie. No published count moves, because interviewed is derived and never stored, but the contradiction is real and is left open rather than resolved by preference.
+**A stored field contradicts a derived one.** One application carries an interview event and a terminal outcome of `rejected_no_interview`, both from the same coder on a row the other never saw. No published count moves, because interviewed is derived, but the contradiction is left open rather than resolved by preference.
 
-**The census is not complete and does not claim to be.** Four of seven stop conditions are Partial or Unmet. No completeness percentage is published, because the estimator that would produce one requires two sources that could each have seen the same record, and LinkedIn Easy Apply generates no ATS mail, so the two sources here are near-disjoint by construction. If someone runs the unstratified estimator anyway, it would understate completeness.
+**Two figures here already changed once.** The census was 221 and the rate 13/221 until a second reconstruction supplied submission artifacts for two rows adjudicated out. The process working, and also direct evidence that these numbers are bounded by what has been found, not by what happened.
 
-**Selection bias in what got logged, survivorship bias in origin.** The corpus is what could be recovered from email, calendar, and platform exports. Applications that produced no artifact anywhere are invisible by construction, and they are disproportionately the ones that went nowhere. Meanwhile the rows that know where they came from are the ones a platform recorded, which is a biased sample of channels rather than a random one.
+**The census is not complete and does not claim to be.** Four of seven stop conditions are Partial or Unmet, and no completeness percentage is published: the estimator requires two sources that could each have seen the same record, and LinkedIn Easy Apply generates no ATS mail, so the two here are near-disjoint by construction.
 
-**Coders are language models, not a human gold standard.** Agreement between two models measures reproducibility of the coding rule, not correctness, and it is measured on role lane and the include decision only. Event-level agreement is unmeasured, and that is where the interview set lives.
+**Selection bias in what got logged, survivorship bias in origin.** Applications that produced no artifact anywhere are invisible by construction, and they are disproportionately the ones that went nowhere. The rows that do know where they came from are the ones a platform recorded, which is a biased sample of channels.
 
-**Three rows carry a city name in the workplace-type column.** They survived two coders, an adjudication pass, and two published CSVs, and were caught only when a second reader looked. The frozen coder files are left uncorrected, because editing them retroactively would destroy the agreement statistic. It is exactly the defect a second reader catches and a solo author never does.
+**Coders are language models, not a human gold standard.** Agreement between two models measures reproducibility of the coding rule, not correctness, and only on role lane and the include decision. Event-level agreement is unmeasured, and that is where the interview set lives.
+
+**Three rows carry a city name in the workplace-type column.** They survived two coders, an adjudication pass, and two published CSVs, and were caught only when a second reader looked. The coder files are left uncorrected, because editing them retroactively would destroy the agreement statistic. Exactly the defect a second reader catches and a solo author never does.
 
 ## 6. Conclusion
 
-Fifteen months, 221 provable applications, 13 interviews, and half the funnel ending in silence. Those numbers are worth what a single case is worth, which is not nothing and is not much.
+Fifteen months, 223 provable applications, 14 interviews, and half the funnel ending in silence. Those numbers are worth what a single case is worth, which is not nothing and is not much.
 
 The part I would keep is the absence. I built a schema with an origin field in it from the start and still could not answer which channels worked, because the field sat empty at the only moment it could have been filled. That failure is not specific to job searches or to this role. It is what happens to any funnel dataset assembled after the fact, and one required field at write time prevents it.
 

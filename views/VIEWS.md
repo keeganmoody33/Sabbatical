@@ -21,7 +21,7 @@ rate columns are blank. A group that vanishes is indistinguishable from a group 
 exist. In `latency_by_slice.csv` the suppression is applied to the count the statistic was
 computed from, not the size of the group, and the reason is printed in `suppressed_because`.
 
-**Rates carry an interval.** Thirteen interviews across 221 applications means every per-group
+**Rates carry an interval.** Fourteen interviews across 223 applications means every per-group
 rate is a small-sample estimate. Each publishable rate ships with a Wilson 95 percent interval.
 Wilson rather than the normal approximation because several cells have zero interviews, where the
 normal interval collapses to zero width and asserts a certainty that is not there. No p-values.
@@ -34,43 +34,54 @@ only subset where a response time can be computed. They are different numbers an
 
 | File | Grain, one row per | Unit of analysis | Denominator |
 |---|---|---|---|
-| `origin_coverage.csv` | stratum x origin field x raw value | per-opportunity | 221 census, and 298 full census, reported separately |
-| `funnel_by_role_lane.csv` | `role_lane` | per-opportunity | 221 |
-| `funnel_by_submission_channel.csv` | `submission_channel` | per-opportunity | 221 |
-| `funnel_by_evidence_class.csv` | `evidence_class` | per-opportunity | 221 |
-| `monthly_trend.csv` | calendar month in the study window | per-month | 195 exact-dated rows, with 26 non-exact printed on every row |
-| `title_language.csv` | dimension x value | per-opportunity | 221, except `gtm_modifier` rows whose base is the 86 rows carrying one |
-| `latency_by_slice.csv` | dimension x value | per-opportunity | 196 rows with an exact-dated receipt |
+| `origin_coverage.csv` | stratum x origin field x raw value | per-opportunity | 223 census, and 317 full census, reported separately |
+| `origin_recoverability.csv` | census application | per-opportunity | 223 |
+| `funnel_by_role_lane.csv` | `role_lane` | per-opportunity | 223 |
+| `funnel_by_submission_channel.csv` | `submission_channel` | per-opportunity | 223 |
+| `funnel_by_evidence_class.csv` | `evidence_class` | per-opportunity | 223 |
+| `monthly_trend.csv` | calendar month in the study window | per-month | 196 exact-dated rows, with 27 non-exact printed on every row |
+| `title_language.csv` | dimension x value | per-opportunity | 223, except `gtm_modifier` rows whose base is the 87 rows carrying one |
+| `latency_by_slice.csv` | dimension x value | per-opportunity | 197 rows with an exact-dated receipt |
 
 ### `origin_coverage.csv`
 
 The null result, as a file. This is the reason no origination-channel conversion figure is
 published anywhere in this repository.
 
-Read the `n_outcome_observable` column against `origin_is_known`. On the full census, 71 rows know
+Read the `n_outcome_observable` column against `origin_is_known`. On the full census, 88 rows know
 they came from LinkedIn and 0 of them have an observable outcome, because a platform applied-list
-row carries no employer-side artifact and therefore no events. On the 206 rows where an outcome is
+row carries no employer-side artifact and therefore no events. On the 208 rows where an outcome is
 observable, origin is `unknown`. Origin is known almost exactly where outcome is not.
 
-The overlap of both, the rows that could actually answer the question, is 15 of 221, spread across
+The overlap of both, the rows that could actually answer the question, is 15 of 223, spread across
 five channels with the largest at 7.
 
 `normalized_channel` and `channel_family` come from `pipeline/origin_taxonomy.csv`, the controlled
 lookup. `build_views.py` fails the run if the data contains an origin value the taxonomy does not
 map, so the lookup cannot silently fall behind the data.
 
+### `origin_recoverability.csv`
+
+The refinement Freeze 3 forced. `origin_coverage.csv` shows what was captured at the time; this
+shows what could still be recovered afterwards. Three tiers: captured at write time (15),
+recoverable by matching a platform export (60), unrecoverable by any route (148).
+
+The recovered value is deliberately not written back into `discovery_source`. A derived value
+overwriting a coded one would make the census unauditable against the coder tables, so the coded
+field stays as the blind coders left it and this view sits beside it.
+
 ### `funnel_by_role_lane.csv`
 
-All 13 interviews sit in three of the eight lanes. Four lanes covering 70 applications produced
+All 14 interviews sit in three of the eight lanes. Five lanes covering 78 applications produced
 zero. Descriptive only: the applicant chose which roles to apply to, so lane is confounded with
 where he was a plausible fit. Nothing here is randomized and no causal reading is available.
 
 ### `funnel_by_submission_channel.csv` and `funnel_by_evidence_class.csv`
 
 The two channel-shaped cuts the data can actually support, standing in for the origin cut it
-cannot. `submission_channel` is 184 of 221 `ats_direct`, so the field has little variance to
-analyze, which is itself worth seeing. `evidence_class` splits 220 to 1 on the census and is the
-more useful cut on the 298-row full census, where the platform stratum is 78 rows with no events.
+cannot. `submission_channel` is dominated by `ats_direct`, so the field has little variance to
+analyze, which is itself worth seeing. `evidence_class` splits 222 to 1 on the census and is the
+more useful cut on the 317-row full census, where the platform stratum is 95 rows with no events.
 
 ### `monthly_trend.csv`
 
@@ -88,7 +99,7 @@ Three dimensions in one file, distinguished by the `dimension` column.
 - `title_token`, regex presence of a word in `role_as_listed`.
 
 **The `title_token` rows overlap by construction.** One title can match several tokens, so those
-rows do not sum to 221 and must never be presented as a partition.
+rows do not sum to 223 and must never be presented as a partition.
 
 ### `latency_by_slice.csv`
 

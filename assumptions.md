@@ -76,10 +76,12 @@ Source: `codebook.md` counting rule 8.
 
 **C2. A relative stamp is never upgraded to a calendar date.** *Frozen.* "2mo ago" read on
 2026-08-29 is a range. Writing 2026-06-29 into a date column converts a range into a false fact.
-Consequence: 26 census rows cannot enter the monthly series and are printed beside it.
+Consequence: 27 census rows cannot enter the monthly series and are printed beside it. The Freeze 3
+export reduced the problem rather than the rule: it carries exact dates, so the full census now holds
+only 6 relative stamps.
 
 **C3. Precision-constrained metrics run only on rows where both dates are exact.** *Frozen.* This is
-why the latency base is 196 rather than 221 and the time-to-first-interview n is 11 rather than 13.
+why the latency base is 197 rather than 223 and the time-to-first-interview n is 11 rather than 14.
 The excluded n is reported alongside every such figure. Source: `knowledge/protocol.md`.
 
 ## D. Coding and adjudication
@@ -97,8 +99,8 @@ instrument.
 restated. Rules out: two published interview counts that disagree.
 
 **D4. The interview numerator is the union of both coders' events.** *Frozen.* Both coders found 10
-of the 13 independently. Three rest on cursor alone and bravo contributes none that cursor missed, so
-interview-set agreement is 10/13, weaker than the role-lane kappa of 0.9510 suggests. Event-level
+of the 14 independently. Three rest on cursor alone and bravo contributes none that cursor missed, so
+interview-set agreement is 10/14, weaker than the role-lane kappa of 0.9510 suggests. Event-level
 agreement is not among the reliability statistics the protocol requires, so it is **unmeasured
 rather than measured and small**, and the paper says so.
 
@@ -122,8 +124,9 @@ silently destroys a record. An unmerged duplicate is visible and fixable.
 **E3. A refused match is recorded as `ambiguous` with its candidate parents, not shipped as
 `net_new`.** *Post-hoc, 2026-08-30.* Before this change a refusal was indistinguishable from a row
 with no counterpart, so a possible duplicate could enter the census with nothing marking it
-unresolved. Zero rows hit the branch on the current corpus and no published figure moved. Logged in
-`knowledge/protocol.md`, disclosed in `paper/DEFECTS.md`.
+unresolved. Zero rows hit the branch when it was added, and no published figure moved then. Two rows
+hit it at Freeze 3, on the Attentive and FOSSA second cycles, which is the case it was written for.
+Logged in `knowledge/protocol.md`, disclosed in `paper/DEFECTS.md`.
 
 **E4. The matcher's noise-token list is one person's geography and one person's abbreviations.**
 *Open, and a known weakness.* It strips `atlanta`, `ga`, `austin`, `tx`, and also `products`, which
@@ -190,14 +193,16 @@ ledger unable to compare channels at all. Source: `codebook.md` design principle
 
 **H2. `discovery_source = unknown` is an admitted unknown, not a missing value.** *Frozen.* The
 codebook requires a legal way to say "I could not tell" for exactly this reason. It is recorded
-honestly on 206 of 221 census rows.
+honestly on 208 of 223 census rows.
 
 **H3. No origination-channel conversion figure is published, and this is a finding rather than an
 omission.** *Analysis.* `views/origin_coverage.csv` shows why: origin is known almost exactly where
 outcome is unobservable. The 71 LinkedIn rows that know their origin carry zero observable outcomes,
 because a platform applied-list row has no employer-side artifact and therefore no events. The rows
 that do have outcomes are the 206 whose origin is `unknown`. The overlap that could answer the
-question is 15 of 221, spread across five channels with the largest at 7.
+question is 15 of 223, spread across five channels with the largest at 7. Freeze 3 refined this: 60
+further rows can have origin recovered after the fact by matching a platform export, and 148 cannot
+be recovered by any route. See `views/origin_recoverability.csv`.
 
 **H4. Origin was never backfilled from recall.** *Frozen rule, applied.* It could have been, for a
 large fraction of rows, and the result would have looked like data. Under F3 and extraction rule 8
@@ -225,7 +230,7 @@ would present them as comparable. Implemented in `pipeline/build_views.py`, repo
 **I3. Every publishable rate carries a Wilson 95 percent interval, and no p-values are reported.**
 *Analysis.* Wilson rather than the normal approximation because several cells have zero interviews,
 where the normal interval collapses to zero width and asserts a certainty that is not there. With 13
-interviews across 221 applications, significance testing would dress up noise.
+interviews across 223 applications, significance testing would dress up noise.
 
 **I4. Response rate and response latency are reported separately, and latency medians are conditional
 on responding.** *Analysis.* A single "typical response time" folding in the 96 silent applications
@@ -264,8 +269,39 @@ checklist rather than a re-read. Which names survive is the author's decision al
 **J2. Nothing is published externally without the author's explicit approval of the final draft.**
 The draft lands in this repository. It is not posted anywhere.
 
+## K. Freeze 3, the challenger workbook
+
+**K1. An independent reconstruction is not a third blind coder.** *Frozen rule, applied 2026-08-30.*
+It saw a different source set, and the protocol is explicit that a coder holding a different corpus
+is running a different study. No kappa is computed against it. See `challenge/CHALLENGE.md`.
+
+**K2. Only primary evidence from it enters the corpus.** *Post-hoc, 2026-08-30.* The LinkedIn Job
+Applications data download is an artifact and is ingested. Its 353-record ledger, its origin
+categories, its outcome model and its interview counts are reconstruction and are not.
+
+**K3. The Hog and BX Studio move to the application register.** *Post-hoc, 2026-08-30.* The rule in
+B3 is unchanged; its premise was falsified by a submission artifact for each, dated before the
+process events already coded. Census 221 to 223, interviews 13 to 14. This is what B3's companion
+mechanism, the `what_would_promote_it` column, exists to make possible.
+
+**K4. Recovered origin is never written into `discovery_source`.** *Analysis.* The coded field stays
+as the blind coders left it, and recovery sits beside it in `views/origin_recoverability.csv`. A
+derived value overwriting a coded one would make the census unauditable against the coder tables.
+
+**K5. Company matching in the reconciliation fails toward merging, not toward splitting.** *Analysis.*
+The census matcher refuses ambiguous merges because a wrong merge destroys a record. The
+reconciliation runs the opposite risk: an unmerged pair invents a coverage gap that does not exist
+and overstates the challenge. So it strips suffixes aggressively, and every residual gap is listed
+in full rather than reported as a bare count.
+
+**K6. The comparison is at company grain, not row grain.** *Analysis.* The two datasets count
+different units, and the workbook's own summary admits its records "may still exceed the number of
+unique employer requisitions". Matching row to row would manufacture agreement or disagreement out
+of a units mismatch.
+
 ## Changelog
 
+- 2026-08-30, Freeze 3: section K added. Figures updated to 223, 14, 317, 197.
 - 2026-08-30: created. Gathers rules previously scattered across `knowledge/protocol.md`,
   `adjudication/ADJUDICATION.md`, `paper/DEFECTS.md`, and `codebook.md`, and adds the analysis-layer
   assumptions introduced with `pipeline/` and `views/`. No census figure moved.

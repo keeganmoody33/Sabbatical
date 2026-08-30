@@ -21,12 +21,15 @@ The paper is drafted and unpublished. `paper/NAMED-COMPANIES.md` lists seven sti
 
 ## What this freeze found
 
-221 applications with employer-side proof, 298 including platform-only rows, and 13 that reached an
+223 applications with employer-side proof, 317 including platform-only rows, and 14 that reached an
 interview. Roughly half of all applications produced a receipt and then nothing.
 
-The most useful finding is an absence: where each role was found is unknown on 206 of 221 rows, and
-on the rows where origin is known, no outcome is observable. No origination-channel conversion figure
-exists here, and section 3.2 of the paper explains why none should be produced without new data.
+The most useful finding is an absence: origin was captured at the time on 15 of 223 rows, recovered
+afterwards on 60 more only because a platform logged them, and is unrecoverable on the remaining 148.
+No origination-channel conversion figure exists here, and section 3.2 of the paper explains why.
+
+`challenge/CHALLENGE.md` is an adversarial reconciliation against a second, independently produced
+reconstruction of the same fifteen months. It moved two figures and failed to move the rest.
 
 ## Layout
 
@@ -42,6 +45,7 @@ exists here, and section 3.2 of the paper explains why none should be produced w
 - `views/` analysis tables the paper quotes from
 - `data_quality_report.md` generated on every run
 - `paper/` the draft, its number trace, figure specs, and naming checklist
+- `challenge/` the adversarial reconciliation against a second reconstruction
 - `translation/` the companion piece written for non-technical readers
 
 ## How to re-run retrieval

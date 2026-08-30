@@ -13,8 +13,8 @@ No dependencies. Python 3.11 standard library only, which is what the existing s
 | # | Stage | Script | Owns |
 |---|---|---|---|
 | 1 | `compare_coders` | `adjudication/compare_coders.py` | Pre-adjudication agreement and the disagreement inventory |
-| 2 | `adjudicate` | `adjudication/adjudicate.py` | The 221-row application census and the written rule behind every resolution |
-| 3 | `ingest_platform` | `adjudication/ingest_platform.py` | Freeze 2 platform rows, the match cascade, the 298-row full census |
+| 2 | `adjudicate` | `adjudication/adjudicate.py` | The 223-row application census and the written rule behind every resolution |
+| 3 | `ingest_platform` | `adjudication/ingest_platform.py` | Platform rows through Freeze 3, the match cascade, the 317-row full census |
 | 4 | `derive_latency` | `adjudication/derive_latency.py` | Time to first response and time to first interview |
 | 5 | `derive_metrics` | `adjudication/derive_metrics.py` | Per-coder summary counts, printed. Writes nothing |
 | 6 | `build_views` | `pipeline/build_views.py` | `views/*.csv`, the tables the paper quotes from |
@@ -56,7 +56,7 @@ Add the writer to `pipeline/build_views.py`, add its filename to the `build_view
 `pipeline/run.py`, and document its grain in `views/VIEWS.md`. `run.py` fails if a declared
 output is not written, so a view registered but not built is caught on the next run.
 
-`build_views.py` asserts the four published figures on every run: census 221, full census 298,
-interviewed 13, latency base 196. Those assertions are there so that a view built on a census
+`build_views.py` asserts the four published figures on every run: census 223, full census 317,
+interviewed 14, latency base 197. Those assertions are there so that a view built on a census
 that no longer matches the paper fails immediately rather than being discovered later inside a
 table.
