@@ -234,6 +234,19 @@ witness. The objection is correct and the design answers it without weakening th
 `unknown`, so section H stands as written. Eight rows gained a value from recall and fifteen already
 had one from an artifact.
 
+**A case where the rule produces the weaker answer, kept anyway.** HartleyCo is coded
+`discovery_source = recruiter_inbound`, and the author states the role came from a friend through
+GTM Cafe. The retrieval log records the recruiter "contacting Keegan about a GTM Engineer
+application", so the application preceded the contact and the recruiter was the response rather than
+the discovery. The coded value was an inference from the artifact rather than a reading of it, and
+the artifact contradicts the inference.
+
+It stays unadopted. Changing "coded always wins" for one row would make the rule meaningless, and
+the conflict flag exists precisely so a case like this is visible rather than silently resolved. If
+adopted it would take `gtm_cafe_slack` from 3/3 to 4/4, still suppressed below the cell floor, and
+`recruiter_inbound` to one row with zero interviews. **This is an open adjudication for the author,
+not a defect in the layer.**
+
 **What it revealed.** Every application the author can trace to one community channel reached an
 interview, three of three, and the cell is suppressed because n=3 is below the MIN_CELL floor. The
 view prints it suppressed rather than omitting the row, so the shape is visible and the rate is not

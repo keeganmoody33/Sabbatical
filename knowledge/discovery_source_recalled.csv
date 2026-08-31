@@ -3,7 +3,7 @@ every-to|gtm-engineer|c1,gtm_cafe_slack,author_recall,2026-08-30,Saw the posting
 great-question|senior-demand-generation-manager|c1,gtm_cafe_slack,author_recall,2026-08-30,Found the posting in #jobsandopportunities.
 pearl|lead-gtm-engineer|c1,gtm_cafe_slack,author_recall,2026-08-30,Responded to a #jobsandopportunities post. A contact connected to the company through agency work then referred the author.
 phrasiq|unspecified|c1,wellfound,author_recall,2026-08-30,Applied on Wellfound. Agrees with the coded discovery_source, so it is a confirmation rather than new information.
-hartleyco|founding-gtm|c1,recruiter_inbound,author_recall,2026-08-30,Recruiter approach. Agrees with the coded discovery_source of recruiter_inbound.
+hartleyco|founding-gtm|c1,gtm_cafe_slack,author_recall,2026-08-30,"CONFLICT, and the coded value is the weaker one. A friend sent the author the job through GTM Cafe. The recruiter contacted the author ABOUT AN APPLICATION THAT ALREADY EXISTED, per the retrieval log, so the recruiter was the response and not the discovery. The coded recruiter_inbound is an inference the artifact does not support."
 glytec|unspecified|c1,linkedin_inbound_dm,author_recall,2026-08-30,Opportunity register row. Inbound DM from the CEO citing a referral in his network.
 mercor|b2b-sales-expert|c1,platform_internal_board,author_recall,2026-08-30,Self-submitted through the marketplace's own job board after creating an account.
 mercor|education-school-evaluator|c1,platform_internal_board,author_recall,2026-08-30,Self-submitted through the marketplace's own job board after creating an account.

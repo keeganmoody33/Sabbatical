@@ -11,7 +11,7 @@ mercor|education-school-evaluator|c1,Mercor,unknown,platform_internal_board,plat
 mercor|general-sales-gtm-evaluator|c1,Mercor,unknown,platform_internal_board,platform_internal_board,author_recall,no,platform_internal_board,no
 mercor|sales-and-marketing-expert|c1,Mercor,unknown,platform_internal_board,platform_internal_board,author_recall,no,platform_internal_board,no
 mercor|sales-engineering-expert|c1,Mercor,unknown,platform_internal_board,platform_internal_board,author_recall,no,platform_internal_board,no
-hartleyco|founding-gtm|c1,HartleyCo,recruiter_inbound,recruiter_inbound,recruiter_inbound,coded_artifact,no,recruiter_inbound,yes
+hartleyco|founding-gtm|c1,HartleyCo,recruiter_inbound,gtm_cafe_slack,recruiter_inbound,coded_artifact,yes,recruiter_inbound,yes
 revspring|lead-agentic-operations-gtm-engineering|c1,RevSpring,recruiter_inbound,,recruiter_inbound,coded_artifact,no,recruiter_inbound,no
 mercor|biology-biophysics-research-collaborator|c1,Mercor,referral,platform_internal_board,referral,coded_artifact,yes,referral,no
 pinterest|apprentice-engineer|c1,Pinterest,referral,,referral,coded_artifact,no,referral,no

@@ -208,14 +208,19 @@ appears to convert best.
 
 ## Open decisions for the author
 
-1. **Hypergen.** Correct to 0 interviews on the strength of bravo's blind coding plus recall, taking
-   the headline to 13/223? This is the only one of the four disputes with independent blind support.
-2. **RevSpring, TestGorilla, jobmail.io.** Re-examine the three underlying artifacts against a
-   stricter rule, that an invitation or request is not an interview? This is a coding-rule question,
-   not a recall question, and it can be answered from artifacts already in the corpus.
-3. **Retrieval.** Authorize any of the five sources above? Each is a protocol amendment and a new
-   freeze, not an edit.
-4. **The Kiln.** Record as a known-missing process with no artifact, the same treatment AnyInt AI
-   already has in `knowledge/02-current.md`?
+1. ~~**Hypergen.**~~ **Done at Freeze 4.** Removed, along with TestGorilla and RevSpring, on the
+   artifacts rather than on the recall. See `adjudication/INTERVIEW-EVIDENCE.md`.
+2. ~~**RevSpring, TestGorilla, jobmail.io.**~~ **Two done at Freeze 4.** `jobmail-io` was kept as
+   ambiguous and is now **open again**: the author supplied the decline itself, which credits
+   "completing the requested steps through" a named automated screening product, so the steps were
+   asynchronous rather than a live round. Removing it would take the headline from 11/223 to 10/223.
+3. ~~**Retrieval.**~~ **Partly done.** The personal Gmail and Calendar were authorized and retrieved
+   on 2026-08-30, closing a stop condition. See `artifacts/gmail/retrieval-log-030.md`. Nothing is
+   coded from it. The GTM Cafe Slack channel remains unauthorized and unretrieved.
+4. **The Kiln.** Still open. Record as a known-missing process with no artifact, the same treatment
+   AnyInt AI already has in `knowledge/02-current.md`?
+5. **HartleyCo origin.** New 2026-08-30. The author places it at GTM Cafe where the census codes
+   `recruiter_inbound`, and the artifact supports the author. Adopt the recalled value over the
+   coded one on this row?
 
-None of these has been actioned. The census remains 223 with 14 interviews.
+The census is 223 with **11** interviews.

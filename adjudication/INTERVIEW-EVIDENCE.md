@@ -5,7 +5,8 @@ frozen corpus**, not from recall, because the author's own argument is the reaso
 five hundred applications cannot be recalled individually, so recall is the wrong instrument for
 this flag in either direction.
 
-Nothing here has been applied. The census still reports 14. No dashes are used as punctuation.
+**Applied at Freeze 4 on 2026-08-30**: three of the four were removed and the census now reports
+**11**. jobmail.io was kept, and has since reopened. No dashes are used as punctuation.
 
 ## The rule the corpus already contains
 
@@ -42,7 +43,7 @@ invitation is none of these. It is an offer to meet.
 | **Hypergen** | cursor only | An interview **invitation** dated 2026-04-14 and nothing after it | **does not hold** |
 | **TestGorilla** | both | An assessment invitation, a recruiter **intro**, and a recruiter **update**. No scheduling, no completion | **does not hold** |
 | **RevSpring** | both | A screen **request** dated 2026-06-10, two receipts, and a role message. No scheduling, no completion | **does not hold** |
-| **jobmail.io** | cursor only | A decline saying the requested steps "were completed through" a named person | **ambiguous** |
+| **jobmail.io** | cursor only | A decline crediting "completing the requested steps through" a named automated screening product | **reopened, see below** |
 
 ## Hypergen is the clearest, and it was flagged at retrieval time
 
@@ -57,24 +58,33 @@ said so at capture, bravo blind-coded it `employer_ack`, and the prior 247 row l
 sheet omits it. Cursor's `hiring_manager_interview` is the lone outlier and adjudication took it.
 The author's recall is the fifth source and the least important of the five.
 
-## jobmail.io stays ambiguous, and should
+## jobmail.io was kept as ambiguous, and the author then resolved it
 
-The decline says the requested steps were completed. That is more than a receipt and less than a
-recorded conversation, and an asynchronous screening stage would produce the same sentence. It is
-also the row already carrying an open defect: a derived interview contradicting a stored
-`rejected_no_interview`, from one coder with no blind second reading. It is left unresolved rather
-than pushed either way.
+At Freeze 4 this row was kept. The decline said the requested steps were completed, which is more
+than a receipt and less than a recorded conversation, and an asynchronous screening would produce
+the same sentence. On that reading it could not be pushed either way.
+
+**The author then supplied the decline itself.** The name credited in "completing the requested
+steps through" is not a person at the employer, it is an automated screening product, and the
+sending address and reply-to both belong to that product rather than to the hiring company. The
+steps were therefore asynchronous and machine-administered, which is exactly the reading that would
+have removed the row.
+
+This is the row that also carries the standing open defect: a derived interview contradicting a
+stored `rejected_no_interview`, from one coder with no blind second reading. Removing it takes the
+headline from 11/223 to **10/223**. Not applied, because the author explicitly chose to keep it at
+Freeze 4 on weaker evidence than now exists, so the reversal is theirs to make.
 
 ## What adopting this would do
 
-| | Now | Three fall | Four fall |
+| | Before Freeze 4 | Freeze 4, applied | jobmail.io also removed |
 |---|---|---|---|
-| Interviewed applications | 14 | 11 | 10 |
-| Rate | 14/223 | 11/223 | 10/223 |
+| Interviewed applications | 14 | **11** | 10 |
+| Rate | 14/223 | **11/223** | 10/223 |
 
-The three that clearly do not hold are Hypergen, TestGorilla and RevSpring. The fourth is
-jobmail.io, and on the evidence it should stay in unless a reader of the underlying thread decides
-otherwise.
+Hypergen, TestGorilla and RevSpring fell at Freeze 4. jobmail.io is the fourth and is now supported
+by the author's own artifact, so the middle column is the current census and the right column is one
+decision away.
 
 Round counts also move on two rows that hold: Hologram and PhrasIQ each show two named stages where
 the census codes one. The published metric is interviewed applications rather than rounds, so this
@@ -91,12 +101,22 @@ is the kind of defect a codebook is supposed to prevent and this one did not.
 That is the honest framing for the paper. The author's recall pointed at the four rows. The
 artifacts decided them, and they would have decided them the same way with no author involved.
 
-## Two observations recorded in passing
+## Three observations recorded in passing
 
-- The author names the HartleyCo recruiter as one person; the retrieval log names another. HartleyCo
-  is the firm and the log names the individual, so this is most likely firm and person conflated. It
-  changes nothing and is a fair reminder that recall is unreliable on names even when reliable on
-  events.
+- **Resolved 2026-08-30.** The author had named the HartleyCo recruiter with the firm's surname
+  where the retrieval log names a different individual. The author corrected this unprompted and the
+  log is right, so the reading here, that firm and person were conflated, was correct. A fair
+  reminder that recall is unreliable on names even when reliable on events.
+
+- **The same correction carries a real origin change.** The author states the HartleyCo role came
+  from a friend through GTM Cafe, where the census codes `discovery_source = recruiter_inbound`. The
+  retrieval log records the recruiter "contacting Keegan **about a GTM Engineer application**", so an
+  application already existed when contact was made and the recruiter was the response rather than
+  the discovery. `recruiter_inbound` was never a reading of that artifact, it was an inference from
+  it, and the artifact's own wording contradicts the inference: the coded value answers "who
+  contacted me" where the field asks "where the role was found". Recorded as a conflict in
+  `views/discovery_source.csv` and not adopted. See `assumptions.md` section H2.
+
 - `artifacts/gmail/*.md` carries **personal names in cleartext** in its retriever notes, while the
   same corpus redacts sender addresses to `eml_` pointers. That is an inconsistency in the existing
   redaction, not something introduced here. The corpus is frozen so it is reported rather than
