@@ -1,9 +1,9 @@
 discovery_source_resolved,root_venue,n_applications,n_from_author_recall,n_interviewed,interview_rate,interview_rate_wilson_lo,interview_rate_wilson_hi,suppressed
-unknown,unknown,200,0,6,6/200,0.0138,0.0639,no
+unknown,unknown,200,0,5,5/200,0.0107,0.0572,no
 wellfound,wellfound,7,0,1,1/7,0.0257,0.5131,no
 platform_internal_board,platform_internal_board,5,5,0,0/5,0.0000,0.4345,no
-gtm_cafe_slack,gtm_engineering_school,3,3,3,,,,yes
+gtm_cafe_slack,gtm_engineering_school,4,3,4,,,,yes
 ladders,ladders,3,0,0,,,,yes
-recruiter_inbound,recruiter_inbound,2,0,1,,,,yes
 referral,referral,2,0,0,,,,yes
 jobright,jobright,1,0,0,,,,yes
+recruiter_inbound,recruiter_inbound,1,0,0,,,,yes

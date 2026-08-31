@@ -10,9 +10,9 @@ No dashes are used as punctuation in this paper. Every number traces to a named 
 
 ## Abstract
 
-I spent fifteen months applying for go-to-market engineering roles, then treated my own job search as a dataset and tried to establish how many applications I could actually prove. Evidence was harvested from email, calendar, and platform exports into a frozen corpus, coded independently by two language models blind to each other, and resolved in a named adjudication pass. The result is 223 applications with employer-side proof, 317 including rows visible only in platform logs, and 11 that reached an interview, a rate of 11/223.
+I spent fifteen months applying for go-to-market engineering roles, then treated my own job search as a dataset and tried to establish how many applications I could actually prove. Evidence was harvested from email, calendar, and platform exports into a frozen corpus, coded independently by two language models blind to each other, and resolved in a named adjudication pass. The result is 223 applications with employer-side proof, 317 including rows visible only in platform logs, and 10 that reached an interview, a rate of 10/223.
 
-Three findings. Roughly half of all applications produced a receipt and then silence: 97/197 of the rows with an exact-dated receipt drew no response, and the median substantive response, among those that did respond, arrived in 7 days. All 11 interviews sat in three of eight role lanes, and the five lanes covering the other 83 applications produced none. Third, and most useful to anyone building a tracker: **the study could not answer the question it most wanted to answer.** Origin was captured at the time on 15 of 223 rows, recoverable afterwards on 60 more only because a platform logged them, and unrecoverable on the remaining 148. That is a failure of the instrument, and it is reproducible in almost any job-search log kept the ordinary way.
+Three findings. Roughly half of all applications produced a receipt and then silence: 97/197 of the rows with an exact-dated receipt drew no response, and the median substantive response, among those that did respond, arrived in 7 days. All 10 interviews sat in three of eight role lanes, and the five lanes covering the other 83 applications produced none. Third, and most useful to anyone building a tracker: **the study could not answer the question it most wanted to answer.** Origin was captured at the time on 15 of 223 rows, recoverable afterwards on 60 more only because a platform logged them, and unrecoverable on the remaining 148. That is a failure of the instrument, and it is reproducible in almost any job-search log kept the ordinary way.
 
 This is a single subject studied by himself: a case study, not a market study. A second, independently produced reconstruction of the same fifteen months was used to attack these numbers after they were written; the companion piece, [The Field You Cannot Recover](COMPANION.md), reports what it moved and what it failed to move.
 
@@ -50,7 +50,7 @@ This paper has two subjects. The visible one is what fifteen months of applying 
 |---|---|---|
 | Applications with employer-side proof | 223 | the census |
 | Full census including platform-only rows | 317 | census plus 94 net-new |
-| Applications reaching at least one interview | 11 | 11/223 |
+| Applications reaching at least one interview | 10 | 10/223 |
 | Applications with any response beyond the receipt | 100 | 100/197 exact-dated base |
 | Applications with a substantive response | 79 | 79/197 |
 | Applications with no response at all | 97 | 97/197 |
@@ -83,14 +83,14 @@ This is not a withheld analysis. There is no analysis to withhold. The field exi
 
 ### 3.3 Role lane and title language
 
-All 11 interviews sit in three of eight lanes.
+All 10 interviews sit in three of eight lanes.
 
 | Role lane | n | Interviewed | Rate | Wilson 95 percent |
 |---|---|---|---|---|
 | explicit_gtm_engineering | 92 | 7 | 7/92 | 0.037 to 0.149 |
 | sales_bd_partnerships | 31 | 0 | 0/31 | 0.000 to 0.110 |
 | unspecified | 25 | 2 | 2/25 | 0.022 to 0.250 |
-| growth_demand_marketing | 23 | 2 | 2/23 | 0.024 to 0.268 |
+| growth_demand_marketing | 23 | 1 | 1/23 | 0.008 to 0.210 |
 | other | 18 | 0 | 0/18 | 0.000 to 0.176 |
 | sales_solutions_engineering | 16 | 0 | 0/16 | 0.000 to 0.194 |
 | revops_gtm_ops_strategy | 10 | 0 | 0/10 | 0.000 to 0.278 |
@@ -100,7 +100,7 @@ Five lanes covering 83 applications produced no interviews at all. That is the s
 
 The seniority sub-finding that an earlier draft carried does not survive Freeze 4 and has been removed rather than restated at new numbers. It rested on a handful of rows and two of them were invitation-coded.
 
-The whole interview set is small enough to print, which is itself the honest way to present it. Seven of the eleven titles carry GTM or go-to-market language.
+The whole interview set is small enough to print, which is itself the honest way to present it. Seven of the ten titles carry GTM or go-to-market language.
 
 | Company | Title as listed | Lane | Terminal outcome |
 |---|---|---|---|
@@ -110,7 +110,6 @@ The whole interview set is small enough to print, which is itself the honest way
 | Great Question | Senior Demand Generation Manager | growth/demand | rejected after interview |
 | HartleyCo | Founding GTM | explicit GTM | rejected after interview |
 | Hologram | GTM Engineer Pre-Sales | explicit GTM | still open |
-| jobmail.io | Growth Lead | growth/demand | rejected no interview |
 | Orchestry | GTM Engineer (Sales) | explicit GTM | rejected after interview |
 | Pearl | Lead GTM Engineer | explicit GTM | still open |
 | PhrasIQ | unspecified | unspecified | still open |
@@ -133,7 +132,7 @@ Two definitions are published because the choice moves the number, and it is not
 
 The medians are conditional on having responded. They describe responders only. Folding in the 97 silent applications would drop them from the denominator, which is the same error the two-register split exists to prevent on the interview rate.
 
-Time to first interview: n = 8, median 5.5 days, mean 7.1, range 0 to 24.
+Time to first interview: n = 7, median 5 days, mean 7.3, range 0 to 24.
 
 Right censoring is not driving the response rate. Applications submitted near the window end have had less time to draw a reply, so the rate was recomputed at rising exposure thresholds: 0.510 at 0 days, 0.508 at 30, 0.532 at 60, 0.500 at 90. Stable.
 
@@ -152,7 +151,7 @@ Zero in September and October 2025 is a count of exact-dated rows, not a claim t
 | Role lane Cohen's kappa | 0.9510 |
 | Include or exclude percent agreement | 0.9905 |
 | Include or exclude kappa | 0.7452 |
-| Interview set found by both coders | 9 of 11 |
+| Interview set found by both coders | 9 of 10 |
 
 The 24-point gap between the two include statistics is the whole reason kappa exists. Almost every record was an include, so two raters guessing "include" every time would agree nearly as often. The honest number is the lower one, and it rests on two disagreements.
 
@@ -178,7 +177,7 @@ I came to this from a biochemistry research background, so this section is the o
 
 **Apply on-title, and expect the adjacent lanes to be quieter.** Every interview in this log came from three of eight lanes. The other five, covering 83 of 223 applications across sales, solutions engineering, RevOps, product-adjacent, and miscellaneous titles, produced none. The intervals do not permit "those lanes do not work". They do support a resource-allocation reading: the adjacent-title strategy did not visibly outperform here, and it consumed more than a third of the applications.
 
-**Expect a low rate and budget accordingly.** 11/223 is the honest headline. Most applications end in silence rather than rejection, so a pipeline built on applications alone gives very little to steer on. Half of what you send never resolves into anything you can learn from.
+**Expect a low rate and budget accordingly.** 10/223 is the honest headline. Most applications end in silence rather than rejection, so a pipeline built on applications alone gives very little to steer on. Half of what you send never resolves into anything you can learn from.
 
 **The second pipeline is the one that paid.** Every engagement that converted to paid work in these fifteen months came through the opportunity register rather than the application register: referrals, recruiter-initiated processes, and matching platforms. Keeping those out of the application denominator is what makes the observation visible. Mixed together, applying would look more effective than it was, and I would have done more of the thing that was not working.
 
@@ -206,7 +205,7 @@ The subject matter here is incidental. The transferable practice is not.
 
 ## 5. Limitations
 
-**N = 1, and the subject is the author.** Nothing here estimates a population parameter, and no reader should treat 11/223 as a rate to expect.
+**N = 1, and the subject is the author.** Nothing here estimates a population parameter, and no reader should treat 10/223 as a rate to expect.
 
 **Self-authored, and it showed.** One correction came from me, from recall, after I had seen the analysis. It was right, and a blind coder had independently reached nearly the same conclusion, but the provenance is the exact failure mode blind coding exists to prevent, and it is disclosed rather than smoothed.
 
@@ -224,7 +223,7 @@ The subject matter here is incidental. The transferable practice is not.
 
 ## 6. Conclusion
 
-Fifteen months, 223 provable applications, 11 interviews, and half the funnel ending in silence. Those numbers are worth what a single case is worth, which is not nothing and is not much.
+Fifteen months, 223 provable applications, 10 interviews, and half the funnel ending in silence. Those numbers are worth what a single case is worth, which is not nothing and is not much.
 
 The part I would keep is the absence. I built a schema with an origin field in it from the start and still could not answer which channels worked, because the field sat empty at the only moment it could have been filled. That failure is not specific to job searches or to this role. It is what happens to any funnel dataset assembled after the fact, and one required field at write time prevents it.
 

@@ -1,6 +1,7 @@
 application_id,company_canonical,discovery_source_coded,discovery_source_recalled,discovery_source_resolved,basis,conflict,root_venue,interviewed
 every-to|gtm-engineer|c1,Every.to,unknown,gtm_cafe_slack,gtm_cafe_slack,author_recall,no,gtm_engineering_school,yes
 great-question|senior-demand-generation-manager|c1,Great Question,unknown,gtm_cafe_slack,gtm_cafe_slack,author_recall,no,gtm_engineering_school,yes
+hartleyco|founding-gtm|c1,HartleyCo,recruiter_inbound,gtm_cafe_slack,gtm_cafe_slack,author_adjudicated,yes,gtm_engineering_school,yes
 pearl|lead-gtm-engineer|c1,Pearl,unknown,gtm_cafe_slack,gtm_cafe_slack,author_recall,no,gtm_engineering_school,yes
 jobright-ai|product-manager-early-career|c1,Jobright.ai,jobright,,jobright,coded_artifact,no,jobright,no
 ai-digital|growth-director|c1,AI Digital,ladders,,ladders,coded_artifact,no,ladders,no
@@ -11,7 +12,6 @@ mercor|education-school-evaluator|c1,Mercor,unknown,platform_internal_board,plat
 mercor|general-sales-gtm-evaluator|c1,Mercor,unknown,platform_internal_board,platform_internal_board,author_recall,no,platform_internal_board,no
 mercor|sales-and-marketing-expert|c1,Mercor,unknown,platform_internal_board,platform_internal_board,author_recall,no,platform_internal_board,no
 mercor|sales-engineering-expert|c1,Mercor,unknown,platform_internal_board,platform_internal_board,author_recall,no,platform_internal_board,no
-hartleyco|founding-gtm|c1,HartleyCo,recruiter_inbound,gtm_cafe_slack,recruiter_inbound,coded_artifact,yes,recruiter_inbound,yes
 revspring|lead-agentic-operations-gtm-engineering|c1,RevSpring,recruiter_inbound,,recruiter_inbound,coded_artifact,no,recruiter_inbound,no
 mercor|biology-biophysics-research-collaborator|c1,Mercor,referral,platform_internal_board,referral,coded_artifact,yes,referral,no
 pinterest|apprentice-engineer|c1,Pinterest,referral,,referral,coded_artifact,no,referral,no
@@ -118,7 +118,7 @@ insignia-collab|unspecified|c1,Insignia Collab,unknown,,unknown,none,no,unknown,
 inven-ai|unspecified|c1,Inven.ai,unknown,,unknown,none,no,unknown,no
 itc-infotech|manager-business-development|c1,ITC Infotech,unknown,,unknown,none,no,unknown,no
 jobgether|gtm-engineer|c1,Jobgether,unknown,,unknown,none,no,unknown,no
-jobmail-io|growth-lead|c1,jobmail.io,unknown,,unknown,none,no,unknown,yes
+jobmail-io|growth-lead|c1,jobmail.io,unknown,,unknown,none,no,unknown,no
 langchain|gtm-engineer|c1,LangChain,unknown,,unknown,none,no,unknown,no
 liatrio|gtm-revops-engineer|c1,Liatrio,unknown,,unknown,none,no,unknown,no
 linear|ae-growth|c1,Linear,unknown,,unknown,none,no,unknown,no

@@ -191,12 +191,12 @@ rule reaches **15 rows**, 14 of them Tier A:
 | Mercor, Education / school Evaluator | 1 |
 
 None of the 15 is in the interview set. Removing them all moves the application census from 223 to
-**208** and the headline rate from 11/223 to **11/208**, which raises the interview rate rather
+**208** and the headline rate from 10/223 to **10/208**, which raises the interview rate rather
 than lowering it, because the removed rows are all non-interviewing.
 
 Whether substitute-teaching applications belong in the denominator of a **GTM engineering** job
 search is a real question and it is the author's to answer, not the ledger's. It is recorded here
-unresolved. No figure in the paper assumes either answer, and the paper reports 11/223 with this
+unresolved. No figure in the paper assumes either answer, and the paper reports 10/223 with this
 sensitivity stated.
 
 ## What this ledger does not do

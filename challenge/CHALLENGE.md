@@ -31,16 +31,17 @@ They were never the same fourteen. They agreed on **eight**.
 |---|---|---|
 | Beautiful.ai | HartleyCo | Glytec |
 | Dagster Labs | Orchestry | Mixmax |
-| Every | jobmail.io | Pinn |
+| Every | ~~jobmail.io~~ | Pinn |
 | Great Question | ~~Hypergen~~ | Mercor |
 | Hologram | ~~RevSpring~~ | Opsin Security |
 | Pearl | ~~TestGorilla~~ | Hotglue |
 | PhrasIQ | | |
 | The Hog | | |
 
-Then Freeze 4 removed the three struck rows, because each was coded from an interview invitation
-rather than a completed round. See `adjudication/INTERVIEW-EVIDENCE.md`. **This census now reports
-11 and the workbook still reports 14, and they still agree on the same eight.**
+Then Freeze 4 removed the four struck rows: three coded from an interview invitation rather than a
+completed round, and jobmail.io once the author supplied a decline showing the steps were
+administered by an automated screening product. See `adjudication/INTERVIEW-EVIDENCE.md`. **This
+census now reports 10 and the workbook still reports 14, and they still agree on the same eight.**
 
 That sequence is the finding, and it is worth more than either number. Two independent
 reconstructions of the same fifteen months produced *identical totals* while agreeing on barely
@@ -56,14 +57,15 @@ The six on each side are not symmetric, and the reasons are known:
   Opsin Security is `declined_opportunity_register` on the same rule. Mixmax, Pinn and Hotglue are
   `open_workbook_only`, records this corpus does not hold at all, and Hotglue's origin is
   YC Work at a Startup, which is **unmet stop condition 6**.
-- **This census only, after Freeze 4.** Three remain: HartleyCo, Orchestry and jobmail.io. Each
-  carries a completion signature the workbook's register does not reflect. The three that fell were
-  this census's own error, and the workbook was right to omit them.
+- **This census only, after Freeze 4.** Two remain: HartleyCo and Orchestry, each carrying a
+  completion signature the workbook's register does not reflect. **Four of the original six were
+  this census's own error and the workbook was right to omit every one of them.**
 
 So four of the six workbook-only interviews are the two-register rule working as designed, two plus
-Hotglue are genuine coverage this study never retrieved, and three of this census's six were
-invitations miscounted as rounds. **Neither instrument was reliable at the level of the individual
-row, and only a row-grain comparison could show it.**
+Hotglue are genuine coverage this study never retrieved, and four of this census's six were
+invitations or automated screenings miscounted as rounds. **Neither instrument was reliable at the
+level of the individual row, and only a row-grain comparison could show it.** On the interview
+question specifically the challenger was the more accurate of the two.
 
 ## What the challenger is, and what it is not
 
@@ -97,7 +99,7 @@ count as a checkpoint rather than a census.
 | Companies with employer-side proof | **Repository** | 8 rows the workbook excluded are Tier A here |
 | Coverage breadth | **Split** | At row grain: 3 records only in the workbook, 41 only here. See `SUPPLEMENTARY-LEDGER.md` |
 | Outcome model | **Repository** | GHOSTED is a residual the workbook itself calls overloaded |
-| Interview measurement | **Split, and this repository was partly wrong** | It derives interviews from events where the workbook is UNKNOWN on 334 of 353, but three of its own fourteen were invitations miscounted as rounds and the workbook was right to omit them. Now 11. See `adjudication/INTERVIEW-EVIDENCE.md` |
+| Interview measurement | **Split, and this repository was partly wrong** | It derives interviews from events where the workbook is UNKNOWN on 334 of 353, but four of its own fourteen were invitations or automated screenings miscounted as rounds and the workbook was right to omit every one. Now 10. See `adjudication/INTERVIEW-EVIDENCE.md` |
 | Origin coverage | **Challenger, but not adoptable** | 353 of 353 against 15 of 223. See below |
 | Unresolved role titles | **Challenger** | It carries 8 unresolved against this census's 40. Eleven are now fixed from this repository's own artifacts |
 | Capture recapture | **Neither** | Still unmeasured, now for a precisely stated reason |

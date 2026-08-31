@@ -5,8 +5,8 @@ frozen corpus**, not from recall, because the author's own argument is the reaso
 five hundred applications cannot be recalled individually, so recall is the wrong instrument for
 this flag in either direction.
 
-**Applied at Freeze 4 on 2026-08-30**: three of the four were removed and the census now reports
-**11**. jobmail.io was kept, and has since reopened. No dashes are used as punctuation.
+**Applied at Freeze 4 on 2026-08-30**: all four were removed and the census now reports **10**.
+Three went together; jobmail.io followed once the author supplied the underlying decline. No dashes are used as punctuation.
 
 ## The rule the corpus already contains
 
@@ -43,7 +43,7 @@ invitation is none of these. It is an offer to meet.
 | **Hypergen** | cursor only | An interview **invitation** dated 2026-04-14 and nothing after it | **does not hold** |
 | **TestGorilla** | both | An assessment invitation, a recruiter **intro**, and a recruiter **update**. No scheduling, no completion | **does not hold** |
 | **RevSpring** | both | A screen **request** dated 2026-06-10, two receipts, and a role message. No scheduling, no completion | **does not hold** |
-| **jobmail.io** | cursor only | A decline crediting "completing the requested steps through" a named automated screening product | **reopened, see below** |
+| **jobmail.io** | cursor only | A decline crediting "completing the requested steps through" a named automated screening product | **does not hold** |
 
 ## Hypergen is the clearest, and it was flagged at retrieval time
 
@@ -70,21 +70,25 @@ sending address and reply-to both belong to that product rather than to the hiri
 steps were therefore asynchronous and machine-administered, which is exactly the reading that would
 have removed the row.
 
-This is the row that also carries the standing open defect: a derived interview contradicting a
-stored `rejected_no_interview`, from one coder with no blind second reading. Removing it takes the
-headline from 11/223 to **10/223**. Not applied, because the author explicitly chose to keep it at
-Freeze 4 on weaker evidence than now exists, so the reversal is theirs to make.
+This is the row that also carried the standing open defect: a derived interview contradicting a
+stored `rejected_no_interview`, from one coder with no blind second reading. **Removed on the
+author's decision of 2026-08-30, taking the headline from 11/223 to 10/223**, and the old defect
+goes with it: the stored `rejected_no_interview` and the derived interview no longer contradict
+each other, because there is no longer a derived interview.
 
 ## What adopting this would do
 
-| | Before Freeze 4 | Freeze 4, applied | jobmail.io also removed |
+| | Before Freeze 4 | Three removed | All four removed |
 |---|---|---|---|
-| Interviewed applications | 14 | **11** | 10 |
-| Rate | 14/223 | **11/223** | 10/223 |
+| Interviewed applications | 14 | 11 | **10** |
+| Rate | 14/223 | 11/223 | **10/223** |
 
-Hypergen, TestGorilla and RevSpring fell at Freeze 4. jobmail.io is the fourth and is now supported
-by the author's own artifact, so the middle column is the current census and the right column is one
-decision away.
+All four fell. Hypergen, TestGorilla and RevSpring went on the artifacts alone; jobmail.io followed
+when the author supplied a decline the corpus did not hold. The right column is the current census.
+
+**Every one of the four was an error this census made and the challenger did not.** On the interview
+question the independently produced workbook was the more accurate instrument, and it took a
+row-grain comparison plus the author's own files to establish that.
 
 Round counts also move on two rows that hold: Hologram and PhrasIQ each show two named stages where
 the census codes one. The published metric is interviewed applications rather than rounds, so this

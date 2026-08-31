@@ -2,7 +2,7 @@ role_lane,n_applications,n_latency_base,n_responded_any,n_responded_substantive,
 explicit_gtm_engineering,92,87,45,36,7,7/92,0.0373,0.1488,no
 sales_bd_partnerships,31,26,16,12,0,0/31,0.0000,0.1103,no
 unspecified,25,24,8,7,2,2/25,0.0222,0.2497,no
-growth_demand_marketing,23,22,9,7,2,2/23,0.0242,0.2680,no
+growth_demand_marketing,23,22,8,6,1,1/23,0.0077,0.2099,no
 other,18,7,5,4,0,0/18,0.0000,0.1759,no
 sales_solutions_engineering,16,16,7,5,0,0/16,0.0000,0.1936,no
 revops_gtm_ops_strategy,10,9,6,3,0,0/10,0.0000,0.2775,no

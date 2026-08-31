@@ -156,7 +156,7 @@ correct. The workbook itself remains uncommitted for this reason.
 
 ## Three of the fourteen interviews were invitations
 
-**Corrected at Freeze 4, 2026-08-30. The headline moved from 14/223 to 11/223.**
+**Corrected at Freeze 4, 2026-08-30. The headline moved from 14/223 to 11/223, then to 10/223.**
 
 The interview derivation counted an `event_type`. The codebook gave coders no rule separating an
 artifact that **proposes** a conversation from one that **records** one, so `recruiter_screen` and
@@ -178,8 +178,19 @@ made the same call, so those two are a missing rule rather than a bad adjudicati
 
 The author disputed these four rows from recall, which is what prompted the re-read. The resolution
 came from the artifacts and does not rest on the recall: every fact was in the frozen corpus
-already. `jobmail-io` remains counted and remains an open defect, because its decline says the
-requested steps were completed, which an asynchronous screening would also produce.
+already.
+
+`jobmail-io` was kept at that point, because its decline said the requested steps were completed and
+an asynchronous screening would produce the same sentence. The author then supplied the decline, and
+the party credited in it is an **automated screening product** rather than a person at the employer,
+with the sending address and reply-to both belonging to that product. It was removed on 2026-08-30,
+taking the headline to 10/223. **The separate open defect on that row closes with it**: a derived
+interview contradicting a stored `rejected_no_interview` is no longer a contradiction, because there
+is no longer a derived interview.
+
+**All four were errors this census made and the independently produced challenger workbook did not.**
+On the interview question the challenger was the more accurate instrument, and it took a row-grain
+comparison plus files the author held privately to establish that.
 
 Full evidence table for all fourteen: `adjudication/INTERVIEW-EVIDENCE.md`.
 

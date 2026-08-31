@@ -22,13 +22,13 @@ figures that used to sit at the top of this file (247 applications, 11 interview
 | Application census, employer-side proof | 223 | `adjudication/applications__adjudicated.csv` |
 | Full census, including platform-only rows | 317 | `adjudication/applications__full_census.csv` |
 | Interviewed applications, derived from events | 14 | `views/funnel_by_role_lane.csv` |
-| Application to interview rate | 11/223 | same |
+| Application to interview rate | 10/223 | same |
 | Latency base, exact-dated receipt | 197 | `adjudication/latency__by_application.csv` |
 | Any response | 100/197 | `views/latency_by_slice.csv` |
 | Substantive response | 79/197 | same |
 | No response beyond the receipt | 97/197 | derived |
 | Median days to substantive response, responders only | 7 | `adjudication/LATENCY.md` |
-| Time to first interview | n = 8, median 5.5 | same |
+| Time to first interview | n = 7, median 5 | same |
 | Census completeness | not published | no method available, see below |
 
 ## Role lanes, 223 applications
@@ -44,7 +44,7 @@ figures that used to sit at the top of this file (247 applications, 11 interview
 | revops_gtm_ops_strategy | 10 | 0 |
 | product_ai_technical | 8 | 0 |
 
-All 11 interviews sit in three lanes. The five lanes covering the other 83 applications produced
+All 10 interviews sit in three lanes. The five lanes covering the other 83 applications produced
 none. Wilson intervals in `views/funnel_by_role_lane.csv`. Descriptive only.
 
 ## Monthly distribution
@@ -78,7 +78,7 @@ See `views/origin_coverage.csv` and `paper/PAPER.md` section 3.2.
 - bravo 228 rows, cursor 231, intersection 211
 - role lane percent agreement 0.9621, Cohen's kappa 0.9510
 - include percent agreement 0.9905, kappa 0.7452
-- interview set found by both coders: 9 of 11
+- interview set found by both coders: 9 of 10
 
 The last line is the weakest link in the interview-based findings. Event-level agreement is not among
 the statistics the protocol requires, so it is unmeasured rather than measured and small.

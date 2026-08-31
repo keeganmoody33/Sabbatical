@@ -1,7 +1,7 @@
 # Methods
 
 > **Superseded at Freeze 3, 2026-08-30.** Every figure below is the Freeze 2 state: census 221,
-> 13/221, full census 298, latency base 196. The current numbers are 223, 11/223, 317 and 197.
+> 13/221, full census 298, latency base 196. The current numbers are 223, 10/223, 317 and 197.
 > `paper/PAPER.md` and `paper/COMPANION.md` supersede this file. It is kept as the internal record
 > of what Freeze 2 could defend, not deleted, because the point of the repository is that a
 > superseded number stays visible with its date on it.

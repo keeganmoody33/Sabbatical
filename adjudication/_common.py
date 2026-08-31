@@ -44,8 +44,9 @@ EVENT_EXCLUSIONS = [
     ),
     # Freeze 4, 2026-08-30. An invitation is not a round.
     #
-    # These three were coded from an artifact that PROPOSES a conversation rather
-    # than one that RECORDS one. The codebook gave the coders no rule separating
+    # These four were coded from an artifact that PROPOSES a conversation, or
+    # administers one asynchronously, rather than one that RECORDS a completed
+    # round. The codebook gave the coders no rule separating
     # the two, so `recruiter_screen` and `hiring_manager_interview` were assigned
     # to invitations as readily as to completed rounds. That is a missing rule,
     # not a careless coder: two coders independently made the same call on
@@ -55,11 +56,12 @@ EVENT_EXCLUSIONS = [
     # least one of: a scheduling confirmation or calendar reminder naming an
     # interviewer, a decline phrased as after a process, a candidate-experience
     # survey, a SENT message referencing the conversation, or a later stage that
-    # presupposes the first. These three carry none. Full evidence table in
+    # presupposes the first. These four carry none. Full evidence table in
     # `adjudication/INTERVIEW-EVIDENCE.md`.
     #
-    # None of the three carries a terminal outcome to revert: all are
-    # `still_open` with no date, so unlike the Weave correction nothing else moves.
+    # Three were removed together; jobmail-io followed once the author supplied
+    # the underlying decline. None carries a terminal outcome that needs
+    # reverting, so unlike the Weave correction nothing else moves.
     (
         "hypergen|gtm-engineer|c1",
         "hiring_manager_interview",
@@ -79,6 +81,20 @@ EVENT_EXCLUSIONS = [
         "and a recruiter update on 2026-04-23. No scheduling artifact, no completion "
         "signal, no SENT reply. Both coders made this call, which is why it is "
         "recorded as a missing codebook rule rather than a coder error.",
+    ),
+    (
+        "jobmail-io|growth-lead|c1",
+        "recruiter_screen",
+        "2026-07-13",
+        "The decline credits 'completing the requested steps through' a named "
+        "party that is an AUTOMATED SCREENING PRODUCT, not a person at the "
+        "employer: the sending address and the reply-to both belong to that "
+        "product rather than to the hiring company. The steps were therefore "
+        "asynchronous and machine-administered. Kept at Freeze 4 as ambiguous "
+        "on the retrieval note alone; resolved when the author supplied the "
+        "decline itself. Also the row carrying the standing contradiction "
+        "between a derived interview and a stored `rejected_no_interview`, "
+        "from one coder with no blind second reading.",
     ),
     (
         "revspring|lead-agentic-operations-gtm-engineering|c1",

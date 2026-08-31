@@ -618,7 +618,15 @@ def build_discovery_source(census: list[dict], interviewed: set[str]) -> None:
 
         # Coded wins when it is informative, because it came from an artifact
         # read blind. Recall fills the residual only.
-        if coded != "unknown":
+        override = (rec.get("overrides_coded") or "").strip().lower() == "yes"
+        if override and rec_value:
+            # The author adjudicated this row explicitly. The default rule is
+            # that a coded value wins, and it stays the default; this is the
+            # documented escape hatch for the case where the coded value is an
+            # inference the artifact does not support. `basis` records it so
+            # any figure can still be recomputed without author input.
+            resolved, basis = rec_value, "author_adjudicated"
+        elif coded != "unknown":
             resolved, basis = coded, "coded_artifact"
         elif rec_value:
             resolved, basis = rec_value, "author_recall"
@@ -693,11 +701,13 @@ def main() -> None:
     # rather than discovered later in a table.
     # Freeze 3 figures. Freeze 2 was 221 / 298 / 13 / 196; the LinkedIn formal
     # export and the two register reversals moved all four.
-    # Freeze 4 moved interviewed 14 to 11: three rows were coded from an
-    # invitation rather than a completed round. See adjudication/INTERVIEW-EVIDENCE.md.
+    # Freeze 4 moved interviewed 14 to 11, then 11 to 10 once the author
+    # supplied the jobmail.io decline: four rows were coded from an invitation,
+    # a request, an intro, or an automated screening rather than a completed
+    # round. See adjudication/INTERVIEW-EVIDENCE.md.
     assert len(census) == 223, f"application census is {len(census)}, expected 223"
     assert len(full) == 317, f"full census is {len(full)}, expected 317"
-    assert len(interviewed) == 11, f"interviewed is {len(interviewed)}, expected 11"
+    assert len(interviewed) == 10, f"interviewed is {len(interviewed)}, expected 10"
     assert len(latency) == 197, f"latency base is {len(latency)}, expected 197"
 
     # Sanity on the dates the monthly view depends on.

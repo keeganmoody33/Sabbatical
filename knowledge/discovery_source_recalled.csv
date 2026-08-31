@@ -1,13 +1,13 @@
-application_id,discovery_source_recalled,basis,recorded,note
-every-to|gtm-engineer|c1,gtm_cafe_slack,author_recall,2026-08-30,Saw the posting link in the #jobsandopportunities channel.
-great-question|senior-demand-generation-manager|c1,gtm_cafe_slack,author_recall,2026-08-30,Found the posting in #jobsandopportunities.
-pearl|lead-gtm-engineer|c1,gtm_cafe_slack,author_recall,2026-08-30,Responded to a #jobsandopportunities post. A contact connected to the company through agency work then referred the author.
-phrasiq|unspecified|c1,wellfound,author_recall,2026-08-30,Applied on Wellfound. Agrees with the coded discovery_source, so it is a confirmation rather than new information.
-hartleyco|founding-gtm|c1,gtm_cafe_slack,author_recall,2026-08-30,"CONFLICT, and the coded value is the weaker one. A friend sent the author the job through GTM Cafe. The recruiter contacted the author ABOUT AN APPLICATION THAT ALREADY EXISTED, per the retrieval log, so the recruiter was the response and not the discovery. The coded recruiter_inbound is an inference the artifact does not support."
-glytec|unspecified|c1,linkedin_inbound_dm,author_recall,2026-08-30,Opportunity register row. Inbound DM from the CEO citing a referral in his network.
-mercor|b2b-sales-expert|c1,platform_internal_board,author_recall,2026-08-30,Self-submitted through the marketplace's own job board after creating an account.
-mercor|education-school-evaluator|c1,platform_internal_board,author_recall,2026-08-30,Self-submitted through the marketplace's own job board after creating an account.
-mercor|general-sales-gtm-evaluator|c1,platform_internal_board,author_recall,2026-08-30,Self-submitted through the marketplace's own job board after creating an account.
-mercor|sales-and-marketing-expert|c1,platform_internal_board,author_recall,2026-08-30,Self-submitted through the marketplace's own job board after creating an account.
-mercor|sales-engineering-expert|c1,platform_internal_board,author_recall,2026-08-30,Self-submitted through the marketplace's own job board after creating an account.
-mercor|biology-biophysics-research-collaborator|c1,platform_internal_board,author_recall,2026-08-30,"CONFLICT. The author states every Mercor row was a self-submission through the internal board. The coded discovery_source is referral, from an artifact naming the referring person. Recorded so the view surfaces the disagreement rather than resolving it."
+application_id,discovery_source_recalled,basis,recorded,overrides_coded,note
+every-to|gtm-engineer|c1,gtm_cafe_slack,author_recall,2026-08-30,no,Saw the posting link in the #jobsandopportunities channel.
+great-question|senior-demand-generation-manager|c1,gtm_cafe_slack,author_recall,2026-08-30,no,Found the posting in #jobsandopportunities.
+pearl|lead-gtm-engineer|c1,gtm_cafe_slack,author_recall,2026-08-30,no,Responded to a #jobsandopportunities post. A contact connected to the company through agency work then referred the author.
+phrasiq|unspecified|c1,wellfound,author_recall,2026-08-30,no,Applied on Wellfound. Agrees with the coded discovery_source
+hartleyco|founding-gtm|c1,gtm_cafe_slack,author_recall,2026-08-30,yes,"ADJUDICATED BY THE AUTHOR 2026-08-30, overriding the coded value. A friend sent the role through GTM Cafe. The retrieval log records the recruiter contacting the author ABOUT AN APPLICATION THAT ALREADY EXISTED, so the recruiter was the response and not the discovery. The coded recruiter_inbound was an inference the artifact does not support."
+glytec|unspecified|c1,linkedin_inbound_dm,author_recall,2026-08-30,no,"Inbound LinkedIn DM from the CEO, who states the author was personally recommended by his network. Screenshot supplied 2026-08-30. The CEO pointer per_5864edd8d1eb matches the challenger workbook's Glytec origin field exactly."
+mercor|b2b-sales-expert|c1,platform_internal_board,author_recall,2026-08-30,no,Self-submitted through the marketplace's own job board after creating an account.
+mercor|education-school-evaluator|c1,platform_internal_board,author_recall,2026-08-30,no,Self-submitted through the marketplace's own job board after creating an account.
+mercor|general-sales-gtm-evaluator|c1,platform_internal_board,author_recall,2026-08-30,no,Self-submitted through the marketplace's own job board after creating an account.
+mercor|sales-and-marketing-expert|c1,platform_internal_board,author_recall,2026-08-30,no,Self-submitted through the marketplace's own job board after creating an account.
+mercor|sales-engineering-expert|c1,platform_internal_board,author_recall,2026-08-30,no,Self-submitted through the marketplace's own job board after creating an account.
+mercor|biology-biophysics-research-collaborator|c1,platform_internal_board,author_recall,2026-08-30,no,"CONFLICT. The author states every Mercor row was a self-submission through the internal board. The coded discovery_source is referral, from an artifact naming the referring person. Recorded so the view surfaces the disagreement rather than resolving it."
