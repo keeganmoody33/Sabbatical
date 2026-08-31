@@ -170,8 +170,10 @@ with bravo. That is the same shape as the Weave correction, which was accepted o
 reasoning: the correction moves the census toward the blind coder's judgement rather than away
 from it.
 
-If all four fall, interviewed applications go 14 to 10 and the headline rate goes 14/223 to 10/223.
-If only Hypergen falls, 14 to 13.
+**Resolved at Freeze 4, 2026-08-30.** Three fell: Hypergen, TestGorilla and RevSpring. Interviewed
+applications went 14 to **11** and the headline rate 14/223 to **11/223**. `jobmail.io` was kept, on
+the evidence rather than on the recall. The decision was made from the artifacts, not from this
+file: see `adjudication/INTERVIEW-EVIDENCE.md`.
 
 ## What this does not establish
 

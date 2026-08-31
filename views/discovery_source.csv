@@ -12,7 +12,7 @@ mercor|general-sales-gtm-evaluator|c1,Mercor,unknown,platform_internal_board,pla
 mercor|sales-and-marketing-expert|c1,Mercor,unknown,platform_internal_board,platform_internal_board,author_recall,no,platform_internal_board,no
 mercor|sales-engineering-expert|c1,Mercor,unknown,platform_internal_board,platform_internal_board,author_recall,no,platform_internal_board,no
 hartleyco|founding-gtm|c1,HartleyCo,recruiter_inbound,recruiter_inbound,recruiter_inbound,coded_artifact,no,recruiter_inbound,yes
-revspring|lead-agentic-operations-gtm-engineering|c1,RevSpring,recruiter_inbound,,recruiter_inbound,coded_artifact,no,recruiter_inbound,yes
+revspring|lead-agentic-operations-gtm-engineering|c1,RevSpring,recruiter_inbound,,recruiter_inbound,coded_artifact,no,recruiter_inbound,no
 mercor|biology-biophysics-research-collaborator|c1,Mercor,referral,platform_internal_board,referral,coded_artifact,yes,referral,no
 pinterest|apprentice-engineer|c1,Pinterest,referral,,referral,coded_artifact,no,referral,no
 10x-genomics|unspecified|c1,10x Genomics,unknown,,unknown,none,no,unknown,no
@@ -110,7 +110,7 @@ hologram|gtm-engineer-pre-sales|c1,Hologram,unknown,,unknown,none,no,unknown,yes
 hud|gtm-engineer|c1,HUD,unknown,,unknown,none,no,unknown,no
 huzzle|gtm-engineer|c1,Huzzle,unknown,,unknown,none,no,unknown,no
 hyperbound|founding-revops-lead|c1,Hyperbound,unknown,,unknown,none,no,unknown,no
-hypergen|gtm-engineer|c1,Hypergen,unknown,,unknown,none,no,unknown,yes
+hypergen|gtm-engineer|c1,Hypergen,unknown,,unknown,none,no,unknown,no
 ibm|manager-applied-ai-gtm-systems|c1,IBM,unknown,,unknown,none,no,unknown,no
 inertia-growth|outbound-campaign-manager|c1,Inertia Growth,unknown,,unknown,none,no,unknown,no
 inrule-technology|unspecified|c1,InRule Technology,unknown,,unknown,none,no,unknown,no
@@ -186,7 +186,7 @@ tapcheck|unspecified|c1,Tapcheck,unknown,,unknown,none,no,unknown,no
 tekion|senior-manager-inside-sales|c1,Tekion,unknown,,unknown,none,no,unknown,no
 teleport|gtm-engineer|c1,Teleport,unknown,,unknown,none,no,unknown,no
 telnyx|unspecified|c1,Telnyx,unknown,,unknown,none,no,unknown,no
-testgorilla|go-to-market-engineer|c1,TestGorilla,unknown,,unknown,none,no,unknown,yes
+testgorilla|go-to-market-engineer|c1,TestGorilla,unknown,,unknown,none,no,unknown,no
 the-hog|gtm-engineer|c1,The Hog,unknown,,unknown,none,no,unknown,yes
 thomson-reuters|ae-tax-or-risk|c1,Thomson Reuters,unknown,,unknown,none,no,unknown,no
 tiger-data|gtm-ai-engineer|c1,Tiger Data,unknown,,unknown,none,no,unknown,no

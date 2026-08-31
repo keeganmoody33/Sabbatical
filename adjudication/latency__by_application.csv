@@ -58,12 +58,12 @@ gitlab|gtm-planning-operations-analyst|c1,GitLab,GTM Planning & Operations Analy
 ambrook|business-operations-lead|c1,Ambrook,Business Operations Lead,2026-02-11,199,1,1,,revops_gtm_ops_strategy,Ashby,2026-02
 wilsonhcg|outbound-sales-consultant-iii|c1,WilsonHCG,Outbound Sales Consultant III,2026-02-13,197,,,,sales_bd_partnerships,none_observed,2026-02
 smeetz|gtm-engineer|c1,Smeetz,GTM Engineer,2026-02-20,190,,0,,explicit_gtm_engineering,Workable,2026-02
-testgorilla|go-to-market-engineer|c1,TestGorilla,Go-to-Market Engineer,2026-02-20,190,0,0,0,explicit_gtm_engineering,Teamtailor,2026-02
+testgorilla|go-to-market-engineer|c1,TestGorilla,Go-to-Market Engineer,2026-02-20,190,0,0,,explicit_gtm_engineering,Teamtailor,2026-02
 sentilink|go-to-market-strategy-analyst|c1,SentiLink,Go-to-Market Strategy Analyst,2026-02-23,187,140,140,,revops_gtm_ops_strategy,Ashby,2026-02
 anthropic|software-engineer-business-technology|c1,Anthropic,"Software Engineer, Business Technology",2026-03-08,174,1,1,,product_ai_technical,Greenhouse,2026-03
 beautiful-ai|unspecified|c1,Beautiful.ai,unspecified,2026-03-08,174,9,9,9,unspecified,Greenhouse,2026-03
 virtru|director-of-go-to-market-ai|c1,Virtru,Director of Go-to-Market AI,2026-03-09,173,26,26,,explicit_gtm_engineering,Greenhouse,2026-03
-hypergen|gtm-engineer|c1,Hypergen,GTM Engineer,2026-03-11,171,34,34,34,explicit_gtm_engineering,Recruitee,2026-03
+hypergen|gtm-engineer|c1,Hypergen,GTM Engineer,2026-03-11,171,,34,,explicit_gtm_engineering,Recruitee,2026-03
 glean|gtm-engineer-marketing|c1,Glean,"GTM Engineer, Marketing",2026-03-23,159,,,,explicit_gtm_engineering,Greenhouse,2026-03
 lumenalta|unspecified|c1,Lumenalta,unspecified,2026-03-24,158,,0,,unspecified,none_observed,2026-03
 mento|gtm-engineer|c1,Mento,GTM Engineer,2026-03-24,158,,,,explicit_gtm_engineering,Greenhouse,2026-03
@@ -135,7 +135,7 @@ adaptive6|sales-engineer|c1,Adaptive6,Sales Engineer,2026-06-04,86,12,12,,sales_
 cloudflare|gtm-engineer|c1,Cloudflare,GTM Engineer,2026-06-04,86,19,19,,explicit_gtm_engineering,none_observed,2026-06
 huzzle|gtm-engineer|c1,Huzzle,GTM Engineer,2026-06-04,86,0,0,,explicit_gtm_engineering,Workable,2026-06
 pogo-technologies|gtm-engineer|c1,Pogo Technologies,GTM Engineer,2026-06-04,86,,22,,explicit_gtm_engineering,Gem,2026-06
-revspring|lead-agentic-operations-gtm-engineering|c1,RevSpring,"Lead, Agentic Operations + GTM Engineering",2026-06-04,86,6,6,6,explicit_gtm_engineering,none_observed,2026-06
+revspring|lead-agentic-operations-gtm-engineering|c1,RevSpring,"Lead, Agentic Operations + GTM Engineering",2026-06-04,86,,21,,explicit_gtm_engineering,none_observed,2026-06
 atlanta-public-schools|unspecified|c1,Atlanta Public Schools,unspecified,2026-06-19,71,3,0,,other,none_observed,2026-06
 anduril-industries|technical-operations-engineer-launched-effects|c1,Anduril Industries,"Technical Operations Engineer, Launched Effects",2026-06-21,69,,,,product_ai_technical,none_observed,2026-06
 armada|ai-factory-value-engineer|c1,Armada,"AI Factory, Value Engineer",2026-06-22,68,,,,sales_solutions_engineering,Greenhouse,2026-06

@@ -139,7 +139,7 @@ The rule did not change. Its premise did. A submission now exists for each, date
 |---|---|---|
 | Application census | 221 | **223** |
 | Interviewed applications | 13 | **14** |
-| Application to interview rate | 13/221 | **14/223** |
+| Application to interview rate | 13/221 | **14/223**, then **11/223** at Freeze 4 |
 | Full census | 298 | **317** |
 
 This is the exclusion design working exactly as intended. Every excluded row in this study carries a `what_would_promote_it` column naming the specific artifact that would put it back. This was that artifact arriving, fifteen months later.
@@ -161,7 +161,7 @@ It is also a caution. The adjudication was correct on the evidence available and
 | PhrasIQ | Wellfound, origin unresolved | application, Tier A |
 | Classet | Wellfound, origin unresolved | application, Tier B |
 
-PhrasIQ is one of the fourteen interviews.
+PhrasIQ is one of the eleven interviews.
 
 **It is also missing 27 companies this census holds**, 24 of them with employer-side artifacts. Fullsteam and Toast appear on no sheet of it at all. Running the comparison the other way, 20 companies appear only in the challenger. Neither reconstruction is complete, and the union of the two is larger than either.
 

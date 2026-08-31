@@ -153,3 +153,43 @@ because two redacted join keys changed, with every disposition count identical.
 **What this does not fix.** The redaction is a best-effort heuristic over free text, not a
 guarantee. It is now loud instead of silent, which is a real improvement and not the same as being
 correct. The workbook itself remains uncommitted for this reason.
+
+## Three of the fourteen interviews were invitations
+
+**Corrected at Freeze 4, 2026-08-30. The headline moved from 14/223 to 11/223.**
+
+The interview derivation counted an `event_type`. The codebook gave coders no rule separating an
+artifact that **proposes** a conversation from one that **records** one, so `recruiter_screen` and
+`hiring_manager_interview` were assigned to invitations as readily as to completed rounds.
+
+Hypergen carried an interview invitation dated 2026-04-14 and nothing after it. TestGorilla carried
+a recruiter intro and an assessment invitation. RevSpring carried a screen request. None carries a
+scheduling confirmation, a post-process decline, a candidate survey, a `SENT` reply, or a later
+stage, and all ten surviving interviews carry at least one of those.
+
+**The corpus had already said so.** `artifacts/gmail/retrieval-log-006.md` records that the Hypergen
+thread holds an invitation and that the prior ledger's Interviews sheet does not list Hypergen. That
+note was written at capture time and nothing acted on it for the length of the study.
+
+**Bravo blind-coded Hypergen `employer_ack`.** Cursor coded it an interview and adjudication took
+cursor. The blind coder was right and the adjudication was wrong, which is the failure mode
+adjudication is supposed to catch rather than introduce. On TestGorilla and RevSpring both coders
+made the same call, so those two are a missing rule rather than a bad adjudication.
+
+The author disputed these four rows from recall, which is what prompted the re-read. The resolution
+came from the artifacts and does not rest on the recall: every fact was in the frozen corpus
+already. `jobmail-io` remains counted and remains an open defect, because its decline says the
+requested steps were completed, which an asynchronous screening would also produce.
+
+Full evidence table for all fourteen: `adjudication/INTERVIEW-EVIDENCE.md`.
+
+## Personal names in cleartext in the frozen corpus
+
+`artifacts/gmail/*.md` carries nine personal names in cleartext across six retrieval logs, while the
+same files redact sender addresses to `eml_` pointers. The inconsistency is pre-existing and sits in
+frozen files.
+
+Raised with the author on 2026-08-30, who elected to leave the corpus as it stands. Recorded here
+and in `paper/NAMED-COMPANIES.md` so that it is a live decision before anything is published rather
+than an oversight discovered afterwards.
+

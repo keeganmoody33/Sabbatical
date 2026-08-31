@@ -8,11 +8,11 @@ Secondary outcomes named in `knowledge/protocol.md`, computed under the rule sta
 - With an exact-dated `submission_receipt`, the base for every figure below: 197
 - Excluded for lacking one: 26
 
-The base is not the census. Any rate below is stated against 197, and the published application-to-interview rate remains 14/223.
+The base is not the census. Any rate below is stated against 197, and the published application-to-interview rate remains 11/223.
 
 ## Response rate and latency are separate
 
-- Substantive response, `employer_ack` excluded: 79/197
+- Substantive response, `employer_ack` excluded: 77/197
 - Any response, `employer_ack` included: 100/197
 - No response at all beyond the receipt: 97/197
 
@@ -20,22 +20,25 @@ The medians below are conditional on having responded. They describe responders 
 
 | definition | n | median | p25 | p75 | mean | max | day zero |
 |---|---|---|---|---|---|---|---|
-| substantive, headline | 79 | 7 | 3 | 19 | 15.1 | 140 | 9 (11.4%) |
-| any, includes ack | 100 | 5.5 | 1 | 15 | 12.8 | 140 | 22 (22.0%) |
+| substantive, headline | 77 | 7 | 3 | 16 | 14.9 | 140 | 9 (11.7%) |
+| any, includes ack | 100 | 5.5 | 1 | 15 | 12.9 | 140 | 22 (22.0%) |
 
 The day-zero share roughly doubles when `employer_ack` is included, which is what an automated acknowledgment arriving with the receipt looks like. The substantive figure is the headline for that reason. The distribution is right-skewed in both cases, mean well above median, so the median is the statistic to quote.
 
 ## Time to first interview
 
-- n = 11, median 6 days, mean 8.8, range 0 to 34
+- n = 8, median 5.5 days, mean 7.1, range 0 to 24
 
 What follows is about the interview set rather than the latency arithmetic, because this figure inherits whatever that set gets wrong.
 
 **Excluded by named adjudication decision.** These events are removed from this figure and from the census interview count, and the reason is recorded rather than the event silently disappearing:
 
 - `weave|business-development-manager|c1`, `hiring_manager_interview` dated 2026-08-18. Belongs to a separate inbound Weave process, not this application. gth_0339a17e3860d167 is a post-interview decline, so an interview did happen, but the BDM application was already rejected 2025-07-31. Bravo excluded this artifact during blind coding as having no parent.
+- `hypergen|gtm-engineer|c1`, `hiring_manager_interview` dated 2026-04-14. An interview INVITATION from people@hypergen.io replying to the March 11 confirmation, with nothing after it. Flagged at retrieval time: retrieval-log-006 records that the prior ledger held Hypergen as a receipt only and that the Interviews sheet does not list it. Bravo blind-coded the same artifact `employer_ack`; cursor is the lone outlier and adjudication took cursor.
+- `testgorilla|go-to-market-engineer|c1`, `recruiter_screen` dated 2026-02-20. A recruiter INTRO message, alongside an assessment invitation the same day and a recruiter update on 2026-04-23. No scheduling artifact, no completion signal, no SENT reply. Both coders made this call, which is why it is recorded as a missing codebook rule rather than a coder error.
+- `revspring|lead-agentic-operations-gtm-engineering|c1`, `recruiter_screen` dated 2026-06-10. A Recruiter Screen REQUEST. The surrounding thread is two submission receipts and two employer acknowledgments, with no scheduling artifact and no completion signal. Both coders made this call.
 
-**Provenance.** The census records 14 interviewed applications. Both coders independently found 11. The remaining 3 rest on cursor alone, and bravo contributes none that cursor missed: `hartleyco|founding-gtm|c1`, `hypergen|gtm-engineer|c1`, `jobmail-io|growth-lead|c1`. Agreement on which applications were interviewed is therefore 11/14, which is much weaker than the published role-lane kappa of 0.9510 implies. Event-level agreement is not among the reliability statistics `knowledge/protocol.md` requires, so this is unmeasured rather than measured and small.
+**Provenance.** The census records 11 interviewed applications. Both coders independently found 9. The remaining 2 rest on cursor alone, and bravo contributes none that cursor missed: `hartleyco|founding-gtm|c1`, `jobmail-io|growth-lead|c1`. Agreement on which applications were interviewed is therefore 9/11, which is much weaker than the published role-lane kappa of 0.9510 implies. Event-level agreement is not among the reliability statistics `knowledge/protocol.md` requires, so this is unmeasured rather than measured and small.
 
 No interview event postdates a rejection on the same application.
 

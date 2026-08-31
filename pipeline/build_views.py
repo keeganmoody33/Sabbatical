@@ -693,9 +693,11 @@ def main() -> None:
     # rather than discovered later in a table.
     # Freeze 3 figures. Freeze 2 was 221 / 298 / 13 / 196; the LinkedIn formal
     # export and the two register reversals moved all four.
+    # Freeze 4 moved interviewed 14 to 11: three rows were coded from an
+    # invitation rather than a completed round. See adjudication/INTERVIEW-EVIDENCE.md.
     assert len(census) == 223, f"application census is {len(census)}, expected 223"
     assert len(full) == 317, f"full census is {len(full)}, expected 317"
-    assert len(interviewed) == 14, f"interviewed is {len(interviewed)}, expected 14"
+    assert len(interviewed) == 11, f"interviewed is {len(interviewed)}, expected 11"
     assert len(latency) == 197, f"latency base is {len(latency)}, expected 197"
 
     # Sanity on the dates the monthly view depends on.

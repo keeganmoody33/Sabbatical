@@ -1,5 +1,5 @@
 submission_channel,n_applications,n_latency_base,n_responded_any,n_responded_substantive,n_interviewed,interview_rate,interview_rate_wilson_lo,interview_rate_wilson_hi,suppressed
-ats_direct,184,166,85,66,9,9/184,0.0259,0.0903,no
+ats_direct,184,166,85,64,6,6/184,0.0150,0.0693,no
 email_direct,10,10,3,3,0,0/10,0.0000,0.2775,no
 unknown,10,4,3,2,3,3/10,0.1078,0.6032,no
 wellfound_apply,7,6,2,1,1,1/7,0.0257,0.5131,no

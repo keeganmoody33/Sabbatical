@@ -103,3 +103,15 @@ public and they are in it.
 - [ ] Decided whether the companion publishes at all, and whether it publishes with or after the paper
 - [ ] Confirmed no compensation or individual names entered the draft
 - [ ] Approved for publication
+
+## Personal names, decided 2026-08-30
+
+`artifacts/gmail/*.md` carries **nine personal names in cleartext across six retrieval logs**, while
+the same files redact sender addresses to `eml_` pointers. These are third parties: recruiters,
+interviewers and referrers who appear in the author's own records.
+
+Raised on 2026-08-30. **The author elected to leave the corpus as it stands.** That decision covers
+the repository. It is recorded here because it is a separate question from publication: a Substack
+piece that quotes or links a retrieval log would carry those names to a wider audience than a
+repository does, and this checklist is the last gate before that happens.
+

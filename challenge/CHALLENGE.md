@@ -19,48 +19,51 @@ punctuation in this file.
 > 343 workbook records agree outright, 5 records are genuinely workbook-only rather than 20
 > companies, and 50 census records are missing from the workbook rather than 27 companies.
 
-## The finding this exchange produced: two 14s that are not the same 14
+## The finding this exchange produced: two counts that were never the same set
 
 The refined workbook added an `Interview & Opportunity Register` sheet. Counting its rows with at
-least one formal round gives **14 interviews**. This census also derives **14**. The totals match
-exactly.
+least one formal round gives **14 interviews**. When this exchange began, this census also derived
+**14**, and the totals matched exactly.
 
-They are not the same fourteen. They agree on **eight**.
+They were never the same fourteen. They agreed on **eight**.
 
 | Both | This census only | Workbook only |
 |---|---|---|
 | Beautiful.ai | HartleyCo | Glytec |
-| Dagster Labs | Hypergen | Mixmax |
-| Every | Orchestry | Pinn |
-| Great Question | RevSpring | Mercor |
-| Hologram | TestGorilla | Opsin Security |
-| Pearl | jobmail.io | Hotglue |
+| Dagster Labs | Orchestry | Mixmax |
+| Every | jobmail.io | Pinn |
+| Great Question | ~~Hypergen~~ | Mercor |
+| Hologram | ~~RevSpring~~ | Opsin Security |
+| Pearl | ~~TestGorilla~~ | Hotglue |
 | PhrasIQ | | |
 | The Hog | | |
 
-This is the most useful thing in the exchange, and it would have been invisible at the level of
-totals. Two independent reconstructions of the same fifteen months, both reporting 14 interviews,
-agreeing on 8 of them. **A matching headline is not agreement.** Anyone comparing two funnel
-datasets by their summary rows would have concluded these instruments corroborate each other.
+Then Freeze 4 removed the three struck rows, because each was coded from an interview invitation
+rather than a completed round. See `adjudication/INTERVIEW-EVIDENCE.md`. **This census now reports
+11 and the workbook still reports 14, and they still agree on the same eight.**
+
+That sequence is the finding, and it is worth more than either number. Two independent
+reconstructions of the same fifteen months produced *identical totals* while agreeing on barely
+half the underlying set, and the totals matched only because each side's errors happened to
+cancel. Anyone comparing two funnel datasets by their summary rows would have concluded these
+instruments corroborated each other. **A matching headline is not agreement.** Here it was not even
+evidence of agreement, it was a coincidence that survived until somebody compared row by row.
 
 The six on each side are not symmetric, and the reasons are known:
 
 - **Workbook only.** Glytec and Mercor are `register_disagreement`: this repository holds both in
   the opportunity register because no submission artifact establishes that the applicant applied.
   Opsin Security is `declined_opportunity_register` on the same rule. Mixmax, Pinn and Hotglue are
-  `open_workbook_only`, records this corpus does not hold at all, and Hotglue's stated origin is
+  `open_workbook_only`, records this corpus does not hold at all, and Hotglue's origin is
   YC Work at a Startup, which is **unmet stop condition 6**.
-- **This census only.** Six interviews the workbook's register does not carry, each derived from a
-  coded interview event on a census row.
+- **This census only, after Freeze 4.** Three remain: HartleyCo, Orchestry and jobmail.io. Each
+  carries a completion signature the workbook's register does not reflect. The three that fell were
+  this census's own error, and the workbook was right to omit them.
 
-So four of the six workbook-only interviews are the two-register rule working as designed, and two
-of them plus Hotglue are genuine coverage this study never retrieved. None of the six is a
-fabrication on either side.
-
-**What this costs the headline.** Nothing, and that is the point worth stating plainly. The rate
-stays 14/223 because every one of the six census-only interviews sits on a census row and none of
-the six workbook-only ones does. The two instruments arrive at the same number by different routes,
-and the agreement of the totals is a coincidence rather than a corroboration.
+So four of the six workbook-only interviews are the two-register rule working as designed, two plus
+Hotglue are genuine coverage this study never retrieved, and three of this census's six were
+invitations miscounted as rounds. **Neither instrument was reliable at the level of the individual
+row, and only a row-grain comparison could show it.**
 
 ## What the challenger is, and what it is not
 
@@ -94,7 +97,7 @@ count as a checkpoint rather than a census.
 | Companies with employer-side proof | **Repository** | 8 rows the workbook excluded are Tier A here |
 | Coverage breadth | **Split** | At row grain: 3 records only in the workbook, 41 only here. See `SUPPLEMENTARY-LEDGER.md` |
 | Outcome model | **Repository** | GHOSTED is a residual the workbook itself calls overloaded |
-| Interview measurement | **Repository** | 14 derived from events against 334 of 353 UNKNOWN |
+| Interview measurement | **Split, and this repository was partly wrong** | It derives interviews from events where the workbook is UNKNOWN on 334 of 353, but three of its own fourteen were invitations miscounted as rounds and the workbook was right to omit them. Now 11. See `adjudication/INTERVIEW-EVIDENCE.md` |
 | Origin coverage | **Challenger, but not adoptable** | 353 of 353 against 15 of 223. See below |
 | Unresolved role titles | **Challenger** | It carries 8 unresolved against this census's 40. Eleven are now fixed from this repository's own artifacts |
 | Capture recapture | **Neither** | Still unmeasured, now for a precisely stated reason |

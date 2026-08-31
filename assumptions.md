@@ -240,6 +240,38 @@ view prints it suppressed rather than omitting the row, so the shape is visible 
 quotable. That is the correct outcome and it is also the sharpest illustration in the study of why
 n=1 research needs a cell floor.
 
+## H3. Freeze 4, an invitation is not a round
+
+Added 2026-08-30. **Status: applied. Interviewed applications 14 becomes 11, the rate 14/223
+becomes 11/223.**
+
+The interview derivation counted an `event_type`. Nothing in the codebook told a coder that
+`recruiter_screen` and `hiring_manager_interview` describe a completed round rather than an offer to
+meet, so all three were assigned to invitations as readily as to conversations that happened.
+
+| Assumption | Reason | What it rules out |
+|---|---|---|
+| A completed interview must leave a scheduling confirmation or calendar reminder, a decline phrased as after a process, a candidate-experience survey, a `SENT` message referencing the conversation, or a later stage presupposing the first | These are the marks the ten surviving interviews carry, without exception, and the three removed ones carry none of | Counting an invitation, a screen request, a recruiter intro or an assessment invitation as a round |
+| The three removals are `hypergen`, `testgorilla` and `revspring`, by named event exclusion in `_common.py` | Same mechanism as the Weave correction. The event is removed from metrics with a written reason rather than deleted | An event vanishing without a record of why |
+| No terminal outcome is reverted | All three are `still_open` with no date, so unlike Weave nothing else moves | A silent second-order change |
+| `jobmail-io` is **not** removed | Its decline says the requested steps were completed, which an asynchronous screening would also produce. It is weaker evidence than the other three in both directions | Resolving an ambiguity by preference |
+
+**This is a coding defect, not a recall correction.** Every fact was in the frozen corpus before the
+author said anything, and `artifacts/gmail/retrieval-log-006.md` had already recorded that the
+Hypergen thread carried an invitation and that the prior ledger's Interviews sheet omitted it. Two
+coders independently made the same call on TestGorilla and RevSpring, so it is a missing rule rather
+than a careless coder. The author's recall identified which rows to re-read; the artifacts decided
+them and would have decided them the same way with no author involved.
+
+Consequences beyond the headline: time to first interview moves from n=11 median 6 to **n=8 median
+5.5**; `explicit_gtm_engineering` moves from 10/92 to **7/92**; titles carrying GTM language move
+from 10 of 14 to **7 of 11**; and the interview set found by both coders moves from 11 of 14 to
+**9 of 11**, with bravo's set now a strict subset of cursor's, which says bravo was systematically
+the more conservative reader. The lane structure does not move: three of eight lanes hold every
+interview and five lanes covering 83 applications still hold none.
+
+Evidence table for all fourteen in `adjudication/INTERVIEW-EVIDENCE.md`.
+
 ## I. Analysis and presentation
 
 These change no census figure. They govern how figures are presented, and each one could reasonably

@@ -26,6 +26,9 @@ These are named changes to coder output, applied here rather than by editing the
 Events excluded from the interview derivation:
 
 - `weave|business-development-manager|c1`, `hiring_manager_interview` dated 2026-08-18. Belongs to a separate inbound Weave process, not this application. gth_0339a17e3860d167 is a post-interview decline, so an interview did happen, but the BDM application was already rejected 2025-07-31. Bravo excluded this artifact during blind coding as having no parent.
+- `hypergen|gtm-engineer|c1`, `hiring_manager_interview` dated 2026-04-14. An interview INVITATION from people@hypergen.io replying to the March 11 confirmation, with nothing after it. Flagged at retrieval time: retrieval-log-006 records that the prior ledger held Hypergen as a receipt only and that the Interviews sheet does not list it. Bravo blind-coded the same artifact `employer_ack`; cursor is the lone outlier and adjudication took cursor.
+- `testgorilla|go-to-market-engineer|c1`, `recruiter_screen` dated 2026-02-20. A recruiter INTRO message, alongside an assessment invitation the same day and a recruiter update on 2026-04-23. No scheduling artifact, no completion signal, no SENT reply. Both coders made this call, which is why it is recorded as a missing codebook rule rather than a coder error.
+- `revspring|lead-agentic-operations-gtm-engineering|c1`, `recruiter_screen` dated 2026-06-10. A Recruiter Screen REQUEST. The surrounding thread is two submission receipts and two employer acknowledgments, with no scheduling artifact and no completion signal. Both coders made this call.
 
 Terminal outcomes corrected:
 
@@ -63,8 +66,8 @@ The Hog and BX Studio were on this list until Freeze 3. They are not any more, a
 - n = **223**
 - evidence_class: employer_artifact (platform_log stratum empty; LinkedIn export absent)
 - full census equals the employer_artifact stratum in this freeze
-- interviewed applications (derived from events, either coder): 14
-- application-to-interview rate: 14/223 = 0.0628
+- interviewed applications (derived from events, either coder): 11
+- application-to-interview rate: 11/223 = 0.0493
 - exact-date n: 196; non-exact n: 27
 - exact-date monthly: {'2025-06': 5, '2025-07': 19, '2025-08': 16, '2025-11': 1, '2025-12': 2, '2026-01': 7, '2026-02': 10, '2026-03': 21, '2026-04': 27, '2026-05': 22, '2026-06': 28, '2026-07': 33, '2026-08': 5}
 

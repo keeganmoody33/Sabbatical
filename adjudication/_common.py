@@ -42,6 +42,52 @@ EVENT_EXCLUSIONS = [
         "but the BDM application was already rejected 2025-07-31. Bravo excluded this "
         "artifact during blind coding as having no parent.",
     ),
+    # Freeze 4, 2026-08-30. An invitation is not a round.
+    #
+    # These three were coded from an artifact that PROPOSES a conversation rather
+    # than one that RECORDS one. The codebook gave the coders no rule separating
+    # the two, so `recruiter_screen` and `hiring_manager_interview` were assigned
+    # to invitations as readily as to completed rounds. That is a missing rule,
+    # not a careless coder: two coders independently made the same call on
+    # TestGorilla and RevSpring.
+    #
+    # The corpus itself supplies the test. Every interview that holds carries at
+    # least one of: a scheduling confirmation or calendar reminder naming an
+    # interviewer, a decline phrased as after a process, a candidate-experience
+    # survey, a SENT message referencing the conversation, or a later stage that
+    # presupposes the first. These three carry none. Full evidence table in
+    # `adjudication/INTERVIEW-EVIDENCE.md`.
+    #
+    # None of the three carries a terminal outcome to revert: all are
+    # `still_open` with no date, so unlike the Weave correction nothing else moves.
+    (
+        "hypergen|gtm-engineer|c1",
+        "hiring_manager_interview",
+        "2026-04-14",
+        "An interview INVITATION from people@hypergen.io replying to the March 11 "
+        "confirmation, with nothing after it. Flagged at retrieval time: "
+        "retrieval-log-006 records that the prior ledger held Hypergen as a receipt "
+        "only and that the Interviews sheet does not list it. Bravo blind-coded the "
+        "same artifact `employer_ack`; cursor is the lone outlier and adjudication "
+        "took cursor.",
+    ),
+    (
+        "testgorilla|go-to-market-engineer|c1",
+        "recruiter_screen",
+        "2026-02-20",
+        "A recruiter INTRO message, alongside an assessment invitation the same day "
+        "and a recruiter update on 2026-04-23. No scheduling artifact, no completion "
+        "signal, no SENT reply. Both coders made this call, which is why it is "
+        "recorded as a missing codebook rule rather than a coder error.",
+    ),
+    (
+        "revspring|lead-agentic-operations-gtm-engineering|c1",
+        "recruiter_screen",
+        "2026-06-10",
+        "A Recruiter Screen REQUEST. The surrounding thread is two submission "
+        "receipts and two employer acknowledgments, with no scheduling artifact and "
+        "no completion signal. Both coders made this call.",
+    ),
 ]
 
 _EXCLUDED_SIGNATURES = {(a, t, d) for a, t, d, _ in EVENT_EXCLUSIONS}

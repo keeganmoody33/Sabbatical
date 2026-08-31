@@ -72,7 +72,7 @@ field stays as the blind coders left it and this view sits beside it.
 
 ### `funnel_by_role_lane.csv`
 
-All 14 interviews sit in three of the eight lanes. Five lanes covering 78 applications produced
+All 11 interviews sit in three of the eight lanes. Five lanes covering 83 applications produced
 zero. Descriptive only: the applicant chose which roles to apply to, so lane is confounded with
 where he was a plausible fit. Nothing here is randomized and no causal reading is available.
 
