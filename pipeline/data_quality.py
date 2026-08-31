@@ -275,6 +275,8 @@ def section_duplicates(lines: list[str], full: list[dict]) -> None:
                 earlier, later = sorted((left, right), key=lambda r: r["date_applied"])
                 terminal = earlier["terminal_outcome"].strip()
                 terminal_date = iso_date(earlier["terminal_outcome_date"])
+                # Never None: the pair returns early above unless both
+                # `date_applied` values parse, and this re-parses one of them.
                 later_date = iso_date(later["date_applied"])
                 if not terminal:
                     verdict = "UNLICENSED, earlier row has no terminal outcome"
@@ -288,8 +290,25 @@ def section_duplicates(lines: list[str], full: list[dict]) -> None:
                         f"UNVERIFIED, undated terminal outcome `{terminal}`, "
                         "ordering cannot be established"
                     )
-                elif later_date is not None and terminal_date > later_date:
+                elif terminal_date > later_date:
                     verdict = f"UNLICENSED, `{terminal}` dated after the later submission"
+                elif terminal_date == later_date:
+                    # UNVERIFIED, same class as an undated outcome. These fields
+                    # are day-granular, so a terminal outcome dated the same day
+                    # as the re-application does not establish that it came
+                    # first. Rejected in the morning and re-applied that
+                    # afternoon is licensed; the reverse is not; and the data
+                    # cannot tell them apart.
+                    #
+                    # Deliberately NOT unlicensed. That label is for a pair
+                    # provably out of order, and collapsing "unknown at this
+                    # granularity" into "provably wrong" would overstate what
+                    # the check established, which is the failure this whole
+                    # section exists to avoid.
+                    verdict = (
+                        f"UNVERIFIED, `{terminal}` dated the same day as the later "
+                        "submission, ordering not established at day granularity"
+                    )
                 else:
                     verdict = f"licensed by `{terminal}` on {terminal_date.isoformat()}"
                 beyond_window.append((delta, entry, verdict))
