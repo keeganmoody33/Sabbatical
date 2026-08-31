@@ -1,0 +1,224 @@
+application_id,company_canonical,discovery_source_coded,discovery_source_recalled,discovery_source_resolved,basis,conflict,root_venue,interviewed
+every-to|gtm-engineer|c1,Every.to,unknown,gtm_cafe_slack,gtm_cafe_slack,author_recall,no,gtm_engineering_school,yes
+great-question|senior-demand-generation-manager|c1,Great Question,unknown,gtm_cafe_slack,gtm_cafe_slack,author_recall,no,gtm_engineering_school,yes
+hartleyco|founding-gtm|c1,HartleyCo,recruiter_inbound,gtm_cafe_slack,gtm_cafe_slack,author_adjudicated,yes,gtm_engineering_school,yes
+pearl|lead-gtm-engineer|c1,Pearl,unknown,gtm_cafe_slack,gtm_cafe_slack,author_recall,no,gtm_engineering_school,yes
+jobright-ai|product-manager-early-career|c1,Jobright.ai,jobright,,jobright,coded_artifact,no,jobright,no
+ai-digital|growth-director|c1,AI Digital,ladders,,ladders,coded_artifact,no,ladders,no
+firstup|manager-gtm-systems|c1,Firstup,ladders,,ladders,coded_artifact,no,ladders,no
+lattice|gtm-engineer|c1,Lattice,ladders,,ladders,coded_artifact,no,ladders,no
+mercor|b2b-sales-expert|c1,Mercor,unknown,platform_internal_board,platform_internal_board,author_recall,no,platform_internal_board,no
+mercor|education-school-evaluator|c1,Mercor,unknown,platform_internal_board,platform_internal_board,author_recall,no,platform_internal_board,no
+mercor|general-sales-gtm-evaluator|c1,Mercor,unknown,platform_internal_board,platform_internal_board,author_recall,no,platform_internal_board,no
+mercor|sales-and-marketing-expert|c1,Mercor,unknown,platform_internal_board,platform_internal_board,author_recall,no,platform_internal_board,no
+mercor|sales-engineering-expert|c1,Mercor,unknown,platform_internal_board,platform_internal_board,author_recall,no,platform_internal_board,no
+revspring|lead-agentic-operations-gtm-engineering|c1,RevSpring,recruiter_inbound,,recruiter_inbound,coded_artifact,no,recruiter_inbound,no
+mercor|biology-biophysics-research-collaborator|c1,Mercor,referral,platform_internal_board,referral,coded_artifact,yes,referral,no
+pinterest|apprentice-engineer|c1,Pinterest,referral,,referral,coded_artifact,no,referral,no
+10x-genomics|unspecified|c1,10x Genomics,unknown,,unknown,none,no,unknown,no
+4flow|director-go-to-market-strategy|c1,4flow,unknown,,unknown,none,no,unknown,no
+4mindsai|gtm-engineer|c1,4MindsAI,unknown,,unknown,none,no,unknown,no
+90-seconds|unspecified|c1,90 Seconds,unknown,,unknown,none,no,unknown,no
+adaptive6|sales-engineer|c1,Adaptive6,unknown,,unknown,none,no,unknown,no
+adapt|gtm-engineer-revops-lead|c1,Adapt,unknown,,unknown,none,no,unknown,no
+agroknow|north-america-sales|c1,Agroknow,unknown,,unknown,none,no,unknown,no
+aicro|gtm-engineering-team-lead|c1,AICRO,unknown,,unknown,none,no,unknown,no
+airops|growth-engineer|c1,AirOps,unknown,,unknown,none,no,unknown,no
+airtable|gtm-engineer|c1,Airtable,unknown,,unknown,none,no,unknown,no
+ambrook|business-operations-lead|c1,Ambrook,unknown,,unknown,none,no,unknown,no
+ambrook|partnerships-lead|c1,Ambrook,unknown,,unknown,none,no,unknown,no
+anaconda|senior-bdr|c1,Anaconda,unknown,,unknown,none,no,unknown,no
+anduril-industries|technical-operations-engineer-launched-effects|c1,Anduril Industries,unknown,,unknown,none,no,unknown,no
+anthropic|software-engineer-business-technology|c1,Anthropic,unknown,,unknown,none,no,unknown,no
+anysphere|gtm-emerging-products|c1,Anysphere,unknown,,unknown,none,no,unknown,no
+apartmentiq|unspecified|c1,ApartmentIQ,unknown,,unknown,none,no,unknown,no
+apollo-io|unspecified|c1,Apollo.io,unknown,,unknown,none,no,unknown,no
+appgate|gtm-engineer|c1,AppGate,unknown,,unknown,none,no,unknown,no
+applause|enterprise-sdr|c1,Applause,unknown,,unknown,none,no,unknown,no
+applied-systems|sales-enablement-gtm-readiness-lead|c1,Applied Systems,unknown,,unknown,none,no,unknown,no
+armada|ai-factory-value-engineer|c1,Armada,unknown,,unknown,none,no,unknown,no
+atlanta-public-schools|unspecified|c1,Atlanta Public Schools,unknown,,unknown,none,no,unknown,no
+attentive|gtm-engineer|c1,Attentive,unknown,,unknown,none,no,unknown,no
+attentive|gtm-engineer|c2,Attentive,unknown,,unknown,none,no,unknown,no
+auctane|pre-sales-engineer|c1,Auctane,unknown,,unknown,none,no,unknown,no
+automation-anywhere|sales-engineer|c1,Automation Anywhere,unknown,,unknown,none,no,unknown,no
+axiad|unspecified|c1,Axiad,unknown,,unknown,none,no,unknown,no
+axon|manager-go-to-market-readiness|c1,Axon,unknown,,unknown,none,no,unknown,no
+beacon-software|unspecified|c1,Beacon Software,unknown,,unknown,none,no,unknown,no
+beautiful-ai|unspecified|c1,Beautiful.ai,unknown,,unknown,none,no,unknown,yes
+beckhoff-automation|sales-engineer|c1,Beckhoff Automation,unknown,,unknown,none,no,unknown,no
+blackthorn-io|unspecified|c1,Blackthorn.io,unknown,,unknown,none,no,unknown,no
+boulevard|gtm-engineer|c1,Boulevard,unknown,,unknown,none,no,unknown,no
+brand-ai|gtme|c1,Brand.ai,unknown,,unknown,none,no,unknown,no
+brighthire|unspecified|c1,BrightHire,unknown,,unknown,none,no,unknown,no
+built-recruiting|gtm-engineer|c1,Built Recruiting,unknown,,unknown,none,no,unknown,no
+bx-studio|unspecified|c1,BX Studio,unknown,,unknown,none,no,unknown,no
+canals|sales-manager|c1,Canals,unknown,,unknown,none,no,unknown,no
+circle|gtm-engineer-outbound|c1,Circle,unknown,,unknown,none,no,unknown,no
+city-schools-of-decatur|unspecified|c1,City Schools Of Decatur,unknown,,unknown,none,no,unknown,no
+classdojo|unspecified|c1,ClassDojo,unknown,,unknown,none,no,unknown,no
+clay|growth-strategist-enterprise|c1,Clay,unknown,,unknown,none,no,unknown,no
+cloudflare|gtm-engineer|c1,Cloudflare,unknown,,unknown,none,no,unknown,no
+clutch|gtm-engineer|c1,Clutch,unknown,,unknown,none,no,unknown,no
+colab-software|sales-engineer|c1,CoLab Software,unknown,,unknown,none,no,unknown,no
+companycam|gtm-systems-engineer|c1,CompanyCam,unknown,,unknown,none,no,unknown,no
+confido|founding-gtm-engineer|c1,Confido,unknown,,unknown,none,no,unknown,no
+conversion|gtm-engineer|c1,Conversion,unknown,,unknown,none,no,unknown,no
+cresta|gtm-engineer|c1,Cresta,unknown,,unknown,none,no,unknown,no
+crypto-com|product-growth-hacker-exchange-main-app|c1,Crypto.com,unknown,,unknown,none,no,unknown,no
+dagster-labs|gtm-engineer|c1,Dagster Labs,unknown,,unknown,none,no,unknown,yes
+dbeaver|gtm-engineer|c1,DBeaver,unknown,,unknown,none,no,unknown,no
+deepgram|gtm-engineer|c1,Deepgram,unknown,,unknown,none,no,unknown,no
+dekalb-county-school-district|area-1-elementary-star-substitute-ashford-park-es|c1,DeKalb County School District,unknown,,unknown,none,no,unknown,no
+dekalb-county-school-district|area-3-elementary-star-substitute-canby-lane-es|c1,DeKalb County School District,unknown,,unknown,none,no,unknown,no
+dekalb-county-school-district|area-3-elementary-star-substitute-cedar-grove-es|c1,DeKalb County School District,unknown,,unknown,none,no,unknown,no
+dekalb-county-school-district|area-3-elementary-star-substitute-chapel-hill-es|c1,DeKalb County School District,unknown,,unknown,none,no,unknown,no
+dekalb-county-school-district|area-3-elementary-star-substitute-murphey-candler-es|c1,DeKalb County School District,unknown,,unknown,none,no,unknown,no
+dekalb-county-school-district|area-3-elementary-star-substitute-rowland-es|c1,DeKalb County School District,unknown,,unknown,none,no,unknown,no
+dekalb-county-school-district|area-4-elementary-substitute-star-browns-mill-es|c1,DeKalb County School District,unknown,,unknown,none,no,unknown,no
+dekalb-county-school-district|area-high-school-star-substitute-columbia-hs|c1,DeKalb County School District,unknown,,unknown,none,no,unknown,no
+dekalb-county-school-district|horizon-area-substitute-star-flat-rock-es|c1,DeKalb County School District,unknown,,unknown,none,no,unknown,no
+dekalb-county-school-district|specialty-area-star-substitute-margaret-harris-comprehensive|c1,DeKalb County School District,unknown,,unknown,none,no,unknown,no
+designit|unspecified|c1,Designit,unknown,,unknown,none,no,unknown,no
+disqo|gtm-engineer|c1,DISQO,unknown,,unknown,none,no,unknown,no
+douglas-county-school-system|unspecified|c1,Douglas County School System,unknown,,unknown,none,no,unknown,no
+drata|sdr-remote|c1,Drata,unknown,,unknown,none,no,unknown,no
+enlace-health|sales-engineer|c1,Enlace Health,unknown,,unknown,none,no,unknown,no
+evenup|ai-adoption-manager-southeast|c1,EvenUp,unknown,,unknown,none,no,unknown,no
+exa|growth-lead|c1,Exa,unknown,,unknown,none,no,unknown,no
+fixify|gtm-engineer-contract|c1,Fixify,unknown,,unknown,none,no,unknown,no
+fossa|unspecified|c1,FOSSA,unknown,,unknown,none,no,unknown,no
+fossa|unspecified|c2,FOSSA,unknown,,unknown,none,no,unknown,no
+foursquare|ae-new-business|c1,Foursquare,unknown,,unknown,none,no,unknown,no
+fullsteam|senior-sales-development-representative|c1,Fullsteam,unknown,,unknown,none,no,unknown,no
+g2|gtm-engineer|c1,G2,unknown,,unknown,none,no,unknown,no
+galileo|growth-engineer|c1,Galileo,unknown,,unknown,none,no,unknown,no
+galileo|gtm-engineer|c1,Galileo,unknown,,unknown,none,no,unknown,no
+gather-ai|gtm-engineer|c1,Gather AI,unknown,,unknown,none,no,unknown,no
+gatherup|unspecified|c1,GatherUp,unknown,,unknown,none,no,unknown,no
+gigs|unspecified|c1,Gigs,unknown,,unknown,none,no,unknown,no
+gitlab|gtm-planning-operations-analyst|c1,GitLab,unknown,,unknown,none,no,unknown,no
+glean|gtm-engineer-marketing|c1,Glean,unknown,,unknown,none,no,unknown,no
+gradient-labs|gtm-engineer|c1,Gradient Labs,unknown,,unknown,none,no,unknown,no
+gtp-software|revenue-enablement-manager|c1,GTP Software,unknown,,unknown,none,no,unknown,no
+handshake|gtm-engineer|c1,Handshake,unknown,,unknown,none,no,unknown,no
+headway|growth-marketing-specialist|c1,Headway,unknown,,unknown,none,no,unknown,no
+hex|sdr|c1,Hex,unknown,,unknown,none,no,unknown,no
+higgsfield|gtm-engineer|c1,Higgsfield,unknown,,unknown,none,no,unknown,no
+hightouch|go-to-market-engineer|c1,Hightouch,unknown,,unknown,none,no,unknown,no
+hologram|gtm-engineer-pre-sales|c1,Hologram,unknown,,unknown,none,no,unknown,yes
+hud|gtm-engineer|c1,HUD,unknown,,unknown,none,no,unknown,no
+huzzle|gtm-engineer|c1,Huzzle,unknown,,unknown,none,no,unknown,no
+hyperbound|founding-revops-lead|c1,Hyperbound,unknown,,unknown,none,no,unknown,no
+hypergen|gtm-engineer|c1,Hypergen,unknown,,unknown,none,no,unknown,no
+ibm|manager-applied-ai-gtm-systems|c1,IBM,unknown,,unknown,none,no,unknown,no
+inertia-growth|outbound-campaign-manager|c1,Inertia Growth,unknown,,unknown,none,no,unknown,no
+inrule-technology|unspecified|c1,InRule Technology,unknown,,unknown,none,no,unknown,no
+insignia-collab|unspecified|c1,Insignia Collab,unknown,,unknown,none,no,unknown,no
+inven-ai|unspecified|c1,Inven.ai,unknown,,unknown,none,no,unknown,no
+itc-infotech|manager-business-development|c1,ITC Infotech,unknown,,unknown,none,no,unknown,no
+jobgether|gtm-engineer|c1,Jobgether,unknown,,unknown,none,no,unknown,no
+jobmail-io|growth-lead|c1,jobmail.io,unknown,,unknown,none,no,unknown,no
+langchain|gtm-engineer|c1,LangChain,unknown,,unknown,none,no,unknown,no
+liatrio|gtm-revops-engineer|c1,Liatrio,unknown,,unknown,none,no,unknown,no
+linear|ae-growth|c1,Linear,unknown,,unknown,none,no,unknown,no
+listen-labs|lead-gtm-engineer|c1,Listen Labs,unknown,,unknown,none,no,unknown,no
+livekit|gtm-systems-engineer|c1,LiveKit,unknown,,unknown,none,no,unknown,no
+lorikeet|gtm-engineer|c1,Lorikeet,unknown,,unknown,none,no,unknown,no
+lumenalta|unspecified|c1,Lumenalta,unknown,,unknown,none,no,unknown,no
+manifold-ai|growth-marketing-manager|c1,Manifold AI,unknown,,unknown,none,no,unknown,no
+medialab-ai|unspecified|c1,MediaLab.AI,unknown,,unknown,none,no,unknown,no
+mento|gtm-engineer|c1,Mento,unknown,,unknown,none,no,unknown,no
+minio|bdr-enterprise|c1,MinIO,unknown,,unknown,none,no,unknown,no
+nebius|director-gtm-physical-ai|c1,Nebius,unknown,,unknown,none,no,unknown,no
+nero|founding-engineer|c1,Nero,unknown,,unknown,none,no,unknown,no
+nice|ai-solution-strategist|c1,NICE,unknown,,unknown,none,no,unknown,no
+nooks|gtm-engineer-marketing|c1,Nooks,unknown,,unknown,none,no,unknown,no
+onboard|unspecified|c1,OnBoard,unknown,,unknown,none,no,unknown,no
+onit|sales-engineer|c1,Onit,unknown,,unknown,none,no,unknown,no
+ontra|unspecified|c1,Ontra,unknown,,unknown,none,no,unknown,no
+openobserve|growth-marketer|c1,OpenObserve,unknown,,unknown,none,no,unknown,no
+orchestry|gtm-engineer-sales|c1,Orchestry,unknown,,unknown,none,no,unknown,yes
+owner-com|gtm-engineer|c1,Owner.com,unknown,,unknown,none,no,unknown,no
+oxos-medical|gtm-engineer|c1,OXOS Medical,unknown,,unknown,none,no,unknown,no
+pandadoc|gtm-engineer|c1,PandaDoc,unknown,,unknown,none,no,unknown,no
+patch|growth-engineering-lead|c1,Patch,unknown,,unknown,none,no,unknown,no
+payabli|gtm-engineer|c1,Payabli,unknown,,unknown,none,no,unknown,no
+phiture|us-growth-lead-mobile-marketing-strategist|c1,Phiture,unknown,,unknown,none,no,unknown,no
+pindrop|gtm-systems-platform-specialist|c1,Pindrop,unknown,,unknown,none,no,unknown,no
+pogo-technologies|gtm-engineer|c1,Pogo Technologies,unknown,,unknown,none,no,unknown,no
+practical-prospecting|unspecified|c1,Practical Prospecting,unknown,,unknown,none,no,unknown,no
+primer|unspecified|c1,Primer,unknown,,unknown,none,no,unknown,no
+productboard|associate-gtm-engineer|c1,Productboard,unknown,,unknown,none,no,unknown,no
+proofpoint|unspecified|c1,Proofpoint,unknown,,unknown,none,no,unknown,no
+proteantecs|sdr|c1,proteanTecs,unknown,,unknown,none,no,unknown,no
+redis|gtm-engineer|c1,Redis,unknown,,unknown,none,no,unknown,no
+replit|sales-engineer|c1,Replit,unknown,,unknown,none,no,unknown,no
+revic|founding-gtm-ai-engineer|c1,Revic,unknown,,unknown,none,no,unknown,no
+revpartners|gtm-engineer|c1,RevPartners,unknown,,unknown,none,no,unknown,no
+roboflow|revops-gtm-engineer|c1,Roboflow,unknown,,unknown,none,no,unknown,no
+rollstack|ai-growth-hacker|c1,Rollstack,unknown,,unknown,none,no,unknown,no
+rula|gtm-engineer-remote|c1,Rula,unknown,,unknown,none,no,unknown,no
+runway|go-to-market-ai-engineer|c1,Runway,unknown,,unknown,none,no,unknown,no
+sage|director-of-growth-small|c1,Sage,unknown,,unknown,none,no,unknown,no
+sailpoint|account-exec-enterprise-accounts|c1,SailPoint,unknown,,unknown,none,no,unknown,no
+sardine|gtm-engineer|c1,Sardine,unknown,,unknown,none,no,unknown,no
+scaleops|sales-engineer-usa|c1,ScaleOps,unknown,,unknown,none,no,unknown,no
+scribe|unspecified|c1,Scribe,unknown,,unknown,none,no,unknown,no
+seamless-ai|sdr-remote-us|c1,Seamless.AI,unknown,,unknown,none,no,unknown,no
+sentilink|go-to-market-strategy-analyst|c1,SentiLink,unknown,,unknown,none,no,unknown,no
+servicetrade|unspecified|c1,ServiceTrade,unknown,,unknown,none,no,unknown,no
+shaped|founding-sdr|c1,Shaped,unknown,,unknown,none,no,unknown,no
+slingshot-ai|conversation-designer|c1,Slingshot AI,unknown,,unknown,none,no,unknown,no
+smeetz|gtm-engineer|c1,Smeetz,unknown,,unknown,none,no,unknown,no
+solv-health|unspecified|c1,Solv Health,unknown,,unknown,none,no,unknown,no
+speechify|go-to-market-engineer-atlanta|c1,Speechify,unknown,,unknown,none,no,unknown,no
+spider-cloud|growth-lead|c1,Spider.cloud,unknown,,unknown,none,no,unknown,no
+stackai|sales-engineer|c1,StackAI,unknown,,unknown,none,no,unknown,no
+stedi|unspecified|c1,Stedi,unknown,,unknown,none,no,unknown,no
+stellar-substitute|unspecified|c1,Stellar Substitute,unknown,,unknown,none,no,unknown,no
+sur|ai-revenue-engineer|c1,Sur,unknown,,unknown,none,no,unknown,no
+switchyards|digital-product-builder|c1,Switchyards,unknown,,unknown,none,no,unknown,no
+switchyards|launch-manager|c1,Switchyards,unknown,,unknown,none,no,unknown,no
+syncro|gtm-operations-manager|c1,Syncro,unknown,,unknown,none,no,unknown,no
+talentpluto|go-to-market-engineer|c1,Talentpluto,unknown,,unknown,none,no,unknown,no
+tapcheck|unspecified|c1,Tapcheck,unknown,,unknown,none,no,unknown,no
+tekion|senior-manager-inside-sales|c1,Tekion,unknown,,unknown,none,no,unknown,no
+teleport|gtm-engineer|c1,Teleport,unknown,,unknown,none,no,unknown,no
+telnyx|unspecified|c1,Telnyx,unknown,,unknown,none,no,unknown,no
+testgorilla|go-to-market-engineer|c1,TestGorilla,unknown,,unknown,none,no,unknown,no
+the-hog|gtm-engineer|c1,The Hog,unknown,,unknown,none,no,unknown,yes
+thomson-reuters|ae-tax-or-risk|c1,Thomson Reuters,unknown,,unknown,none,no,unknown,no
+tiger-data|gtm-ai-engineer|c1,Tiger Data,unknown,,unknown,none,no,unknown,no
+toast|gtm-engineer-sales-workflow-automation|c1,Toast,unknown,,unknown,none,no,unknown,no
+together-ai|unspecified|c1,Together AI,unknown,,unknown,none,no,unknown,no
+trace3|sdr|c1,Trace3,unknown,,unknown,none,no,unknown,no
+tractian|sales-engineer-automation|c1,TRACTIAN,unknown,,unknown,none,no,unknown,no
+tractian|senior-gtm-engineer-hubspot|c1,TRACTIAN,unknown,,unknown,none,no,unknown,no
+trase|gtm-engineer-healthcare|c1,Trase,unknown,,unknown,none,no,unknown,no
+tripleseat|gtm-engineer|c1,Tripleseat,unknown,,unknown,none,no,unknown,no
+uncapped|gtm-engineer|c1,Uncapped,unknown,,unknown,none,no,unknown,no
+unframe|gtm-engineer|c1,Unframe,unknown,,unknown,none,no,unknown,no
+unstructured|gtm-engineer-operations|c1,Unstructured,unknown,,unknown,none,no,unknown,no
+upguard|sdr-manager|c1,UpGuard,unknown,,unknown,none,no,unknown,no
+valsoft|gtm-engineer-dockmaster|c1,Valsoft,unknown,,unknown,none,no,unknown,no
+vercel|gtm-engineer|c1,Vercel,unknown,,unknown,none,no,unknown,no
+verkada|enterprise-solutions-engineer-atlanta|c1,Verkada,unknown,,unknown,none,no,unknown,no
+virtru|director-of-go-to-market-ai|c1,Virtru,unknown,,unknown,none,no,unknown,no
+vitalsource|ai-enablement-lead|c1,VitalSource,unknown,,unknown,none,no,unknown,no
+volley|unspecified|c1,Volley,unknown,,unknown,none,no,unknown,no
+vonage|sdr-api-cpaas|c1,Vonage,unknown,,unknown,none,no,unknown,no
+wallstreetquants|unspecified|c1,WallStreetQuants,unknown,,unknown,none,no,unknown,no
+wealth-com|gtm-engineer|c1,Wealth.com,unknown,,unknown,none,no,unknown,no
+weave|business-development-manager|c1,Weave,unknown,,unknown,none,no,unknown,no
+wilsonhcg|outbound-sales-consultant-iii|c1,WilsonHCG,unknown,,unknown,none,no,unknown,no
+wirescreen|partnerships-manager|c1,WireScreen,unknown,,unknown,none,no,unknown,no
+wrapbook|gtm-systems-engineer|c1,Wrapbook,unknown,,unknown,none,no,unknown,no
+yuno|go-to-market-engineer|c1,Yuno,unknown,,unknown,none,no,unknown,no
+12100-collective|seo-lead|c1,12100 Collective,wellfound,,wellfound,coded_artifact,no,wellfound,no
+airgarage|consumer-growth-hacker|c1,AirGarage,wellfound,,wellfound,coded_artifact,no,wellfound,no
+ava-labs|growth-lead-core|c1,Ava Labs,wellfound,,wellfound,coded_artifact,no,wellfound,no
+classet|head-of-gtm|c1,Classet,wellfound,,wellfound,coded_artifact,no,wellfound,no
+fibr-ai|founding-sdr-ae|c1,Fibr AI,wellfound,,wellfound,coded_artifact,no,wellfound,no
+infisical|founding-growth-marketer|c1,Infisical,wellfound,,wellfound,coded_artifact,no,wellfound,no
+phrasiq|unspecified|c1,PhrasIQ,wellfound,wellfound,wellfound,coded_artifact,no,wellfound,yes

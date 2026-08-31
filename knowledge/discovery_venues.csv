@@ -1,0 +1,15 @@
+venue,discovered_via,basis,note
+gtm_cafe_slack,gtm_engineering_school,author_recall,The author joined the GTM Cafe community through the GTM Engineering School cohort. This edge is why a rollup to root venue attributes GTM Cafe originated processes back to the school.
+gtm_engineering_school,root,author_recall,No antecedent recorded. Treated as a root venue.
+linkedin_inbound_dm,root,author_recall,"A founder or peer DM, distinct from the frozen term `linkedin`, which means the job board, and from `recruiter_inbound`, which means a recruiter."
+platform_internal_board,root,author_recall,A marketplace's own job board after the author created an account.
+referral,root,artifact,"Frozen term. A specific referral may itself trace to a venue, but the class does not, so it is a root."
+recruiter_inbound,root,artifact,Frozen term. Recruiter approach with no recorded antecedent.
+wellfound,root,platform_log,Frozen term. Public job board.
+linkedin,root,platform_log,Frozen term. The job board rather than a DM.
+jobright,root,platform_log,Frozen term. Agent submitted on the author's behalf.
+ladders,root,platform_log,Frozen term. Public job board.
+yc_wfs,root,artifact,Frozen term. YC Work at a Startup.
+company_site,root,artifact,Frozen term.
+newsletter_community,root,artifact,"Frozen term. Retained but unused: it collapses a named channel into a generic bucket, and the named channel is the finding."
+unknown,root,none,The residual. Root because nothing is known about it.

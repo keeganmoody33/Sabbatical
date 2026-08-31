@@ -3,7 +3,7 @@ inven-ai|unspecified|c1,Inven.ai,unspecified,2025-06-11,444,,,,unspecified,none_
 circle|gtm-engineer-outbound|c1,Circle,"GTM Engineer, Outbound",2025-06-20,435,,,,explicit_gtm_engineering,Greenhouse,2025-06
 trace3|sdr|c1,Trace3,SDR,2025-06-25,430,0,0,,sales_bd_partnerships,Greenhouse,2025-06
 runway|go-to-market-ai-engineer|c1,Runway,Go-To-Market AI Engineer,2025-06-26,429,,,,explicit_gtm_engineering,Ashby,2025-06
-gigs|unspecified|c1,Gigs,unspecified,2025-06-30,425,,,,unspecified,Greenhouse,2025-06
+gigs|unspecified|c1,Gigs,Solutions Engineer,2025-06-30,425,,,,sales_solutions_engineering,Greenhouse,2025-06
 galileo|growth-engineer|c1,Galileo,Growth Engineer,2025-07-02,423,,,,growth_demand_marketing,Rippling,2025-07
 headway|growth-marketing-specialist|c1,Headway,Growth Marketing Specialist,2025-07-03,422,,,,growth_demand_marketing,Greenhouse,2025-07
 applause|enterprise-sdr|c1,Applause,Enterprise SDR,2025-07-08,417,1,1,,sales_bd_partnerships,Workable,2025-07
@@ -12,14 +12,14 @@ scaleops|sales-engineer-usa|c1,ScaleOps,"Sales Engineer, USA",2025-07-17,408,,,,
 slingshot-ai|conversation-designer|c1,Slingshot AI,Conversation Designer,2025-07-25,400,,3,,product_ai_technical,none_observed,2025-07
 exa|growth-lead|c1,Exa,Growth Lead,2025-07-25,400,,,,growth_demand_marketing,Lever,2025-07
 inertia-growth|outbound-campaign-manager|c1,Inertia Growth,Outbound Campaign Manager,2025-07-26,399,4,4,,growth_demand_marketing,none_observed,2025-07
-90-seconds|unspecified|c1,90 Seconds,unspecified,2025-07-27,398,,,,unspecified,Lever,2025-07
+90-seconds|unspecified|c1,90 Seconds,(Senior) Business Development Manager - Enterprise (US),2025-07-27,398,,,,sales_bd_partnerships,Lever,2025-07
 anaconda|senior-bdr|c1,Anaconda,Senior BDR,2025-07-27,398,26,26,,sales_bd_partnerships,Rippling,2025-07
 gtp-software|revenue-enablement-manager|c1,GTP Software,Revenue Enablement Manager,2025-07-27,398,,5,,revops_gtm_ops_strategy,Rippling,2025-07
 phiture|us-growth-lead-mobile-marketing-strategist|c1,Phiture,"US Growth Lead, Mobile Marketing Strategist",2025-07-27,398,,2,,growth_demand_marketing,none_observed,2025-07
 replit|sales-engineer|c1,Replit,Sales Engineer,2025-07-27,398,,3,,sales_solutions_engineering,Ashby,2025-07
 shaped|founding-sdr|c1,Shaped,Founding SDR,2025-07-27,398,,,,sales_bd_partnerships,Dover,2025-07
-stedi|unspecified|c1,Stedi,unspecified,2025-07-27,398,,,,unspecified,Ashby,2025-07
-volley|unspecified|c1,Volley,unspecified,2025-07-27,398,,,,unspecified,Greenhouse,2025-07
+stedi|unspecified|c1,Stedi,GTM Strategy & Operations,2025-07-27,398,,,,revops_gtm_ops_strategy,Ashby,2025-07
+volley|unspecified|c1,Volley,Senior Business Development Manager,2025-07-27,398,,,,sales_bd_partnerships,Greenhouse,2025-07
 weave|business-development-manager|c1,Weave,Business Development Manager,2025-07-27,398,4,4,,sales_bd_partnerships,Greenhouse,2025-07
 galileo|gtm-engineer|c1,Galileo,GTM Engineer,2025-07-28,397,,0,,explicit_gtm_engineering,Rippling,2025-07
 hex|sdr|c1,Hex,SDR,2025-07-31,394,,,,sales_bd_partnerships,Greenhouse,2025-07
@@ -42,7 +42,7 @@ proteantecs|sdr|c1,proteanTecs,SDR,2025-08-08,386,,,,sales_bd_partnerships,Comee
 switchyards|launch-manager|c1,Switchyards,Launch Manager,2025-08-08,386,11,11,,other,none_observed,2025-08
 insignia-collab|unspecified|c1,Insignia Collab,unspecified,2025-11-18,284,,,,unspecified,none_observed,2025-11
 linear|ae-growth|c1,Linear,AE Growth,2025-12-08,264,3,3,,sales_bd_partnerships,Ashby,2025-12
-primer|unspecified|c1,Primer,unspecified,2025-12-09,263,6,6,,unspecified,Ashby,2025-12
+primer|unspecified|c1,Primer,Senior Business Development Manager - North America,2025-12-09,263,6,6,,sales_bd_partnerships,Ashby,2025-12
 foursquare|ae-new-business|c1,Foursquare,AE New Business,2026-01-02,239,,6,,sales_bd_partnerships,Ashby,2026-01
 medialab-ai|unspecified|c1,MediaLab.AI,unspecified,2026-01-02,239,,,,unspecified,Greenhouse,2026-01
 proofpoint|unspecified|c1,Proofpoint,unspecified,2026-01-02,239,,,,unspecified,none_observed,2026-01
@@ -58,12 +58,12 @@ gitlab|gtm-planning-operations-analyst|c1,GitLab,GTM Planning & Operations Analy
 ambrook|business-operations-lead|c1,Ambrook,Business Operations Lead,2026-02-11,199,1,1,,revops_gtm_ops_strategy,Ashby,2026-02
 wilsonhcg|outbound-sales-consultant-iii|c1,WilsonHCG,Outbound Sales Consultant III,2026-02-13,197,,,,sales_bd_partnerships,none_observed,2026-02
 smeetz|gtm-engineer|c1,Smeetz,GTM Engineer,2026-02-20,190,,0,,explicit_gtm_engineering,Workable,2026-02
-testgorilla|go-to-market-engineer|c1,TestGorilla,Go-to-Market Engineer,2026-02-20,190,0,0,0,explicit_gtm_engineering,Teamtailor,2026-02
+testgorilla|go-to-market-engineer|c1,TestGorilla,Go-to-Market Engineer,2026-02-20,190,0,0,,explicit_gtm_engineering,Teamtailor,2026-02
 sentilink|go-to-market-strategy-analyst|c1,SentiLink,Go-to-Market Strategy Analyst,2026-02-23,187,140,140,,revops_gtm_ops_strategy,Ashby,2026-02
 anthropic|software-engineer-business-technology|c1,Anthropic,"Software Engineer, Business Technology",2026-03-08,174,1,1,,product_ai_technical,Greenhouse,2026-03
 beautiful-ai|unspecified|c1,Beautiful.ai,unspecified,2026-03-08,174,9,9,9,unspecified,Greenhouse,2026-03
 virtru|director-of-go-to-market-ai|c1,Virtru,Director of Go-to-Market AI,2026-03-09,173,26,26,,explicit_gtm_engineering,Greenhouse,2026-03
-hypergen|gtm-engineer|c1,Hypergen,GTM Engineer,2026-03-11,171,34,34,34,explicit_gtm_engineering,Recruitee,2026-03
+hypergen|gtm-engineer|c1,Hypergen,GTM Engineer,2026-03-11,171,,34,,explicit_gtm_engineering,Recruitee,2026-03
 glean|gtm-engineer-marketing|c1,Glean,"GTM Engineer, Marketing",2026-03-23,159,,,,explicit_gtm_engineering,Greenhouse,2026-03
 lumenalta|unspecified|c1,Lumenalta,unspecified,2026-03-24,158,,0,,unspecified,none_observed,2026-03
 mento|gtm-engineer|c1,Mento,GTM Engineer,2026-03-24,158,,,,explicit_gtm_engineering,Greenhouse,2026-03
@@ -94,6 +94,7 @@ solv-health|unspecified|c1,Solv Health,unspecified,2026-04-06,145,15,15,,unspeci
 unframe|gtm-engineer|c1,Unframe,GTM Engineer,2026-04-06,145,36,36,,explicit_gtm_engineering,Greenhouse,2026-04
 wrapbook|gtm-systems-engineer|c1,Wrapbook,GTM Systems Engineer,2026-04-06,145,,,,explicit_gtm_engineering,Ashby,2026-04
 valsoft|gtm-engineer-dockmaster|c1,Valsoft,"GTM Engineer, DockMaster",2026-04-06,145,,,,explicit_gtm_engineering,Workable,2026-04
+bx-studio|unspecified|c1,BX Studio,GTM Engineer,2026-04-08,143,,,,explicit_gtm_engineering,none_observed,2026-04
 sur|ai-revenue-engineer|c1,Sur,AI Revenue Engineer,2026-04-09,142,0,0,,explicit_gtm_engineering,Workable,2026-04
 airops|growth-engineer|c1,AirOps,Growth Engineer,2026-04-10,141,,,,growth_demand_marketing,Ashby,2026-04
 auctane|pre-sales-engineer|c1,Auctane,Pre-Sales Engineer,2026-04-10,141,34,34,,sales_solutions_engineering,Greenhouse,2026-04
@@ -103,8 +104,8 @@ ontra|unspecified|c1,Ontra,unspecified,2026-04-10,141,14,14,,unspecified,Ashby,2
 redis|gtm-engineer|c1,Redis,GTM Engineer,2026-04-10,141,,,,explicit_gtm_engineering,Ashby,2026-04
 rollstack|ai-growth-hacker|c1,Rollstack,AI Growth Hacker,2026-04-10,141,,,,growth_demand_marketing,Ashby,2026-04
 teleport|gtm-engineer|c1,Teleport,GTM Engineer,2026-04-14,137,23,23,,explicit_gtm_engineering,Ashby,2026-04
-wallstreetquants|unspecified|c1,WallStreetQuants,unspecified,2026-04-17,134,,,,unspecified,Workable,2026-04
-fossa|unspecified|c1,FOSSA,unspecified,2026-04-22,129,28,28,,unspecified,Greenhouse,2026-04
+wallstreetquants|unspecified|c1,WallStreetQuants,Marketing / GTM Engineer,2026-04-17,134,,,,explicit_gtm_engineering,Workable,2026-04
+fossa|unspecified|c1,FOSSA,GTM Engineer,2026-04-22,129,28,28,,explicit_gtm_engineering,Greenhouse,2026-04
 oxos-medical|gtm-engineer|c1,OXOS Medical,GTM Engineer,2026-04-27,124,,,,explicit_gtm_engineering,Greenhouse,2026-04
 trase|gtm-engineer-healthcare|c1,Trase,"GTM Engineer, Healthcare",2026-04-27,124,74,74,,explicit_gtm_engineering,Greenhouse,2026-04
 10x-genomics|unspecified|c1,10x Genomics,unspecified,2026-05-02,119,12,12,,unspecified,Greenhouse,2026-05
@@ -117,13 +118,13 @@ applied-systems|sales-enablement-gtm-readiness-lead|c1,Applied Systems,Sales Ena
 colab-software|sales-engineer|c1,CoLab Software,Sales Engineer,2026-05-21,100,,7,,sales_solutions_engineering,Greenhouse,2026-05
 dbeaver|gtm-engineer|c1,DBeaver,GTM Engineer,2026-05-21,100,15,15,,explicit_gtm_engineering,Greenhouse,2026-05
 deepgram|gtm-engineer|c1,Deepgram,GTM Engineer,2026-05-21,100,1,1,,explicit_gtm_engineering,Ashby,2026-05
-fossa|unspecified|c2,FOSSA,unspecified,2026-05-21,100,,,,unspecified,Greenhouse,2026-05
+fossa|unspecified|c2,FOSSA,GTM Engineer,2026-05-21,100,,,,explicit_gtm_engineering,Greenhouse,2026-05
 nebius|director-gtm-physical-ai|c1,Nebius,Director GTM Physical AI,2026-05-21,100,56,56,,explicit_gtm_engineering,Greenhouse,2026-05
 nice|ai-solution-strategist|c1,NICE,AI Solution Strategist,2026-05-21,100,,,,sales_solutions_engineering,Greenhouse,2026-05
 onit|sales-engineer|c1,Onit,Sales Engineer,2026-05-21,100,,,,sales_solutions_engineering,Lever,2026-05
 pindrop|gtm-systems-platform-specialist|c1,Pindrop,GTM Systems Platform Specialist,2026-05-21,100,6,6,,explicit_gtm_engineering,Greenhouse,2026-05
-servicetrade|unspecified|c1,ServiceTrade,unspecified,2026-05-21,100,8,8,,unspecified,none_observed,2026-05
-telnyx|unspecified|c1,Telnyx,unspecified,2026-05-21,100,,,,unspecified,Greenhouse,2026-05
+servicetrade|unspecified|c1,ServiceTrade,GTM Engineer,2026-05-21,100,8,8,,explicit_gtm_engineering,none_observed,2026-05
+telnyx|unspecified|c1,Telnyx,"Growth Engineer, GTM AI",2026-05-21,100,,,,growth_demand_marketing,Greenhouse,2026-05
 tractian|sales-engineer-automation|c1,TRACTIAN,"Sales Engineer, Automation",2026-05-21,100,,,,sales_solutions_engineering,Lever,2026-05
 vitalsource|ai-enablement-lead|c1,VitalSource,AI Enablement Lead,2026-05-21,100,,,,other,Jobvite,2026-05
 evenup|ai-adoption-manager-southeast|c1,EvenUp,"AI Adoption Manager, Southeast",2026-05-25,96,10,10,,other,Ashby,2026-05
@@ -134,7 +135,7 @@ adaptive6|sales-engineer|c1,Adaptive6,Sales Engineer,2026-06-04,86,12,12,,sales_
 cloudflare|gtm-engineer|c1,Cloudflare,GTM Engineer,2026-06-04,86,19,19,,explicit_gtm_engineering,none_observed,2026-06
 huzzle|gtm-engineer|c1,Huzzle,GTM Engineer,2026-06-04,86,0,0,,explicit_gtm_engineering,Workable,2026-06
 pogo-technologies|gtm-engineer|c1,Pogo Technologies,GTM Engineer,2026-06-04,86,,22,,explicit_gtm_engineering,Gem,2026-06
-revspring|lead-agentic-operations-gtm-engineering|c1,RevSpring,"Lead, Agentic Operations + GTM Engineering",2026-06-04,86,6,6,6,explicit_gtm_engineering,none_observed,2026-06
+revspring|lead-agentic-operations-gtm-engineering|c1,RevSpring,"Lead, Agentic Operations + GTM Engineering",2026-06-04,86,,21,,explicit_gtm_engineering,none_observed,2026-06
 atlanta-public-schools|unspecified|c1,Atlanta Public Schools,unspecified,2026-06-19,71,3,0,,other,none_observed,2026-06
 anduril-industries|technical-operations-engineer-launched-effects|c1,Anduril Industries,"Technical Operations Engineer, Launched Effects",2026-06-21,69,,,,product_ai_technical,none_observed,2026-06
 armada|ai-factory-value-engineer|c1,Armada,"AI Factory, Value Engineer",2026-06-22,68,,,,sales_solutions_engineering,Greenhouse,2026-06
@@ -158,7 +159,7 @@ tekion|senior-manager-inside-sales|c1,Tekion,Senior Manager Inside Sales,2026-06
 wirescreen|partnerships-manager|c1,WireScreen,Partnerships Manager,2026-06-25,65,8,8,,sales_bd_partnerships,Ashby,2026-06
 city-schools-of-decatur|unspecified|c1,City Schools Of Decatur,unspecified,2026-06-26,64,,0,,other,none_observed,2026-06
 inrule-technology|unspecified|c1,InRule Technology,unspecified,2026-07-06,54,,,,unspecified,Rippling,2026-07
-jobmail-io|growth-lead|c1,jobmail.io,Growth Lead,2026-07-07,53,6,6,6,growth_demand_marketing,none_observed,2026-07
+jobmail-io|growth-lead|c1,jobmail.io,Growth Lead,2026-07-07,53,,,,growth_demand_marketing,none_observed,2026-07
 douglas-county-school-system|unspecified|c1,Douglas County School System,unspecified,2026-07-09,51,,,,other,none_observed,2026-07
 anysphere|gtm-emerging-products|c1,Anysphere,"GTM, Emerging Products",2026-07-12,48,1,1,,explicit_gtm_engineering,Ashby,2026-07
 confido|founding-gtm-engineer|c1,Confido,Founding GTM Engineer,2026-07-12,48,,,,explicit_gtm_engineering,Ashby,2026-07

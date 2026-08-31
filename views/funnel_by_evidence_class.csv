@@ -1,0 +1,3 @@
+evidence_class,n_applications,n_latency_base,n_responded_any,n_responded_substantive,n_interviewed,interview_rate,interview_rate_wilson_lo,interview_rate_wilson_hi,suppressed
+employer_artifact,222,197,99,76,10,10/222,0.0246,0.0809,no
+platform_log,1,0,0,0,0,,,,yes

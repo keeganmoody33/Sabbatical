@@ -1,0 +1,13 @@
+Component,Source rows,Merged into existing,New unique rows,Excluded/removed,Notes
+Starting non-excluded ledger,219,0,219,0,Step 4 checkpoint before platform merge.
+Confirmed RevSpring duplicate,1,1,0,1,Second application receipt folded into same opening/reapplication thread.
+LinkedIn job-thread table,54,8,45,1,One explicit no-opportunity thread excluded.
+Corroborated LinkedIn omissions,2,0,2,0,Mixmax contract offer and Vivi Brown role.
+LinkedIn formal applications,107,23,84,0,"107 distinct job IDs; 23 merged, including the accepted The Hog, Huzzle, and AppGate legal-name joins."
+Jobright applications,40,34,6,0,40 rows; no exact source duplicates.
+Accepted evidence corrections,2,1,0,2,per_6d523f811622 merged into Teleport; per_110491e97aa7 excluded because no specific opportunity was evidenced.
+User interview reconciliation,2,0,2,0,Restored PhrasIQ from exclusion and added Hotglue from confirmed interview evidence.
+Reconciliation,Start,Less RevSpring duplicate,Plus additions,Less evidence corrections,Combined records
+Calculated total,219,1,139,2,355
+Analytical population,Reconstructed records,School corrections,Title-unrecoverable quarantines,,Analysis records
+Calculated total,355,4,8,,343

@@ -1,5 +1,11 @@
 # Methods
 
+> **Superseded at Freeze 3, 2026-08-30.** Every figure below is the Freeze 2 state: census 221,
+> 13/221, full census 298, latency base 196. The current numbers are 223, 10/223, 317 and 197.
+> `paper/PAPER.md` and `paper/COMPANION.md` supersede this file. It is kept as the internal record
+> of what Freeze 2 could defend, not deleted, because the point of the repository is that a
+> superseded number stays visible with its date on it.
+
 Window: 2025-06-01 to 2026-08-29, America/New_York, inclusive. Fifteen months. Prior audits searched 2025-08-25 forward, so June 2025 through early November 2025 was unharvested rather than empty.
 
 Unit of analysis: `company_canonical + role_as_listed + cycle`.

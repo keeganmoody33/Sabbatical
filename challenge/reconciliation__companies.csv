@@ -1,0 +1,342 @@
+company_normalized,in_workbook,in_repository_full_census,workbook_rows,workbook_categories,repository_register,repository_evidence_class,verdict
+10xgenomics,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+12100collective,no,yes,0,,application,employer_artifact,repository_only
+2x,yes,yes,1,LinkedIn application,application,platform_log,both
+4flow,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+4minds,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+8x,no,yes,0,,application,platform_log,repository_only
+90seconds,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+abacus,yes,no,1,LinkedIn application,,,workbook_only_application
+adapt,no,yes,0,,application,employer_artifact,both_via_alias
+adaptive6,yes,yes,1,LinkedIn application,application,employer_artifact,both
+agroknow,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+aicro,yes,yes,1,LinkedIn application,application,platform_log,both
+aidigital,no,yes,0,,application,employer_artifact,repository_only
+ailytics,yes,yes,1,LinkedIn application,application,platform_log,both
+airgarage,no,yes,0,,application,employer_artifact,repository_only
+airops,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+airopsthecannonproject,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+airtable,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+ambient,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+ambrook,yes,yes,2,Direct application / ATS,application,employer_artifact,both
+anaconda,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+anduril,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+anthropic,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+anyint,yes,no,1,LinkedIn application,,,workbook_only_application
+anysphere,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+apartmentiq,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+apollo,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+appgate,yes,yes,1,LinkedIn application,application,employer_artifact,both
+applause,yes,yes,1,LinkedIn application,application,employer_artifact,both
+applied,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+aptean,yes,no,2,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+armada,yes,yes,1,LinkedIn application,application,employer_artifact,both
+armanino,no,yes,0,,application,platform_log,repository_only
+atlantapublicschools,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+attentive,yes,yes,2,Direct application / ATS; LinkedIn application,application,employer_artifact,both
+auctane,yes,yes,1,LinkedIn application,application,employer_artifact,both
+autodesk,yes,yes,1,Jobright.ai application,application,platform_log,both
+autoleap,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+automationanywhere,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+avalabs,no,yes,0,,application,employer_artifact,repository_only
+axiad,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+axon,yes,yes,2,Direct application / ATS; Jobright.ai application,application,platform_log,both
+azul,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+baskhealth,yes,yes,1,LinkedIn application,application,platform_log,both
+baton,yes,yes,1,LinkedIn application,application,platform_log,both
+beacon,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+beautiful,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+beckhoffautomation,no,yes,0,,application,employer_artifact,repository_only
+bestversionmedia,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+bitovi,yes,no,1,LinkedIn application,,,workbook_only_application
+blackthorn,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+blocktackle,yes,yes,1,LinkedIn application,application,platform_log,both
+bluejay,yes,no,1,Recruiter outbound / intermediary,,,workbook_only_opportunity
+boulevard,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+brainfish,yes,no,1,LinkedIn application,,,workbook_only_application
+brand,yes,yes,1,Community-sourced,application,employer_artifact,both
+brighthire,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+builtrecruiting,no,yes,0,,application,employer_artifact,repository_only
+bxstud,yes,no,1,LinkedIn application,,,workbook_only_application
+canals,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+capitallinguists,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+casperstudios,yes,yes,1,LinkedIn application,application,platform_log,both
+cincinnatusviamercor,yes,no,1,Referral,,,workbook_only_opportunity
+circle,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+cityschoolsofdecatur,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+classdojo,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+classet,no,yes,0,,application,employer_artifact,repository_only
+claudomat,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+clay,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+clipboardeducation,yes,no,1,Recruiter outbound / intermediary,,,workbook_only_opportunity
+closedwontalent,yes,no,1,LinkedIn application,,,workbook_only_application
+cloudflare,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+clutch,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+colab,yes,yes,2,Direct application / ATS; Jobright.ai application,application,employer_artifact,both
+colossus,yes,no,1,LinkedIn application,,,workbook_only_application
+company,yes,yes,1,LinkedIn application,application,platform_log,both
+companycam,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+confido,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+conversion,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+coverwatch,yes,yes,1,LinkedIn application,application,platform_log,both
+crashoverride,yes,yes,1,LinkedIn application,application,platform_log,both
+cresta,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+crmit,yes,yes,1,LinkedIn application,application,platform_log,both
+crossinghurdles,yes,yes,1,LinkedIn application,application,platform_log,both
+crypto,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+cyft,yes,no,1,LinkedIn cold outreach,,,workbook_only_opportunity
+dagster,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+databar,yes,yes,2,LinkedIn application,application,platform_log,both
+datricks,yes,no,1,LinkedIn application,,,workbook_only_application
+dbeaver,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+deepgram,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+dekalbcountyschooldistrict,no,yes,0,,application,employer_artifact,repository_only
+designit,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+devsignal,yes,yes,1,LinkedIn application,application,platform_log,both
+disqo,yes,yes,1,LinkedIn application,application,employer_artifact,both
+doomers,yes,yes,1,LinkedIn application,application,platform_log,both
+douglascountyschoolsystem,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+drata,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+dripshop,yes,yes,1,LinkedIn application,application,platform_log,both
+duckbill,yes,yes,1,LinkedIn application,application,platform_log,both
+durhamgeoslopeindicatordgsi,yes,yes,2,LinkedIn application,application,platform_log,both
+elios,yes,yes,1,LinkedIn application,application,platform_log,both
+enlacehealth,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+entelligence,yes,yes,1,LinkedIn application,application,platform_log,both
+evenup,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+every,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+evolutionusa,yes,yes,1,LinkedIn application,application,platform_log,both
+exa,no,yes,0,,application,employer_artifact,repository_only
+exalabs,yes,no,1,Direct application / ATS,,,workbook_only_application
+fibr,no,yes,0,,application,employer_artifact,repository_only
+firstup,no,yes,0,,application,employer_artifact,repository_only
+fixify,yes,yes,2,Direct application / ATS,application,employer_artifact,both
+flexbone,yes,yes,1,LinkedIn application,application,platform_log,both
+fossa,yes,yes,2,Direct application / ATS; Jobright.ai application,application,employer_artifact,both
+foursquare,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+fractionaldemand,yes,yes,2,LinkedIn application,application,platform_log,both
+franklinfitch,yes,yes,1,LinkedIn application,application,platform_log,both
+freshtix,yes,yes,1,Jobright.ai application,application,platform_log,both
+fullsteam,no,yes,0,,application,employer_artifact,repository_only
+g2,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+galileo,yes,yes,2,Direct application / ATS,application,employer_artifact,both
+gather,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+gatherup,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+gigs,yes,yes,1,LinkedIn application,application,employer_artifact,both
+gitlab,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+glean,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+globalfinancialimpact,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+glytec,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+gradient,yes,yes,1,LinkedIn cold outreach,application,employer_artifact,both
+greatquestion,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+greenwaycollins,yes,yes,1,LinkedIn application,application,platform_log,both
+gridbank,yes,yes,1,LinkedIn application,application,platform_log,both
+gtpsoftware,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+handshake,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+handshakeaifellowship,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+hartfielautomation,yes,yes,1,LinkedIn application,application,platform_log,both
+hartley,yes,yes,1,LinkedIn application,application,employer_artifact,both
+headway,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+hermetic,yes,yes,1,LinkedIn application,application,platform_log,both
+hex,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+higgsfield,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+hightouch,yes,yes,2,Direct application / ATS,application,employer_artifact,both
+hippocratic,yes,yes,1,LinkedIn application,application,platform_log,both
+hologram,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+horizonaitalent,yes,yes,1,LinkedIn application,application,platform_log,both
+hud,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+humandelta,yes,yes,1,LinkedIn application,application,platform_log,both
+huzzle,yes,yes,1,LinkedIn application,application,employer_artifact,both
+hyperbound,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+hypergen,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+ibm,yes,yes,2,Direct application / ATS; LinkedIn recruiter/person outreach,application,employer_artifact,both
+inertiagrowth,yes,yes,1,Cold outreach I initiated,application,employer_artifact,both
+infisical,no,yes,0,,application,employer_artifact,repository_only
+inrule,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+insigniaassets,yes,no,1,LinkedIn application,,,workbook_only_application
+insigniacollab,no,yes,0,,application,employer_artifact,repository_only
+intellipro,yes,yes,1,LinkedIn application,application,platform_log,both
+inven,no,yes,0,,application,employer_artifact,repository_only
+inworld,yes,yes,1,LinkedIn application,application,platform_log,both
+itcinfotech,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+jetbridge,yes,no,2,LinkedIn application,,,workbook_only_application
+jobgether,yes,yes,1,LinkedIn application,application,employer_artifact,both
+jobmail,no,yes,0,,application,employer_artifact,repository_only
+jobright,yes,yes,3,Jobright.ai application; LinkedIn application,application,platform_log,both
+kana,yes,no,1,LinkedIn application,,,workbook_only_application
+kognitos,yes,yes,1,LinkedIn application,application,platform_log,both
+langchain,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+lattice,no,yes,0,,application,employer_artifact,repository_only
+liatr,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+light,yes,yes,1,LinkedIn application,application,platform_log,both
+linear,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+listen,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+livekit,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+logicbroker,yes,yes,1,LinkedIn application,application,platform_log,both
+lorikeet,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+lumenalta,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+lyrahealth,yes,yes,1,LinkedIn application,application,platform_log,both
+mailchimpviadexian,yes,no,1,Recruiter outbound / intermediary,,,workbook_only_opportunity
+majc,yes,yes,1,LinkedIn application,application,platform_log,both
+manifold,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+massive,yes,yes,1,LinkedIn application,application,platform_log,both
+maven,yes,yes,1,Jobright.ai application,application,platform_log,both
+medialab,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+melavex,yes,yes,1,LinkedIn application,application,platform_log,both
+mento,yes,yes,2,Direct application / ATS,application,employer_artifact,both
+mercor,yes,yes,7,Mercor,application,employer_artifact,both
+meshy,yes,no,1,Direct application / ATS,,,workbook_only_application
+methodrecruitinga3xinc5000company,yes,yes,1,LinkedIn application,application,platform_log,both
+michelinconnectedfleet,yes,yes,1,LinkedIn application,application,platform_log,both
+micro1unknownclient,yes,no,2,Recruiter outbound / intermediary; Talent marketplace,,,workbook_only_opportunity
+minio,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+mixmax,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+montaukcapital,yes,no,1,Recruiter outbound / intermediary,,,workbook_only_opportunity
+nebius,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+nero,no,yes,0,,application,employer_artifact,repository_only
+netrise,yes,yes,1,LinkedIn application,application,platform_log,both
+newyorklife,yes,no,2,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+nice,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+nooks,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+nudge,yes,yes,1,LinkedIn application,application,platform_log,both
+onboard,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+onit,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+ontra,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+openobserve,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+opsinsecurity,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+orchestry,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+outlier,yes,no,2,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+owner,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+oxosmedical,no,yes,0,,application,employer_artifact,repository_only
+pandadoc,yes,yes,1,LinkedIn application,application,employer_artifact,both
+patch,yes,yes,1,Referral,application,employer_artifact,both
+payabli,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+pearl,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+pega,yes,yes,1,LinkedIn application,application,platform_log,both
+phiture,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+phrasiq,no,yes,0,,application,employer_artifact,repository_only
+pickeringinterfaces,yes,yes,1,LinkedIn application,application,platform_log,both
+pincom,yes,no,1,Direct application / ATS,,,workbook_only_application
+pindrop,yes,yes,2,Direct application / ATS; Jobright.ai application,application,employer_artifact,both
+pinterest,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+piper,yes,yes,1,LinkedIn application,application,platform_log,both
+pogo,yes,yes,3,Direct application / ATS,application,employer_artifact,both
+practicalprospecting,no,yes,0,,application,employer_artifact,repository_only
+primer,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+productboard,yes,yes,2,Direct application / ATS,application,employer_artifact,both
+proofpoint,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+propel,yes,yes,1,LinkedIn application,application,platform_log,both
+proteantecs,yes,yes,1,LinkedIn application,application,employer_artifact,both
+protecht,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+quadsci,yes,yes,1,LinkedIn application,application,platform_log,both
+recur,yes,yes,1,LinkedIn application,application,platform_log,both
+redis,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+replit,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+revic,no,yes,0,,application,employer_artifact,repository_only
+revpartners,yes,yes,2,Direct application / ATS; Jobright.ai application,application,platform_log,both
+revpilots,yes,yes,1,LinkedIn application,application,platform_log,both
+revspring,yes,yes,1,LinkedIn recruiter/person outreach,application,employer_artifact,both
+ritzinstrumenttransformersusa,yes,yes,1,LinkedIn application,application,platform_log,both
+roberthalf,yes,yes,1,LinkedIn application,application,platform_log,both
+roboflow,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+rocsearch,yes,yes,1,LinkedIn application,application,platform_log,both
+rollstack,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+rtscale,yes,yes,1,LinkedIn application,application,platform_log,both
+rula,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+runway,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+sage,yes,yes,1,LinkedIn recruiter/person outreach,application,employer_artifact,both
+sailpoint,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+sardine,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+scaleops,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+scoutglobal,yes,yes,2,LinkedIn application,application,platform_log,both
+scoutlab,yes,no,1,LinkedIn application,,,workbook_only_application
+scribe,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+seamless,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+sentilink,yes,yes,2,Direct application / ATS,application,employer_artifact,both
+servicetrade,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+shaped,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+sidepocket,yes,yes,1,LinkedIn application,application,platform_log,both
+slingshot,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+smallbusinessgrowthalliancesbga,yes,no,1,Recruiter outbound / intermediary,,,workbook_only_opportunity
+smartmode,yes,no,1,Direct application / ATS,,,workbook_only_application
+smeetz,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+solant,no,yes,0,,application,platform_log,repository_only
+solaya,yes,yes,1,LinkedIn application,application,platform_log,both
+soliant,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+solvhealth,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+sotalent,yes,no,1,LinkedIn application,,,workbook_only_application
+speakeasy,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+speechify,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+spidercloud,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+stack,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+starbridge,yes,no,1,Recruiter outbound / intermediary,,,workbook_only_opportunity
+stealthcompanyviaper1b05c163b351,yes,no,1,Recruiting marketplace,,,workbook_only_opportunity
+stealthstartup,yes,no,1,LinkedIn application,,,workbook_only_application
+stealthusstartup,yes,no,1,LinkedIn cold outreach,,,workbook_only_opportunity
+stedi,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+stellarsubstitute,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+sur,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+swarm,yes,no,1,LinkedIn application,,,workbook_only_application
+switchyards,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+syncro,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+talentpluto,yes,yes,2,LinkedIn application,application,employer_artifact,both
+tapcheck,yes,yes,2,Direct application / ATS,application,employer_artifact,both
+taste,yes,yes,1,LinkedIn application,application,platform_log,both
+techlinksphere,yes,yes,1,LinkedIn application,application,platform_log,both
+tekion,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+teleport,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+telnyx,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+testgorilla,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+thebiologicalcomputingcotbc,yes,yes,1,LinkedIn application,application,platform_log,both
+thehog,yes,no,1,LinkedIn application,,,workbook_only_application
+thekiln,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+thevincit,yes,yes,1,LinkedIn application,application,platform_log,both
+theworkflowcompany,yes,no,1,LinkedIn cold outreach,,,workbook_only_opportunity
+thomsonreuters,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+thrivent,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+tigerdata,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+toast,no,yes,0,,application,employer_artifact,repository_only
+together,yes,yes,2,Direct application / ATS,application,employer_artifact,both
+trace3,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+tractian,yes,yes,2,Direct application / ATS; Jobright.ai application,application,employer_artifact,both
+trase,yes,yes,2,Direct application / ATS; Jobright.ai application,application,employer_artifact,both
+tripleseat,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+truebuilt,yes,yes,1,LinkedIn application,application,platform_log,both
+uncapped,yes,yes,1,LinkedIn application,application,employer_artifact,both
+unframe,yes,yes,2,Direct application / ATS; Jobright.ai application,application,employer_artifact,both
+unknown,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+unknownagencyclient,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+unknownaisaasbiotechcompanyviapera02182d1f7af,yes,no,1,Recruiter outbound / intermediary,,,workbook_only_opportunity
+unknownconstructionfabricationsaas,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+unknowndigitalproductbuilder,yes,no,1,LinkedIn cold outreach,,,workbook_only_opportunity
+unknownemployerviawilsonhr,yes,no,1,Recruiter outbound / intermediary,,,workbook_only_opportunity
+unknownfinancialagency,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+unknownfinancialteam,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+unknownflextonclient,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+unknownfortune500client,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+unknownhospiceclient,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+unknownper648a39346310referral,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+unknownper950db4b78993scompany,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+unknownseriesbwarehouseintelligencestartup,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+unknownvivibrownsandiegotechnologystartup,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+unstructured,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+upguard,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+valoh,yes,yes,1,LinkedIn application,application,platform_log,both
+valsoft,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+vanco,yes,yes,1,Jobright.ai application,application,platform_log,both
+vercel,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+verdent,yes,yes,1,LinkedIn application,application,platform_log,both
+verkada,yes,yes,1,LinkedIn application,application,employer_artifact,both
+vi,yes,yes,1,LinkedIn application,application,platform_log,both
+virtru,yes,yes,1,LinkedIn recruiter/person outreach,application,employer_artifact,both
+vitalsource,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+volley,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+vonage,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+wallstreetquants,yes,yes,1,LinkedIn application,application,employer_artifact,both
+wealth,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+weave,yes,yes,2,Direct application / ATS; Recruiter outbound / intermediary,application,employer_artifact,both
+wilsonhcg,no,yes,0,,application,employer_artifact,repository_only
+wirescreen,yes,yes,1,Jobright.ai application,application,employer_artifact,both
+workos,yes,no,1,LinkedIn recruiter/person outreach,,,workbook_only_opportunity
+wrapbook,yes,yes,1,Direct application / ATS,application,employer_artifact,both
+yuno,yes,yes,1,Direct application / ATS,application,employer_artifact,both
