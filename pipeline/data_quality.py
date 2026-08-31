@@ -279,7 +279,15 @@ def section_duplicates(lines: list[str], full: list[dict]) -> None:
                 if not terminal:
                     verdict = "UNLICENSED, earlier row has no terminal outcome"
                 elif terminal_date is None:
-                    verdict = f"undated terminal outcome `{terminal}`, cannot verify ordering"
+                    # UNVERIFIED, not licensed. Licensing requires the outcome to
+                    # precede the later submission, and an undated outcome cannot
+                    # establish that ordering. Treating it as clean would let the
+                    # report assert an ordering it never checked, which is the
+                    # exact defect this per-pair check was written to remove.
+                    verdict = (
+                        f"UNVERIFIED, undated terminal outcome `{terminal}`, "
+                        "ordering cannot be established"
+                    )
                 elif later_date is not None and terminal_date > later_date:
                     verdict = f"UNLICENSED, `{terminal}` dated after the later submission"
                 else:
@@ -294,6 +302,11 @@ def section_duplicates(lines: list[str], full: list[dict]) -> None:
     # fell outside the window, closest first, each carrying the reason it is or
     # is not a legitimate second cycle. Elapsed time alone never licenses one.
     unlicensed = [row for row in beyond_window if row[2].startswith("UNLICENSED")]
+    unverified = [row for row in beyond_window if row[2].startswith("UNVERIFIED")]
+    # Both are failures to establish licensing. They are counted separately
+    # because they need different remedies, an adjudication decision versus a
+    # date, and reported together because either one falsifies the all-clear.
+    not_established = unlicensed + unverified
     lines += [
         f"Same company and role pairs beyond the {DUPLICATE_WINDOW_DAYS} day window, closest first.",
         "These are the pairs the check considered, which is what makes an empty result above",
@@ -307,10 +320,16 @@ def section_duplicates(lines: list[str], full: list[dict]) -> None:
     )
     lines.append("")
     lines += [
-        f"Unlicensed pairs: {len(unlicensed)}."
+        f"Unlicensed pairs: {len(unlicensed)}. Unverified pairs: {len(unverified)}."
         + (
-            " Each is a candidate duplicate that the cycle key would not catch, and needs an artifact or an adjudication decision."
-            if unlicensed
+            (
+                " Unlicensed means the earlier row carries no terminal outcome, or one dated after"
+                " the later submission. Unverified means it carries an outcome with no date, so the"
+                " ordering licensing depends on cannot be checked. Each is a candidate duplicate the"
+                " cycle key would not catch: the first needs an adjudication decision, the second"
+                " needs a date."
+            )
+            if not_established
             else " Every beyond-window pair carries a terminal outcome on the earlier row, dated before the later submission."
         ),
         "",

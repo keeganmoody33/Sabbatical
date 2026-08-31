@@ -111,7 +111,7 @@ by elapsed time, so the licensing condition is verified per pair rather than ass
 | attentive | gtm engineer | `attentive\|gtm-engineer\|c2` | `attentive\|gtm-engineer\|c1` | 23 days | licensed by `rejected_no_interview` on 2026-07-07 |
 | fossa | gtm engineer | `fossa\|unspecified\|c1` | `fossa\|unspecified\|c2` | 29 days | licensed by `rejected_no_interview` on 2026-05-20 |
 
-Unlicensed pairs: 0. Every beyond-window pair carries a terminal outcome on the earlier row, dated before the later submission.
+Unlicensed pairs: 0. Unverified pairs: 0. Every beyond-window pair carries a terminal outcome on the earlier row, dated before the later submission.
 
 Rows sharing an `application_id`: 0.
 
