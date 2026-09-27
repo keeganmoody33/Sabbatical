@@ -29,6 +29,10 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "adjudication"
 PLATFORM = ROOT / "coding" / "platform"
 CAPTURE = "2026-08-29"
+# The LinkedIn data download was generated 2026-08-23, six days before the study
+# window closes. Activity after that date is not in it, which bounds every
+# coverage claim built on the export.
+EXPORT_CAPTURE = "2026-08-23"
 CODER = "freeze2"
 
 APP_FIELDS = [
@@ -313,9 +317,6 @@ def code_linkedin() -> tuple[list[dict[str, str]], list[dict[str, str]]]:
         if "method recruiting" in company.lower() or company.lower() in {"roc search", "crossing hurdles", "greenway collins", "horizonai talent", "franklin fitch", "intelli pro", "intellipro", "scout global"}:
             underlying = "unknown"
             notes += " Recruiter or agency listing. Client unnamed in this file."
-        if "the hog" in company.lower():
-            register = "opportunity"
-            notes += " Freeze 1 adjudicated this opening as opportunity. Platform row kept out of the application census."
         apps.append(
             platform_row(
                 company_listed=company,
@@ -331,6 +332,71 @@ def code_linkedin() -> tuple[list[dict[str, str]], list[dict[str, str]]]:
                 salary="not_stated",
                 notes=notes,
                 register=register,
+                underlying=underlying,
+            )
+        )
+    return apps, excl
+
+
+def code_linkedin_export() -> tuple[list[dict[str, str]], list[dict[str, str]]]:
+    """Freeze 3. The LinkedIn data download, which supersedes the paged scrape.
+
+    The difference that matters is date precision. The scrape carries relative
+    stamps ("2mo ago") that `assumptions.md` C2 forbids upgrading, which barred
+    every scraped row from the monthly series and from all latency figures. This
+    export carries an exact application date and a job ID on all 107 rows.
+
+    `submission_channel` stays `unknown`. The export does not label Easy Apply
+    against external ATS, so the stratum the capture-recapture estimator needs
+    is still not in the data. See challenge/CHALLENGE.md section 4.
+    """
+    apps: list[dict[str, str]] = []
+    excl: list[dict[str, str]] = []
+    path = ROOT / "artifacts" / "platform" / "linkedin_job_applications_export.csv"
+    if not path.exists():
+        return apps, excl
+    for i, row in enumerate(load_csv(path), start=1):
+        company = (row.get("Company") or "").strip()
+        role = (row.get("Role/Title") or "").strip()
+        date = (row.get("Application Date") or "").strip()[:10]
+        job_id = (row.get("LinkedIn Job ID") or "").strip()
+        if not company:
+            excl.append(
+                {
+                    "coder_id": CODER,
+                    "candidate_id": f"linkedin-export-blank-company-r{i}",
+                    "date": date,
+                    "company": "",
+                    "role": role,
+                    "exclusion_reason": "unresolvable_identity",
+                    "what_would_promote_it": "The company name on the export row.",
+                    "evidence_system": "linkedin",
+                    "evidence_id": f"linkedin_job_applications_export.csv#job{job_id}",
+                }
+            )
+            continue
+        underlying = ""
+        if company.lower() in {"talentpluto", "jobgether"}:
+            underlying = "unknown"
+        apps.append(
+            platform_row(
+                company_listed=company,
+                role=role,
+                source="linkedin",
+                channel="unknown",
+                date=date,
+                precision="exact" if re.fullmatch(r"\d{4}-\d{2}-\d{2}", date) else "unknown",
+                capture=EXPORT_CAPTURE,
+                location="",
+                work="",
+                level="",
+                salary="not_stated",
+                notes=(
+                    f"LinkedIn Job Applications export, job id {job_id}, "
+                    f"file {row.get('Export File') or 'unknown'}. Exact application date. "
+                    f"Export generated {EXPORT_CAPTURE}; later activity is not in it."
+                ),
+                register="application",
                 underlying=underlying,
             )
         )
@@ -567,8 +633,12 @@ def match_freeze1(
 def main() -> None:
     jr_apps, jr_excl = code_jobright()
     li_apps, li_excl = code_linkedin()
-    apps = jr_apps + li_apps
-    excl = jr_excl + li_excl
+    # Freeze 3 export first, so that when dedupe_platform collapses a duplicate
+    # between the export and the paged scrape, the surviving row is the one
+    # carrying an exact date rather than a relative stamp.
+    lx_apps, lx_excl = code_linkedin_export()
+    apps = lx_apps + jr_apps + li_apps
+    excl = lx_excl + jr_excl + li_excl
     apps = dedupe_platform(apps)
     freeze1 = load_csv(ROOT / "adjudication" / "applications__adjudicated.csv")
     freeze1_apps = [r for r in freeze1 if r.get("register") == "application"]

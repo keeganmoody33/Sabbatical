@@ -1,0 +1,18 @@
+field,raw_value,normalized_channel,channel_family,origin_is_known,note
+discovery_source,unknown,unknown,unknown,no,"Where the role was found was not recorded on the row and is not recoverable from the artifact. This is the dominant value on the employer_artifact stratum and is the reason no origination-channel conversion claim is available."
+discovery_source,linkedin,linkedin,professional_network,yes,"Present only on Freeze 2 platform_log rows. The applied-list export does not label Easy Apply versus external ATS, so the submission channel behind it stays unknown."
+discovery_source,wellfound,wellfound,talent_marketplace,yes,
+discovery_source,jobright,jobright,agent_platform,yes,"Agent-assisted tracker. Rows may be agent-applied or manual; the export does not always distinguish."
+discovery_source,ladders,ladders,job_board,yes,"Only the three Apply4Me Gmail receipts. The full Ladders applied list is an unmet stop condition."
+discovery_source,referral,referral,network_warm_intro,yes,
+discovery_source,recruiter_inbound,recruiter_inbound,recruiter_inbound,yes,"On an application row this means the role was surfaced by a recruiter but the applicant still submitted. A recruiter-run process with no submission is register = opportunity and is not in this census."
+submission_channel,ats_direct,employer_ats,employer_direct,yes,"Submitted through the employer's applicant tracking system. The dominant channel, which is why this field has little variance to analyze."
+submission_channel,unknown,unknown,unknown,no,"Concentrated on Freeze 2 platform_log rows, where the export records that an application happened but not how it was sent."
+submission_channel,email_direct,email_direct,employer_direct,yes,
+submission_channel,wellfound_apply,wellfound_apply,talent_marketplace,yes,
+submission_channel,marketplace_profile_submission,marketplace_profile,talent_marketplace,yes,"A profile submitted into a marketplace rather than an application sent to a named employer."
+submission_channel,jobright_agent,jobright_agent,agent_platform,yes,
+submission_channel,apply4me_agent,apply4me_agent,agent_platform,yes,
+submission_channel,recruiter_submitted,recruiter_submitted,recruiter_inbound,yes,
+evidence_class,employer_artifact,employer_artifact,employer_side_proof,yes,"An employer or applicant tracking system produced an artifact. This is the stratum that carries events, and therefore the only stratum where an outcome can be observed."
+evidence_class,platform_log,platform_log,self_logged,yes,"Visible only in a platform export. No employer-side artifact, so no events and no terminal outcome. Adding these rows to a denominator without adding any numerator is the structural trap this taxonomy exists to make visible."

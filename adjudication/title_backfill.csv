@@ -1,0 +1,12 @@
+application_id,company_canonical,role_as_listed,role_lane,source_file
+90-seconds|unspecified|c1,90 Seconds,(Senior) Business Development Manager - Enterprise (US),sales_bd_partnerships,jobright_applications_log.csv
+bx-studio|unspecified|c1,BX Studio,GTM Engineer,explicit_gtm_engineering,linkedin_job_applications_export.csv
+fossa|unspecified|c1,FOSSA,GTM Engineer,explicit_gtm_engineering,jobright_applications_log.csv
+fossa|unspecified|c2,FOSSA,GTM Engineer,explicit_gtm_engineering,jobright_applications_log.csv
+gigs|unspecified|c1,Gigs,Solutions Engineer,sales_solutions_engineering,linkedin_job_applications_export.csv
+primer|unspecified|c1,Primer,Senior Business Development Manager - North America,sales_bd_partnerships,jobright_applications_log.csv
+servicetrade|unspecified|c1,ServiceTrade,GTM Engineer,explicit_gtm_engineering,jobright_applications_log.csv
+stedi|unspecified|c1,Stedi,GTM Strategy & Operations,revops_gtm_ops_strategy,jobright_applications_log.csv
+telnyx|unspecified|c1,Telnyx,"Growth Engineer, GTM AI",growth_demand_marketing,jobright_applications_log.csv
+volley|unspecified|c1,Volley,Senior Business Development Manager,sales_bd_partnerships,jobright_applications_log.csv
+wallstreetquants|unspecified|c1,WallStreetQuants,Marketing / GTM Engineer,explicit_gtm_engineering,linkedin_job_applications_export.csv

@@ -9,11 +9,13 @@ Frozen 2026-08-29 ET for independent coding. Every coder receives this set. A co
 | Google Calendar 33@lecturesfrom | csv | same window, 90-day blocks, no keyword filter | 31 events | 2026-08-29 |
 | Google Calendar transferred keegan@lecturesfrom | md | same window | 0 events | 2026-08-29 |
 | LinkedIn applied list | csv | pages 1 to 10, relative stamps, `date_capture` 2026-08-29 | 99 rows | 2026-08-29 Freeze 2 |
+| LinkedIn Job Applications export | csv | full data download, job IDs and exact dates, generated 2026-08-23 | 107 rows | 2026-08-30 Freeze 3 |
 | Jobright tracker | csv | full tracker export | 40 rows | 2026-08-29 Freeze 2 |
 | Ladders applied list | csv or image | full list | **absent** | still unmet |
 | Wellfound applications | csv or screenshots | full list | Wellfound receipts only, inside Gmail logs | 2026-08-29 |
 | YC Work at a Startup | screenshots | applied roles | **absent** | waived |
 | Prior workbooks [S1] [S2] | xlsx | 247 and 212 ledgers | **absent** from this workspace | waived as coding input; they are not artifacts for extraction |
+| Combined audit checkpoint workbook | xlsx | independent reconstruction, 353 records, 13 sheets | **not committed** | received 2026-08-30. Redacted extracts in `challenge/`. Not a coding input; see `challenge/CHALLENGE.md` |
 
 ## Retrieval is not coding
 
@@ -34,4 +36,6 @@ Git history on this branch before the redaction commit still contains raw identi
 
 ## Freeze rule
 
-Freeze 1 (Gmail and Calendar) was coded independently before these platform files existed. Freeze 2 adds the LinkedIn and Jobright CSVs without recoding Gmail. A coder who treats Freeze 2 as the only corpus is running a different study than Freeze 1. Ladders, YC, personal calendar, and the rest of personal Gmail remain outside both freezes.
+Freeze 1 (Gmail and Calendar) was coded independently before these platform files existed. Freeze 2 adds the LinkedIn and Jobright CSVs without recoding Gmail. A coder who treats Freeze 2 as the only corpus is running a different study than Freeze 1. Ladders, YC, personal calendar, and the rest of personal Gmail remain outside all freezes.
+
+Freeze 3, 2026-08-30, adds the LinkedIn Job Applications export and nothing else. Gmail was not recoded and no coder file was edited. The workbook that carried the export is an independent reconstruction, not a coding input, and is reconciled adversarially in `challenge/CHALLENGE.md` rather than merged. Personal names in the committed extracts are replaced with `per_<sha256[:12]>` pointers, extending the redaction convention above.

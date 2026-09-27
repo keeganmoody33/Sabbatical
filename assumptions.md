@@ -1,0 +1,380 @@
+# Assumptions
+
+Every inference rule this dataset rests on, with the reason it was adopted, what it rules out, and
+whether it is settled or still open.
+
+Two kinds of entry live here. **Frozen** assumptions were fixed in the pre-registration before
+extraction began and cannot change without invalidating prior rows. **Post-hoc** assumptions were
+adopted after coding, which is a weaker position, and each one says so and names its date.
+
+A rule that only appears in code is not an assumption anyone can audit. Everything below points at
+the file that implements it.
+
+No dashes are used as punctuation in this file.
+
+## How to read the status column
+
+| Status | Meaning |
+|---|---|
+| Frozen | Pre-registered before extraction. Changing it invalidates coded rows. |
+| Post-hoc | Adopted after coding. Logged in `knowledge/protocol.md` with a date. Weaker, and disclosed as such. |
+| Analysis | Introduced by the view and reporting layer. Changes no census figure, only how figures are presented. |
+| Open | Not resolved. The paper reports it as unresolved rather than picking a value. |
+
+---
+
+## A. Scope and window
+
+**A1. The study window is 2025-06-01 to 2026-08-29, America/New_York, inclusive.** *Frozen.*
+Prior audits searched only from 2025-08-25 forward. Declaring the wider window makes June through
+early November 2025 **unharvested rather than empty**, which is a different claim from "quiet
+period". Rules out: reading a search-boundary artifact as a behavioral finding. Source:
+`knowledge/protocol.md`.
+
+**A2. The two prior workbooks are floors, not inputs.** *Frozen.* 247, 212, and 163 are prior-audit
+figures and are not inherited by this freeze. Rules out: carrying forward a number whose derivation
+cannot be reconstructed. Source: `paper/DEFECTS.md`.
+
+**A3. The relationship between the 212-row audit and the 163-row Gmail floor is unreconstructable.**
+*Open.* Both workbooks are absent from the repository and were not found in Drive. The paper reports
+this as an open defect rather than proposing a reconciliation. Source:
+`artifacts/platform/KEEGAN-EXPORTS-ABSENT.md`.
+
+## B. What counts as an application
+
+**B1. The unit of analysis is `company_canonical + role_as_listed + cycle`.** *Frozen.* Rules out:
+counting a rejection thread as a second application, and collapsing a genuine re-application into
+its first attempt. Source: `codebook.md` counting rule 1, `schema.md`.
+
+**B2. A repeat submission opens a new cycle only after a terminal outcome on the previous one.**
+*Frozen.* The terminal outcome is what licenses the second row. Applied in both directions: FOSSA and
+Attentive became `c1` and `c2` because a decline sat between the receipts, and three Pogo artifacts
+across two systems stayed one cycle because nothing terminal sat between them. Source: `codebook.md`
+counting rule 4.
+
+**B3. An interview with no submission artifact does not mint an application row.** *Frozen, applied
+in adjudication.* This is the rule that decided The Hog, BX Studio, WorkOS, and the 2026 Weave
+opening. All four stay in the dataset under `register = opportunity`. Rules out: inflating the
+conversion rate with outcomes that did not come from applying. Note the direction of the bias it
+removes: the opportunity rows are the ones with the *good* outcomes, including three that converted
+to paid work, which is why this contamination is rarely caught. Source: `adjudication/ADJUDICATION.md`.
+
+**B4. Creating a marketplace profile is not applying. Submitting a titled role through a marketplace
+is.** *Frozen.* Source: `codebook.md` counting rule 5.
+
+**B5. An agent or aggregator send counts only when the receipt states the application was sent, or a
+matching ATS receipt exists.** *Frozen.* Rules out: counting an agent's queued intent as a
+submission. Source: `codebook.md` counting rule 6.
+
+**B6. A receipt that omits the role is coded `unspecified`, never guessed.** *Frozen.* 39 rows carry
+it. Rules out: inferring a title from a company's typical openings to make a table look complete.
+Source: `codebook.md` counting rule 8.
+
+## C. Dates
+
+**C1. Every date carries a precision label and, where relative, a capture date.** *Frozen.*
+
+**C2. A relative stamp is never upgraded to a calendar date.** *Frozen.* "2mo ago" read on
+2026-08-29 is a range. Writing 2026-06-29 into a date column converts a range into a false fact.
+Consequence: 27 census rows cannot enter the monthly series and are printed beside it. The Freeze 3
+export reduced the problem rather than the rule: it carries exact dates, so the full census now holds
+only 6 relative stamps.
+
+**C3. Precision-constrained metrics run only on rows where both dates are exact.** *Frozen.* This is
+why the latency base is 197 rather than 223 and the time-to-first-interview n is 11 rather than 14.
+The excluded n is reported alongside every such figure. Source: `knowledge/protocol.md`.
+
+## D. Coding and adjudication
+
+**D1. Coders are blind to each other and the codebook was frozen before the first ran.** *Frozen.*
+A coder who sees more artifacts is not a second rating, it is a different study. Source:
+`knowledge/protocol.md`.
+
+**D2. Pre-adjudication agreement is the published statistic, not post-adjudication agreement.**
+*Frozen.* Reporting agreement after resolving disagreements would report the resolution, not the
+instrument.
+
+**D3. Interviewed-ness is derived from events on every run and never stored on an application row.**
+*Frozen.* Implemented once, in `adjudication/_common.py`, and imported by every consumer rather than
+restated. Rules out: two published interview counts that disagree.
+
+**D4. The interview numerator is the union of both coders' events.** *Frozen.* Both coders found 11
+of the 14 independently. Three rest on cursor alone and bravo contributes none that cursor missed, so
+interview-set agreement is 11/14, weaker than the role-lane kappa of 0.9510 suggests. Event-level
+agreement is not among the reliability statistics the protocol requires, so it is **unmeasured
+rather than measured and small**, and the paper says so.
+
+**D5. Adjudication resolves disagreements with a written rule that would apply to the next case,
+never with a preference.** *Frozen.* Source: `adjudication/ADJUDICATION.md`.
+
+**D6. Coder CSVs are never edited after the fact.** *Frozen.* Corrections are applied downstream by
+name. Editing a blind coder's file retroactively destroys the agreement statistic that file was
+produced to support.
+
+## E. Record linkage against platform exports
+
+**E1. A platform row matches a census row through three ordered tiers, stopping at the first tier
+producing exactly one candidate.** *Frozen.* Exact after normalization, then an entity-level fallback
+for admitted unknowns, then ordered token-prefix equivalence. Source:
+`adjudication/ingest_platform.py`.
+
+**E2. When tier 3 produces more than one candidate, nothing is matched.** *Frozen.* A wrong merge
+silently destroys a record. An unmerged duplicate is visible and fixable.
+
+**E3. A refused match is recorded as `ambiguous` with its candidate parents, not shipped as
+`net_new`.** *Post-hoc, 2026-08-30.* Before this change a refusal was indistinguishable from a row
+with no counterpart, so a possible duplicate could enter the census with nothing marking it
+unresolved. Zero rows hit the branch when it was added, and no published figure moved then. Two rows
+hit it at Freeze 3, on the Attentive and FOSSA second cycles, which is the case it was written for.
+Logged in `knowledge/protocol.md`, disclosed in `paper/DEFECTS.md`.
+
+**E4. The matcher's noise-token list is one person's geography and one person's abbreviations.**
+*Open, and a known weakness.* It strips `atlanta`, `ga`, `austin`, `tx`, and also `products`, which
+will quietly mangle a title such as "GTM Emerging Products" for anyone reusing it. It is correct
+enough for this corpus and should be pruned before reuse. Source:
+`adjudication/ingest_platform.py`, `translation/AUDIT-FINDINGS.md`.
+
+**E5. Titles that expand or abbreviate an existing role at the same company are the same
+application.** *Frozen.* AE and Account Executive, location parentheticals, "Listen" and "Listen
+Labs". Those are overlap, not net-new. Rules out: a naive sum across four trackers reporting roughly
+315.
+
+## F. The Weave correction
+
+**F1. The 2026-08-18 Weave decline evidences a real interview, but for a separate opening from the
+2025 application it was attached to.** *Post-hoc, 2026-08-30.* That opening is inbound with no
+submission artifact anywhere in the corpus, so under B3 it goes to the opportunity register.
+
+**F2. The correction came from the author, from recall, after seeing the analysis.** *Disclosed, not
+softened.* Subject and author are the same person, and this is the exact failure mode blind coding
+exists to prevent. Two things support it: bravo independently excluded the same artifact under blind
+conditions as having no parent, so the correction moves the census toward the blind coder's
+judgement rather than away from it, and the artifact itself establishes that an interview happened.
+Only its attachment was wrong.
+
+**F3. The 2026 role title, the counterparty, and the inbound origination remain recall and are not
+written into any structured field.** *Frozen rule, applied here.* `prompts/extraction.md` rule 8.
+Recall is legitimate to hold and must never be disguised as evidence.
+
+Consequence of F1 through F3: interviewed applications 14 became 13, the rate 14/221 became 13/221,
+`rejected_after_interview` 6 became 5, `rejected_no_interview` 73 became 74, and time to first
+interview moved from n = 12, mean 40.3, max 387 to n = 11, mean 8.8, max 34. One event was carrying
+the mean.
+
+## G. Completeness
+
+**G1. 95 percent completeness is a goal, not a verifiable claim.** *Frozen.* Without a gold standard
+there is nothing to verify it against.
+
+**G2. Naive two-source capture recapture on Gmail against LinkedIn is invalid and was not run.**
+*Frozen.* LinkedIn Easy Apply frequently generates no ATS mail at all, so the two sources are
+near-disjoint by construction. Applying the estimator to the raw overlap would yield an implausible
+population.
+
+**G3. The defensible estimator is restricted to LinkedIn rows submitted through an external ATS
+rather than Easy Apply.** *Frozen, and unmeasured.* The LinkedIn file that arrived is pages 1 to 10
+of an applied list with no Easy Apply label, so the overlap stratum does not exist in the data. **No
+completeness percentage is published.** Stated bias direction if someone runs the unstratified
+estimator anyway: Easy Apply is visible to LinkedIn and invisible to ATS mail, which inflates
+apparent uniqueness and understates completeness.
+
+**G4. Four of the seven stop conditions are Partial or Unmet and the census is closed anyway.**
+*Open, and disclosed.* Ladders and the YC dashboard are Unmet. Personal Gmail Q7 page 2 and beyond,
+the personal calendar, LinkedIn pages beyond 10, and the Talentpluto and Jobgether employers are
+Partial. The census is reported as bounded by those gaps rather than as complete. Source:
+`artifacts/STOP-CONDITIONS.md`.
+
+## H. Origin, and why no channel finding exists
+
+**H1. Origin is three independent fields, not one string.** *Frozen.* Where the role was found
+(`discovery_source`), how it was submitted (`submission_channel`), and where the evidence lives
+(`evidence_class`) are separate questions. Collapsing them into "Gmail Ashby" is what made the prior
+ledger unable to compare channels at all. Source: `codebook.md` design principle 3.
+
+**H2. `discovery_source = unknown` is an admitted unknown, not a missing value.** *Frozen.* The
+codebook requires a legal way to say "I could not tell" for exactly this reason. It is recorded
+honestly on 208 of 223 census rows.
+
+**H3. No origination-channel conversion figure is published, and this is a finding rather than an
+omission.** *Analysis.* `views/origin_coverage.csv` shows why: origin is known almost exactly where
+outcome is unobservable. The 71 LinkedIn rows that know their origin carry zero observable outcomes,
+because a platform applied-list row has no employer-side artifact and therefore no events. The rows
+that do have outcomes are the 206 whose origin is `unknown`. The overlap that could answer the
+question is 15 of 223, spread across five channels with the largest at 7. Freeze 3 refined this: 60
+further rows can have origin recovered after the fact by matching a platform export, and 148 cannot
+be recovered by any route. See `views/origin_recoverability.csv`.
+
+**H4. Origin was never backfilled from recall.** *Frozen rule, applied.* It could have been, for a
+large fraction of rows, and the result would have looked like data. Under F3 and extraction rule 8
+it was not.
+
+**H5. `company_stage` does not exist in this schema.** *Open.* No cut by company size or stage is
+available anywhere in this dataset. This is a gap in the instrument rather than a suppressed cell,
+and it means the brief's question about which company stages convert has no answer here at all.
+
+## H2. The recalled discovery layer
+
+Added 2026-08-30 at the author's direction, after the author read the analysis and objected that a
+field forbidden to hold recall will stay empty forever on a question where recall is the only
+witness. The objection is correct and the design answers it without weakening the census.
+
+**Status: active. Author-sourced, tier C, never merged into a coded field.**
+
+| Assumption | Reason | What it rules out |
+|---|---|---|
+| A recalled discovery source is stored in a **separate file**, `knowledge/discovery_source_recalled.csv`, and never written into `discovery_source` | The census is artifact-derived and its byte reproducibility is the study's central claim. A layer the author can revise at any time must not sit inside it, or every recall edit becomes a census change with a freeze and a changelog entry | Recall silently becoming indistinguishable from a blind coding |
+| A coded value **always** beats a recalled one | The coded field was read blind from an artifact. Recall arrives after the author has seen the results | Recall overwriting anything a coder established |
+| Every resolved value carries a `basis` of `coded_artifact`, `author_recall` or `none`, never blank | Any figure quoted from this layer must be recomputable with recall excluded | A rate whose dependence on recall cannot be measured |
+| A conflict between coded and recalled is **surfaced, not resolved** | One exists, on a Mercor row. Picking a winner would hide a real disagreement between an artifact and the author | Silent adjudication of the author against the record |
+| The vocabulary is read from `codebook.md` at run time and extended by exactly four terms | The frozen vocabulary already anticipated community origins with `newsletter_community`, but it collapses a named channel into a generic bucket and the named channel is the finding | The recalled field drifting into a private vocabulary |
+| **`codebook.md` is not edited** | The blind coders worked against it. Adding a term retroactively changes the instrument they used | Invalidating prior rows, which `codebook.md` warns against explicitly |
+| Discovery venues form a directed edge list with a cycle-guarded walk to a root | A job found in a Slack channel was found through whatever led to that channel. The author reports reaching GTM Cafe through GTM Engineering School, so a rollup can ask which root a process traces to | Treating the proximate venue as the origin |
+
+**What it changed: nothing published.** 223, 317, 14, 197 all hold, and 200 of 223 rows remain
+`unknown`, so section H stands as written. Eight rows gained a value from recall and fifteen already
+had one from an artifact.
+
+**A case where the rule produces the weaker answer, kept anyway.** HartleyCo is coded
+`discovery_source = recruiter_inbound`, and the author states the role came from a friend through
+GTM Cafe. The retrieval log records the recruiter "contacting Keegan about a GTM Engineer
+application", so the application preceded the contact and the recruiter was the response rather than
+the discovery. The coded value was an inference from the artifact rather than a reading of it, and
+the artifact contradicts the inference.
+
+It stays unadopted. Changing "coded always wins" for one row would make the rule meaningless, and
+the conflict flag exists precisely so a case like this is visible rather than silently resolved. If
+adopted it would take `gtm_cafe_slack` from 3/3 to 4/4, still suppressed below the cell floor, and
+`recruiter_inbound` to one row with zero interviews. **This is an open adjudication for the author,
+not a defect in the layer.**
+
+**What it revealed.** Every application the author can trace to one community channel reached an
+interview, three of three, and the cell is suppressed because n=3 is below the MIN_CELL floor. The
+view prints it suppressed rather than omitting the row, so the shape is visible and the rate is not
+quotable. That is the correct outcome and it is also the sharpest illustration in the study of why
+n=1 research needs a cell floor.
+
+## H3. Freeze 4, an invitation is not a round
+
+Added 2026-08-30. **Status: applied. Interviewed applications 14 becomes 11, the rate 14/223
+becomes 11/223.**
+
+The interview derivation counted an `event_type`. Nothing in the codebook told a coder that
+`recruiter_screen` and `hiring_manager_interview` describe a completed round rather than an offer to
+meet, so all three were assigned to invitations as readily as to conversations that happened.
+
+| Assumption | Reason | What it rules out |
+|---|---|---|
+| A completed interview must leave a scheduling confirmation or calendar reminder, a decline phrased as after a process, a candidate-experience survey, a `SENT` message referencing the conversation, or a later stage presupposing the first | These are the marks the ten surviving interviews carry, without exception, and the three removed ones carry none of | Counting an invitation, a screen request, a recruiter intro or an assessment invitation as a round |
+| The three removals are `hypergen`, `testgorilla` and `revspring`, by named event exclusion in `_common.py` | Same mechanism as the Weave correction. The event is removed from metrics with a written reason rather than deleted | An event vanishing without a record of why |
+| No terminal outcome is reverted | All three are `still_open` with no date, so unlike Weave nothing else moves | A silent second-order change |
+| `jobmail-io` is **not** removed | Its decline says the requested steps were completed, which an asynchronous screening would also produce. It is weaker evidence than the other three in both directions | Resolving an ambiguity by preference |
+
+**This is a coding defect, not a recall correction.** Every fact was in the frozen corpus before the
+author said anything, and `artifacts/gmail/retrieval-log-006.md` had already recorded that the
+Hypergen thread carried an invitation and that the prior ledger's Interviews sheet omitted it. Two
+coders independently made the same call on TestGorilla and RevSpring, so it is a missing rule rather
+than a careless coder. The author's recall identified which rows to re-read; the artifacts decided
+them and would have decided them the same way with no author involved.
+
+Consequences beyond the headline: time to first interview moves from n=11 median 6 to **n=8 median
+5.5**; `explicit_gtm_engineering` moves from 10/92 to **7/92**; titles carrying GTM language move
+from 10 of 14 to **7 of 11**; and the interview set found by both coders moves from 11 of 14 to
+**9 of 11**, with bravo's set now a strict subset of cursor's, which says bravo was systematically
+the more conservative reader. The lane structure does not move: three of eight lanes hold every
+interview and five lanes covering 83 applications still hold none.
+
+Evidence table for all fourteen in `adjudication/INTERVIEW-EVIDENCE.md`.
+
+## I. Analysis and presentation
+
+These change no census figure. They govern how figures are presented, and each one could reasonably
+have been decided differently.
+
+**I1. Cells under n = 5 are suppressed, and suppressed groups keep their row and their n.**
+*Analysis.* A dropped group is indistinguishable from a group that does not exist. The threshold
+matches the one `adjudication/derive_latency.py` already applied.
+
+**I2. A median is suppressed on the count it was computed from, not on the size of the group.**
+*Analysis.* These medians are conditional on having responded. A group of 8 with 3 responders yields
+a 3-point median, and publishing it beside a 43-point median because both cleared a base threshold
+would present them as comparable. Implemented in `pipeline/build_views.py`, reported in the
+`suppressed_because` column.
+
+**I3. Every publishable rate carries a Wilson 95 percent interval, and no p-values are reported.**
+*Analysis.* Wilson rather than the normal approximation because several cells have zero interviews,
+where the normal interval collapses to zero width and asserts a certainty that is not there. With 13
+interviews across 223 applications, significance testing would dress up noise.
+
+**I4. Response rate and response latency are reported separately, and latency medians are conditional
+on responding.** *Analysis.* A single "typical response time" folding in the 96 silent applications
+would drop them from the denominator, which is the same error B3 exists to prevent on the interview
+rate.
+
+**I5. Both response definitions are published, substantive and any.** *Analysis.* Excluding
+`employer_ack` moves the median from 5.5 days to 7 and halves the day-zero share, so the choice
+changes the number and is not the analyst's to make silently. The substantive figure is the headline
+because an automated acknowledgment arriving with the receipt is not a response.
+
+**I6. Title-token groups overlap by construction and are never presented as a partition.**
+*Analysis.* One title can match several tokens, so those rows do not sum to 221.
+
+**I7. Title language and role lane are descriptive, never causal.** *Analysis.* The applicant chose
+which roles to apply to, so both are confounded with self-selection. A lane that progressed may
+reflect where he was a plausible fit rather than any property of the words. Nothing here is
+randomized.
+
+**I8. The origin taxonomy is read by the view layer only, never by the matcher.** *Analysis.*
+`pipeline/origin_taxonomy.csv` is a presentation lookup. `adjudication/ingest_platform.py` keeps its
+own alias table. A lookup shared between the census and the analysis would let an analysis change
+move the census.
+
+**I9. `pipeline/data_quality.py` treats the root `codebook.md` as authoritative.** *Analysis.* The
+codebook exists twice and the two copies already differ in wording. The validator parses one of them
+and this states which. The duplication should be resolved to a single file. Source: `schema.md`.
+
+## J. Publication
+
+**J1. Companies are named in the draft, with a checklist for the naming pass.** The repository names
+companies throughout and `knowledge/01-engagement.md` requires a naming pass before publication.
+`paper/NAMED-COMPANIES.md` lists every company the draft mentions and where, so the pass is a
+checklist rather than a re-read. Which names survive is the author's decision alone.
+
+**J2. Nothing is published externally without the author's explicit approval of the final draft.**
+The draft lands in this repository. It is not posted anywhere.
+
+## K. Freeze 3, the challenger workbook
+
+**K1. An independent reconstruction is not a third blind coder.** *Frozen rule, applied 2026-08-30.*
+It saw a different source set, and the protocol is explicit that a coder holding a different corpus
+is running a different study. No kappa is computed against it. See `challenge/CHALLENGE.md`.
+
+**K2. Only primary evidence from it enters the corpus.** *Post-hoc, 2026-08-30.* The LinkedIn Job
+Applications data download is an artifact and is ingested. Its 353-record ledger, its origin
+categories, its outcome model and its interview counts are reconstruction and are not.
+
+**K3. The Hog and BX Studio move to the application register.** *Post-hoc, 2026-08-30.* The rule in
+B3 is unchanged; its premise was falsified by a submission artifact for each, dated before the
+process events already coded. Census 221 to 223, interviews 13 to 14. This is what B3's companion
+mechanism, the `what_would_promote_it` column, exists to make possible.
+
+**K4. Recovered origin is never written into `discovery_source`.** *Analysis.* The coded field stays
+as the blind coders left it, and recovery sits beside it in `views/origin_recoverability.csv`. A
+derived value overwriting a coded one would make the census unauditable against the coder tables.
+
+**K5. Company matching in the reconciliation fails toward merging, not toward splitting.** *Analysis.*
+The census matcher refuses ambiguous merges because a wrong merge destroys a record. The
+reconciliation runs the opposite risk: an unmerged pair invents a coverage gap that does not exist
+and overstates the challenge. So it strips suffixes aggressively, and every residual gap is listed
+in full rather than reported as a bare count.
+
+**K6. The comparison is at company grain, not row grain.** *Analysis.* The two datasets count
+different units, and the workbook's own summary admits its records "may still exceed the number of
+unique employer requisitions". Matching row to row would manufacture agreement or disagreement out
+of a units mismatch.
+
+## Changelog
+
+- 2026-08-30, Freeze 3: section K added. Figures updated to 223, 14, 317, 197.
+- 2026-08-30: created. Gathers rules previously scattered across `knowledge/protocol.md`,
+  `adjudication/ADJUDICATION.md`, `paper/DEFECTS.md`, and `codebook.md`, and adds the analysis-layer
+  assumptions introduced with `pipeline/` and `views/`. No census figure moved.
