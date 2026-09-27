@@ -83,17 +83,21 @@ The defect survived the original build because it was invisible. A refusal that 
 
 ## A derived interview contradicts a stored terminal outcome
 
-Open. Found 2026-08-30 by a check added in `pipeline/data_quality.py`, which now runs on every pipeline run.
+**Closed at Freeze 4, 2026-08-30. Retained in full because the reasoning is the point.** Found the same day by a check added in `pipeline/data_quality.py`, which runs on every pipeline run, and closed hours later from the other direction. The section below is the defect as it stood; the resolution follows it.
 
 `jobmail-io|growth-lead|c1` carries an interview event and a `terminal_outcome` of `rejected_no_interview`. Both values came from cursor, on a cursor-unique row that bravo never coded, so no blind second reading exists to break the tie.
 
-No published figure moves. `interviewed` is derived from the events table and never stored, so the count of 13 and the rate 13/221 are unaffected either way. What is affected is the terminal-outcome distribution, where this row sits in `rejected_no_interview` while also appearing in the interview set.
+No published figure moved while it stood. `interviewed` is derived from the events table and never stored, so the count and the rate were unaffected either way. What is affected is the terminal-outcome distribution, where this row sits in `rejected_no_interview` while also appearing in the interview set.
 
 It is not resolved here, for the same reason the Weave row was not resolved by preference. Terminal outcome is a field the adjudication pass never covered, this row has one coder rather than two, and closing it would require either a new artifact or a recall-sourced decision. Recall is what `prompts/extraction.md` rule 8 forbids writing into a structured field.
 
 What would close it: the underlying artifact for that process, which would establish whether an interview happened and therefore which of the two fields is wrong.
 
 The general point is the reason the check was added. `interviewed` is derived and `terminal_outcome` is stored, so the codebook's first design principle, store observations and compute rollups, was followed in one direction and not the other. Two representations of the same fact will eventually disagree, and this is what it looks like when they do.
+
+**How it closed.** Not by adjudicating the contradiction, which is what the paragraphs above said would be required, but by removing one side of it. The author supplied the underlying decline, and the party credited in "completing the requested steps through" is an automated screening product rather than a person at the employer. The event is therefore not an interview, and it was excluded at Freeze 4. The stored `rejected_no_interview` and the derived interview no longer disagree because there is no longer a derived interview, and `data_quality_report.md` now reports zero contradictions.
+
+That is worth recording precisely because it is not the resolution the section anticipated. The prediction was that only a new artifact could close it. A new artifact did close it, and the artifact was one the corpus never held and the author did.
 
 ## Capture recapture still not computed, now for a sharper reason
 

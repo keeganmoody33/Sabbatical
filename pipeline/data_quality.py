@@ -139,6 +139,10 @@ def section_inventory(lines: list[str]) -> None:
         # date, which is why it has no date range and why its rows can never
         # enter the monthly series.
         ("artifacts/platform/linkedin_applied_jobs_pages_1_to_10.csv", None),
+        # The Freeze 3 primary input. Omitting it made this report claim to
+        # inventory every table the pipeline reads while hiding the one artifact
+        # that moved the census.
+        ("artifacts/platform/linkedin_job_applications_export.csv", "Application Date"),
         ("artifacts/platform/jobright_applications_log.csv", "Date Applied"),
         ("artifacts/calendar/q8-lecturesfrom-primary.csv", "start"),
         ("coding/bravo/applications__bravo.csv", "date_applied"),
@@ -178,7 +182,13 @@ def section_population(lines: list[str], census: list[dict], full: list[dict]) -
         "coder omission, an admitted unknown is a fact about the artifact.",
         "",
     ]
-    for label, data in (("Application census, n = 221", census), ("Full census, n = 298", full)):
+    # Sizes come from the data. They were once written in as literals, which
+    # left the report printing `n = 221` while iterating 223 rows and quoting
+    # percentages whose real denominator was 223.
+    for label, data in (
+        (f"Application census, n = {len(census)}", census),
+        (f"Full census, n = {len(full)}", full),
+    ):
         lines += [f"### {label}", ""]
         rows = []
         for column in data[0]:
@@ -536,11 +546,33 @@ def section_not_checked(lines: list[str]) -> None:
         "  `adjudication/PRE-ADJUDICATION.md` measure. A row can be internally valid and wrong.",
         "- **Event-level agreement between coders.** The protocol names role lane and the",
         "  include decision as the reliability statistics. Event agreement is unmeasured, and",
-        "  the interview set rests on 10 of 13 found by both coders.",
+        f"  the interview set rests on {_interview_agreement()} found by both coders.",
         "- **Anything about the opportunity register.** This report validates the application",
         "  census. Opportunity rows are adjudicated, not validated here.",
         "",
     ]
+
+
+def _interview_agreement() -> str:
+    """`N of M` for the interview set, computed rather than written in.
+
+    This sentence carried `10 of 13` through two freezes that moved both
+    numbers. A generated report asserting a figure it does not derive is the
+    exact failure this report exists to catch elsewhere.
+    """
+    census_ids = {r["application_id"] for r in load_csv(ADJ / "applications__adjudicated.csv")}
+    per_coder = {}
+    for coder in ("bravo", "cursor"):
+        per_coder[coder] = {
+            e["application_id"]
+            for e in load_csv(ROOT / "coding" / coder / f"events__{coder}.csv")
+            if e.get("event_type") in INTERVIEW_TYPES
+            and not _excluded(e)
+            and e["application_id"] in census_ids
+        }
+    both = per_coder["bravo"] & per_coder["cursor"]
+    union = per_coder["bravo"] | per_coder["cursor"]
+    return f"{len(both)} of {len(union)}"
 
 
 def main() -> None:

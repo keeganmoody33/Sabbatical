@@ -21,7 +21,7 @@ The paper and its companion are drafted and unpublished. `paper/NAMED-COMPANIES.
 
 ## What this freeze found
 
-223 applications with employer-side proof, 317 including platform-only rows, and 14 that reached an
+223 applications with employer-side proof, 317 including platform-only rows, and 10 that reached an
 interview. Roughly half of all applications produced a receipt and then nothing.
 
 The most useful finding is an absence: origin was captured at the time on 15 of 223 rows, recovered

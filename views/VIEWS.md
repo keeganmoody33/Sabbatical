@@ -21,7 +21,7 @@ rate columns are blank. A group that vanishes is indistinguishable from a group 
 exist. In `latency_by_slice.csv` the suppression is applied to the count the statistic was
 computed from, not the size of the group, and the reason is printed in `suppressed_because`.
 
-**Rates carry an interval.** Fourteen interviews across 223 applications means every per-group
+**Rates carry an interval.** Ten interviews across 223 applications means every per-group
 rate is a small-sample estimate. Each publishable rate ships with a Wilson 95 percent interval.
 Wilson rather than the normal approximation because several cells have zero interviews, where the
 normal interval collapses to zero width and asserts a certainty that is not there. No p-values.
@@ -164,8 +164,8 @@ its shape rather than its rates.
 Two things at once. **200 of 223 rows are still `unknown`**, so the null result stands and this view
 does not overturn it. And the most interesting cell in the table is the one that cannot be
 published: every application the author can trace to one community channel reached an interview,
-three for three, and n=3 is below the MIN_CELL floor of 5.
+four for four, and n=4 is below the MIN_CELL floor of 5.
 
 That is the honest outcome and the view is built to make it unmissable rather than to smuggle a
-3/3 into a chart. `n_from_author_recall` is printed on every row so a reader can see exactly how
+4/4 into a chart. `n_from_author_recall` is printed on every row so a reader can see exactly how
 much of any cell rests on recall rather than an artifact.

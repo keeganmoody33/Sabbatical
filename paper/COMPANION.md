@@ -10,7 +10,7 @@ No dashes are used as punctuation in this piece. Every number traces to a named 
 
 ## Why this is a separate piece
 
-The parent paper reports what fifteen months of applying to go-to-market engineering roles produced: 223 applications with employer-side proof, 14 that reached an interview, and roughly half the funnel ending in silence.
+The parent paper reports what fifteen months of applying to go-to-market engineering roles produced: 223 applications with employer-side proof, 10 that reached an interview, and roughly half the funnel ending in silence.
 
 Two things did not fit inside it, and both are more useful than the funnel.
 
@@ -138,7 +138,7 @@ The rule did not change. Its premise did. A submission now exists for each, date
 | | Before | After |
 |---|---|---|
 | Application census | 221 | **223** |
-| Interviewed applications | 13 | **14** |
+| Interviewed applications | 13 | **14**, then **10** at Freeze 4 |
 | Application to interview rate | 13/221 | **14/223**, then **11/223** and **10/223** at Freeze 4 |
 | Full census | 298 | **317** |
 
@@ -167,7 +167,7 @@ PhrasIQ is one of the ten interviews.
 
 **Its outcome model does not survive contact.** It labels 252 of 353 records GHOSTED. Its own defect register, to its credit, marks that HIGH and OPEN and says the category "mixes applied-then-silence, inbound recruiter non-response, outreach inactivity" and "cannot be interpreted as an applied-and-ignored rate." This study reports `still_open` for a live application and computes silence as a measured quantity instead: 97 of 197 exact-dated applications drew no response beyond the receipt. That is a number with a denominator and an observation window.
 
-**Its interviews are estimated, not measured.** `Interview Count` reads UNKNOWN on 334 of its 353 rows. This study derives interviews from a timestamped events table, never stores the rollup, and publishes the weakness of that set honestly: both coders independently found 11 of the 14, and event-level agreement is unmeasured.
+**Its interviews are estimated, not measured.** `Interview Count` reads UNKNOWN on 334 of its 353 rows. This study derives interviews from a timestamped events table, never stores the rollup, and publishes the weakness of that set honestly: both coders independently found 9 of the 10, and event-level agreement is unmeasured.
 
 ### The finding underneath
 

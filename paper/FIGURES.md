@@ -15,21 +15,21 @@ No dashes are used as punctuation in this file.
 **Chart.** Horizontal bar, four bars, ordered by size. Not a funnel diagram, because the stages do
 not share a denominator and a tapering shape would imply they do.
 
-**Slice.** `views/funnel_by_evidence_class.csv` and `adjudication/LATENCY.md`. Bars: 221
-applications, 196 with an exact-dated receipt, 100 with any response, 13 interviewed.
+**Slice.** `views/funnel_by_evidence_class.csv` and `adjudication/LATENCY.md`. Bars: 223
+applications, 197 with an exact-dated receipt, 99 with any response, 10 interviewed.
 
-**Caption caveat, required.** "Three denominators, not one. 221 is the census. 196 is the subset
-with an exact-dated receipt, the only rows where a response time exists. The 13 interviews are
-13/221, not 13/100."
+**Caption caveat, required.** "Three denominators, not one. 223 is the census. 197 is the subset
+with an exact-dated receipt, the only rows where a response time exists. The 10 interviews are
+10/223, not 10/99."
 
 ## F2. Origin coverage against outcome observability
 
 **Chart.** Grouped bar, two series per origin value: rows, and rows with an observable outcome. Full
 census stratum.
 
-**Slice.** `views/origin_coverage.csv`, `stratum = full_census_298`, `field = discovery_source`.
+**Slice.** `views/origin_coverage.csv`, `stratum = full_census_317`, `field = discovery_source`.
 
-**Caption caveat, required.** "The LinkedIn bar is 71 rows and 0 observable outcomes. Origin is
+**Caption caveat, required.** "The LinkedIn bar is 88 rows and 0 observable outcomes. Origin is
 known almost exactly where outcome is not, which is why no channel conversion figure is published."
 
 **Why this is the paper's lead figure.** It is the only chart here that shows an absence rather than
@@ -54,7 +54,7 @@ months rendered as visible zero-height columns rather than gaps.
 
 **Slice.** `views/monthly_trend.csv`, `n_applications_exact_date`.
 
-**Caption caveat, required.** "Exact-dated rows only, n = 195. Twenty-six census rows carry a
+**Caption caveat, required.** "Exact-dated rows only, n = 196. Twenty-seven census rows carry a
 relative or evidence-bound date and are not on this chart. Zero in 2025-09 and 2025-10 is a count of
 exact-dated rows, not a claim that nothing happened."
 
@@ -69,16 +69,16 @@ response. Log or clipped x axis with the 140-day outlier annotated rather than d
 **Slice.** `adjudication/latency__by_application.csv`, columns `days_to_response_strict` and
 `days_to_response_broad`.
 
-**Caption caveat, required.** "Responders only, 79 and 100 of 196. The 96 applications that drew no
+**Caption caveat, required.** "Responders only, 76 and 99 of 197. The 98 applications that drew no
 response are not in this distribution and are the larger group. Both distributions are right skewed,
-so quote the median, 7 days substantive and 5.5 days any."
+so quote the median, 7 days substantive and 5 days any."
 
 ## F6. Source reconciliation waterfall
 
 **Chart.** Waterfall from raw rows to net unique.
 
 **Slice.** `adjudication/platform_match.csv` and `adjudication/FREEZE-2.md`. Steps: Freeze 1 census
-221, platform rows considered 134, overlap removed 56, net-new added 77, full census 298.
+223, platform rows considered 157, overlap removed 63, net-new added 94, full census 317.
 
 **Caption caveat, required.** "One ambiguous match was held out of the census rather than counted,
 on the rule that an omitted row is recoverable and an inflated census is not."

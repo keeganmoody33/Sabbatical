@@ -13,6 +13,7 @@ Every table the pipeline reads or writes, with its row count and the date range 
 | file | rows | columns | date range |
 |---|---|---|---|
 | `artifacts/platform/linkedin_applied_jobs_pages_1_to_10.csv` | 99 | 8 | not date-keyed |
+| `artifacts/platform/linkedin_job_applications_export.csv` | 107 | 7 | 2025-06-14 to 2026-08-22 (107 of 107 parse) |
 | `artifacts/platform/jobright_applications_log.csv` | 40 | 8 | 2025-07-27 to 2026-06-26 (40 of 40 parse) |
 | `artifacts/calendar/q8-lecturesfrom-primary.csv` | 33 | 11 | 2025-09-01 to 2026-08-24 (32 of 33 parse) |
 | `coding/bravo/applications__bravo.csv` | 228 | 28 | 2025-06-11 to 2026-08-24 (222 of 228 parse) |
@@ -36,7 +37,7 @@ admitted unknown is a recorded observation rather than a missing value. The two
 are counted separately because they mean different things: an empty field is a
 coder omission, an admitted unknown is a fact about the artifact.
 
-### Application census, n = 221
+### Application census, n = 223
 
 | field | empty | share empty | admitted unknown |
 |---|---|---|---|
@@ -56,7 +57,7 @@ coder omission, an admitted unknown is a fact about the artifact.
 | `notes` | 87 | 39.0 percent | 0 |
 | `role_title_source` | 212 | 95.1 percent | 0 |
 
-### Full census, n = 298
+### Full census, n = 317
 
 | field | empty | share empty | admitted unknown |
 |---|---|---|---|
@@ -182,6 +183,6 @@ the question a job-search log is most often built to answer.
   `adjudication/PRE-ADJUDICATION.md` measure. A row can be internally valid and wrong.
 - **Event-level agreement between coders.** The protocol names role lane and the
   include decision as the reliability statistics. Event agreement is unmeasured, and
-  the interview set rests on 10 of 13 found by both coders.
+  the interview set rests on 9 of 10 found by both coders.
 - **Anything about the opportunity register.** This report validates the application
   census. Opportunity rows are adjudicated, not validated here.

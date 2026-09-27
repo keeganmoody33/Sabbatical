@@ -205,21 +205,36 @@ def clean(value) -> str:
     return text
 
 
-def looks_like_person(part: str, organizations: set[str]) -> bool:
+def looks_like_person(part: str, organizations: set[str], require_capitalized: bool = True) -> bool:
     """One shared shape test, so the two harvests cannot drift apart.
 
-    Every token must start uppercase, which is what stops "CRO idea" being
-    rostered. Whitespace is normalized by the caller, because a roster key with
-    a doubled space can never match the text it came from and the name then
-    ships unredacted.
+    Whitespace is normalized by the caller, because a roster key with a doubled
+    space can never match the text it came from and the name then ships
+    unredacted.
+
+    `require_capitalized` is the difference between the two harvests, and
+    getting it wrong leaked a name. In PROSE, capitalization is the only signal
+    separating a name from an ordinary phrase, so it is required. In an EXPLICIT
+    person column it must not be, because people type their contacts in
+    lowercase: "mahmoud taman" sat in a committed extract in the clear for
+    exactly this reason. Uncapitalized candidates are instead filtered on the
+    stop lists, which is what keeps "no interview" out.
     """
     tokens = part.split()
     if not 2 <= len(tokens) <= 3:
         return False
     if part in KNOWN_NON_PERSONS or part.isupper():
         return False
-    if not all(token[:1].isupper() for token in tokens):
-        return False
+    if require_capitalized:
+        if not all(token[:1].isupper() for token in tokens):
+            return False
+    else:
+        # Every token must be a plausible name word. Without this, phrases like
+        # "no interview" and "unknown phone interviewer" would roster.
+        if not all(re.fullmatch(r"[A-Za-z][A-Za-z'\u2019\-]*\.?", t) for t in tokens):
+            return False
+        if any(t.lower() in NON_NAME_WORDS for t in tokens):
+            return False
     # Substring rather than equality: "Atlanta Public Schools" must be protected
     # by an organization recorded as "Atlanta Public Schools, GA".
     #
@@ -296,7 +311,38 @@ def review_candidates(texts: list[str], organization_words: set[str]) -> set[str
     return seen
 
 
-def build_person_roster(wb) -> tuple[dict[str, str], set[str], list[str]]:
+def explicit_residuals(texts: list[str], organization_words: set[str]) -> set[str]:
+    """Name-shaped runs that survive redaction in an EXPLICIT person column.
+
+    `review_candidates` scans for capitalized words, which is right for prose and
+    was the whole blind spot here: a lowercase name in a person column was
+    invisible to the detector AND to the guard, so nothing caught it. This runs
+    case-insensitively and only over columns that hold people by definition,
+    where an ordinary lowercase phrase is not expected anyway.
+    """
+    seen: set[str] = set()
+    for text in texts:
+        # Split on the same separators the harvest uses, then look at what is
+        # left. After redaction these columns should be almost entirely pointers.
+        for raw in re.split(r"\u2192|/|;|,|\+|\band\b", re.sub(r"\([^)]*\)", " ", text)):
+            part = " ".join(raw.split())
+            tokens = part.split()
+            if not 2 <= len(tokens) <= 3:
+                continue
+            if part in KNOWN_NON_PERSONS:
+                continue
+            if not all(re.fullmatch(r"[A-Za-z][A-Za-z'\u2019\-]*\.?", t) for t in tokens):
+                continue
+            lowered = [t.lower() for t in tokens]
+            if any(t in NON_NAME_WORDS or t in ORG_TOKENS or t in organization_words for t in lowered):
+                continue
+            if part in PROSE_NON_NAMES:
+                continue
+            seen.add(part)
+    return seen
+
+
+def build_person_roster(wb) -> tuple[dict[str, str], dict[str, str], set[str], list[str], list[str]]:
     """Names to redact, gathered from the workbook rather than hardcoded.
 
     Two harvests with different rules.
@@ -343,6 +389,7 @@ def build_person_roster(wb) -> tuple[dict[str, str], set[str], list[str]]:
     organization_words = {w.lower().strip(".,()") for org in organizations for w in org.split()}
 
     roster: set[str] = set()
+    explicit_texts: list[str] = []
     # Given names of people confirmed by an explicit person column. Prose refers
     # to them by first name only, "the message to Andrew", "Jorge was a TA", and
     # the full-name roster never fires on those.
@@ -360,6 +407,7 @@ def build_person_roster(wb) -> tuple[dict[str, str], set[str], list[str]]:
         for row in rows:
             value = clean(row.get(column))
             person_texts.append(value)
+            explicit_texts.append(value)
 
             # Parenthetical content is removed from the WHOLE value before any
             # split. Splitting first breaks on separators that live inside the
@@ -371,7 +419,7 @@ def build_person_roster(wb) -> tuple[dict[str, str], set[str], list[str]]:
             # full names ship in the clear.
             for raw in re.split(r"→|/|;|,|\+|\band\b", re.sub(r"\([^)]*\)", " ", value)):
                 candidate = " ".join(raw.split())
-                if looks_like_person(candidate, organizations):
+                if looks_like_person(candidate, organizations, require_capitalized=False):
                     roster.add(candidate)
                     given.add(candidate.split()[0])
                 elif looks_like_given_name(candidate, organization_words):
@@ -389,7 +437,7 @@ def build_person_roster(wb) -> tuple[dict[str, str], set[str], list[str]]:
                 if "(" in original and ")" in original:
                     inner = " ".join(re.sub(r"\([^)]*\)", " ", original).split())
                     if inner and (
-                        looks_like_person(inner, organizations)
+                        looks_like_person(inner, organizations, require_capitalized=False)
                         or looks_like_given_name(inner, organization_words)
                     ):
                         roster.add(original)
@@ -424,6 +472,7 @@ def build_person_roster(wb) -> tuple[dict[str, str], set[str], list[str]]:
         {name: person_pointer(name) for name in sorted(given, key=len, reverse=True)},
         organization_words,
         person_texts,
+        explicit_texts,
     )
 
 
@@ -539,7 +588,7 @@ def main() -> int:
         )
 
     wb = load_workbook(path)
-    roster, given, organization_words, person_texts = build_person_roster(wb)
+    roster, given, organization_words, person_texts, explicit_texts = build_person_roster(wb)
     print(
         f"redacting {len(roster)} personal names to per_ pointers, "
         f"plus {len(given)} bare given names in person-bearing columns only"
@@ -550,6 +599,9 @@ def main() -> int:
     # against.
     unclassified = review_candidates(
         [redact(text, roster, given) for text in person_texts], organization_words
+    )
+    unclassified |= explicit_residuals(
+        [redact(text, roster, given) for text in explicit_texts], organization_words
     )
     if unclassified:
         raise SystemExit(

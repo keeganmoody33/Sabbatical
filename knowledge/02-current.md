@@ -21,12 +21,12 @@ figures that used to sit at the top of this file (247 applications, 11 interview
 |---|---|---|
 | Application census, employer-side proof | 223 | `adjudication/applications__adjudicated.csv` |
 | Full census, including platform-only rows | 317 | `adjudication/applications__full_census.csv` |
-| Interviewed applications, derived from events | 14 | `views/funnel_by_role_lane.csv` |
+| Interviewed applications, derived from events | 10 | `views/funnel_by_role_lane.csv` |
 | Application to interview rate | 10/223 | same |
 | Latency base, exact-dated receipt | 197 | `adjudication/latency__by_application.csv` |
-| Any response | 100/197 | `views/latency_by_slice.csv` |
-| Substantive response | 79/197 | same |
-| No response beyond the receipt | 97/197 | derived |
+| Any response | 99/197 | `views/latency_by_slice.csv` |
+| Substantive response | 76/197 | same |
+| No response beyond the receipt | 98/197 | derived |
 | Median days to substantive response, responders only | 7 | `adjudication/LATENCY.md` |
 | Time to first interview | n = 7, median 5 | same |
 | Census completeness | not published | no method available, see below |

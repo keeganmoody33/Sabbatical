@@ -139,7 +139,7 @@ errors. Every metric below names what one observation is and what it is divided 
 | Substantive response rate | per-opportunity | applications with a non-ack response | 197 with an exact-dated receipt | `latency_by_slice.csv` |
 | Any response rate | per-opportunity | applications with any response | 197 with an exact-dated receipt | `latency_by_slice.csv` |
 | Median days to first response | per-opportunity, conditional on responding | n/a | responders only, count printed per row | `latency_by_slice.csv` |
-| Time to first interview | per-opportunity, conditional on interviewing | n/a | 11 with both dates exact | `adjudication/LATENCY.md` |
+| Time to first interview | per-opportunity, conditional on interviewing | n/a | 7 with both dates exact | `adjudication/LATENCY.md` |
 | Applications per month | per-month | n/a | 196 exact-dated rows, 27 excluded | `monthly_trend.csv` |
 | Origin channel share | per-opportunity | n/a | stated per stratum, 223 or 317 | `origin_coverage.csv` |
 | Origin recoverability | per-opportunity | rows in each recovery tier | 223 | `origin_recoverability.csv` |

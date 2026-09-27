@@ -12,7 +12,7 @@ No dashes are used as punctuation in this paper. Every number traces to a named 
 
 I spent fifteen months applying for go-to-market engineering roles, then treated my own job search as a dataset and tried to establish how many applications I could actually prove. Evidence was harvested from email, calendar, and platform exports into a frozen corpus, coded independently by two language models blind to each other, and resolved in a named adjudication pass. The result is 223 applications with employer-side proof, 317 including rows visible only in platform logs, and 10 that reached an interview, a rate of 10/223.
 
-Three findings. Roughly half of all applications produced a receipt and then silence: 97/197 of the rows with an exact-dated receipt drew no response, and the median substantive response, among those that did respond, arrived in 7 days. All 10 interviews sat in three of eight role lanes, and the five lanes covering the other 83 applications produced none. Third, and most useful to anyone building a tracker: **the study could not answer the question it most wanted to answer.** Origin was captured at the time on 15 of 223 rows, recoverable afterwards on 60 more only because a platform logged them, and unrecoverable on the remaining 148. That is a failure of the instrument, and it is reproducible in almost any job-search log kept the ordinary way.
+Three findings. Roughly half of all applications produced a receipt and then silence: 98/197 of the rows with an exact-dated receipt drew no response, and the median substantive response, among those that did respond, arrived in 7 days. All 10 interviews sat in three of eight role lanes, and the five lanes covering the other 83 applications produced none. Third, and most useful to anyone building a tracker: **the study could not answer the question it most wanted to answer.** Origin was captured at the time on 15 of 223 rows, recoverable afterwards on 60 more only because a platform logged them, and unrecoverable on the remaining 148. That is a failure of the instrument, and it is reproducible in almost any job-search log kept the ordinary way.
 
 This is a single subject studied by himself: a case study, not a market study. A second, independently produced reconstruction of the same fifteen months was used to attack these numbers after they were written; the companion piece, [The Field You Cannot Recover](COMPANION.md), reports what it moved and what it failed to move.
 
@@ -38,7 +38,7 @@ This paper has two subjects. The visible one is what fifteen months of applying 
 
 **Derived, never stored.** Whether an application was interviewed is computed from the events table on every run, never written on the application row. A stored rollup and a stored event list will eventually disagree, and then neither can be trusted. Section 5 reports what happened where this was applied in one direction and not the other.
 
-**Precision as a field.** Every date carries a precision label. A LinkedIn stamp reading "2mo ago" is never upgraded to a calendar date, because it is a range and writing a date would convert a range into a false fact. The monthly series runs on 195 exact-dated rows with the 26 excluded printed beside it.
+**Precision as a field.** Every date carries a precision label. A LinkedIn stamp reading "2mo ago" is never upgraded to a calendar date, because it is a range and writing a date would convert a range into a false fact. The monthly series runs on 196 exact-dated rows with the 27 excluded printed beside it.
 
 **Reproducibility.** One command, `make check`, rebuilds every published figure from the frozen inputs, hashing every output before and after and failing if a re-run moved a byte. It passes, so the numbers below are reproducible rather than merely recorded.
 
@@ -51,9 +51,9 @@ This paper has two subjects. The visible one is what fifteen months of applying 
 | Applications with employer-side proof | 223 | the census |
 | Full census including platform-only rows | 317 | census plus 94 net-new |
 | Applications reaching at least one interview | 10 | 10/223 |
-| Applications with any response beyond the receipt | 100 | 100/197 exact-dated base |
-| Applications with a substantive response | 79 | 79/197 |
-| Applications with no response at all | 97 | 97/197 |
+| Applications with any response beyond the receipt | 99 | 99/197 exact-dated base |
+| Applications with a substantive response | 76 | 76/197 |
+| Applications with no response at all | 98 | 98/197 |
 
 Three denominators are in play and they are not interchangeable. 223 is the census. 197 is the subset carrying an exact-dated receipt, the only rows where a response time can be computed. 317 adds 94 rows visible only in platform exports, which carry no employer-side artifact and therefore no events, so an interview rate against 317 is arithmetically smaller for a reason unrelated to the search.
 
@@ -115,7 +115,7 @@ The whole interview set is small enough to print, which is itself the honest way
 | PhrasIQ | unspecified | unspecified | still open |
 | The Hog | GTM Engineer | explicit GTM | still open |
 
-Two rows carry a caveat. The jobmail.io row is the contradiction described in section 5: it carries an interview event and a stored outcome of `rejected_no_interview`, from one coder, with no blind second reading. The Hog entered the census only at Freeze 3, when a submission artifact for it was found; the companion piece gives that story.
+One row carries a caveat. The Hog entered the census only at Freeze 3, when a submission artifact for it was found; the companion piece gives that story. The jobmail.io contradiction that stood here was closed at Freeze 4 by removing the event, so the row is no longer in this table at all.
 
 Correlation and causation are not close here. I chose which roles to apply to, so title language is confounded with where I was a plausible fit, with what I was willing to spend effort on, and with market timing. Nothing is randomized, and no causal claim is available.
 
@@ -134,7 +134,7 @@ The medians are conditional on having responded. They describe responders only. 
 
 Time to first interview: n = 7, median 5 days, mean 7.3, range 0 to 24.
 
-Right censoring is not driving the response rate. Applications submitted near the window end have had less time to draw a reply, so the rate was recomputed at rising exposure thresholds: 0.510 at 0 days, 0.508 at 30, 0.532 at 60, 0.500 at 90. Stable.
+Right censoring is not driving the response rate. Applications submitted near the window end have had less time to draw a reply, so the rate was recomputed at rising exposure thresholds: 0.503 at 0 days, 0.500 at 30, 0.528 at 60, 0.496 at 90. Stable.
 
 ### 3.5 Timeline
 
@@ -157,7 +157,7 @@ The 24-point gap between the two include statistics is the whole reason kappa ex
 
 Those same two disagreements are the ones Freeze 3 later reversed. They were the only rows where the coders split on whether a record counted at all, and new evidence eventually showed that on both, one coder was right and the adjudication was wrong. A kappa of 0.7452 on two contested rows was, in hindsight, pointing exactly where the weakness was. The companion piece has the reversal in full.
 
-The last row is the one that should temper everything above it. Agreement on *which applications were interviewed* is 11/14. Three rest on one coder alone. Event-level agreement is not among the reliability statistics the protocol requires, so it is unmeasured rather than measured and small, and the interview-based findings inherit that.
+The last row is the one that should temper everything above it. Agreement on *which applications were interviewed* is 9/10. One rests on one coder alone. Event-level agreement is not among the reliability statistics the protocol requires, so it is unmeasured rather than measured and small, and the interview-based findings inherit that.
 
 ## 4. Discussion
 
@@ -165,7 +165,7 @@ The last row is the one that should temper everything above it. Agreement on *wh
 
 Three things in this data are actionable from the employer side.
 
-**Half your applicants hear nothing after the receipt.** Here 97/197 applications produced an automated receipt and then silence. That is one candidate's view of many companies, so read it as a market norm rather than an indictment of any firm. The norm is the opportunity: the median substantive response arrived in 7 days, p75 19. A team that reliably responds inside a week is not competing against a high bar.
+**Half your applicants hear nothing after the receipt.** Here 98/197 applications produced an automated receipt and then silence. That is one candidate's view of many companies, so read it as a market norm rather than an indictment of any firm. The norm is the opportunity: the median substantive response arrived in 7 days, p75 19. A team that reliably responds inside a week is not competing against a high bar.
 
 **Your title is doing recruiting work you have not accounted for.** This dataset contains 37 distinct titles inside a single role lane. When the same job is posted as GTM Engineer, Founding GTM, Lead Agentic Operations, and Go-to-Market Engineer, applicants cannot search for it and cannot tell whether they are qualified. The internal cost is a smaller and worse-sorted pipeline. The external cost is that nobody can build the labor-market data that would tell you what to pay.
 

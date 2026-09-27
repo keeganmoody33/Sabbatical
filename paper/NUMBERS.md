@@ -15,15 +15,15 @@ No dashes are used as punctuation in this file.
 | Application census | 223 | `adjudication/applications__adjudicated.csv` | row count minus header |
 | Full census | 317 | `adjudication/applications__full_census.csv` | row count minus header |
 | Net-new platform rows | 94 | `adjudication/platform_match.csv` | rows with `match_status = net_new` |
-| Interviewed applications | 14 | `views/funnel_by_role_lane.csv` | sum of `n_interviewed` |
+| Interviewed applications | 10 | `views/funnel_by_role_lane.csv` | sum of `n_interviewed` |
 | Application to interview rate | 10/223 | `views/funnel_by_role_lane.csv` | sum `n_interviewed` over sum `n_applications` |
 | Latency base | 197 | `adjudication/latency__by_application.csv` | row count minus header |
-| Any response | 100/197 | `views/latency_by_slice.csv` | `evidence_class` row, `n_responded_any` |
-| Substantive response | 79/197 | `views/latency_by_slice.csv` | `evidence_class` row, `n_responded_substantive` |
-| No response beyond the receipt | 97/197 | derived | 197 minus 100 |
+| Any response | 99/197 | `views/latency_by_slice.csv` | `evidence_class` row, `n_responded_any` |
+| Substantive response | 76/197 | `views/latency_by_slice.csv` | `evidence_class` row, `n_responded_substantive` |
+| No response beyond the receipt | 98/197 | derived | 197 minus 99 |
 | Employer artifact / platform log on the census | 222 / 1 | `views/funnel_by_evidence_class.csv` | `n_applications` column |
 
-`build_views.py` asserts 223, 317, 14, and 197 on every run, so a drift in any of them fails the
+`build_views.py` asserts 223, 317, 10, and 197 on every run, so a drift in any of them fails the
 pipeline rather than reaching a table.
 
 ## Section 3.2, the origin null result
@@ -33,7 +33,7 @@ pipeline rather than reaching a table.
 | `discovery_source = unknown` on the census | 208 of 223, 93.3 percent | `views/origin_coverage.csv`, `data_quality_report.md` section 7 |
 | Census rows knowing their origin | 15 | `views/origin_coverage.csv`, sum `n` where `origin_is_known = yes`, `discovery_source` block |
 | Largest known-origin channel on the census | 7, wellfound | same |
-| Full census rows knowing their origin | 109 | same, `full_census_298` stratum |
+| Full census rows knowing their origin | 109 | same, `full_census_317` stratum |
 | Of those, rows with an observable outcome | 15 | same, sum `n_outcome_observable` where `origin_is_known = yes` |
 | LinkedIn rows on the full census | 88 | same |
 | LinkedIn rows with an observable outcome | 0 | same, `n_outcome_observable` |
@@ -57,7 +57,7 @@ pipeline rather than reaching a table.
 |---|---|---|
 | Substantive: n 79 of 197, median 7, p25 3, p75 19 | as stated | `adjudication/LATENCY.md` |
 | Any: n 100 of 197, median 5.5, p25 1, p75 15 | as stated | `adjudication/LATENCY.md` |
-| Time to first interview: n 11, median 6, mean 8.8, range 0 to 34 | as stated | `adjudication/LATENCY.md` |
+| Time to first interview: n 7, median 5, mean 7.3, range 0 to 24 | as stated | `adjudication/LATENCY.md` |
 | Right censoring: 0.510, 0.508, 0.532, 0.500 at 0, 30, 60, 90 days | as stated | `adjudication/LATENCY.md` |
 | Excluded for lacking an exact-dated receipt | 26 | `adjudication/LATENCY.md`, 223 minus 197 |
 

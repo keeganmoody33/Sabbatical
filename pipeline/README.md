@@ -64,6 +64,6 @@ Add the writer to `pipeline/build_views.py`, add its filename to the `build_view
 output is not written, so a view registered but not built is caught on the next run.
 
 `build_views.py` asserts the four published figures on every run: census 223, full census 317,
-interviewed 14, latency base 197. Those assertions are there so that a view built on a census
+interviewed 10, latency base 197. Those assertions are there so that a view built on a census
 that no longer matches the paper fails immediately rather than being discovered later inside a
 table.

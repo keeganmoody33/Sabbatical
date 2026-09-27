@@ -12,7 +12,7 @@ No dashes are used as punctuation in this file.
 
 ## Decide these first: still-open processes
 
-Eight of the fourteen interviewed applications carry `terminal_outcome = still_open`. Naming a
+Five of the ten interviewed applications carry `terminal_outcome = still_open`. Naming a
 company while a process with it is live is the case `knowledge/instructions.md` says to flag and
 hand back, so these are listed first.
 
@@ -28,7 +28,7 @@ hand back, so these are listed first.
 | The Hog | Paper section 3.3 interview table and section 5; companion part 2 | Applied, interviewed, process open. Also named as a row reversed from opportunity to application at Freeze 3, with its submission date | Live process, and named as a methodology example in both pieces |
 
 Options if any of these should not be named: replace the cell with a stable pseudonym (Company A,
-Company B) and keep the row, so the count of 14 still reconciles. Dropping a row silently would
+Company B) and keep the row, so the count of 10 still reconciles. Dropping a row silently would
 break the arithmetic in section 3.1.
 
 ## Closed processes, named
@@ -42,7 +42,7 @@ break the arithmetic in section 3.1.
 | Orchestry | Section 3.3 interview table | Applied, interviewed, rejected after interview | Closed. Discloses a rejection |
 | jobmail.io | Section 3.3 interview table and section 5 | Applied, interviewed, and named as the row carrying a coding contradiction | Closed. The row is named as a data defect, which is a second thing to weigh |
 | BX Studio | Paper section 5; companion part 2 | Applied. Named as the second row reversed from opportunity to application at Freeze 3, with its submission date | Closed. No interview |
-| PhrasIQ | Companion part 2, twice | Named as one of the eight rows the competing reconstruction dropped, and again as one of the fourteen interviews | Already listed above as a live process. The companion names it more prominently than the paper does |
+| PhrasIQ | Companion part 2, twice | Named as one of the eight rows the competing reconstruction dropped, and again as one of the ten interviews | Already listed above as a live process. The companion names it more prominently than the paper does |
 
 ## Platforms and vendors, not employers
 
